@@ -1,0 +1,259 @@
+#page-cloud{
+
+    .pageHeader{
+
+        background-color: #bddfff;
+        text-align: center;
+
+        &__heading{
+            color: #3b4461;
+            font-size: 85px;
+            font-weight: bold;
+            letter-spacing: -4.7px;
+            line-height: 1.28;
+        }
+
+        &__btn{
+
+            border-radius: 4px;
+            border: solid 1px #0083ff;
+            color: #0083ff;
+            cursor: normal;
+            font-size: 18.8px;
+            font-weight: 500;
+            height: 51px;
+            letter-spacing: 0.1px;
+            line-height: 1.47;
+            margin-top: 50px;
+            padding: 12px;
+            width: 233px;
+
+            &:hover,
+            &:focus{
+                background: none;
+                color: #0083ff;
+                cursor: normal;
+            }
+
+        }
+
+    }
+
+    .section{
+
+        &--cloud-beta{
+
+            background-color: #bddfff;
+            padding: 124px 0;
+
+            .section__heading{
+                color: #3b4461;
+                font-size: 46px;
+                font-weight: bold;
+                letter-spacing: -2.2px;
+                line-height: 0.9;
+                margin-bottom: 50px;
+                max-width: 650px;
+            }
+
+            input{
+                border-radius: 6.4px;
+                border: solid 0.8px #3288d9;
+                height: 48.8px;
+                width: 264px;
+            }
+
+            .btn {
+                background-color: #3aa0ff;
+                border-radius: 6.4px;
+                font-size: 15px;
+                font-weight: 500;
+                height: 48.8px;
+                letter-spacing: -0.2px;
+                margin-left: 9.6px;
+                width: 107.2px;
+            }
+
+        }
+
+        &--cloud-architecture{
+
+            background-image: linear-gradient(290deg, #e8d6ff, #e2d4ff);
+            padding-bottom: 0; // Important, as the two subsections need to come to the bottom
+            padding-top: 99px;
+
+            .section__heading{
+                color: #503b61;
+                font-size: 72px;
+                font-weight: bold;
+                letter-spacing: -3.4px;
+                line-height: 0.81;
+                max-width: 769.6px;
+                padding-bottom: 126.6px;
+            }
+
+            .subsection{
+
+                padding-bottom: 100px;
+                padding-top: 90px;
+
+                &__heading{
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 0.88;
+                    letter-spacing: -1.1px;
+                    color: #503b61;
+                }
+
+                &__content{
+                    max-width: 273.6px;
+                    font-size: 17px;
+                    line-height: 1.51;
+                    letter-spacing: -0.2px;
+                    color: #433d4a;
+                }
+
+                &--reimagined{
+                    background-image: linear-gradient(137deg, #eee0ff, #e2c9ff);
+                }
+
+                &--encryption{
+                    background-image: linear-gradient(136deg, #e9d9ff, #efcffa);
+                }
+
+            }
+
+        }
+
+        &--cloud-plans{
+
+            background-image: linear-gradient(119deg, #fce0ff, #fddeff);
+            padding-bottom: 110.2px;
+            padding-top: 96.2px;
+
+            .section__heading{
+                color: #513b61;
+                font-size: 72px;
+                font-weight: bold;
+                letter-spacing: -3.4px;
+                line-height: 0.81;
+                max-width: 769.6px;
+            }
+
+            .section__content{
+                color: #443d4a;
+                font-size: 17px;
+                letter-spacing: -0.2px;
+                line-height: 1.51;
+                max-width: 314.4px;
+            }
+
+        }
+
+        &--cloud-features{
+
+            background-image: linear-gradient(138deg, #ffe8ee, #ffdbe8);
+            padding-bottom: 98.4px;
+            padding-top: 98.4px;
+
+            .section__heading{
+                color: #613b4b;
+                font-size: 72px;
+                font-weight: bold;
+                letter-spacing: -3.4px;
+                line-height: 0.81;
+                max-width: 769.6px;
+            }
+
+            .featurePreviewContainer{
+
+                display: block;
+                height: 680px;
+                width: 100%;
+                margin: 0 auto;
+                background:{
+                    image: url('/img/mockups/blank-laptop.png');
+                    repeat: no-repeat;
+                    size: contain;
+                }
+
+                .featurePreview{
+                    display: block;
+                    height: 425px;
+                    margin: 0 auto;
+                    position: relative;
+                    top: 125px;
+                    right: 30px;
+                    width: 680px;
+                    background:{
+                        image: url('/img/mockups/xcloud/dashboard.png');
+                        repeat: no-repeat;
+                        size: contain;
+                    }
+                }
+            }
+
+        }
+
+        &--cloud-everywhere{
+
+            background-image: linear-gradient(122deg, #ffe6ec, #fce6ec);
+            padding: 60.8px 0;
+
+            .section__heading{
+                color: #613b4b;
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: -1.1px;
+                line-height: 0.88;
+                max-width: 272.8px;
+            }
+
+            .section__content{
+                color: #543348;
+                font-size: 17px;
+                letter-spacing: -0.2px;
+                line-height: 1.51;
+                max-width: 292.8px;
+            }
+
+        }
+
+        &--cloud-ipad{
+            background-image: linear-gradient(131deg, #ffebf0, #ffedf1);
+        }
+
+        &--cloud-iphone{
+
+            background-image: linear-gradient(103deg, #fae1e8, #ffe3e9);
+            padding-top: 81px;
+            text-align: center;
+
+            .btn{
+
+                border-radius: 3.4px;
+                border: solid 0.8px #f4235b;
+                color: #f4235b;
+                cursor: normal;
+                font-size: 16px;
+                font-weight: 500;
+                height: 44px;
+                letter-spacing: -0.1px;
+                line-height: 1.47;
+                padding: 10px 15.5px;
+                width: 158.4px;
+
+                &:hover,
+                &:focus{
+                    background: none;
+                    color: #f4235b;
+                    cursor: normal;
+                }
+
+            }
+
+        }
+
+    }
+
+}

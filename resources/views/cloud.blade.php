@@ -1,0 +1,126 @@
+@extends('_layouts.master')
+
+@section('pageID', 'cloud')
+
+@section('navbar-classes', 'navbar-light')
+
+@section('pageTitle', 'X Cloud')
+
+@section('body')
+
+	<header class="pageHeader">
+		<div class="container">
+			<h1 class="pageHeader__heading">X Cloud</h1>
+			<h2 class="pageHeader__subheading">Our vision was to create a cloud platform that anyone could use with total simplicity, security and privacy. By leveraging the use of distributed and decentralized technology the everyday user can now store files with complete security.</h2>
+			<a href="#" class="pageHeader__btn btn btn-outline-primary">Beta Available Q3 2018</a>
+		</div>
+		<img src="/img/headers/xcloud.png" class="img-fluid">
+	</header>
+
+	<section class="section section--cloud-beta">
+		<div class="container">
+			<p class="section__heading">Subscribe to our beta list to be first in-line to download X Cloud.</p>
+			<div class="section__content">
+				<form class="form-inline">
+					<input type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="user@example.com">
+					<button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--cloud-architecture">
+		<div class="container">
+			<p class="section__heading">Advanced architecture that brings a new level of security.</p>
+		</div>
+			<div class="row no-gutters">
+				<div class="col-sm-6">
+					<div class="subsection subsection--reimagined">
+						<div class="container-fluid">
+							<p class="subsection__heading">Security reimagined.</p>
+							<p class="subsection__content">We've reimagined cloud storage on a security level by solving major problems with current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies. X Cloud removes this destructivity of privacy by giving users total control of their personal data.</p>
+						</div>{{-- /.container-fluid --}}
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="subsection subsection--encryption">
+						<div class="container-fluid">
+							<p class="subsection__heading">Advanced Encryption.</p>
+							<p class="subsection__content">Your files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. This means your personal data is apart of the distributed network and no longer sitting in one central location so there is almost no conceivable way for unauthorized third parties to access your data.</p>
+						</div>{{-- /.container-fluid --}}
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="section section--cloud-plans">
+		<div class="container">
+			<p class="section__heading">Find the storage plan that’s right for you.</p>
+			<div class="row">
+
+				<div class="col-sm-6">
+					<div class="section__content">When signing up to X Cloud you will receive a 7 day free trial period so everyone can experience X Cloud without having to set-up any payment details. If you enjoy the service you can renew your trial for a one-time payment of $1.99, or alternatively upgrade to one of our monthly storage plans.</div>
+				</div>{{-- /.col-sm-6 --}}
+
+				<div class="col-sm-6">
+
+				</div>{{-- /.col-sm-6 --}}
+
+			</div>{{-- /.row --}}
+		</div>
+	</section>
+
+	<section class="section section--cloud-features">
+		<div class="container">
+			<p class="section__heading">The most powerful technology is technology that everyone can use.</p>
+
+			<div class="featurePreviewContainer">
+				<div class="featurePreview">
+				</div>
+			</div>
+
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="file-sharing-tab" data-toggle="tab" href="#file-sharing" role="tab" aria-controls="file-sharing" aria-selected="false">File Sharing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="folders-tab" data-toggle="tab" href="#folders" role="tab" aria-controls="folders" aria-selected="false">Folders</a>
+				</li>
+			</ul>
+
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">The dashboard is your X Cloud homescreen. All your options such as, search, upload, new folder, download, delete, and file sharing are spread across the top of your home screen to allow for a more limitless workflow and to make using your cloud easier, without having to click multiple times to get to where you want to be. So you can focus on the things that matter.</div>
+				<div class="tab-pane fade" id="file-sharing" role="tabpanel" aria-labelledby="file-sharing-tab">File Sharing</div>
+				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">Folder</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section--cloud-more-info">
+		<div class="row no-gutters">
+
+			<div class="col-sm-6">
+				<section class="section section--cloud-everywhere">
+					<p class="section__heading">Do more. Wherever.</p>
+					<p class="section__content">The X Cloud app will allow you to access your files from your iOS and Android devices. All your files will stay up to date automatically across all your devices.</p>
+				</section>
+				<section class="section section--cloud-ipad">
+					<img src="/img/mockups/xcloud-ipad.png" class="img-fluid">
+				</section>
+			</div>{{-- /.col-sm-6 --}}
+
+			<div class="col-sm-6">
+				<section class="section section--cloud-iphone">
+					<a href="#" class="btn btn-outline-primary">Available Q1 2019</a>
+					<img src="/img/mockups/xcloud-iphone.png" class="img-fluid">
+				</section>
+			</div>{{-- /.col-sm-6 --}}
+
+		</div>{{-- /.row --}}
+	</section>
+
+@endsection
