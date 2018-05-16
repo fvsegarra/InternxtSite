@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="css/app.css">
 
         <title>@yield('pageTitle') | Internxt</title>
     </head>
@@ -16,7 +16,7 @@
             <div class="container">
 
                 <a class="navbar-brand" href="#">
-                    <img src="/assets/img/logos/internxt_white.png" height="31">
+                    <img src="/img/logos/internxt_white.png" height="31">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
                 <div class="row">
 
                     <div class="col-sm-5">
-                        <img src="assets/img/logos/internxt_white.png" height="42">
+                        <img src="/img/logos/internxt_white.png" height="42">
                     </div>{{-- /.col-sm-5 --}}
 
                     <div class="col-sm-7">
@@ -70,22 +70,22 @@
                                 <a class="nav-link" href="#">Privacy</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#twitter"><img src="assets/img/logos/twitter.png" height="18"></a>
+                                <a class="nav-link" href="#twitter"><img src="/img/logos/twitter.png" height="18"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#medium"><img src="assets/img/logos/medium.png" height="18"></a>
+                                <a class="nav-link" href="#medium"><img src="/img/logos/medium.png" height="18"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#github"><img src="assets/img/logos/github.png" height="18"></a>
+                                <a class="nav-link" href="#github"><img src="/img/logos/github.png" height="18"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#mail"><img src="assets/img/logos/mail.png" height="18"></a>
+                                <a class="nav-link" href="#mail"><img src="/img/logos/mail.png" height="18"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#instagram"><img src="assets/img/logos/instagram.png" height="18"></a>
+                                <a class="nav-link" href="#instagram"><img src="/img/logos/instagram.png" height="18"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#telegram"><img src="assets/img/logos/telegram.png" height="18"></a>
+                                <a class="nav-link" href="#telegram"><img src="/img/logos/telegram.png" height="18"></a>
                             </li>
                         </ul>
 

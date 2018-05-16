@@ -18,7 +18,6 @@
 	<section class="section section--inxt-data">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Price Per INXT</p>
@@ -29,25 +28,23 @@
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Change / 7 Days</p>
-						<p class="inxtDatum__point">-2.93%</p>
+						<p class="inxtDatum__point"><span class="inxtDatum__sign">-</span>2.93%</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
 
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Change / 30 Days</p>
-						<p class="inxtDatum__point">+442%</p>
+						<p class="inxtDatum__point inxtDatum__point--positive"><span class="inxtDatum__sign">+</span>442%</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
-
 			</div>{{-- /.row --}}
 
 			<div class="row">
-
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Market Cap</p>
-						<p class="inxtDatum__point">$5.2M</p>
+						<p class="inxtDatum__point">$5.2<span class="inxtDatum__measure">M</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
 
@@ -64,12 +61,11 @@
 						<p class="inxtDatum__point">629,610</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
-
 			</div>{{-- /.row --}}
 		</div>
 	</section>
 
-	<section class="section section--inxt-xcloud">
+	<section class="section section--inxt-faciliting">
 		<div class="container">
 			<p class="section__heading">Facilitating our services.</p>
 			<div class="section__content">
@@ -78,7 +74,7 @@
 		</div>
 	</section>
 
-	<section class="section section--inxt-xcore">
+	<section class="section section--inxt-exchange">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm">
@@ -86,7 +82,26 @@
 					<div class="section__content">
 						<p>You can buy INXT at exchanges, such as CoinExchange, Yobit, IDEX, Etherdelta and Mercatox, with more exchanges available soon. There are 629,610 INXT currently circulating and this number is fixed as INXT is not mineable. INXT is an ERC20 token and can be stored in any Ethereum compatible wallet.</p>
 					</div>
+					<div class="section__footer">
+						<a class="btn btn-default"><img src="/img/logos/coinexchange.png" height="27" class="img-fluid"></a>
+						<a class="btn btn-default"><img src="/img/logos/idex.png" height="27"></a>
+						<a class="btn btn-default"><img src="/img/logos/yobit.png" height="27"></a>
+					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="section section--inxt-buy">
+		<div class="container">
+			<p class="section__heading">Buy INXT.</p>
+			<div class="section__content">
+				<p class="section__instruction">Select payment method</p>
+				<a class="btn btn-default"><img src="/img/logos/bitcoin.png" height="62"></a>
+				<a class="btn btn-default"><img src="/img/logos/litecoin.png" height="62"></a>
+				<a class="btn btn-default"><img src="/img/logos/ethereum.png" height="62"></a>
 			</div>
 		</div>
 	</section>

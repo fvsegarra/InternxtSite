@@ -24,23 +24,23 @@
 		<div class="container">
 			<div class="row">
 				<div class="referenceContainer col-sm text-center">
-					<img src="assets/img/logos/entrepreneur.png" height="40">
+					<img src="/img/logos/entrepreneur.png" height="40">
 				</div>
 				<div class="referenceContainer col-sm text-center">
-					<img src="assets/img/logos/investing.com.png" height="40">
+					<img src="/img/logos/investing.com.png" height="40">
 				</div>
 				<div class="referenceContainer col-sm text-center">
-					<img src="assets/img/logos/yahoo.png" height="40">
+					<img src="/img/logos/yahoo.png" height="40">
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="section section--home-xcloud">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-sm offset-md-6">
-					<img class="section__icon" src="assets/img/logos/xcloud.png" height="59">
+					<img class="section__icon" src="/img/logos/xcloud.png" height="59">
 					<p class="section__label">X Cloud</p>
 					<p class="section__heading">A Step-forward for the cloud.</p>
 					<p class="section__subheading">A cloud platform built with total security and privacy.</p>
@@ -50,15 +50,11 @@
 	</section>
 
 	<section class="section section--home-xcore">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm">
-					<img class="section__icon" src="assets/img/logos/xcore.png" height="59">
-					<p class="section__label">X Core</p>
-					<p class="section__heading">Your data. In your hands.</p>
-					<p class="section__subheading">Enabling hosts to store and transfer data.</p>
-				</div>
-			</div>
+		<div class="container">
+			<img class="section__icon" src="/img/logos/xcore.png" height="59">
+			<p class="section__label">X Core</p>
+			<p class="section__heading">Your data. In your hands.</p>
+			<p class="section__subheading">Enabling hosts to store and transfer data.</p>
 		</div>
 	</section>
 

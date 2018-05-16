@@ -1,14 +1,46 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
 @import "variables";
+@import "utilities";
+@import "responsive-rules";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "navbar";
+@import "footer";
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+body{
+	background: $body-bg;
 }
+
+.pageHeader{
+
+	padding: 72px 0;
+
+	&__heading{
+		font-size: 85px;
+		font-weight: bold;
+		line-height: 0.94;
+		letter-spacing: -3.8px;
+	}
+
+	&__subheading{
+		font-size: 25px;
+		line-height: 1.56;
+		letter-spacing: -0.4px;
+	}
+
+}
+
+.section{
+
+	&__footer{
+		margin-top: 56px;
+	}
+
+}
+
+footer{
+	text-align: center;
+}
+
+
+// Page-specific styles
+@import "home";
+@import "inxt";

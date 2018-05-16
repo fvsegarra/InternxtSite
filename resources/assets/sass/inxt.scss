@@ -1,42 +1,146 @@
-.inxtDatum {
-    &__label{
-        font-size: 16px;
-        color: #666666;
-    }
+#page-token{
 
-    &__point{
-        font-size: 82px;
-        letter-spacing: -3.9px;
-    }
-}
+    .inxtDatum {
 
+        margin-bottom: 34px;
 
-.section{
+        &__label{
+            color: #666666;
+            font-size: 16px;
+            margin: 0;
+        }
 
-    margin: 0;
-    margin-bottom: 89px;
+        &__point{
 
-    &__heading{
-        font-size: 60px;
-        font-weight: bold;
-        line-height: 0.87;
-        letter-spacing: -1.5px;
-    }
+            font-size: 82px;
+            letter-spacing: -3.9px;
+            margin: 0;
 
-    &__content{
+            // Large font size causing silly top gap?
+            position: relative;
+            top: -20px;
 
-        p{
-
-            font-size: 22px;
-            line-height: 1.45;
-            letter-spacing: -0.2px;
-
-            &:last-of-type{
-                margin-bottom: 0
+            &--positive{
+                color: #15d157;
             }
 
         }
 
+        &__measure{
+            font-size: 49px;
+        }
+
+        &__sign{
+            font-size: 62px;
+        }
+
+    }
+
+
+    .section{
+
+        margin-bottom: 89px;
+        margin: 0;
+
+        &__heading{
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: -1.5px;
+            line-height: 0.87;
+        }
+
+        &__content{
+
+            p{
+
+                font-size: 22px;
+                letter-spacing: -0.2px;
+                line-height: 1.45;
+
+                &:last-of-type{
+                    margin-bottom: 0
+                }
+
+            }
+
+        }
+
+        &--inxt-data{
+
+            margin-bottom: 130px;
+            margin-top: 52px;
+
+            .row:nth-child(1) .inxtDatum{
+                border-bottom: 2px solid black;
+            }
+
+        }
+
+        &--inxt-faciliting{
+
+            .section__content{
+                max-width: 786px;
+            }
+
+        }
+
+        &--inxt-exchange{
+
+            .section__content{
+                max-width: 786px;
+            }
+
+            .btn{
+
+                background: #f5f5f5;
+                border-radius: 3px;
+                height: 50px;
+                margin-right: 20px;
+                width: 203px;
+
+                &:last-of-type{
+                    margin-right: 0;
+                }
+
+            }
+
+        }
+
+        &--inxt-buy{
+
+            padding-bottom: 125px;
+
+            .section__content{
+                max-width: 786px;
+            }
+
+            .btn{
+                border-radius: 11.2px;
+                border: solid 2px #d9d9d9;
+                height: 102px;
+                padding: 21px 0 19px;
+                width: 125px;
+            }
+
+            p.section__instruction{
+                font-size: 35px;
+                font-weight: bold;
+                letter-spacing: -0.7px;
+                margin-bottom: 35px;
+                margin-top: 47px;
+            }
+
+        }
+
+    }
+
+    hr{
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
+        border: none;
+        height: 1px;
+        margin-bottom: 93px;
+        margin-top: 74px;
+        max-width: 1440px;
     }
 
 }

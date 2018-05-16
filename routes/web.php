@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'index');
+Route::view('token', 'token');
+Route::view('cloud', 'cloud');
+Route::view('core', 'core');
+Route::view('leadership', 'leadership');
+Route::view('timeline', 'timeline');
+Route::view('resources', 'resources');
+Route::view('terms', 'terms');
+Route::view('privacy', 'privacy');
