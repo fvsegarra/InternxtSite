@@ -1,8 +1,62 @@
+$colour-primary: green;
+$colour-secondary: yellow;
+$body-bg: white;
+$transition-default: 0.3s;
+$font-family-sans-serif: CircularStd, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-// Body
-$body-bg: #f5f8fa;
+@font-face {
+	font-family: 'Circular Std Black';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Black'), url('/assets/fonts/CircularStd-Black.woff') format('woff');
+}
 
-// Typography
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+@font-face {
+	font-family: 'Circular Std Book';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Book'), url('/assets/fonts/CircularStd-Book.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Circular Std Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Medium'), url('/assets/fonts/CircularStd-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Circular Std Black Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Black Italic'), url('/assets/fonts/CircularStd-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Circular Std Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Bold'), url('/assets/fonts/CircularStd-Bold.woff') format('woff');
+}
+
+
+@font-face {
+	font-family: 'Circular Std Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Bold Italic'), url('/assets/fonts/CircularStd-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Circular Std Book Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Book Italic'), url('/assets/fonts/CircularStd-BookItalic.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Circular Std Medium Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Circular Std Medium Italic'), url('/assets/fonts/CircularStd-MediumItalic.woff') format('woff');
+}

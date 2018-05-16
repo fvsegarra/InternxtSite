@@ -1,0 +1,29 @@
+@include whenLargerThan('small-screen'){
+
+	@include sticky-footer(
+		$footer-height: 98px,
+		$wrapper-selector: '#pageContainer',
+		$container-selector: '#pageContent',
+		$footer-selector: '.pageFooter'
+	);
+
+}
+
+.pageFooter{
+
+	background-color: #16181a;
+	color: #707273;
+	padding: 42px;
+
+	a.nav-link {
+
+		font-size: 12px;
+		line-height: 2.13;
+		color: #707273;
+		transition: color $transition-default;
+
+		&:not(.disabled):hover{
+			color: #cbcccd;
+		}
+	}
+}

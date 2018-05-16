@@ -1,0 +1,42 @@
+.inxtDatum {
+    &__label{
+        font-size: 16px;
+        color: #666666;
+    }
+
+    &__point{
+        font-size: 82px;
+        letter-spacing: -3.9px;
+    }
+}
+
+
+.section{
+
+    margin: 0;
+    margin-bottom: 89px;
+
+    &__heading{
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 0.87;
+        letter-spacing: -1.5px;
+    }
+
+    &__content{
+
+        p{
+
+            font-size: 22px;
+            line-height: 1.45;
+            letter-spacing: -0.2px;
+
+            &:last-of-type{
+                margin-bottom: 0
+            }
+
+        }
+
+    }
+
+}

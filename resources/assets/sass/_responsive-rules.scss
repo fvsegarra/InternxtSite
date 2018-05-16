@@ -1,0 +1,37 @@
+$breakpoints: (
+	'iphone5-portrait'  : 320px,
+	'iphone6-portrait'  : 375px,
+	'nexus-5-landscape' : 411px,
+	'iphone5-landscape' : 568px,
+	'iphone6-landscape' : 667px,
+
+	'small-screen'      : 767px,
+	'medium-screen'     : 992px,
+	'large-screen'      : 1200px
+);
+
+@mixin whenLargerThan($breakpoint) {
+	
+	// Retrieve the value from the key
+	$value: map-get($breakpoints, $breakpoint);
+
+	@if $value != null {
+		
+		// Prints a media query based on the value
+		@media (min-width: ($value+1)) {
+			@content;
+		}
+		
+	}
+
+	// If the key doesn't exist in the map
+	@else {
+
+		// Prints a media query based on the value
+		@media (min-width: $breakpoint) {
+			@content;
+		}
+
+	}
+
+}
