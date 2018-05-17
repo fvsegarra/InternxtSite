@@ -76,40 +76,6 @@
 
         padding: 35px 0;
 
-        &__icon{
-
-            max-height: 59px;
-
-            @include whenLargerThan('small-screen'){
-                background-color: #ffffff;
-                border: solid 1.2px #dbdbdb;
-                padding: 5px;
-                border-radius: 4px;
-                max-height: 40px;
-            }
-
-        }
-
-        &__label{
-
-            font-size: 50px;
-            font-weight: bold;
-            line-height: 0.94;
-            letter-spacing: -2.2px;
-            color: #000000;
-            margin-top: 20px;
-
-            @include whenLargerThan('small-screen'){
-                margin-top: 10px;
-                font-size: 24.8px;
-                font-weight: 500;
-                line-height: 1.79;
-                letter-spacing: -0.9px;
-                color: #181818;
-            }
-
-        }
-
         &__heading{
 
             display: none;
@@ -153,44 +119,7 @@
 
         }
 
-        &--home-xcloud,
-        &--home-xcore{
 
-            background: #fafafa;
-
-            & > .container{
-
-                height: 509px;
-                padding: 73px;
-                text-align: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position-y: bottom;
-
-                @include whenLargerThan('small-screen'){
-                    text-align: left;
-                    height: 398px;
-                    padding: 40px;
-                    background-position-y: center;
-                }
-
-            }
-
-        }
-
-        &--home-xcloud > .container{
-            background-image: url(/img/mockups/homepage-xcloud.png);
-        }
-
-        &--home-xcore > .container{
-
-            background-image: url(/img/mockups/homepage-xcore.png);
-
-            @include whenLargerThan('small-screen'){
-                background-position: right center;
-            }
-
-        }
 
     }
 

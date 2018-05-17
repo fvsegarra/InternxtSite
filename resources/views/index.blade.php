@@ -36,7 +36,7 @@
 		</div>
 	</section>
 
-	<section class="section section--home-xcloud">
+	<section class="section section--preview-xcloud">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm offset-md-6">
@@ -49,7 +49,7 @@
 		</div>
 	</section>
 
-	<section class="section section--home-xcore">
+	<section class="section section--preview-xcore">
 		<div class="container">
 			<img class="section__icon" src="/img/logos/xcore.png" height="59">
 			<p class="section__label">X Core</p>
