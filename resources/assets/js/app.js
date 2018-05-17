@@ -7,16 +7,16 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+$('#xcloudFeaturesTab .nav-link').click((e) => {
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+	console.debug('X Cloud features tab clicked');
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+	let originalClass = 'featurePreview';
 
-const app = new Vue({
-    el: '#app'
+	var tag = originalClass + '--' + $(e.target).attr('href').replace("#", "");
+
+	console.debug(tag);
+
+	$('.featurePreview').attr('class', originalClass + ' ' + tag);
+
 });

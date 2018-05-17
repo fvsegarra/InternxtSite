@@ -80,19 +80,19 @@
 				</div>
 			</div>
 
-			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<ul class="nav nav-tabs" id="xcloudFeaturesTab" role="tablist">
 				<li class="nav-item">
 					<a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" id="file-sharing-tab" data-toggle="tab" href="#file-sharing" role="tab" aria-controls="file-sharing" aria-selected="false">File Sharing</a>
+					<a class="nav-link" id="file-sharing-tab" data-toggle="tab" href="#file-sharing" role="tab" aria-controls="file-sharing" aria-selected="false"png">File Sharing</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" id="folders-tab" data-toggle="tab" href="#folders" role="tab" aria-controls="folders" aria-selected="false">Folders</a>
 				</li>
 			</ul>
 
-			<div class="tab-content" id="myTabContent">
+			<div class="tab-content" id="xcloudFeaturesTabContent">
 				<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">The dashboard is your X Cloud homescreen. All your options such as, search, upload, new folder, download, delete, and file sharing are spread across the top of your home screen to allow for a more limitless workflow and to make using your cloud easier, without having to click multiple times to get to where you want to be. So you can focus on the things that matter.</div>
 				<div class="tab-pane fade" id="file-sharing" role="tabpanel" aria-labelledby="file-sharing-tab">File Sharing</div>
 				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">Folder</div>
@@ -121,6 +121,15 @@
 			</div>{{-- /.col-sm-6 --}}
 
 		</div>{{-- /.row --}}
+	</section>
+
+	<section class="section section--preview-xcore">
+		<div class="container">
+			<img class="section__icon" src="/img/logos/xcore.png" height="59">
+			<p class="section__label">X Core</p>
+			<p class="section__heading">Your data. In your hands.</p>
+			<p class="section__subheading">Enabling hosts to store and transfer data.</p>
+		</div>
 	</section>
 
 @endsection

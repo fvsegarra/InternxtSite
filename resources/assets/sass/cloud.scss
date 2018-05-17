@@ -178,19 +178,70 @@
                 }
 
                 .featurePreview{
-                    display: block;
-                    height: 425px;
-                    margin: 0 auto;
-                    position: relative;
-                    top: 125px;
-                    right: 30px;
-                    width: 680px;
+
                     background:{
                         image: url('/img/mockups/xcloud/dashboard.png');
                         repeat: no-repeat;
                         size: contain;
                     }
+                    display: block;
+                    height: 425px;
+                    margin: 0 auto;
+                    position: relative;
+                    right: 30px;
+                    top: 125px;
+                    width: 680px;
+
+                    &--dashboard{
+                        background-image: url('/img/mockups/xcloud/dashboard.png');
+                    }
+
+                    &--file-sharing{
+                        background-image: url('/img/mockups/xcloud/file-sharing.png');
+                    }
+
+                    &--folders{
+                        background-image: url('/img/mockups/xcloud/folders.png');
+                    }
+
                 }
+
+            }
+
+            .nav-tabs{
+
+                border-bottom: 1px solid #edc0d5;
+                margin: 0 auto;
+                max-width: 348px;
+
+                .nav-link{
+
+                    border: none;
+                    border-bottom: 1.6px solid transparent;
+                    color: #e08db4;
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: -0.2px;
+
+                    &.active{
+                        background: none;
+                        border: none;
+                        border-bottom: 1.6px solid #e92882;
+                        color: #e92882;
+                    }
+
+                    &:hover,
+                    &:focus{
+                        border-bottom-color: #e08db4;
+                    }
+
+                }
+
+            }
+
+            .tab-content{
+                margin: 40px auto 0;
+                max-width: 779px;
             }
 
         }
