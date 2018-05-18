@@ -4,7 +4,7 @@
 
 @section('navbar-classes', 'navbar-light')
 
-@section('pageTitle', 'Core Team')
+@section('pageTitle', 'Team')
 
 @section('body')
 
