@@ -2,7 +2,7 @@
 
 @section('pageID', 'cloud')
 
-@section('navbar-classes', 'navbar-light')
+@section('navbar-classes', 'navbar-light navbar-xcloud')
 
 @section('pageTitle', 'X Cloud')
 

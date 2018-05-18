@@ -16,7 +16,8 @@
             <div class="container">
 
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="/img/logos/internxt_white.png" height="31">
+                    <img src="/img/logos/internxt_light.png" height="31" class="mainLogo mainLogo--light">
+                    <img src="/img/logos/internxt_dark.png" height="31" class="mainLogo mainLogo--dark">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
