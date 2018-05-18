@@ -1,0 +1,79 @@
+#page-timeline{
+
+    .section{
+
+        &--timeline{
+
+            padding-top: 72px;
+
+            .section__heading{
+                font-size: 85px;
+                font-weight: bold;
+                letter-spacing: -3.8px;
+                line-height: 0.94;
+                margin-bottom: 90px;
+            }
+
+        }
+
+    }
+
+    .subsection{
+
+        &__label{
+            font-size: 26px;
+            font-weight: 500;
+            letter-spacing: -0.1px;
+            line-height: 1.88;
+            margin-bottom: 0;
+        }
+
+        &__heading{
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: -1.3px;
+            line-height: 1.09;
+        }
+
+        &__content{
+            font-size: 20px;
+            letter-spacing: -0.1px;
+            line-height: 1.55;
+            max-width: 385px;
+        }
+
+        &__status{
+
+            border-radius: 3.2px;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.84;
+            max-width: 227px;
+            padding: 10px 0;
+            text-align: center;
+
+            &--upcoming{
+                background-color: #a1c2f9;
+            }
+
+            &--in-progress{
+                background-color: #4385f4;
+            }
+
+            &--published{
+                background-color: #1b1d1f;
+            }
+
+        }
+    }
+
+    hr{
+        max-width: 1440px;
+        margin: 65px auto;
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
+        border: none;
+        height: 1px;
+    }
+
+}
