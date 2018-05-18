@@ -1,0 +1,57 @@
+#page-resources{
+
+	.section{
+		padding-top: 72px;
+	}
+
+	.section__heading{
+		font-size: 85px;
+		font-weight: bold;
+		line-height: 0.94;
+		letter-spacing: -3.8px;
+		margin-bottom: 120px;
+	}
+
+	.subsection{
+
+		&__heading{
+			font-size: 45px;
+			font-weight: bold;
+			letter-spacing: -1.3px;
+			line-height: 1.09;
+		}
+
+		&__content{
+			max-width: 346px;
+			font-size: 20px;
+			line-height: 1.55;
+			letter-spacing: -0.1px;
+		}
+
+		&__btn{
+
+			border-radius: 3.6px;
+			color: white;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 1.56;
+  			background-color: #1b1d1f;
+  			max-width: 232px;
+  			padding: 14px;
+
+  			&:hover,
+  			&:focus{
+  				background: #323639;
+  				text-decoration: none;
+  			}
+		}
+
+	}
+
+	hr{
+		background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
+		height: 1px;
+  		border: none;
+	}
+
+}
