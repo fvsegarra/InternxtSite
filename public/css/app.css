@@ -81,33 +81,6 @@
   color: #e9eaec;
 }
 
-@media (min-width: 768px) {
-  html,
-  body {
-    height: 100%;
-  }
-
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
-
-  #pageContainer {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin-bottom: -98px;
-  }
-
-  #pageContainer #pageContent {
-    padding: 0 0 98px 0;
-  }
-
-  .pageFooter {
-    height: 98px;
-  }
-}
-
 .pageFooter {
   background-color: #16181a;
   color: #707273;

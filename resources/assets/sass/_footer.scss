@@ -1,14 +1,3 @@
-@include whenLargerThan('small-screen'){
-
-	@include sticky-footer(
-		$footer-height: 98px,
-		$wrapper-selector: '#pageContainer',
-		$container-selector: '#pageContent',
-		$footer-selector: '.pageFooter'
-	);
-
-}
-
 .pageFooter{
 
 	background-color: #16181a;
