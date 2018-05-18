@@ -15,7 +15,7 @@
         <nav class="navbar @yield('navbar-classes') navbar-expand-lg">
             <div class="container">
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{ route('home') }}">
                     <img src="/img/logos/internxt_white.png" height="31">
                 </a>
 
@@ -26,22 +26,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto justify-content-between w-100">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">X Cloud</a>
+                            <a class="nav-link" href="{{ route('cloud') }}">X Cloud</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">X Core</a>
+                            <a class="nav-link" href="{{ route('core') }}">X Core</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">X Token</a>
+                            <a class="nav-link" href="{{ route('token') }}">X Token</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Leadership</a>
+                            <a class="nav-link" href="{{ route('team') }}">Leadership</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Timeline</a>
+                            <a class="nav-link" href="{{ route('timeline') }}">Timeline</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
+                            <a class="nav-link" href="{{ route('resources') }}">Resources</a>
                         </li>
                     </ul>
                 </div>
