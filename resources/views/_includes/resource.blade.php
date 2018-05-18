@@ -2,13 +2,13 @@
 	<p class="subsection__heading">{{ $title }}</p>
 	<div class="row">
 
-		<div class="col-sm-9">
+		<div class="col-md-7 col-lg-8">
 			<p class="subsection__content">{{ $content }}</p>
-		</div>{{-- /.col-sm-9 --}}
+		</div>
 
-		<div class="col-sm-3">
+		<div class="col-md text-right">
 			<a class="subsection__btn" href="{{ $btnLink }}">{{ $btnText }}</a>
-		</div>{{-- /.col-sm-3 --}}
+		</div>
 
 	</div>{{-- /.row --}}
 </div>{{-- /.subsection --}}
