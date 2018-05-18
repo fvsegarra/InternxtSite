@@ -115,6 +115,18 @@
 
                 &--reimagined{
                     background-image: linear-gradient(137deg, #eee0ff, #e2c9ff);
+
+                    // Do some rather clever maths (if I do say so myself)
+                    // Half the viewport width minus half the width of a standard .container
+                    @include whenLargerThan('small-screen'){
+                        padding-left: calc(50vw - 360px);
+                    }
+                    @include whenLargerThan('medium-screen'){
+                        padding-left: calc(50vw - 480px);
+                    }
+                    @include whenLargerThan('large-screen'){
+                        padding-left: calc(50vw - 570px);
+                    }
                 }
 
                 &--encryption{

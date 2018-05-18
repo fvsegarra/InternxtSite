@@ -33,25 +33,25 @@
 		<div class="container">
 			<p class="section__heading">Advanced architecture that brings a new level of security.</p>
 		</div>
-			<div class="row no-gutters">
-				<div class="col-sm-6">
-					<div class="subsection subsection--reimagined">
-						<div class="container-fluid">
-							<p class="subsection__heading">Security reimagined.</p>
-							<p class="subsection__content">We've reimagined cloud storage on a security level by solving major problems with current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies. X Cloud removes this destructivity of privacy by giving users total control of their personal data.</p>
-						</div>{{-- /.container-fluid --}}
-					</div>
-				</div>
-
-				<div class="col-sm-6">
-					<div class="subsection subsection--encryption">
-						<div class="container-fluid">
-							<p class="subsection__heading">Advanced Encryption.</p>
-							<p class="subsection__content">Your files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. This means your personal data is apart of the distributed network and no longer sitting in one central location so there is almost no conceivable way for unauthorized third parties to access your data.</p>
-						</div>{{-- /.container-fluid --}}
-					</div>
+		<div class="row no-gutters">
+			<div class="col-sm-6">
+				<div class="subsection subsection--reimagined">
+					<div class="container-fluid">
+						<p class="subsection__heading">Security reimagined.</p>
+						<p class="subsection__content">We've reimagined cloud storage on a security level by solving major problems with current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies. X Cloud removes this destructivity of privacy by giving users total control of their personal data.</p>
+					</div>{{-- /.container-fluid --}}
 				</div>
 			</div>
+
+			<div class="col-sm-6">
+				<div class="subsection subsection--encryption">
+					<div class="container-fluid">
+						<p class="subsection__heading">Advanced Encryption.</p>
+						<p class="subsection__content">Your files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. This means your personal data is apart of the distributed network and no longer sitting in one central location so there is almost no conceivable way for unauthorized third parties to access your data.</p>
+					</div>{{-- /.container-fluid --}}
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="section section--cloud-plans">
