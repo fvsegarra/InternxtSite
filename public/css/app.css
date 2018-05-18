@@ -54,6 +54,27 @@
   src: local("Circular Std Medium Italic"), url("/fonts/CircularStd-MediumItalic.woff") format("woff");
 }
 
+@media (min-width: 768px) {
+  #page-cloud .section--cloud-architecture .subsection--reimagined,
+  #page-cloud .section--cloud-everywhere {
+    padding-left: calc(50vw - 360px);
+  }
+}
+
+@media (min-width: 993px) {
+  #page-cloud .section--cloud-architecture .subsection--reimagined,
+  #page-cloud .section--cloud-everywhere {
+    padding-left: calc(50vw - 480px);
+  }
+}
+
+@media (min-width: 1201px) {
+  #page-cloud .section--cloud-architecture .subsection--reimagined,
+  #page-cloud .section--cloud-everywhere {
+    padding-left: calc(50vw - 570px);
+  }
+}
+
 .navbar {
   background-color: #16181a;
 }
@@ -450,26 +471,26 @@ footer {
   background-image: linear-gradient(137deg, #eee0ff, #e2c9ff);
 }
 
+#page-cloud .section--cloud-architecture .subsection--encryption {
+  background-image: linear-gradient(136deg, #e9d9ff, #efcffa);
+}
+
 @media (min-width: 768px) {
-  #page-cloud .section--cloud-architecture .subsection--reimagined {
-    padding-left: calc(50vw - 360px);
+  #page-cloud .section--cloud-architecture .subsection--encryption {
+    padding-left: 72px;
   }
 }
 
 @media (min-width: 993px) {
-  #page-cloud .section--cloud-architecture .subsection--reimagined {
-    padding-left: calc(50vw - 480px);
+  #page-cloud .section--cloud-architecture .subsection--encryption {
+    padding-left: 100px;
   }
 }
 
 @media (min-width: 1201px) {
-  #page-cloud .section--cloud-architecture .subsection--reimagined {
-    padding-left: calc(50vw - 570px);
+  #page-cloud .section--cloud-architecture .subsection--encryption {
+    padding-left: 136px;
   }
-}
-
-#page-cloud .section--cloud-architecture .subsection--encryption {
-  background-image: linear-gradient(136deg, #e9d9ff, #efcffa);
 }
 
 #page-cloud .section--cloud-plans {
@@ -579,7 +600,8 @@ footer {
 
 #page-cloud .section--cloud-everywhere {
   background-image: linear-gradient(122deg, #ffe6ec, #fce6ec);
-  padding: 60.8px 0;
+  padding-top: 76px;
+  padding-bottom: 76px;
 }
 
 #page-cloud .section--cloud-everywhere .section__heading {

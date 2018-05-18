@@ -115,22 +115,20 @@
 
                 &--reimagined{
                     background-image: linear-gradient(137deg, #eee0ff, #e2c9ff);
-
-                    // Do some rather clever maths (if I do say so myself)
-                    // Half the viewport width minus half the width of a standard .container
-                    @include whenLargerThan('small-screen'){
-                        padding-left: calc(50vw - 360px);
-                    }
-                    @include whenLargerThan('medium-screen'){
-                        padding-left: calc(50vw - 480px);
-                    }
-                    @include whenLargerThan('large-screen'){
-                        padding-left: calc(50vw - 570px);
-                    }
+                    @extend %alignWithoutContainer;
                 }
 
                 &--encryption{
                     background-image: linear-gradient(136deg, #e9d9ff, #efcffa);
+                    @include whenLargerThan('small-screen'){
+                        padding-left: 72px;
+                    }
+                    @include whenLargerThan('medium-screen'){
+                        padding-left: 100px;
+                    }
+                    @include whenLargerThan('large-screen'){
+                        padding-left: 136px;
+                    }
                 }
 
             }
@@ -261,7 +259,9 @@
         &--cloud-everywhere{
 
             background-image: linear-gradient(122deg, #ffe6ec, #fce6ec);
-            padding: 60.8px 0;
+            padding-top: 76px;
+            padding-bottom: 76px;
+            @extend %alignWithoutContainer;
 
             .section__heading{
                 color: #613b4b;

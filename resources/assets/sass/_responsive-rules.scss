@@ -11,17 +11,17 @@ $breakpoints: (
 );
 
 @mixin whenLargerThan($breakpoint) {
-	
+
 	// Retrieve the value from the key
 	$value: map-get($breakpoints, $breakpoint);
 
 	@if $value != null {
-		
+
 		// Prints a media query based on the value
 		@media (min-width: ($value+1)) {
 			@content;
 		}
-		
+
 	}
 
 	// If the key doesn't exist in the map
@@ -33,5 +33,21 @@ $breakpoints: (
 		}
 
 	}
+
+}
+
+%alignWithoutContainer{
+
+	// Do some rather clever maths (if I do say so myself)
+    // Half the viewport width minus half the width of a standard .container
+    @include whenLargerThan('small-screen'){
+        padding-left: calc(50vw - 360px);
+    }
+    @include whenLargerThan('medium-screen'){
+        padding-left: calc(50vw - 480px);
+    }
+    @include whenLargerThan('large-screen'){
+        padding-left: calc(50vw - 570px);
+    }
 
 }
