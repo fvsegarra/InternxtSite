@@ -711,6 +711,30 @@ footer {
   width: 134px;
 }
 
+#page-core .section--core-design {
+  background-color: #fafafa;
+  text-align: center;
+  padding: 134px 0;
+}
+
+#page-core .section--core-design .section__heading {
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: -4.3px;
+  line-height: 0.89;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+#page-core .section--core-design .section__subheading {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  line-height: 1.38;
+  max-width: 726px;
+  margin: 24px auto;
+}
+
 #page-token .inxtDatum {
   margin-bottom: 34px;
 }

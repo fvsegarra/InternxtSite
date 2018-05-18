@@ -152,6 +152,32 @@
 
         }
 
+        &--core-design{
+
+            background-color: #fafafa;
+            text-align: center;
+            padding: 134px 0;
+
+            .section__heading{
+                font-size: 90px;
+                font-weight: bold;
+                letter-spacing: -4.3px;;
+                line-height: 0.89;
+                max-width: 880px;
+                margin: 0 auto;
+            }
+
+            .section__subheading{
+                font-size: 26px;
+                font-weight: 500;
+                letter-spacing: -0.4px;
+                line-height: 1.38;
+                max-width: 726px;
+                margin: 24px auto;
+            }
+
+        }
+
     }
 
 }

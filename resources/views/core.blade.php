@@ -117,6 +117,34 @@
 		</div>
 	</section>
 
+	<section class="section section--core-design">
+		<div class="container">
+			<p class="section__heading">Design that’s as simple as it is beautiful.</p>
+			<p class="section__subheading">Functionality and complexity were always kept in a tight balance, so that using this new techology feels second nature, even if you never have before.</p>
+
+			<div class="section__content">
+				<div class="featurePreviewContainer">
+					<div class="featurePreview">
+					</div>
+				</div>
+
+				<ul class="nav nav-tabs" id="xcloudFeaturesTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="xcloudFeaturesTabContent">
+					<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">The dashboard is your X Cloud homescreen. All your options such as, search, upload, new folder, download, delete, and file sharing are spread across the top of your home screen to allow for a more limitless workflow and to make using your cloud easier, without having to click multiple times to get to where you want to be. So you can focus on the things that matter.</div>
+					<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">Settings</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="section section--preview-xcloud">
 		<div class="container">
 			<div class="row">
