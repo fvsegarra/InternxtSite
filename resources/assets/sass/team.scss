@@ -1,0 +1,104 @@
+#page-team{
+
+    .section{
+
+        .section__heading{
+            font-size: 85px;
+            font-weight: bold;
+            line-height: 0.94;
+            letter-spacing: -3.8px;
+        }
+
+        .section__content{
+            padding-top: 72px;
+        }
+
+        &--team-core{
+            padding-top: 72px;
+        }
+
+        &--team-partners{
+
+            .teamMember{
+                height: 300px;
+            }
+
+        }
+
+    }
+
+    .teamMember{
+
+        border-radius: 4px;
+        height: 434px;
+        margin-bottom: 60px;
+        overflow: hidden;
+        background-color: #16181a;
+
+        &--blank{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--partner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7f7f7;
+        }
+
+        &__text{
+            color: white;
+            padding: 22px 0 19px 0;
+            text-align: center;
+        }
+
+        &__name{
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 0.73;
+            margin-bottom: 12px;
+        }
+
+        &__position{
+            color: #afb1b3;
+            font-size: 15px;
+            letter-spacing: -0.3px;
+            line-height: 1.05;
+            margin-bottom: 0;
+        }
+
+        &__bio{
+            display: none;
+        }
+
+        &__heading{
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 0.53;
+            margin-bottom: 15px;
+        }
+
+        &__subheading{
+            color: #afb1b3;
+            font-size: 18px;
+            letter-spacing: -0.4px;
+            line-height: 0.87;
+            margin-bottom: 40px;
+        }
+
+        &__btn{
+            background-color: #2e2f30;
+            color: white;
+        }
+
+    }
+
+    hr{
+        border-top: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
+        max-width: 1440px;
+        margin: 156px auto 105px auto;
+    }
+
+}

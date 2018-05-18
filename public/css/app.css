@@ -826,3 +826,106 @@ footer {
   max-width: 1440px;
 }
 
+#page-team .section .section__heading {
+  font-size: 85px;
+  font-weight: bold;
+  line-height: 0.94;
+  letter-spacing: -3.8px;
+}
+
+#page-team .section .section__content {
+  padding-top: 72px;
+}
+
+#page-team .section--team-core {
+  padding-top: 72px;
+}
+
+#page-team .section--team-partners .teamMember {
+  height: 300px;
+}
+
+#page-team .teamMember {
+  border-radius: 4px;
+  height: 434px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  background-color: #16181a;
+}
+
+#page-team .teamMember--blank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#page-team .teamMember--partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f7f7f7;
+}
+
+#page-team .teamMember__text {
+  color: white;
+  padding: 22px 0 19px 0;
+  text-align: center;
+}
+
+#page-team .teamMember__name {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 0.73;
+  margin-bottom: 12px;
+}
+
+#page-team .teamMember__position {
+  color: #afb1b3;
+  font-size: 15px;
+  letter-spacing: -0.3px;
+  line-height: 1.05;
+  margin-bottom: 0;
+}
+
+#page-team .teamMember__bio {
+  display: none;
+}
+
+#page-team .teamMember__heading {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 0.53;
+  margin-bottom: 15px;
+}
+
+#page-team .teamMember__subheading {
+  color: #afb1b3;
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  line-height: 0.87;
+  margin-bottom: 40px;
+}
+
+#page-team .teamMember__btn {
+  background-color: #2e2f30;
+  color: white;
+}
+
+#page-team hr {
+  border-top: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
+  max-width: 1440px;
+  margin: 156px auto 105px auto;
+}
+
