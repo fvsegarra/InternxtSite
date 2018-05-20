@@ -180,4 +180,27 @@
 
     }
 
+    .nav-tabs {
+
+        border-bottom-color: #969499;
+        max-width: 225px;
+
+        .nav-link{
+
+            color: #969499;
+
+            &.active{
+                border-bottom: 1.6px solid #6600ff;
+                color: #6600ff;
+            }
+
+            &:hover,
+            &:focus{
+                border-bottom-color: #d1b3ff;
+            }
+
+        }
+
+    }
+
 }

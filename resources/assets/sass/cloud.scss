@@ -218,42 +218,6 @@
 
             }
 
-            .nav-tabs{
-
-                border-bottom: 1px solid #edc0d5;
-                margin: 0 auto;
-                max-width: 348px;
-
-                .nav-link{
-
-                    border: none;
-                    border-bottom: 1.6px solid transparent;
-                    color: #e08db4;
-                    font-size: 18px;
-                    font-weight: bold;
-                    letter-spacing: -0.2px;
-
-                    &.active{
-                        background: none;
-                        border: none;
-                        border-bottom: 1.6px solid #e92882;
-                        color: #e92882;
-                    }
-
-                    &:hover,
-                    &:focus{
-                        border-bottom-color: #e08db4;
-                    }
-
-                }
-
-            }
-
-            .tab-content{
-                margin: 40px auto 0;
-                max-width: 779px;
-            }
-
         }
 
         &--cloud-everywhere{
