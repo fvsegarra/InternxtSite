@@ -157,6 +157,10 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(31, 40, 49)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+.navbar.navbar-xcore {
+  background-color: #2b2b2b;
+}
+
 .pageFooter {
   background-color: #16181a;
   color: #707273;
@@ -964,9 +968,26 @@ footer {
 }
 
 #page-core .pageHeader__heading {
-  font-size: 129.6px;
-  font-weight: 500;
-  letter-spacing: -2.8px;
+  font-size: 69px;
+  font-weight: bold;
+  line-height: 0.96;
+  letter-spacing: -1.9px;
+}
+
+@media (min-width: 1080px) {
+  #page-core .pageHeader__heading {
+    font-size: 104px;
+    font-weight: 500;
+    letter-spacing: -2.2px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-core .pageHeader__heading {
+    font-size: 129.6px;
+    font-weight: 500;
+    letter-spacing: -2.8px;
+  }
 }
 
 #page-core .pageHeader__subheading {
@@ -1004,10 +1025,26 @@ footer {
 }
 
 #page-core .section--core-more-info .section__heading {
-  font-size: 90px;
+  font-size: 46px;
   font-weight: bold;
-  letter-spacing: -4.3px;
-  line-height: 0.89;
+  letter-spacing: -1.3px;
+  line-height: 0.96;
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-more-info .section__heading {
+    font-size: 72px;
+    letter-spacing: -3.4px;
+    line-height: 0.89;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-core .section--core-more-info .section__heading {
+    font-size: 90px;
+    letter-spacing: -4.3px;
+  }
 }
 
 #page-core .section--core-more-info .section__subheading {
@@ -1038,6 +1075,16 @@ footer {
   max-width: 287px;
 }
 
+#page-core .section--core-screenshot .subsection--host {
+  margin-top: 60px;
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-screenshot .subsection--host {
+    margin-top: 0;
+  }
+}
+
 #page-core .section--core-screenshot .section__footer {
   font-size: 30px;
   font-weight: 500;
@@ -1053,12 +1100,27 @@ footer {
 
 #page-core .section--core-beta .section__heading {
   border-top: solid 3px #6600ff;
-  font-size: 58px;
+  font-size: 40px;
   font-weight: bold;
-  letter-spacing: -2.8px;
-  line-height: 0.9;
+  letter-spacing: -1.1px;
+  line-height: 0.95;
   max-width: 804px;
   padding-top: 33px;
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-beta .section__heading {
+    font-size: 46px;
+    line-height: 0.9;
+    letter-spacing: -2.2px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-core .section--core-beta .section__heading {
+    font-size: 58px;
+    letter-spacing: -2.8px;
+  }
 }
 
 #page-core .section--core-beta .section__subheading {
@@ -1100,12 +1162,28 @@ footer {
 }
 
 #page-core .section--core-design .section__heading {
-  font-size: 90px;
+  font-size: 46px;
   font-weight: bold;
-  letter-spacing: -4.3px;
-  line-height: 0.89;
+  letter-spacing: -1.3px;
+  line-height: 0.96;
   max-width: 880px;
   margin: 0 auto;
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-design .section__heading {
+    font-size: 72px;
+    letter-spacing: -3.4px;
+    line-height: 0.89;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-core .section--core-design .section__heading {
+    font-size: 90px;
+    line-height: 0.89;
+    letter-spacing: -4.3px;
+  }
 }
 
 #page-core .section--core-design .section__subheading {

@@ -2,7 +2,7 @@
 
 @section('pageID', 'core')
 
-@section('navbar-classes', 'navbar-light')
+@section('navbar-classes', 'navbar-dark navbar-xcore')
 
 @section('pageTitle', 'X Core')
 
@@ -119,7 +119,10 @@
 
 	<section class="section section--core-design">
 		<div class="container">
-			<p class="section__heading">Design that’s as simple as it is beautiful.</p>
+			<p class="section__heading">
+				<span class="d-block d-md-none">As simple as it is beautiful.</span>
+				<span class="d-none d-md-block">Design that’s as simple as it is beautiful.</span>
+			</p>
 			<p class="section__subheading">Functionality and complexity were always kept in a tight balance, so that using this new techology feels second nature, even if you never have before.</p>
 
 			<div class="section__content">
