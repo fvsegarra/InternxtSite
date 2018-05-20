@@ -6,14 +6,14 @@
         text-align: center;
 
         &__heading{
-            
+
             color: #3b4461;
             font-weight: bold;
             font-size: 69px;
             line-height: 0.96;
             letter-spacing: -3.9px;
 
-            @include whenLargerThan('small-screen'){
+            @include whenLargerThan('medium-screen'){
                 font-size: 85px;
                 letter-spacing: -4.7px;
                 line-height: 1.28;
@@ -22,14 +22,14 @@
         }
 
         &__subheading{
-            
+
             font-size: 24px;
             font-weight: 500;
             line-height: 1.21;
             letter-spacing: -0.3px;
             color: #3b4461;
 
-            @include whenLargerThan('small-screen'){
+            @include whenLargerThan('medium-screen'){
                 font-size: 25px;
                 line-height: 1.56;
                 letter-spacing: -0.4px;
@@ -144,10 +144,10 @@
 
                 &--encryption{
                     background-image: linear-gradient(136deg, #e9d9ff, #efcffa);
-                    @include whenLargerThan('small-screen'){
+                    @include whenLargerThan('medium-screen'){
                         padding-left: 72px;
                     }
-                    @include whenLargerThan('medium-screen'){
+                    @include whenLargerThan('large-screen'){
                         padding-left: 100px;
                     }
                     @include whenLargerThan('large-screen'){

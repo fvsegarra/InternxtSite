@@ -12,7 +12,7 @@
 		letter-spacing: -1.3px;
 		margin-bottom: 97px;
 
-		@include whenLargerThan('small-screen'){
+		@include whenLargerThan('medium-screen'){
 			font-size: 85px;
 			line-height: 0.94;
 			letter-spacing: -3.8px;
@@ -30,7 +30,7 @@
 			letter-spacing: -1px;
 			line-height: 1.06;
 
-			@include whenLargerThan('small-screen'){
+			@include whenLargerThan('medium-screen'){
 				font-size: 45px;
 				letter-spacing: -1.3px;
 				line-height: 1.09;
@@ -44,7 +44,7 @@
 			letter-spacing: -0.2px;
 			margin-bottom: 60px;
 
-			@include whenLargerThan('small-screen'){
+			@include whenLargerThan('medium-screen'){
 				max-width: 346px;
 				font-size: 20px;
 				line-height: 1.55;

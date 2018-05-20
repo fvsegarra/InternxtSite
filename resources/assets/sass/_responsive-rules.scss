@@ -6,8 +6,8 @@ $breakpoints: (
 	'iphone6-landscape' : 667px,
 
 	'small-screen'      : 767px,
-	'medium-screen'     : 992px,
-	'large-screen'      : 1200px
+	'medium-screen'     : 1079px,
+	'large-screen'      : 1439px
 );
 
 @mixin whenLargerThan($breakpoint) {
@@ -40,10 +40,10 @@ $breakpoints: (
 
 	// Do some rather clever maths (if I do say so myself)
     // Half the viewport width minus half the width of a standard .container
-    @include whenLargerThan('small-screen'){
+    @include whenLargerThan('medium-screen'){
         padding-left: calc(50vw - 360px);
     }
-    @include whenLargerThan('medium-screen'){
+    @include whenLargerThan('large-screen'){
         padding-left: calc(50vw - 480px);
     }
     @include whenLargerThan('large-screen'){

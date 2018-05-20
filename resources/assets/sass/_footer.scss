@@ -4,8 +4,20 @@
 	color: #707273;
 	padding: 42px 15px 24px;
 
-	@include whenLargerThan('small-screen'){
+	@include whenLargerThan('medium-screen'){
 		padding: 42px;
+	}
+
+	&__logoContainer{
+
+		@include whenLargerThan(575px) {
+			max-width: 212px;
+		}
+
+		@include whenLargerThan('small-screen') {
+			max-width: 206px;
+		}
+
 	}
 
 	a.nav-link {
@@ -25,11 +37,30 @@
 
 	}
 
+	&__copyright{
+		padding-top: 15px;
+	}
+
 	&__terms a.nav-link,
 	&__privacy a.nav-link{
+
 		font-size: 18px;
-		padding: 0 15px;
-		line-height: 1.2;
+		line-height: 2.07;
+
+		@include whenLargerThan('medium-screen') {
+			font-size: 12px;
+			line-height: 2.13;
+		}
+
+		@include whenLargerThan('large-screen') {
+			font-size: 15px;
+  			line-height: 2.13;
+		}
+
+	}
+
+	.pageFooterNav .nav-link{
+		padding: 8px 8px;
 	}
 
 }

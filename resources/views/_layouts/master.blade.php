@@ -77,24 +77,24 @@
 
                 <div class="row">
 
-                    <div class="col-sm-5">
+                    <div class="col-sm pageFooter__logoContainer">
                         <img src="/img/logos/internxt_light.png" height="42" class="my-5 my-sm-0">
-                    </div>{{-- /.col-sm-5 --}}
+                    </div>{{-- /.col-sm --}}
 
-                    <div class="col-sm-7">
+                    <div class="col-sm">
                         <ul class="nav pageFooterNav d-inline-flex">
                             <li class="nav-item pageFooter__copyright">
                                 <a class="nav-link pt-0 disabled">&copy; {{ date('Y') }} Internxt S.L.U.</a>
                             </li>
                             <li class="nav-item pageFooter__terms">
-                                <a class="nav-link pt-0" href="#">Terms</a>
+                                <a class="nav-link" href="#">Terms</a>
                             </li>
                             <li class="nav-item pageFooter__privacy">
-                                <a class="nav-link pt-0" href="#">Privacy</a>
+                                <a class="nav-link" href="#">Privacy</a>
                             </li>
                             @include('_includes.footer-social-icons')
                         </ul>
-                    </div>{{-- /.col-sm-7 --}}
+                    </div>{{-- /.col-sm --}}
 
                 </div>{{-- /.row --}}
             </div>{{-- /.container --}}
