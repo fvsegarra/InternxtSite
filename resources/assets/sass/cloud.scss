@@ -68,7 +68,10 @@
         &--cloud-beta{
 
             background-color: #bddfff;
-            padding: 124px 0;
+
+            @include whenLargerThan('small-screen'){
+                padding: 124px 0;
+            }
 
             .section__heading{
                 color: #3b4461;
@@ -107,13 +110,19 @@
             padding-top: 99px;
 
             .section__heading{
-                color: #503b61;
-                font-size: 72px;
+
+                font-size: 60px;
                 font-weight: bold;
                 letter-spacing: -3.4px;
-                line-height: 0.81;
-                max-width: 769.6px;
-                padding-bottom: 126.6px;
+                line-height: 0.85;
+                max-width: 335px;
+
+                @include whenLargerThan('medium-screen') {
+                    max-width: 769.6px;
+                    font-size: 72px;
+                    line-height: 0.81;
+                }
+
             }
 
             .subsection{
@@ -166,20 +175,44 @@
             padding-top: 96.2px;
 
             .section__heading{
+
                 color: #513b61;
-                font-size: 72px;
+                font-size: 60px;
                 font-weight: bold;
+                line-height: 0.85;
                 letter-spacing: -3.4px;
-                line-height: 0.81;
-                max-width: 769.6px;
+
+                @include whenLargerThan('medium-screen') {
+                    max-width: 769.6px;
+                    font-size: 72px;
+                    line-height: 0.81;
+                    letter-spacing: -3.4px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 90px;
+                    letter-spacing: -4.2px;
+                }
+
             }
 
             .section__content{
-                color: #443d4a;
-                font-size: 17px;
+
+                font-size: 20px;
+                line-height: 1.34;
                 letter-spacing: -0.2px;
-                line-height: 1.51;
-                max-width: 314.4px;
+                color: #433d4a;
+
+                @include whenLargerThan('medium-screen') {
+                    font-size: 17px;
+                    line-height: 1.51;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 22px;
+                    line-height: 1.45;
+                }
+
             }
 
         }
@@ -191,40 +224,74 @@
             padding-top: 98.4px;
 
             .section__heading{
-                color: #613b4b;
-                font-size: 72px;
+
+                color: #513b61;
+                font-size: 60px;
                 font-weight: bold;
                 letter-spacing: -3.4px;
-                line-height: 0.81;
-                max-width: 769.6px;
+                line-height: 0.85;
+
+                @include whenLargerThan('medium-screen') {
+                    font-size: 72px;
+                    line-height: 0.81;
+                    max-width: 769.6px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 90px;
+                    letter-spacing: -4.2px;
+                    max-width: 962px;
+                }
+
             }
 
             .featurePreviewContainer{
 
                 display: block;
-                height: 680px;
+                min-height: 180px;
                 width: 100%;
                 margin: 0 auto;
                 background:{
                     image: url('/img/mockups/blank-laptop.png');
+                    position: center;
                     repeat: no-repeat;
                     size: contain;
+                }
+
+                @include whenLargerThan('medium-screen') {
+                    height: 680px;
                 }
 
                 .featurePreview{
 
                     background:{
                         image: url('/img/mockups/xcloud/dashboard.png');
+                        position: center;
                         repeat: no-repeat;
                         size: contain;
                     }
                     display: block;
-                    height: 425px;
+                    height: 110px;
+                    // height: 232px;
                     margin: 0 auto;
+                    max-width: 63%;
                     position: relative;
-                    right: 30px;
-                    top: 125px;
+                    top: 42px;
                     width: 680px;
+
+                    @include whenLargerThan('medium-screen') {
+                        height: 380px;
+                        max-width: 100%;
+                        top: 140px;
+                        width: 680px;
+                    }
+
+                    @include whenLargerThan(1200px) {
+                        height: 420px;
+                        max-width: 100%;
+                        top: 116px;
+                        width: 680px;
+                    }
 
                     &--dashboard{
                         background-image: url('/img/mockups/xcloud/dashboard.png');
@@ -247,8 +314,7 @@
         &--cloud-everywhere{
 
             background-image: linear-gradient(122deg, #ffe6ec, #fce6ec);
-            padding-top: 76px;
-            padding-bottom: 76px;
+            padding: 76px 24px;
             @extend %alignWithoutContainer;
 
             .section__heading{
@@ -271,7 +337,20 @@
         }
 
         &--cloud-ipad{
+
+            display: none;
             background-image: linear-gradient(131deg, #ffebf0, #ffedf1);
+
+            @include whenLargerThan('small-screen') {
+                display: block;
+                height: 30.7vw;
+            }
+
+            img{
+                position: absolute;
+                bottom: 0;
+            }
+
         }
 
         &--cloud-iphone{
@@ -303,6 +382,36 @@
 
             }
 
+        }
+
+    }
+
+    .planContainer{
+        margin-top: 60px;
+    }
+
+    .plan{
+
+        margin-bottom: 15px;
+
+        &__quantity{
+            background-color: #e591ed;
+            border-radius: 8.8px;
+            color: white;
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: -0.1px;
+            margin-bottom: 0;
+            padding: 15px 0;
+            text-align: center;
+            width: 130.2px;
+        }
+
+        &__price{
+            color: #402f4d;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: -0.1px;
         }
 
     }

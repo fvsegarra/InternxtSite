@@ -63,7 +63,34 @@
 					<div class="section__content">When signing up to X Cloud you will receive a 7 day free trial period so everyone can experience X Cloud without having to set-up any payment details. If you enjoy the service you can renew your trial for a one-time payment of $1.99, or alternatively upgrade to one of our monthly storage plans.</div>
 				</div>{{-- /.col-sm-6 --}}
 
-				<div class="col-sm-6">
+				<div class="col-sm-6 planContainer">
+
+					<div class="plan row align-items-center">
+						<div class="col">
+							<p class="plan__quantity">10GB</p>
+						</div>
+						<div class="col">
+							<p class="plan__price">$1.99/Month</p>
+						</div>
+					</div>
+
+					<div class="plan row align-items-center">
+						<div class="col">
+							<p class="plan__quantity">100GB</p>
+						</div>
+						<div class="col">
+							<p class="plan__price">$2.50/Month</p>
+						</div>
+					</div>
+
+					<div class="plan row align-items-center">
+						<div class="col">
+							<p class="plan__quantity">1TB</p>
+						</div>
+						<div class="col">
+							<p class="plan__price">$9.99/Month</p>
+						</div>
+					</div>
 
 				</div>{{-- /.col-sm-6 --}}
 
