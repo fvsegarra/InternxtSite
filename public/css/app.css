@@ -54,14 +54,14 @@
   src: local("Circular Std Medium Italic"), url("/fonts/CircularStd-MediumItalic.woff") format("woff");
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
   #page-cloud .section--cloud-architecture .subsection--reimagined,
   #page-cloud .section--cloud-everywhere {
     padding-left: calc(50vw - 360px);
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
   #page-cloud .section--cloud-architecture .subsection--reimagined,
   #page-cloud .section--cloud-everywhere {
     padding-left: calc(50vw - 480px);
