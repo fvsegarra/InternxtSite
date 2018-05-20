@@ -16,8 +16,8 @@
             <div class="container">
 
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="/img/logos/internxt_light.png" height="31" class="mainLogo mainLogo--light">
-                    <img src="/img/logos/internxt_dark.png" height="31" class="mainLogo mainLogo--dark">
+                    <img src="/img/logos/internxt_light.png" height="34" class="mainLogo mainLogo--light">
+                    <img src="/img/logos/internxt_dark.png" height="34" class="mainLogo mainLogo--dark">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,43 +53,47 @@
 
         <footer class="pageFooter">
             <div class="container">
+
+            <ul class="nav d-inline-flex d-sm-none">
+                <li class="nav-item">
+                <a class="nav-link nav-link--social" href="#twitter"><img src="/img/logos/twitter.png" height="25"></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link nav-link--social" href="#medium"><img src="/img/logos/medium.png" height="25"></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link nav-link--social" href="#github"><img src="/img/logos/github.png" height="25"></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link nav-link--social" href="#mail"><img src="/img/logos/mail.png" height="25"></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link nav-link--social" href="#instagram"><img src="/img/logos/instagram.png" height="25"></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link nav-link--social" href="#telegram"><img src="/img/logos/telegram.png" height="25"></a>
+                </li>
+            </ul>
+
                 <div class="row">
 
                     <div class="col-sm-5">
-                        <img src="/img/logos/internxt_white.png" height="42">
+                        <img src="/img/logos/internxt_light.png" height="42" class="my-5 my-sm-0">
                     </div>{{-- /.col-sm-5 --}}
 
                     <div class="col-sm-7">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link disabled">&copy; {{ date('Y') }} Internxt S.L.U.</a>
+                        <ul class="nav pageFooterNav d-inline-flex">
+                            <li class="nav-item pageFooter__copyright">
+                                <a class="nav-link pt-0 disabled">&copy; {{ date('Y') }} Internxt S.L.U.</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Terms</a>
+                            <li class="nav-item pageFooter__terms">
+                                <a class="nav-link pt-0" href="#">Terms</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Privacy</a>
+                            <li class="nav-item pageFooter__privacy">
+                                <a class="nav-link pt-0" href="#">Privacy</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#twitter"><img src="/img/logos/twitter.png" height="18"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#medium"><img src="/img/logos/medium.png" height="18"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#github"><img src="/img/logos/github.png" height="18"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#mail"><img src="/img/logos/mail.png" height="18"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#instagram"><img src="/img/logos/instagram.png" height="18"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#telegram"><img src="/img/logos/telegram.png" height="18"></a>
-                            </li>
+                            @include('_includes.footer-social-icons')
                         </ul>
-
                     </div>{{-- /.col-sm-7 --}}
 
                 </div>{{-- /.row --}}

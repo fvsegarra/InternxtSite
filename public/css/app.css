@@ -77,16 +77,23 @@
 
 .navbar {
   background-color: #16181a;
+  padding: 16px;
 }
 
 .navbar .navbar-brand {
   margin-right: 75px;
 }
 
-.navbar .navbar-dark .navbar-toggler {
+.navbar .navbar-toggler {
   border: none;
-  color: #e8e9eb;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler:focus {
+  outline: 1px auto white;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar .mainLogo--light {
@@ -137,7 +144,13 @@
 .pageFooter {
   background-color: #16181a;
   color: #707273;
-  padding: 42px;
+  padding: 42px 15px 24px;
+}
+
+@media (min-width: 768px) {
+  .pageFooter {
+    padding: 42px;
+  }
 }
 
 .pageFooter a.nav-link {
@@ -150,6 +163,17 @@
 
 .pageFooter a.nav-link:not(.disabled):hover {
   color: #cbcccd;
+}
+
+.pageFooter a.nav-link--social {
+  padding: 0 12px;
+}
+
+.pageFooter__terms a.nav-link,
+.pageFooter__privacy a.nav-link {
+  font-size: 18px;
+  padding: 0 15px;
+  line-height: 1.2;
 }
 
 body {
@@ -184,6 +208,8 @@ footer {
 .section--preview-xcloud,
 .section--preview-xcore {
   background: #fafafa;
+  margin-bottom: 19px;
+  padding: 0 !important;
 }
 
 .section--preview-xcloud .section__icon,
@@ -231,7 +257,7 @@ footer {
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position-y: 216px;
 }
 
 @media (min-width: 768px) {
@@ -301,6 +327,7 @@ footer {
 #page-home .pageHeader {
   background-color: #1b1d1f;
   color: white;
+  padding-bottom: 0;
 }
 
 #page-home .pageHeader > .container {
@@ -388,6 +415,10 @@ footer {
     line-height: 1.2;
     letter-spacing: -0.3px;
   }
+}
+
+#page-home .section--home-references {
+  padding-bottom: 0;
 }
 
 #page-home .section--home-references .referenceContainer {

@@ -46,6 +46,8 @@ footer{
 	&--preview-xcore{
 
 	    background: #fafafa;
+		margin-bottom: 19px;
+	    padding: 0 !important; // provided by container
 
 		.section__icon{
 
@@ -88,7 +90,7 @@ footer{
 	        text-align: center;
 	        background-size: contain;
 	        background-repeat: no-repeat;
-	        background-position-y: bottom;
+	        background-position-y: 216px; // Send offscreen at bottom
 
 	        @include whenLargerThan('small-screen'){
 	            text-align: left;
@@ -101,8 +103,10 @@ footer{
 
 	}
 
+	
+
 	&--preview-xcloud > .container{
-	    background-image: url(/img/mockups/homepage-xcloud.png);
+		background-image: url(/img/mockups/homepage-xcloud.png);
 	}
 
 	&--preview-xcore > .container{

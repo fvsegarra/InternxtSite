@@ -2,7 +2,11 @@
 
 	background-color: #16181a;
 	color: #707273;
-	padding: 42px;
+	padding: 42px 15px 24px;
+
+	@include whenLargerThan('small-screen'){
+		padding: 42px;
+	}
 
 	a.nav-link {
 
@@ -14,5 +18,18 @@
 		&:not(.disabled):hover{
 			color: #cbcccd;
 		}
+
+		&--social{
+			padding: 0 12px;
+		}
+
 	}
+
+	&__terms a.nav-link,
+	&__privacy a.nav-link{
+		font-size: 18px;
+		padding: 0 15px;
+		line-height: 1.2;
+	}
+
 }
