@@ -1,0 +1,1 @@
+bg image for X Cloud preview - remove bottom padding from image
