@@ -121,8 +121,8 @@
 
 			<div class="tab-content" id="xcloudFeaturesTabContent">
 				<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">The dashboard is your X Cloud homescreen. All your options such as, search, upload, new folder, download, delete, and file sharing are spread across the top of your home screen to allow for a more limitless workflow and to make using your cloud easier, without having to click multiple times to get to where you want to be. So you can focus on the things that matter.</div>
-				<div class="tab-pane fade" id="file-sharing" role="tabpanel" aria-labelledby="file-sharing-tab">File Sharing</div>
-				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">Folder</div>
+				<div class="tab-pane fade" id="file-sharing" role="tabpanel" aria-labelledby="file-sharing-tab">File Sharing description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">Folder description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
 			</div>
 		</div>
 	</section>

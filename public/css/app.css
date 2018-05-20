@@ -57,21 +57,21 @@
 @media (min-width: 768px) {
   #page-cloud .section--cloud-architecture .subsection--reimagined,
   #page-cloud .section--cloud-everywhere {
-    padding-left: calc(50vw - 360px);
+    padding-left: calc(50vw - 360px) !important;
   }
 }
 
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-architecture .subsection--reimagined,
   #page-cloud .section--cloud-everywhere {
-    padding-left: calc(50vw - 480px);
+    padding-left: calc(50vw - 480px) !important;
   }
 }
 
 @media (min-width: 1440px) {
   #page-cloud .section--cloud-architecture .subsection--reimagined,
   #page-cloud .section--cloud-everywhere {
-    padding-left: calc(50vw - 570px);
+    padding-left: calc(50vw - 570px) !important;
   }
 }
 
@@ -431,6 +431,75 @@ footer {
   max-width: 779px;
 }
 
+.featurePreviewContainer {
+  display: block;
+  min-height: 180px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("/img/mockups/blank-laptop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 1080px) {
+  .featurePreviewContainer {
+    height: 680px;
+  }
+}
+
+.featurePreviewContainer .featurePreview {
+  background-image: url("/img/mockups/xcloud/dashboard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 110px;
+  margin: 0 auto;
+  max-width: 63%;
+  position: relative;
+  top: 42px;
+  width: 680px;
+}
+
+@media (min-width: 1080px) {
+  .featurePreviewContainer .featurePreview {
+    height: 380px;
+    max-width: 100%;
+    top: 140px;
+    width: 680px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featurePreviewContainer .featurePreview {
+    height: 420px;
+    max-width: 100%;
+    top: 116px;
+    width: 680px;
+  }
+}
+
+.featurePreviewContainer .featurePreview--xcloud-dashboard {
+  background-image: url("/img/mockups/xcloud/dashboard.png");
+}
+
+.featurePreviewContainer .featurePreview--file-sharing {
+  background-image: url("/img/mockups/xcloud/file-sharing.png");
+}
+
+.featurePreviewContainer .featurePreview--folders {
+  background-image: url("/img/mockups/xcloud/folders.png");
+}
+
+.featurePreviewContainer .featurePreview--xcore-dashboard {
+  background-image: url("/img/mockups/xcore/dashboard.png");
+}
+
+.featurePreviewContainer .featurePreview--settings {
+  background-image: url("/img/mockups/xcore/file-sharing.png");
+}
+
 #page-home .navbar {
   background-color: #16181a;
 }
@@ -756,12 +825,14 @@ footer {
   line-height: 1.34;
   letter-spacing: -0.2px;
   color: #433d4a;
+  max-width: 314.4px;
 }
 
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-plans .section__content {
     font-size: 17px;
     line-height: 1.51;
+    margin-top: 72px;
   }
 }
 
@@ -800,67 +871,6 @@ footer {
     letter-spacing: -4.2px;
     max-width: 962px;
   }
-}
-
-#page-cloud .section--cloud-features .featurePreviewContainer {
-  display: block;
-  min-height: 180px;
-  width: 100%;
-  margin: 0 auto;
-  background-image: url("/img/mockups/blank-laptop.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-@media (min-width: 1080px) {
-  #page-cloud .section--cloud-features .featurePreviewContainer {
-    height: 680px;
-  }
-}
-
-#page-cloud .section--cloud-features .featurePreviewContainer .featurePreview {
-  background-image: url("/img/mockups/xcloud/dashboard.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
-  height: 110px;
-  margin: 0 auto;
-  max-width: 63%;
-  position: relative;
-  top: 42px;
-  width: 680px;
-}
-
-@media (min-width: 1080px) {
-  #page-cloud .section--cloud-features .featurePreviewContainer .featurePreview {
-    height: 380px;
-    max-width: 100%;
-    top: 140px;
-    width: 680px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #page-cloud .section--cloud-features .featurePreviewContainer .featurePreview {
-    height: 420px;
-    max-width: 100%;
-    top: 116px;
-    width: 680px;
-  }
-}
-
-#page-cloud .section--cloud-features .featurePreviewContainer .featurePreview--dashboard {
-  background-image: url("/img/mockups/xcloud/dashboard.png");
-}
-
-#page-cloud .section--cloud-features .featurePreviewContainer .featurePreview--file-sharing {
-  background-image: url("/img/mockups/xcloud/file-sharing.png");
-}
-
-#page-cloud .section--cloud-features .featurePreviewContainer .featurePreview--folders {
-  background-image: url("/img/mockups/xcloud/folders.png");
 }
 
 #page-cloud .section--cloud-everywhere {

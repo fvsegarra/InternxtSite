@@ -40,14 +40,14 @@ $breakpoints: (
 
 	// Do some rather clever maths (if I do say so myself)
     // Half the viewport width minus half the width of a standard .container
-    @include whenLargerThan('small-screen'){
-        padding-left: calc(50vw - 360px);
+    @include whenLargerThan('small-screen') {
+        padding-left: calc(50vw - 360px) !important;
     }
-    @include whenLargerThan('medium-screen'){
-        padding-left: calc(50vw - 480px);
+    @include whenLargerThan('medium-screen') {
+        padding-left: calc(50vw - 480px) !important;
     }
-    @include whenLargerThan('large-screen'){
-        padding-left: calc(50vw - 570px);
+    @include whenLargerThan('large-screen') {
+        padding-left: calc(50vw - 570px) !important;
     }
 
 }
