@@ -1447,11 +1447,25 @@ footer {
 }
 
 #page-timeline .section--timeline .section__heading {
-  font-size: 85px;
+  font-size: 46px;
   font-weight: bold;
-  letter-spacing: -3.8px;
-  line-height: 0.94;
-  margin-bottom: 90px;
+  letter-spacing: -1.3px;
+  line-height: 0.96;
+}
+
+@media (min-width: 1080px) {
+  #page-timeline .section--timeline .section__heading {
+    font-size: 68px;
+    letter-spacing: -3px;
+    line-height: 0.94;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-timeline .section--timeline .section__heading {
+    font-size: 85px;
+    letter-spacing: -3.8px;
+  }
 }
 
 #page-timeline .subsection__label {
