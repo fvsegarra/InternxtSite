@@ -41,14 +41,17 @@
 
         &__heading{
 
-            margin-top: 52px;
             font-size: 46px;
             font-weight: bold;
-            line-height: 0.96;
             letter-spacing: -1.8px;
+            line-height: 0.96;
+            margin-top: 0;
             max-width: 310px;
 
-            @include whenLargerThan('small-screen'){
+            @include whenLargerThan('medium-screen'){
+                margin-top: 52px;
+            }
+            @include whenLargerThan('large-screen'){
                 margin-top: 100px;
             }
 

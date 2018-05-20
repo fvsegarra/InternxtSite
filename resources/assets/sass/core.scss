@@ -8,8 +8,8 @@
             repeat: no-repeat;
             size: cover;
         }
-
         color: white;
+        padding-bottom: 480px;
         text-align: center;
 
         &__heading{
@@ -113,16 +113,17 @@
 
         &--core-beta{
 
-            border-top: solid 3px #6600ff;
-            margin-top: 120px;
-            max-width: 804px;
-            padding-top: 33px;
+            padding-top: 120px;
+            padding-bottom: 163px;
 
             .section__heading{
+                border-top: solid 3px #6600ff;
                 font-size: 58px;
                 font-weight: bold;
                 letter-spacing: -2.8px;
                 line-height: 0.9;
+                max-width: 804px;
+                padding-top: 33px;
             }
 
             .section__subheading{
@@ -132,11 +133,18 @@
                 max-width: 601px;
             }
 
+            .section__content{
+                padding-top: 54px;
+            }
+
             input{
                 border-radius: 8px;
                 border: solid 1px #1d1c27;
-                height: 48.8px;
-                width: 264px;
+                height: 61px;
+                padding-top: 4px;
+                position: relative;
+                top: -4px;
+                width: 330px;
             }
 
             .btn {

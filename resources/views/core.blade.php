@@ -110,7 +110,7 @@
 			<p class="section__subheading">Subscribe to our beta list to be first in-line to download X Core and to start earning passive income by sharing your machines un-used hard drive space.</p>
 			<div class="section__content">
 				<form class="form-inline">
-					<input type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="user@example.com">
+					<input type="email" class="form-control" placeholder="user@example.com">
 					<button type="submit" class="btn btn-primary mb-2">Subscribe</button>
 				</form>
 			</div>
