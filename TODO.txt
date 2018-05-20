@@ -1,1 +1,2 @@
 bg image for X Cloud preview - remove bottom padding from image
+bg image for X Core header - remove bottom padding from image
