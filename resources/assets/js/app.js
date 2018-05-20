@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-$('#xcloudFeaturesTab .nav-link').click((e) => {
+$('.nav-tabs .nav-link').click((e) => {
 
 	console.debug('X Cloud features tab clicked');
 

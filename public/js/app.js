@@ -13011,7 +13011,7 @@ module.exports = __webpack_require__(9);
 
 __webpack_require__(5);
 
-$('#xcloudFeaturesTab .nav-link').click(function (e) {
+$('.nav-tabs .nav-link').click(function (e) {
 
 	console.debug('X Cloud features tab clicked');
 
