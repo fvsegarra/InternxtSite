@@ -141,6 +141,10 @@
   background-color: #9ecbf7;
 }
 
+.navbar.navbar-xcloud .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(31, 40, 49)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .pageFooter {
   background-color: #16181a;
   color: #707273;
@@ -181,7 +185,7 @@ body {
 }
 
 .pageHeader {
-  padding: 72px 0;
+  padding: 45px 0 72px;
 }
 
 .pageHeader__heading {
@@ -438,10 +442,34 @@ footer {
 
 #page-cloud .pageHeader__heading {
   color: #3b4461;
-  font-size: 85px;
   font-weight: bold;
-  letter-spacing: -4.7px;
-  line-height: 1.28;
+  font-size: 69px;
+  line-height: 0.96;
+  letter-spacing: -3.9px;
+}
+
+@media (min-width: 768px) {
+  #page-cloud .pageHeader__heading {
+    font-size: 85px;
+    letter-spacing: -4.7px;
+    line-height: 1.28;
+  }
+}
+
+#page-cloud .pageHeader__subheading {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.3px;
+  color: #3b4461;
+}
+
+@media (min-width: 768px) {
+  #page-cloud .pageHeader__subheading {
+    font-size: 25px;
+    line-height: 1.56;
+    letter-spacing: -0.4px;
+  }
 }
 
 #page-cloud .pageHeader__btn {
