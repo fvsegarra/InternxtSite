@@ -106,7 +106,7 @@
 
 			<div class="row">
 				<div class="featurePreviewContainer">
-					<div class="featurePreview">
+					<div class="featurePreview featurePreview--dashboard">
 					</div>
 				</div>
 			</div>

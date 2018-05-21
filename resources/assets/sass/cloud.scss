@@ -1,5 +1,13 @@
 #page-cloud{
 
+    .container{
+
+        @include whenLargerThan('large-screen'){
+            max-width: 1008px;
+        }
+
+    }
+
     .pageHeader{
 
         background-color: #bddfff;
@@ -25,6 +33,13 @@
                 font-size: 85px;
                 letter-spacing: -4.7px;
                 line-height: 1.28;
+                margin: 0 auto;
+            }
+
+            @include whenLargerThan('large-screen'){
+                max-width: 354px;
+                font-size: 106px;
+                letter-spacing: -5.9px;
             }
 
         }
@@ -38,12 +53,20 @@
             color: #3b4461;
             padding: 0 4px;
 
-            @include whenLargerThan('medium-screen'){
+            @include whenLargerThan('medium-screen') {
                 font-weight: 500;
                 padding: 0 10px;
                 font-size: 25px;
                 line-height: 1.56;
                 letter-spacing: -0.4px;
+            }
+
+            @include whenLargerThan('large-screen') {
+                max-width: 905px;
+                font-size: 34px;
+                line-height: 1.21;
+                letter-spacing: -1px;
+                margin: 0 auto;
             }
 
         }
@@ -84,12 +107,23 @@
                 padding: 124px 0;
             }
 
+            @include whenLargerThan('medium-screen'){
+                padding: 0;
+            }
+
             & > .container{
+
                 padding-left: 24px;
                 padding-bottom: 88px;
+
+                @include whenLargerThan('large-screen'){
+                    max-width: 978px;
+                }
+
             }
 
             .section__heading{
+
                 color: #3b4461;
                 font-size: 30px;
                 font-weight: bold;
@@ -97,6 +131,22 @@
                 line-height: 0.9;
                 margin-bottom: 50px;
                 max-width: 265px;
+
+                @include whenLargerThan('medium-screen') {
+                    font-size: 46px;
+                    letter-spacing: -2.2px;
+                    line-height: 0.9;
+                    max-width: 635px;
+                    text-align: left;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 800px;
+                    font-size: 58px;
+                    line-height: 0.9;
+                    letter-spacing: -2.8px;
+                }
+
             }
 
             input{
@@ -106,6 +156,10 @@
                 height: 48.8px;
                 width: 235px;
                 margin-top: -8px; // Line up with button
+                color: #20588c;
+                &::placeholder{
+                    color: #20588c;
+                }
             }
 
             .btn {
@@ -126,7 +180,10 @@
             background-image: linear-gradient(290deg, #e8d6ff, #e2d4ff);
             padding-bottom: 0; // Important, as the two subsections need to come to the bottom
             padding-top: 50px;
-            // padding-top: 99px;
+
+            @include whenLargerThan('medium-screen') {
+                padding-top: 100px;
+            }
 
             .section__heading{
 
@@ -135,11 +192,20 @@
                 letter-spacing: -3.4px;
                 line-height: 0.85;
                 max-width: 335px;
+                color: #503b61;
 
                 @include whenLargerThan('medium-screen') {
                     max-width: 769.6px;
                     font-size: 72px;
                     line-height: 0.81;
+                    margin-bottom: 100px; // To match container top padding
+                }
+
+                @include whenLargerThan('medium-screen') {
+                    max-width: 962px;
+                    font-size: 90px;
+                    line-height: 0.81;
+                    letter-spacing: -4.2px;
                 }
 
             }
@@ -156,6 +222,11 @@
                     line-height: 0.88;
                     letter-spacing: -1.1px;
                     color: #503b61;
+
+                    @include whenLargerThan('medium-screen') {
+                        max-width: 211px;
+                    }
+
                 }
 
                 &__content{
@@ -249,6 +320,14 @@
             padding-bottom: 98.4px;
             padding-top: 98.4px;
 
+            & > .container{
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1440px;
+                }
+
+            }
+
             .section__heading{
 
                 color: #513b61;
@@ -270,7 +349,8 @@
                 @include whenLargerThan('large-screen') {
                     font-size: 90px;
                     letter-spacing: -4.2px;
-                    max-width: 962px;
+                    max-width: 1120px;
+                    margin-left: 150px;
                 }
 
             }
@@ -282,13 +362,21 @@
 
                 @include whenLargerThan('medium-screen'){
                     display: block;
-                    height: 565px;
                     margin-top: 70px;
                     margin-bottom: 28px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 565px;
+                    width: 960px;
                 }
 
-                @include whenLargerThan('large-screen'){
+                @include whenLargerThan('large-screen') {
+                    height: 705px;
+                    width: 1260px;
                     background-image: url('/img/mockups/xcloud-laptop-blank-1440.png');
+                    background-position-x: center;
                 }
 
                 .featurePreview{
@@ -297,10 +385,33 @@
                     top: 42px;
                     width: 733px;
 
-                    @include whenLargerThan('large-screen'){
+                    @include whenLargerThan('medium-screen') {
+                        height: 459px;
+                        top: 42px;
+                        width: 733px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        margin: 0 auto;
+                    }
+
+                    @include whenLargerThan('large-screen') {
                         height: 574px;
-                        top: 13px;
+                        top: 48px;
                         width: 916px;
+                    }
+
+
+                    &--dashboard{
+                        background-image: url('/img/mockups/xcloud/dashboard.png');
+                    }
+
+                    &--file-sharing{
+                        background-image: url('/img/mockups/xcloud/file-sharing.png');
+                    }
+
+                    &--folders{
+                        background-image: url('/img/mockups/xcloud/folders.png');
                     }
 
                 }
@@ -349,6 +460,14 @@
                 letter-spacing: -1.1px;
                 line-height: 0.88;
                 max-width: 272.8px;
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 341px;
+                    font-size: 50px;
+                    line-height: 0.88;
+                    letter-spacing: -1.4px;
+                }
+
             }
 
             .section__content{
