@@ -1,12 +1,13 @@
 @import "variables";
 @import "utilities";
 @import "responsive-rules";
-
+@import "fonts";
 @import "navbar";
 @import "footer";
 
 body{
 	background: $body-bg;
+	font-family: $font-family-sans-serif;
 }
 
 .pageHeader{
