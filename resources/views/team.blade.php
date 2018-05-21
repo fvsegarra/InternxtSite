@@ -40,6 +40,62 @@
 					</div>{{-- /.col-sm-4 --}}
 
 					<div class="col-sm-4">
+						@component('_includes.team')
+							@slot('slug', 'zoran')
+							@slot('name', 'Zoran Joka')
+							@slot('position', 'Senior Software Developer')
+						@endcomponent
+					</div>{{-- /.col-sm-4 --}}
+
+					<div class="col-sm-4">
+						@component('_includes.team')
+							@slot('slug', 'russell')
+							@slot('name', 'Russell Vaughan')
+							@slot('position', 'Business Development')
+						@endcomponent
+					</div>{{-- /.col-sm-4 --}}
+
+					<div class="col-sm-4">
+						@component('_includes.team')
+							@slot('slug', 'conor')
+							@slot('name', 'Conor Doyle')
+							@slot('position', 'Chief Marketing Officer')
+						@endcomponent
+					</div>{{-- /.col-sm-4 --}}
+
+					<div class="col-sm-4">
+						@component('_includes.team')
+							@slot('slug', 'harrison')
+							@slot('name', 'Harrison Moore')
+							@slot('position', 'UI/UX Designer')
+						@endcomponent
+					</div>{{-- /.col-sm-4 --}}
+
+					<div class="col-sm-4">
+						@component('_includes.team')
+							@slot('slug', 'igor')
+							@slot('name', 'Igor Dostanic')
+							@slot('position', 'Software Developer')
+						@endcomponent
+					</div>{{-- /.col-sm-4 --}}
+
+					<div class="col-sm-4">
+						@component('_includes.team')
+							@slot('slug', 'joe')
+							@slot('name', 'Joe Priest')
+							@slot('position', 'Front-End Developer')
+						@endcomponent
+					</div>{{-- /.col-sm-4 --}}
+
+					<div class="col-sm-4">
+						@component('_includes.team')
+							@slot('slug', 'alberto')
+							@slot('name', 'Alberto Pinero')
+							@slot('position', 'Hardware Engineer')
+						@endcomponent
+					</div>{{-- /.col-sm-4 --}}
+
+					<div class="col-sm-4">
 						@component('_includes.team-blank')
 							@slot('name', 'Join the team')
 							@slot('position', 'View our open job positions')
@@ -49,8 +105,6 @@
 					</div>{{-- /.col-sm-4 --}}
 
 				</div>{{-- /.row --}}
-
-
 			</div>
 		</div>
 	</section>
