@@ -4,6 +4,8 @@
 
 @section('navbar-classes', 'navbar-dark')
 
+@section('navbarLogo', 'internxt_icon_home.svg')
+
 @section('pageTitle', 'Technologies to enhance life')
 
 @section('body')

@@ -4,6 +4,8 @@
 
 @section('navbar-classes', 'navbar-light navbar-xcloud')
 
+@section('navbarLogo', 'internxt_icon_xcloud.svg')
+
 @section('pageTitle', 'X Cloud')
 
 @section('body')
