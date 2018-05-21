@@ -54,6 +54,13 @@
 
 		}
 
+		.col-md{
+
+			@include whenLargerThan('medium-screen') {
+				text-align: right;
+			}
+
+		}
 		&__btn{
 
   			background:{

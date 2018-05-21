@@ -1677,6 +1677,12 @@ footer {
   }
 }
 
+@media (min-width: 1080px) {
+  #page-resources .subsection .col-md {
+    text-align: right;
+  }
+}
+
 #page-resources .subsection__btn {
   background-image: url("/img/icons/download.png");
   background-position: 22px center;

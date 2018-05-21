@@ -6,7 +6,7 @@
 			<p class="subsection__content">{{ $content }}</p>
 		</div>
 
-		<div class="col-md text-right">
+		<div class="col-md">
 			<a class="subsection__btn" href="{{ $btnLink }}">{{ $btnText }}</a>
 		</div>
 
