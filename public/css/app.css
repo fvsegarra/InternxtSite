@@ -409,8 +409,13 @@ footer {
 
 .nav-tabs {
   border-bottom: 1px solid #edc0d5;
-  margin: 0 auto;
   max-width: 348px;
+}
+
+@media (min-width: 1080px) {
+  .nav-tabs {
+    margin: 0 auto;
+  }
 }
 
 .nav-tabs .nav-link {
@@ -437,75 +442,6 @@ footer {
 .tab-content {
   margin: 40px auto 0;
   max-width: 779px;
-}
-
-.featurePreviewContainer {
-  display: block;
-  min-height: 180px;
-  width: 100%;
-  margin: 0 auto;
-  background-image: url("/img/mockups/blank-laptop.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-@media (min-width: 1080px) {
-  .featurePreviewContainer {
-    height: 680px;
-  }
-}
-
-.featurePreviewContainer .featurePreview {
-  background-image: url("/img/mockups/xcloud/dashboard.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
-  height: 110px;
-  margin: 0 auto;
-  max-width: 63%;
-  position: relative;
-  top: 42px;
-  width: 680px;
-}
-
-@media (min-width: 1080px) {
-  .featurePreviewContainer .featurePreview {
-    height: 380px;
-    max-width: 100%;
-    top: 140px;
-    width: 680px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .featurePreviewContainer .featurePreview {
-    height: 420px;
-    max-width: 100%;
-    top: 116px;
-    width: 680px;
-  }
-}
-
-.featurePreviewContainer .featurePreview--xcloud-dashboard {
-  background-image: url("/img/mockups/xcloud/dashboard.png");
-}
-
-.featurePreviewContainer .featurePreview--file-sharing {
-  background-image: url("/img/mockups/xcloud/file-sharing.png");
-}
-
-.featurePreviewContainer .featurePreview--folders {
-  background-image: url("/img/mockups/xcloud/folders.png");
-}
-
-.featurePreviewContainer .featurePreview--xcore-dashboard {
-  background-image: url("/img/mockups/xcore/dashboard.png");
-}
-
-.featurePreviewContainer .featurePreview--settings {
-  background-image: url("/img/mockups/xcore/file-sharing.png");
 }
 
 #page-home .navbar {
@@ -553,8 +489,8 @@ footer {
 @media (min-width: 1440px) {
   #page-home .pageHeader > .container {
     padding-left: 72px;
-    padding-top: 114px;
-    height: 627px;
+    padding-top: 131px;
+    height: 656px;
     background-position-x: right;
     background-position-y: top;
     background-size: 582px;
@@ -630,6 +566,7 @@ footer {
   #page-home .pageHeader__cta {
     font-size: 21px;
     padding: 15px 26px;
+    margin-top: 34px;
   }
 }
 
@@ -644,6 +581,12 @@ footer {
 @media (min-width: 1080px) {
   #page-home .section--home-references {
     padding: 45px 0 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-home .section--home-references {
+    padding: 60px 0 15px;
   }
 }
 
@@ -1089,8 +1032,9 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding-bottom: 480px;
+  padding-bottom: 142px;
   text-align: center;
+  padding-top: 159px;
 }
 
 #page-core .pageHeader__heading {
@@ -1117,36 +1061,37 @@ footer {
 }
 
 #page-core .pageHeader__subheading {
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 #page-core .section--core-summary {
   background: black;
   color: white;
-  padding: 120px 0;
+  padding-top: 120px;
 }
 
 #page-core .section--core-summary .subsection {
   border-top: solid 3px #5b4ade;
   padding-top: 40px;
-  margin: 0 40px 100px 40px;
+  margin: 0 15px 100px 0px;
 }
 
 #page-core .section--core-summary .subsection__heading {
-  font-size: 58px;
+  font-size: 46px;
+  line-height: 0.96;
+  letter-spacing: -1.3px;
   font-weight: bold;
-  letter-spacing: -0.5px;
-  line-height: 1.11;
 }
 
 #page-core .section--core-summary .subsection__content {
-  font-size: 21px;
-  line-height: 1.38;
-  letter-spacing: -0.1px;
+  font-size: 20px;
+  line-height: 1.34;
+  letter-spacing: -0.2px;
 }
 
 #page-core .section--core-more-info {
   padding: 120px 0;
+  padding-top: 60px;
   text-align: center;
 }
 
@@ -1174,12 +1119,14 @@ footer {
 }
 
 #page-core .section--core-more-info .section__subheading {
-  font-size: 26px;
   font-weight: 500;
-  letter-spacing: -0.4px;
-  line-height: 1.38;
   margin: 0 auto;
   max-width: 673px;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 20px;
+  line-height: 1.34;
+  letter-spacing: -0.2px;
 }
 
 #page-core .section--core-screenshot .subsection {
@@ -1262,28 +1209,27 @@ footer {
 
 #page-core .section--core-beta input {
   border-radius: 8px;
-  border: solid 1px #1d1c27;
-  height: 61px;
+  border: solid 1px #5b4ade;
   padding-top: 4px;
   position: relative;
   top: -4px;
-  width: 330px;
+  width: 236px;
+  height: 50px;
 }
 
 #page-core .section--core-beta .btn {
-  background-color: #1d1c27;
+  background-color: #5b4ade;
   border-radius: 8px;
-  font-size: 19px;
   font-weight: 500;
-  height: 61px;
+  height: 50px;
+  margin-left: 6px;
+  width: 94px;
+  font-size: 15px;
   letter-spacing: -0.2px;
-  margin-left: 9.6px;
-  width: 134px;
 }
 
 #page-core .section--core-design {
   background-color: #fafafa;
-  text-align: center;
   padding: 134px 0;
 }
 
@@ -1313,12 +1259,43 @@ footer {
 }
 
 #page-core .section--core-design .section__subheading {
-  font-size: 26px;
+  font-size: 20px;
+  line-height: 1.34;
+  letter-spacing: -0.2px;
   font-weight: 500;
-  letter-spacing: -0.4px;
-  line-height: 1.38;
   max-width: 726px;
   margin: 24px auto;
+}
+
+#page-core .section--core-design .featurePreviewContainer {
+  background: aqua;
+  height: 410px;
+  width: 100%;
+  width: 100vw;
+  margin-left: -15px;
+  margin-top: 72px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-design .featurePreviewContainer {
+    background: inherit;
+  }
+}
+
+#page-core .section--core-design .featurePreview {
+  height: 410px;
+  width: 100%;
+  width: 100vw;
+  background-image: url("/img/mockups/xcore/dashboard.png");
+}
+
+#page-core .section--core-design .featurePreview--xcore-dashboard {
+  background-image: url("/img/mockups/xcore/dashboard.png");
+}
+
+#page-core .section--core-design .featurePreview--settings {
+  background-image: url("/img/mockups/xcore/settings.png");
 }
 
 #page-core .nav-tabs {
@@ -1338,6 +1315,12 @@ footer {
 #page-core .nav-tabs .nav-link:hover,
 #page-core .nav-tabs .nav-link:focus {
   border-bottom-color: #d1b3ff;
+}
+
+#page-core .tab-pane {
+  font-size: 20px;
+  line-height: 1.34;
+  letter-spacing: -0.2px;
 }
 
 #page-token .inxtDatum {

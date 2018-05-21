@@ -46,8 +46,8 @@
 
             @include whenLargerThan('large-screen'){
                 padding-left: 72px;
-                padding-top: 114px;
-                height: 627px;
+                padding-top: 131px;
+                height: 656px;
                 background:{
                     position-x: right;
                     position-y: top;
@@ -119,6 +119,7 @@
             @include whenLargerThan('large-screen') {
                 font-size: 21px;
                 padding: 15px 26px;
+                margin-top: 34px;
             }
 
         }
@@ -135,6 +136,10 @@
 
             @include whenLargerThan('medium-screen'){
                 padding: 45px 0 0;
+            }
+
+            @include whenLargerThan('medium-screen'){
+                padding: 60px 0 15px;
             }
 
             .referenceContainer{

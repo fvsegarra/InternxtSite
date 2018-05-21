@@ -181,8 +181,11 @@ footer{
 .nav-tabs{
 
     border-bottom: 1px solid #edc0d5;
-    margin: 0 auto;
     max-width: 348px;
+
+    @include whenLargerThan('medium-screen'){
+    	margin: 0 auto;
+    }
 
     .nav-link{
 
@@ -212,78 +215,6 @@ footer{
 .tab-content{
     margin: 40px auto 0;
     max-width: 779px;
-}
-
-.featurePreviewContainer{
-
-    display: block;
-    min-height: 180px;
-    width: 100%;
-    margin: 0 auto;
-    background:{
-        image: url('/img/mockups/blank-laptop.png');
-        position: center;
-        repeat: no-repeat;
-        size: contain;
-    }
-
-    @include whenLargerThan('medium-screen') {
-        height: 680px;
-    }
-
-    .featurePreview{
-
-        background:{
-            image: url('/img/mockups/xcloud/dashboard.png');
-            position: center;
-            repeat: no-repeat;
-            size: contain;
-        }
-        display: block;
-        height: 110px;
-        // height: 232px;
-        margin: 0 auto;
-        max-width: 63%;
-        position: relative;
-        top: 42px;
-        width: 680px;
-
-        @include whenLargerThan('medium-screen') {
-            height: 380px;
-            max-width: 100%;
-            top: 140px;
-            width: 680px;
-        }
-
-        @include whenLargerThan(1200px) {
-            height: 420px;
-            max-width: 100%;
-            top: 116px;
-            width: 680px;
-        }
-
-        &--xcloud-dashboard{
-            background-image: url('/img/mockups/xcloud/dashboard.png');
-        }
-
-        &--file-sharing{
-            background-image: url('/img/mockups/xcloud/file-sharing.png');
-        }
-
-        &--folders{
-            background-image: url('/img/mockups/xcloud/folders.png');
-        }
-
-        &--xcore-dashboard{
-            background-image: url('/img/mockups/xcore/dashboard.png');
-        }
-
-        &--settings{
-            background-image: url('/img/mockups/xcore/file-sharing.png');
-        }
-
-    }
-
 }
 
 // Page-specific styles
