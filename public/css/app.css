@@ -1443,10 +1443,18 @@ footer {
 }
 
 #page-team .section .section__heading {
-  font-size: 85px;
+  font-size: 46px;
+  line-height: 0.96;
+  letter-spacing: -1.3px;
   font-weight: bold;
-  line-height: 0.94;
-  letter-spacing: -3.8px;
+}
+
+@media (min-width: 1080px) {
+  #page-team .section .section__heading {
+    font-size: 85px;
+    line-height: 0.94;
+    letter-spacing: -3.8px;
+  }
 }
 
 #page-team .section .section__content {
@@ -1463,10 +1471,16 @@ footer {
 
 #page-team .teamMember {
   border-radius: 4px;
-  height: 434px;
+  height: 260px;
   margin-bottom: 60px;
   overflow: hidden;
   background-color: #16181a;
+}
+
+@media (min-width: 1080px) {
+  #page-team .teamMember {
+    height: 434px;
+  }
 }
 
 #page-team .teamMember--blank {
@@ -1554,6 +1568,7 @@ footer {
   font-weight: bold;
   letter-spacing: -1.3px;
   line-height: 0.96;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 1080px) {
@@ -1561,6 +1576,7 @@ footer {
     font-size: 68px;
     letter-spacing: -3px;
     line-height: 0.94;
+    margin-bottom: 16px;
   }
 }
 

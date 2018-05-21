@@ -12,11 +12,13 @@
                 font-weight: bold;
                 letter-spacing: -1.3px;
                 line-height: 0.96;
+                margin-bottom: 60px;
 
                 @include whenLargerThan('medium-screen') {
                     font-size: 68px;
                     letter-spacing: -3px;
                     line-height: 0.94;
+                    margin-bottom: 16px;
                 }
 
                 @include whenLargerThan('medium-screen') {

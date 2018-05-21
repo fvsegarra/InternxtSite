@@ -3,10 +3,18 @@
     .section{
 
         .section__heading{
-            font-size: 85px;
+
+            font-size: 46px;
+            line-height: 0.96;
+            letter-spacing: -1.3px;
             font-weight: bold;
-            line-height: 0.94;
-            letter-spacing: -3.8px;
+
+            @include whenLargerThan('medium-screen') {
+                font-size: 85px;
+                line-height: 0.94;
+                letter-spacing: -3.8px;
+            }
+
         }
 
         .section__content{
@@ -30,10 +38,14 @@
     .teamMember{
 
         border-radius: 4px;
-        height: 434px;
+        height: 260px;
         margin-bottom: 60px;
         overflow: hidden;
         background-color: #16181a;
+
+        @include whenLargerThan('medium-screen') {
+            height: 434px;
+        }
 
         &--blank{
             display: flex;
