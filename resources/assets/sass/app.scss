@@ -47,7 +47,7 @@ footer{
 	    padding: 0 !important; // provided by container
 
 	    @include whenLargerThan('medium-screen'){
-	    	margin-bottom: 36px;
+	    	margin: 36px;
 	    }
 
 		.section__icon{

@@ -254,17 +254,80 @@
                 font-weight: bold;
                 letter-spacing: -3.4px;
                 line-height: 0.85;
+                margin-bottom: 36px;
 
                 @include whenLargerThan('medium-screen') {
                     font-size: 72px;
                     line-height: 0.81;
-                    max-width: 769.6px;
+                    margin-bottom: 16px;
+                    max-width: 854.6px;
+                    padding-left: 75px;
+                    letter-spacing: -3.8px;
                 }
 
                 @include whenLargerThan('large-screen') {
                     font-size: 90px;
                     letter-spacing: -4.2px;
                     max-width: 962px;
+                }
+
+            }
+
+            .featurePreviewContainer{
+
+                background-image: url('/img/mockups/xcloud-laptop-blank-1080.png');
+                display: none;
+
+                @include whenLargerThan('medium-screen'){
+                    display: block;
+                    height: 565px;
+                    margin-top: 70px;
+                    margin-bottom: 28px;
+                }
+
+                @include whenLargerThan('large-screen'){
+                    background-image: url('/img/mockups/xcloud-laptop-blank-1440.png');
+                }
+
+                .featurePreview{
+
+                    height: 459px;
+                    top: 42px;
+                    width: 733px;
+
+                    @include whenLargerThan('large-screen'){
+                        height: 574px;
+                        top: 13px;
+                        width: 916px;
+                    }
+
+                }
+
+            }
+
+            .nav-tabs .nav-link{
+                padding-bottom: 13px;
+            }
+
+            .tab-content{
+
+                @include whenLargerThan('medium-screen'){
+                    max-width: 628px;
+                    margin-top: 28px;
+                }
+
+            }
+
+            .tab-pane{
+
+                color: #7f4a6c;
+
+                @include whenLargerThan('medium-screen'){
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: 500;
+                    line-height: 1.39;
+                    letter-spacing: -0.4px;
                 }
 
             }

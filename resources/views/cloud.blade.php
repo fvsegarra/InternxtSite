@@ -104,8 +104,10 @@
 		<div class="container">
 			<p class="section__heading">The most powerful technology is technology that everyone can use.</p>
 
-			<div class="featurePreviewContainer">
-				<div class="featurePreview">
+			<div class="row">
+				<div class="featurePreviewContainer">
+					<div class="featurePreview">
+					</div>
 				</div>
 			</div>
 
