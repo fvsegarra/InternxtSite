@@ -86,10 +86,10 @@
                                 <a class="nav-link pt-0 disabled">&copy; {{ date('Y') }} Internxt S.L.U.</a>
                             </li>
                             <li class="nav-item pageFooter__terms">
-                                <a class="nav-link" href="#">Terms</a>
+                                <a class="nav-link" href="{{ route('terms') }}">Terms</a>
                             </li>
                             <li class="nav-item pageFooter__privacy">
-                                <a class="nav-link" href="#">Privacy</a>
+                                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
                             </li>
                             @include('_includes.footer-social-icons')
                         </ul>
