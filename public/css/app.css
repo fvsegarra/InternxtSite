@@ -591,6 +591,12 @@ footer {
 #page-cloud .pageHeader {
   background-color: #bddfff;
   text-align: center;
+  padding-top: 39px;
+  padding-bottom: 12px;
+}
+
+#page-cloud .pageHeader > .container {
+  padding-bottom: 15px;
 }
 
 #page-cloud .pageHeader__heading {
@@ -599,6 +605,8 @@ footer {
   font-size: 69px;
   line-height: 0.96;
   letter-spacing: -3.9px;
+  margin-left: -4px;
+  margin-bottom: 13px;
 }
 
 @media (min-width: 1080px) {
@@ -615,6 +623,7 @@ footer {
   line-height: 1.21;
   letter-spacing: -0.3px;
   color: #3b4461;
+  padding: 0 10px;
 }
 
 @media (min-width: 1080px) {
@@ -635,7 +644,7 @@ footer {
   height: 51px;
   letter-spacing: 0.1px;
   line-height: 1.47;
-  margin-top: 50px;
+  margin-top: 37px;
   padding: 12px;
   width: 233px;
 }
@@ -657,21 +666,28 @@ footer {
   }
 }
 
+#page-cloud .section--cloud-beta > .container {
+  padding-left: 24px;
+  padding-bottom: 88px;
+}
+
 #page-cloud .section--cloud-beta .section__heading {
   color: #3b4461;
-  font-size: 46px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: -2.2px;
   line-height: 0.9;
   margin-bottom: 50px;
-  max-width: 650px;
+  max-width: 265px;
 }
 
 #page-cloud .section--cloud-beta input {
+  background-color: transparent;
   border-radius: 6.4px;
   border: solid 0.8px #3288d9;
   height: 48.8px;
-  width: 264px;
+  width: 235px;
+  margin-top: -8px;
 }
 
 #page-cloud .section--cloud-beta .btn {
@@ -681,14 +697,14 @@ footer {
   font-weight: 500;
   height: 48.8px;
   letter-spacing: -0.2px;
-  margin-left: 9.6px;
-  width: 107.2px;
+  margin-left: 6.6px;
+  width: 92.2px;
 }
 
 #page-cloud .section--cloud-architecture {
   background-image: linear-gradient(290deg, #e8d6ff, #e2d4ff);
   padding-bottom: 0;
-  padding-top: 99px;
+  padding-top: 50px;
 }
 
 #page-cloud .section--cloud-architecture .section__heading {
@@ -709,7 +725,7 @@ footer {
 
 #page-cloud .section--cloud-architecture .subsection {
   padding-bottom: 100px;
-  padding-top: 90px;
+  padding-top: 112px;
 }
 
 #page-cloud .section--cloud-architecture .subsection__heading {
@@ -758,6 +774,10 @@ footer {
   background-image: linear-gradient(119deg, #fce0ff, #fddeff);
   padding-bottom: 110.2px;
   padding-top: 96.2px;
+}
+
+#page-cloud .section--cloud-plans > .container {
+  padding-left: 24px;
 }
 
 #page-cloud .section--cloud-plans .section__heading {
