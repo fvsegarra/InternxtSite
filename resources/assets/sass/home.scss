@@ -30,30 +30,29 @@
                 position: center bottom;
                 repeat: no-repeat;
                 size: contain;
-                size: 458px;
+                size: 312px;
             }
 
             @include whenLargerThan('medium-screen'){
-
-                padding-top: 72px;
-                height: 485px;
+                padding-top: 111px;
+                padding-left: 82px;
+                height: 516px;
                 background:{
                     position-x: right;
                     position-y: top;
-                    size: 700px;
+                    size: 493px;
                 }
-
             }
 
             @include whenLargerThan('large-screen'){
-
+                padding-left: 72px;
                 padding-top: 114px;
-                height: 573px;
+                height: 627px;
                 background:{
                     position-x: right;
-                    size: 800px;
+                    position-y: top;
+                    size: 582px;
                 }
-
             }
 
         }
@@ -71,8 +70,11 @@
             @include whenLargerThan('large-screen'){
                 margin-top: 52px;
             }
+
             @include whenLargerThan('large-screen'){
-                margin-top: 100px;
+                margin-top: 18px;
+                font-size: 57px;
+                max-width: 400px;
             }
 
         }
@@ -88,15 +90,18 @@
                 font-size: 20px;
                 line-height: 1.2;
                 letter-spacing: -0.1px;
+                max-width: 275px;
             }
 
             @include whenLargerThan('large-screen') {
                 font-size: 25px;
+                max-width: 347px;
             }
 
         }
 
         &__cta{
+
             background: #323435;
             color: white;
             font-size: 14px;
@@ -105,6 +110,17 @@
             margin-left: 10px;
             margin-top: 23px;
             padding: 7px 21px;
+
+            @include whenLargerThan('medium-screen') {
+                font-size: 17px;
+                padding: 13px 22px;
+            }
+
+            @include whenLargerThan('large-screen') {
+                font-size: 21px;
+                padding: 15px 26px;
+            }
+
         }
 
     }
@@ -118,7 +134,7 @@
             padding-bottom: 0;
 
             @include whenLargerThan('medium-screen'){
-                padding: 45px 0;
+                padding: 45px 0 0;
             }
 
             .referenceContainer{

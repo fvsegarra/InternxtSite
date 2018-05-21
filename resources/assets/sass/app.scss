@@ -50,11 +50,24 @@ footer{
 	    	margin: 36px;
 	    }
 
+	    .offset-md-6{
+
+	    	@include whenLargerThan('medium-screen'){
+	    		margin-top: 51px;
+	    		padding-left: 62px;
+	    	}
+
+	    }
+
 		.section__icon{
 
 	        max-height: 59px;
 
 	        @include whenLargerThan('medium-screen'){
+	            max-height: 33px;
+	        }
+
+	        @include whenLargerThan('large-screen'){
 	            max-height: 40px;
 	        }
 
@@ -70,7 +83,8 @@ footer{
 	        margin-top: 20px;
 
 	        @include whenLargerThan('medium-screen'){
-	            margin-top: 10px;
+	            margin-top: 0px;
+	            margin-bottom: 4px;
 	            font-size: 24.8px;
 	            font-weight: 500;
 	            line-height: 1.79;
@@ -156,6 +170,8 @@ footer{
 
 	    @include whenLargerThan('medium-screen'){
 	        background-position: right center;
+	    	padding-left: 90px;
+    		padding-top: 90px;
 	    }
 
 	}

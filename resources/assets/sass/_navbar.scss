@@ -3,9 +3,35 @@
 	background-color: #16181a;
 	padding: 16px;
 
+	@include whenLargerThan('small-screen') {
+		padding: 0 16px;
+	}
+
+	.container{
+
+		@include whenLargerThan('medium-screen') {
+    		max-width: 840px;
+		}
+
+		@include whenLargerThan('large-screen') {
+			max-width: 1032px;
+		}
+
+	}
+
 	.navbar-brand{
+
 		margin-right: 75px;
 		padding-left: 2px;
+
+		@include whenLargerThan('medium-screen') {
+			margin-right: 126px;
+		}
+
+		@include whenLargerThan('large-screen') {
+			margin-right: 109px;
+		}
+
 	}
 
 	.navbar-toggler{
