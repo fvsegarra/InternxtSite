@@ -1706,6 +1706,12 @@ footer {
   font-size: 70px;
 }
 
+@media (min-width: 1080px) {
+  #page-terms .pageHeader__heading {
+    font-size: 85px;
+  }
+}
+
 #page-terms .section {
   margin-bottom: 60px;
 }
@@ -1718,8 +1724,14 @@ footer {
 }
 
 #page-terms .section__content {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.29;
   letter-spacing: -0.1px;
+}
+
+@media (min-width: 1080px) {
+  #page-terms .section__content {
+    font-size: 24px;
+  }
 }
 
