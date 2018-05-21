@@ -2,12 +2,19 @@
 	font-family: 'Circular Std';
 	font-style: normal;
 	font-weight: normal;
-	src: url('/fonts/CircularStd-Medium.otf') format('otf');
+	src: url('/fonts/CircularStd-Medium.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'Circular Std';
 	font-style: normal;
 	font-weight: bold;
-	src: url('/fonts/CircularStd-Black.otf') format('otf');
+	src: url('/fonts/CircularStd-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	font-style: normal;
+	font-weight: 500;
+	src: url('/fonts/CircularStd-Bold.otf') format('opentype');
 }

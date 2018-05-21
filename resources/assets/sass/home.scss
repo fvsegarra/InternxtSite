@@ -85,6 +85,7 @@
             line-height: 1.11;
             letter-spacing: -0.6px;
             padding-left: 9px;
+            font-weight: normal;
 
             @include whenLargerThan('medium-screen') {
                 font-size: 20px;
