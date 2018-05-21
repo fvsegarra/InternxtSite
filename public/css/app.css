@@ -1702,3 +1702,24 @@ footer {
   margin: 100px auto;
 }
 
+#page-terms .pageHeader__heading {
+  font-size: 70px;
+}
+
+#page-terms .section {
+  margin-bottom: 60px;
+}
+
+#page-terms .section__heading {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 1.09;
+  letter-spacing: -1.3px;
+}
+
+#page-terms .section__content {
+  font-size: 24px;
+  line-height: 1.29;
+  letter-spacing: -0.1px;
+}
+

@@ -1,0 +1,29 @@
+#page-terms{
+
+	.pageHeader{
+
+		&__heading{
+			font-size: 70px;
+		}
+
+	}
+
+	.section{
+
+		margin-bottom: 60px;
+
+		&__heading{
+			font-size: 45px;
+			font-weight: bold;
+			line-height: 1.09;
+			letter-spacing: -1.3px;
+		}
+
+		&__content {
+			font-size: 24px;
+			line-height: 1.29;
+			letter-spacing: -0.1px;
+		}
+
+	}
+}
