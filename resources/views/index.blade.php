@@ -26,10 +26,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="referenceContainer col-sm text-center">
-					<img src="/img/logos/entrepreneur.png" height="40">
+					<img src="/img/logos/entrepreneur.png" height="39">
 				</div>
 				<div class="referenceContainer col-sm text-center">
-					<img src="/img/logos/investing.com.png" height="40">
+					<img src="/img/logos/investing.com.png" height="37">
 				</div>
 				<div class="referenceContainer col-sm text-center">
 					<img src="/img/logos/yahoo.png" height="40">
