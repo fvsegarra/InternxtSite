@@ -55,22 +55,22 @@
 
             <ul class="nav d-inline-flex d-sm-none">
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="#twitter"><img src="/img/logos/twitter.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="#medium"><img src="/img/logos/medium.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="https://medium.com/Internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="#github"><img src="/img/logos/github.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="#mail"><img src="/img/logos/mail.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="#instagram"><img src="/img/logos/instagram.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="#instagram" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="#telegram"><img src="/img/logos/telegram.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
                 </li>
             </ul>
 
