@@ -352,11 +352,29 @@ footer {
   }
 }
 
+@media (min-width: 1440px) {
+  .section--preview-xcloud,
+  .section--preview-xcore {
+    margin-top: 0px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-bottom: 46px;
+  }
+}
+
 @media (min-width: 1080px) {
   .section--preview-xcloud .offset-md-6,
   .section--preview-xcore .offset-md-6 {
     margin-top: 51px;
     padding-left: 62px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section--preview-xcloud .offset-md-6,
+  .section--preview-xcore .offset-md-6 {
+    margin-top: 83px;
+    padding-left: 76px;
   }
 }
 
@@ -439,6 +457,7 @@ footer {
   .section--preview-xcloud .section__subheading,
   .section--preview-xcore .section__subheading {
     font-size: 25px;
+    max-width: 355px;
   }
 }
 
@@ -462,6 +481,13 @@ footer {
   }
 }
 
+@media (min-width: 1440px) {
+  .section--preview-xcloud > .container,
+  .section--preview-xcore > .container {
+    height: 497px;
+  }
+}
+
 .section--preview-xcloud > .container {
   background-image: url(/img/mockups/homepage-xcloud.png);
 }
@@ -471,6 +497,23 @@ footer {
     background-position-x: 50px;
     background-size: 408px;
     background-position-y: 21px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .section--preview-xcloud > .container {
+    background-position-x: 29px;
+    background-size: 512px;
+    background-position-y: -5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section--preview-xcloud > .container {
+    height: 497px;
+    background-position-x: 31px;
+    background-size: 509px;
+    background-position-y: bottom;
   }
 }
 
@@ -486,7 +529,7 @@ footer {
 
 @media (min-width: 1440px) {
   .section--preview-xcloud .section__icon {
-    max-height: 40px;
+    max-height: 29px;
   }
 }
 
@@ -503,6 +546,15 @@ footer {
   }
 }
 
+@media (min-width: 1440px) {
+  .section--preview-xcore > .container {
+    padding-left: 80px;
+    padding-top: 114px;
+    background-position-x: 491px;
+    background-position-y: 1px;
+  }
+}
+
 .section--preview-xcore .section__icon {
   height: 65px;
 }
@@ -515,7 +567,7 @@ footer {
 
 @media (min-width: 1440px) {
   .section--preview-xcore .section__icon {
-    max-height: 40px;
+    max-height: 44px;
   }
 }
 
@@ -603,9 +655,9 @@ footer {
     padding-left: 72px;
     padding-top: 131px;
     height: 656px;
-    background-position-x: right;
-    background-position-y: top;
-    background-size: 582px;
+    background-position-x: 557px;
+    background-position-y: 26px;
+    background-size: 588px;
   }
 }
 
@@ -619,7 +671,7 @@ footer {
   padding-left: 8px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
   #page-home .pageHeader__heading {
     letter-spacing: -1.8px;
     margin-top: 52px;
@@ -628,7 +680,8 @@ footer {
 
 @media (min-width: 1440px) {
   #page-home .pageHeader__heading {
-    margin-top: 18px;
+    letter-spacing: -1px;
+    margin-top: 17px;
     font-size: 57px;
     max-width: 400px;
   }
@@ -702,7 +755,7 @@ footer {
 
 @media (min-width: 1440px) {
   #page-home .section--home-references {
-    padding: 60px 0 15px;
+    padding: 57px 0 20px;
   }
 }
 
@@ -720,12 +773,29 @@ footer {
   }
 }
 
+@media (min-width: 1440px) {
+  #page-home .section--home-references .referenceContainer:nth-of-type(1) img {
+    height: 39px;
+    position: relative;
+    left: -10px;
+  }
+}
+
 #page-home .section--home-references .referenceContainer:nth-of-type(2) {
   margin-bottom: 38px;
 }
 
 #page-home .section--home-references .referenceContainer:nth-of-type(2) img {
   height: 36px;
+}
+
+@media (min-width: 1440px) {
+  #page-home .section--home-references .referenceContainer:nth-of-type(2) img {
+    height: 37px;
+    position: relative;
+    left: 29px;
+    top: 1px;
+  }
 }
 
 #page-home .section--home-references .referenceContainer:nth-of-type(3) img {
@@ -735,6 +805,15 @@ footer {
 @media (min-width: 1080px) {
   #page-home .section--home-references .referenceContainer:nth-of-type(3) img {
     height: 32px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-home .section--home-references .referenceContainer:nth-of-type(3) img {
+    height: 37px;
+    position: relative;
+    left: 36px;
+    top: 2px;
   }
 }
 

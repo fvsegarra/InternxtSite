@@ -46,16 +46,28 @@ footer{
 		margin-bottom: 19px;
 	    padding: 0 !important; // provided by container
 
-	    @include whenLargerThan('medium-screen'){
+	    @include whenLargerThan('medium-screen') {
 	    	margin: 36px;
+	    }
+
+	    @include whenLargerThan('large-screen') {
+	    	margin-top: 0px;
+			margin-left: 44px;
+			margin-right: 44px;
+			margin-bottom: 46px;
 	    }
 
 	    .offset-md-6{
 
-	    	@include whenLargerThan('medium-screen'){
+	    	@include whenLargerThan('medium-screen') {
 	    		margin-top: 51px;
 	    		padding-left: 62px;
 	    	}
+
+	    	@include whenLargerThan('large-screen') {
+    	        margin-top: 83px;
+				padding-left: 76px;
+			}
 
 	    }
 
@@ -122,6 +134,7 @@ footer{
 
             @include whenLargerThan('large-screen') {
   				font-size: 25px;
+  				max-width: 355px;
             }
 
         }
@@ -135,11 +148,15 @@ footer{
 	        background-repeat: no-repeat;
 	        background-position-y: 216px; // Send offscreen at bottom
 
-	        @include whenLargerThan('medium-screen'){
+	        @include whenLargerThan('medium-screen') {
 	            text-align: left;
 	            height: 398px;
 	            padding: 40px;
 	            background-position-y: center;
+	        }
+
+	        @include whenLargerThan('large-screen') {
+	        	height: 497px;
 	        }
 
 	    }
@@ -152,11 +169,24 @@ footer{
 
 			background-image: url(/img/mockups/homepage-xcloud.png);
 
-			@include whenLargerThan('medium-screen'){
+			@include whenLargerThan('medium-screen') {
 			    background-position-x: 50px;
 			    background-size: 408px;
 			    background-position-y: 21px;
 			}
+
+			@include whenLargerThan('medium-screen') {
+				background-position-x: 29px;
+				background-size: 512px;
+				background-position-y: -5px;
+			}
+
+			@include whenLargerThan('large-screen') {
+				height: 497px;
+				background-position-x: 31px;
+				background-size: 509px;
+				background-position-y: bottom;
+	        }
 
 		}
 
@@ -169,7 +199,7 @@ footer{
 	        }
 
 	        @include whenLargerThan('large-screen'){
-	            max-height: 40px;
+	            max-height: 29px;
 	        }
 
 		}
@@ -182,11 +212,18 @@ footer{
 
 	    	background-image: url(/img/mockups/homepage-xcore.png);
 
-		    @include whenLargerThan('medium-screen'){
+		    @include whenLargerThan('medium-screen') {
 		        padding-left: 90px;
 	    		padding-top: 90px;
 	    		background-position-x: 419px;
 	    		background-position-y: 1px;
+		    }
+
+		    @include whenLargerThan('large-screen') {
+				padding-left: 80px;
+   				padding-top: 114px;
+			    background-position-x: 491px;
+			    background-position-y: 1px;
 		    }
 
 		}
@@ -195,12 +232,12 @@ footer{
 
 			height: 65px;
 
-			@include whenLargerThan('medium-screen'){
+			@include whenLargerThan('medium-screen') {
 	            max-height: 35px;
 	        }
 
-	        @include whenLargerThan('large-screen'){
-	            max-height: 40px;
+	        @include whenLargerThan('large-screen') {
+	            max-height: 44px;
 	        }
 
 		}

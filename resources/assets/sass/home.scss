@@ -33,7 +33,7 @@
                 size: 312px;
             }
 
-            @include whenLargerThan('medium-screen'){
+            @include whenLargerThan('medium-screen') {
                 padding-top: 111px;
                 padding-left: 82px;
                 height: 516px;
@@ -44,20 +44,20 @@
                 }
             }
 
-            @include whenLargerThan('large-screen'){
+            @include whenLargerThan('large-screen') {
                 padding-left: 72px;
                 padding-top: 131px;
                 height: 656px;
                 background:{
-                    position-x: right;
-                    position-y: top;
-                    size: 582px;
+                    position-x: 557px;
+                    position-y: 26px;
+                    size: 588px;
                 }
             }
 
         }
 
-        &__heading{
+        &__heading {
 
             font-size: 46px;
             font-weight: bold;
@@ -68,13 +68,14 @@
             padding-left: 8px;
 
 
-            @include whenLargerThan('large-screen'){
+            @include whenLargerThan('medium-screen') {
                 letter-spacing: -1.8px;
                 margin-top: 52px;
             }
 
-            @include whenLargerThan('large-screen'){
-                margin-top: 18px;
+            @include whenLargerThan('large-screen') {
+                letter-spacing: -1px;
+                margin-top: 17px;
                 font-size: 57px;
                 max-width: 400px;
             }
@@ -144,7 +145,7 @@
             }
 
             @include whenLargerThan('large-screen'){
-                padding: 60px 0 15px;
+                padding: 57px 0 20px;
             }
 
             .referenceContainer{
@@ -161,6 +162,12 @@
                             height: 31px;
                         }
 
+                        @include whenLargerThan('large-screen') {
+                            height: 39px;
+                            position: relative;
+                            left: -10px;
+                        }
+
                     }
 
                 }
@@ -173,8 +180,11 @@
 
                         height: 36px;
 
-                        @include whenLargerThan('medium-screen') {
-
+                        @include whenLargerThan('large-screen') {
+                            height: 37px;
+                            position: relative;
+                            left: 29px;
+                            top: 1px;
                         }
 
                     }
@@ -189,6 +199,13 @@
 
                         @include whenLargerThan('medium-screen') {
                             height: 32px;
+                        }
+
+                        @include whenLargerThan('medium-screen') {
+                            height: 37px;
+                            position: relative;
+                            left: 36px;
+                            top: 2px;
                         }
 
                     }
