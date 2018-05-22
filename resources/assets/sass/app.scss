@@ -96,6 +96,7 @@ footer{
 				line-height: 0.86;
 				letter-spacing: -1.7px;
 				max-width: 314px;
+				margin-bottom: 11px;
 	    	}
 
 			@include whenLargerThan('large-screen') {
@@ -115,7 +116,8 @@ footer{
             	display: inherit;
 				font-size: 20px;
 				line-height: 1.2;
-				letter-spacing: -0.2px;
+				letter-spacing: -0.4px;
+				max-width: 287px;
             }
 
             @include whenLargerThan('large-screen') {
@@ -147,7 +149,15 @@ footer{
 	&--preview-xcloud {
 
 		& > .container{
+
 			background-image: url(/img/mockups/homepage-xcloud.png);
+
+			@include whenLargerThan('medium-screen'){
+			    background-position-x: 50px;
+			    background-size: 406px;
+			    background-position-y: 22px;
+			}
+
 		}
 
 		.section__icon{
@@ -176,6 +186,7 @@ footer{
 		        background-position: right center;
 		    	padding-left: 90px;
 	    		padding-top: 90px;
+	    		background-position-x: 420px;
 		    }
 
 		}

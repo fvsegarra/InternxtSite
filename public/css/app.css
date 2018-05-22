@@ -392,6 +392,7 @@ footer {
     line-height: 0.86;
     letter-spacing: -1.7px;
     max-width: 314px;
+    margin-bottom: 11px;
   }
 }
 
@@ -416,7 +417,8 @@ footer {
     display: inherit;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.4px;
+    max-width: 287px;
   }
 }
 
@@ -451,6 +453,14 @@ footer {
   background-image: url(/img/mockups/homepage-xcloud.png);
 }
 
+@media (min-width: 1080px) {
+  .section--preview-xcloud > .container {
+    background-position-x: 50px;
+    background-size: 406px;
+    background-position-y: 22px;
+  }
+}
+
 .section--preview-xcloud .section__icon {
   height: 45px;
 }
@@ -476,6 +486,7 @@ footer {
     background-position: right center;
     padding-left: 90px;
     padding-top: 90px;
+    background-position-x: 420px;
   }
 }
 
