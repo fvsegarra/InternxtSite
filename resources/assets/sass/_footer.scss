@@ -16,9 +16,6 @@
 		@include whenLargerThan('small-screen') {
 			max-width: 195px;
 			margin-top: 6px;
-		}
-
-		@include whenLargerThan('small-screen') {
 			-ms-flex-preferred-size: 0;
 			flex-basis: 0;
 			-ms-flex-positive: 1;
@@ -27,7 +24,7 @@
 		}
 
 		@include whenLargerThan('medium-screen') {
-			margin-top: 0;
+			margin-top: 5px;
 		}
 
 		img{

@@ -182,11 +182,6 @@
   .pageFooter__logoContainer {
     max-width: 195px;
     margin-top: 6px;
-  }
-}
-
-@media (min-width: 768px) {
-  .pageFooter__logoContainer {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
@@ -198,7 +193,7 @@
 
 @media (min-width: 1080px) {
   .pageFooter__logoContainer {
-    margin-top: 0;
+    margin-top: 5px;
   }
 }
 
@@ -360,8 +355,8 @@ footer {
 @media (min-width: 1080px) {
   .section--preview-xcloud .section__label,
   .section--preview-xcore .section__label {
-    margin-top: 0px;
-    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-bottom: 7px;
     font-size: 24.8px;
     font-weight: 500;
     line-height: 1.79;
@@ -456,8 +451,8 @@ footer {
 @media (min-width: 1080px) {
   .section--preview-xcloud > .container {
     background-position-x: 50px;
-    background-size: 406px;
-    background-position-y: 22px;
+    background-size: 408px;
+    background-position-y: 21px;
   }
 }
 
@@ -483,10 +478,10 @@ footer {
 
 @media (min-width: 1080px) {
   .section--preview-xcore > .container {
-    background-position: right center;
     padding-left: 90px;
     padding-top: 90px;
-    background-position-x: 420px;
+    background-position-x: 419px;
+    background-position-y: 1px;
   }
 }
 
@@ -496,7 +491,7 @@ footer {
 
 @media (min-width: 1080px) {
   .section--preview-xcore .section__icon {
-    max-height: 33px;
+    max-height: 35px;
   }
 }
 
