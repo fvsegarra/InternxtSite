@@ -2,13 +2,19 @@
 
 	background-color: #16181a;
 	color: #707273;
-	padding: 42px 15px 24px;
+	padding: 42px 15px 13px;
 
 	@include whenLargerThan('medium-screen'){
 		padding: 42px;
 	}
 
 	&__logoContainer{
+
+		img{
+		    margin-top: 42px;
+		    margin-bottom: 17px;
+		    height: 36px;
+		}
 
 		@include whenLargerThan(575px) {
 			max-width: 212px;

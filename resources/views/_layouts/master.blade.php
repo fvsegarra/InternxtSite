@@ -77,7 +77,7 @@
                 <div class="row">
 
                     <div class="col-sm pageFooter__logoContainer">
-                        <img src="/img/logos/internxt_light.png" height="42" class="my-5 my-sm-0">
+                        <img src="/img/logos/internxt_light.png" height="42">
                     </div>{{-- /.col-sm --}}
 
                     <div class="col-sm">
