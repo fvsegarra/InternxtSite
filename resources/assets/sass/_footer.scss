@@ -92,7 +92,13 @@
 	}
 
 	&__copyright{
+
 		padding-top: 15px;
+
+		@include whenLargerThan('medium-screen') {
+			padding-top: 8px;
+		}
+
 	}
 
 	&__terms a.nav-link,

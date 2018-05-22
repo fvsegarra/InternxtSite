@@ -263,6 +263,12 @@
   padding-top: 15px;
 }
 
+@media (min-width: 1080px) {
+  .pageFooter__copyright {
+    padding-top: 8px;
+  }
+}
+
 .pageFooter__terms a.nav-link,
 .pageFooter__privacy a.nav-link {
   font-size: 18px;
