@@ -32,13 +32,13 @@
                             <a class="nav-link" href="{{ route('core') }}">X Core</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('token') }}">X Token</a>
+                            <a class="nav-link" href="{{ route('token') }}">INXT Token</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('team') }}">Leadership</a>
+                            <a class="nav-link" href="{{ route('team') }}">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('timeline') }}">Timeline</a>
+                            <a class="nav-link" href="{{ route('roadmap') }}">Roadmap</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('resources') }}">Resources</a>

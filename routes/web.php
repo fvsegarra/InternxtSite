@@ -16,7 +16,7 @@ Route::view('token', 'token')->name('token');
 Route::view('cloud', 'cloud')->name('cloud');
 Route::view('core', 'core')->name('core');
 Route::view('team', 'team')->name('team');
-Route::view('timeline', 'timeline')->name('timeline');
+Route::view('roadmap', 'roadmap')->name('roadmap');
 Route::view('resources', 'resources')->name('resources');
 Route::view('terms', 'terms')->name('terms');
 Route::view('privacy', 'privacy')->name('privacy');
