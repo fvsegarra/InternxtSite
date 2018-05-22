@@ -11,7 +11,7 @@
 |
 */
 
-Route::view('/', 'index')->name('home');
+Route::view('/', 'home')->name('home');
 Route::view('token', 'token')->name('token');
 Route::view('cloud', 'cloud')->name('cloud');
 Route::view('core', 'core')->name('core');

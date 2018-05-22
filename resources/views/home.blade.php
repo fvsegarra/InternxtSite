@@ -26,10 +26,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="referenceContainer col-sm text-center">
-					<img src="/img/logos/entrepreneur.png" height="39">
+					<img src="/img/logos/entrepreneur.png" height="40">
 				</div>
 				<div class="referenceContainer col-sm text-center">
-					<img src="/img/logos/investing.com.png" height="37">
+					<img src="/img/logos/investing.com.png" height="40">
 				</div>
 				<div class="referenceContainer col-sm text-center">
 					<img src="/img/logos/yahoo.png" height="40">
@@ -38,26 +38,8 @@
 		</div>
 	</section>
 
-	<section class="section section--preview-xcloud">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm offset-md-6">
-					<img class="section__icon" src="/img/logos/xcloud.png" height="59">
-					<p class="section__label">X Cloud</p>
-					<p class="section__heading">A Step-forward for the cloud.</p>
-					<p class="section__subheading">A cloud platform built with total security and privacy.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+	@include('_includes.previews.xcloud')
 
-	<section class="section section--preview-xcore">
-		<div class="container">
-			<img class="section__icon" src="/img/logos/xcore.png" height="59">
-			<p class="section__label">X Core</p>
-			<p class="section__heading">Your data. <span class="d-sm-block"></span>In your hands.</p>
-			<p class="section__subheading">Enabling hosts to store and transfer data.</p>
-		</div>
-	</section>
+	@include('_includes.previews.xcore')
 
 @endsection
