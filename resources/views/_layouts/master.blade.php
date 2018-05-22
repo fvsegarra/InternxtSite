@@ -67,10 +67,10 @@
                 <a class="nav-link nav-link--social" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="#instagram" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link nav-link--social" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
+                <a class="nav-link nav-link--social" href="#instagram" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
                 </li>
             </ul>
 
@@ -83,7 +83,7 @@
                     <div class="col-lg">
                         <ul class="nav pageFooterNav d-inline-flex">
                             <li class="nav-item pageFooter__copyright">
-                                <a class="nav-link pt-0 disabled">&copy; {{ date('Y') }} Internxt S.L.U.</a>
+                                <a class="nav-link pt-0 disabled">&copy; {{ date('Y') }} Internxt Inc.</a>
                             </li>
                             <li class="nav-item pageFooter__terms">
                                 <a class="nav-link" href="{{ route('terms') }}">Terms</a>

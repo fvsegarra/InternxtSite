@@ -40,6 +40,12 @@
   src: url("/fonts/CircularStd-Bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Circular Book';
+  font-style: normal;
+  src: url("/fonts/CircularStd-Book.otf") format("opentype");
+}
+
 .navbar {
   background-color: #16181a;
   padding: 16px;
@@ -191,6 +197,13 @@
   }
 }
 
+@media (min-width: 1080px) {
+  .pageFooter {
+    padding-top: 45px;
+    height: 128px;
+  }
+}
+
 .pageFooter__logoContainer {
   margin-top: 42px;
   margin-bottom: 17px;
@@ -215,6 +228,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .pageFooter__logoContainer {
+    max-width: 418px;
+  }
+}
+
 .pageFooter__logoContainer img {
   height: 36px;
 }
@@ -222,6 +241,15 @@
 @media (min-width: 1080px) {
   .pageFooter__logoContainer img {
     height: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pageFooter__logoContainer img {
+    height: 36px;
+    position: relative;
+    left: -57px;
+    top: -4px;
   }
 }
 
@@ -282,8 +310,15 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .pageFooter__copyright a.nav-link {
+    font-size: 14px;
+  }
+}
+
 .pageFooter__terms a.nav-link,
 .pageFooter__privacy a.nav-link {
+  color: #707273;
   font-size: 18px;
   line-height: 2.07;
 }
@@ -301,11 +336,25 @@
   .pageFooter__privacy a.nav-link {
     font-size: 15px;
     line-height: 2.13;
+    font-family: 'Circular Book';
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pageFooter__privacy {
+    margin-right: 15px;
   }
 }
 
 .pageFooter .pageFooterNav .nav-link {
   padding: 8px 8px;
+}
+
+@media (min-width: 1440px) {
+  .pageFooter .pageFooterNav .nav-link {
+    padding: 8px 11px;
+  }
 }
 
 body {

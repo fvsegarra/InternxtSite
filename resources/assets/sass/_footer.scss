@@ -4,11 +4,16 @@
 	color: #707273;
 	padding: 42px 15px 13px;
 
-	@include whenLargerThan('medium-screen'){
+	@include whenLargerThan('medium-screen') {
 		padding: 32px 0 10px;
 	}
 
-	&__logoContainer{
+	@include whenLargerThan('medium-screen') {
+		padding-top: 45px;
+		height: 128px;
+	}
+
+	&__logoContainer {
 
 	    margin-top: 42px;
 	    margin-bottom: 17px;
@@ -27,12 +32,23 @@
 			margin-top: 5px;
 		}
 
+		@include whenLargerThan('large-screen') {
+			max-width: 418px;
+		}
+
 		img{
 
 		    height: 36px;
 
 		    @include whenLargerThan('medium-screen') {
 		        height: 30px
+		    }
+
+ 			@include whenLargerThan('large-screen') {
+				height: 36px;
+				position: relative;
+				left: -57px;
+				top: -4px;
 		    }
 
 		}
@@ -96,11 +112,20 @@
 			padding-top: 8px;
 		}
 
+		a.nav-link{
+
+			@include whenLargerThan('large-screen') {
+				font-size: 14px;
+			}
+
+		}
+
 	}
 
 	&__terms a.nav-link,
 	&__privacy a.nav-link{
 
+		color: #707273;
 		font-size: 18px;
 		line-height: 2.07;
 
@@ -112,12 +137,28 @@
 		@include whenLargerThan('large-screen') {
 			font-size: 15px;
   			line-height: 2.13;
+  			font-family: 'Circular Book';
+			letter-spacing: 0;
+		}
+
+	}
+
+	&__privacy{
+
+		@include whenLargerThan('large-screen') {
+			margin-right: 15px;
 		}
 
 	}
 
 	.pageFooterNav .nav-link{
+
 		padding: 8px 8px;
+
+		@include whenLargerThan('large-screen') {
+		    padding: 8px 11px;
+		}
+
 	}
 
 }
