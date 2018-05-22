@@ -5,23 +5,66 @@
 	padding: 42px 15px 13px;
 
 	@include whenLargerThan('medium-screen'){
-		padding: 42px;
+		padding: 32px 0 10px;
 	}
 
 	&__logoContainer{
 
-		img{
-		    margin-top: 42px;
-		    margin-bottom: 17px;
-		    height: 36px;
-		}
+	    margin-top: 42px;
+	    margin-bottom: 17px;
 
-		@include whenLargerThan(575px) {
-			max-width: 212px;
+		@include whenLargerThan('small-screen') {
+			max-width: 195px;
+			margin-top: 6px;
 		}
 
 		@include whenLargerThan('small-screen') {
-			max-width: 206px;
+			-ms-flex-preferred-size: 0;
+			flex-basis: 0;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			max-width: 299px;
+		}
+
+		@include whenLargerThan('medium-screen') {
+			margin-top: 0;
+		}
+
+		img{
+
+		    height: 36px;
+
+		    @include whenLargerThan('medium-screen') {
+		        height: 30px
+		    }
+
+		}
+
+	}
+
+	.nav{
+
+		&--social{
+
+			display: inline-flex;
+
+			@include whenLargerThan('medium-screen'){
+				display: none;
+			}
+
+		}
+
+		.nav-item{
+
+			&--social{
+				display: none;
+
+				@include whenLargerThan('medium-screen'){
+					display: inline-flex;
+				}
+
+			}
+
 		}
 
 	}
@@ -40,6 +83,10 @@
 
 		&--social{
 			padding: 0 12px;
+		}
+
+		@include whenLargerThan('medium-screen') {
+			padding: 11px 8px 7px;
 		}
 
 	}

@@ -53,7 +53,7 @@
         <footer class="pageFooter">
             <div class="container">
 
-            <ul class="nav d-inline-flex d-sm-none">
+            <ul class="nav nav--social">
                 <li class="nav-item">
                 <a class="nav-link nav-link--social" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
                 </li>
@@ -76,11 +76,11 @@
 
                 <div class="row">
 
-                    <div class="col-sm pageFooter__logoContainer">
+                    <div class="col-lg pageFooter__logoContainer">
                         <img src="/img/logos/internxt_light.png" height="42">
-                    </div>{{-- /.col-sm --}}
+                    </div>{{-- /.col-lg --}}
 
-                    <div class="col-sm">
+                    <div class="col-lg">
                         <ul class="nav pageFooterNav d-inline-flex">
                             <li class="nav-item pageFooter__copyright">
                                 <a class="nav-link pt-0 disabled">&copy; {{ date('Y') }} Internxt S.L.U.</a>
@@ -93,7 +93,7 @@
                             </li>
                             @include('_includes.footer-social-icons')
                         </ul>
-                    </div>{{-- /.col-sm --}}
+                    </div>{{-- /.col-lg --}}
 
                 </div>{{-- /.row --}}
             </div>{{-- /.container --}}
