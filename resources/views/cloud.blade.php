@@ -154,13 +154,6 @@
 		</div>{{-- /.row --}}
 	</section>
 
-	<section class="section section--preview-xcore">
-		<div class="container">
-			<img class="section__icon" src="/img/logos/xcore.png" height="59">
-			<p class="section__label">X Core</p>
-			<p class="section__heading">Your data. In your hands.</p>
-			<p class="section__subheading">Enabling hosts to store and transfer data.</p>
-		</div>
-	</section>
+	@include('_includes.previews.xcore')
 
 @endsection
