@@ -47,7 +47,7 @@
 
 @media (min-width: 768px) {
   .navbar {
-    padding: 0 16px;
+    padding: 5px 16px 5px;
   }
 }
 
@@ -60,6 +60,7 @@
 @media (min-width: 1440px) {
   .navbar .container {
     max-width: 1032px;
+    padding-right: 18px;
   }
 }
 
@@ -76,7 +77,17 @@
 
 @media (min-width: 1440px) {
   .navbar .navbar-brand {
-    margin-right: 109px;
+    margin-right: 113px;
+  }
+}
+
+.navbar .navbar-brand .mainLogo {
+  height: 31px;
+}
+
+@media (min-width: 1440px) {
+  .navbar .navbar-brand .mainLogo {
+    margin-left: 3px;
   }
 }
 
@@ -100,11 +111,16 @@
   display: none;
 }
 
+@media (min-width: 1080px) {
+  .navbar .navbar-nav {
+    padding-top: 5px;
+  }
+}
+
 .navbar .navbar-nav a.nav-link {
   text-transform: uppercase;
   color: #e8e9eb;
   font-size: 13px;
-  font-weight: bold;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
@@ -117,7 +133,9 @@
 
 @media (min-width: 1440px) {
   .navbar .navbar-nav a.nav-link {
-    font-size: 13px;
+    font-size: 14px;
+    color: #E8E9EB;
+    letter-spacing: 0;
   }
 }
 

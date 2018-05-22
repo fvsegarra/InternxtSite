@@ -4,7 +4,7 @@
 	padding: 16px;
 
 	@include whenLargerThan('small-screen') {
-		padding: 0 16px;
+		padding: 5px 16px 5px;
 	}
 
 	.container{
@@ -15,6 +15,7 @@
 
 		@include whenLargerThan('large-screen') {
 			max-width: 1032px;
+			padding-right: 18px;
 		}
 
 	}
@@ -29,7 +30,17 @@
 		}
 
 		@include whenLargerThan('large-screen') {
-			margin-right: 109px;
+			margin-right: 113px;
+		}
+
+		.mainLogo{
+
+    		height: 31px;
+
+    		@include whenLargerThan('large-screen') {
+				margin-left: 3px;
+    		}
+
 		}
 
 	}
@@ -56,25 +67,34 @@
 		display: none;
 	}
 
-	.navbar-nav a.nav-link{
+	.navbar-nav {
 
-		text-transform: uppercase;
-		color: #e8e9eb;
-  		font-size: 13px;
-  		font-weight: bold;
-  		transition: color $transition-default;
+		@include whenLargerThan('medium-screen') {
+			padding-top: 5px;
+		}
 
-  		@include whenLargerThan('medium-screen'){
-			font-size: 11px;
-  		}
+		a.nav-link{
 
-  		@include whenLargerThan('large-screen'){
-  			font-size: 13px;
-  		}
+			text-transform: uppercase;
+			color: #e8e9eb;
+	  		font-size: 13px;
+	  		transition: color $transition-default;
 
-  		&:hover{
-  			color: #e9eaec;
-  		}
+	  		@include whenLargerThan('medium-screen') {
+				font-size: 11px;
+	  		}
+
+	  		@include whenLargerThan('large-screen') {
+				font-size: 14px;
+				color: #E8E9EB;
+				letter-spacing: 0;
+	  		}
+
+	  		&:hover{
+	  			color: #e9eaec;
+	  		}
+
+		}
 
 	}
 
