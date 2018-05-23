@@ -147,6 +147,7 @@ footer{
 	        background-size: contain;
 	        background-repeat: no-repeat;
 	        background-position-y: 216px; // Send offscreen at bottom
+	        background-position-y: 240px;
 
 	        @include whenLargerThan('medium-screen') {
 	            text-align: left;
@@ -210,7 +211,12 @@ footer{
 
 		& > .container{
 
-	    	background-image: url(/img/mockups/homepage-xcore.png);
+			background-image: url(/img/mockups/homepage-xcore.png);
+			background-position-x: -11px;
+			background-position-y: 230px;
+			background-size: 107%;
+			height: 530px;
+			padding-top: 90px;
 
 		    @include whenLargerThan('medium-screen') {
 		        padding-left: 90px;

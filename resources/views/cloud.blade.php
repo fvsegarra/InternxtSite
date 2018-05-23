@@ -33,14 +33,14 @@
 
 	<section class="section section--cloud-architecture">
 		<div class="container">
-			<p class="section__heading">Advanced architecture that brings a new level of security.</p>
+			<p class="section__heading">Advanced architecture that brings a new level<span class="linebreak"></span> of security.</p>
 		</div>
 		<div class="row no-gutters">
 			<div class="col-sm-6">
 				<div class="subsection subsection--reimagined">
 					<div class="container-fluid">
 						<p class="subsection__heading">Security reimagined.</p>
-						<p class="subsection__content">We've reimagined cloud storage on a security level by solving major problems with current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies. X Cloud removes this destructivity of privacy by giving users total control of their personal data.</p>
+						<p class="subsection__content">We've reimagined cloud storage<span class="linebreak"></span> on a security level by solving major problems with current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies. X Cloud removes this destructivity of privacy by giving users total control of their personal data.</p>
 					</div>{{-- /.container-fluid --}}
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 				<div class="col-sm-6 planContainer">
 
 					<div class="plan row align-items-center">
-						<div class="col">
+						<div class="col-5">
 							<p class="plan__quantity">10GB</p>
 						</div>
 						<div class="col">
@@ -77,7 +77,7 @@
 					</div>
 
 					<div class="plan row align-items-center">
-						<div class="col">
+						<div class="col-5">
 							<p class="plan__quantity">100GB</p>
 						</div>
 						<div class="col">
@@ -86,7 +86,7 @@
 					</div>
 
 					<div class="plan row align-items-center">
-						<div class="col">
+						<div class="col-5">
 							<p class="plan__quantity">1TB</p>
 						</div>
 						<div class="col">

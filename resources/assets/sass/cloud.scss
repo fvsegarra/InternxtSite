@@ -12,8 +12,12 @@
 
         background-color: #bddfff;
         text-align: center;
-        padding-top: 39px;
-        padding-bottom: 12px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+
+        @include whenLargerThan('medium-screen') {
+            padding-top: 40px;
+        }
 
         & > .container {
             padding-bottom: 15px;
@@ -27,13 +31,13 @@
             line-height: 0.96;
             letter-spacing: -3.9px;
             margin-left: -4px;
-            margin-bottom: 13px;
+            margin-bottom: 10px;
 
             @include whenLargerThan('medium-screen'){
                 font-size: 85px;
                 letter-spacing: -4.7px;
-                line-height: 1.28;
-                margin: 0 auto;
+                line-height: 1;
+                margin: 11px auto 0;
             }
 
             @include whenLargerThan('large-screen'){
@@ -56,9 +60,11 @@
             @include whenLargerThan('medium-screen') {
                 font-weight: 500;
                 padding: 0 10px;
-                font-size: 25px;
-                line-height: 1.56;
-                letter-spacing: -0.4px;
+                font-size: 26px;
+                line-height: 1.3;
+                letter-spacing: -0.54px;
+                max-width: 730px;
+                margin: 6px auto 0;
             }
 
             @include whenLargerThan('large-screen') {
@@ -82,7 +88,7 @@
             height: 51px;
             letter-spacing: 0.1px;
             line-height: 1.47;
-            margin-top: 37px;
+            margin-top: 35px;
             padding: 12px;
             width: 233px;
 
@@ -91,6 +97,14 @@
                 background: none;
                 color: #0083ff;
                 cursor: normal;
+            }
+
+            @include whenLargerThan('medium-screen') {
+                margin-top: 33px;
+                width: 185px;
+                font-size: 15px;
+                height: 40px;
+                padding-top: 10px;
             }
 
         }
@@ -124,15 +138,15 @@
 
             .section__heading{
 
-                color: #3b4461;
                 font-size: 30px;
                 font-weight: bold;
-                letter-spacing: -2.2px;
-                line-height: 0.9;
-                margin-bottom: 50px;
-                max-width: 265px;
+                margin-bottom: 28px;
+                max-width: 290px;
+                line-height: 1;
+                letter-spacing: -0.8px;
 
                 @include whenLargerThan('medium-screen') {
+                    color: #3b4461;
                     font-size: 46px;
                     letter-spacing: -2.2px;
                     line-height: 0.9;
@@ -150,6 +164,7 @@
             }
 
             input{
+
                 background-color: transparent;
                 border-radius: 6.4px;
                 border: solid 0.8px #3288d9;
@@ -157,9 +172,11 @@
                 width: 235px;
                 margin-top: -8px; // Line up with button
                 color: #20588c;
+
                 &::placeholder{
                     color: #20588c;
                 }
+
             }
 
             .btn {
@@ -179,7 +196,7 @@
 
             background-image: linear-gradient(290deg, #e8d6ff, #e2d4ff);
             padding-bottom: 0; // Important, as the two subsections need to come to the bottom
-            padding-top: 50px;
+            padding-top: 56px;
 
             @include whenLargerThan('medium-screen') {
                 padding-top: 100px;
@@ -193,6 +210,8 @@
                 line-height: 0.85;
                 max-width: 335px;
                 color: #503b61;
+                padding-left: 10px;
+                margin-bottom: 63px;
 
                 @include whenLargerThan('medium-screen') {
                     max-width: 769.6px;
@@ -208,20 +227,26 @@
                     letter-spacing: -4.2px;
                 }
 
+                .linebreak{
+                    display: block;
+                }
+
             }
 
             .subsection{
 
-                padding-bottom: 100px;
-                // padding-top: 90px;
-                padding-top: 112px;
+                padding-bottom: 50px;
+                padding-top: 60px;
 
                 &__heading{
+
                     font-size: 40px;
                     font-weight: bold;
                     line-height: 0.88;
                     letter-spacing: -1.1px;
                     color: #503b61;
+                    padding-left: 4px;
+                    margin-bottom: 11px;
 
                     @include whenLargerThan('medium-screen') {
                         max-width: 211px;
@@ -230,11 +255,17 @@
                 }
 
                 &__content{
-                    max-width: 273.6px;
-                    font-size: 17px;
-                    line-height: 1.51;
-                    letter-spacing: -0.2px;
+
                     color: #433d4a;
+                    font-size: 19px;
+                    letter-spacing: -0.2px;
+                    line-height: 1.43;
+                    padding-left: 4px;
+
+                    .linebreak{
+                        display: block;
+                    }
+
                 }
 
                 &--reimagined{
@@ -262,8 +293,8 @@
         &--cloud-plans{
 
             background-image: linear-gradient(119deg, #fce0ff, #fddeff);
-            padding-bottom: 110.2px;
-            padding-top: 96.2px;
+            padding-bottom: 60px;
+            padding-top: 55px;
 
             & > .container{
                 padding-left: 24px;
@@ -276,6 +307,7 @@
                 font-weight: bold;
                 line-height: 0.85;
                 letter-spacing: -3.4px;
+                margin-bottom: 28px;
 
                 @include whenLargerThan('medium-screen') {
                     max-width: 769.6px;
@@ -317,8 +349,8 @@
         &--cloud-features{
 
             background-image: linear-gradient(138deg, #ffe8ee, #ffdbe8);
-            padding-bottom: 98.4px;
-            padding-top: 98.4px;
+            padding-bottom: 103px;
+            padding-top: 60px;
 
             & > .container{
 
@@ -336,6 +368,7 @@
                 letter-spacing: -3.4px;
                 line-height: 0.85;
                 margin-bottom: 36px;
+                padding-left: 10px;
 
                 @include whenLargerThan('medium-screen') {
                     font-size: 72px;
@@ -433,9 +466,14 @@
 
             .tab-pane{
 
-                color: #7f4a6c;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 1.28;
+                letter-spacing: -0.2px;
+                color: #433d4a;
 
                 @include whenLargerThan('medium-screen'){
+                    color: #7f4a6c;
                     text-align: center;
                     font-size: 19px;
                     font-weight: 500;
@@ -450,16 +488,18 @@
         &--cloud-everywhere{
 
             background-image: linear-gradient(122deg, #ffe6ec, #fce6ec);
-            padding: 76px 24px;
+            padding: 60px 24px 45px;
             @extend %alignWithoutContainer;
 
             .section__heading{
+
                 color: #613b4b;
                 font-size: 40px;
                 font-weight: bold;
                 letter-spacing: -1.1px;
                 line-height: 0.88;
                 max-width: 272.8px;
+                margin-bottom: 10px;
 
                 @include whenLargerThan('large-screen') {
                     max-width: 341px;
@@ -472,10 +512,9 @@
 
             .section__content{
                 color: #543348;
-                font-size: 17px;
+                font-size: 20px;
                 letter-spacing: -0.2px;
-                line-height: 1.51;
-                max-width: 292.8px;
+                line-height: 1.34;
             }
 
         }
@@ -500,7 +539,8 @@
         &--cloud-iphone{
 
             background-image: linear-gradient(103deg, #fae1e8, #ffe3e9);
-            padding-top: 81px;
+            padding-top: 52px;
+            padding-bottom: 57px;
             text-align: center;
 
             .btn{
@@ -509,13 +549,13 @@
                 border: solid 0.8px #f4235b;
                 color: #f4235b;
                 cursor: normal;
-                font-size: 16px;
+                font-size: 19px;
                 font-weight: 500;
-                height: 44px;
+                height: 51px;
                 letter-spacing: -0.1px;
                 line-height: 1.47;
-                padding: 10px 15.5px;
-                width: 158.4px;
+                padding: 14px 15.5px;
+                width: 190px;
 
                 &:hover,
                 &:focus{
@@ -524,6 +564,11 @@
                     cursor: normal;
                 }
 
+            }
+
+            img{
+                margin-top: 36px;
+                max-width: 259px;
             }
 
         }
@@ -546,7 +591,7 @@
             font-weight: bold;
             letter-spacing: -0.1px;
             margin-bottom: 0;
-            padding: 15px 0;
+            padding: 15px 0 10px;
             text-align: center;
             width: 130.2px;
         }
@@ -556,6 +601,7 @@
             font-size: 20px;
             font-weight: 500;
             letter-spacing: -0.1px;
+            padding-top: 16px;
         }
 
     }
