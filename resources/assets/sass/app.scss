@@ -219,10 +219,12 @@ footer{
 			padding-top: 90px;
 
 		    @include whenLargerThan('medium-screen') {
-		        padding-left: 90px;
-	    		padding-top: 90px;
-	    		background-position-x: 419px;
-	    		background-position-y: 1px;
+				background-position-x: 418px;
+				background-position-y: bottom;
+				background-size: 54%;
+				padding-top: 90px;
+		    	height: 397px;
+		    	padding-left: 90px;
 		    }
 
 		    @include whenLargerThan('large-screen') {

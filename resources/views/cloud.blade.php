@@ -68,7 +68,7 @@
 				<div class="col-sm-6 planContainer">
 
 					<div class="plan row align-items-center">
-						<div class="col-5">
+						<div class="col-4">
 							<p class="plan__quantity">10GB</p>
 						</div>
 						<div class="col">
@@ -77,7 +77,7 @@
 					</div>
 
 					<div class="plan row align-items-center">
-						<div class="col-5">
+						<div class="col-4">
 							<p class="plan__quantity">100GB</p>
 						</div>
 						<div class="col">
@@ -86,7 +86,7 @@
 					</div>
 
 					<div class="plan row align-items-center">
-						<div class="col-5">
+						<div class="col-4">
 							<p class="plan__quantity">1TB</p>
 						</div>
 						<div class="col">
