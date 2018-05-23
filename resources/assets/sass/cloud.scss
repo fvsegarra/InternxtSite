@@ -3,7 +3,7 @@
     .container{
 
         @include whenLargerThan('large-screen'){
-            max-width: 1008px;
+            max-width: 1024px;
         }
 
     }
@@ -17,6 +17,10 @@
 
         @include whenLargerThan('medium-screen') {
             padding-top: 40px;
+        }
+
+        @include whenLargerThan('medium-screen') {
+            padding-top: 52px;
         }
 
         & > .container {
@@ -68,10 +72,10 @@
             }
 
             @include whenLargerThan('large-screen') {
-                max-width: 905px;
+                max-width: 939px;
                 font-size: 34px;
                 line-height: 1.21;
-                letter-spacing: -1px;
+                letter-spacing: -1.2px;
                 margin: 0 auto;
             }
 
@@ -107,6 +111,15 @@
                 padding-top: 10px;
             }
 
+            @include whenLargerThan('large-screen') {
+                margin-top: 50px;
+                width: 233px;
+                font-size: 15px;
+                height: 50px;
+                padding-top: 10px;
+                font-size: 18.8px;
+            }
+
         }
 
         img{
@@ -114,6 +127,11 @@
             @include whenLargerThan('medium-screen') {
                 max-width: 833px;
                 margin-top: 58px;
+            }
+
+            @include whenLargerThan('medium-screen') {
+                max-width: 1040px;
+                margin-top: 76px;
             }
 
         }
@@ -134,6 +152,10 @@
                 padding: 109px 126px 0;
             }
 
+            @include whenLargerThan('large-screen'){
+                padding: 134px 126px 29px;
+            }
+
             & > .container{
 
                 padding-left: 24px;
@@ -144,7 +166,7 @@
                 }
 
                 @include whenLargerThan('large-screen'){
-                    max-width: 978px;
+                    max-width: 1024px;
                 }
 
             }
@@ -173,6 +195,7 @@
                     font-size: 58px;
                     line-height: 0.9;
                     letter-spacing: -2.8px;
+                    margin-bottom: 56px;
                 }
 
             }
@@ -195,6 +218,12 @@
                     width: 265px;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    height: 63px;
+                    margin-top: 0;
+                    width: 327px;
+                }
+
             }
 
             .btn {
@@ -213,6 +242,15 @@
                     margin-left: 9px;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    width: 133px;
+                    margin-left: 14px;
+                    height: 61px;
+                    margin-top: 5px;
+                    font-size: 19px;
+                    padding-top: 16px;
+                }
+
             }
 
         }
@@ -225,6 +263,18 @@
 
             @include whenLargerThan('medium-screen') {
                 padding-top: 100px;
+            }
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 127px;
+            }
+
+            .container{
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1024px;
+                }
+
             }
 
             .section__heading{
@@ -247,12 +297,14 @@
                     margin-bottom: 120px;
                 }
 
-                // @include whenLargerThan('medium-screen') {
-                //     max-width: 962px;
-                //     font-size: 90px;
-                //     line-height: 0.81;
-                //     letter-spacing: -4.2px;
-                // }
+                @include whenLargerThan('large-screen') {
+                    max-width: 962px;
+                    font-size: 90px;
+                    font-weight: bold;
+                    line-height: 0.81;
+                    letter-spacing: -4.2px;
+                    padding-left: 7px;
+                }
 
                 .linebreak{
                     display: block;
@@ -270,6 +322,10 @@
                     padding-bottom: 93px;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    padding-top: 147px;
+                }
+
                 &__heading{
 
                     font-size: 40px;
@@ -282,6 +338,12 @@
 
                     @include whenLargerThan('medium-screen') {
                         max-width: 211px;
+                    }
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 50px;
+                        line-height: 0.88;
+                        letter-spacing: -1.4px;
                     }
 
                 }
@@ -347,6 +409,10 @@
                 padding-bottom: 96px;
             }
 
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 122px;
+            }
+
             & > .container{
                 padding-left: 24px;
             }
@@ -371,6 +437,8 @@
                 @include whenLargerThan('large-screen') {
                     font-size: 90px;
                     letter-spacing: -4.2px;
+                    padding-left: 0;
+                    max-width: 800px;
                 }
 
             }
@@ -394,7 +462,10 @@
 
                 @include whenLargerThan('large-screen') {
                     font-size: 22px;
-                    line-height: 1.45;
+                    line-height: 1.47;
+                    padding-left: 0px;
+                    max-width: 386px;
+                    margin-top: 70px;
                 }
 
             }
@@ -409,6 +480,11 @@
 
             @include whenLargerThan('medium-screen') {
                 padding-top: 103px;
+            }
+
+            @include whenLargerThan('medium-screen') {
+                padding-top: 128px;
+                padding-bottom: 206px;
             }
 
             & > .container{
@@ -442,7 +518,7 @@
                     font-size: 90px;
                     letter-spacing: -4.2px;
                     max-width: 1120px;
-                    margin-left: 150px;
+                    margin-left: 141px;
                 }
 
             }
@@ -465,10 +541,12 @@
                 }
 
                 @include whenLargerThan('large-screen') {
-                    height: 705px;
+                    height: 709px;
                     width: 1260px;
                     background-image: url('/img/mockups/xcloud-laptop-blank-1440.png');
                     background-position-x: center;
+                    margin-top: 70px;
+                    margin-bottom: 37px;
                 }
 
                 .featurePreview{
@@ -510,16 +588,35 @@
 
             }
 
-            .nav-tabs .nav-link{
-                padding-bottom: 13px;
+            .nav-tabs {
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 432px;
+                }
+
+                .nav-link{
+
+                    padding-bottom: 13px;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 22px;
+                    }
+
+                }
+
             }
 
             .tab-content{
 
-                @include whenLargerThan('medium-screen'){
+                @include whenLargerThan('medium-screen') {
                     max-width: 628px;
                     margin-top: 28px;
                     height: 130px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 780px;
+                    margin-top: 38px;
                 }
 
             }
@@ -541,6 +638,11 @@
                     letter-spacing: -0.4px;
                 }
 
+                @include whenLargerThan('large-screen'){
+                    font-size: 24px;
+                    letter-spacing: -0.7px;
+                }
+
             }
 
         }
@@ -553,6 +655,10 @@
 
             @include whenLargerThan('medium-screen') {
                 padding-bottom: 156px;
+            }
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 80px;
             }
 
             .section__heading{
@@ -574,6 +680,7 @@
                     font-size: 50px;
                     line-height: 0.88;
                     letter-spacing: -1.4px;
+                    margin-bottom: 11px;
                 }
 
             }
@@ -590,6 +697,13 @@
                     font-size: 17px;
                     line-height: 1.51;
                     max-width: 312px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 22px;
+                    line-height: 1.5;
+                    max-width: 374px;
+                    letter-spacing: -0.4px;
                 }
 
             }
@@ -624,6 +738,11 @@
                 padding-top: 60px;
             }
 
+            @include whenLargerThan('large-screen') {
+                padding-top: 81px;
+                padding-bottom: 80px;
+            }
+
             .btn{
 
                 border-radius: 3.4px;
@@ -653,6 +772,14 @@
                     margin-left: 40px;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    height: 55px;
+                    padding: 14px 15.5px;
+                    width: 196px;
+                    margin-left: 0px;
+                    font-size: 20px;
+                }
+
             }
 
             img{
@@ -666,6 +793,13 @@
                     position: relative;
                     left: 21px;
                     max-width: 296px
+                }
+
+                @include whenLargerThan('large-screen') {
+                    margin: 47px auto 0;
+                    position: relative;
+                    left: 1px;
+                    max-width: 370px;
                 }
 
             }
@@ -682,6 +816,10 @@
             margin-top: 48px;
         }
 
+        @include whenLargerThan('large-screen') {
+            margin-top: 70px;
+        }
+
     }
 
     .plan{
@@ -690,6 +828,10 @@
 
         @include whenLargerThan('medium-screen') {
             margin-bottom: 12px;
+        }
+
+        @include whenLargerThan('large-screen') {
+            margin-bottom: 16px;
         }
 
         &__quantity{
@@ -713,6 +855,14 @@
                 padding-bottom: 9px;
             }
 
+            @include whenLargerThan('large-screen') {
+                font-size: 31px;
+                width: 148px;
+                margin-left: 32px;
+                padding-top: 16px;
+                padding-bottom: 12px;
+            }
+
         }
 
         &__price{
@@ -727,6 +877,11 @@
                 font-size: 18px;
                 padding-left: 7px;
                 padding-top: 18px;
+            }
+
+            @include whenLargerThan('large-screen') {
+                padding-left: 43px;
+                font-size: 22px;
             }
 
         }

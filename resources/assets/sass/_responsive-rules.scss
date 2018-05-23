@@ -47,7 +47,7 @@ $breakpoints: (
     	padding-left: calc(50vw - 412px) !important;
     }
     @include whenLargerThan('large-screen') {
-        padding-left: calc(50vw - 570px) !important;
+        padding-left: calc(50vw - 512px) !important;
     }
 
 }
