@@ -8,23 +8,22 @@
 
 @section('body')
 
+	<div class="container-fluid">
 	<header class="pageHeader">
-		<div class="container">
-			<h1 class="pageHeader__heading">Terms and conditions</h1>
-		</div>
+		<h1 class="pageHeader__heading">Terms and conditions</h1>
 	</header>
 
 	<section class="section section--terms-overview">
-		<div class="container">
-			<p class="section__heading">Overview</p>
-			<div class="section__content">
-				<p>These Terms and Conditions (“Conditions”) are the terms and conditions that regulate access to and use of the website that Internxt Universal Technologies SLU (“Internxt”), a company registered in Calle San Vicente Martir 85, 46007, Valencia, Spain, and with NIF [Spanish tax ID number] B98936354, puts at the disposal of its online users and clients. These Terms and Conditions shall be governed and construed under Spanish Law and shall be subject to the exclusive jurisdiction of the Courts of Valencia, Spain, should any dispute, claim or disagreement arise from them. Internxt may update and amend these Terms and Conditions at any time and without prior notice, to adapt them to current regulations and to technological or business changes. The User should frequently verify the Terms and Conditions to ensure they always have the most up-to- date version.</p>
-			</div>{{-- /.section__content --}}
-		</div>
+
+		<p class="section__heading">Overview</p>
+		<div class="section__content">
+			<p>These Terms and Conditions (“Conditions”) are the terms and conditions that regulate access to and use of the website that Internxt Universal Technologies SLU (“Internxt”), a company registered in Calle San Vicente Martir 85, 46007, Valencia, Spain, and with NIF [Spanish tax ID number] B98936354, puts at the disposal of its online users and clients. These Terms and Conditions shall be governed and construed under Spanish Law and shall be subject to the exclusive jurisdiction of the Courts of Valencia, Spain, should any dispute, claim or disagreement arise from them. Internxt may update and amend these Terms and Conditions at any time and without prior notice, to adapt them to current regulations and to technological or business changes. The User should frequently verify the Terms and Conditions to ensure they always have the most up-to- date version.</p>
+		</div>{{-- /.section__content --}}
+
 	</section>
 
 	<section class="section section--terms-website">
-		<div class="container">
+
 			<p class="section__heading">Website</p>
 			<div class="section__content">
 				<p>Internxt's website includes internxt.com and all online Internxt sites (“Our Website”). Anyone visiting and browsing Our Website, actions that imply acceptance of these terms and conditions as well as our Privacy Police, is deemed a user (“User”). Should you not agree with any of these terms and conditions, we kindly ask you to stop using Our Website. Access to Our Website is free of charge unless a prior contract is required for access to specific contents or services, in which case users will be provided with clear information and asked for explicit acceptance of the service provision contract and corresponding payment. All the contents on Our Website, including, but not limited to, texts, diagrams, photos, graphics, logos, names, icons and computer applications, as well as domain names, are the property of Internxt (unless otherwise stated) or their rights or corresponding assignments have acquired and are protected under domestic and international legislation and regulations relating to intellectual property, domain- registration regulations and trademark-registration regulations. "Internxt" is a trademark registered with the European Trademarks Office.</p>
@@ -33,11 +32,11 @@
 
 				<p>Internxt shall not be held liable,directly or indirectly, for any direct or indirect damage or loss of earnings resulting from website or Internxt services being unavailable. Internxt may include links to third parties and/or external websites, outside Internxt' control. Although we shall periodically check the legality, truthfulness, and relevance of these sites, we cannot guarantee their quality. Under such circumstances, Internxt cannot guarantee or assume any liability for such external contents or for any damage and/or loss that may result from accessing those sites. Internxt shall only be liable, under Article 17 of Spanish Law 34/2002, the Information Society Services and E-Commerce Act, of 11 July 2002, for contents which, on acquiring a reliable awareness of their illegality, fails to remove or disable their links. The user agrees to use the website in accordance with the applicable existing law, the general principles of morality and public order and, in any case, under the conditions set out in this website. It should also be emphasized that the user agrees to make appropriate use of services and contents of the website, avoiding the commission of unlawful acts which may constitute a crime or that may violate others’ rights or violate any regulation on the intellectual and industrial property. It is also forbidden to place on the website any content or information that may qualify as xenophobic, pornographic or might violate any human right. Finally, the inclusion or diffusion of virus, malware or illicit advertising through this website is also prohibited.</p>
 			</div>{{-- /.section__content --}}
-		</div>
+
 	</section>
 
 	<section class="section section--terms-">
-		<div class="container">
+
 			<p class="section__heading">Service provision contract</p>
 			<div class="section__content">
 				<p>This Service Provision Contract (hereinafter, the “Contract”) defines the relations between Internxt and any natural or legal persons expressing their wish to hire the services governed by these terms and conditions through a request forwarded online to the Internxt website, internxt.com, (hereinafter, the “CLIENT”). By forwarding a request to the Internxt website for the hire of any of the products on offer, applicants become Internxt CLIENTS and are deemed to fully and expressly accept the terms and conditions of this Contract.</p>
@@ -66,7 +65,7 @@
 
 				<p>Internxt, therefore, undertakes to take all reasonable steps for data to be erased or rectified without delay if they are inaccurate. In accordance with the rights conferred on you by prevailing laws and regulations on data protection, you may exercise your rights of access, rectification, limitation of processing, erasure, portability and objection to processing of your personal data, and surrounding the consent given to their processing, by writing to the postal address indicated above. You may approach the competent control authority to make any complaint you think fit. Finally, Internxt informs you that with your acquisition you give your express consent to the processing of the data referred to above in accordance with the current legislation. Following completion of the provision of the agreed services any personal data given by customers will be destroyed or returned by Internxt, if not longer needed. Internxt ensures the utmost confidentiality and privacy of the personal data using security measures that prevent any unauthorized change, loss, processing or access and therefore guarantees their integrity and security. Nevertheless, Internxt shall not be liable for any incidents that may affect the CLIENT's personal data, where these result from an unauthorised attack on or access to the systems in a way that proves impossible for it to detect or prevent, despite having adopted the necessary measures given the technology currently available, or which arise from negligence on the part of the CLIENT.</p>
 			</div>{{-- /.section__content --}}
-		</div>
+
 	</section>
 
 @endsection
