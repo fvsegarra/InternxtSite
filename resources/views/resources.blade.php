@@ -9,11 +9,12 @@
 @section('body')
 
 	<section class="section section--resources">
-		<div class="container">
+		<div class="container-fluid">
 			<p class="section__heading">Company Resources.</p>
 			<div class="section__content">
 
 				@component('_includes.resource')
+					@slot('class', 'press-kit')
 					@slot('title', 'Press Kit')
 					@slot('btnLink', '#download')
 					@slot('btnText', 'Download Press Kit')
@@ -22,7 +23,10 @@
 					@endslot
 				@endcomponent
 
+				<hr>
+
 				@component('_includes.resource')
+					@slot('class', 'whitepaper')
 					@slot('title', 'Whitepaper')
 					@slot('btnLink', '#download')
 					@slot('btnText', 'Download Whitepaper')

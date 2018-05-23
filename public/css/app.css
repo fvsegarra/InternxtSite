@@ -2443,8 +2443,41 @@ footer {
   height: 1px;
 }
 
-#page-resources .section {
-  padding-top: 72px;
+#page-resources .section--resources {
+  padding-top: 50px;
+  padding-bottom: 137px;
+}
+
+@media (min-width: 1080px) {
+  #page-resources .section--resources {
+    padding-bottom: 154px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-resources .section--resources {
+    padding-top: 67px;
+  }
+}
+
+#page-resources .section--resources .container-fluid {
+  width: 375px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 1080px) {
+  #page-resources .section--resources .container-fluid {
+    width: 788px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-resources .section--resources .container-fluid {
+    width: 990px;
+  }
 }
 
 #page-resources .section__heading {
@@ -2457,10 +2490,24 @@ footer {
 
 @media (min-width: 1080px) {
   #page-resources .section__heading {
+    font-size: 62px;
+    line-height: 1.03;
+    letter-spacing: -2.7px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-resources .section__heading {
     font-size: 85px;
     line-height: 0.94;
     letter-spacing: -3.8px;
-    margin-bottom: 120px;
+    margin-bottom: 117px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-resources .section__content {
+    padding-left: 5px;
   }
 }
 
@@ -2469,29 +2516,54 @@ footer {
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1.06;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 1080px) {
   #page-resources .subsection__heading {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-resources .subsection__heading {
     font-size: 45px;
-    letter-spacing: -1.3px;
     line-height: 1.09;
+    letter-spacing: -1.3px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-resources .subsection .col-lg {
+    text-align: right;
   }
 }
 
 #page-resources .subsection__content {
   line-height: 1.34;
   letter-spacing: -0.2px;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
+  font-size: 20px;
+  line-height: 1.34;
+  letter-spacing: -0.2px;
+  width: 327px;
 }
 
 @media (min-width: 1080px) {
   #page-resources .subsection__content {
-    max-width: 346px;
-    font-size: 20px;
+    width: 285px;
+    font-size: 16px;
     line-height: 1.55;
     letter-spacing: -0.1px;
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-resources .subsection__content {
+    font-size: 20px;
+    width: 361px;
   }
 }
 
@@ -2502,18 +2574,46 @@ footer {
 }
 
 #page-resources .subsection__btn {
-  background-image: url("/img/icons/download.png");
-  background-position: 22px center;
+  background-image: url(/img/icons/download.png);
+  background-position: 20px center;
   background-repeat: no-repeat;
-  background-size: 23px;
+  background-size: 21px;
   border-radius: 3.6px;
   color: white;
   font-size: 18px;
-  font-weight: 500;
   line-height: 1.56;
   background-color: #1b1d1f;
-  max-width: 232px;
-  padding: 14px 22px 14px 54px;
+  padding: 17px 33px 17px 59px;
+  margin-left: 1px;
+}
+
+@media (min-width: 1080px) {
+  #page-resources .subsection__btn {
+    background-position: 17px 12px;
+    background-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-left: 0;
+    padding: 14px 19px 15px 41px;
+    position: relative;
+    top: 7px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-resources .subsection__btn {
+    background-position: 20px 16px;
+    background-size: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-left: 0;
+    padding: 19px 28px 17px 52px;
+    position: relative;
+    top: 11px;
+    right: 6px;
+  }
 }
 
 #page-resources .subsection__btn:hover,
@@ -2522,12 +2622,34 @@ footer {
   text-decoration: none;
 }
 
+#page-resources .subsection--whitepaper .subsection__btn {
+  padding-right: 15px;
+}
+
+@media (min-width: 1440px) {
+  #page-resources .subsection--whitepaper .subsection__btn {
+    padding-right: 22px;
+  }
+}
+
 #page-resources hr {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), color-stop(50%, #000000), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
   height: 1px;
   border: none;
   margin: 100px auto;
+}
+
+@media (min-width: 1080px) {
+  #page-resources hr {
+    margin: 52px auto 39px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-resources hr {
+    margin: 61px auto 45px;
+  }
 }
 
 #page-terms .pageHeader__heading {
