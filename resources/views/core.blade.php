@@ -144,7 +144,7 @@
 
 				<div class="tab-content" id="xcloudFeaturesTabContent">
 					<div class="tab-pane fade show active" id="xcore-dashboard" role="tabpanel" aria-labelledby="xcore-dashboard-tab">The dashboard is your X Core homescreen which displays only your necessary information, so you can get started as quickly as possible without having to learn anything new. Current earnings, shows how much INXT you have earned since day-one. Network data, displays your upload and download speed, uptime and your connectivity status.</div>
-					<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">Settings description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+					<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">You have full control over how much computer resource usage you designate for hosting by adjusting your hosting parameters to be able to ensure hosting never interferes with your experience. The more you designate to the network, the more INXT you will earn.</div>
 				</div>
 			</div>
 		</div>
