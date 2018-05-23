@@ -8,14 +8,16 @@
 
 @section('body')
 
-	<header class="pageHeader">
-		<div class="container">
-			<h1 class="pageHeader__heading">Privacy Policy</h1>
-		</div>
-	</header>
+	<div class="container-fluid">
 
-	<section class="section section--terms-overview">
-		<div class="container">
+		<header class="pageHeader">
+
+			<h1 class="pageHeader__heading">Privacy Policy</h1>
+
+		</header>
+
+		<section class="section section--terms-overview">
+
 			<p class="section__heading">Overview</p>
 			<div class="section__content">
 				<p>Internxt Universal Technologies SLU ("Internxt") deeply cares about ensuring the fundamental personal data protection rights of all of its users, clients, and anyone interested in the company by adhering to current personal data protection regulations.</p>
@@ -26,11 +28,11 @@
 
 				<p>This Privacy Policy may be modified at the discretion of Internxt after informing of any change on our website. This enables us to maintain criteria of information transparency and fairness with regard to the treatment that governs the actions of our organization regarding the processing of personal data. According to the provisions set out in Organic Law 15/1999 of December 13 on Personal Data Protection, you are hereby informed that this data will be included in a file owned by Internxt and will be used to manage Internxt' relationship with its users. You are also informed that you have the right to access, rectify, and cancel data if necessary, and to object to its processing under the terms established in the aforementioned Organic Law 15/1999. These rights may be exercised at Internxt' official address for this purpose: Calle San Vicente Martir 85, 46007, Valencia, Spain.</p>
 			</div>{{-- /.section__content --}}
-		</div>
-	</section>
 
-	<section class="section section--terms-website">
-		<div class="container">
+		</section>
+
+		<section class="section section--terms-website">
+
 			<p class="section__heading">Personal data privacy and form-based collection.</p>
 			<div class="section__content">
 				<p>In accordance with prevailing laws and regulations on personal data protection, we notify you that your data will be entered in a processing system owned by Internxt Universal Technologies SLU, holding tax identification number B98936354 and having its registered office at Calle San Vicente Martir 85, 46007, Valencia, Spain, for the purpose of replying to your queries and sending you information that may be of interest to you.</p>
@@ -40,16 +42,18 @@
 				<p>The customer acknowledges and accepts that in the event of a technical issue, exceptionally our engineers might have to access the physical server in which the customer data is store and by doing so in very rare circumstances might access customer data. Should this be the case, our engineers will limit their activities to the fixing of the technical problems without using the access or the data that they might have access to for any other uses. Internxt also informs that according to the Spanish Law 25/2007 of 18th of October 2007, that regulates the electronic data communications, Internxt may have to store and retain certain information for the access of the relevant and legitimate public authorities.</p>
 
 			</div>{{-- /.section__content --}}
-		</div>
-	</section>
 
-	<section class="section section--terms-">
-		<div class="container">
+		</section>
+
+		<section class="section section--terms-">
+
 			<p class="section__heading">Contact us</p>
 			<div class="section__content">
 				<p>If you have any other concerns, suggestions or questions about any issues relating to privacy on any of Internxt online properties, please contact us via e-mail (hello@internxt.com).</p>
 			</div>{{-- /.section__content --}}
-		</div>
-	</section>
+
+		</section>
+
+	</div>
 
 @endsection
