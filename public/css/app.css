@@ -2244,6 +2244,23 @@ footer {
   max-width: 1440px;
 }
 
+#page-team .section > .container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 1080px) {
+  #page-team .section > .container {
+    max-width: 840px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-team .section > .container {
+    max-width: 1036px;
+  }
+}
+
 #page-team .section .section__heading {
   font-size: 46px;
   line-height: 0.96;
@@ -2253,18 +2270,53 @@ footer {
 
 @media (min-width: 1080px) {
   #page-team .section .section__heading {
-    font-size: 85px;
+    font-size: 68px;
     line-height: 0.94;
+    letter-spacing: -3px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-team .section .section__heading {
+    font-size: 85px;
     letter-spacing: -3.8px;
+    margin-bottom: 10px;
   }
 }
 
 #page-team .section .section__content {
-  padding-top: 72px;
+  padding-top: 50px;
+}
+
+@media (min-width: 1080px) {
+  #page-team .section .section__content .col-sm-4 {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-team .section .section__content .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-team .section .section__content .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
 }
 
 #page-team .section--team-core {
-  padding-top: 72px;
+  padding-top: 50px;
+}
+
+@media (min-width: 1440px) {
+  #page-team .section--team-core {
+    padding-top: 76px;
+  }
 }
 
 #page-team .section--team-partners .teamMember {
@@ -2273,15 +2325,21 @@ footer {
 
 #page-team .teamMember {
   border-radius: 4px;
-  height: 260px;
-  margin-bottom: 60px;
   overflow: hidden;
   background-color: #16181a;
+  height: 401px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: 1080px) {
   #page-team .teamMember {
-    height: 434px;
+    height: 306px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-team .teamMember {
+    height: 383px;
   }
 }
 
@@ -2312,23 +2370,61 @@ footer {
 
 #page-team .teamMember__text {
   color: white;
-  padding: 22px 0 19px 0;
+  padding: 27px 0 19px 0;
   text-align: center;
+  position: relative;
+  top: -14px;
+  background: #16181a;
+}
+
+@media (min-width: 1080px) {
+  #page-team .teamMember__text {
+    padding-top: 19px;
+  }
 }
 
 #page-team .teamMember__name {
-  font-size: 22px;
+  font-size: 24px;
+  line-height: 0.7;
   font-weight: bold;
-  line-height: 0.73;
   margin-bottom: 12px;
+}
+
+@media (min-width: 1080px) {
+  #page-team .teamMember__name {
+    font-size: 18px;
+    line-height: 0.71;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-team .teamMember__name {
+    font-size: 22px;
+    line-height: 0.73;
+  }
 }
 
 #page-team .teamMember__position {
   color: #afb1b3;
   font-size: 15px;
-  letter-spacing: -0.3px;
   line-height: 1.05;
   margin-bottom: 0;
+}
+
+@media (min-width: 1080px) {
+  #page-team .teamMember__position {
+    font-size: 12px;
+    line-height: 1.05;
+    letter-spacing: -0.2px;
+    color: #afb1b3;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-team .teamMember__position {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
 }
 
 #page-team .teamMember__bio {
@@ -2336,9 +2432,9 @@ footer {
 }
 
 #page-team .teamMember__heading {
-  font-size: 30px;
+  font-size: 31px;
   font-weight: bold;
-  line-height: 0.53;
+  line-height: 1;
   margin-bottom: 15px;
 }
 
@@ -2356,9 +2452,25 @@ footer {
 }
 
 #page-team hr {
-  border-top: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
+  border-top-color: black;
   max-width: 1440px;
-  margin: 156px auto 105px auto;
+  margin: 50px auto 70px auto;
+}
+
+@media (min-width: 1080px) {
+  #page-team hr {
+    border: none;
+    height: 1px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), color-stop(50%, #000000), to(rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
+    max-width: 1080px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-team hr {
+    max-width: 1440px;
+  }
 }
 
 #page-timeline .section--timeline {
