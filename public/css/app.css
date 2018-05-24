@@ -3043,9 +3043,29 @@ footer {
   padding-top: 50px;
 }
 
+@media (min-width: 1440px) {
+  #page-timeline .section--timeline {
+    padding-top: 67px;
+  }
+}
+
 #page-timeline .section--timeline > .container {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+@media (min-width: 1080px) {
+  #page-timeline .section--timeline > .container {
+    width: 788px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-timeline .section--timeline > .container {
+    width: 990px;
+  }
 }
 
 #page-timeline .section--timeline .section__heading {
@@ -3058,14 +3078,13 @@ footer {
 
 @media (min-width: 1080px) {
   #page-timeline .section--timeline .section__heading {
-    font-size: 68px;
-    letter-spacing: -3px;
-    line-height: 0.94;
-    margin-bottom: 16px;
+    font-size: 62px;
+    line-height: 1.03;
+    letter-spacing: -2.7px;
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   #page-timeline .section--timeline .section__heading {
     font-size: 85px;
     letter-spacing: -3.8px;
