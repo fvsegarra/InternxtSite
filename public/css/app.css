@@ -544,17 +544,9 @@ footer {
 
 @media (min-width: 1080px) {
   .section--preview-xcloud > .container {
-    background-position-x: 50px;
-    background-size: 408px;
-    background-position-y: 21px;
-  }
-}
-
-@media (min-width: 1080px) {
-  .section--preview-xcloud > .container {
-    background-position-x: 29px;
-    background-size: 512px;
-    background-position-y: -5px;
+    background-position-x: 87px;
+    background-size: 379px;
+    background-position-y: bottom;
   }
 }
 
