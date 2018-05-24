@@ -495,7 +495,7 @@
 
             .featurePreviewContainer{
 
-                background: aqua;
+                // background: aqua;
                 height: 410px;
                 width: 100%;
                 width: 100vw;
@@ -505,12 +505,15 @@
 
                 @include whenLargerThan('medium-screen') {
                     background:{
-                        image: url('/img/mockups/xcore/macbook.png');
+                        image: url(/img/mockups/xcore/macbook.png);
                         repeat: no-repeat;
                         size: contain;
+                        position-x: center;
                     }
-                    height: 555px;
-                    margin-top: 60px;
+                    height: 544px;
+                    margin-top: 80px;
+                    width: 100%;
+                    margin-left: -3px;
                 }
 
                 @include whenLargerThan('large-screen') {
@@ -525,15 +528,28 @@
                 width: 100vw;
                 background:{
                     image: url('/img/mockups/xcore/dashboard_mobile.png');
-                    repeat: none;
+                    repeat: no-repeat;
+                    size: contain;
                 }
 
                 @include whenLargerThan('medium-screen') {
-                    background: none; // TEMP
+                    width: 717px;
+                    margin: 0 auto;
+                    position: relative;
+                    top: 30px;
+                    background-size: contain;
+                    background-image: url('/img/mockups/xcore/dashboard.png');
+                    height: 448px;
                 }
 
                 &--xcore-dashboard{
-                    background-image: url('/img/mockups/xcore/dashboard.png');
+
+                    background-image: url('/img/mockups/xcore/dashboard_mobile.png');
+
+                    @include whenLargerThan('medium-screen') {
+                        background-image: url('/img/mockups/xcore/dashboard.png');
+                    }
+
                 }
 
                 &--settings{

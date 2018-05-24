@@ -2289,7 +2289,6 @@ footer {
 }
 
 #page-core .section--core-design .featurePreviewContainer {
-  background: aqua;
   height: 410px;
   width: 100%;
   width: 100vw;
@@ -2300,11 +2299,14 @@ footer {
 
 @media (min-width: 1080px) {
   #page-core .section--core-design .featurePreviewContainer {
-    background-image: url("/img/mockups/xcore/macbook.png");
+    background-image: url(/img/mockups/xcore/macbook.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 555px;
-    margin-top: 60px;
+    background-position-x: center;
+    height: 544px;
+    margin-top: 80px;
+    width: 100%;
+    margin-left: -3px;
   }
 }
 
@@ -2313,17 +2315,30 @@ footer {
   width: 100%;
   width: 100vw;
   background-image: url("/img/mockups/xcore/dashboard_mobile.png");
-  background-repeat: none;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (min-width: 1080px) {
   #page-core .section--core-design .featurePreview {
-    background: none;
+    width: 717px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    background-size: contain;
+    background-image: url("/img/mockups/xcore/dashboard.png");
+    height: 448px;
   }
 }
 
 #page-core .section--core-design .featurePreview--xcore-dashboard {
-  background-image: url("/img/mockups/xcore/dashboard.png");
+  background-image: url("/img/mockups/xcore/dashboard_mobile.png");
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-design .featurePreview--xcore-dashboard {
+    background-image: url("/img/mockups/xcore/dashboard.png");
+  }
 }
 
 #page-core .section--core-design .featurePreview--settings {
