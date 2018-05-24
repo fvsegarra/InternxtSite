@@ -43,7 +43,7 @@
 
 				<div class="row">
 					<div class="col-sm-6">
-						<div class="subsection subsection--network">
+						<div class="subsection subsection--enhanced">
 						<div class="container-fluid">
 							<p class="subsection__heading">Enhanced.</p>
 							<p class="subsection__content">If one attached device goes down, the network will detect the failing nodes and transparently adjust and correct the impacted blocks automatically. This removes the destructivity of having data stored on client-server networks, because if the server goes down it takes the entire network with it.</p>
@@ -52,7 +52,7 @@
 					</div>{{-- /.col-sm-6 --}}
 
 					<div class="col-sm-6">
-						<div class="subsection subsection--software">
+						<div class="subsection subsection--intelligent">
 						<div class="container-fluid">
 							<p class="subsection__heading">Intelligent.</p>
 							<p class="subsection__content">Since the number of running nodes may vary in the course of time, X Core will balance the data-load across multiple nodes. This enables X Core to regulate the workload of each networked computer efficiently, meaning the system automatically maintains the right balance between all hosts.</p>
@@ -108,10 +108,10 @@
 
 	<section class="section section--core-beta">
 		<div class="container">
-			<p class="section__heading">Do something extraordinary with extraordinary technology.</p>
+			<p class="section__heading">Do something extraordinary<span class="linebreak"></span> with extraordinary technology.</p>
 			<p class="section__subheading">Subscribe to our beta list to be first in-line to download X Core and to start earning passive income by sharing your machines un-used hard drive space.</p>
 			<div class="section__content">
-				<form class="form-inline" action="https://internxt.us18.list-manage.com/subscribe/post?u=7d1200a1ef2498eacddf2a314&amp;id=b65b4558d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+				<form class="form-inline" action="https://internxt.us18.list-manage.com/subscribe/post?u=7d1200a1ef2498eacddf2a314&amp;id=08b0beeff9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 					<input type="email" name="EMAIL" class="form-control" id="inlineFormInputGroupUsername2" placeholder="user@example.com" required>
 					<button type="submit" class="btn btn-primary mb-2">Subscribe</button>
 				</form>
