@@ -47,6 +47,7 @@
             font-weight: bold;
             letter-spacing: -1.5px;
             line-height: 0.87;
+            margin-bottom: 42px;
         }
 
         &__content{
@@ -141,6 +142,69 @@
         margin-bottom: 93px;
         margin-top: 74px;
         max-width: 1440px;
+    }
+
+    #cryptoWolfContainer{
+
+        .content.form-group.form-control{
+            border: none;
+        }
+
+        .quform-element-text{
+
+            &:nth-of-type(1){
+                margin-bottom: 20px;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(4){
+
+                @include whenLargerThan('medium-screen') {
+                    float: left;
+                    width: 50%;
+                }
+
+            }
+
+        }
+
+        .quform-label-text{
+            // font-size: 35px; // Currently causing wrapping issues
+        }
+
+        input{
+            width: 386px;
+            height: 73px;
+            border-radius: 8px;
+            border: solid 1px #c9c9c9;
+            font-size: 19px;
+            letter-spacing: -0.2px;
+            padding-left: 24px;
+        }
+
+        #amount{
+            margin: 42px 0 42px -12px;
+        }
+
+        .clockdiv{
+            margin-bottom: 40px;
+            opacity: 0.57;
+            font-size: 18px;
+            letter-spacing: -0.2px;
+            color: #000000;
+        }
+
+        .quform-next{
+            border-radius: 6px;
+            background-color: #4385f4;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: -0.1px;
+            color: #ffffff;
+            border: none;
+            padding: 10px 22px;
+            cursor: pointer;
+        }
     }
 
 }

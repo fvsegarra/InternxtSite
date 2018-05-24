@@ -98,12 +98,41 @@
 		<div class="container">
 			<p class="section__heading">Buy INXT.</p>
 			<div class="section__content">
-				<p class="section__instruction">Select payment method</p>
+				{{-- <p class="section__instruction">Select payment method</p>
 				<a class="btn btn-default"><img src="/img/logos/bitcoin.png" height="62"></a>
 				<a class="btn btn-default"><img src="/img/logos/litecoin.png" height="62"></a>
-				<a class="btn btn-default"><img src="/img/logos/ethereum.png" height="62"></a>
+				<a class="btn btn-default"><img src="/img/logos/ethereum.png" height="62"></a> --}}
+
+				<div id='cryptoWolfContainer'></div>
+
 			</div>
 		</div>
 	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		var external = 'inxt';
+
+		$(document).ready(function() {
+
+			$("#cryptoWolfContainer").load('https://external.cryptowolf.eu/main-backend/ext.html', function() {
+				console.debug( "Load was performed." );
+				// Perform some rewording?
+				window.setTimeout(function(){
+
+					console.debug("replacing...");
+					console.debug($('input[name="quform_2_624"]'));
+					$('input#calc').attr('placeholder', 'Enter INXT buy amount');
+					$('input#quform_2_17_869115').attr('placeholder', 'Enter INXT wallet address');
+					$('input#quform_2_16_869115').attr('placeholder', 'Enter Bitcoin wallet address');
+
+
+				}, 1000);
+			});
+			$.getScript('https://external.cryptowolf.eu/main-backend/js/cryptowolf.js');
+
+
+		});
+	</script>
 
 @endsection
