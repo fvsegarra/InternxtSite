@@ -4,7 +4,13 @@
 
         &--timeline{
 
-            padding-top: 72px;
+            padding-top: 50px;
+            // padding-top: 72px;
+
+            & > .container{
+                padding-left: 24px;
+                padding-right: 24px;
+            }
 
             .section__heading{
 
@@ -35,37 +41,52 @@
     .subsection{
 
         &__label{
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 500;
-            letter-spacing: -0.1px;
-            line-height: 1.88;
-            margin-bottom: 0;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.84;
+            letter-spacing: -0.7px;
+            padding-top: 3px;
+            margin-bottom: 6px;
+
+            // font-size: 26px;
+            // font-weight: 500;
+            // letter-spacing: -0.1px;
+            // line-height: 1.88;
+            // margin-bottom: 0;
         }
 
         &__heading{
-            font-size: 45px;
+            font-size: 36px;
             font-weight: bold;
-            letter-spacing: -1.3px;
-            line-height: 1.09;
+            line-height: 1.06;
+            letter-spacing: -1px;
+
+            // font-size: 45px;
+            // font-weight: bold;
+            // letter-spacing: -1.3px;
+            // line-height: 1.09;
         }
 
         &__content{
             font-size: 20px;
-            letter-spacing: -0.1px;
-            line-height: 1.55;
-            max-width: 385px;
+            letter-spacing: -0.3px;
+            line-height: 1.35;
+            // line-height: 1.55;
         }
 
         &__status{
 
             border-radius: 3.2px;
             color: white;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 1.84;
-            max-width: 227px;
-            padding: 10px 0;
+            max-width: 187px;
+            padding: 9px 0;
             text-align: center;
+            margin-top: 15px;
 
             &--upcoming{
                 background-color: #a1c2f9;
@@ -84,10 +105,11 @@
 
     hr{
         max-width: 1440px;
-        margin: 65px auto;
+        margin: 39px auto 65px;
         background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
         border: none;
         height: 1px;
+        // margin: 65px auto;
     }
 
 }
