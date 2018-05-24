@@ -152,7 +152,7 @@
         }
 
         .form-control{
-            margin-bottom: 42px;
+            margin-bottom: 10px;
         }
 
         .quform-element-text{
@@ -175,6 +175,10 @@
 
         .quform-label-text{
             // font-size: 35px; // Currently causing wrapping issues
+        }
+
+        .quform-error-text{
+            color: red;
         }
 
         input{

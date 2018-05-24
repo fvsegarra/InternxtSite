@@ -2250,7 +2250,7 @@ footer {
 }
 
 #page-token #cryptoWolfContainer .form-control {
-  margin-bottom: 42px;
+  margin-bottom: 10px;
 }
 
 #page-token #cryptoWolfContainer .quform-element-text:nth-of-type(1) {
@@ -2263,6 +2263,10 @@ footer {
     float: left;
     width: 50%;
   }
+}
+
+#page-token #cryptoWolfContainer .quform-error-text {
+  color: red;
 }
 
 #page-token #cryptoWolfContainer input {
