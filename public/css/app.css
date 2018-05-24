@@ -3088,6 +3088,7 @@ footer {
   #page-timeline .section--timeline .section__heading {
     font-size: 85px;
     letter-spacing: -3.8px;
+    margin-bottom: 80px;
   }
 }
 
@@ -3102,6 +3103,20 @@ footer {
   margin-bottom: 6px;
 }
 
+@media (min-width: 1080px) {
+  #page-timeline .subsection__label {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-timeline .subsection__label {
+    font-size: 26px;
+    line-height: 1.88;
+    letter-spacing: -0.1px;
+  }
+}
+
 #page-timeline .subsection__heading {
   font-size: 36px;
   font-weight: bold;
@@ -3109,10 +3124,42 @@ footer {
   letter-spacing: -1px;
 }
 
+@media (min-width: 1080px) {
+  #page-timeline .subsection__heading {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-timeline .subsection__heading {
+    font-size: 45px;
+    line-height: 1.09;
+    letter-spacing: -1.3px;
+  }
+}
+
 #page-timeline .subsection__content {
   font-size: 20px;
   letter-spacing: -0.3px;
   line-height: 1.35;
+}
+
+@media (min-width: 1080px) {
+  #page-timeline .subsection__content {
+    max-width: 308px;
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: -0.1px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-timeline .subsection__content {
+    font-size: 20px;
+    line-height: 1.55;
+    letter-spacing: -0.1px;
+    max-width: 390px;
+  }
 }
 
 #page-timeline .subsection__status {
@@ -3125,6 +3172,22 @@ footer {
   padding: 9px 0;
   text-align: center;
   margin-top: 15px;
+}
+
+@media (min-width: 1080px) {
+  #page-timeline .subsection__status {
+    margin-top: -7px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-timeline .subsection__status {
+    font-size: 18px;
+    line-height: 1.89;
+    max-width: 227px;
+    height: 52px;
+    margin-right: 8px;
+  }
 }
 
 #page-timeline .subsection__status--upcoming {
@@ -3146,6 +3209,18 @@ footer {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
   border: none;
   height: 1px;
+}
+
+@media (min-width: 1080px) {
+  #page-timeline hr {
+    margin: 48px auto 44px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-timeline hr {
+    margin: 63px auto 55px;
+  }
 }
 
 #page-resources .section--resources {
