@@ -22,9 +22,13 @@
             background:{
                 size: 100%;
                 position-y: -10px;
-                position-x: 7px;
+                position-x: 0;
             }
 
+        }
+
+        @include whenLargerThan('large-screen') {
+            padding-top: 238px;
         }
 
         &__heading{
@@ -68,6 +72,14 @@
                 text-align: center;
                 margin: 0 auto;
             }
+
+            @include whenLargerThan('large-screen') {
+                max-width: 883px;
+                font-size: 50px;
+                line-height: 1.12;
+                letter-spacing: -1.4px;
+            }
+
         }
 
     }
@@ -86,10 +98,19 @@
                 padding-bottom: 7px;
             }
 
+            @include whenLargerThan('large-screen') {
+                padding-top: 286px;
+                padding-bottom: 20px;
+            }
+
             & > .container{
 
                 @include whenLargerThan('medium-screen') {
                     max-width: 840px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1028px;
                 }
 
             }
@@ -105,7 +126,9 @@
                     margin: 0 53px 100px 8px;
                 }
 
-                // margin: 0 40px 100px 40px;
+                @include whenLargerThan('large-screen') {
+                    margin: 0 53px 116px 8px;
+                }
 
                 & > .container-fluid{
                     padding-left: 0;
@@ -117,12 +140,17 @@
                     line-height: 0.96;
                     letter-spacing: -1.3px;
                     font-weight: bold;
-                    // font-size: 58px;
-                    // letter-spacing: -0.5px;
-                    // line-height: 1.11;
+
+                    @include whenLargerThan('medium-screen') {
+                        font-size: 58px;
+                        letter-spacing: -0.5px;
+                        line-height: 1.11;
+                    }
+
                 }
 
                 &__content {
+
                     font-size: 20px;
                     line-height: 1.35;
                     letter-spacing: -0.5px;
@@ -132,8 +160,14 @@
                         line-height: 1.36;
                         letter-spacing: -0.1px;
                     }
-                    // font-size: 21px;
-                    // line-height: 1.38;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 21px;
+                        line-height: 1.39;
+                        letter-spacing: -0.3px;
+                        max-width: 400px;
+                    }
+
                 }
 
                 &--software,
@@ -142,6 +176,10 @@
                     @include whenLargerThan('medium-screen') {
                         margin-left: 42px;
                         margin-right: 18px;
+                    }
+
+                    @include whenLargerThan('large-screen') {
+                        margin-left: 63px;
                     }
 
                 }
@@ -156,6 +194,10 @@
 
             @include whenLargerThan('medium-screen') {
                 padding: 100px 0 110px;
+            }
+
+            @include whenLargerThan('large-screen') {
+                padding: 124px 0 110px;
             }
 
             .section__heading{
@@ -179,6 +221,8 @@
                @include whenLargerThan('large-screen') {
                     font-size: 90px;
                     letter-spacing: -4.3px;
+                    max-width: 630px;
+                    margin-bottom: 24px;
                 }
 
             }
@@ -193,10 +237,6 @@
                 line-height: 1.34;
                 letter-spacing: -0.5px;
 
-                // font-size: 26px;
-                // letter-spacing: -0.4px;
-                // line-height: 1.38;
-
                 @include whenLargerThan('medium-screen') {
                     max-width: 545px;
                     font-size: 21px;
@@ -204,11 +244,24 @@
                     letter-spacing: -0.3px;
                     text-align: center;
                 }
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 26px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.38;
+                    max-width: 680px;
+                }
+
+
             }
 
         }
 
         &--core-screenshot{
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 71px;
+            }
 
             img{
 
@@ -218,6 +271,11 @@
                 @include whenLargerThan('medium-screen') {
                     max-width: 512px;
                     margin-left: 60px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 636px;
+                    margin-left: 53px;
                 }
 
             }
@@ -247,6 +305,14 @@
                         letter-spacing: -0.8px;
                     }
 
+                    @include whenLargerThan('large-screen') {
+                        font-size: 34px;
+                        line-height: 1;
+                        letter-spacing: -0.9px;
+                        max-width: 180px;
+                        margin-bottom: 10px;
+                    }
+
                 }
 
                 &__content{
@@ -260,6 +326,14 @@
                         font-size: 15px;
                         line-height: 1.49;
                         letter-spacing: -0.2px;
+                    }
+
+                    @include whenLargerThan('large-screen') {
+                        max-width: 258px;
+                        font-size: 19px;
+                        line-height: 1.5;
+                        letter-spacing: -0.3px;
+                        max-width: 280px;
                     }
 
                 }
@@ -276,6 +350,13 @@
                         margin-bottom: 50px;
                     }
 
+                    @include whenLargerThan('medium-screen') {
+                        margin-top: 8px;
+                        position: relative;
+                        left: -5px;
+                        margin-bottom: 60px;
+                    }
+
                 }
 
                 &--create{
@@ -287,6 +368,10 @@
                         position: relative;
                         left: -18px;
                         // margin-bottom: 50px;
+                    }
+
+                    @include whenLargerThan('large-screen') {
+                        left: -6px;
                     }
 
                 }
@@ -311,6 +396,14 @@
                     margin-top: 121px;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    max-width: 892px;
+                    font-size: 30px;
+                    letter-spacing: -1.3px;
+                    padding-left: 64px;
+                    margin-top: 114px;
+                }
+
             }
 
         }
@@ -324,7 +417,10 @@
                 padding-top: 129px;
                 padding-bottom: 120px;
             }
-            // padding-bottom: 163px;
+
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 157px;
+            }
 
             .section__heading{
 
@@ -351,6 +447,9 @@
                 @include whenLargerThan('large-screen') {
                     font-size: 58px;
                     letter-spacing: -2.8px;
+                    margin-left: 67px;
+                    padding-top: 33px;
+                    margin-bottom: 14px;
                 }
 
                 .linebreak{
@@ -383,12 +482,25 @@
                     padding-left: 72px;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    width: 616px;
+                    font-size: 22px;
+                    line-height: 1.45;
+                    letter-spacing: -0.42px;
+                    padding-left: 68px;
+                }
+
             }
 
             .section__content{
+
                 padding-left: 9px;
                 padding-top: 28px;
-                // padding-top: 54px;
+
+                @include whenLargerThan('large-screen') {
+                    padding-top: 45px;
+                }
+
             }
 
             input{
@@ -404,8 +516,17 @@
                     margin-left: 65px;
                     width: 264px;
                 }
-                // width: 330px;
-                // height: 61px;
+
+                @include whenLargerThan('medium-screen') {
+                    width: 330px;
+                    height: 61px;
+                    margin-left: 60px;
+                    font-size: 19px;
+                    letter-spacing: -0.2px;
+                    padding-left: 24px;
+                    padding-top: 9px;
+                }
+
             }
 
             .btn {
@@ -427,10 +548,13 @@
                     padding-left: 12px;
                     width: 108px;
                 }
-                // font-size: 19px;
-                // height: 61px;
-                // margin-left: 9.6px;
-                // width: 134px;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 19px;
+                    height: 61px;
+                    margin-left: 9.6px;
+                    width: 134px;
+                }
 
             }
 
@@ -444,6 +568,11 @@
             @include whenLargerThan('medium-screen') {
                 padding: 112px 0 134px;
                 text-align: center;
+            }
+
+            @include whenLargerThan('medium-screen') {
+                padding: 140px 0 134px;
+                margin-bottom: 42px;
             }
 
             .section__heading{
@@ -466,6 +595,8 @@
                     font-size: 90px;
                     line-height: 0.89;
                     letter-spacing: -4.3px;
+                    max-width: 860px;
+                    color: #000000;
                 }
 
             }
@@ -488,9 +619,14 @@
                     margin: 18px auto;
                     max-width: 581px;
                 }
-                // letter-spacing: -0.4px;
-                // line-height: 1.38;
-                // font-size: 26px;
+
+                @include whenLargerThan('large-screen') {
+                    letter-spacing: -0.4px;
+                    line-height: 1.38;
+                    font-size: 26px;
+                    max-width: 730px;
+                }
+
             }
 
             .featurePreviewContainer{
@@ -517,6 +653,11 @@
                 }
 
                 @include whenLargerThan('large-screen') {
+                    height: 715px;
+                    margin-top: 79px;
+                    width: 1215px;
+                    margin-left: -53px;
+                    margin-bottom: 32px;
                 }
 
             }
@@ -542,6 +683,17 @@
                     height: 448px;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    width: 1026px;
+                    margin: 0 auto;
+                    position: relative;
+                    top: 40px;
+                    background-size: contain;
+                    background-image: url(/img/mockups/xcore/dashboard.png);
+                    height: 586px;
+                    left: 43px;
+                }
+
                 &--xcore-dashboard{
 
                     background-image: url('/img/mockups/xcore/dashboard_mobile.png');
@@ -559,8 +711,14 @@
             }
 
             .tab-content{
+
                 margin-top: 50px;
                 padding-left: 8px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 40px;
+                }
+
             }
 
         }
@@ -572,9 +730,19 @@
         border-bottom-color: #969499;
         max-width: 225px;
 
+        @include whenLargerThan('large-screen') {
+            max-width: 288px;
+        }
+
         .nav-link{
 
             color: #969499;
+
+            @include whenLargerThan('large-screen') {
+                padding-right: 24px;
+                padding-left: 24px;
+                padding-bottom: 12px;
+            }
 
             &.active{
                 border-bottom: 1.6px solid #6600ff;
@@ -594,6 +762,13 @@
         font-size: 20px;
         line-height: 1.34;
         letter-spacing: -0.2px;
+
+        @include whenLargerThan('large-screen') {
+            font-size: 22px;
+            line-height: 1.55;
+            letter-spacing: -0.3px;
+        }
+
     }
 
 }

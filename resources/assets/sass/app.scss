@@ -266,6 +266,10 @@ footer{
         font-weight: bold;
         letter-spacing: -0.2px;
 
+        @include whenLargerThan('large-screen') {
+			font-size: 22px;
+	    }
+
         &.active{
             background: none;
             border: none;
