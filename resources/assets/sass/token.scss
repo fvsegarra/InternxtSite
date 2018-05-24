@@ -144,10 +144,15 @@
         max-width: 1440px;
     }
 
+    // Apologies for the code ahead, but I can't alter the HTML
     #cryptoWolfContainer{
 
         .content.form-group.form-control{
             border: none;
+        }
+
+        .form-control{
+            margin-bottom: 42px;
         }
 
         .quform-element-text{
@@ -205,6 +210,14 @@
             padding: 10px 22px;
             cursor: pointer;
         }
+
+        #hiddendiv + div{
+            top: 42px;
+            display: block;
+            float: none !important;
+            position: relative;
+        }
+
     }
 
 }

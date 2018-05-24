@@ -111,28 +111,42 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type='text/javascript'>
+
 		var external = 'inxt';
 
 		$(document).ready(function() {
 
 			$("#cryptoWolfContainer").load('https://external.cryptowolf.eu/main-backend/ext.html', function() {
-				console.debug( "Load was performed." );
+
+				console.debug("CryptoWolf loaded");
+
 				// Perform some rewording?
 				window.setTimeout(function(){
 
-					console.debug("replacing...");
-					console.debug($('input[name="quform_2_624"]'));
+					console.debug("Replacing text and placeholders");
+
 					$('input#calc').attr('placeholder', 'Enter INXT buy amount');
 					$('input#quform_2_17_869115').attr('placeholder', 'Enter INXT wallet address');
 					$('input#quform_2_16_869115').attr('placeholder', 'Enter Bitcoin wallet address');
 
-
 				}, 1000);
+
+
 			});
+
+			// Keep sending coin name in sync
+			$('#cryptoWolfContainer').on('DOMSubtreeModified', '.sending-wallet', function(){
+
+				console.debug('Sending wallet changed');
+				var coin = $(this).text();
+				$('input#quform_2_16_869115').attr('placeholder', 'Enter ' + coin + ' wallet address');
+
+			});
+
 			$.getScript('https://external.cryptowolf.eu/main-backend/js/cryptowolf.js');
 
-
 		});
+
 	</script>
 
 @endsection

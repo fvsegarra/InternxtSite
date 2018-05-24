@@ -2249,6 +2249,10 @@ footer {
   border: none;
 }
 
+#page-token #cryptoWolfContainer .form-control {
+  margin-bottom: 42px;
+}
+
 #page-token #cryptoWolfContainer .quform-element-text:nth-of-type(1) {
   margin-bottom: 20px;
 }
@@ -2293,6 +2297,13 @@ footer {
   border: none;
   padding: 10px 22px;
   cursor: pointer;
+}
+
+#page-token #cryptoWolfContainer #hiddendiv + div {
+  top: 42px;
+  display: block;
+  float: none !important;
+  position: relative;
 }
 
 #page-team .section > .container {
