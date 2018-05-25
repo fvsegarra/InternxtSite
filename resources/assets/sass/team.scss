@@ -129,6 +129,7 @@
 
             @include whenLargerThan('medium-screen') {
                 padding-top: 19px;
+                top: -2px;
             }
 
         }

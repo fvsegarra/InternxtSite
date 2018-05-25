@@ -3149,6 +3149,7 @@ footer {
 @media (min-width: 1080px) {
   #page-team .teamMember__text {
     padding-top: 19px;
+    top: -2px;
   }
 }
 
