@@ -87,7 +87,7 @@
 
 				@component('_includes.milestone')
 					@slot('date', 'Q2 2019')
-					@slot('title', 'AirCore')
+					@slot('title', 'CorePro')
 					@slot('statusClass', 'in-progress')
 					@slot('statusText', 'Milestone In Progress')
 					@slot('content')
