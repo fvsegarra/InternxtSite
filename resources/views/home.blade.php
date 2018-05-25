@@ -16,7 +16,7 @@
 				<div class="col">
 					<h1 class="pageHeader__heading">Technologies to enhance life.</h1>
 					<h2 class="pageHeader__subheading">Transforming the way people live through revolutionary technology.</h2>
-					<a class="btn pageHeader__cta" href="#">Discover More</a>
+					<a class="btn pageHeader__cta" href="{{ route('cloud') }}">Discover More</a>
 				</div>
 			</div>
 		</div>
