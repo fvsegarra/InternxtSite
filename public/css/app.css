@@ -2837,6 +2837,14 @@ footer {
   padding-right: 24px;
 }
 
+@media (min-width: 1080px) {
+  #page-token .pageHeader > .container,
+  #page-token .section > .container {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
 #page-token .pageHeader {
   padding-top: 51px;
 }
