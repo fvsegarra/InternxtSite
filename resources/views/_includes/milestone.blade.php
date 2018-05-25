@@ -13,5 +13,3 @@
 
 	</div>{{-- /.row --}}
 </div>{{-- /.subsection --}}
-
-<hr>

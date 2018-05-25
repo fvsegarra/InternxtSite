@@ -23,6 +23,8 @@
 					@endslot
 				@endcomponent
 
+				<hr>
+
 				@component('_includes.milestone')
 					@slot('date', 'Q4 2017')
 					@slot('title', 'Branding.')
@@ -32,6 +34,8 @@
 						An updated digital identity and website were released along with the first versions of X Cloud’s and X Core’s designs and interfaces.
 					@endslot
 				@endcomponent
+
+				<hr>
 
 				@component('_includes.milestone')
 					@slot('date', 'Q1 2018')
@@ -43,6 +47,8 @@
 					@endslot
 				@endcomponent
 
+				<hr>
+
 				@component('_includes.milestone')
 					@slot('date', 'Q3 2018')
 					@slot('title', 'Beta versions.')
@@ -52,6 +58,8 @@
 						This release will include all the code that will allow X Cloud and X Core to function, as well as a basic Windows, Linux and MacOS client.
 					@endslot
 				@endcomponent
+
+				<hr>
 
 				@component('_includes.milestone')
 					@slot('date', 'Q4 2018')
@@ -63,6 +71,8 @@
 					@endslot
 				@endcomponent
 
+				<hr>
+
 				@component('_includes.milestone')
 					@slot('date', 'Q1 2019')
 					@slot('title', 'Mobile version.')
@@ -73,6 +83,8 @@
 					@endslot
 				@endcomponent
 
+				<hr>
+
 				@component('_includes.milestone')
 					@slot('date', 'Q2 2019')
 					@slot('title', 'AirCore')
@@ -82,6 +94,8 @@
 						A highly optimized, easy-to-use storage server which enables hosts to maximize their profits as an X Core Host.
 					@endslot
 				@endcomponent
+
+				<hr>
 
 				@component('_includes.milestone')
 					@slot('date', 'Q2 2019')
