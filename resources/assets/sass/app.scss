@@ -84,9 +84,17 @@ footer{
 	&--preview-xcloud,
 	&--preview-xcore{
 
+		display: block;
 	    background: #fafafa;
 		margin-bottom: 19px;
 	    padding: 0 !important; // provided by container
+	    color: black; // Override link colour
+
+	    &:hover,
+	    &:focus{
+	    	color: black;
+	    	text-decoration: none;
+	    }
 
 	    @include whenLargerThan('medium-screen') {
 	    	margin: 36px;

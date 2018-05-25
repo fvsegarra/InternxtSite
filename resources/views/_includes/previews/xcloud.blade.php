@@ -1,4 +1,4 @@
-<section class="section section--preview-xcloud">
+<a href="{{ route('cloud') }}" class="section section--preview-xcloud">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm offset-lg-6">
@@ -9,4 +9,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</a>
