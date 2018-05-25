@@ -1690,7 +1690,7 @@ footer {
   #page-cloud .section--cloud-features .featurePreviewContainer .featurePreview {
     height: 574px;
     top: 48px;
-    width: 916px;
+    width: 873px;
   }
 }
 
@@ -1858,6 +1858,7 @@ footer {
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-iphone {
     padding-top: 60px;
+    padding-bottom: 122px;
   }
 }
 

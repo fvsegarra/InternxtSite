@@ -577,7 +577,7 @@
                     @include whenLargerThan('large-screen') {
                         height: 574px;
                         top: 48px;
-                        width: 916px;
+                        width: 873px;
                     }
 
 
@@ -745,6 +745,7 @@
 
             @include whenLargerThan('medium-screen') {
                 padding-top: 60px;
+                padding-bottom: 122px;
             }
 
             @include whenLargerThan('large-screen') {
