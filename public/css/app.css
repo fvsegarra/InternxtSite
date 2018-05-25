@@ -1267,7 +1267,7 @@ footer {
     font-size: 46px;
     letter-spacing: -2.2px;
     line-height: 0.9;
-    max-width: 635px;
+    max-width: 647px;
     text-align: left;
     margin-bottom: 50px;
   }
@@ -1275,7 +1275,7 @@ footer {
 
 @media (min-width: 1440px) {
   #page-cloud .section--cloud-beta .section__heading {
-    max-width: 800px;
+    max-width: 815px;
     font-size: 58px;
     line-height: 0.9;
     letter-spacing: -2.8px;

@@ -190,13 +190,13 @@
                     font-size: 46px;
                     letter-spacing: -2.2px;
                     line-height: 0.9;
-                    max-width: 635px;
+                    max-width: 647px;
                     text-align: left;
                     margin-bottom: 50px;
                 }
 
                 @include whenLargerThan('large-screen') {
-                    max-width: 800px;
+                    max-width: 815px;
                     font-size: 58px;
                     line-height: 0.9;
                     letter-spacing: -2.8px;
