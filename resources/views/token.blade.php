@@ -83,9 +83,9 @@
 						<p>You can buy INXT at exchanges, such as CoinExchange, Yobit, IDEX, Etherdelta and Mercatox, with more exchanges available soon. There are 629,610 INXT currently circulating and this number is fixed as INXT is not mineable. INXT is an ERC20 token and can be stored in any Ethereum compatible wallet.</p>
 					</div>
 					<div class="section__footer">
-						<a class="btn btn-default"><img src="/img/logos/coinexchange.png" height="27" class="img-fluid"></a>
-						<a class="btn btn-default"><img src="/img/logos/idex.png" height="27"></a>
-						<a class="btn btn-default"><img src="/img/logos/yobit.png" height="27"></a>
+						<a href="https://www.coinexchange.io/market/INXT/BTC" rel="nofollow" target="_blank" class="btn btn-default"><img src="/img/logos/coinexchange.png" height="27" class="img-fluid"></a>
+						<a href="https://idex.market/eth/inxt" rel="nofollow" target="_blank" class="btn btn-default"><img src="/img/logos/idex.png" height="27"></a>
+						<a href="https://yobit.net/en/trade/INXT/BTC" rel="nofollow" target="_blank" class="btn btn-default"><img src="/img/logos/yobit.png" height="27"></a>
 					</div>
 				</div>
 			</div>
