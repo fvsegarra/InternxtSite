@@ -26,13 +26,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="referenceContainer col-sm text-center">
-					<img src="/img/logos/entrepreneur.png" height="40">
+					<a href="https://www.entrepreneur.com/article/309468" rel="nofollow" target="_blank"><img src="/img/logos/entrepreneur.png" height="40"></a>
 				</div>
 				<div class="referenceContainer col-sm text-center">
-					<img src="/img/logos/investing.com.png" height="40">
+					<a href="https://www.investing.com/analysis/heres-why-internxt-could-be-well-worth-a-look-right-now-200274832" rel="nofollow" target="_blank"><img src="/img/logos/investing.com.png" height="40"></a>
 				</div>
 				<div class="referenceContainer col-sm text-center">
-					<img src="/img/logos/yahoo.png" height="40">
+					<a href="https://finance.yahoo.com/news/making-internet-secure-everyone-140000059.html?guccounter=1" rel="nofollow" target="_blank"><img src="/img/logos/yahoo.png" height="40"></a>
 				</div>
 			</div>
 		</div>
