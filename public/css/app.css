@@ -3449,23 +3449,23 @@ footer {
   }
 }
 
-#page-resources .section--resources .container-fluid {
-  width: 375px;
+#page-resources .section--resources .container {
+  width: 375px !important;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 @media (min-width: 1080px) {
-  #page-resources .section--resources .container-fluid {
-    width: 788px;
+  #page-resources .section--resources .container {
+    width: 788px !important;
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (min-width: 1440px) {
-  #page-resources .section--resources .container-fluid {
-    width: 990px;
+  #page-resources .section--resources .container {
+    width: 990px !important;
   }
 }
 

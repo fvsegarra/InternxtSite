@@ -17,20 +17,20 @@
 			}
 
 
-			.container-fluid{
+			.container{
 
-				width: 375px;
+				width: 375px !important;
 				padding-left: 24px;
 				padding-right: 24px;
 
 				@include whenLargerThan('medium-screen') {
-					width: 788px;
+					width: 788px !important;
 				    padding-left: 0;
 				    padding-right: 0;
 				}
 
 				@include whenLargerThan('large-screen') {
-				    width: 990px;
+				    width: 990px !important;
 				}
 
 			}
