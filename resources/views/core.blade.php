@@ -111,7 +111,7 @@
 			<p class="section__heading">Do something extraordinary<span class="linebreak"></span> with extraordinary technology.</p>
 			<p class="section__subheading">Subscribe to our beta list to be first in-line to download X Core and to start earning passive income by sharing your machines un-used hard drive space.</p>
 			<div class="section__content">
-				<form class="form-inline" action="https://internxt.us18.list-manage.com/subscribe/post?u=7d1200a1ef2498eacddf2a314&amp;id=08b0beeff9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+				<form class="form-inline" action="https://internxt.us18.list-manage.com/subscribe/post?u=7d1200a1ef2498eacddf2a314&amp;id=b65b4558d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 					<input type="email" name="EMAIL" class="form-control" id="inlineFormInputGroupUsername2" placeholder="user@example.com" required>
 					<button type="submit" class="btn btn-primary mb-2">Subscribe</button>
 				</form>
