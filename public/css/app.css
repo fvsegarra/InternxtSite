@@ -456,6 +456,18 @@ body {
   }
 }
 
+@media (min-width: 992px) {
+  .offset-lg-6 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+}
+
 .pageHeader {
   padding: 45px 0 72px;
 }
