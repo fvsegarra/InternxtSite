@@ -2996,13 +2996,13 @@ footer {
 
 @media (min-width: 1080px) {
   #page-team .section > .container {
-    max-width: 840px;
+    max-width: 840px !important;
   }
 }
 
 @media (min-width: 1440px) {
   #page-team .section > .container {
-    max-width: 1036px;
+    max-width: 1036px !important;
   }
 }
 
@@ -3073,7 +3073,8 @@ footer {
   overflow: hidden;
   background-color: #16181a;
   height: 401px;
-  margin-bottom: 42px;
+  max-width: 330px;
+  margin: 0 auto 42px;
 }
 
 @media (min-width: 1080px) {
@@ -3215,6 +3216,24 @@ footer {
 @media (min-width: 1440px) {
   #page-team hr {
     max-width: 1440px;
+  }
+}
+
+@media (min-width: 992px) {
+  #page-team .col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-team .col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+    max-width: 33.333333%;
   }
 }
 

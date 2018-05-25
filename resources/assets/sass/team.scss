@@ -8,11 +8,11 @@
             padding-right: 24px;
 
             @include whenLargerThan('medium-screen') {
-                max-width: 840px;
+                max-width: 840px !important;
             }
 
             @include whenLargerThan('large-screen') {
-                max-width: 1036px;
+                max-width: 1036px !important;
             }
 
         }
@@ -94,10 +94,8 @@
         overflow: hidden;
         background-color: #16181a;
         height: 401px;
-        margin-bottom: 42px;
-
-        // height: 260px;
-        // margin-bottom: 60px;
+        max-width: 330px;
+        margin: 0 auto 42px;
 
         @include whenLargerThan('medium-screen') {
             height: 306px;
@@ -221,6 +219,21 @@
         }
 
         // margin: 156px auto 105px auto;
+    }
+
+    // Override column breakpoint
+    .col-lg-4 {
+
+        @include whenLargerThan(992px) {
+            flex: none;
+            max-width: none;
+        }
+
+        @include whenLargerThan('medium-screen') {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
     }
 
 }
