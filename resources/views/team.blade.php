@@ -100,7 +100,7 @@
 							@slot('name', 'Join the team')
 							@slot('position', 'View our open job positions')
 							@slot('btnText', 'View current openings')
-							@slot('btnLink', '#jobs')
+							@slot('btnLink', 'https://angel.co/internxt/jobs')
 						@endcomponent
 					</div>{{-- /.col-sm-4 --}}
 
@@ -139,7 +139,7 @@
 							@slot('name', 'Become an advisor')
 							@slot('position', 'Contact us about an enquiry.')
 							@slot('btnText', 'Contact us')
-							@slot('btnLink', '#contact')
+							@slot('btnLink', 'mailto:hello@internxt.com')
 						@endcomponent
 					</div>{{-- /.col-sm-4 --}}
 
@@ -171,7 +171,7 @@
 							@slot('name', 'Become a partner')
 							@slot('position', 'Contact us about an enquiry.')
 							@slot('btnText', 'Contact us')
-							@slot('btnLink', '#contact')
+							@slot('btnLink', 'mailto:hello@internxt.com')
 						@endcomponent
 					</div>{{-- /.col-sm-4 --}}
 
