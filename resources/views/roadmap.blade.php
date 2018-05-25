@@ -44,6 +44,16 @@
 				@endcomponent
 
 				@component('_includes.milestone')
+					@slot('date', 'Q3 2018')
+					@slot('title', 'Beta versions.')
+					@slot('statusClass', 'in-progress')
+					@slot('statusText', 'Milestone In Progress')
+					@slot('content')
+						This release will include all the code that will allow X Cloud and X Core to function, as well as a basic Windows, Linux and MacOS client.
+					@endslot
+				@endcomponent
+
+				@component('_includes.milestone')
 					@slot('date', 'Q4 2018')
 					@slot('title', 'Commercial release.')
 					@slot('statusClass', 'upcoming')
