@@ -1314,6 +1314,7 @@ footer {
 
 #page-cloud .section--cloud-beta .btn {
   background-color: #3aa0ff;
+  border: none;
   border-radius: 6.4px;
   font-size: 15px;
   font-weight: 500;
@@ -1321,12 +1322,14 @@ footer {
   letter-spacing: -0.2px;
   margin-left: 6.6px;
   width: 92.2px;
+  padding-top: 7px;
 }
 
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-beta .btn {
     width: 107px;
     margin-left: 9px;
+    padding-top: 8px;
   }
 }
 
@@ -1338,6 +1341,7 @@ footer {
     margin-top: 5px;
     font-size: 19px;
     padding-top: 16px;
+    padding-top: 9px;
   }
 }
 
