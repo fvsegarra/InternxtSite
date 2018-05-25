@@ -699,7 +699,7 @@ footer {
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   .section--preview-xcloud .offset-lg-6 {
     margin-left: 55.5%;
     margin-top: 85px;
@@ -733,9 +733,9 @@ footer {
 
 @media (min-width: 1080px) {
   .section--preview-xcore > .container {
-    background-position-x: 418px;
-    background-position-y: bottom;
-    background-size: 54%;
+    background-position-x: -55px;
+    background-position-y: 1px;
+    background-size: 112%;
     padding-top: 90px;
     height: 397px;
     padding-left: 90px;
@@ -745,9 +745,9 @@ footer {
 @media (min-width: 1440px) {
   .section--preview-xcore > .container {
     padding-left: 80px;
-    padding-top: 114px;
-    background-position-x: -33px;
-    background-position-y: -1px;
+    padding-top: 108px;
+    background-position-x: -110px;
+    background-position-y: 68px;
     background-size: 119%;
     height: 497px;
   }
@@ -1919,6 +1919,12 @@ footer {
     position: relative;
     left: 1px;
     max-width: 370px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-cloud .section--cloud-more-info {
+    margin-bottom: 45px;
   }
 }
 

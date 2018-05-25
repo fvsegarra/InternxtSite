@@ -242,7 +242,7 @@ footer{
 				margin-top: 50px;
 			}
 
-			@include whenLargerThan('medium-screen') {
+			@include whenLargerThan('large-screen') {
 				margin-left: 55.5%;
 				margin-top: 85px;
 			}
@@ -277,19 +277,19 @@ footer{
 			padding-top: 90px;
 
 		    @include whenLargerThan('medium-screen') {
-				background-position-x: 418px;
-				background-position-y: bottom;
-				background-size: 54%;
+				background-position-x: -55px;
+				background-position-y: 1px;
+				background-size: 112%;
 				padding-top: 90px;
-		    	height: 397px;
-		    	padding-left: 90px;
+				height: 397px;
+				padding-left: 90px;
 		    }
 
 		    @include whenLargerThan('large-screen') {
 				padding-left: 80px;
-				padding-top: 114px;
-				background-position-x: -33px;
-				background-position-y: -1px;
+				padding-top: 108px;
+				background-position-x: -110px;
+				background-position-y: 68px;
 				background-size: 119%;
 				height: 497px;
 		    }

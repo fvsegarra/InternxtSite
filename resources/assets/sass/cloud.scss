@@ -811,6 +811,14 @@
 
         }
 
+        &--cloud-more-info{
+
+            @include whenLargerThan('large-screen') {
+                margin-bottom: 45px;
+            }
+
+        }
+
     }
 
     .planContainer{
