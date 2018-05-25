@@ -3213,6 +3213,10 @@ footer {
   }
 }
 
+#page-team .section--team-partners {
+  margin-bottom: 72px;
+}
+
 #page-team .section--team-partners .teamMember {
   height: 300px;
 }
@@ -3422,7 +3426,7 @@ footer {
 }
 
 #page-timeline .section--timeline .section__content {
-  padding-bottom: 42px;
+  padding-bottom: 72px;
 }
 
 #page-timeline .section .container {
