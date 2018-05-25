@@ -4,7 +4,7 @@
 
 @section('navbar-classes', 'navbar-dark navbar-xcore')
 
-@section('navbarLogo', 'internxt_icon_xcore.svg')
+@section('navbarLogo', 'internxt_icon_home.svg')
 
 @section('pageTitle', 'X Core')
 

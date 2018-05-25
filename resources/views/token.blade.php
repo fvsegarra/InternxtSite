@@ -2,15 +2,15 @@
 
 @section('pageID', 'token')
 
-@section('navbar-classes', 'navbar-light')
+@section('navbar-classes', 'navbar-light navbar-token')
 
-@section('pageTitle', 'INXT. Internxt Token.')
+@section('pageTitle', 'INXT. Internxt’s Token.')
 
 @section('body')
 
 	<header class="pageHeader">
 		<div class="container">
-			<h1 class="pageHeader__heading">INXT. Internxt Token</h1>
+			<h1 class="pageHeader__heading">INXT. Internxt’s Token.</h1>
 			<h2 class="pageHeader__subheading">Our ERC20 token, INXT is designed to function as an economy with reliable and organic demand. All revenue generated from our services will be converted into INXT. Purchasing INXT is akin to owning a percentage of Internxt's future growth.</h2>
 		</div>
 	</header>
@@ -21,21 +21,21 @@
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Price Per INXT</p>
-						<p class="inxtDatum__point">$5.96</p>
+						<p class="inxtDatum__point">$<span id="usd_price">5.96</span></p>
+					</div>{{-- /.inxtDatum --}}
+				</div>{{-- /.col-sm-4 --}}
+
+				<div class="col-sm-4">
+					<div class="inxtDatum">
+						<p class="inxtDatum__label">Change / 24h</p>
+						<p class="inxtDatum__point inxtDatum__point--positive"><span class="inxtDatum__sign">+</span><span id="change_24h">26.09</span>%</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
 
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Change / 7 Days</p>
-						<p class="inxtDatum__point"><span class="inxtDatum__sign">-</span>2.93%</p>
-					</div>{{-- /.inxtDatum --}}
-				</div>{{-- /.col-sm-4 --}}
-
-				<div class="col-sm-4">
-					<div class="inxtDatum">
-						<p class="inxtDatum__label">Change / 30 Days</p>
-						<p class="inxtDatum__point inxtDatum__point--positive"><span class="inxtDatum__sign">+</span>442%</p>
+						<p class="inxtDatum__point"><span id="change_7d">2.93</span>%</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
 			</div>{{-- /.row --}}
@@ -44,7 +44,7 @@
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Market Cap</p>
-						<p class="inxtDatum__point">$5.2<span class="inxtDatum__measure">M</span></p>
+						<p class="inxtDatum__point">$<span id="market_cap">5.2</span><span class="inxtDatum__measure">M</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
 
@@ -148,5 +148,44 @@
 		});
 
 	</script>
+
+	 <script>
+        $.get("https://api.coinmarketcap.com/v1/ticker/internxt/", function(data, status) {
+            if (data[0].id === "internxt") {
+
+                x = parseFloat(data[0].price_usd);
+                h = Math.round(x*100.0)/100.0;
+                $("#usd_price").html(h);
+                s = parseFloat(data[0].market_cap_usd);
+                y = s/1000000;
+                m = Math.round(y*10.0)/10.0;
+
+                change24h = data[0].percent_change_24h;
+                change7d = data[0].percent_change_7d;
+
+                $("#market_cap").html(m);
+                $("#change_24h").html(change24h);
+                $("#change_7d").html(change7d);
+                $("#total_supply").html(data[0].total_supply);
+                $("#max_supply").html(data[0].max_supply);
+
+                // If positive, add green class
+                positiveClass = 'number_api--green';
+
+                $("#change_24h").removeClass(positiveClass);
+                $("#change_7d").removeClass(positiveClass);
+
+                if (change24h > 0) {
+                    $("#change_24h").addClass(positiveClass);
+                }
+
+                if (change7d > 0) {
+                    $("#change_7d").addClass(positiveClass);
+                }
+
+            }
+        }
+        );
+    </script>
 
 @endsection

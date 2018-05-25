@@ -2,7 +2,7 @@
 
 @section('pageID', 'timeline')
 
-@section('navbar-classes', 'navbar-light')
+@section('navbar-classes', 'navbar-light navbar-roadmap')
 
 @section('pageTitle', 'Development Timeline')
 

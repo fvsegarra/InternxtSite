@@ -2,7 +2,7 @@
 
 @section('pageID', 'team')
 
-@section('navbar-classes', 'navbar-light')
+@section('navbar-classes', 'navbar-light navbar-team')
 
 @section('pageTitle', 'Team')
 
