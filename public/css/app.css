@@ -294,6 +294,7 @@
     -webkit-box-flex: 1;
             flex-grow: 1;
     max-width: 299px;
+    margin: 25px auto 17px;
   }
 }
 
@@ -382,6 +383,12 @@
 @media (min-width: 1080px) {
   .pageFooter__copyright {
     padding-top: 8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pageFooter__copyright {
+    padding-top: 10px;
   }
 }
 

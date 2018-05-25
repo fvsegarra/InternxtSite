@@ -77,7 +77,7 @@
                 <div class="row">
 
                     <div class="col-lg pageFooter__logoContainer">
-                        <img src="/img/logos/internxt_light.png" height="42">
+                        <img src="/img/logos/internxt_footer.svg" height="42">
                     </div>{{-- /.col-lg --}}
 
                     <div class="col-lg">

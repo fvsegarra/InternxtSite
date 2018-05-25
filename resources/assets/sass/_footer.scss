@@ -26,6 +26,7 @@
 			-ms-flex-positive: 1;
 			flex-grow: 1;
 			max-width: 299px;
+			margin: 25px auto 17px;
 		}
 
 		@include whenLargerThan('medium-screen') {
@@ -111,6 +112,10 @@
 		@include whenLargerThan('medium-screen') {
 			padding-top: 8px;
 		}
+
+		@include whenLargerThan('large-screen') {
+    		padding-top: 10px;
+    	}
 
 		a.nav-link{
 
