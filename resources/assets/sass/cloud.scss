@@ -124,6 +124,9 @@
 
         img{
 
+            max-width: 322px;
+            margin-top: 60px;
+
             @include whenLargerThan('medium-screen') {
                 max-width: 833px;
                 margin-top: 58px;
@@ -160,9 +163,11 @@
 
                 padding-left: 24px;
                 padding-bottom: 88px;
+                padding-top: 42px;
 
                 @include whenLargerThan('medium-screen'){
                     padding-bottom: 115px;
+                    padding-top: 0;
                 }
 
                 @include whenLargerThan('large-screen'){
