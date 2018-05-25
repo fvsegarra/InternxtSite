@@ -10,7 +10,7 @@
 
 	<header class="pageHeader">
 		<div class="container">
-			<h1 class="pageHeader__heading">INXT. Internxt’s Token.</h1>
+			<h1 class="pageHeader__heading">INXT.<span class="linebreak"></span> Internxt’s Token.</h1>
 			<h2 class="pageHeader__subheading">Our ERC20 token, INXT is designed to function as an economy with reliable and organic demand. All revenue generated from our services will be converted into INXT. Purchasing INXT is akin to owning a percentage of Internxt's future growth.</h2>
 		</div>
 	</header>

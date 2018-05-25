@@ -2831,22 +2831,92 @@ footer {
   }
 }
 
+#page-token .pageHeader > .container,
+#page-token .section > .container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#page-token .pageHeader {
+  padding-top: 51px;
+}
+
+#page-token .pageHeader__heading {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 0.94;
+  letter-spacing: -1.1px;
+}
+
+@media (min-width: 1080px) {
+  #page-token .pageHeader__heading {
+    font-size: 85px;
+    font-weight: bold;
+    line-height: 0.94;
+    letter-spacing: -3.8px;
+  }
+}
+
+#page-token .pageHeader__heading .linebreak {
+  display: block;
+}
+
+@media (min-width: 1080px) {
+  #page-token .pageHeader__heading .linebreak {
+    display: none;
+  }
+}
+
+#page-token .pageHeader__subheading {
+  font-size: 19px;
+  line-height: 1.56;
+  letter-spacing: -0.4px;
+}
+
+@media (min-width: 1080px) {
+  #page-token .pageHeader__subheading {
+    font-size: 25px;
+    line-height: 1.56;
+    letter-spacing: -0.4px;
+  }
+}
+
 #page-token .inxtDatum {
-  margin-bottom: 34px;
+  margin-bottom: 20px;
+  max-width: 242px;
+}
+
+@media (min-width: 1080px) {
+  #page-token .inxtDatum {
+    margin-bottom: 34px;
+    max-width: none;
+  }
 }
 
 #page-token .inxtDatum__label {
   color: #666666;
-  font-size: 16px;
+  font-size: 13px;
   margin: 0;
 }
 
+@media (min-width: 1080px) {
+  #page-token .inxtDatum__label {
+    font-size: 16px;
+  }
+}
+
 #page-token .inxtDatum__point {
-  font-size: 82px;
+  font-size: 63px;
   letter-spacing: -3.9px;
   margin: 0;
   position: relative;
   top: -20px;
+}
+
+@media (min-width: 1080px) {
+  #page-token .inxtDatum__point {
+    font-size: 82px;
+  }
 }
 
 #page-token .inxtDatum__point--positive {
@@ -2862,22 +2932,35 @@ footer {
 }
 
 #page-token .section {
-  margin-bottom: 89px;
   margin: 0;
+  margin-bottom: 89px;
 }
 
 #page-token .section__heading {
-  font-size: 60px;
+  font-size: 38px;
   font-weight: bold;
   letter-spacing: -1.5px;
   line-height: 0.87;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1080px) {
+  #page-token .section__heading {
+    margin-bottom: 42px;
+    font-size: 60px;
+  }
 }
 
 #page-token .section__content p {
-  font-size: 22px;
+  font-size: 19px;
   letter-spacing: -0.2px;
   line-height: 1.45;
+}
+
+@media (min-width: 1080px) {
+  #page-token .section__content p {
+    font-size: 22px;
+  }
 }
 
 #page-token .section__content p:last-of-type {
@@ -2885,8 +2968,15 @@ footer {
 }
 
 #page-token .section--inxt-data {
-  margin-bottom: 130px;
-  margin-top: 52px;
+  margin-top: 29px;
+  margin-bottom: 84px;
+}
+
+@media (min-width: 1080px) {
+  #page-token .section--inxt-data {
+    margin-top: 52px;
+    margin-bottom: 130px;
+  }
 }
 
 #page-token .section--inxt-data .row:nth-child(1) .inxtDatum {
@@ -2907,6 +2997,8 @@ footer {
   height: 50px;
   margin-right: 20px;
   width: 203px;
+  margin-bottom: 42px;
+  padding-top: 12px;
 }
 
 #page-token .section--inxt-exchange .btn:last-of-type {

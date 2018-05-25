@@ -1,24 +1,95 @@
 #page-token{
 
+    .pageHeader,
+    .section{
+
+        & > .container{
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+    }
+
+    .pageHeader{
+
+        padding-top: 51px;
+
+
+        &__heading{
+
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 0.94;
+            letter-spacing: -1.1px;
+
+            @include whenLargerThan('medium-screen') {
+                font-size: 85px;
+                font-weight: bold;
+                line-height: 0.94;
+                letter-spacing: -3.8px;
+            }
+
+            .linebreak{
+
+                display: block;
+
+                @include whenLargerThan('medium-screen') {
+                    display: none;
+                }
+
+            }
+
+        }
+
+        &__subheading{
+
+            font-size: 19px;
+            line-height: 1.56;
+            letter-spacing: -0.4px;
+
+            @include whenLargerThan('medium-screen') {
+                font-size: 25px;
+                line-height: 1.56;
+                letter-spacing: -0.4px;
+            }
+        }
+
+    }
+
     .inxtDatum {
 
-        margin-bottom: 34px;
+        margin-bottom: 20px;
+        max-width: 242px;
+
+        @include whenLargerThan('medium-screen') {
+            margin-bottom: 34px;
+            max-width: none;
+        }
 
         &__label{
+
             color: #666666;
-            font-size: 16px;
+            font-size: 13px;
             margin: 0;
+
+            @include whenLargerThan('medium-screen') {
+                font-size: 16px;
+            }
+
         }
 
         &__point{
 
-            font-size: 82px;
+            font-size: 63px;
             letter-spacing: -3.9px;
             margin: 0;
-
             // Large font size causing silly top gap?
             position: relative;
             top: -20px;
+
+            @include whenLargerThan('medium-screen') {
+                font-size: 82px;
+            }
 
             &--positive{
                 color: #15d157;
@@ -39,24 +110,35 @@
 
     .section{
 
-        margin-bottom: 89px;
         margin: 0;
+        margin-bottom: 89px;
 
         &__heading{
-            font-size: 60px;
+
+            font-size: 38px;
             font-weight: bold;
             letter-spacing: -1.5px;
             line-height: 0.87;
-            margin-bottom: 42px;
+            margin-bottom: 20px;
+
+            @include whenLargerThan('medium-screen') {
+                margin-bottom: 42px;
+                font-size: 60px;
+            }
+
         }
 
         &__content{
 
             p{
 
-                font-size: 22px;
+                font-size: 19px;
                 letter-spacing: -0.2px;
                 line-height: 1.45;
+
+                @include whenLargerThan('medium-screen') {
+                    font-size: 22px;
+                }
 
                 &:last-of-type{
                     margin-bottom: 0
@@ -68,8 +150,13 @@
 
         &--inxt-data{
 
-            margin-bottom: 130px;
-            margin-top: 52px;
+            margin-top: 29px;
+            margin-bottom: 84px;
+
+            @include whenLargerThan('medium-screen') {
+                margin-top: 52px;
+                margin-bottom: 130px;
+            }
 
             .row:nth-child(1) .inxtDatum{
                 border-bottom: 2px solid black;
@@ -98,6 +185,8 @@
                 height: 50px;
                 margin-right: 20px;
                 width: 203px;
+                margin-bottom: 42px;
+                padding-top: 12px;
 
                 &:last-of-type{
                     margin-right: 0;
