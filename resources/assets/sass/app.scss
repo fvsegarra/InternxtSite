@@ -10,6 +10,36 @@ body{
 	font-family: $font-family-sans-serif;
 }
 
+// Override Bootstrap's changes to container width at various
+// breakpoints, to reduce them down to 375, 1080, and 1440
+.container{
+
+	@include whenLargerThan(576px){
+		max-width: 540px !important;
+	}
+
+	@include whenLargerThan(768px){
+		max-width: 540px !important;
+	}
+
+	@include whenLargerThan(992px){
+		max-width: 540px !important;
+	}
+
+	@include whenLargerThan(1080px){
+		max-width: 960px !important;
+	}
+
+	@include whenLargerThan(1200px){
+		max-width: 960px !important;
+	}
+
+	@include whenLargerThan(1440px){
+		max-width: 1140px !important;
+	}
+
+}
+
 .pageHeader{
 
 	padding: 45px 0 72px;

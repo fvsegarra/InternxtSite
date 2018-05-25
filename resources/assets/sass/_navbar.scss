@@ -142,4 +142,60 @@
 
 	}
 
+
+	// Override default change from mobile navbar
+	@include whenLargerThan(768px) {
+    	padding: 16px;
+	}
+
+	@media (max-width: 991.98px){
+
+		& >.container, & >.container-fluid {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+	}
+
+	@include whenLargerThan(992px) {
+
+		.navbar-collapse {
+			display: none !important;
+			flex-basis: 100% !important;
+		}
+
+		.navbar-toggler {
+		    display: block;
+		}
+
+		.navbar-expand-lg > .container,
+		.navbar-expand-lg > .container-fluid {
+		    padding-right: 15px;
+		    padding-left: 15px;
+			flex-wrap: wrap;
+		}
+
+	}
+
+	@include whenLargerThan('medium-screen') {
+
+		padding: 5px 16px 5px;
+
+		.navbar-collapse {
+			display: flex!important;
+			-ms-flex-preferred-size: auto;
+			flex-basis: auto;
+		}
+
+		.navbar-toggler {
+		    display: none;
+		}
+
+		.navbar-expand-lg > .container,
+		.navbar-expand-lg > .container-fluid {
+			flex-wrap: nowrap;
+		}
+
+	}
+
 }

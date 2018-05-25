@@ -13,7 +13,7 @@
 	<header class="pageHeader">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5">
+				<div class="col">
 					<h1 class="pageHeader__heading">Technologies to enhance life.</h1>
 					<h2 class="pageHeader__subheading">Transforming the way people live through revolutionary technology.</h2>
 					<a class="btn pageHeader__cta" href="#">Discover More</a>
