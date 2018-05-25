@@ -3282,6 +3282,10 @@ footer {
   }
 }
 
+#page-timeline .section--timeline .section__content {
+  padding-bottom: 42px;
+}
+
 #page-timeline .section .container {
   padding-left: 24px;
   padding-right: 24px;
