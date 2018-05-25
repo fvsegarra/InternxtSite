@@ -11,6 +11,7 @@
 	<section class="section section--timeline">
 		<div class="container">
 			<p class="section__heading">Development Timeline.</p>
+		</div>
 			<div class="section__content">
 
 				@component('_includes.milestone')
@@ -108,7 +109,6 @@
 				@endcomponent
 
 			</div>{{-- /.section__content --}}
-		</div>
 	</section>
 
 @endsection
