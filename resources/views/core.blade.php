@@ -76,11 +76,7 @@
 		<div class="container">
 			<div class="row">
 
-				<div class="col-sm-8">
-					<img src="/img/mockups/xcore.png" class="img-fluid">
-				</div>{{-- /.col-sm-8 --}}
-
-				<div class="col-sm-4">
+				<div class="col-sm-4 offset-sm-8">
 
 					<div class="subsection subsection--host">
 						<div class="container-fluid">

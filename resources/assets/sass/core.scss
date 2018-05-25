@@ -259,6 +259,26 @@
 
         &--core-screenshot{
 
+            & > .container {
+
+                background-image: url(/img/mockups/xcore/screenshot/mobile.png);
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: 373px;
+
+                @include whenLargerThan('medium-screen') {
+                    background-image: url(/img/mockups/xcore/screenshot/1080.png);
+                    background-size: 1080px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    background-image: url(/img/mockups/xcore/screenshot/1440.png);
+                    background-size: 1440px;
+                    background-position-y: -47px;
+                }
+
+            }
+
             @include whenLargerThan('large-screen') {
                 padding-top: 71px;
             }
@@ -340,7 +360,7 @@
 
                 &--host{
 
-                    margin-top: 77px;
+                    margin-top: 410px;
                     margin-bottom: 62px;
 
                     @include whenLargerThan('medium-screen') {
@@ -401,7 +421,7 @@
                     font-size: 30px;
                     letter-spacing: -1.3px;
                     padding-left: 64px;
-                    margin-top: 114px;
+                    margin-top: 170px;
                 }
 
             }
@@ -705,7 +725,13 @@
                 }
 
                 &--settings{
-                    background-image: url('/img/mockups/xcore/settings.png');
+
+                    background-image: url('/img/mockups/xcore/settings_mobile.png');
+
+                    @include whenLargerThan('medium-screen') {
+                        background-image: url('/img/mockups/xcore/settings.png');
+                    }
+
                 }
 
             }
