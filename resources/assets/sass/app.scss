@@ -150,7 +150,7 @@ footer{
 				line-height: 0.86;
 				letter-spacing: -1.7px;
 				max-width: 314px;
-				margin-bottom: 11px;
+				margin-bottom: 8px;
 	    	}
 
 			@include whenLargerThan('large-screen') {
@@ -213,8 +213,8 @@ footer{
 			background-image: url(/img/mockups/homepage-xcloud.png);
 
 			@include whenLargerThan('medium-screen') {
-				background-position-x: 87px;
-				background-size: 379px;
+				background-position-x: 51px;
+				background-size: 408px;
 				background-position-y: bottom;
 			}
 
@@ -224,6 +224,20 @@ footer{
 				background-size: 509px;
 				background-position-y: bottom;
 	        }
+
+		}
+
+		.offset-lg-6{
+
+			@include whenLargerThan('medium-screen') {
+				margin-left: 55%;
+				margin-top: 50px;
+			}
+
+			@include whenLargerThan('medium-screen') {
+				margin-left: 55.5%;
+				margin-top: 85px;
+			}
 
 		}
 
@@ -268,6 +282,7 @@ footer{
    				padding-top: 114px;
 			    background-position-x: 491px;
 			    background-position-y: 1px;
+			    background-size: 57%;
 		    }
 
 		}

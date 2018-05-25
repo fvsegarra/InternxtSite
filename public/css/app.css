@@ -59,13 +59,13 @@
 
 @media (min-width: 1080px) {
   .navbar .container {
-    max-width: 840px;
+    max-width: 840px !important;
   }
 }
 
 @media (min-width: 1440px) {
   .navbar .container {
-    max-width: 1032px;
+    max-width: 1032px !important;
     padding-right: 18px;
   }
 }
@@ -578,7 +578,7 @@ footer {
     line-height: 0.86;
     letter-spacing: -1.7px;
     max-width: 314px;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 }
 
@@ -650,8 +650,8 @@ footer {
 
 @media (min-width: 1080px) {
   .section--preview-xcloud > .container {
-    background-position-x: 87px;
-    background-size: 379px;
+    background-position-x: 51px;
+    background-size: 408px;
     background-position-y: bottom;
   }
 }
@@ -662,6 +662,20 @@ footer {
     background-position-x: 31px;
     background-size: 509px;
     background-position-y: bottom;
+  }
+}
+
+@media (min-width: 1080px) {
+  .section--preview-xcloud .offset-lg-6 {
+    margin-left: 55%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .section--preview-xcloud .offset-lg-6 {
+    margin-left: 55.5%;
+    margin-top: 85px;
   }
 }
 
@@ -707,6 +721,7 @@ footer {
     padding-top: 114px;
     background-position-x: 491px;
     background-position-y: 1px;
+    background-size: 57%;
   }
 }
 
@@ -804,10 +819,10 @@ footer {
   #page-home .pageHeader > .container {
     padding-top: 111px;
     padding-left: 82px;
-    height: 516px;
-    background-position-x: right;
-    background-position-y: top;
-    background-size: 493px;
+    height: 512px;
+    background-position-x: 471px;
+    background-position-y: 10px;
+    background-size: 471px;
   }
 }
 
@@ -815,7 +830,7 @@ footer {
   #page-home .pageHeader > .container {
     padding-left: 72px;
     padding-top: 131px;
-    height: 656px;
+    height: 654px;
     background-position-x: 557px;
     background-position-y: 26px;
     background-size: 588px;
@@ -834,8 +849,9 @@ footer {
 
 @media (min-width: 1080px) {
   #page-home .pageHeader__heading {
-    letter-spacing: -1.8px;
-    margin-top: 52px;
+    letter-spacing: -1px;
+    max-width: 325px;
+    margin-bottom: 4px;
   }
 }
 
@@ -845,6 +861,7 @@ footer {
     margin-top: 17px;
     font-size: 57px;
     max-width: 400px;
+    margin-bottom: 10px;
   }
 }
 
@@ -894,9 +911,10 @@ footer {
 
 @media (min-width: 1440px) {
   #page-home .pageHeader__cta {
-    font-size: 21px;
+    font-size: 20px;
     padding: 15px 26px;
     margin-top: 34px;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -910,13 +928,13 @@ footer {
 
 @media (min-width: 1080px) {
   #page-home .section--home-references {
-    padding: 45px 0 0;
+    padding: 49px 0 0;
   }
 }
 
 @media (min-width: 1440px) {
   #page-home .section--home-references {
-    padding: 57px 0 20px;
+    padding: 57px 0 47px;
   }
 }
 
@@ -931,6 +949,9 @@ footer {
 @media (min-width: 1080px) {
   #page-home .section--home-references .referenceContainer:nth-of-type(1) img {
     height: 31px;
+    position: relative;
+    left: 9px;
+    top: -3px;
   }
 }
 
@@ -946,8 +967,23 @@ footer {
   margin-bottom: 38px;
 }
 
+@media (min-width: 1080px) {
+  #page-home .section--home-references .referenceContainer:nth-of-type(2) {
+    margin-bottom: 8px;
+  }
+}
+
 #page-home .section--home-references .referenceContainer:nth-of-type(2) img {
   height: 36px;
+}
+
+@media (min-width: 1080px) {
+  #page-home .section--home-references .referenceContainer:nth-of-type(2) img {
+    height: 30px;
+    position: relative;
+    left: 18px;
+    top: -2px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -955,7 +991,7 @@ footer {
     height: 37px;
     position: relative;
     left: 29px;
-    top: 1px;
+    top: -2px;
   }
 }
 
@@ -965,22 +1001,25 @@ footer {
 
 @media (min-width: 1080px) {
   #page-home .section--home-references .referenceContainer:nth-of-type(3) img {
-    height: 32px;
+    height: 31px;
+    position: relative;
+    left: 9px;
+    top: -4px;
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   #page-home .section--home-references .referenceContainer:nth-of-type(3) img {
     height: 37px;
     position: relative;
     left: 36px;
-    top: 2px;
+    top: 0;
   }
 }
 
 @media (min-width: 1080px) {
   #page-home .section--home-references .referenceContainer {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 }
 

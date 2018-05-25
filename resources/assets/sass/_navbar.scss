@@ -10,11 +10,11 @@
 	.container{
 
 		@include whenLargerThan('medium-screen') {
-    		max-width: 840px;
+    		max-width: 840px !important;
 		}
 
 		@include whenLargerThan('large-screen') {
-			max-width: 1032px;
+			max-width: 1032px !important;
 			padding-right: 18px;
 		}
 

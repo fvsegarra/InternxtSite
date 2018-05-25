@@ -36,18 +36,19 @@
             @include whenLargerThan('medium-screen') {
                 padding-top: 111px;
                 padding-left: 82px;
-                height: 516px;
+                height: 512px;
                 background:{
-                    position-x: right;
-                    position-y: top;
-                    size: 493px;
+                    position-x: 471px;
+                    position-y: 10px;
+                    size: 471px;
                 }
+
             }
 
             @include whenLargerThan('large-screen') {
                 padding-left: 72px;
                 padding-top: 131px;
-                height: 656px;
+                height: 654px;
                 background:{
                     position-x: 557px;
                     position-y: 26px;
@@ -69,8 +70,9 @@
 
 
             @include whenLargerThan('medium-screen') {
-                letter-spacing: -1.8px;
-                margin-top: 52px;
+                letter-spacing: -1px;
+                max-width: 325px;
+                margin-bottom: 4px;
             }
 
             @include whenLargerThan('large-screen') {
@@ -78,6 +80,7 @@
                 margin-top: 17px;
                 font-size: 57px;
                 max-width: 400px;
+                margin-bottom: 10px;
             }
 
         }
@@ -123,9 +126,10 @@
             }
 
             @include whenLargerThan('large-screen') {
-                font-size: 21px;
+                font-size: 20px;
                 padding: 15px 26px;
                 margin-top: 34px;
+                letter-spacing: 0.2px;
             }
 
         }
@@ -141,11 +145,11 @@
             padding-bottom: 0;
 
             @include whenLargerThan('medium-screen'){
-                padding: 45px 0 0;
+                padding: 49px 0 0;
             }
 
             @include whenLargerThan('large-screen'){
-                padding: 57px 0 20px;
+                padding: 57px 0 47px;
             }
 
             .referenceContainer{
@@ -160,6 +164,9 @@
 
                         @include whenLargerThan('medium-screen') {
                             height: 31px;
+                            position: relative;
+                            left: 9px;
+                            top: -3px;
                         }
 
                         @include whenLargerThan('large-screen') {
@@ -176,15 +183,26 @@
 
                     margin-bottom: 38px; // Needs a larger vertical gap for some reason
 
+                    @include whenLargerThan('medium-screen') {
+                        margin-bottom: 8px;
+                    }
+
                     img{
 
                         height: 36px;
+
+                        @include whenLargerThan('medium-screen') {
+                            height: 30px;
+                            position: relative;
+                            left: 18px;
+                            top: -2px;
+                        }
 
                         @include whenLargerThan('large-screen') {
                             height: 37px;
                             position: relative;
                             left: 29px;
-                            top: 1px;
+                            top: -2px;
                         }
 
                     }
@@ -198,14 +216,17 @@
                         height: 38px;
 
                         @include whenLargerThan('medium-screen') {
-                            height: 32px;
+                            height: 31px;
+                            position: relative;
+                            left: 9px;
+                            top: -4px;
                         }
 
-                        @include whenLargerThan('medium-screen') {
+                        @include whenLargerThan('large-screen') {
                             height: 37px;
                             position: relative;
                             left: 36px;
-                            top: 2px;
+                            top: 0;
                         }
 
                     }
@@ -213,7 +234,7 @@
                 }
 
                 @include whenLargerThan('medium-screen'){
-                    margin-bottom: 0;
+                    margin-bottom: 0px;
                 }
 
             }
