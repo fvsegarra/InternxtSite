@@ -735,11 +735,18 @@ footer {
 
 .section--preview-xcore > .container {
   background-image: url(/img/mockups/homepage-xcore.png);
-  background-position-x: -11px;
-  background-position-y: 230px;
-  background-size: 107%;
+  background-position-x: 81%;
+  background-position-y: 231px;
+  background-size: 900px;
   height: 530px;
   padding-top: 90px;
+  max-width: 375px;
+}
+
+@media (min-width: 576px) {
+  .section--preview-xcore > .container {
+    background-position-x: 95%;
+  }
 }
 
 @media (min-width: 1080px) {
