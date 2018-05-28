@@ -8,15 +8,21 @@
         <link rel="stylesheet" href="css/app.css">
         <link rel="icon" href="favicon.ico">
 
-        <title>
-            @hasSection('pageTitle')
-                Internxt - @yield('pageTitle')
-            @else
-                Internxt
-            @endif
-        </title>
+        <title>@hasSection('pageTitle')Internxt - @yield('pageTitle') @else Internxt @endif</title>
 
         <meta name="description" content="@yield('metaDescription')">
+
+        @if(app()->environment('production'))
+
+            @include('_includes.scripts.google-analytics')
+
+            @include('_includes.scripts.google-tags')
+
+            @include('_includes.scripts.facebook-pixel')
+
+            @include('_includes.scripts.cookie-consent')
+
+        @endif
 
     </head>
     <body id="page-@yield('pageID')">
