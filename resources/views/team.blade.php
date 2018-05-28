@@ -6,6 +6,8 @@
 
 @section('pageTitle', 'Team')
 
+@section('metaDescription', 'Meet Internxt\'s Team. Fran Villalba Segarra, Founder and CEO at Internxt.')
+
 @section('body')
 
 	<section class="section section--team-core">

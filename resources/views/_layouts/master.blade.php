@@ -6,8 +6,18 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link rel="stylesheet" href="css/app.css">
+        <link rel="icon" href="favicon.ico">
 
-        <title>@yield('pageTitle') | Internxt</title>
+        <title>
+            @hasSection('pageTitle')
+                Internxt - @yield('pageTitle')
+            @else
+                Internxt
+            @endif
+        </title>
+
+        <meta name="description" content="@yield('metaDescription')">
+
     </head>
     <body id="page-@yield('pageID')">
 

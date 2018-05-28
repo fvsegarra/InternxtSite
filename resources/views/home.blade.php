@@ -8,6 +8,8 @@
 
 @section('pageTitle', 'Technologies to enhance life')
 
+@section('metaDescription', 'Internxt is excitement, ambition. Here at Internxt we are disrupting thrilling industries through the use of revolutionary technology.')
+
 @section('body')
 
 	<header class="pageHeader">

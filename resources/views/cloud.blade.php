@@ -8,6 +8,8 @@
 
 @section('pageTitle', 'X Cloud')
 
+@section('metaDescription', 'X Cloud is much more than a superior, more secure and private cloud storage service. X Cloud is excitement, ambition. X Cloud is being part of something unique. Decentralized cloud storage.')
+
 @section('body')
 
 	<header class="pageHeader">

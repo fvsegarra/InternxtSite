@@ -8,6 +8,8 @@
 
 @section('pageTitle', 'X Core')
 
+@section('metaDescription', 'X Core, at the heart of the decentralized cloud. Earn money by hosting secure files in our decentralized cloud infrastructure.')
+
 @section('body')
 
 	<header class="pageHeader">

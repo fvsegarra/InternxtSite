@@ -4,7 +4,7 @@
 
 @section('navbar-classes', 'navbar-light')
 
-@section('pageTitle', 'Company Resources')
+@section('pageTitle', 'Resources')
 
 @section('body')
 

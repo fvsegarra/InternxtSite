@@ -4,7 +4,9 @@
 
 @section('navbar-classes', 'navbar-light navbar-token')
 
-@section('pageTitle', 'INXT. Internxt’s Token.')
+@section('pageTitle', 'INXT')
+
+@section('metaDescription', 'Internxt token (INXT). Buy, Sell, Trade INXT.')
 
 @section('body')
 
@@ -28,7 +30,7 @@
 				<div class="col-sm-4">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Change / 24h</p>
-						<p class="inxtDatum__point inxtDatum__point--positive"><span class="inxtDatum__sign">+</span><span id="change_24h">26.09</span>%</p>
+						<p class="inxtDatum__point"><span id="change_24h">26.09</span>%</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-sm-4 --}}
 
@@ -170,7 +172,7 @@
                 $("#max_supply").html(data[0].max_supply);
 
                 // If positive, add green class
-                positiveClass = 'number_api--green';
+                positiveClass = 'inxtDatum__point--green';
 
                 $("#change_24h").removeClass(positiveClass);
                 $("#change_7d").removeClass(positiveClass);

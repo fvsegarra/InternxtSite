@@ -4,7 +4,9 @@
 
 @section('navbar-classes', 'navbar-light navbar-roadmap')
 
-@section('pageTitle', 'Development Timeline')
+@section('pageTitle', 'Roadmap')
+
+@section('metaDescription', 'Internxt\'s Development Roadmap. Find out what next industry we\'re planning to disrupt. X Cloud, decentralized cloud storage service. X Core, CorePro.')
 
 @section('body')
 
