@@ -63,11 +63,11 @@
 			<p class="section__heading">Find the storage plan that’s right for you.</p>
 			<div class="row">
 
-				<div class="col-sm-6">
+				<div class="col-lg-6">
 					<div class="section__content">When signing up to X Cloud you will receive a 7 day free trial period so everyone can experience X Cloud without having to set-up any payment details. If you enjoy the service you can renew your trial for a one-time payment of $1.99, or alternatively upgrade to one of our monthly storage plans.</div>
-				</div>{{-- /.col-sm-6 --}}
+				</div>{{-- /.col-lg-6 --}}
 
-				<div class="col-sm-6 planContainer">
+				<div class="col-lg-6 planContainer">
 
 					<div class="plan row align-items-center">
 						<div class="col-4">
@@ -96,7 +96,7 @@
 						</div>
 					</div>
 
-				</div>{{-- /.col-sm-6 --}}
+				</div>{{-- /.col-lg-6 --}}
 
 			</div>{{-- /.row --}}
 		</div>

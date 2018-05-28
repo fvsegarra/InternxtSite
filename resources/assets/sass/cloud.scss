@@ -889,6 +889,7 @@
             font-weight: 500;
             letter-spacing: -0.1px;
             padding-top: 16px;
+            padding-left: 42px;
 
             @include whenLargerThan('medium-screen') {
                 font-size: 18px;
