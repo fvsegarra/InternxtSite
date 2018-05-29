@@ -17,7 +17,7 @@
 			@component('_includes.resource')
 				@slot('class', 'press-kit')
 				@slot('title', 'Press Kit')
-				@slot('btnLink', '#download')
+				@slot('btnLink', '/kit.zip')
 				@slot('btnText', 'Download Press Kit')
 				@slot('content')
 					Download our press kit for a selection of our assets to use for any media or marketing purposes.
@@ -29,7 +29,7 @@
 			@component('_includes.resource')
 				@slot('class', 'whitepaper')
 				@slot('title', 'Whitepaper')
-				@slot('btnLink', '#download')
+				@slot('btnLink', 'whitepaper.pdf')
 				@slot('btnText', 'Download Whitepaper')
 				@slot('content')
 					Download our whitepaper for an extensive look into the technology we are applying to our services.
