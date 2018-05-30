@@ -13,7 +13,7 @@
 	<header class="pageHeader">
 		<div class="container">
 			<h1 class="pageHeader__heading">INXT.<span class="linebreak"></span> Internxt’s Token.</h1>
-			<h2 class="pageHeader__subheading">Our ERC20 token, INXT is designed to function as an economy with reliable and organic demand. All revenue generated from our services will be converted into INXT. Purchasing INXT is akin to owning a percentage of Internxt's future growth.</h2>
+			<h2 class="pageHeader__subheading">Our ERC20 token, INXT is designed to function as an economy with reliable and organic demand. All revenue generated from our services will be converted into INXT.</h2>
 		</div>
 	</header>
 
@@ -71,7 +71,7 @@
 		<div class="container">
 			<p class="section__heading">Facilitating our services.</p>
 			<div class="section__content">
-				<p>Customers will require INXT to utilize Internxt's services. All revenue generated from our services will be converted into INXT. For example, a $20m in revenue generated from our services would mean a direct $20m in buy orders for INXT on public exchanges. In the event that a customer decides to pay for our services in fiat or any other cryptocurrency like Bitcoin, the Bitcoin will then be automatically used to purchase INXT at market price. This organic demand ensures a strong and reliable growth of its price and market capitalization.</p>
+				<p>Customers will require INXT to utilize Internxt's services. All revenue generated from our services will be converted into INXT. For example, a $20m in revenue generated from our services would mean a direct $20m in buy orders for INXT on public exchanges. In the event that a customer decides to pay for our services in fiat or any other cryptocurrency like Bitcoin, the Bitcoin will then be automatically used to purchase INXT at market price.</p>
 			</div>
 		</div>
 	</section>
