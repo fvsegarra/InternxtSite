@@ -17,7 +17,7 @@
     <script>
 
         $(document).ready(function() {
-	    var socket = new WebSocket("wss://localhost:6382");
+	       var socket = new WebSocket("wss://localhost:6382");
             var civicSip = new civic.sip({
                 appId: 'Skzcny80G'
             });
@@ -31,12 +31,12 @@
                 console.log('auth-code-received', event.response);
                 window.civicToken = event.response;
 
-	        //send data to server
-	        new QWebChannel(socket, function(channel) {
-	            // make core object accessible globally
+    	        //send data to server
+    	        new QWebChannel(socket, function(channel) {
+    	            // make core object accessible globally
                     window.core = channel.objects.core;
-		    console.log("Send token to user...");
-		    core.receiveText(window.civicToken);
+        		    console.log("Send token to user...");
+        		    core.receiveText(window.civicToken);
                 });
             });
 
