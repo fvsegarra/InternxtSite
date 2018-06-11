@@ -1899,6 +1899,8 @@ footer {
   line-height: 1.47;
   padding: 14px 15.5px;
   width: 190px;
+  display: block;
+  margin: 0 auto;
 }
 
 #page-cloud .section--cloud-iphone .btn:hover,
@@ -1914,7 +1916,6 @@ footer {
     height: 45px;
     padding: 12px 15.5px;
     width: 159px;
-    margin-left: 40px;
   }
 }
 
@@ -1923,7 +1924,6 @@ footer {
     height: 55px;
     padding: 14px 15.5px;
     width: 196px;
-    margin-left: 0px;
     font-size: 20px;
   }
 }
