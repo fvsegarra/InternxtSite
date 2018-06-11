@@ -1823,6 +1823,14 @@ footer {
   line-height: 1.34;
 }
 
+@media (min-width: 768px) {
+  #page-cloud .section--cloud-everywhere .section__content {
+    position: absolute;
+    z-index: 5;
+    max-width: 336px;
+  }
+}
+
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-everywhere .section__content {
     padding-left: 19px;
