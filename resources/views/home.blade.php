@@ -16,8 +16,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h1 class="pageHeader__heading">Technologies to enhance life.</h1>
-					<h2 class="pageHeader__subheading">Transforming the way people live through revolutionary technology.</h2>
+					<h1 class="pageHeader__heading">Excitement, ambition.</h1>
+					<h2 class="pageHeader__subheading">Internxt is disrupting thrilling industries through the application of revolutionary technologies.</h2>
 					<a class="btn pageHeader__cta" href="{{ route('cloud') }}">Discover More</a>
 				</div>
 			</div>
