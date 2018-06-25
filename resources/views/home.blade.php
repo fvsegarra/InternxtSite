@@ -8,7 +8,7 @@
 
 @section('pageTitle', '')
 
-@section('metaDescription', 'Internxt is excitement, ambition. Here at Internxt we are disrupting thrilling industries through the use of revolutionary technology.')
+@section('metaDescription', 'Internxt is excitement, ambition. Here at Internxt we are disrupting thrilling industries through the use of revolutionary technologies.')
 
 @section('body')
 
