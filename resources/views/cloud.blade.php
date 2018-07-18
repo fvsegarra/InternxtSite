@@ -64,7 +64,7 @@
 			<div class="row">
 
 				<div class="col-lg-6">
-					<div class="section__content">When signing up to X Cloud, users get 1GB of secure cloud storage for free, so everyone can experience X Cloud without having to set-up any payment details. If you enjoy the service and need extra storage, you can upgrade to our incredibly affordable plans starting at $1.49.</div>
+					<div class="section__content">When signing up to X Cloud, users get 1GB of secure cloud storage for free, so everyone can experience X Cloud without having to set-up any payment details. If you enjoy the service and need extra storage, you can upgrade to our incredibly affordable plans starting at $1.49. X Cloud, a more secure and affordable cloud storage service.</div>
 				</div>{{-- /.col-lg-6 --}}
 
 				<div class="col-lg-6 planContainer">
