@@ -74,7 +74,7 @@
 							<p class="plan__quantity">1GB</p>
 						</div>
 						<div class="col">
-							<p class="plan__price">FREE</p>
+							<p class="plan__price">Forever free</p>
 						</div>
 					</div>
 
