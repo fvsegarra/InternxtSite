@@ -71,10 +71,10 @@
 
 					<div class="plan row align-items-center">
 						<div class="col-4">
-							<p class="plan__quantity">10GB</p>
+							<p class="plan__quantity">1GB</p>
 						</div>
 						<div class="col">
-							<p class="plan__price">$1.99/Month</p>
+							<p class="plan__price">FREE</p>
 						</div>
 					</div>
 
@@ -83,7 +83,7 @@
 							<p class="plan__quantity">100GB</p>
 						</div>
 						<div class="col">
-							<p class="plan__price">$2.50/Month</p>
+							<p class="plan__price">$1.50/Month</p>
 						</div>
 					</div>
 
@@ -92,7 +92,7 @@
 							<p class="plan__quantity">1TB</p>
 						</div>
 						<div class="col">
-							<p class="plan__price">$9.99/Month</p>
+							<p class="plan__price">$4.99/Month</p>
 						</div>
 					</div>
 
