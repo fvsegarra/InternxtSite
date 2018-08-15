@@ -1,26 +1,48 @@
+// Note they're offset by one stop
 @font-face {
-	font-family: 'Circular Std';
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-Light.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-Light.ttf);
+	font-weight: 300;
 	font-style: normal;
-	font-weight: normal;
-	src: url('/fonts/CircularStd-Medium.otf') format('opentype');
 }
 
 @font-face {
-	font-family: 'Circular Std';
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-Regular.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-Regular.ttf);
+	font-weight: 400;
 	font-style: normal;
-	font-weight: bold;
-	src: url('/fonts/CircularStd-Bold.otf') format('opentype');
 }
 
 @font-face {
-	font-family: 'Circular Std';
-	font-style: normal;
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-Book.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-Book.ttf);
 	font-weight: 500;
-	src: url('/fonts/CircularStd-Bold.otf') format('opentype');
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Circular Book';
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-Medium.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-Medium.ttf);
+	font-weight: 600;
 	font-style: normal;
-	src: url('/fonts/CircularStd-Book.otf') format('opentype');
+}
+
+@font-face {
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.ttf);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-Bold.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-Bold.ttf);
+	font-weight: 800;
+	font-style: normal;
 }
