@@ -32,7 +32,7 @@
             <div class="container">
 
                 <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="/img/logos/@yield('navbarLogo', 'internxt_icon.svg')" height="35" class="mainLogo">
+                    <img src="/img/logos/@yield('navbarLogo', 'internxt_icon.svg')" height="41" class="mainLogo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
