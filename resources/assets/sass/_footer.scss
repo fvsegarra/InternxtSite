@@ -2,78 +2,38 @@
 
 	background-color: #16181a;
 	color: #707273;
-	padding: 42px 15px 13px;
+	padding: 92px 0 52px 0;
 
-	@include whenLargerThan('medium-screen') {
-		padding: 32px 0 10px;
-	}
-
-	@include whenLargerThan('medium-screen') {
-		padding-top: 45px;
-		height: 128px;
+	.section__label {
+		color: white;
 	}
 
 	&__logoContainer {
 
-	    margin-top: 42px;
-	    margin-bottom: 17px;
-
-		@include whenLargerThan('small-screen') {
-			max-width: 195px;
-			margin-top: 6px;
-			-ms-flex-preferred-size: 0;
-			flex-basis: 0;
-			-ms-flex-positive: 1;
-			flex-grow: 1;
-			max-width: 299px;
-			margin: 25px auto 17px;
-		}
-
-		@include whenLargerThan('medium-screen') {
-			margin-top: 5px;
-		}
-
-		@include whenLargerThan('large-screen') {
-			max-width: 418px;
-		}
-
-		img{
-
+		img {
 		    height: 36px;
-
-		    @include whenLargerThan('medium-screen') {
-		        height: 30px
-		    }
-
- 			@include whenLargerThan('large-screen') {
-				height: 36px;
-				position: relative;
-				left: -57px;
-				top: -4px;
-		    }
-
 		}
 
 	}
 
-	.nav{
+	.nav {
 
-		&--social{
+		&--social {
 
 			display: inline-flex;
 
-			@include whenLargerThan('medium-screen'){
+			@include whenLargerThan('medium-screen') {
 				display: none;
 			}
 
 		}
 
-		.nav-item{
+		.nav-item {
 
-			&--social{
+			&--social {
 				display: none;
 
-				@include whenLargerThan('medium-screen'){
+				@include whenLargerThan('medium-screen') {
 					display: inline-flex;
 				}
 
@@ -91,7 +51,7 @@
 		color: #707273;
 		transition: color $transition-default;
 
-		&:not(.disabled):hover{
+		&:not(.disabled):hover {
 			color: #cbcccd;
 		}
 
@@ -105,9 +65,30 @@
 
 	}
 
-	&__copyright{
 
-		padding-top: 15px;
+	.pageFooterNav .nav-link {
+
+		padding: 8px 8px;
+
+		@include whenLargerThan('large-screen') {
+		    padding: 8px 11px;
+		}
+
+	}
+
+	&__bottom {
+		border-top: 1px solid #3d4247;
+		margin-top: 62px;
+		padding-top: 52px;
+		align-items: center;
+	}
+
+	&__copyright {
+
+		color: #9ea2a3;
+		font-size: 14px;
+		line-height: 2.74;
+		margin-bottom: 0;
 
 		@include whenLargerThan('medium-screen') {
 			padding-top: 8px;
@@ -116,53 +97,6 @@
 		@include whenLargerThan('large-screen') {
     		padding-top: 10px;
     	}
-
-		a.nav-link{
-
-			@include whenLargerThan('large-screen') {
-				font-size: 14px;
-			}
-
-		}
-
-	}
-
-	&__terms a.nav-link,
-	&__privacy a.nav-link{
-
-		color: #707273;
-		font-size: 18px;
-		line-height: 2.07;
-
-		@include whenLargerThan('medium-screen') {
-			font-size: 12px;
-			line-height: 2.13;
-		}
-
-		@include whenLargerThan('large-screen') {
-			font-size: 15px;
-  			line-height: 2.13;
-  			font-family: 'Circular Book';
-			letter-spacing: 0;
-		}
-
-	}
-
-	&__privacy{
-
-		@include whenLargerThan('large-screen') {
-			margin-right: 15px;
-		}
-
-	}
-
-	.pageFooterNav .nav-link{
-
-		padding: 8px 8px;
-
-		@include whenLargerThan('large-screen') {
-		    padding: 8px 11px;
-		}
 
 	}
 

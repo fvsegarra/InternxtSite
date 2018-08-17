@@ -69,47 +69,38 @@
         <footer class="pageFooter">
             <div class="container">
 
-            <ul class="nav nav--social">
-                <li class="nav-item">
-                <a class="nav-link nav-link--social" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link nav-link--social" href="https://medium.com/internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link nav-link--social" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link nav-link--social" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link nav-link--social" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link nav-link--social" href="https://www.instagram.com/InternxtHQ/" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
-                </li>
-            </ul>
+                <p class="section__label">Connect With Us</p>
 
-                <div class="row">
+                <ul class="nav nav--social">
+                    <li class="nav-item">
+                    <a class="nav-link nav-link--social" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link nav-link--social" href="https://medium.com/internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link nav-link--social" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link nav-link--social" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link nav-link--social" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link nav-link--social" href="https://www.instagram.com/InternxtHQ/" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
+                    </li>
+                </ul>
 
-                    <div class="col-lg pageFooter__logoContainer">
-                        <img src="/img/logos/internxt_footer.svg" height="42">
-                    </div>{{-- /.col-lg --}}
+                <div class="pageFooter__bottom row no-gutters">
 
-                    <div class="col-lg">
-                        <ul class="nav pageFooterNav d-inline-flex">
-                            <li class="nav-item pageFooter__copyright">
-                                <a class="nav-link pt-0 disabled">&copy; {{ date('Y') }} Internxt Inc.</a>
-                            </li>
-                            <li class="nav-item pageFooter__terms">
-                                <a class="nav-link" href="{{ route('terms') }}">Terms</a>
-                            </li>
-                            <li class="nav-item pageFooter__privacy">
-                                <a class="nav-link" href="{{ route('privacy') }}">Privacy</a>
-                            </li>
-                            @include('_includes.footer-social-icons')
-                        </ul>
-                    </div>{{-- /.col-lg --}}
+                    <div class="col-auto pageFooter__logoContainer">
+                        <img src="/img/logos/internxt_icon_home.svg" height="42">
+                    </div>{{-- /.col --}}
+
+                    <div class="col-auto">
+                        <p class="pageFooter__copyright">&copy; {{ date('Y') }} Internxt Inc. All Rights Reserved.</p>
+                    </div>{{-- /.col --}}
 
                 </div>{{-- /.row --}}
             </div>{{-- /.container --}}

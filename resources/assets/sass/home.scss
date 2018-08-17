@@ -1,246 +1,65 @@
-#page-home{
+#page-home {
 
-    .navbar{
+    .pageHeader {
 
-        background-color: #16181a;
-
-        .navbar-nav .nav-link{
-            color: #e8e9eb;
-        }
-
-    }
-
-    .pageHeader{
-
-        background-color: #1b1d1f;
-        color: white;
-        padding-bottom: 0;
-        padding-top: 47px;
-
-        @include whenLargerThan('medium-screen'){
-            padding-top: 0;
-        }
-
-        & > .container{
-
-            height: 544px;
-            background:{
-                color: #1b1d1f;
-                image:  url(/img/headers/home.png);
-                position: center bottom;
-                repeat: no-repeat;
-                size: contain;
-                size: 312px;
-            }
-
-            @include whenLargerThan('medium-screen') {
-                padding-top: 111px;
-                padding-left: 82px;
-                height: 512px;
-                background:{
-                    position-x: 471px;
-                    position-y: 10px;
-                    size: 471px;
-                }
-
-            }
-
-            @include whenLargerThan('large-screen') {
-                padding-left: 72px;
-                padding-top: 131px;
-                height: 654px;
-                background:{
-                    position-x: 557px;
-                    position-y: 26px;
-                    size: 588px;
-                }
-            }
-
-        }
+        margin-bottom: 120px;
+        margin-top: 88px;
 
         &__heading {
-
-            font-size: 46px;
-            font-weight: bold;
-            letter-spacing: -1.3px;
-            line-height: 0.96;
-            margin-top: 0;
-            max-width: 320px;
-            padding-left: 8px;
-
-
-            @include whenLargerThan('medium-screen') {
-                letter-spacing: -1px;
-                max-width: 325px;
-                margin-bottom: 4px;
-            }
-
-            @include whenLargerThan('large-screen') {
-                letter-spacing: -1px;
-                margin-top: 17px;
-                font-size: 57px;
-                max-width: 400px;
-                margin-bottom: 10px;
-            }
-
+            font-family: $font-family-sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+            letter-spacing: -1.7px;
+            line-height: 1.24;
         }
 
-        &__subheading{
-
-            font-size: 24px;
-            line-height: 1.11;
-            letter-spacing: -0.6px;
-            padding-left: 9px;
+        &__subheading {
+            color: #8e8e93;
+            font-size: 26px;
             font-weight: normal;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 20px;
-                line-height: 1.2;
-                letter-spacing: -0.35px;
-                max-width: 275px;
-            }
-
-            @include whenLargerThan('large-screen') {
-                font-size: 25px;
-                max-width: 347px;
-            }
-
-        }
-
-        &__cta{
-
-            background: #323435;
-            color: white;
-            font-size: 14px;
-            letter-spacing: 0.1px;
-            line-height: 1.56;
-            margin-left: 10px;
-            margin-top: 23px;
-            padding: 7px 21px;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 16.4px;
-                line-height: 1.47;
-                letter-spacing: 0.1px;
-                padding: 11px 20px;
-            }
-
-            @include whenLargerThan('large-screen') {
-                font-size: 20px;
-                padding: 15px 26px;
-                margin-top: 34px;
-                letter-spacing: 0.2px;
-            }
-
+            height: 108.5px;
+            letter-spacing: -0.5px;
+            line-height: 1.39;
+            opacity: 0.7;
+            width: 348px;
         }
 
     }
 
-    .section{
+    .articlePreview {
 
-        padding: 35px 0;
+        background-color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+        margin-top: 72px;
+        overflow: hidden;
 
-        &--home-references{
-
-            padding-bottom: 0;
-
-            @include whenLargerThan('medium-screen'){
-                padding: 49px 0 0;
-            }
-
-            @include whenLargerThan('large-screen'){
-                padding: 57px 0 47px;
-            }
-
-            .referenceContainer{
-
-                margin-bottom: 37px;
-
-                &:nth-of-type(1){
-
-                    img{
-
-                        height: 37px;
-
-                        @include whenLargerThan('medium-screen') {
-                            height: 31px;
-                            position: relative;
-                            left: 9px;
-                            top: -3px;
-                        }
-
-                        @include whenLargerThan('large-screen') {
-                            height: 39px;
-                            position: relative;
-                            left: -10px;
-                        }
-
-                    }
-
-                }
-
-                &:nth-of-type(2){
-
-                    margin-bottom: 38px; // Needs a larger vertical gap for some reason
-
-                    @include whenLargerThan('medium-screen') {
-                        margin-bottom: 8px;
-                    }
-
-                    img{
-
-                        height: 36px;
-
-                        @include whenLargerThan('medium-screen') {
-                            height: 30px;
-                            position: relative;
-                            left: 18px;
-                            top: -2px;
-                        }
-
-                        @include whenLargerThan('large-screen') {
-                            height: 37px;
-                            position: relative;
-                            left: 29px;
-                            top: -2px;
-                        }
-
-                    }
-
-                }
-
-                &:nth-of-type(3){
-
-                    img{
-
-                        height: 38px;
-
-                        @include whenLargerThan('medium-screen') {
-                            height: 31px;
-                            position: relative;
-                            left: 9px;
-                            top: -4px;
-                        }
-
-                        @include whenLargerThan('large-screen') {
-                            height: 37px;
-                            position: relative;
-                            left: 36px;
-                            top: 0;
-                        }
-
-                    }
-
-                }
-
-                @include whenLargerThan('medium-screen'){
-                    margin-bottom: 0px;
-                }
-
-            }
-
+        &__content {
+            padding: 32px;
         }
 
-    }
+        &__date {
+            color: #538ef4;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 0.2px;
+            line-height: 3;
+            text-transform: uppercase;
+        }
 
+        &__title {
+            font-size: 22px;
+            letter-spacing: -0.7px;
+            line-height: 1.27;
+            min-height: 56px;
+        }
+
+        &__cta {
+            color: #3b7ff5;
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: -0.4px;
+            line-height: 1.54;
+        }
+    }
 }
