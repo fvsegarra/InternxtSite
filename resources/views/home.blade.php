@@ -21,35 +21,68 @@
 		</div>
 	</header>
 
-	@include('_includes.previews.xcloud')
+	<section class="section section--products">
+		<div class="container">
+			<p class="section__label">Catalogue</p>
+			<p class="section__heading">Browse our products.</p>
+			<div class="row">
+				<div class="col-lg">
+					@include('_includes.previews.xcloud')
+				</div>
+				<div class="col-lg">
+					@include('_includes.previews.xcore')
+				</div>
+			</div>
+		</div>
+	</section>
 
-	@include('_includes.previews.xcore')
 
 	<section class="section section--about">
 		<div class="container">
 
-			<p class="section__label">About Us</p>
-			<p class="section__heading">Technologies to enhance life.</p>
-			<p class="section__subheading">Internxt aims to enrich life through revolutionary technology. The goal is to create a vast range of innovative mass-market services that disrupt various technology industries.</p>
-			<p class="section__cta">Learn more about Internxt</p>
+			<div class="row">
 
-			<div class="section--about__articles">
-				<img src="/img/logos/android.svg" height="52" alt="Android">
-				<img src="/img/logos/investing.com.svg" height="32" alt="Android">
-				<img src="/img/logos/yahoo.svg" height="32" alt="Android">
+				<div class="col-lg-6">
+
+					<p class="section__label">About Us</p>
+					<p class="section__heading">Technologies to enhance life.</p>
+					<p class="section__subheading">Internxt aims to enrich life through revolutionary technology. The goal is to create a vast range of innovative mass-market services that disrupt various technology industries.</p>
+					<p class="section__cta">Learn more about Internxt</p>
+
+					<div class="section--about__articles">
+						<div class="row">
+							<div class="col-lg">
+								<img src="/img/logos/android.svg" height="52" alt="Android">
+							</div>
+							<div class="col-lg">
+								<img src="/img/logos/investing.com.svg" height="32" alt="Android">
+							</div>
+							<div class="col-lg">
+								<img src="/img/logos/yahoo.svg" height="32" alt="Android">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-6">
+
+					<div class="subsection subsection--mission">
+						<p class="subsection__heading">Mission.</p>
+						<p class="subsection__content">We want to help exceed the capabilities of every human being. From this mission stems a multitude of projects, products, and services all with the same aim of enabling every human being to the peak of their potential.</p>
+					</div>{{-- /.subsection --}}
+
+					<div class="subsection subsection--vision">
+						<p class="subsection__heading">Vision.</p>
+						<p class="subsection__content">Behind each design and project is creativity with a force of inventiveness and ingenuity. Internxt produces only the highest quality services, which bring newly specialized style and aesthetics, with an essence of care, and precision.</p>
+					</div>{{-- /.subsection --}}
+
+				</div>
+
 			</div>
 
-			<div class="subsection subsection--mission">
-				<p class="subsection__heading">Mission.</p>
-				<p class="subsection__content">We want to help exceed the capabilities of every human being. From this mission stems a multitude of projects, products, and services all with the same aim of enabling every human being to the peak of their potential.</p>
-			</div>{{-- /.subsection --}}
-
-			<div class="subsection subsection--vision">
-				<p class="subsection__heading">Vision.</p>
-				<p class="subsection__content">Behind each design and project is creativity with a force of inventiveness and ingenuity. Internxt produces only the highest quality services, which bring newly specialized style and aesthetics, with an essence of care, and precision.</p>
-			</div>{{-- /.subsection --}}
-
 		</div>
+
 	</section>{{-- /.about --}}
 
 	<section class="section section--news-hub">

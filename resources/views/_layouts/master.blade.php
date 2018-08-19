@@ -40,24 +40,18 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto justify-content-between w-100">
+                    <ul class="navbar-nav mr-auto w-100">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('cloud') }}">X Cloud</a>
+                            <a class="nav-link" href="{{ route('cloud') }}">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('core') }}">X Core</a>
+                            <a class="nav-link" href="{{ route('core') }}">Company</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('token') }}">INXT Token</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('team') }}">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('roadmap') }}">Roadmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('resources') }}">Resources</a>
+                            <a class="nav-link" href="{{ route('team') }}">News hub</a>
                         </li>
                     </ul>
                 </div>
