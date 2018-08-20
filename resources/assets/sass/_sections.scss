@@ -166,10 +166,18 @@
 	margin-top: 50px;
 
 	.section__content {
+
 		border-radius: 9px;
 		color: white;
 		height: 351px;
 		padding: 42px 32px 36px 36px;
+
+        @include whenLargerThan('large-screen') {
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 476px;
+        }
+
 	}
 
 
@@ -192,6 +200,10 @@
 			letter-spacing: -8.6px;
 		}
 
+        @include whenLargerThan('large-screen') {
+            margin-top: 117px;
+        }
+
 	}
 
 
@@ -212,6 +224,7 @@
 
 
 	.section__cta {
+
 		background-image: url('/img/icons/chevron-right-xcloud.svg');
 		background-position: 122px 14px;
 		background-repeat: no-repeat;
@@ -226,6 +239,11 @@
     	padding: 7px 30px 7px 18px;
 		position: relative;
 		left: -4px;
+
+        @include whenLargerThan('large-screen') {
+            margin-top: 20px;
+        }
+
 	}
 
 }
@@ -233,7 +251,13 @@
 .section--preview-xcloud {
 
 	.section__content {
-		background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
+
+        background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
+
+        @include whenLargerThan('large-screen') {
+            background-image: url('/img/mockups/xcloud/bg.png');
+        }
+
 	}
 
 	.section__cta {
@@ -245,8 +269,14 @@
 .section--preview-xcore {
 
 	.section__content {
+
 		background-image: radial-gradient(circle at 7% 50%, #110f2c, #19163f 48%, #2a256c);
 		box-shadow: 0 7px 14px 0 #e9e9f5;
+
+        @include whenLargerThan('large-screen') {
+            background-image: url('/img/mockups/xcore/bg.png');
+            box-shadow: none;
+        }
 	}
 
 
