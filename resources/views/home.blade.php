@@ -91,34 +91,24 @@
 			<p class="section__label">News Hub</p>
 			<p class="section__heading">Our latest news.</p>
 
-			<article class="articlePreview">
-				<img class="article__img img-fluid" src="http://placehold.it/328x254" alt="X Cloud commercial pricing improvement">
-				<div class="articlePreview__content">
-					<p class="articlePreview__date">July 18 2018</p>
-					<p class="article__title">X Cloud commercial pricing improvement.</p>
-					<a class="article__cta" href="#">Learn more</a>
-				</div>{{-- /.articlePreview__content --}}
-			</article>
+			<div class="section__content">
+				@foreach($posts as $post)
+					<div class="articlePreviewContainer">
+						<article class="articlePreview">
+							<div class="articleImgContainer">
+								<img class="article__img img-fluid" src="{{ $post['image'] }}" alt="{{ $post['title'] }}">
+							</div>{{-- /.articleImgContainer --}}
+							<div class="articlePreview__content">
+								<p class="articlePreview__date">{{ $post['date'] }}</p>
+								<p class="article__title">{{ $post['title'] }}</p>
+								<a class="article__cta" href="{{ $post['url'] }}" target="_blank" rel="nofollow">Learn more</a>
+							</div>{{-- /.articlePreview__content --}}
+						</article>
+					</div>{{-- /.articlePreviewContainer --}}
+				@endforeach
+			</div>{{-- /.section__content --}}
 
-			<article class="articlePreview">
-				<img class="article__img img-fluid" src="http://placehold.it/328x254" alt="X Cloud commercial pricing improvement">
-				<div class="articlePreview__content">
-					<p class="articlePreview__date">July 17 2018</p>
-					<p class="article__title">We’ve gone wild. X Cloud Beta will be completely free! But that’s not all.</p>
-					<a class="article__cta" href="#">Learn more</a>
-				</div>{{-- /.articlePreview__content --}}
-			</article>
-
-			<article class="articlePreview">
-				<img class="article__img img-fluid" src="http://placehold.it/328x254" alt="X Cloud commercial pricing improvement">
-				<div class="articlePreview__content">
-					<p class="articlePreview__date">July 17 2018</p>
-					<p class="article__title">X Core node payout computation</p>
-					<a class="article__cta" href="#">Learn more</a>
-				</div>{{-- /.articlePreview__content --}}
-			</article>
-
-			<a class="section__cta" href="#">Read more posts</a>
+			<a class="section__cta" href="https://medium.com/internxt" target="_blank" rel="nofollow">Read more posts</a>
 
 		</div>{{-- /.container --}}
 	</section>{{-- /.section-news-hub --}}
