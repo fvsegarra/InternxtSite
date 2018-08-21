@@ -7,19 +7,6 @@
 		padding: 5px 16px 5px;
 	}
 
-	.container{
-
-		@include whenLargerThan('medium-screen') {
-    		max-width: 840px !important;
-		}
-
-		@include whenLargerThan('large-screen') {
-			max-width: 1032px !important;
-			padding-right: 18px;
-		}
-
-	}
-
 	.navbar-brand{
 
 		margin-right: 75px;
@@ -77,10 +64,10 @@
 
 		a.nav-link{
 
-			color: #000000;
+			color: black !important;
 			font-size: 16px;
 			font-weight: 600;
-	  		transition: color $transition-default;
+			transition: color $transition-default;
 
 	  		@include whenLargerThan('medium-screen') {
 				font-size: 11px;
@@ -94,6 +81,20 @@
 
 	  		&:hover{
 	  			color: #e9eaec;
+	  		}
+
+	  		&--xcloud {
+				background-color: #4585f5;
+				border-radius: 28.5px;
+				box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
+				color: white !important;
+				font-size: 16px;
+				font-weight: 600;
+				height: 43px;
+				letter-spacing: -0.2px;
+				line-height: 1.47;
+				text-align: center;
+				width: 195px;
 	  		}
 
 		}

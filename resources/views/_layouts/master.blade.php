@@ -27,7 +27,6 @@
     </head>
     <body id="page-@yield('pageID')">
 
-
         <nav class="navbar @yield('navbar-classes') navbar-expand-lg">
             <div class="container">
 
@@ -40,7 +39,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto w-100">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('cloud') }}">Products</a>
                         </li>
@@ -52,6 +51,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('team') }}">News hub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--xcloud" href="#">Get X Cloud Beta</a>
                         </li>
                     </ul>
                 </div>
