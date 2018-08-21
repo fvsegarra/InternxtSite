@@ -89,6 +89,10 @@
 
         padding-top: 92;
 
+        .section__content {
+            @include make-row();
+        }
+
         .section__cta {
             background-color: #4585f5;
             background-image: url('/img/icons/chevron-right-circle.svg');
