@@ -19,7 +19,7 @@
 	font-family: "Cerebri Sans";
 	src: url(/fonts/CerebriSans/CerebriSans-Book.woff2);
 	src: url(/fonts/CerebriSans/CerebriSans-Book.ttf);
-	font-weight: 500;
+	font-weight: 450;
 	font-style: normal;
 }
 
@@ -27,23 +27,15 @@
 	font-family: "Cerebri Sans";
 	src: url(/fonts/CerebriSans/CerebriSans-Medium.woff2);
 	src: url(/fonts/CerebriSans/CerebriSans-Medium.ttf);
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.ttf);
 	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Cerebri Sans";
-	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.woff2);
-	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.ttf);
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Cerebri Sans";
-	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.woff2);
-	src: url(/fonts/CerebriSans/CerebriSans-SemiBold.ttf);
-	font-weight: bold;
 	font-style: normal;
 }
 
@@ -51,7 +43,15 @@
 	font-family: "Cerebri Sans";
 	src: url(/fonts/CerebriSans/CerebriSans-Bold.woff2);
 	src: url(/fonts/CerebriSans/CerebriSans-Bold.ttf);
-	font-weight: 800;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cerebri Sans";
+	src: url(/fonts/CerebriSans/CerebriSans-Bold.woff2);
+	src: url(/fonts/CerebriSans/CerebriSans-Bold.ttf);
+	font-weight: bold;
 	font-style: normal;
 }
 
@@ -59,6 +59,6 @@
 	font-family: "Cerebri Sans";
 	src: url(/fonts/CerebriSans/CerebriSans-Heavy.woff2);
 	src: url(/fonts/CerebriSans/CerebriSans-Heavy.ttf);
-	font-weight: 900;
+	font-weight: 800;
 	font-style: normal;
 }
