@@ -36,12 +36,12 @@ class PostsComposer
 		    }
 
 	    	return collect($body->payload->posts)
-		    	->sortByDesc('updatedAt')
+		    	->sortByDesc('firstPublishedAt')
 		    	->take(5)
 		    	->transform(function($post) {
 		    		return [
 		    			'title' => $post->title,
-		    			'date' => Carbon::createFromTimestamp( substr($post->latestPublishedAt, 0, 10) )->format('F j Y'),
+		    			'date' => Carbon::createFromTimestamp( substr($post->firstPublishedAt, 0, 10) )->format('F j Y'),
 		    			'image' => 'https://cdn-images-1.medium.com/max/1000/' . $post->virtuals->previewImage->imageId,
 		    			'url' => 'https://medium.com/internxt/' . $post->uniqueSlug,
 		    		];
