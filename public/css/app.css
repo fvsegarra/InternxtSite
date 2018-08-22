@@ -10869,11 +10869,17 @@ a.text-dark:focus {
 }
 
 .section--subscribe__btn {
-  border-radius: 30.5px;
   background-color: #000000;
+  border-radius: 30.5px;
   color: white;
-  padding: 16px 36px;
   margin-top: 23px;
+  padding: 16px 36px;
+}
+
+@media (min-width: 1440px) {
+  .section--subscribe__btn {
+    margin-top: 0;
+  }
 }
 
 .section--preview-xcloud,
