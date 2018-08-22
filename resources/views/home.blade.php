@@ -100,8 +100,8 @@
 							</div>{{-- /.articleImgContainer --}}
 							<div class="articlePreview__content">
 								<p class="articlePreview__date">{{ $post['date'] }}</p>
-								<p class="article__title">{{ $post['title'] }}</p>
-								<a class="article__cta" href="{{ $post['url'] }}" target="_blank" rel="nofollow">Learn more</a>
+								<p class="articlePreview__title">{{ $post['title'] }}</p>
+								<a class="articlePreview__cta" href="{{ $post['url'] }}" target="_blank" rel="nofollow">Learn more</a>
 							</div>{{-- /.articlePreview__content --}}
 						</article>
 					</div>{{-- /.articlePreviewContainer --}}

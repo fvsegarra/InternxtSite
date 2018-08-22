@@ -50,12 +50,29 @@
         @include make-col-ready();
         @include make-col(4);
 
+        .articleImgContainer {
+            height: 175px;
+            overflow: hidden;
+        }
+
         &:nth-of-type(1) {
+
             @include make-col(6);
+
+            .articleImgContainer {
+                height: 254px;
+            }
+
         }
 
         &:nth-of-type(2) {
+
             @include make-col(6);
+
+            .articleImgContainer {
+                height: 254px;
+            }
+
         }
 
     }
@@ -95,7 +112,7 @@
             font-size: 22px;
             letter-spacing: -0.7px;
             line-height: 1.27;
-            min-height: 56px;
+            min-height: 81px;
         }
 
         &__cta {
@@ -106,10 +123,7 @@
             line-height: 1.54;
         }
 
-        .articleImgContainer {
-            height: 254px;
-            overflow: hidden;
-        }
+
 
     }
 
