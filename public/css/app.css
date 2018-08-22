@@ -10801,6 +10801,16 @@ a.text-dark:focus {
   padding: 13px 55px 13px 13px;
 }
 
+@media (min-width: 1440px) {
+  .section--news-hub .section__cta {
+    background-position: 165px center;
+    display: block;
+    margin: 82px auto 0;
+    padding: 13px 28px 13px 22px;
+    width: 211px;
+  }
+}
+
 .section--subscribe {
   border-top: 1px solid #d8d8d8;
   margin-top: 128px;
