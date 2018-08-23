@@ -14,8 +14,17 @@
 
 	<header class="pageHeader">
 		<div class="container">
+
+			<img class="pageHeader__icon" src="/img/logos/xcore.png" alt="xcore" height="53">
+
 			<h1 class="pageHeader__heading">X Core</h1>
-			<h2 class="pageHeader__subheading">A new powerful application that enables data to be shared all around the world.</h2>
+			{{-- Small --}}
+			<h2 class="pageHeader__subheading d-none d-lg-block">Get paid to share.</h2>
+			{{-- Large --}}
+			<h2 class="pageHeader__subheading d-lg-none">Power in your hands.</h2>
+
+			<a class="pageHeader__cta" href="#">Get X Cloud Beta</a>
+
 		</div>
 	</header>
 
@@ -23,104 +32,48 @@
 		<div class="container">
 			<div class="section__content">
 
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="subsection subsection--network">
-						<div class="container-fluid">
-							<p class="subsection__heading">Network.</p>
-							<p class="subsection__content">X Core is a peer-to-peer network, meaning its formulated by hosts. This eliminates the need for a central controller as each host acts as a decentralized node for sharing data within the network. Hosts donate the unused resources of their computer creating a global network of storage and computing servers.</p>
-						</div>{{-- /.container-fluid --}}
-					</div>
-					</div>{{-- /.col-sm-6 --}}
+				<div class="subsection subsection--intro">
 
-					<div class="col-sm-6">
-						<div class="subsection subsection--software">
-						<div class="container-fluid">
-							<p class="subsection__heading">Software.</p>
-							<p class="subsection__content">No centralized server or processor is responsible for maintaining or processing the data as its distributed over a world-wide network and not stored in a central base of servers which means there are no questions about which individual entity owns the data which is being shared in the network.</p>
-						</div>{{-- /.container-fluid --}}
-					</div>
-					</div>{{-- /.col-sm-6 --}}
-				</div>{{-- /.row --}}
+					<p class="subsection__heading">Earn money while keeping user data secure.</p>
+					<p class="subsection__content">X Core is a simple peer-to-peer downloadable application that enables hosts to act as computing servers who securly store and share encrypted shards of data.</p>
+
+				</div>{{-- /.subsection-intro --}}
 
 				<div class="row">
-					<div class="col-sm-6">
-						<div class="subsection subsection--enhanced">
-						<div class="container-fluid">
-							<p class="subsection__heading">Enhanced.</p>
-							<p class="subsection__content">If one attached device goes down, the network will detect the failing nodes and transparently adjust and correct the impacted blocks automatically. This removes the destructivity of having data stored on client-server networks, because if the server goes down it takes the entire network with it.</p>
-						</div>{{-- /.container-fluid --}}
-					</div>
-					</div>{{-- /.col-sm-6 --}}
+					<div class="col-lg-9">
+						<img class="section--core-summary__image img-fluid" src="http://placehold.it/375x416" alt="X Core">
+					</div>{{-- /.col-lg-9 --}}
 
-					<div class="col-sm-6">
-						<div class="subsection subsection--intelligent">
-						<div class="container-fluid">
-							<p class="subsection__heading">Intelligent.</p>
-							<p class="subsection__content">Since the number of running nodes may vary in the course of time, X Core will balance the data-load across multiple nodes. This enables X Core to regulate the workload of each networked computer efficiently, meaning the system automatically maintains the right balance between all hosts.</p>
-						</div>{{-- /.container-fluid --}}
-					</div>
-					</div>{{-- /.col-sm-6 --}}
-				</div>{{-- /.row --}}
+					<div class="col-lg-3">
 
-			</div>
-		</div>
-	</section>
-
-	<section class="section section--core-more-info">
-		<div class="container">
-			<p class="section__heading">Empowering the information era.</p>
-			<p class="section__subheading">X Core is a simple downloadable desktop application that enables contributors to globally cooperate in the creation of Internxt’s decentralized internet services.</p>
-		</div>
-	</section>
-
-	<section class="section section--core-screenshot">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-sm-4 offset-sm-8">
-
-					<div class="subsection subsection--host">
-						<div class="container-fluid">
+						<div class="subsection subsection--host">
 							<p class="subsection__heading">Host easier. Earn more.</p>
-							<p class="subsection__content">By renting out your extra hard-drive space and storing and uploading data, you’ll be paid in our cryptocurrency, INXT. You don’t even need to be on your computer, just leave it running in the background and your computer will earn you passive income. </p>
-						</div>{{-- /.container-fluid --}}
-					</div>
+							<p class="subsection__content">Hosts rent out their computers extra hard-drive space which allows the storing and uploading of users encrypted data. In return hosts will be paid in our cryptocurrency, INXT. The more hard-drive space you allocate to the network, the more INXT you will earn.</p>
+						</div>{{-- /.subsection-host --}}
 
-					<div class="subsection subsection--create">
-						<div class="container-fluid">
-							<p class="subsection__heading">Creating what’s next.</p>
-							<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for.</p>
-						</div>{{-- /.container-fluid --}}
-					</div>
+						<div class="subsection subsection--enhanced">
+							<p class="subsection__heading">Taking the <span class="linebreak"></span>power back.</p>
+							<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
+						</div>{{-- /.subsection-enhanced --}}
 
-				</div>{{-- /.col-sm-4 --}}
+					</div>{{-- /.col-lg-3 --}}
 
-			</div>{{-- /.row --}}
+				</div>{{-- /.row --}}
 
-			<div class="section__footer">
-				Becoming a host to share your computers resources on the X Core network is quick and easy to set up. Simply download the desktop application, create your node and your device will automatically be connected, and will always be connected unless you say otherwise.
+				<div class="subsection subsection--intelligent">
+					<p class="subsection__heading">Easy set-up.</p>
+					<p class="subsection__content">Becoming a host to share your computers resources on the X Core network is quick and easy to set up. Simply download the desktop application, create your node and your device will automatically be connected, and will always be connected unless you say otherwise. All the hard work has been done for you.</p>
+				</div>{{-- /.subsection-intelligent --}}
+
 			</div>
 		</div>
 	</section>
 
-	<section class="section section--core-beta">
-		<div class="container">
-			<p class="section__heading">Do something extraordinary<span class="linebreak"></span> with extraordinary technology.</p>
-			<p class="section__subheading">Subscribe to our beta list to be first in-line to download X Core and to start earning passive income by sharing your machines un-used hard drive space.</p>
-			<div class="section__content">
-				<form class="form-inline" action="https://internxt.us18.list-manage.com/subscribe/post?u=7d1200a1ef2498eacddf2a314&amp;id=b65b4558d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-					<input type="email" name="EMAIL" class="form-control" id="inlineFormInputGroupUsername2" placeholder="user@example.com" required>
-					<button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-				</form>
-			</div>
-		</div>
-	</section>
 
 	<section class="section section--core-design">
 		<div class="container">
 			<p class="section__heading">
-				<span class="d-block d-md-none">As simple as it is beautiful.</span>
+				<span class="d-block d-md-none"><span class="d-none d-lg-inline">An interface that's as</span><span class="d-lg-none">As</span> simple as it is beautiful.</span>
 				<span class="d-none d-md-block">Design that’s as simple as it is beautiful.</span>
 			</p>
 			<p class="section__subheading">Functionality and complexity were always kept in a tight balance, so that using this new techology feels second nature, even if you never have before.</p>
@@ -141,13 +94,26 @@
 				</ul>
 
 				<div class="tab-content" id="xcloudFeaturesTabContent">
-					<div class="tab-pane fade show active" id="xcore-dashboard" role="tabpanel" aria-labelledby="xcore-dashboard-tab">The dashboard is your X Core homescreen which displays only your necessary information, so you can get started as quickly as possible without having to learn anything new. Current earnings, shows how much INXT you have earned since day-one. Network data, displays your upload and download speed, uptime and your connectivity status.</div>
+					<div class="tab-pane fade show active" id="xcore-dashboard" role="tabpanel" aria-labelledby="xcore-dashboard-tab"><strong>X Core homescreen</strong> displays only your necessary information, so you can get started as quickly as possible without having to learn anything new. Current earnings, shows how much INXT you have earned since day-one. Network data, displays your upload and download speed, uptime and your connectivity status.</div>
 					<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">You have full control over how much computer resource usage you designate for hosting by adjusting your hosting parameters to be able to ensure hosting never interferes with your experience. The more you designate to the network, the more INXT you will earn.</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	@include('_includes.previews.xcloud')
+	<section class="section section--beta section--beta-core">
+		<div class="container">
+			<div class="section__outline">
+				<p class="section__heading">Start earning INXT today.</p>
+				<div class="section__content">
+					<a href="#download" class="section__cta">Get X Core Beta</a>
+				</div>
+			</div>{{-- /.section__outline --}}
+		</div>
+	</section>
+
+	<div class="container">
+		@include('_includes.previews.xcloud')
+	</div>{{-- /.container --}}
 
 @endsection
