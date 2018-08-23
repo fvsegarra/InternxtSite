@@ -11054,11 +11054,12 @@ a.text-dark:focus {
 .pageFooter {
   background-color: #16181a;
   color: #707273;
-  padding: 92px 0 52px 0;
+  padding: 82px 0 52px 0;
 }
 
 .pageFooter .section__label {
   color: white;
+  margin-bottom: 31px;
 }
 
 .pageFooter__logoContainer img {
