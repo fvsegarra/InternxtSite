@@ -178,6 +178,50 @@
 
     }
 
+    &--beta {
+
+        margin-top: 120px;
+
+        .container {
+            // padding: 51px;
+        }
+
+        .section__outline {
+
+            border: 1px solid #d9dade;
+            padding: 51px;
+
+            @include whenLargerThan('large-screen'){
+                padding: 134px 126px 29px;
+            }
+
+        }
+
+        .section__heading {
+
+            display: none;
+
+            @include whenLargerThan('large-screen') {
+                display: block;
+            }
+
+        }
+
+        .section__cta {
+            background-color: #000000;
+            border-radius: 31.4px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            height: 47px;
+            letter-spacing: -0.2px;
+            padding: 12px 46px 13px 23px;
+            width: 221px;
+        }
+
+
+    }
+
 }
 
 .section--preview-xcloud,
