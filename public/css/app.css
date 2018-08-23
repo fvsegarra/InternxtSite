@@ -10653,10 +10653,6 @@ a.text-dark:focus {
   color: #1F2831;
 }
 
-.navbar.navbar-xcore {
-  background-color: #2b2b2b;
-}
-
 @media (min-width: 768px) {
   .navbar {
     padding: 16px;
@@ -10713,6 +10709,20 @@ a.text-dark:focus {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+}
+
+.navbar.navbar-transparent.navbar-inverse {
+  background: none;
+  z-index: 2;
+}
+
+.navbar.navbar-transparent.navbar-inverse .navbar-inner {
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+          box-shadow: 0px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .section__label {

@@ -2,7 +2,7 @@
 
 @section('pageID', 'core')
 
-@section('navbar-classes', 'navbar-dark navbar-xcore')
+@section('navbar-classes', 'navbar-transparent navbar-inverse navbar-xcore')
 
 @section('navbarLogo', 'internxt_icon_home.svg')
 
