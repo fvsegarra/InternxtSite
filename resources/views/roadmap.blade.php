@@ -22,7 +22,7 @@
 							@slot('date', 'Q2 2017')
 							@slot('title', 'Founded')
 							@slot('content')
-								All revenue generated from our services will be directly converted into INXT. If a customer decides to pay for our services in fiat, the fiat is used to automatically purchase INXT at market price and is then sent to Hosts.
+								Internxt was founded with the intention to consistently transform the way that people live, work, play and connect through revolutionary technology.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-sm-4 --}}
@@ -70,7 +70,7 @@
 							@slot('date', 'Q2 2017')
 							@slot('title', 'Founded')
 							@slot('content')
-								All revenue generated from our services will be directly converted into INXT. If a customer decides to pay for our services in fiat, the fiat is used to automatically purchase INXT at market price and is then sent to Hosts.
+								Internxt was founded with the intention to consistently transform the way that people live, work, play and connect through revolutionary technology.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-sm-4 --}}

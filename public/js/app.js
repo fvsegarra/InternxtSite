@@ -13024,6 +13024,18 @@ $('.nav-tabs .nav-link').click(function (e) {
 	$('.featurePreview').attr('class', originalClass + ' ' + tag);
 });
 
+$('.subsection--milestone').click(function (e) {
+
+	console.debug('Milestone clicked');
+
+	var classString = 'subsection--milestone--active';
+
+	// remove others
+	$('.' + classString).removeClass(classString);
+
+	$(e.currentTarget).toggleClass(classString);
+});
+
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {

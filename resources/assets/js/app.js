@@ -20,3 +20,16 @@ $('.nav-tabs .nav-link').click((e) => {
 	$('.featurePreview').attr('class', originalClass + ' ' + tag);
 
 });
+
+$('.subsection--milestone').click((e) => {
+
+	console.debug('Milestone clicked');
+
+	let classString = 'subsection--milestone--active';
+
+	// remove others
+	$('.' + classString).removeClass(classString);
+
+	$(e.currentTarget).toggleClass(classString);
+
+});

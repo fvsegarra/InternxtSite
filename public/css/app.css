@@ -12090,8 +12090,12 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  height: 180px;
   margin-top: 19px;
   padding: 34px 23px;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
 }
 
 #page-roadmap .subsection--milestone .subsection__label {
@@ -12109,13 +12113,54 @@ body {
 
 #page-roadmap .subsection--milestone .subsection__content {
   color: #838387;
-  display: none;
   font-size: 17px;
   letter-spacing: -0.1px;
   line-height: 1.65;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0s;
+  transition: opacity 0.3s 0s;
 }
 
-#page-roadmap .subsection--milestone .subsection__content--active {
-  display: block;
+#page-roadmap .subsection--milestone--active {
+  height: 287px;
+}
+
+#page-roadmap .subsection--milestone--active .subsection__content {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.25s;
+  transition: opacity 0.3s 0.25s;
+}
+
+#page-resources .section__heading {
+  margin-bottom: 0;
+}
+
+#page-resources .section__content {
+  margin-top: 80px;
+}
+
+#page-resources .subsection {
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+  min-height: 427px;
+}
+
+#page-resources .subsection__heading {
+  color: #3b7ff5;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.83;
+  margin-bottom: 0;
+}
+
+#page-resources .subsection__content {
+  color: black;
+  font-size: 28px;
+  letter-spacing: -0.8px;
+  line-height: 1.18;
+  margin-top: 12px;
+  padding: 26px 40px;
 }
 
