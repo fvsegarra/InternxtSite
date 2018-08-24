@@ -101,4 +101,6 @@
 		</div>{{-- /.container --}}
 	</section>
 
+	@include('_includes.sections.subscribe')
+
 @endsection

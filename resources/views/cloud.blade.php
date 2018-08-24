@@ -181,7 +181,7 @@
 		</div>{{-- /.container --}}
 	</section>
 
-	<section class="section section--cloud-beta">
+	<section class="section section--beta section--beta-cloud">
 		<div class="container">
 			<div class="section__outline">
 				<p class="section__heading">Jump into the X Cloud Beta today.</p>

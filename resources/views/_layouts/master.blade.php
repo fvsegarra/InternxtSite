@@ -44,13 +44,13 @@
                             <a class="nav-link" href="{{ route('cloud') }}">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('core') }}">Company</a>
+                            <a class="nav-link" href="{{ route('about') }}">Company</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('token') }}">INXT Token</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('team') }}">News hub</a>
+                            <a class="nav-link" href="#">News Hub</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link--xcloud" href="#">Get X Cloud Beta</a>
@@ -65,28 +65,70 @@
         <footer class="pageFooter">
             <div class="container">
 
-                <p class="section__label">Connect With Us</p>
+                <div class="row">
+                    <div class="col-lg">
+                        <p class="section__label">Product</p>
 
-                <ul class="nav nav--social">
-                    <li class="nav-item">
-                    <a class="nav-link nav-link--social" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link nav-link--social" href="https://medium.com/internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link nav-link--social" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link nav-link--social" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link nav-link--social" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link nav-link--social" href="https://www.instagram.com/InternxtHQ/" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
-                    </li>
-                </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#">X Cloud</a></li>
+                            <li><a href="#">X Core</a></li>
+                        </ul>
+                    </div>{{-- /.col-lg --}}
+
+                    <div class="col-lg">
+                        <p class="section__label">Discover</p>
+
+                        {{-- Need custom --}}
+                        <ul class="list-unstyled">
+                            <li><a href="#">Roadmap</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </div>{{-- /.col-lg --}}
+
+                    <div class="col-lg">
+                        <p class="section__label">Company</p>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">INXT Token</a></li>
+                        </ul>
+                    </div>{{-- /.col-lg --}}
+
+                    <div class="col-lg">
+                        <p class="section__label">Legal Terms</p>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>{{-- /.col-lg --}}
+
+                    <div class="col-lg">
+                        <p class="section__label">Connect With Us</p>
+
+                        <ul class="nav nav--social">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--social" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--social" href="https://medium.com/internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--social" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--social" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--social" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--social" href="https://www.instagram.com/InternxtHQ/" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
+                            </li>
+                        </ul>
+
+                    </div>{{-- /.col-lg --}}
+                </div>{{-- /.row --}}
 
                 <div class="pageFooter__bottom row no-gutters">
 

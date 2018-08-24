@@ -17,6 +17,23 @@ body{
     padding-left: 24px;
 }
 
+.linebreak {
+
+	display: block;
+
+	@include whenLargerThan('large-screen') {
+		display: none;
+	}
+
+}
+
+hr {
+    background-color: #e8e8e8;
+    height: 1px;
+    margin-bottom: 100px;
+    margin-top: 170px;
+}
+
 // Page-specific styles
 @import "home";
 @import "cloud";
@@ -25,4 +42,4 @@ body{
 @import "about";
 @import "roadmap";
 @import "resources";
-// @import "terms";
+@import "terms";

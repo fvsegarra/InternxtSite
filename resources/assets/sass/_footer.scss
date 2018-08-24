@@ -4,6 +4,10 @@
 	color: #707273;
 	padding: 82px 0 52px 0;
 
+	@include whenLargerThan('large-screen') {
+		padding: 121px 0 52px 0;
+	}
+
 	.section__label {
 		color: white;
 		margin-bottom: 31px;
@@ -17,28 +21,26 @@
 
 	}
 
+	.list-unstyled {
+
+		a {
+			color: #c1c5c7;
+			font-size: 18px;
+			letter-spacing: -0.1px;
+			line-height: 1.9;
+		}
+
+	}
+
 	.nav {
 
 		&--social {
 
 			display: inline-flex;
 
-			@include whenLargerThan('medium-screen') {
-				display: none;
-			}
-
 		}
 
 		.nav-item {
-
-			&--social {
-				display: none;
-
-				@include whenLargerThan('medium-screen') {
-					display: inline-flex;
-				}
-
-			}
 
 		}
 
