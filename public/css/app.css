@@ -12157,10 +12157,20 @@ body {
 
 #page-resources .subsection__content {
   color: black;
-  font-size: 28px;
-  letter-spacing: -0.8px;
-  line-height: 1.18;
+  font-size: 24px;
+  letter-spacing: -0.7px;
+  line-height: 1.38;
   margin-top: 12px;
-  padding: 26px 40px;
+  padding: 40px 33px 40px 40px;
+}
+
+@media (min-width: 1440px) {
+  #page-resources .subsection__content {
+    font-size: 28px;
+    letter-spacing: -0.8px;
+    line-height: 1.18;
+    padding: 26px 40px;
+  }
+}
 }
 

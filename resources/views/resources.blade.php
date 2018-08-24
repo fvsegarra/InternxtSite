@@ -10,33 +10,40 @@
 
 	<section class="section section--resources">
 		<div class="container">
-			<p class="section__heading">Company Resources.</p>
-		</div>
-		<div class="section__content">
 
-			@component('_includes.resource')
-				@slot('class', 'press-kit')
-				@slot('title', 'Press Kit')
-				@slot('btnLink', '/kit.zip')
-				@slot('btnText', 'Download Press Kit')
-				@slot('content')
-					Download our press kit for a selection of our assets to use for any media or marketing purposes.
-				@endslot
-			@endcomponent
+			<p class="section__heading"><span class="d-none d-lg-inline">Internxt’s </span>Resources</p>
 
-			<hr>
+			<div class="section__content">
+				<div class="row">
 
-			@component('_includes.resource')
-				@slot('class', 'whitepaper')
-				@slot('title', 'Whitepaper')
-				@slot('btnLink', 'whitepaper.pdf')
-				@slot('btnText', 'Download Whitepaper')
-				@slot('content')
-					Download our whitepaper for an extensive look into the technology we are applying to our services.
-				@endslot
-			@endcomponent
+					<div class="col-lg-6">
+						@component('_includes.resource')
+							@slot('class', 'press-kit')
+							@slot('title', 'Press Kit')
+							@slot('btnLink', '/kit.zip')
+							@slot('btnText', 'Download Press Kit')
+							@slot('content')
+								Download our press kit for a selection of our design assets
+							@endslot
+						@endcomponent
+					</div>{{-- /.col-lg-6 --}}
 
-		</div>{{-- /.section__content --}}
+					<div class="col-lg-6">
+						@component('_includes.resource')
+							@slot('class', 'whitepaper')
+							@slot('title', 'Whitepaper')
+							@slot('btnLink', 'whitepaper.pdf')
+							@slot('btnText', 'Download Whitepaper')
+							@slot('content')
+								Download our whitepaper for a look into our technologies
+							@endslot
+						@endcomponent
+					</div>{{-- /.col-lg-6 --}}
+
+				</div>{{-- /.row --}}
+
+			</div>{{-- /.section__content --}}
+		</div>{{-- /.container --}}
 	</section>
 
 @endsection
