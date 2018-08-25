@@ -1,8 +1,8 @@
-@extends('_layouts.master')
+	@extends('_layouts.master')
 
 @section('pageID', 'token')
 
-@section('navbar-classes', 'navbar-light navbar-token')
+@section('navbar-classes', 'navbar-transparent navbar-inverse navbar-token')
 
 @section('pageTitle', 'INXT')
 
@@ -12,87 +12,62 @@
 
 	<header class="pageHeader">
 		<div class="container">
-			<h1 class="pageHeader__heading">INXT.<span class="linebreak"></span> Internxt’s Token.</h1>
-			<h2 class="pageHeader__subheading">Our ERC20 token, INXT is designed to function as an economy with reliable and organic demand. All revenue generated from our services will be converted into INXT.</h2>
+			<h1 class="pageHeader__heading">INXT Token</h1>
+			<h2 class="pageHeader__subheading">Internxt’s tokenised asset</h2>
+			<a class="pageHeader__cta" href="#">Discover token metrics</a>
 		</div>
 	</header>
 
-	<section class="section section--inxt-data">
+
+	<section class="section section--inxt-intro">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="inxtDatum">
-						<p class="inxtDatum__label">Price Per INXT</p>
-						<p class="inxtDatum__point">$<span id="usd_price">5.96</span></p>
-					</div>{{-- /.inxtDatum --}}
-				</div>{{-- /.col-sm-4 --}}
-
-				<div class="col-sm-4">
-					<div class="inxtDatum">
-						<p class="inxtDatum__label">Change / 24h</p>
-						<p class="inxtDatum__point"><span id="change_24h">26.09</span>%</p>
-					</div>{{-- /.inxtDatum --}}
-				</div>{{-- /.col-sm-4 --}}
-
-				<div class="col-sm-4">
-					<div class="inxtDatum">
-						<p class="inxtDatum__label">Change / 7 Days</p>
-						<p class="inxtDatum__point"><span id="change_7d">2.93</span>%</p>
-					</div>{{-- /.inxtDatum --}}
-				</div>{{-- /.col-sm-4 --}}
-			</div>{{-- /.row --}}
-
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="inxtDatum">
-						<p class="inxtDatum__label">Market Cap</p>
-						<p class="inxtDatum__point">$<span id="market_cap">5.2</span><span class="inxtDatum__measure">M</span></p>
-					</div>{{-- /.inxtDatum --}}
-				</div>{{-- /.col-sm-4 --}}
-
-				<div class="col-sm-4">
-					<div class="inxtDatum">
-						<p class="inxtDatum__label">Circulating Supply</p>
-						<p class="inxtDatum__point">629,610</p>
-					</div>{{-- /.inxtDatum --}}
-				</div>{{-- /.col-sm-4 --}}
-
-				<div class="col-sm-4">
-					<div class="inxtDatum">
-						<p class="inxtDatum__label">Maximum Supply</p>
-						<p class="inxtDatum__point">629,610</p>
-					</div>{{-- /.inxtDatum --}}
-				</div>{{-- /.col-sm-4 --}}
-			</div>{{-- /.row --}}
-		</div>
-	</section>
-
-	<section class="section section--inxt-faciliting">
-		<div class="container">
-			<p class="section__heading">Facilitating our services.</p>
+			<p class="section__heading">Designed to <span class="linebreak"></span>function as an economy with reliable demand.</p>
 			<div class="section__content">
-				<p>Customers will require INXT to utilize Internxt's services. All revenue generated from our services will be converted into INXT. For example, a $20m in revenue generated from our services would mean a direct $20m in buy orders for INXT on public exchanges. In the event that a customer decides to pay for our services in fiat or any other cryptocurrency like Bitcoin, the Bitcoin will then be automatically used to purchase INXT at market price.</p>
-			</div>
-		</div>
-	</section>
 
-	<section class="section section--inxt-exchange">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm">
-					<p class="section__heading">Exchanges and storage.</p>
-					<div class="section__content">
-						<p>You can buy INXT at exchanges, such as CoinExchange, Yobit, IDEX, Etherdelta and Mercatox, with more exchanges available soon. There are 629,610 INXT currently circulating and this number is fixed as INXT is not mineable. INXT is an ERC20 token and can be stored in any Ethereum compatible wallet.</p>
-					</div>
-					<div class="section__footer">
-						<a href="https://www.coinexchange.io/market/INXT/BTC" rel="nofollow" target="_blank" class="btn btn-default"><img src="/img/logos/coinexchange.png" height="27" class="img-fluid"></a>
-						<a href="https://idex.market/eth/inxt" rel="nofollow" target="_blank" class="btn btn-default"><img src="/img/logos/idex.png" height="27"></a>
-						<a href="https://yobit.net/en/trade/INXT/BTC" rel="nofollow" target="_blank" class="btn btn-default"><img src="/img/logos/yobit.png" height="27"></a>
-					</div>
-				</div>
+				<div class="row">
+					<div class="col-lg">
+
+						<p>Internxt's token INXT is used as a means of payment to Hosts who participate in our X Core network.</p>
+						<p>There are 629,000 INXT available. This is the maximum supply as no more INXT will be generated.</p>
+
+					</div>{{-- /.col-lg --}}
+					<div class="col-lg">
+
+						<div class="subsection subsection--demand">
+
+							<div class="subsection__iconContainer">
+								<img class="subsection__icon" src="/img/icons/inxt-demand.svg" height="57">
+							</div>
+
+							<p class="subsection__heading">Token demand</p>
+							<p class="subsection__content">All revenue generated from our services will be directly converted into INXT. If a customer decides to pay for our services in fiat, the fiat is used to automatically purchase INXT at market price and is then sent to Hosts.</p>
+						</div>{{-- /.subsection-demand --}}
+
+						<div class="subsection subsection--growth">
+
+							<div class="subsection__iconContainer">
+								<img class="subsection__icon" src="/img/icons/inxt-growth.svg" height="57">
+							</div>
+
+							<p class="subsection__heading">Reliable growth</p>
+							<p class="subsection__content">Directly or indirectly, customers will require INXT to purchase Internxt's services. This organic demand ensures a strong and reliable market growth.</p>
+						</div>{{-- /.subsecion-growth --}}
+
+					</div>{{-- /.col-lg --}}
+				</div>{{-- /.row --}}
+
 			</div>
 		</div>
-	</section>
+	</section>{{-- /.inxt-intro --}}
+
+	<section class="section section--inxt-exchanges">
+		<div class="container">
+			<p class="section__heading">Exchanges to buy INXT.</p>
+			<div class="section__content">
+				<p>You can buy INXT at exchanges, such as CoinExchange, Yobit, IDEX, Etherdelta and Mercatox or you can buy directly from our website.</p>
+			</div>
+		</div>
+	</section>{{-- /.inxt-intro --}}
 
 	<hr>
 
@@ -110,6 +85,8 @@
 			</div>
 		</div>
 	</section>
+
+	@include('_includes.sections.subscribe')
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type='text/javascript'>
