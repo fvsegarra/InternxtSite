@@ -133,7 +133,7 @@
 					<div class="col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'ryan')
-							@slot('name', ' Priest')
+							@slot('name', 'Ryan Marsden')
 							@slot('position', 'Financial Advisor')
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}

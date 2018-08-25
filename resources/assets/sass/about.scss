@@ -1,5 +1,10 @@
 #page-about{
 
+    hr {
+        margin-bottom: 102px;
+        margin-top: 108px;
+    }
+
     .pageHeader {
 
         background-image: url('/img/headers/about.png');
@@ -36,6 +41,7 @@
             font-weight: 600;
             letter-spacing: -0.6px;
             line-height: 1.15;
+            margin-bottom: 0;
             margin-top: 20px;
         }
 
@@ -71,6 +77,10 @@
 
         }
 
+        &--team-partners{
+            margin-top: 170px;
+        }
+
     }
 
     .teamMember {
@@ -104,14 +114,22 @@
         overflow: hidden;
         position: relative;
 
-        &::after {
-            position:absolute;
-            content: " ";
-            display:block;
-            left:-5%;
-            bottom:-10px;
-            transform:rotate(2deg);
-            width:110%;
+        .test {
+
+            position: relative;
+
+            &::after {
+                background-color: #1f2526;
+                bottom: -10px;
+                content: " ";
+                display: block;
+                height: 40px;
+                left: 0;
+                position: absolute;
+                transform: rotate(2deg);
+                width: 110%;
+            }
+
         }
 
         &__image {
@@ -120,11 +138,28 @@
         }
 
         &--blackberry {
+
             background-color: #1f2526;
+            margin-top: 100px;
+
+            .teamPartner__image {
+                height: 400px;
+                left: -25px;
+                position: relative;
+            }
+
         }
 
         &--civic {
+
             background-color: #3da975;
+
+            .teamPartner__image {
+                height: 400px;
+                left: -25px;
+                position: relative;
+            }
+
         }
 
     }
