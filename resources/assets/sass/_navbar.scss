@@ -11,6 +11,7 @@
 
 		@include whenLargerThan('large-screen') {
 		    max-width: 1320px;
+		    padding-right: 13px;
 		}
 
 	}
@@ -85,7 +86,7 @@
   				font-weight: 600;
 				color: #E8E9EB;
 				letter-spacing: 0;
-				padding: 12px 26px 8px;
+				padding: 12px 25px 8px;
 	  		}
 
 	  		&:hover{
@@ -94,6 +95,9 @@
 
 	  		&--xcloud {
 				background-color: #4585f5;
+	  			background-image: url("/img/icons/chevron-right-circle.svg");
+			    background-repeat: no-repeat;
+			    background-position: 161px center;
 				border-radius: 28.5px;
 				box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
 				color: white !important;
@@ -102,6 +106,8 @@
 				height: 43px;
 				letter-spacing: -0.2px;
 				line-height: 1.47;
+				margin-left: 20px;
+				margin-top: 2px;
 				padding: 10px 44px 8px 19px;
 				text-align: center;
 				width: 195px;
