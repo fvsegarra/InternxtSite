@@ -12651,12 +12651,11 @@ hr {
 }
 
 #page-terms > .container {
-  max-width: 977px;
-  max-width: 1020px;
+  max-width: 1033px;
 }
 
 #page-terms .pageHeader {
-  margin-top: 87px;
+  margin-top: 78px;
 }
 
 #page-terms .pageHeader__heading {
@@ -12668,6 +12667,7 @@ hr {
 
 #page-terms .section {
   margin-top: 82px;
+  padding-left: 8px;
 }
 
 #page-terms .section__heading {
