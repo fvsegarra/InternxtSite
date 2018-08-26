@@ -8,7 +8,7 @@
 
 @section('body')
 
-	<div class="container-fluid">
+	<div class="container">
 
 		<header class="pageHeader">
 			<h1 class="pageHeader__heading">Terms and Conditions</h1>
@@ -70,6 +70,6 @@
 
 		</section>
 
-	</div>
+	</div>{{-- /.container --}}
 
 @endsection
