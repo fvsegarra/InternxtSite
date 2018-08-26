@@ -7,17 +7,19 @@
 		padding: 5px 16px 5px;
 	}
 
-	.navbar-brand{
-
-		margin-right: 75px;
-		padding-left: 2px;
-
-		@include whenLargerThan('medium-screen') {
-			margin-right: 126px;
-		}
+	& > .container {
 
 		@include whenLargerThan('large-screen') {
-			margin-right: 113px;
+		    max-width: 1320px;
+		}
+
+	}
+
+	.navbar-brand{
+
+		@include whenLargerThan('large-screen') {
+			padding-top: 17px;
+    		padding-left: 0px;
 		}
 
 		.mainLogo{
@@ -25,7 +27,7 @@
     		height: 41px;
 
     		@include whenLargerThan('large-screen') {
-				margin-left: 3px;
+				margin-left: -3px;
     		}
 
 		}
@@ -62,6 +64,11 @@
 			padding-top: 5px;
 		}
 
+		@include whenLargerThan('large-screen') {
+    		left: -9px;
+			position: relative;
+		}
+
 		a.nav-link{
 
 			color: black !important;
@@ -74,9 +81,11 @@
 	  		}
 
 	  		@include whenLargerThan('large-screen') {
-				font-size: 14px;
+				font-size: 16px;
+  				font-weight: 600;
 				color: #E8E9EB;
 				letter-spacing: 0;
+				padding: 12px 26px 8px;
 	  		}
 
 	  		&:hover{
@@ -93,6 +102,7 @@
 				height: 43px;
 				letter-spacing: -0.2px;
 				line-height: 1.47;
+				padding: 10px 44px 8px 19px;
 				text-align: center;
 				width: 195px;
 	  		}

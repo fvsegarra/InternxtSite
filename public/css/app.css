@@ -10564,20 +10564,16 @@ a.text-dark:focus {
   }
 }
 
-.navbar .navbar-brand {
-  margin-right: 75px;
-  padding-left: 2px;
-}
-
-@media (min-width: 1080px) {
-  .navbar .navbar-brand {
-    margin-right: 126px;
+@media (min-width: 1440px) {
+  .navbar > .container {
+    max-width: 1320px;
   }
 }
 
 @media (min-width: 1440px) {
   .navbar .navbar-brand {
-    margin-right: 113px;
+    padding-top: 17px;
+    padding-left: 0px;
   }
 }
 
@@ -10587,7 +10583,7 @@ a.text-dark:focus {
 
 @media (min-width: 1440px) {
   .navbar .navbar-brand .mainLogo {
-    margin-left: 3px;
+    margin-left: -3px;
   }
 }
 
@@ -10619,6 +10615,13 @@ a.text-dark:focus {
   }
 }
 
+@media (min-width: 1440px) {
+  .navbar .navbar-nav {
+    left: -9px;
+    position: relative;
+  }
+}
+
 .navbar .navbar-nav a.nav-link {
   color: black !important;
   font-size: 16px;
@@ -10635,9 +10638,11 @@ a.text-dark:focus {
 
 @media (min-width: 1440px) {
   .navbar .navbar-nav a.nav-link {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     color: #E8E9EB;
     letter-spacing: 0;
+    padding: 12px 26px 8px;
   }
 }
 
@@ -10656,6 +10661,7 @@ a.text-dark:focus {
   height: 43px;
   letter-spacing: -0.2px;
   line-height: 1.47;
+  padding: 10px 44px 8px 19px;
   text-align: center;
   width: 195px;
 }
