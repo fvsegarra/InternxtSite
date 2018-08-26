@@ -4,6 +4,8 @@
 
 @section('navbar-classes', 'navbar-transparent navbar-inverse navbar-token')
 
+@section('navbarLogo', 'internxt_icon_home.svg')
+
 @section('pageTitle', 'INXT')
 
 @section('metaDescription', 'Internxt token (INXT). Buy, Sell, Trade INXT.')

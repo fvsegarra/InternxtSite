@@ -12272,7 +12272,8 @@ hr {
   background-size: cover;
   color: black;
   height: 668px;
-  padding-top: 210px;
+  margin-bottom: -87px;
+  padding-top: 206px;
   position: relative;
   text-align: center;
   top: -87px;
@@ -12285,6 +12286,7 @@ hr {
   font-weight: 500;
   letter-spacing: normal;
   line-height: 2.48;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -12293,10 +12295,14 @@ hr {
   font-weight: 600;
   letter-spacing: -0.6px;
   line-height: 1.19;
+  margin-top: 3px;
 }
 
 #page-token .pageHeader__cta {
   background-color: #000000;
+  background-image: url("/img/icons/chevron-right-circle.svg");
+  background-repeat: no-repeat;
+  background-position: 222px center;
   border-radius: 31.4px;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
           box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
@@ -12306,16 +12312,22 @@ hr {
   font-weight: 600;
   height: 47px;
   letter-spacing: -0.2px;
-  margin: 60px auto 0;
-  padding: 12px 34px 13px 23px;
+  margin: 41px auto 0;
+  padding: 11px 34px 13px 12px;
   width: 257.2px;
 }
 
+#page-token .section--inxt-intro {
+  padding-top: 45px;
+}
+
 #page-token .section--inxt-intro .section__heading {
+  color: black;
   font-size: 33px;
   font-weight: bold;
   letter-spacing: -0.6px;
   line-height: 1.18;
+  margin-bottom: 0;
 }
 
 #page-token .section--inxt-intro .section__content {
@@ -12323,6 +12335,11 @@ hr {
   font-size: 20px;
   letter-spacing: -0.1px;
   line-height: 1.55;
+  margin-top: 22px;
+}
+
+#page-token .section--inxt-intro .section__content p:first-of-type {
+  margin-bottom: 31px;
 }
 
 #page-token .section--inxt-intro .subsection {
@@ -12366,7 +12383,7 @@ hr {
 }
 
 #page-token .section--inxt-intro .subsection--demand {
-  margin-top: 108px;
+  margin-top: 102px;
 }
 
 #page-token .section--inxt-exchanges {
