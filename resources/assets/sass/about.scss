@@ -47,12 +47,18 @@
 
         &--about-intro {
 
+            padding-bottom: 106px;
+
             .section__content {
 
                 color: #8e8e93;
                 font-size: 25px;
                 letter-spacing: -0.3px;
                 line-height: 1.44;
+
+                p {
+                    margin-bottom: 0;
+                }
 
                 em {
                     color: #31356c;
@@ -61,11 +67,27 @@
 
             }
 
+            .section__cta {
+                background-color: #4585f5;
+                border-radius: 31.4px;
+                box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
+                color: white;
+                display: block;
+                font-size: 18px;
+                font-weight: 600;
+                height: 47px;
+                letter-spacing: -0.2px;
+                margin-top: 60px;
+                padding: 12px 22px 13px 23px;
+                width: 256.2px;
+            }
+
         }
 
         &--team {
 
             background-color: #fcfcfc;
+            padding-bottom: 91px;
             padding-top: 113px;
 
             .section__heading {
@@ -78,7 +100,13 @@
         }
 
         &--team-partners{
+
             margin-top: 170px;
+
+            .section__content {
+                padding-top: 100px;
+            }
+
         }
 
     }
@@ -109,7 +137,6 @@
 
         border-radius: 6px;
         color: white;
-        margin-top: 102px;
         min-height: 410px;
         overflow: hidden;
         position: relative;
@@ -140,7 +167,6 @@
         &--blackberry {
 
             background-color: #1f2526;
-            margin-top: 100px;
 
             .teamPartner__image {
                 height: 400px;

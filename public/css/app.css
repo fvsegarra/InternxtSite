@@ -12362,6 +12362,10 @@ hr {
   margin-top: 20px;
 }
 
+#page-about .section--about-intro {
+  padding-bottom: 106px;
+}
+
 #page-about .section--about-intro .section__content {
   color: #8e8e93;
   font-size: 25px;
@@ -12389,13 +12393,14 @@ hr {
   font-weight: 600;
   height: 47px;
   letter-spacing: -0.2px;
-  margin-top: 20px;
+  margin-top: 60px;
   padding: 12px 22px 13px 23px;
   width: 256.2px;
 }
 
 #page-about .section--team {
   background-color: #fcfcfc;
+  padding-bottom: 91px;
   padding-top: 113px;
 }
 
@@ -12405,6 +12410,10 @@ hr {
 
 #page-about .section--team-partners {
   margin-top: 170px;
+}
+
+#page-about .section--team-partners .section__content {
+  padding-top: 100px;
 }
 
 #page-about .teamMember {
@@ -12430,7 +12439,6 @@ hr {
 #page-about .teamPartner {
   border-radius: 6px;
   color: white;
-  margin-top: 102px;
   min-height: 410px;
   overflow: hidden;
   position: relative;
@@ -12455,7 +12463,6 @@ hr {
 
 #page-about .teamPartner--blackberry {
   background-color: #1f2526;
-  margin-top: 100px;
 }
 
 #page-about .teamPartner--blackberry .teamPartner__image {
