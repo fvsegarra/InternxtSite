@@ -63,7 +63,7 @@
                 display: block;
             }
 
-            img:not(:first-of-type) {
+            .col-lg:not(:first-of-type) img {
                 margin-top: 52px;
             }
 
@@ -72,12 +72,20 @@
         .col-lg-6 {
 
             &:first-of-type {
-                border-right: 1px solid #e8e8e8;
-                padding-right: 120px;
+
+                @include whenLargerThan('large-screen') {
+                    border-right: 1px solid #e8e8e8;
+                    padding-right: 120px;
+                }
+
             }
 
             &:last-of-type {
-                padding-left: 120px;
+
+                @include whenLargerThan('large-screen') {
+                    padding-left: 120px;
+                }
+
             }
 
         }
