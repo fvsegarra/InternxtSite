@@ -10742,6 +10742,7 @@ a.text-dark:focus {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0.3px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -10769,8 +10770,16 @@ a.text-dark:focus {
 }
 
 .section--about {
-  background-color: #fcfcfc;
+  background-color: #fafafa;
   padding: 200px 0;
+}
+
+@media (min-width: 1440px) {
+  .section--about {
+    margin-top: 158px;
+    padding-bottom: 143px;
+    padding-top: 108px;
+  }
 }
 
 .section--about .section__heading {
@@ -10784,6 +10793,10 @@ a.text-dark:focus {
 @media (min-width: 1440px) {
   .section--about .section__heading {
     display: block;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1.1px;
+    line-height: 0.98;
   }
 }
 
@@ -10801,6 +10814,12 @@ a.text-dark:focus {
 }
 
 @media (min-width: 1440px) {
+  .section--about__articles .col-lg:not(:first-of-type) img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
   .section--about .col-lg-6:first-of-type {
     border-right: 1px solid #e8e8e8;
     padding-right: 120px;
@@ -10815,6 +10834,22 @@ a.text-dark:focus {
 
 .section--news-hub {
   padding-top: 92;
+}
+
+@media (min-width: 1440px) {
+  .section--news-hub {
+    margin-top: 123px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section--news-hub .section__heading {
+    font-size: 31px;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+    line-height: 1.68;
+    margin-top: 10px;
+  }
 }
 
 .section--news-hub .section__content {
@@ -10856,10 +10891,13 @@ a.text-dark:focus {
 }
 
 .section--subscribe {
-  border-top: 1px solid #d8d8d8;
   margin-top: 128px;
-  padding-top: 92px;
+}
+
+.section--subscribe > .container {
+  border-top: 1px solid #d8d8d8;
   padding-bottom: 130px;
+  padding-top: 92px;
 }
 
 .section--subscribe .section__heading {
@@ -11317,12 +11355,20 @@ hr {
   margin-top: 88px;
 }
 
+@media (min-width: 1440px) {
+  #page-home .pageHeader {
+    margin-bottom: 212px;
+    margin-top: 209px;
+  }
+}
+
 #page-home .pageHeader__heading {
   font-family: "Cerebri Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 50px;
   font-weight: 600;
   letter-spacing: -1.7px;
   line-height: 1.24;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1440px) {
@@ -11342,6 +11388,7 @@ hr {
   letter-spacing: -0.5px;
   line-height: 1.39;
   opacity: 0.7;
+  margin-top: 24px;
   max-width: 348px;
 }
 
@@ -11351,6 +11398,7 @@ hr {
     letter-spacing: -1.2px;
     line-height: 1.19;
     max-width: 750px;
+    margin-top: 24px;
   }
 }
 
@@ -11455,6 +11503,17 @@ hr {
   #page-home .section--products > .container > .section__label,
   #page-home .section--products > .container > .section__heading {
     display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-home .section--products > .container > .section__heading {
+    font-size: 31px;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+    line-height: 1.68;
+    margin-bottom: 0;
+    margin-top: 10px;
   }
 }
 

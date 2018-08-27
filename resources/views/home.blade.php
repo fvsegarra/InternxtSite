@@ -24,7 +24,7 @@
 	<section class="section section--products">
 		<div class="container">
 			<p class="section__label">Catalogue</p>
-			<p class="section__heading">Browse our products.</p>
+			<p class="section__heading">Browse our products</p>
 			<div class="row">
 				<div class="col-lg">
 					@include('_includes.previews.xcloud')
@@ -44,12 +44,12 @@
 				<div class="col-lg-6">
 
 					<p class="section__label">About Us</p>
-					<p class="section__heading">Technologies to enhance life.</p>
+					<p class="section__heading">Technologies <span class="linebreak d-none d-lg-block"></span>to enhance life.</p>
 					<p class="section__subheading">Internxt aims to enrich life through revolutionary technology. The goal is to create a vast range of innovative mass-market services that disrupt various technology industries.</p>
 					<p class="section__cta">Learn more about Internxt</p>
 
 					<div class="section--about__articles">
-						<div class="row">
+						<div class="row align-items-center">
 							<div class="col-lg">
 								<img src="/img/logos/android.svg" height="52" alt="Android">
 							</div>

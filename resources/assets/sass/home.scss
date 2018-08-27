@@ -5,6 +5,11 @@
         margin-bottom: 120px;
         margin-top: 88px;
 
+        @include whenLargerThan('large-screen') {
+            margin-bottom: 212px;
+            margin-top: 209px;
+        }
+
         &__heading {
 
             font-family: $font-family-sans-serif;
@@ -12,6 +17,7 @@
             font-weight: 600;
             letter-spacing: -1.7px;
             line-height: 1.24;
+            margin-bottom: 0;
 
             @include whenLargerThan('large-screen') {
                 font-size: 71px;
@@ -31,6 +37,7 @@
             letter-spacing: -0.5px;
             line-height: 1.39;
             opacity: 0.7;
+            margin-top: 24px;
             max-width: 348px;
 
             @include whenLargerThan('large-screen') {
@@ -38,6 +45,7 @@
                 letter-spacing: -1.2px;
                 line-height: 1.19;
                 max-width: 750px;
+                margin-top: 24px;
             }
 
         }
@@ -139,16 +147,34 @@
 
         &--products {
 
-            & > .container > .section__label,
-            & > .container > .section__heading {
+            & > .container {
 
-                display: none;
+                & > .section__label,
+                & > .section__heading {
 
-                @include whenLargerThan('large-screen') {
-                    display: block;
+                    display: none;
+
+                    @include whenLargerThan('large-screen') {
+                        display: block;
+                    }
+
+                }
+
+                & > .section__heading {
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 31px;
+                        font-weight: 600;
+                        letter-spacing: -0.7px;
+                        line-height: 1.68;
+                        margin-bottom: 0;
+                        margin-top: 10px;
+                    }
+
                 }
 
             }
+
 
         }
 
