@@ -47,10 +47,10 @@
                             <a class="nav-link" href="{{ route('about') }}">Company</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('token') }}">INXT Token</a>
+                            <a class="nav-link" href="{{ route('token') }}">INXT token</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News Hub</a>
+                            <a class="nav-link" href="#">News hub</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link--xcloud" href="#">Get X Cloud Beta</a>

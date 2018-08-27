@@ -1,66 +1,54 @@
 #page-terms{
 
-	& > .container-fluid{
-
-		width: 375px;
-		padding-left: 24px;
-		padding-right: 24px;
-
-		@include whenLargerThan('medium-screen') {
-			width: 838px;
-		}
-
-		@include whenLargerThan('large-screen') {
-		    width: 1040px;
-		}
-
+	& > .container {
+		max-width: 1033px;
 	}
 
 	.pageHeader{
 
-		@include whenLargerThan('large-screen') {
-			padding-top: 72px;
-		}
+		margin-top: 78px;
 
 		&__heading{
-
-			font-size: 70px;
-
-			@include whenLargerThan('medium-screen') {
-				font-size: 85px;
-			}
-
+			font-size: 71px;
+			font-weight: 600;
+			line-height: 0.87;
+			letter-spacing: -2.3px;
 		}
 
 	}
 
 	.section{
 
-		padding: 0 5px;
-		margin-bottom: 60px;
+		margin-top: 82px;
+		padding-left: 8px;
 
 		&__heading{
-
-			font-size: 45px;
-			font-weight: bold;
-			line-height: 1.09;
-			letter-spacing: -1.3px;
+			font-size: 43px;
+			font-weight: normal;
+			letter-spacing: -1.2px;
+			line-height: 1.19;
 		}
 
 		&__content {
 
-			font-size: 20px;
-			line-height: 1.29;
-			letter-spacing: -0.1px;
-
-			@include whenLargerThan('medium-screen') {
-				font-size: 24px;
-			}
+			color: #838387;
+			font-size: 21px;
+			letter-spacing: -0.4px;
+			line-height: 1.48;
 
 			p{
 				margin-bottom: 32px;
 			}
 
+		}
+
+		&--terms-overview {
+			margin-top: 69px; // lol
+		}
+
+
+		&--terms-service {
+			margin-top: 106px;
 		}
 
 	}
