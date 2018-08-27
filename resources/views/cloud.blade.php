@@ -186,7 +186,9 @@
 			<div class="section__outline">
 				<p class="section__heading">Jump into the X Cloud Beta today.</p>
 				<div class="section__content">
-					<a href="#download" class="section__cta">Get X Cloud Beta</a>
+					<button class="section__cta btn btn-primary" type="button" data-toggle="modal" data-target="#modalXCloud">
+						Get X Cloud Beta
+					</button>
 				</div>
 			</div>{{-- /.section__outline --}}
 		</div>

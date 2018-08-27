@@ -27,6 +27,28 @@
     </head>
     <body id="page-@yield('pageID')">
 
+        @component('_includes.components.modal')
+            @slot('id', 'modalXCloud')
+            @slot('icon', '/img/logos/xcloud.png')
+            @slot('heading', 'Experience a more secure cloud')
+            @slot('subheading', 'Get X Cloud beta today with 10GB free.')
+            @slot('content')
+                <a class="modal__cta" href="#">Download for Mac</a>
+                <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
+            @endslot
+        @endcomponent
+
+        @component('_includes.components.modal')
+            @slot('id', 'modalXCore')
+            @slot('icon', '/img/logos/xcore.png')
+            @slot('heading', 'Experience a more secure cloud')
+            @slot('subheading', 'Get X Core beta today.')
+            @slot('content')
+                <a class="modal__cta" href="#">Download for Mac</a>
+                <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
+            @endslot
+        @endcomponent
+
         <nav class="navbar @yield('navbar-classes') navbar-expand-lg">
             <div class="container">
 
