@@ -14,8 +14,14 @@ body{
 }
 
 .container {
+
     padding-right: 24px;
     padding-left: 24px;
+
+ 	@include whenLargerThan('large-screen') {
+    	max-width: 1330px;
+	}
+
 }
 
 .linebreak {

@@ -11289,6 +11289,12 @@ body {
   padding-left: 24px;
 }
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1330px;
+  }
+}
+
 .linebreak {
   display: block;
 }
