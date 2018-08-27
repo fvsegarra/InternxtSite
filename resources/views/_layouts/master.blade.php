@@ -49,38 +49,7 @@
             @endslot
         @endcomponent
 
-        <nav class="navbar @yield('navbar-classes') navbar-expand-lg">
-            <div class="container">
-
-                <a class="navbar-brand" href="{{ route('home') }}">
-                    <img src="/img/logos/@yield('navbarLogo', 'internxt_icon.svg')" height="41" class="mainLogo">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('cloud') }}">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about') }}">Company</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('token') }}">INXT token</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News hub</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link--xcloud" href="#">Get X Cloud Beta</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        @include('_includes.navbar')
 
         @yield('body')
 
