@@ -41,12 +41,9 @@
 
 				</div>{{-- /.subsection-intro --}}
 
-				<div class="row">
-					<div class="col-lg-9">
-						<img class="section--core-summary__image img-fluid" src="http://placehold.it/375x416" alt="X Core">
-					</div>{{-- /.col-lg-9 --}}
+				<div class="row subsection--intro--bg">
 
-					<div class="col-lg-3">
+					<div class="col-lg-3 offset-lg-9">
 
 						<div class="subsection subsection--host">
 							<p class="subsection__heading">Host easier. Earn more.</p>
@@ -75,8 +72,8 @@
 	<section class="section section--core-design">
 		<div class="container">
 			<p class="section__heading">
-				<span class="d-block d-md-none"><span class="d-none d-lg-inline">An interface that's as</span><span class="d-lg-none">As</span> simple as it is beautiful.</span>
-				<span class="d-none d-md-block">Design that’s as simple as it is beautiful.</span>
+				<span class="d-none d-lg-inline">An interface that's as</span><span class="d-lg-none">As</span> simple as it is beautiful.</span>
+				{{-- <span class="d-none d-md-block">Design that’s as simple as it is beautiful.</span> --}}
 			</p>
 			<p class="section__subheading">Functionality and complexity were always kept in a tight balance, so that using this new techology feels second nature, even if you never have before.</p>
 
@@ -107,15 +104,11 @@
 		<div class="container">
 			<div class="section__outline">
 				<p class="section__heading">Start earning INXT today.</p>
-				<div class="section__content">
-					<a href="#download" class="section__cta">Get X Core Beta</a>
-				</div>
+				<a href="#download" class="section__cta">Get X Core Beta</a>
 			</div>{{-- /.section__outline --}}
 		</div>
 	</section>
 
-	<div class="container">
-		@include('_includes.previews.xcloud')
-	</div>{{-- /.container --}}
+	@include('_includes.previews.xcloud')
 
 @endsection

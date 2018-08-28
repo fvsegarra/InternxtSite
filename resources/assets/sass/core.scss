@@ -8,7 +8,7 @@
 
     .pageHeader {
 
-        background-image: url('/img/headers/xcore.png');
+        background-image: url('/img/headers/xcore_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 668px;
@@ -21,7 +21,7 @@
         @include whenLargerThan('large-screen') {
             padding-top: 265px;
             height: 860px;
-            background-image :url('/img/headers/xcore.png');
+            background-image :url('/img/headers/xcore_desktop.png');
         }
 
         &__icon {
@@ -183,6 +183,12 @@
 
                     }
 
+                    &--bg {
+                        background-image: url("/img/mockups/xcore/intro.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
                 }
 
                 &--host {
@@ -190,6 +196,10 @@
                 }
 
                 &--setup {
+
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 100px;
+                    }
 
                     .subsection__content {
 
@@ -217,12 +227,40 @@
 
             margin-top: 140px;
 
+            @include whenLargerThan('large-screen') {
+                background-image: linear-gradient(to bottom, #fafafa, #ffffff);
+            }
+
+            .section__heading {
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 58px;
+                    font-weight: bold;
+                    letter-spacing: -2.6px;
+                    line-height: 1;
+                    max-width: 592px;
+                }
+
+            }
+
+            .section__subheading {
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    max-width: 584px;
+                }
+
+            }
+
             .nav-tabs {
 
                 border-bottom: none;
 
                 @include whenLargerThan('large-screen') {
-                    max-width: 432px;
+                    max-width: 270px;
+                    margin: 0 auto;
                 }
 
                 .nav-item {
@@ -255,11 +293,22 @@
 
                 margin-top: 52px;
 
+                @include whenLargerThan('large-screen') {
+                    max-width: 645px;
+                    margin: 52px auto 0;
+                }
+
                 .tab-pane {
+
                     color: #838387;
                     font-size: 21px;
                     letter-spacing: -0.4px;
                     line-height: 1.48;
+
+                    @include whenLargerThan('large-screen') {
+                        text-align: center;
+                    }
+
                 }
 
                 strong {
