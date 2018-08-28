@@ -62,10 +62,10 @@
 
 				</div>{{-- /.row --}}
 
-				<div class="subsection subsection--intelligent">
+				<div class="subsection subsection--setup">
 					<p class="subsection__heading">Easy set-up.</p>
-					<p class="subsection__content">Becoming a host to share your computers resources on the X Core network is quick and easy to set up. Simply download the desktop application, create your node and your device will automatically be connected, and will always be connected unless you say otherwise. All the hard work has been done for you.</p>
-				</div>{{-- /.subsection-intelligent --}}
+					<p class="subsection__content">Becoming a host to share your computers resources on the <span class="linebreak d-none d-lg-block"></span>X Core network is quick and easy to set up. Simply download the desktop application, create your node and your device will automatically be connected, and will always be connected unless you say otherwise. All the hard work has been done for you.</p>
+				</div>{{-- /.subsection-setup --}}
 
 			</div>
 		</div>

@@ -1,5 +1,11 @@
 #page-core{
 
+    .navbar .navbar-nav a.nav-link--xcloud {
+        background-color: transparent;
+        border: solid 1px white;
+        box-shadow: none;
+    }
+
     .pageHeader {
 
         background-image: url('/img/headers/xcore.png');
@@ -12,8 +18,19 @@
         top: -87px;
         z-index: 1;
 
+        @include whenLargerThan('large-screen') {
+            padding-top: 265px;
+            height: 860px;
+            background-image :url('/img/headers/xcore.png');
+        }
+
         &__icon {
-            // display: block;
+
+            @include whenLargerThan('large-screen') {
+                height: 68px;
+                width: 68px;
+            }
+
         }
 
         &__heading {
@@ -29,9 +46,23 @@
                 letter-spacing: -9.9px;
             }
 
+            @include whenLargerThan('large-screen') {
+
+                font-size: 78px;
+                letter-spacing: -2.5px;
+                line-height: 0.82;
+                margin-top: 42px;
+
+                &::first-letter {
+                    letter-spacing: -7.6px;
+                }
+
+            }
+
         }
 
         &__subheading {
+
             color: white;
             font-size: 33.6px;
             font-weight: 500;
@@ -39,9 +70,18 @@
             line-height: 0.86;
             margin-top: 17px;
             opacity: 0.76;
+
+            @include whenLargerThan('large-screen') {
+                font-size: 41px;
+                letter-spacing: -0.8px;
+                line-height: 0.9;
+                margin-top: 22px;
+            }
+
         }
 
         &__cta {
+
             background-color: #6852f9;
             border-radius: 31.4px;
             box-shadow: 0 7px 8px 0 #0f0d26;
@@ -54,6 +94,11 @@
             margin-top: 42px;
             padding: 12px 46px 13px 23px;
             width: 221.2px;
+
+            @include whenLargerThan('large-screen') {
+                margin-top: 80px;
+            }
+
         }
 
     }
@@ -67,31 +112,96 @@
                 margin-top: 91px;
 
                 &__heading {
+
                     color: black;
                     font-size: 34px;
                     font-weight: 600;
                     letter-spacing: -0.6px;
                     line-height: 1.15;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 40px;
+                        font-stretch: normal;
+                        font-style: normal;
+                        font-weight: bold;
+                        letter-spacing: -1.1px;
+                        line-height: 0.98;
+                    }
+
                 }
 
                 &__content {
+
                     color: #838387;
                     font-size: 20px;
                     letter-spacing: -0.1px;
                     line-height: 1.55;
+
+                    @include whenLargerThan('large-screen') {
+                        color: #838387;
+                        font-size: 21px;
+                        letter-spacing: -0.4px;
+                        line-height: 1.48;
+                    }
+
                 }
 
                 &--intro {
 
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 100px;
+                    }
+
                     .subsection__heading {
+
                         font-size: 44px;
                         letter-spacing: -0.8px;
                         line-height: 0.93;
+
+                        @include whenLargerThan('large-screen') {
+                            font-size: 58px;
+                            font-weight: bold;
+                            letter-spacing: -2.6px;
+                            line-height: 1;
+                            max-width: 684px;
+                        }
+
+                    }
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            color: #838387;
+                            font-size: 21px;
+                            font-stretch: normal;
+                            font-style: normal;
+                            font-weight: normal;
+                            letter-spacing: -0.4px;
+                            line-height: 1.48;
+                            max-width: 630px;
+                        }
+
                     }
 
                 }
 
                 &--host {
+
+                }
+
+                &--setup {
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            color: #838387;
+                            font-size: 21px;
+                            letter-spacing: -0.4px;
+                            line-height: 1.48;
+                            max-width: 655px;
+                        }
+
+                    }
 
                 }
 
