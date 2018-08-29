@@ -22,19 +22,19 @@
                         Company
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('cloud') }}">About us</a>
-                        <a class="dropdown-item" href="{{ route('core') }}">Roadmap</a>
-                        <a class="dropdown-item" href="{{ route('core') }}">Resources</a>
+                        <a class="dropdown-item" href="{{ route('about') }}">About us</a>
+                        <a class="dropdown-item" href="{{ route('roadmap') }}">Roadmap</a>
+                        <a class="dropdown-item" href="{{ route('resources') }}">Resources</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('token') }}">INXT token</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News hub</a>
+                    <a class="nav-link" href="https://medium.com/internxt" target="_blank" rel="nofollow">News hub</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link--xcloud" href="#">Get X Cloud Beta</a>
+                    <a class="nav-link nav-link--xcloud" href="#" data-toggle="modal" data-target="#modalXCloud">Get X Cloud Beta</a>
                 </li>
             </ul>
         </div>{{-- /.navbar-collapse --}}
