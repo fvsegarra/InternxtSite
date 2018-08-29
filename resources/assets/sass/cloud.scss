@@ -1,5 +1,11 @@
 #page-cloud{
 
+    .navbar .navbar-nav a.nav-link--xcloud {
+        background-color: transparent;
+        border: solid 1px white;
+        box-shadow: none;
+    }
+
     .container{
 
         @include whenLargerThan('large-screen'){
