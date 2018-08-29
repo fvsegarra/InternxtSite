@@ -145,28 +145,6 @@
 
 	}
 
-	&.navbar-xcloud,
-	&.navbar-token,
-	&.navbar-team,
-	&.navbar-roadmap{
-
-		@include whenLargerThan('large-screen') {
-
-			.navbar-brand{
-
-				margin-right: 118px;
-
-				.mainLogo {
-				    margin-left: 9px;
-				    height: 29px;
-				}
-
-			}
-
-		}
-
-	}
-
 	&.navbar-xcloud{
 
  		background-color: #9ecbf7;

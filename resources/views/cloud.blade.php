@@ -24,7 +24,12 @@
 	<section class="section section--cloud-intro">
 		<div class="container">
 			<div class="section__content">
-				Combining <em>distributed</em> and <em>decentralized</em> technology with a beautiful, <span class="linebreak d-block d-lg-none"></span>easy-to-use user interface. Now everyone can store files with total <em>simplicity, security</em> and <em>privacy</em>.
+				<span class="d-lg-none">
+					Combining <em>distributed</em> and <em>decentralized</em> technology with a beautiful, <span class="d-block"></span> easy-to-use user interface. Now everyone can now store files with total <em>simplicity, security</em> and <em>privacy.</em>
+				</span>
+				<span class="d-none d-lg-block">
+					Combining <em>distributed</em> and <em>decentralized</em> technology with an easy-to-use user interface. Now everyone can now store files with total <em>simplicity, security</em> and <em>privacy.</em>
+				</span>
 			</div>{{-- /.section__content --}}
 		</div>{{-- /.container --}}
 	</section>
@@ -86,80 +91,75 @@
 		<div class="container">
 			<img class="section__icon" src="/img/icons/xcloud/share.svg">
 			<p class="section__heading">Share files however you want. <span class="linebreak d-none d-lg-block"></span>With whoever you want.</p>
-			<p class="section__content">Files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. Your personal data is apart of the distributed X Core network and no longer sitting in one central location. </p>
+			<p class="section__content">X Cloud is the first decentralized cloud platform to offer secure and easy file sharing. Just send a private link to invite people to view, download, or work on a file with you.</p>
 		</div>{{-- /.container --}}
 		<img class="section__image img-fluid" src="/img/mockups/xcloud/share_laptop.png">
 	</section>
 
 	<section class="section section--cloud-partners">
 
-		<div class="row">
+		<div class="subsection subsection--blackberry">
+			<div class="subsection__border"></div>
 
-			<div class="col-lg-6">
+			<div class="container">
 
-				<div class="subsection subsection--blackberry">
-					<div class="subsection__border"></div>
+				<img class="subsection__image--mobile d-block d-lg-none" src="/img/logos/blackberry.png" alt="Blackberry" height="65">
 
-					<div class="container">
+				<p class="subsection__heading d-block d-lg-none">Empowering the era of secure technology.</p>
 
-						<img class="subsection__image--mobile" src="/img/logos/blackberry.png" alt="Blackberry" height="65">
+				<div class="subsection__content">
+					<div class="row">
 
-						<p class="subsection__heading">Empowering the era of secure technology.</p>
+						<div class="col-lg-6">
+							<img class="subsection__image--desktop d-none d-lg-block" src="/img/logos/blackberry.png" alt="Blackberry" height="65">
+						</div>{{-- /.col-lg-6 --}}
 
-						<div class="subsection__content">
-							<div class="row">
+						<div class="col-lg-6">
 
-								<div class="col-lg-6">
-									<img class="subsection__image--desktop" src="/img/logos/blackberry.png" alt="Blackberry" height="65">
-								</div>{{-- /.col-lg-6 --}}
-
-								<div class="col-lg-6">
-									<p>BlackBerry provides security consulting services and solutions that can greatly improve our architecture. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
-								</div>{{-- /.col-lg-6 --}}
-
-							</div>{{-- /.row --}}
+							<p class="subsection__heading d-none d-lg-block">Empowering the era of secure technology.</p>
+							<p>BlackBerry provides security consulting services and solutions that can greatly improve our architecture. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
 
 							<a class="subsection__link" href="#">Learn more about the partnership</a>
-						</div>{{-- /.subsection__content --}}
 
-					</div>{{-- /.container --}}
-				</div>{{-- /.subsection --}}
+						</div>{{-- /.col-lg-6 --}}
 
-			</div>{{-- /.col-lg-6 --}}
 
-			<div class="col-lg-6">
+					</div>{{-- /.row --}}
 
-				<div class="subsection subsection--civic">
-					<div class="subsection__border"></div>
+				</div>{{-- /.subsection__content --}}
 
-					<div class="container">
+			</div>{{-- /.container --}}
+		</div>{{-- /.subsection --}}
 
-						<img class="subsection__image--mobile" src="/img/logos/civic.png" alt="Civic" height="53">
+		<div class="subsection subsection--civic">
+			<div class="subsection__border"></div>
 
-						<p class="subsection__heading">Protecting your identity with Blockchain.</p>
+			<div class="container">
 
-						<div class="subsection__content">
-							<div class="row">
+				<img class="subsection__image--mobile d-block d-lg-none" src="/img/logos/civic.png" alt="Civic" height="53">
 
-								<div class="col-lg-6">
-									<img class="subsection__image--desktop" src="/img/logos/civic.png" alt="Civic" height="53">
-								</div>{{-- /.col-lg-6 --}}
+				<p class="subsection__heading d-block d-lg-none">Protecting your identity with Blockchain.</p>
 
-								<div class="col-lg-6">
-									<p>Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p></p>
-								</div>{{-- /.col-lg-6 --}}
+				<div class="subsection__content">
+					<div class="row">
 
-							</div>{{-- /.row --}}
-						</div>{{-- /.subsection__content --}}
+						<div class="col-lg-6">
+							<img class="subsection__image--desktop d-none d-lg-block" src="/img/logos/civic.png" alt="Civic" height="53">
+						</div>{{-- /.col-lg-6 --}}
 
-						<a class="subsection__link" href="#">Learn more about the partnership</a>
+						<div class="col-lg-6">
+							<p class="subsection__heading d-none d-lg-block">Protecting your identity with Blockchain.</p>
+							<p>Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
+							<a class="subsection__link" href="#">Learn more about the partnership</a>
+						</div>{{-- /.col-lg-6 --}}
 
-					</div>{{-- /.container --}}
-				</div>{{-- /.subsection --}}
+					</div>{{-- /.row --}}
+				</div>{{-- /.subsection__content --}}
 
-			</div>{{-- /.col-lg-6 --}}
 
-		</div>{{-- /.row --}}
+			</div>{{-- /.container --}}
+		</div>{{-- /.subsection --}}
+
 	</section>
 
 	<section class="section section--cloud-share">
@@ -170,7 +170,7 @@
 		<div class="container">
 			<p class="section__heading">The most powerful technology <span class="linebreak"></span>is one which everyone can use.</p>
 
-			<img class="section__image" src="http://placehold.it/328x586">
+			<img class="section__image img-fluid" src="/img/mockups/xcloud/iPhone.png">
 
 			<p class="section__subheading">Get to your files on all your devices.</p>
 			<div class="section__content">
