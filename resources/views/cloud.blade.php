@@ -2,9 +2,9 @@
 
 @section('pageID', 'cloud')
 
-@section('navbar-classes', 'navbar-light navbar-xcloud')
+@section('navbar-classes', 'navbar-transparent navbar-inverse navbar-xcloud')
 
-@section('navbarLogo', 'internxt_icon_xcloud.svg')
+@section('navbarLogo', 'internxt_icon_home.svg')
 
 @section('pageTitle', 'X Cloud')
 
@@ -14,16 +14,81 @@
 
 	<header class="pageHeader">
 		<div class="container">
+			<img class="pageHeader__icon" src="/img/logos/xcloud.png" alt="xcloud" height="53">
 			<h1 class="pageHeader__heading">X Cloud</h1>
-			<h2 class="pageHeader__subheading"></h2>
-			<a href="#" class="pageHeader__btn btn btn-outline-primary">Beta Available Q3 2018</a>
+			<h2 class="pageHeader__subheading">Power in your hands.</h2>
+			<a href="#" class="pageHeader__cta">Get X Cloud Beta</a>
 		</div>
-		<img src="/img/headers/xcloud.png" class="img-fluid">
 	</header>
 
+	<section class="section section--cloud-intro">
+		<div class="container">
+			<div class="section__content">
+				Combining <em>distributed</em> and <em>decentralized</em> technology with a beautiful, <span class="linebreak d-block d-lg-none"></span>easy-to-use user interface. Now everyone can store files with total <em>simplicity, security</em> and <em>privacy</em>.
+			</div>{{-- /.section__content --}}
+		</div>{{-- /.container --}}
+	</section>
 
-	<section class="section section--cloud-features">
+	<section class="section section--cloud-privacy">
+		<div class="container">
+			<div class="row">
 
+				<div class="col-lg-6">
+
+					<div class="subsection subsection--data">
+						<img class="subsection__icon" src="/img/icons/xcloud/data.svg" alt="Your data belongs to you and only you">
+						<p class="subsection__heading">Your data belongs to you and only you.</p>
+						<p class="subsection__content">We’ve solved major problems with the current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies.</p>
+					</div>{{-- /.subsection --}}
+				</div>{{-- /.col-lg-6 --}}
+
+				<div class="col-lg-6">
+
+					<div class="subsection subsection--security">
+						<img class="subsection__icon" src="/img/icons/xcloud/security.svg" alt="Designed to protect your digital security.">
+						<p class="subsection__heading">Designed to protect your digital security.</p>
+						<p class="subsection__content">Files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. Your personal data is apart of the distributed X Core network and no longer sitting in one central location. </p>
+					</div>{{-- /.subsection --}}
+				</div>{{-- /.col-lg-6 --}}
+
+			</div>{{-- /.row --}}
+			<div class="section__content"></div>{{-- /.section__content --}}
+		</div>{{-- /.container --}}
+	</section>
+
+	<section class="section section--cloud-architecture">
+		<div class="container">
+			<p class="section__heading">Advanced architecture that brings a new level of security.</p>
+
+			<div class="featurePreviewContainer">
+				<div class="featurePreview featurePreview--dashboard">
+				</div>
+			</div>
+
+			<ul class="nav nav-tabs" id="xcloudFeaturesTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="folders-tab" data-toggle="tab" href="#folders" role="tab" aria-controls="folders" aria-selected="false">Folders</a>
+				</li>
+			</ul>
+
+			<div class="tab-content" id="xcloudFeaturesTabContent">
+				<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab"><em>A more limitless workflow.</em> To make using your cloud easier your file options are spread across the dashboard so you can get where you want to be without having to click multiple times.</div>
+				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">We wanted to create a dynamic interface that's tailored to the user. Folders can be customised in various colours. Maybe you prefer a Health folder green or a Movie folder purple, to increase visibility, to suit the contents theme or to just simply look more appealing. You can also add a variety of different icons on the cover of any folder. Maybe you want to add a Dollar icon to a salary folder or an image icon to your holiday folder.</div>
+			</div>
+
+		</div>{{-- /.container --}}
+	</section>
+
+	<section class="section section--cloud-share">
+		<div class="container">
+			<img class="section__icon" src="/img/icons/xcloud/share.svg">
+			<p class="section__heading">Share files however you want. <span class="linebreak d-none d-lg-block"></span>With whoever you want.</p>
+			<p class="section__content">Files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. Your personal data is apart of the distributed X Core network and no longer sitting in one central location. </p>
+		</div>{{-- /.container --}}
+		<img class="section__image img-fluid" src="/img/mockups/xcloud/share_laptop.png">
 	</section>
 
 	<section class="section section--cloud-partners">
@@ -95,34 +160,6 @@
 			</div>{{-- /.col-lg-6 --}}
 
 		</div>{{-- /.row --}}
-	</section>
-
-	<section class="section section--cloud-architecture">
-		<div class="container">
-			<p class="section__heading">Advanced architecture that brings a new level of security.</p>
-
-			<div class="row">
-				<div class="featurePreviewContainer">
-					<div class="featurePreview featurePreview--dashboard">
-					</div>
-				</div>
-			</div>
-
-			<ul class="nav nav-tabs" id="xcloudFeaturesTab" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="folders-tab" data-toggle="tab" href="#folders" role="tab" aria-controls="folders" aria-selected="false">Folders</a>
-				</li>
-			</ul>
-
-			<div class="tab-content" id="xcloudFeaturesTabContent">
-				<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">The dashboard is your X Cloud homescreen. All your options such as, search, upload, new folder, download, delete, and file sharing are spread across the top of your home screen to allow for a more limitless workflow and to make using your cloud easier, without having to click multiple times to get to where you want to be. So you can focus on the things that matter.</div>
-				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">We wanted to create a dynamic interface that's tailored to the user. Folders can be customised in various colours. Maybe you prefer a Health folder green or a Movie folder purple, to increase visibility, to suit the contents theme or to just simply look more appealing. You can also add a variety of different icons on the cover of any folder. Maybe you want to add a Dollar icon to a salary folder or an image icon to your holiday folder.</div>
-			</div>
-
-		</div>{{-- /.container --}}
 	</section>
 
 	<section class="section section--cloud-share">
