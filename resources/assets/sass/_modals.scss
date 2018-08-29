@@ -1,7 +1,18 @@
 .modal {
 
 	&-header {
+
 		border-bottom: 0;
+		padding-left: 23px;
+
+		.close {
+			color: white;
+			height: 34px;
+			margin-top: 0;
+			padding: 0;
+			width: 34px;
+		}
+
 	}
 
 	&-lg {

@@ -11279,6 +11279,15 @@ a.text-dark:focus {
 
 .modal-header {
   border-bottom: 0;
+  padding-left: 23px;
+}
+
+.modal-header .close {
+  color: white;
+  height: 34px;
+  margin-top: 0;
+  padding: 0;
+  width: 34px;
 }
 
 @media (min-width: 1440px) {

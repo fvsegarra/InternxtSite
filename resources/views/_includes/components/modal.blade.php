@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close float-left ml-0" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <img class="img-fluid" src="/img/icons/modal_close.svg">
                 </button>
             </div>
             <div class="modal-body">
