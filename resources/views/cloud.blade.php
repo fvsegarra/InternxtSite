@@ -200,32 +200,50 @@
 			<p class="section__subheading">When signing up to X Cloud, users will receive a free 10GB storage space so everyone can experience X Cloud without entering any payment details. If you enjoy the service you can upgrade to our 100GB plan for $1.49 or alternatively upgrade to 1TB for $4.99.</p>
 			<div class="section__content">
 
-				<div class="plan row align-items-center">
-					<div class="col-4">
-						<p class="plan__quantity">10GB</p>
-					</div>
-					<div class="col">
-						<p class="plan__price">Free</p>
-					</div>
-				</div>{{-- /.plan --}}
+				<div class="row">
 
-				<div class="plan row align-items-center">
-					<div class="col-4">
-						<p class="plan__quantity">100GB</p>
-					</div>
-					<div class="col">
-						<p class="plan__price">$1.49</p>
-					</div>
-				</div>{{-- /.plan --}}
+					<div class="col-sm-8 d-none d-lg-block">
+						<img class="img-fluid" src="/img/mockups/xcloud/storage.png" alt="Storage options">
+					</div>{{-- /.col-sm-8 --}}
 
-				<div class="plan row align-items-center">
-					<div class="col-4">
-						<p class="plan__quantity">1TB</p>
-					</div>
-					<div class="col">
-						<p class="plan__price">$4.99</p>
-					</div>
-				</div>{{-- /.plan --}}
+					<div class="col-sm-4">
+
+						<div class="subsection subsection--pricing d-none d-lg-block">
+							<p class="subsection__label">Pricing</p>
+							<p class="subsection__heading">X Cloud storage plans.</p>
+							<p class="subsection__subheading">No contract. Cancel anytime.</p>
+						</div>{{-- /.d-none --}}
+
+						<div class="plan row align-items-center">
+							<div class="col-4">
+								<p class="plan__quantity">10GB</p>
+							</div>
+							<div class="col">
+								<p class="plan__price">Free</p>
+							</div>
+						</div>{{-- /.plan --}}
+
+						<div class="plan row align-items-center">
+							<div class="col-4">
+								<p class="plan__quantity">100GB</p>
+							</div>
+							<div class="col">
+								<p class="plan__price">$1.49</p>
+							</div>
+						</div>{{-- /.plan --}}
+
+						<div class="plan row align-items-center">
+							<div class="col-4">
+								<p class="plan__quantity">1TB</p>
+							</div>
+							<div class="col">
+								<p class="plan__price">$4.99</p>
+							</div>
+						</div>{{-- /.plan --}}
+
+					</div>{{-- /.col-sm-4 --}}
+
+				</div>{{-- /.row --}}
 
 			</div>{{-- /.section__content --}}
 		</div>{{-- /.container --}}
