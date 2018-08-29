@@ -10588,6 +10588,10 @@ a.text-dark:focus {
   }
 }
 
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
 .navbar .navbar-toggler {
   border: none;
 }

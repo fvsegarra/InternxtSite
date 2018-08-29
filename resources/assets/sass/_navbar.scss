@@ -35,6 +35,11 @@
 
 	}
 
+	// Hide arrow on dropdown links
+	.dropdown-toggle::after {
+		display: none;
+	}
+
 	.navbar-toggler{
 
 		border: none;
