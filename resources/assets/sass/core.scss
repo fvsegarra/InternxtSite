@@ -229,6 +229,7 @@
 
             @include whenLargerThan('large-screen') {
                 background-image: linear-gradient(to bottom, #fafafa, #ffffff);
+                padding-top: 153px;
             }
 
             .section__heading {
@@ -250,6 +251,37 @@
                     letter-spacing: -0.4px;
                     line-height: 1.48;
                     max-width: 584px;
+                }
+
+            }
+
+            .featurePreviewContainer {
+
+                @include whenLargerThan('large-screen') {
+                    background-image: url("/img/mockups/xcore/macbook.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 705px;
+                    margin: 120px auto 42px;
+                    position: relative; // Preview is abs
+                    width: 1200px;
+                }
+
+                .featurePreview {
+
+                    background-image: url("/img/mockups/xcore/dashboard.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 607px;
+                    left: 127px;
+                    position: absolute;
+                    top: 32px;
+                    width: 968px;
+
+                    &--settings {
+                        background-image: url("/img/mockups/xcore/settings.png");
+                    }
+
                 }
 
             }

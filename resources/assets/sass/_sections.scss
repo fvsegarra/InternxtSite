@@ -225,6 +225,10 @@
 
         margin-top: 120px;
 
+        @include whenLargerThan('large-screen') {
+            margin-bottom: 163px;
+        }
+
         .container {
             // padding: 51px;
 
@@ -257,6 +261,8 @@
                 font-weight: 600;
                 letter-spacing: -0.6px;
                 line-height: 1.86;
+                margin-bottom: 0;
+                margin-top: 0;
                 width: 318px;
             }
 
@@ -429,6 +435,8 @@
 
 	.section__cta {
 		background-image: url('/img/icons/chevron-right-xcloud.svg');
+        border-color: #99e7ff;
+        color: #99e7ff;
 	}
 
 }
