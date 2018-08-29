@@ -11296,11 +11296,10 @@ a.text-dark:focus {
   }
 }
 
-.modal-header {
-  padding-bottom: 35px;
-  padding-top: 22px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+@media (min-width: 1440px) {
+  .modal-dialog {
+    margin-top: 148px;
+  }
 }
 
 .modal-content {
@@ -11308,6 +11307,13 @@ a.text-dark:focus {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 7px;
+}
+
+.modal-header {
+  padding-bottom: 35px;
+  padding-top: 22px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .modal-body {
@@ -11341,8 +11347,11 @@ a.text-dark:focus {
   margin-top: 90px;
 }
 
-.modal__cta {
+.modal a.modal__cta {
   background-color: black;
+  background-position: 206px center;
+  background-repeat: no-repeat;
+  background-size: 17px;
   border-radius: 27.1px;
   color: white;
   font-size: 16px;
@@ -11354,7 +11363,19 @@ a.text-dark:focus {
   padding: 10px 44px 11px 24px;
 }
 
-.modal__cta--browser {
+.modal a.modal__cta--windows {
+  background-image: url("/img/icons/os/windows.svg");
+}
+
+.modal a.modal__cta--linux {
+  background-image: url("/img/icons/os/linux.svg");
+}
+
+.modal a.modal__cta--os_x {
+  background-image: url("/img/icons/os/osx.svg");
+}
+
+.modal a.modal__cta--browser {
   background-color: #e1e2e6;
   color: black;
 }

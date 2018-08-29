@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Jenssegers\Agent\Agent;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+        $agent = new Agent();
+        $platform = $agent->platform();
+
+        View::share(compact('platform'));
+
     }
 
     /**

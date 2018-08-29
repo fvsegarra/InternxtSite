@@ -33,7 +33,7 @@
             @slot('heading', 'Experience a more secure cloud')
             @slot('subheading', 'Get X Cloud beta today with 10GB free.')
             @slot('content')
-                <a class="modal__cta" href="#">Download for Mac</a>
+                <a class="modal__cta modal__cta--{{ str_slug($platform) }}" href="#">Download for {{ $platform }}</a>
                 <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
             @endslot
         @endcomponent
@@ -44,7 +44,7 @@
             @slot('heading', 'Experience a more secure cloud')
             @slot('subheading', 'Get X Core beta today.')
             @slot('content')
-                <a class="modal__cta" href="#">Download for Mac</a>
+                <a class="modal__cta modal__cta--{{ str_slug($platform) }}" href="#">Download for {{ $platform }}</a>
                 <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
             @endslot
         @endcomponent
