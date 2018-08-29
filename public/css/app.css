@@ -10624,7 +10624,6 @@ a.text-dark:focus {
 }
 
 .navbar .navbar-nav a.nav-link {
-  color: black !important;
   font-size: 16px;
   font-weight: 600;
   -webkit-transition: color 0.3s;
@@ -10701,7 +10700,7 @@ a.text-dark:focus {
 }
 
 .navbar.navbar-xcloud .navbar-nav a.nav-link {
-  color: #1F2831;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -11698,6 +11697,10 @@ hr {
   #page-home .section--preview-xcore .section__content {
     background-image: url("/img/mockups/xcore/bg_home.png");
   }
+}
+
+#page-cloud .navbar .navbar-nav a.nav-link {
+  color: white;
 }
 
 #page-cloud .navbar .navbar-nav a.nav-link--xcloud {

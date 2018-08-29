@@ -1,9 +1,19 @@
 #page-cloud{
 
-    .navbar .navbar-nav a.nav-link--xcloud {
-        background-color: transparent;
-        border: solid 1px white;
-        box-shadow: none;
+    .navbar .navbar-nav {
+
+        a.nav-link{
+
+            color: white;
+
+            &--xcloud {
+                background-color: transparent;
+                border: solid 1px white;
+                box-shadow: none;
+            }
+
+        }
+
     }
 
     .container{
