@@ -261,22 +261,24 @@
                     background-image: url("/img/mockups/xcore/macbook.png");
                     background-repeat: no-repeat;
                     background-size: cover;
-                    height: 705px;
+                    height: 735px;
                     margin: 120px auto 42px;
-                    position: relative; // Preview is abs
-                    width: 1200px;
+                    position: relative; // .featurePreview is abs
+                    width: 1251px;
                 }
 
                 .featurePreview {
 
-                    background-image: url("/img/mockups/xcore/dashboard.png");
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    height: 607px;
-                    left: 127px;
-                    position: absolute;
-                    top: 32px;
-                    width: 968px;
+                    @include whenLargerThan('large-screen') {
+                        background-image: url("/img/mockups/xcore/dashboard.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 607px;
+                        left: 141px;
+                        position: absolute;
+                        top: 43px;
+                        width: 968px;
+                    }
 
                     &--settings {
                         background-image: url("/img/mockups/xcore/settings.png");

@@ -12543,22 +12543,24 @@ hr {
     background-image: url("/img/mockups/xcore/macbook.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 705px;
+    height: 735px;
     margin: 120px auto 42px;
     position: relative;
-    width: 1200px;
+    width: 1251px;
   }
 }
 
-#page-core .section--core-design .featurePreviewContainer .featurePreview {
-  background-image: url("/img/mockups/xcore/dashboard.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 607px;
-  left: 127px;
-  position: absolute;
-  top: 32px;
-  width: 968px;
+@media (min-width: 1440px) {
+  #page-core .section--core-design .featurePreviewContainer .featurePreview {
+    background-image: url("/img/mockups/xcore/dashboard.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 607px;
+    left: 141px;
+    position: absolute;
+    top: 43px;
+    width: 968px;
+  }
 }
 
 #page-core .section--core-design .featurePreviewContainer .featurePreview--settings {
