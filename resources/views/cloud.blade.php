@@ -251,19 +251,15 @@
 
 	<section class="section section--beta section--beta-cloud">
 		<div class="container">
-			<div class="section__outline">
+			<div class="section__outline d-lg-flex align-items-center justify-content-between">
 				<p class="section__heading">Jump into the X Cloud Beta today.</p>
-				<div class="section__content">
-					<button class="section__cta btn btn-primary" type="button" data-toggle="modal" data-target="#modalXCloud">
-						Get X Cloud Beta
-					</button>
-				</div>
+				<button class="section__cta btn btn-primary" type="button" data-toggle="modal" data-target="#modalXCloud">
+					Get X Cloud Beta
+				</button>
 			</div>{{-- /.section__outline --}}
 		</div>
 	</section>
 
-	<div class="container">
-		@include('_includes.previews.xcore')
-	</div>{{-- /.container --}}
+	@include('_includes.previews.xcore')
 
 @endsection

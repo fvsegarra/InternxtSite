@@ -898,6 +898,28 @@
 
         }
 
+        &--beta-cloud {
+
+            @include whenLargerThan('large-screen') {
+
+                .container {
+                    max-width: 850px;
+                    margin: 0 auto;
+                }
+
+                .section__outline {
+                    padding: 41px 44px 45px 69px;
+                }
+
+                .section__cta {
+                    margin-top: 0;
+                    margin-left: 1px;
+                }
+
+            }
+
+        }
+
     }
 
     .plan{

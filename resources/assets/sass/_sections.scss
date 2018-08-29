@@ -290,7 +290,6 @@
 
         }
 
-
     }
 
 }
@@ -443,13 +442,17 @@
 
 .section--preview-xcore {
 
+    background-color: #fafafa;
+    padding-bottom: 127px;
+    padding-top: 132px;
+
 	.section__content {
 
 		background-image: radial-gradient(circle at 7% 50%, #110f2c, #19163f 48%, #2a256c);
 		box-shadow: 0 7px 14px 0 #e9e9f5;
 
         @include whenLargerThan('large-screen') {
-            background-image: url('/img/mockups/xcore/bg.png');
+            background-image: url('/img/mockups/xcore/bg_desktop.png');
             box-shadow: none;
         }
 	}
