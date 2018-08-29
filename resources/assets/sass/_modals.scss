@@ -31,11 +31,14 @@
 	}
 
 	&-content {
+		background-image: url("/img/mockups/xcloud/modal.png");
+		background-repeat: no-repeat;
+		background-size: cover;
 		border-radius: 7px;
 	}
 
 	&-body {
-		padding: 16px 55px 134px;
+		padding: 16px 55px 194px;
 	}
 
 	&__icon {
