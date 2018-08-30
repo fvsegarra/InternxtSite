@@ -37,6 +37,8 @@
                 url("/img/headers/xcloud_desktop.png"),
                 radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb)
             ;
+            background-position: 0px 14px;
+            background-size: 100%;
             height: 872px;
             padding-top: 115px;
         }
@@ -79,10 +81,8 @@
                 font-size: 78px;
                 letter-spacing: -2.5px;
                 line-height: 0.82;
-
-                &::first-letter {
-                    letter-spacing: -7.6px;
-                }
+                margin-top: 37px;
+                padding-left: 5px;
 
             }
 
@@ -101,7 +101,8 @@
                 font-size: 41px;
                 letter-spacing: -0.8px;
                 line-height: 0.9;
-                margin-top: 27px;
+                margin-top: 22px;
+                padding-left: 5px;
             }
 
         }
@@ -109,19 +110,23 @@
         &__cta {
 
             background-color: #00aaff;
+            background-image: url("/img/icons/cta-chevron-circle.png");
+            background-position: 120px center;
+            background-repeat: no-repeat;
+            background-size: 21px;
             border-radius: 31.4px;
             color: white;
             display: block;
             font-size: 18px;
             font-weight: 600;
-            height: 47px;
-            letter-spacing: -0.2px;
+            height: 45px;
+            letter-spacing: -0.6px;
             margin-top: 44px;
-            padding: 12px 46px 13px 23px;
-            width: 221.2px;
+            padding: 11px 22px 13px 23px;
+            width: 212px;
 
             @include whenLargerThan('large-screen') {
-                margin-top: 86px;
+                margin-top: 88px;
             }
 
         }
@@ -130,9 +135,9 @@
 
     }
 
-    .section{
+    .section {
 
-        .container{
+        .container {
 
             @include whenLargerThan('large-screen'){
                 max-width: 1024px;
