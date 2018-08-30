@@ -11704,7 +11704,8 @@ hr {
 @media (min-width: 1440px) {
   #page-cloud .pageHeader {
     background-image: url("/img/headers/xcloud_desktop.png"), radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
-    height: 860px;
+    height: 872px;
+    padding-top: 115px;
   }
 }
 
@@ -11767,6 +11768,7 @@ hr {
     font-size: 41px;
     letter-spacing: -0.8px;
     line-height: 0.9;
+    margin-top: 27px;
   }
 }
 
