@@ -11687,12 +11687,6 @@ hr {
           box-shadow: none;
 }
 
-@media (min-width: 1440px) {
-  #page-cloud .container {
-    max-width: 1024px;
-  }
-}
-
 #page-cloud .pageHeader {
   background-image: url("/img/headers/xcloud_mobile.png"), -webkit-gradient(linear, left top, left bottom, from(#2797d8), to(#2768bc));
   background-image: url("/img/headers/xcloud_mobile.png"), linear-gradient(to bottom, #2797d8, #2768bc);
@@ -11793,6 +11787,12 @@ hr {
 @media (min-width: 1440px) {
   #page-cloud .pageHeader__cta {
     margin-top: 86px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-cloud .section .container {
+    max-width: 1024px;
   }
 }
 

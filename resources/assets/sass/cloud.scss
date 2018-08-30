@@ -16,14 +16,6 @@
 
     }
 
-    .container{
-
-        @include whenLargerThan('large-screen'){
-            max-width: 1024px;
-        }
-
-    }
-
     .pageHeader{
 
         background-image:
@@ -138,6 +130,14 @@
     }
 
     .section{
+
+        .container{
+
+            @include whenLargerThan('large-screen'){
+                max-width: 1024px;
+            }
+
+        }
 
         &--cloud-intro {
 
