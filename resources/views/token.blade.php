@@ -60,14 +60,14 @@
 			<div class="section__content">
 
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg">
 
 						<p class="section__heading">Designed to <span class="linebreak"></span>function as an economy with reliable demand.</p>
 						<p>Internxt's token INXT is used as a means of payment to Hosts who participate in our X Core network.</p>
 						<p>There are 629,000 INXT available. This is the maximum supply as no more INXT will be generated.</p>
 
-					</div>{{-- /.col-lg-6 --}}
-					<div class="col-lg-6">
+					</div>{{-- /.col-lg --}}
+					<div class="col-lg">
 
 						<div class="subsection subsection--demand">
 							<div class="row">
@@ -210,16 +210,16 @@
             if (data[0].id === "internxt") {
 
                 x = parseFloat(data[0].price_usd);
-                h = Math.round(x*100.0)/100.0;
-                $("#usd_price").html(h);
+                usd_price = Math.round(x*100.0)/100.0;
                 s = parseFloat(data[0].market_cap_usd);
                 y = s/1000000;
-                m = Math.round(y*10.0)/10.0;
+                market_cap = Math.round(y*10.0)/10.0;
 
                 change24h = data[0].percent_change_24h;
                 change7d = data[0].percent_change_7d;
 
-                $("#market_cap").html(m);
+                $("#usd_price").html(usd_price);
+                $("#market_cap").html(market_cap);
                 $("#change_24h").html(change24h);
                 $("#change_7d").html(change7d);
 
@@ -230,11 +230,11 @@
                 $("#change_7d").removeClass(positiveClass);
 
                 if (change24h > 0) {
-                    $("#change_24h").addClass(positiveClass);
+                    $("#change_24h").prepend('+').parent().addClass(positiveClass);
                 }
 
                 if (change7d > 0) {
-                    $("#change_7d").addClass(positiveClass);
+                    $("#change_24h").prepend('+').parent().addClass(positiveClass);
                 }
 
             }

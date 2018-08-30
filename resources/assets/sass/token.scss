@@ -91,10 +91,16 @@
                 }
 
                 &__point {
+
                     font-size: 56.9px;
                     font-weight: 600;
                     letter-spacing: -2.7px;
                     margin-bottom: 0;
+
+                    &--positive{
+                        color: #15d157;
+                    }
+
                 }
 
             }
@@ -105,7 +111,7 @@
             padding-top: 45px;
 
             @include whenLargerThan('large-screen') {
-                padding-top: 115px;
+                padding-top: 100px;
             }
 
             & > .container {
@@ -153,9 +159,25 @@
 
             }
 
+            .col-lg {
+
+                @include whenLargerThan('large-screen') {
+
+                    &:first-of-type {
+                        max-width: 488px;
+                    }
+
+                }
+
+            }
+
             .subsection {
 
                 margin-top: 74px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 50px;
+                }
 
                 &__iconContainer {
                     align-items: center;
@@ -172,12 +194,18 @@
                 }
 
                 &__heading {
+
                     color: black;
                     font-size: 33px;
                     font-weight: bold;
                     letter-spacing: -0.6px;
                     line-height: 1.18;
                     margin-top: 21px;
+
+                    @include whenLargerThan('large-screen') {
+                        margin-top: 0;
+                    }
+
                 }
 
                 &__content {
@@ -191,6 +219,8 @@
                         font-size: 18px;
                         letter-spacing: -0.2px;
                         line-height: 1.61;
+                        margin-top: 10px;
+                        max-width: 318px;
                     }
 
                 }
