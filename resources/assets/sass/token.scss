@@ -14,7 +14,14 @@
         top: -87px;
         z-index: 1;
 
+        @include whenLargerThan('large-screen') {
+            background-image: url('/img/headers/inxt_desktop.png');
+            height: 859px;
+            padding-top: 300px;
+        }
+
         &__heading {
+
             color: #272727;
             font-size: 21px;
             font-weight: 500;
@@ -22,14 +29,28 @@
             line-height: 2.48;
             margin-bottom: 0;
             text-transform: uppercase;
+
+            @include whenLargerThan('large-screen') {;
+                font-size: 24px;
+                line-height: 2.17;
+            }
+
         }
 
         &__subheading {
+
             font-size: 32px;
             font-weight: 600;
             letter-spacing: -0.6px;
             line-height: 1.19;
             margin-top: 3px;
+
+            @include whenLargerThan('large-screen') {;;
+                font-size: 50px;
+                letter-spacing: -0.9px;
+                line-height: 0.98;
+            }
+
         }
 
         &__cta {
@@ -58,13 +79,35 @@
 
             padding-top: 45px;
 
+            @include whenLargerThan('large-screen') {
+                padding-top: 115px;
+            }
+
+            & > .container {
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1024px;
+                }
+
+            }
+
             .section__heading {
+
                 color: black;
                 font-size: 33px;
                 font-weight: bold;
                 letter-spacing: -0.6px;
                 line-height: 1.18;
                 margin-bottom: 0;
+
+                @include whenLargerThan('large-screen') {
+                    // width: 488px;
+                    font-size: 40px;
+                    letter-spacing: -1.1px;
+                    line-height: 0.98;
+                    margin-top: 0;
+                }
+
             }
 
             .section__content {
@@ -77,6 +120,10 @@
 
                 p:first-of-type {
                     margin-bottom: 31px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    //
                 }
 
             }
@@ -109,14 +156,28 @@
                 }
 
                 &__content {
+
                     font-size: 20px;
                     letter-spacing: -0.1px;
                     line-height: 1.55;
                     margin-top: 30px;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 18px;
+                        letter-spacing: -0.2px;
+                        line-height: 1.61;
+                    }
+
                 }
 
                 &--demand {
+
                     margin-top: 102px;
+
+                    @include whenLargerThan('large-screen') {
+                        margin-top: 0;
+                    }
+
                 }
 
             }
@@ -129,18 +190,74 @@
             margin-top: 140px;
             padding-top: 103px;
 
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 148px;
+                padding-top: 118px;
+                text-align: center;
+            }
+
             .section__heading {
+
                 font-size: 33px;
                 font-weight: bold;
                 letter-spacing: -0.6px;
                 line-height: 1.18;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    letter-spacing: -1.1px;
+                    line-height: 0.98;
+                }
+
             }
 
             .section__content {
+
                 color: #838387;
                 font-size: 20px;
                 letter-spacing: -0.1px;
                 line-height: 1.55;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    margin: 0 auto;
+                    max-width: 628px;
+                    text-align: center;
+                }
+
+            }
+
+            .section__footer {
+
+                @include whenLargerThan('large-screen') {
+                    margin: 94px auto 0;
+                    max-width: 958px;
+                }
+
+            }
+
+            .section__imageContainer {
+
+                background-color: #4585f5;
+                border-radius: 29.2px;
+                box-shadow: 0 2px 3px 0 #bfc5d9;
+
+                @include whenLargerThan('large-screen') {
+                    padding: 10px 24px 10px;
+                    // height: 58.2px;
+                    // width: 219.7px;
+                }
+
+            }
+
+            .section__image {
+
+                @include whenLargerThan('large-screen') {
+                    height: 24px;
+                }
+
             }
 
         }

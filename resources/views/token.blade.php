@@ -23,39 +23,53 @@
 
 	<section class="section section--inxt-intro">
 		<div class="container">
-			<p class="section__heading">Designed to <span class="linebreak"></span>function as an economy with reliable demand.</p>
 			<div class="section__content">
 
 				<div class="row">
-					<div class="col-lg">
+					<div class="col-lg-6">
 
+						<p class="section__heading">Designed to <span class="linebreak"></span>function as an economy with reliable demand.</p>
 						<p>Internxt's token INXT is used as a means of payment to Hosts who participate in our X Core network.</p>
 						<p>There are 629,000 INXT available. This is the maximum supply as no more INXT will be generated.</p>
 
-					</div>{{-- /.col-lg --}}
-					<div class="col-lg">
+					</div>{{-- /.col-lg-6 --}}
+					<div class="col-lg-6">
 
 						<div class="subsection subsection--demand">
+							<div class="row">
 
-							<div class="subsection__iconContainer">
-								<img class="subsection__icon" src="/img/icons/inxt-demand.svg" height="57">
-							</div>
+								<div class="col-lg-2">
+									<div class="subsection__iconContainer">
+										<img class="subsection__icon" src="/img/icons/inxt-demand.svg" height="57">
+									</div>
+								</div>{{-- /.col-lg --}}
 
-							<p class="subsection__heading">Token demand</p>
-							<p class="subsection__content">All revenue generated from our services will be directly converted into INXT. If a customer decides to pay for our services in fiat, the fiat is used to automatically purchase INXT at market price and is then sent to Hosts.</p>
+								<div class="col-lg-10">
+									<p class="subsection__heading">Token demand</p>
+									<p class="subsection__content">All revenue generated from our services will be directly converted into INXT. If a customer decides to pay for our services in fiat, the fiat is used to automatically purchase INXT at market price and is then sent to Hosts.</p>
+								</div>{{-- /.col-lg --}}
+
+							</div>{{-- /.row --}}
 						</div>{{-- /.subsection-demand --}}
 
 						<div class="subsection subsection--growth">
+							<div class="row">
 
-							<div class="subsection__iconContainer">
-								<img class="subsection__icon" src="/img/icons/inxt-growth.svg" height="57">
-							</div>
+								<div class="col-lg-2">
+									<div class="subsection__iconContainer">
+										<img class="subsection__icon" src="/img/icons/inxt-growth.svg" height="57">
+									</div>
+								</div>{{-- /.col-lg --}}
 
-							<p class="subsection__heading">Reliable growth</p>
-							<p class="subsection__content">Directly or indirectly, customers will require INXT to purchase Internxt's services. This organic demand ensures a strong and reliable market growth.</p>
+								<div class="col-lg-10">
+									<p class="subsection__heading">Reliable growth</p>
+									<p class="subsection__content">Directly or indirectly, customers will require INXT to purchase Internxt's services. This organic demand ensures a strong and reliable market growth.</p>
+								</div>{{-- /.col-lg --}}
+
+							</div>{{-- /.row --}}
 						</div>{{-- /.subsecion-growth --}}
 
-					</div>{{-- /.col-lg --}}
+					</div>{{-- /.col-lg-6 --}}
 				</div>{{-- /.row --}}
 
 			</div>
@@ -68,6 +82,33 @@
 			<div class="section__content">
 				<p>You can buy INXT at exchanges, such as CoinExchange, Yobit, IDEX, Etherdelta and Mercatox or you can buy directly from our website.</p>
 			</div>
+			<div class="section__footer row">
+
+				<div class="col-lg">
+					<div class="section__imageContainer">
+						<img class="section__image img-fluid" src="/img/logos/exchanges/coin_exchange.png">
+					</div>
+				</div>{{-- /.col-lg --}}
+
+				<div class="col-lg">
+					<div class="section__imageContainer">
+						<img class="section__image img-fluid" src="/img/logos/exchanges/idex.png">
+					</div>
+				</div>{{-- /.col-lg --}}
+
+				<div class="col-lg">
+					<div class="section__imageContainer">
+						<img class="section__image img-fluid" src="/img/logos/exchanges/yobit.png">
+					</div>
+				</div>{{-- /.col-lg --}}
+
+				<div class="col-lg">
+					<div class="section__imageContainer">
+						<img class="section__image img-fluid" src="/img/logos/exchanges/mercatox.png">
+					</div>
+				</div>{{-- /.col-lg --}}
+
+			</div>{{-- /.row --}}
 		</div>
 	</section>{{-- /.inxt-intro --}}
 
