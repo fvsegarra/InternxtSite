@@ -20,6 +20,40 @@
 		</div>
 	</header>
 
+	<section class="section section--inxt-data d-none d-lg-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="inxtDatum">
+						<p class="inxtDatum__label">Price Per INXT</p>
+						<p class="inxtDatum__point">$<span id="usd_price">5.96</span></p>
+					</div>{{-- /.inxtDatum --}}
+				</div>{{-- /.col-3 --}}
+
+				<div class="col-3">
+					<div class="inxtDatum">
+						<p class="inxtDatum__label">Change / 24 Hours</p>
+						<p class="inxtDatum__point"><span id="change_24h">26.09</span>%</p>
+					</div>{{-- /.inxtDatum --}}
+				</div>{{-- /.col-3 --}}
+
+				<div class="col-3">
+					<div class="inxtDatum">
+						<p class="inxtDatum__label">Change / 7 Days</p>
+						<p class="inxtDatum__point"><span id="change_7d">2.93</span>%</p>
+					</div>{{-- /.inxtDatum --}}
+				</div>{{-- /.col-3 --}}
+
+				<div class="col-3">
+					<div class="inxtDatum">
+						<p class="inxtDatum__label">Market Cap</p>
+						<p class="inxtDatum__point">$<span id="market_cap">5.2</span><span class="inxtDatum__measure">M</span></p>
+					</div>{{-- /.inxtDatum --}}
+				</div>{{-- /.col-3 --}}
+
+			</div>{{-- /.row --}}
+		</div>
+	</section>
 
 	<section class="section section--inxt-intro">
 		<div class="container">
@@ -171,7 +205,7 @@
 
 	</script>
 
-	 <script>
+	<script>
         $.get("https://api.coinmarketcap.com/v1/ticker/internxt/", function(data, status) {
             if (data[0].id === "internxt") {
 
@@ -188,11 +222,9 @@
                 $("#market_cap").html(m);
                 $("#change_24h").html(change24h);
                 $("#change_7d").html(change7d);
-                $("#total_supply").html(data[0].total_supply);
-                $("#max_supply").html(data[0].max_supply);
 
                 // If positive, add green class
-                positiveClass = 'inxtDatum__point--green';
+                positiveClass = 'inxtDatum__point--positive';
 
                 $("#change_24h").removeClass(positiveClass);
                 $("#change_7d").removeClass(positiveClass);

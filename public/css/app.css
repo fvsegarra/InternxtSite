@@ -13026,6 +13026,28 @@ hr {
   width: 257.2px;
 }
 
+#page-token .section--inxt-data {
+  background-color: #fafafa;
+  padding: 32px 0 24px;
+}
+
+#page-token .section--inxt-data .inxtDatum {
+  text-align: center;
+}
+
+#page-token .section--inxt-data .inxtDatum__label {
+  color: #666666;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+#page-token .section--inxt-data .inxtDatum__point {
+  font-size: 56.9px;
+  font-weight: 600;
+  letter-spacing: -2.7px;
+  margin-bottom: 0;
+}
+
 #page-token .section--inxt-intro {
   padding-top: 45px;
 }
