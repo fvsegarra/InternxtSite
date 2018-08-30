@@ -21,7 +21,7 @@
 	</header>
 
 	<section class="section section--inxt-data d-none d-lg-block">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-3">
 					<div class="inxtDatum">
@@ -52,7 +52,7 @@
 				</div>{{-- /.col-3 --}}
 
 			</div>{{-- /.row --}}
-		</div>
+		</div>{{-- /.container-fluid --}}
 	</section>
 
 	<section class="section section--inxt-intro">
@@ -60,14 +60,14 @@
 			<div class="section__content">
 
 				<div class="row">
-					<div class="col-lg">
+					<div class="col-lg-6">
 
 						<p class="section__heading">Designed to <span class="linebreak"></span>function as an economy with reliable demand.</p>
 						<p>Internxt's token INXT is used as a means of payment to Hosts who participate in our X Core network.</p>
 						<p>There are 629,000 INXT available. This is the maximum supply as no more INXT will be generated.</p>
 
-					</div>{{-- /.col-lg --}}
-					<div class="col-lg">
+					</div>{{-- /.col-lg-6 --}}
+					<div class="col-lg-5">
 
 						<div class="subsection subsection--demand">
 							<div class="row">
@@ -103,7 +103,7 @@
 							</div>{{-- /.row --}}
 						</div>{{-- /.subsecion-growth --}}
 
-					</div>{{-- /.col-lg-6 --}}
+					</div>{{-- /.col-lg-5 --}}
 				</div>{{-- /.row --}}
 
 			</div>
@@ -146,16 +146,30 @@
 		</div>
 	</section>{{-- /.inxt-intro --}}
 
-	<hr>
-
 	<section class="section section--inxt-buy">
 		<div class="container">
-			<p class="section__heading">Buy INXT.</p>
+			<p class="section__heading">Buy directly from us.</p>
 			<div class="section__content">
-				{{-- <p class="section__instruction">Select payment method</p>
-				<a class="btn btn-default"><img src="/img/logos/bitcoin.png" height="62"></a>
-				<a class="btn btn-default"><img src="/img/logos/litecoin.png" height="62"></a>
-				<a class="btn btn-default"><img src="/img/logos/ethereum.png" height="62"></a> --}}
+
+				<p>You can buy INXT directly from our website. Our system tracks down and offers the best exchange rates available on the market. Follow the steps below to buy your INXT without the hassle of an exchange.</p>
+
+				<p class="section__instruction">Select payment method</p>
+
+				<div class="paymentMethods row">
+
+					<div class="col-4">
+						<a class="btn btn-default"><img src="/img/logos/bitcoin.png" height="62"></a>
+					</div>{{-- /.col-4 --}}
+
+					<div class="col-4">
+						<a class="btn btn-default"><img src="/img/logos/litecoin.png" height="62"></a>
+					</div>{{-- /.col-4 --}}
+
+					<div class="col-4">
+						<a class="btn btn-default"><img src="/img/logos/ethereum.png" height="62"></a>
+					</div>{{-- /.col-4 --}}
+
+				</div>{{-- /.paymentMethods --}}
 
 				<div id='cryptoWolfContainer'></div>
 

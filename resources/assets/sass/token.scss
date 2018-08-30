@@ -1,5 +1,11 @@
 #page-token{
 
+    .navbar .navbar-nav a.nav-link--xcloud {
+        background-color: transparent;
+        border: solid 1px white;
+        box-shadow: none;
+    }
+
     .pageHeader {
 
         background-image: url('/img/headers/inxt_mobile.png');
@@ -16,8 +22,8 @@
 
         @include whenLargerThan('large-screen') {
             background-image: url('/img/headers/inxt_desktop.png');
-            height: 859px;
-            padding-top: 300px;
+            height: 870px;
+            padding-top: 320px;
         }
 
         &__heading {
@@ -49,11 +55,13 @@
                 font-size: 50px;
                 letter-spacing: -0.9px;
                 line-height: 0.98;
+                margin-top: 8px;
             }
 
         }
 
         &__cta {
+
             background-color: #000000;
             background-image: url("/img/icons/chevron-right-circle.svg");
             background-repeat: no-repeat;
@@ -69,6 +77,11 @@
             margin: 41px auto 0;
             padding: 11px 34px 13px 12px;
             width: 257.2px;
+
+            @include whenLargerThan('large-screen') {
+                margin-top: 50px;
+            }
+
         }
 
     }
@@ -87,7 +100,7 @@
                 &__label{
                     color: #666666;
                     font-size: 15px;
-                    margin-bottom: 2px;
+                    margin-bottom: 0;
                 }
 
                 &__point {
@@ -95,6 +108,7 @@
                     font-size: 56.9px;
                     font-weight: 600;
                     letter-spacing: -2.7px;
+                    line-height: 1.3;
                     margin-bottom: 0;
 
                     &--positive{
@@ -111,13 +125,13 @@
             padding-top: 45px;
 
             @include whenLargerThan('large-screen') {
-                padding-top: 100px;
+                padding-top: 108px;
             }
 
             & > .container {
 
                 @include whenLargerThan('large-screen') {
-                    max-width: 1024px;
+                    max-width: 1182px;
                 }
 
             }
@@ -132,7 +146,6 @@
                 margin-bottom: 0;
 
                 @include whenLargerThan('large-screen') {
-                    // width: 488px;
                     font-size: 40px;
                     letter-spacing: -1.1px;
                     line-height: 0.98;
@@ -149,24 +162,37 @@
                 line-height: 1.55;
                 margin-top: 22px;
 
-                p:first-of-type {
-                    margin-bottom: 31px;
-                }
+                // TODO fix mobile
+                p:nth-child(2) {
 
-                @include whenLargerThan('large-screen') {
-                    //
+                    @include whenLargerThan('large-screen') {
+                        margin-bottom: 30px;
+                    }
+
                 }
 
             }
 
-            .col-lg {
+            .col-lg-6 {
 
                 @include whenLargerThan('large-screen') {
+                    max-width: 492px;
+                }
 
-                    &:first-of-type {
-                        max-width: 488px;
+                .section__heading {
+
+                    @include whenLargerThan('large-screen') {
+                        margin-bottom: 58px;
                     }
 
+                }
+
+            }
+
+            .col-lg-5 {
+
+                @include whenLargerThan('large-screen') {
+                    padding-left: 51px;
                 }
 
             }
@@ -176,10 +202,17 @@
                 margin-top: 74px;
 
                 @include whenLargerThan('large-screen') {
-                    margin-top: 50px;
+
+                    margin-top: 42px;
+
+                    .col-lg-2 {
+                        padding-left: 8px;
+                    }
+
                 }
 
                 &__iconContainer {
+
                     align-items: center;
                     background-color: #4585f5;
                     border-radius: 50%;
@@ -187,6 +220,12 @@
                     height: 57px;
                     justify-content: center;
                     width: 57px;
+
+                    @include whenLargerThan('large-screen') {
+                        height: 52px;
+                        width: 52px;
+                    }
+
                 }
 
                 &__icon {
@@ -203,6 +242,10 @@
                     margin-top: 21px;
 
                     @include whenLargerThan('large-screen') {
+                        font-size: 30px;
+                        letter-spacing: -0.2px;
+                        line-height: 1.27;
+                        margin-bottom: 0;
                         margin-top: 0;
                     }
 
@@ -244,10 +287,11 @@
             background-color: #fafafa;
             margin-top: 140px;
             padding-top: 103px;
+            padding-bottom: 120px;
 
             @include whenLargerThan('large-screen') {
                 padding-bottom: 148px;
-                padding-top: 118px;
+                padding-top: 88px;
                 text-align: center;
             }
 
@@ -262,6 +306,7 @@
                     font-size: 40px;
                     letter-spacing: -1.1px;
                     line-height: 0.98;
+                    margin-bottom: 0;
                 }
 
             }
@@ -277,7 +322,7 @@
                     font-size: 21px;
                     letter-spacing: -0.4px;
                     line-height: 1.48;
-                    margin: 0 auto;
+                    margin: 26px auto 0;
                     max-width: 628px;
                     text-align: center;
                 }
@@ -288,7 +333,7 @@
 
                 @include whenLargerThan('large-screen') {
                     margin: 94px auto 0;
-                    max-width: 958px;
+                    max-width: 992px;
                 }
 
             }
@@ -300,9 +345,7 @@
                 box-shadow: 0 2px 3px 0 #bfc5d9;
 
                 @include whenLargerThan('large-screen') {
-                    padding: 10px 24px 10px;
-                    // height: 58.2px;
-                    // width: 219.7px;
+                    padding: 13px 24px 20px;
                 }
 
             }
@@ -311,6 +354,99 @@
 
                 @include whenLargerThan('large-screen') {
                     height: 24px;
+                }
+
+            }
+
+        }
+
+        &--inxt-buy {
+
+            // No padding bottom as subscribe section has margin top
+            padding-top: 112px;
+
+            @include whenLargerThan('large-screen') {
+                text-align: center;
+            }
+
+            & > .container {
+
+                @include whenLargerThan('large-screen') {
+                    margin: 0 auto;
+                    max-width: 711px;
+                }
+
+            }
+
+            .section__heading {
+
+                font-size: 33px;
+                font-weight: bold;
+                letter-spacing: -0.6px;
+                line-height: 1.18;
+                margin-bottom: 0;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    letter-spacing: -1.1px;
+                    line-height: 0.98;
+                }
+
+            }
+
+            .section__content {
+
+                color: #838387;
+                font-size: 20px;
+                letter-spacing: -0.1px;
+                line-height: 1.55;
+                margin-top: 20px;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    margin-top: 24px;
+                }
+
+            }
+
+            .section__instruction {
+
+                color: black;
+                font-size: 25px;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+                line-height: 1.56;
+                margin-top: 70px;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 24px;
+                    letter-spacing: -0.1px;
+                    margin-top: 89px;
+                }
+
+            }
+
+            .paymentMethods {
+
+                margin-top: 42px;
+
+                @include whenLargerThan('large-screen') {
+                    margin: 42px auto 0;
+                    max-width: 333px;
+                }
+
+            }
+
+            .btn-default {
+
+                background-color: #f2f4f7;
+                border-radius: 9.1px;
+                padding: 12px 18px;
+
+                img {
+                    height: 52px;
                 }
 
             }
