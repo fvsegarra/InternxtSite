@@ -13363,6 +13363,7 @@ hr {
 }
 
 #page-token .section--inxt-buy .paymentMethods {
+  display: none;
   margin-top: 42px;
 }
 

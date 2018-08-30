@@ -430,6 +430,7 @@
 
             .paymentMethods {
 
+                display: none; // WIP
                 margin-top: 42px;
 
                 @include whenLargerThan('large-screen') {
