@@ -174,7 +174,7 @@
 			<div class="row">
 
 				<div class="col-lg-8 d-none d-lg-block">
-					<img class="section__image img-fluid" src="/img/mockups/xcloud/iPad.png">
+					<img class="section__image img-fluid" src="/img/mockups/xcloud/ipad.png">
 				</div>{{-- /.col-lg-8 --}}
 
 				<div class="col-lg-4">
