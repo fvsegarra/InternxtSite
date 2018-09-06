@@ -110,18 +110,18 @@
 				<div class="subsection__content">
 					<div class="row">
 
-						<div class="col-lg-6">
+						<div class="col-lg-5">
 							<img class="subsection__image--desktop d-none d-lg-block" src="/img/logos/blackberry.png" alt="Blackberry" height="65">
-						</div>{{-- /.col-lg-6 --}}
+						</div>{{-- /.col-lg-5 --}}
 
-						<div class="col-lg-6">
+						<div class="col-lg-7">
 
 							<p class="subsection__heading d-none d-lg-block">Empowering the era of secure technology.</p>
 							<p>BlackBerry provides security consulting services and solutions that can greatly improve our architecture. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
 
-							<a class="subsection__link" href="#">Learn more about the partnership</a>
+							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-xcloud.svg"></a>
 
-						</div>{{-- /.col-lg-6 --}}
+						</div>{{-- /.col-lg-7 --}}
 
 
 					</div>{{-- /.row --}}
@@ -143,15 +143,15 @@
 				<div class="subsection__content">
 					<div class="row">
 
-						<div class="col-lg-6">
+						<div class="col-lg-5">
 							<img class="subsection__image--desktop d-none d-lg-block" src="/img/logos/civic.png" alt="Civic" height="53">
-						</div>{{-- /.col-lg-6 --}}
+						</div>{{-- /.col-lg-5 --}}
 
-						<div class="col-lg-6">
+						<div class="col-lg-7">
 							<p class="subsection__heading d-none d-lg-block">Protecting your identity with Blockchain.</p>
 							<p>Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
-							<a class="subsection__link" href="#">Learn more about the partnership</a>
-						</div>{{-- /.col-lg-6 --}}
+							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-xcloud.svg"></a>
+						</div>{{-- /.col-lg-7 --}}
 
 					</div>{{-- /.row --}}
 				</div>{{-- /.subsection__content --}}
@@ -212,7 +212,7 @@
 							<p class="subsection__label">Pricing</p>
 							<p class="subsection__heading">X Cloud storage plans.</p>
 							<p class="subsection__subheading">No contract. Cancel anytime.</p>
-						</div>{{-- /.d-none --}}
+						</div>{{-- /.subsection--pricing --}}
 
 						<div class="plan row align-items-center">
 							<div class="col-4">

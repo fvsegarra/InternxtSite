@@ -28,7 +28,9 @@
     		height: 41px;
 
     		@include whenLargerThan('large-screen') {
-				margin-left: -3px;
+				height: 46px;
+				margin-left: -13px;
+				margin-top: -4px;
     		}
 
 		}
