@@ -243,6 +243,14 @@
                 $("#change_24h").removeClass(positiveClass);
                 $("#change_7d").removeClass(positiveClass);
 
+                if (change24h > 0) {
+                    $("#change_24h").parent().addClass(positiveClass);
+                }
+
+                if (change7d > 0) {
+                    $("#change_24h").parent().addClass(positiveClass);
+                }
+
             }
         }
         );
