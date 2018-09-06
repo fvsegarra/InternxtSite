@@ -244,11 +244,11 @@
                 $("#change_7d").removeClass(positiveClass);
 
                 if (change24h > 0) {
-                    $("#change_24h").parent().addClass(positiveClass);
+                    $("#change_24h").prepend('+').parent().addClass(positiveClass);
                 }
 
                 if (change7d > 0) {
-                    $("#change_24h").parent().addClass(positiveClass);
+                    $("#change_7d").prepend('+').parent().addClass(positiveClass);
                 }
 
             }
