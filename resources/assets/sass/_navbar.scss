@@ -37,9 +37,16 @@
 
 	}
 
-	// Hide arrow on dropdown links
-	.dropdown-toggle::after {
-		display: none;
+	.dropdown-toggle {
+
+		background-color: #f0f0f0;
+		border-radius: 4px;
+
+
+		&::after {
+			// Hide arrow on dropdown links
+			display: none;
+		}
 	}
 
 	.navbar-toggler{
@@ -77,6 +84,10 @@
 			position: relative;
 		}
 
+		li.nav-item {
+			padding: 0 7.5px;
+		}
+
 		a.nav-link{
 
 			font-size: 16px;
@@ -92,7 +103,7 @@
   				font-weight: 600;
 				color: #E8E9EB;
 				letter-spacing: 0;
-				padding: 12px 25px 8px;
+				padding: 7px 18px 7px 17px;
 	  		}
 
 	  		&:hover{
@@ -221,6 +232,114 @@
 		.navbar-expand-lg > .container-fluid {
 			flex-wrap: nowrap;
 		}
+
+	}
+
+
+
+	.dropdown-menu {
+
+		border: none;
+	    background-color: #ffffff;
+	    border-radius: 5px;
+	    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
+	    height: 259px;
+	    left: -151px;
+	    padding: 0;
+	    top: 45px;
+	    width: 421px;
+
+	    .dropdown-item {
+
+	    	padding: 43px 35.6px 41.9px 43px;
+	    	background-image: url();
+	    	background-repeat: no-repeat;
+	    	background-size: 16.2px 10.9px;
+
+	    	&__image {
+	    		height: 38px;
+	    		margin-right: 34.6px;
+	    	}
+
+			&__heading {
+
+				color: #262626;
+				font-size: 25px;
+				font-weight: 600;
+				letter-spacing: -1px;
+				line-height: 0.85;
+				margin-bottom: 0;
+
+				&::first-letter {
+					letter-spacing: -3px;
+				}
+
+			}
+
+			&__subheading {
+				color: #8e8e93;
+				font-size: 18px;
+				letter-spacing: -0.4px;
+				line-height: 0.62;
+				margin-bottom: 0;
+				margin-top: 13px;
+				opacity: 0.75;
+			}
+
+			&--xcloud {
+
+				.dropdown-item__image {
+					height: 26px;
+					margin-top: 2px;
+					width: 51px;
+				}
+
+			}
+
+			&--xcore {
+
+				.dropdown-item__image {
+  					height: 38px;
+  					margin: 2px 41px 0 5px;
+  					width: 38px;
+				}
+
+			}
+
+	    }
+
+	    hr {
+			background-color: #f2f2f2;
+			border-top: none;
+			height: 1px;
+			margin: 0 auto;
+			width: 350px;
+	    }
+
+	    &--company {
+
+	    	left: -141px;
+
+	    	.dropdown-item {
+
+	    		padding: 31px 38px;
+
+	    		&__image {
+					margin-left: 6px;
+				}
+
+	    		&__heading {
+					color: #59595c;
+					font-size: 21px;
+					font-weight: 500;
+					letter-spacing: -0.4px;
+					line-height: 1.01;
+					margin-top: 3px;
+		    	}
+
+		    }
+
+	    }
 
 	}
 
