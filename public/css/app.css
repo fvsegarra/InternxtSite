@@ -10507,6 +10507,7 @@ a.text-dark:focus {
 @media (min-width: 1440px) {
   .navbar > .container {
     max-width: 1320px;
+    padding-left: 30px;
     padding-right: 13px;
   }
 }
@@ -10528,9 +10529,9 @@ a.text-dark:focus {
 
 @media (min-width: 1440px) {
   .navbar .navbar-brand .mainLogo {
-    height: 46px;
-    margin-left: -13px;
-    margin-top: -4px;
+    height: 41px;
+    margin-left: -11px;
+    margin-top: -1px;
   }
 }
 
@@ -11590,8 +11591,8 @@ hr {
 
 @media (min-width: 1440px) {
   #page-home .pageHeader {
-    margin-bottom: 212px;
-    margin-top: 209px;
+    margin-bottom: 198px;
+    margin-top: 200px;
   }
 }
 
@@ -11758,8 +11759,8 @@ hr {
     font-weight: 600;
     letter-spacing: -0.7px;
     line-height: 1.68;
-    margin-bottom: 0;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 }
 
@@ -11807,6 +11808,8 @@ hr {
   #page-home .section--preview-xcore .section__content {
     width: 626px;
     height: 476px;
+    padding-left: 34px;
+    padding-top: 34px;
   }
 
   #page-home .section--preview-xcloud .section__label,
@@ -11814,6 +11817,7 @@ hr {
     font-size: 53px;
     letter-spacing: -2.5px;
     line-height: 0.74;
+    margin-left: 20px;
   }
 
   #page-home .section--preview-xcloud .section__heading,
@@ -11822,7 +11826,24 @@ hr {
     font-weight: 500;
     letter-spacing: -0.9px;
     line-height: 0.84;
+    margin-bottom: 117px;
+    margin-left: 20px;
+    margin-top: 20px;
     opacity: 0.78;
+  }
+
+  #page-home .section--preview-xcloud .section__cta,
+  #page-home .section--preview-xcore .section__cta {
+    border-color: #99e7ff;
+    background-position: 110px 12px;
+    color: #99e7ff;
+    font-size: 17px;
+    font-weight: 500;
+    height: 36px;
+    left: 24px;
+    letter-spacing: normal;
+    line-height: 1.68;
+    top: 1px;
   }
 }
 
@@ -11834,6 +11855,11 @@ hr {
   #page-home .section--preview-xcloud .section__content {
     background-image: url("/img/mockups/xcloud/bg_home.png");
   }
+
+  #page-home .section--preview-xcloud .section__icon {
+    width: 72px;
+    height: 36px;
+  }
 }
 
 #page-home .section--preview-xcore .section__content {
@@ -11843,6 +11869,16 @@ hr {
 @media (min-width: 1440px) {
   #page-home .section--preview-xcore .section__content {
     background-image: url("/img/mockups/xcore/bg_home.png");
+    padding-left: 28px;
+  }
+
+  #page-home .section--preview-xcore .section__icon {
+    height: 53.9px;
+    width: 53px;
+  }
+
+  #page-home .section--preview-xcore .section__label {
+    margin-top: 105px;
   }
 }
 

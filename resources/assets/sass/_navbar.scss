@@ -11,6 +11,7 @@
 
 		@include whenLargerThan('large-screen') {
 		    max-width: 1320px;
+		    padding-left: 30px;
 		    padding-right: 13px;
 		}
 
@@ -30,9 +31,9 @@
     		height: 41px;
 
     		@include whenLargerThan('large-screen') {
-				height: 46px;
-				margin-left: -13px;
-				margin-top: -4px;
+				height: 41px;
+				margin-left: -11px;
+				margin-top: -1px;
     		}
 
 		}
