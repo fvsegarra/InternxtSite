@@ -7,7 +7,7 @@ $breakpoints: (
 
 	'small-screen'      : 767px,
 	'medium-screen'     : 1079px,
-	'large-screen'      : 1439px
+	'large-screen'      : 1079px
 );
 
 @mixin whenLargerThan($breakpoint) {

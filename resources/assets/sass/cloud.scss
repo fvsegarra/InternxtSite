@@ -30,7 +30,7 @@
         padding-bottom: 10px;
         padding-top: 50px;
         position: relative;
-        top: -87px;
+        top: -88px;
 
         @include whenLargerThan('large-screen') {
             background-image:
@@ -745,10 +745,6 @@
             @extend %alignWithoutContainer;
             padding: 60px 24px 45px;
 
-            @include whenLargerThan('medium-screen') {
-                padding-bottom: 156px;
-            }
-
             @include whenLargerThan('large-screen') {
                 padding-top: 80px;
             }
@@ -762,10 +758,6 @@
                 line-height: 0.88;
                 max-width: 272.8px;
                 margin-bottom: 10px;
-
-                @include whenLargerThan('medium-screen') {
-                    padding-left: 19px;
-                }
 
                 @include whenLargerThan('large-screen') {
                     max-width: 341px;
@@ -788,13 +780,6 @@
                     position: absolute;
                     z-index: 5; // Keep over the top of the iPad image below
                     max-width: 336px;
-                }
-
-                @include whenLargerThan('medium-screen') {
-                    padding-left: 19px;
-                    font-size: 17px;
-                    line-height: 1.51;
-                    max-width: 312px;
                 }
 
                 @include whenLargerThan('large-screen') {
@@ -832,11 +817,6 @@
             padding-bottom: 57px;
             text-align: center;
 
-            @include whenLargerThan('medium-screen') {
-                padding-top: 60px;
-                padding-bottom: 122px;
-            }
-
             @include whenLargerThan('large-screen') {
                 padding-top: 81px;
                 padding-bottom: 80px;
@@ -865,13 +845,6 @@
                     cursor: normal;
                 }
 
-                @include whenLargerThan('medium-screen') {
-                    font-size: 16px;
-                    height: 45px;
-                    padding: 12px 15.5px;
-                    width: 159px;
-                }
-
                 @include whenLargerThan('large-screen') {
                     height: 55px;
                     padding: 14px 15.5px;
@@ -885,14 +858,6 @@
 
                 margin-top: 36px;
                 max-width: 259px;
-
-                @include whenLargerThan('medium-screen') {
-                    display: block;
-                    margin: 38px auto 0;
-                    position: relative;
-                    left: 21px;
-                    max-width: 296px
-                }
 
                 @include whenLargerThan('large-screen') {
                     margin: 47px auto 0;
@@ -1007,10 +972,6 @@
 
         margin-bottom: 15px;
 
-        @include whenLargerThan('medium-screen') {
-            margin-bottom: 12px;
-        }
-
         @include whenLargerThan('large-screen') {
             margin-bottom: 16px;
         }
@@ -1027,14 +988,6 @@
             padding: 15px 0 10px;
             text-align: center;
             width: 130.2px;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 25px;
-                width: 119px;
-                margin-left: 23px;
-                padding-top: 12px;
-                padding-bottom: 9px;
-            }
 
             @include whenLargerThan('large-screen') {
                 font-size: 31px;
@@ -1054,12 +1007,6 @@
             letter-spacing: -0.1px;
             padding-top: 16px;
             padding-left: 42px;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 18px;
-                padding-left: 7px;
-                padding-top: 18px;
-            }
 
             @include whenLargerThan('large-screen') {
                 padding-left: 43px;

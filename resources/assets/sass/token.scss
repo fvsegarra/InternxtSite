@@ -473,16 +473,6 @@
                 margin-bottom: 20px;
             }
 
-            &:nth-of-type(2),
-            &:nth-of-type(4){
-
-                @include whenLargerThan('medium-screen') {
-                    float: left;
-                    width: 50%;
-                }
-
-            }
-
         }
 
         .quform-label-text{

@@ -62,7 +62,7 @@
 			padding: 0 12px;
 		}
 
-		@include whenLargerThan('medium-screen') {
+		@include whenLargerThan('large-screen') {
 			padding: 11px 8px 7px;
 		}
 
@@ -92,10 +92,6 @@
 		font-size: 14px;
 		line-height: 2.74;
 		margin-bottom: 0;
-
-		@include whenLargerThan('medium-screen') {
-			padding-top: 8px;
-		}
 
 		@include whenLargerThan('large-screen') {
     		padding-top: 10px;

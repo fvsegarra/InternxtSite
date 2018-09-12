@@ -81,11 +81,8 @@
 
 	.navbar-nav {
 
-		@include whenLargerThan('medium-screen') {
-			padding-top: 5px;
-		}
-
 		@include whenLargerThan('large-screen') {
+			padding-top: 5px;
     		left: -9px;
 			position: relative;
 		}
@@ -99,10 +96,6 @@
 			font-size: 16px;
 			font-weight: 600;
 			transition: color $transition-default;
-
-	  		@include whenLargerThan('medium-screen') {
-				font-size: 11px;
-	  		}
 
 	  		@include whenLargerThan('large-screen') {
 				font-size: 16px;
@@ -168,9 +161,20 @@
 
 	}
 
-	&.navbar-xcloud{
+	&.navbar-xcloud {
 
  		background-color: #9ecbf7;
+
+ 		.navbar-brand .mainLogo {
+
+ 			@include whenLargerThan('large-screen') {
+ 				// Homepage logo has no padding built in, so move this one left more to compensate
+ 				height: 44px;
+ 				margin-left: -21px;
+    			margin-top: -3px;
+ 			}
+
+ 		}
 
 		.navbar-nav a.nav-link{
 			color: white;
@@ -220,7 +224,7 @@
 
 	}
 
-	@include whenLargerThan('medium-screen') {
+	@include whenLargerThan('large-screen') {
 
 		padding: 5px 16px 5px;
 
