@@ -10718,6 +10718,13 @@ a.text-dark:focus {
   margin-left: 0px;
 }
 
+@media (min-width: 1080px) {
+  .navbar.navbar-xcloud .navbar-brand,
+  .navbar.navbar-token .navbar-brand {
+    margin-left: 11px;
+  }
+}
+
 .navbar.navbar-xcloud .navbar-brand .mainLogo,
 .navbar.navbar-token .navbar-brand .mainLogo {
   height: 46px;
@@ -11091,6 +11098,18 @@ a.text-dark:focus {
   padding-top: 92px;
 }
 
+@media (min-width: 1080px) {
+  .section--subscribe > .container {
+    padding-top: 130px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .section--subscribe .section__label {
+    margin-left: 8px;
+  }
+}
+
 .section--subscribe .section__heading {
   font-size: 34px;
   font-weight: 600;
@@ -11101,8 +11120,31 @@ a.text-dark:focus {
   position: relative;
 }
 
+@media (min-width: 1080px) {
+  .section--subscribe .section__heading {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.9px;
+    line-height: 1.31;
+    margin-left: 12px;
+    margin-top: 10px;
+  }
+}
+
 .section--subscribe .section__subheading {
   margin-top: 12px;
+}
+
+@media (min-width: 1080px) {
+  .section--subscribe .section__subheading {
+    margin-left: 8px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .section--subscribe .col-lg-5 {
+    margin-left: 85px;
+  }
 }
 
 .section--subscribe__form {
@@ -11112,7 +11154,7 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--subscribe__form {
-    margin-top: 72px;
+    margin-top: 40px;
     padding-left: 0;
   }
 }
@@ -11170,6 +11212,7 @@ a.text-dark:focus {
 @media (min-width: 1080px) {
   .section--subscribe__btn {
     margin-top: 0;
+    margin-left: 7px;
   }
 }
 
@@ -13253,8 +13296,9 @@ hr {
 @media (min-width: 1080px) {
   #page-token .pageHeader {
     background-image: url("/img/headers/inxt_desktop.png");
-    height: 870px;
+    height: 856px;
     padding-top: 320px;
+    top: -73px;
   }
 }
 
@@ -13322,6 +13366,12 @@ hr {
   padding: 32px 0 24px;
 }
 
+@media (min-width: 1080px) {
+  #page-token .section--inxt-data {
+    padding-top: 49px;
+  }
+}
+
 #page-token .section--inxt-data .inxtDatum {
   text-align: center;
 }
@@ -13387,6 +13437,12 @@ hr {
   margin-top: 21px;
 }
 
+@media (min-width: 1080px) {
+  #page-token .section--inxt-intro .section__content .intro__content {
+    padding-left: 4px;
+  }
+}
+
 #page-token .section--inxt-intro .section__content .intro__content p:nth-of-type(1) {
   margin-bottom: 31px;
 }
@@ -13411,7 +13467,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-token .section--inxt-intro .col-lg-5 {
-    padding-left: 51px;
+    margin-left: 133px;
   }
 }
 
@@ -13425,11 +13481,15 @@ hr {
 
 @media (min-width: 1080px) {
   #page-token .section--inxt-intro .subsection {
-    margin-top: 42px;
+    margin-top: 70px;
   }
 
   #page-token .section--inxt-intro .subsection .col-lg-2 {
     padding-left: 8px;
+  }
+
+  #page-token .section--inxt-intro .subsection .col-lg-10 {
+    padding-left: 6px;
   }
 }
 
@@ -13452,6 +13512,7 @@ hr {
 @media (min-width: 1080px) {
   #page-token .section--inxt-intro .subsection__iconContainer {
     height: 52px;
+    margin-top: 10px;
     width: 52px;
   }
 }
@@ -13583,6 +13644,12 @@ hr {
   padding: 13px 24px 20px;
   text-align: center;
   width: 219.7px;
+}
+
+@media (min-width: 1080px) {
+  #page-token .section--inxt-exchanges .section__imageContainer {
+    width: auto;
+  }
 }
 
 #page-token .section--inxt-exchanges .section__imageContainer--coin-exchange {

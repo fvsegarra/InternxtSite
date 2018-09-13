@@ -22,8 +22,9 @@
 
         @include whenLargerThan('large-screen') {
             background-image: url('/img/headers/inxt_desktop.png');
-            height: 870px;
+            height: 856px;
             padding-top: 320px;
+            top: -73px;
         }
 
         &__heading {
@@ -92,6 +93,10 @@
 
             background-color: #fafafa;
             padding: 32px 0 24px;
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 49px;
+            }
 
             .inxtDatum {
 
@@ -164,13 +169,21 @@
                 margin-top: 21px;
                 // margin-top: 26px;
 
-                // TODO fix mobile
-               .intro__content p:nth-of-type(1) {
 
-                    margin-bottom: 31px;
+               .intro__content{
 
                     @include whenLargerThan('large-screen') {
-                        margin-bottom: 30px;
+                        padding-left: 4px;
+                    }
+
+                    p:nth-of-type(1) {
+
+                        margin-bottom: 31px;
+
+                        @include whenLargerThan('large-screen') {
+                            margin-bottom: 30px;
+                        }
+
                     }
 
                 }
@@ -196,7 +209,7 @@
             .col-lg-5 {
 
                 @include whenLargerThan('large-screen') {
-                    padding-left: 51px;
+                    margin-left: 133px;
                 }
 
             }
@@ -212,10 +225,14 @@
 
                 @include whenLargerThan('large-screen') {
 
-                    margin-top: 42px;
+                    margin-top: 70px;
 
                     .col-lg-2 {
                         padding-left: 8px;
+                    }
+
+                    .col-lg-10 {
+                        padding-left: 6px;
                     }
 
                 }
@@ -232,6 +249,7 @@
 
                     @include whenLargerThan('large-screen') {
                         height: 52px;
+                        margin-top: 10px;
                         width: 52px;
                     }
 
@@ -366,6 +384,10 @@
                 padding: 13px 24px 20px;
                 text-align: center;
                 width: 219.7px;
+
+                @include whenLargerThan('large-screen') {
+                    width: auto;
+                }
 
                 &--coin-exchange {
                     padding-left: 20px;
