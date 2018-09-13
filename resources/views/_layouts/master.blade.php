@@ -89,8 +89,8 @@
                         <p class="section__label">Legal Terms</p>
 
                         <ul class="list-unstyled">
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
+                            <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
                         </ul>
                     </div>{{-- /.col-lg --}}
 
