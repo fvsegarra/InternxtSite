@@ -63,8 +63,11 @@
 					<div class="col-lg-6">
 
 						<p class="section__heading">Designed to <span class="linebreak"></span>function as an economy with reliable demand.</p>
-						<p>Internxt's token INXT is used as a means of payment to Hosts who participate in our X Core network.</p>
-						<p>There are 629,000 INXT available. This is the maximum supply as no more INXT will be generated.</p>
+
+						<div class="intro__content">
+							<p>Internxt's token INXT is used as a means of payment to Hosts who participate in our X Core network.</p>
+							<p>There are 629,000 INXT available. This is the maximum supply as no more INXT will be generated.</p>
+						</div>
 
 					</div>{{-- /.col-lg-6 --}}
 					<div class="col-lg-5">
@@ -119,25 +122,25 @@
 			<div class="section__footer row">
 
 				<div class="col-lg">
-					<div class="section__imageContainer">
+					<div class="section__imageContainer section__imageContainer--coing-exchange">
 						<img class="section__image img-fluid" src="/img/logos/exchanges/coin_exchange.png">
 					</div>
 				</div>{{-- /.col-lg --}}
 
 				<div class="col-lg">
-					<div class="section__imageContainer">
+					<div class="section__imageContainer section__imageContainer--idex">
 						<img class="section__image img-fluid" src="/img/logos/exchanges/idex.png">
 					</div>
 				</div>{{-- /.col-lg --}}
 
 				<div class="col-lg">
-					<div class="section__imageContainer">
+					<div class="section__imageContainer section__imageContainer--yobit">
 						<img class="section__image img-fluid" src="/img/logos/exchanges/yobit.png">
 					</div>
 				</div>{{-- /.col-lg --}}
 
 				<div class="col-lg">
-					<div class="section__imageContainer">
+					<div class="section__imageContainer section__imageContainer--mercatox">
 						<img class="section__image img-fluid" src="/img/logos/exchanges/mercatox.png">
 					</div>
 				</div>{{-- /.col-lg --}}

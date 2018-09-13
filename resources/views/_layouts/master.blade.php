@@ -95,7 +95,7 @@
                     </div>{{-- /.col-lg --}}
 
                     <div class="col-lg">
-                        <p class="section__label">Connect With Us</p>
+                        <p class="section__label section__label--connect">Connect With Us</p>
 
                         <ul class="nav nav--social">
                             <li class="nav-item">

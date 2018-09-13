@@ -17,7 +17,7 @@
         padding-top: 206px;
         position: relative;
         text-align: center;
-        top: -87px;
+        top: -84px;
         z-index: 1;
 
         @include whenLargerThan('large-screen') {
@@ -143,7 +143,8 @@
                 font-weight: bold;
                 letter-spacing: -0.6px;
                 line-height: 1.18;
-                margin-bottom: 0;
+                margin-bottom: 23px;
+                margin-top: 13px;
 
                 @include whenLargerThan('large-screen') {
                     font-size: 40px;
@@ -160,10 +161,13 @@
                 font-size: 20px;
                 letter-spacing: -0.1px;
                 line-height: 1.55;
-                margin-top: 22px;
+                margin-top: 21px;
+                // margin-top: 26px;
 
                 // TODO fix mobile
-                p:nth-child(2) {
+               .intro__content p:nth-of-type(1) {
+
+                    margin-bottom: 31px;
 
                     @include whenLargerThan('large-screen') {
                         margin-bottom: 30px;
@@ -199,7 +203,12 @@
 
             .subsection {
 
-                margin-top: 74px;
+                margin-top: 72px;
+                // margin-top: 36px;
+
+                p {
+                    margin-bottom: 0; // Override section__content p:nth-of-type
+                }
 
                 @include whenLargerThan('large-screen') {
 
@@ -256,7 +265,8 @@
                     font-size: 20px;
                     letter-spacing: -0.1px;
                     line-height: 1.55;
-                    margin-top: 30px;
+                    margin-top: 25px;
+                    padding-left: 2px;
 
                     @include whenLargerThan('large-screen') {
                         font-size: 18px;
@@ -301,6 +311,8 @@
                 font-weight: bold;
                 letter-spacing: -0.6px;
                 line-height: 1.18;
+                margin-bottom: 0;
+                margin-top: 0;
 
                 @include whenLargerThan('large-screen') {
                     font-size: 40px;
@@ -317,6 +329,8 @@
                 font-size: 20px;
                 letter-spacing: -0.1px;
                 line-height: 1.55;
+                margin-top: 20px;
+                padding-left: 2px;
 
                 @include whenLargerThan('large-screen') {
                     font-size: 21px;
@@ -331,9 +345,13 @@
 
             .section__footer {
 
+                padding-top: 17px;
+                padding-left: 7px;
+
                 @include whenLargerThan('large-screen') {
                     margin: 94px auto 0;
                     max-width: 992px;
+                    padding-top: 0;
                 }
 
             }
@@ -343,8 +361,36 @@
                 background-color: #4585f5;
                 border-radius: 29.2px;
                 box-shadow: 0 2px 3px 0 #bfc5d9;
+                height: 58.2px;
+                margin-top: 40.1px;
+                padding: 13px 24px 20px;
+                text-align: center;
+                width: 219.7px;
+
+                &--coin-exchange {
+                    padding-left: 20px;
+                    padding-right: 22px;
+                    padding-top: 14px;
+                }
+
+                &--idex {
+                    padding-top: 17px;
+                }
+
+                &--yobit {
+
+                    .section__image {
+                        height: 20px;
+                    }
+
+                }
+
+                &--mercatox {
+                    padding-top: 16px;
+                }
 
                 @include whenLargerThan('large-screen') {
+                    margin: 0;
                     padding: 13px 24px 20px;
                 }
 
@@ -362,10 +408,11 @@
 
         &--inxt-buy {
 
+            padding-top: 82px;
             // No padding bottom as subscribe section has margin top
-            padding-top: 112px;
 
             @include whenLargerThan('large-screen') {
+                padding-top: 112px;
                 text-align: center;
             }
 
@@ -400,7 +447,7 @@
                 font-size: 20px;
                 letter-spacing: -0.1px;
                 line-height: 1.55;
-                margin-top: 20px;
+                margin-top: 24px;
 
                 @include whenLargerThan('large-screen') {
                     font-size: 21px;
@@ -418,7 +465,7 @@
                 font-weight: 600;
                 letter-spacing: -0.5px;
                 line-height: 1.56;
-                margin-top: 70px;
+                margin-top: 84px;
 
                 @include whenLargerThan('large-screen') {
                     font-size: 24px;

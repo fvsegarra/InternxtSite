@@ -2,15 +2,24 @@
 
 	background-color: #16181a;
 	color: #707273;
-	padding: 82px 0 52px 0;
+	padding: 88px 0 52px 0;
 
 	@include whenLargerThan('large-screen') {
 		padding: 121px 0 52px 0;
 	}
 
 	.section__label {
+
 		color: white;
 		margin-bottom: 31px;
+
+		&--connect {
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: 0.2px;
+			margin-left: 2px;
+		}
+
 	}
 
 	&__logoContainer {

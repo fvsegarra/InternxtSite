@@ -161,18 +161,28 @@
 
 	}
 
-	&.navbar-xcloud {
+	&.navbar-xcloud,
+	&.navbar-token {
 
  		background-color: #9ecbf7;
+ 		padding-left: 0;
 
- 		.navbar-brand .mainLogo {
+ 		.navbar-brand {
 
- 			@include whenLargerThan('large-screen') {
- 				// Homepage logo has no padding built in, so move this one left more to compensate
- 				height: 44px;
- 				margin-left: -21px;
-    			margin-top: -3px;
- 			}
+ 			margin-left: 0px;
+
+	 		.mainLogo {
+
+	 			height: 46px;
+
+	 			@include whenLargerThan('large-screen') {
+	 				// Homepage logo has no padding built in, so move this one left more to compensate
+	 				height: 44px;
+	 				margin-left: -21px;
+	    			margin-top: -3px;
+	 			}
+
+	 		}
 
  		}
 
