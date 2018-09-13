@@ -8,7 +8,7 @@
 
 @section('body')
 
-	<div class="container-fluid">
+	<div class="container">
 
 		<header class="pageHeader">
 
@@ -52,7 +52,6 @@
 	        </div>
 
 		</section>
-
 
 	</div>
 
