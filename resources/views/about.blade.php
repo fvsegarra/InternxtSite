@@ -14,12 +14,8 @@
 
 	<header class="pageHeader">
 		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="pageHeader__heading">Internxt</h1>
-					<h2 class="pageHeader__subheading">Technologies to enhance life.</h2>
-				</div>
-			</div>
+			<h1 class="pageHeader__heading">Internxt</h1>
+			<h2 class="pageHeader__subheading">Technologies to enhance life.</h2>
 		</div>
 	</header>
 

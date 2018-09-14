@@ -13879,7 +13879,9 @@ hr {
 @media (min-width: 1080px) {
   #page-about .pageHeader {
     background-image: url("/img/headers/about_desktop.png");
-    height: 860px;
+    height: 874px;
+    padding-top: 371px;
+    padding-left: 272px;
   }
 }
 
@@ -13890,12 +13892,31 @@ hr {
   line-height: 1.44;
 }
 
+@media (min-width: 1080px) {
+  #page-about .pageHeader__heading {
+    font-size: 50.3px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1.4px;
+  }
+}
+
 #page-about .pageHeader__subheading {
   font-size: 26px;
   font-weight: 300;
   letter-spacing: -0.5px;
   line-height: 1.51;
   opacity: 0.7;
+}
+
+@media (min-width: 1080px) {
+  #page-about .pageHeader__subheading {
+    font-size: 33.9px;
+    font-weight: 300;
+    letter-spacing: -0.6px;
+    line-height: 1;
+    margin-top: 16px;
+  }
 }
 
 #page-about .section__heading {
