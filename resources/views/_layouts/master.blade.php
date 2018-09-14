@@ -57,7 +57,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-lg d-none d-lg-block">
+                    <div class="col-lg d-none d-lg-block col-lg--product">
                         <p class="section__label">Product</p>
 
                         <ul class="list-unstyled">
@@ -66,7 +66,7 @@
                         </ul>
                     </div>{{-- /.col-lg --}}
 
-                    <div class="col-lg d-none d-lg-block">
+                    <div class="col-lg d-none d-lg-block col-lg--discover">
                         <p class="section__label">Discover</p>
 
                         {{-- Need custom --}}
@@ -76,7 +76,7 @@
                         </ul>
                     </div>{{-- /.col-lg --}}
 
-                    <div class="col-lg d-none d-lg-block">
+                    <div class="col-lg d-none d-lg-block col-lg--company">
                         <p class="section__label">Company</p>
 
                         <ul class="list-unstyled">
@@ -85,7 +85,7 @@
                         </ul>
                     </div>{{-- /.col-lg --}}
 
-                    <div class="col-lg d-none d-lg-block">
+                    <div class="col-lg d-none d-lg-block col-lg--legal">
                         <p class="section__label">Legal Terms</p>
 
                         <ul class="list-unstyled">

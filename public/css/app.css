@@ -11603,8 +11603,27 @@ a.text-dark:focus {
   }
 }
 
+.pageFooter .col-lg--product {
+  max-width: 229px;
+}
+
+.pageFooter .col-lg--discover {
+  max-width: 237px;
+}
+
+.pageFooter .col-lg--company {
+  max-width: 243px;
+}
+
+.pageFooter .col-lg--legal {
+  max-width: 299px;
+}
+
 .pageFooter .section__label {
-  color: white;
+  color: #f5fafc;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
   margin-bottom: 31px;
 }
 

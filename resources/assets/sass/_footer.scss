@@ -8,9 +8,32 @@
 		padding: 121px 0 52px 0;
 	}
 
+	.col-lg {
+
+		&--product{
+			max-width: 229px;
+		}
+
+		&--discover {
+			max-width: 237px;
+		}
+
+		&--company {
+			max-width: 243px;
+		}
+
+		&--legal {
+			max-width: 299px;
+		}
+
+	}
+
 	.section__label {
 
-		color: white;
+		color: #f5fafc;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.2px;
 		margin-bottom: 31px;
 
 		&--connect {
