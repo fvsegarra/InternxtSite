@@ -51,13 +51,19 @@
 					<div class="section--about__articles">
 						<div class="row align-items-center">
 							<div class="col-lg">
-								<img src="/img/logos/android.svg" height="52" alt="Android">
+								<a href="https://www.androidauthority.com/discover-internxt-cloud-x-877276/" target="_blank" rel="nofollow">
+									<img src="/img/logos/android.svg" height="52" alt="Android">
+								</a>
 							</div>
 							<div class="col-lg">
-								<img src="/img/logos/investing.com.svg" height="32" alt="Android">
+								<a href="https://www.investing.com/analysis/heres-why-internxt-could-be-well-worth-a-look-right-now-200274832" target="_blank" rel="nofollow">
+									<img src="/img/logos/investing.com.svg" height="32" alt="Android">
+								</a>
 							</div>
 							<div class="col-lg">
-								<img src="/img/logos/yahoo.svg" height="32" alt="Android">
+								<a href="https://finance.yahoo.com/news/making-internet-secure-everyone-140000059.html?guccounter=1" target="_blank" rel="nofollow">
+									<img src="/img/logos/yahoo.svg" height="32" alt="Android">
+								</a>
 							</div>
 						</div>
 					</div>
