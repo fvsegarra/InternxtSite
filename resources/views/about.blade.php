@@ -155,31 +155,41 @@
 			<p class="section__heading">Internxt’s Partners</p>
 			<div class="section__content">
 
-				<div class="row">
 
-					<div class="col-lg-3">
-						@component('_includes.team-partner')
-							@slot('slug', 'blackberry')
-							@slot('name', 'Blackberry')
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
+				<div class="teamPartner teamPartner--blackberry">
+					<div class="row">
+						<div class="col-lg-7">
+							<img class="teamPartner__image" src="/img/partners/blackberry.png">
+							<a href="#">Learn more about the partnership</a>
+						</div>{{-- /.col-lg-7 --}}
+						<div class="col-lg-5">
+							<p class="teamPartner__heading">Blackberry Partnership</p>
+							<p class="teamPartner__subheading">BlackBerry is an enterprise software and services company focused on securing and managing IoT endpoints.</p>
+							<p class="teamPartner__content">As we are seeing with services like Internxt’s X Cloud, innovation is profoundly changing the way business gets done as customers increasingly demand secure solutions. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
+						</div>{{-- /.col-lg-5 --}}
+					</div>{{-- /.row --}}
+				</div>{{-- /.teamPartner --}}
 
-					<div class="col-lg-3 d-lg-none">
-						<hr>
-					</div>
+				<div class="">
+					<hr>
+				</div>
 
-					<div class="col-lg-3">
-						@component('_includes.team-partner')
-							@slot('slug', 'civic')
-							@slot('name', 'Civic')
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
+				<div class="teamPartner teamPartner--civic">
+					<div class="row">
+						<div class="col-lg-5">
+							<p class="teamPartner__heading">Civic Partnership</p>
+							<p class="teamPartner__subheading">Civic is developing an ecosystem that facilitates secure access to identity verification services via the blockchain.</p>
+							<p class="teamPartner__content">Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
+						</div>{{-- /.col-lg-5 --}}
+						<div class="col-lg-7">
+							<img class="teamPartner__image" src="/img/partners/civic.png">
+							<a href="#">Learn more about the partnership</a>
+						</div>{{-- /.col-lg-7 --}}
+					</div>{{-- /.row --}}
+				</div>{{-- /.teamPartner --}}
 
-				</div>{{-- /.row --}}
-
-
-			</div>
-		</div>
+			</div>{{-- /.section__content --}}
+		</div>{{-- /.container --}}
 	</section>
 
 	@include('_includes.sections.subscribe')

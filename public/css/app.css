@@ -13890,9 +13890,27 @@ hr {
   position: relative;
 }
 
+#page-about .navbar .navbar-nav a.nav-link {
+  color: white;
+}
+
+#page-about .navbar .navbar-nav a.nav-link--xcloud {
+  background-color: transparent;
+  border: solid 1px white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 #page-about hr {
   margin-bottom: 102px;
   margin-top: 108px;
+}
+
+@media (min-width: 1080px) {
+  #page-about hr {
+    margin-bottom: 192px;
+    margin-top: 192px;
+  }
 }
 
 #page-about .pageHeader {
@@ -13963,6 +13981,13 @@ hr {
   padding-bottom: 106px;
 }
 
+@media (min-width: 1080px) {
+  #page-about .section--about-intro {
+    padding-top: 80px;
+    padding-bottom: 170px;
+  }
+}
+
 #page-about .section--about-intro .section__content {
   color: #8e8e93;
   font-size: 25px;
@@ -13970,8 +13995,24 @@ hr {
   line-height: 1.44;
 }
 
+@media (min-width: 1080px) {
+  #page-about .section--about-intro .section__content {
+    margin-left: 105px;
+  }
+}
+
 #page-about .section--about-intro .section__content p {
   margin-bottom: 0;
+  max-width: 826px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--about-intro .section__content p {
+    color: #8e8e93;
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 1.16;
+  }
 }
 
 #page-about .section--about-intro .section__content em {
@@ -13981,6 +14022,10 @@ hr {
 
 #page-about .section--about-intro .section__cta {
   background-color: #4585f5;
+  background-image: url("/img/icons/cta-chevron-circle.png");
+  background-repeat: no-repeat;
+  background-position: 211px center;
+  background-size: 23px;
   border-radius: 31.4px;
   -webkit-box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
           box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
@@ -13995,10 +14040,39 @@ hr {
   width: 256.2px;
 }
 
+@media (min-width: 1080px) {
+  #page-about .section--about-intro .section__cta {
+    display: inline-block;
+    font-size: 16px;
+    height: auto;
+    letter-spacing: 0.1px;
+    margin-left: 2px;
+    margin-top: 85px;
+    padding: 15px 50px 13px 26px;
+    width: auto;
+  }
+}
+
 #page-about .section--team {
   background-color: #fcfcfc;
   padding-bottom: 91px;
   padding-top: 113px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--team > .container {
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--team .section__heading {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+    line-height: 1.78;
+    margin-top: 0;
+  }
 }
 
 #page-about .section--team .section__content {
@@ -14009,73 +14083,14 @@ hr {
   margin-top: 170px;
 }
 
+@media (min-width: 1080px) {
+  #page-about .section--team-partners > .container {
+    max-width: 1120px;
+  }
+}
+
 #page-about .section--team-partners .section__content {
   padding-top: 100px;
-}
-
-#page-about .teamMember {
-  margin-top: 90px;
-}
-
-#page-about .teamMember__name {
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: -0.3px;
-  line-height: 0.62;
-  margin-top: 36px;
-}
-
-#page-about .teamMember__position {
-  color: #6083a6;
-  font-size: 18px;
-  letter-spacing: -0.1px;
-  line-height: 0.85;
-  margin-top: 20px;
-}
-
-#page-about .teamPartner {
-  border-radius: 6px;
-  color: white;
-  min-height: 410px;
-  overflow: hidden;
-  position: relative;
-}
-
-#page-about .teamPartner .test {
-  position: relative;
-}
-
-#page-about .teamPartner .test::after {
-  background-color: #1f2526;
-  bottom: -10px;
-  content: " ";
-  display: block;
-  height: 40px;
-  left: 0;
-  position: absolute;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-  width: 110%;
-}
-
-#page-about .teamPartner--blackberry {
-  background-color: #1f2526;
-}
-
-#page-about .teamPartner--blackberry .teamPartner__image {
-  height: 400px;
-  left: -25px;
-  position: relative;
-}
-
-#page-about .teamPartner--civic {
-  background-color: #3da975;
-}
-
-#page-about .teamPartner--civic .teamPartner__image {
-  height: 400px;
-  left: -25px;
-  position: relative;
 }
 
 #page-about .section--branding-assets {
@@ -14125,6 +14140,144 @@ hr {
   margin-left: 1px;
   margin-top: 67px;
   padding: 10px 56px 10px 27px;
+}
+
+#page-about .teamMember {
+  margin-top: 90px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamMember {
+    margin-top: 76px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamMember__image {
+    max-width: 226px;
+  }
+}
+
+#page-about .teamMember__name {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  line-height: 0.62;
+  margin-top: 36px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamMember__name {
+    font-size: 19.8px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 0.79;
+    margin-top: 22px;
+  }
+}
+
+#page-about .teamMember__position {
+  color: #6083a6;
+  font-size: 18px;
+  letter-spacing: -0.1px;
+  line-height: 0.85;
+  margin-top: 20px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamMember__position {
+    color: #6083a6;
+    font-size: 15.4px;
+    letter-spacing: -0.1px;
+    line-height: 1;
+  }
+}
+
+#page-about .teamPartner {
+  border-radius: 6px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+#page-about .teamPartner .col-lg-5 {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner .col-lg-5 {
+    display: block;
+  }
+}
+
+#page-about .teamPartner .col-lg-7 a {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner .col-lg-7 a {
+    color: #383838;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.61;
+    margin-top: 40px;
+  }
+}
+
+#page-about .teamPartner__image {
+  border-radius: 6px;
+  height: 400px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner__image {
+    height: 409px;
+    left: 4px;
+    position: relative;
+  }
+}
+
+#page-about .teamPartner__heading {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  line-height: 1.13;
+  color: black;
+}
+
+#page-about .teamPartner__subheading {
+  color: #141d85;
+  font-size: 23px;
+  letter-spacing: -0.1px;
+  line-height: 1.48;
+  max-width: 475px;
+}
+
+#page-about .teamPartner__content {
+  color: #838387;
+  font-size: 20px;
+  letter-spacing: -0.1px;
+  line-height: 1.55;
+  max-width: 495px;
+}
+
+#page-about .teamPartner--blackberry .teamPartner__image {
+  background-color: #1f2526;
+}
+
+#page-about .teamPartner--blackberry .col-lg-5 {
+  padding-left: 0;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner--civic .col-lg-7 {
+    left: 62px;
+  }
+}
+
+#page-about .teamPartner--civic .teamPartner__image {
+  background-color: #3da975;
 }
 
 #page-roadmap hr {

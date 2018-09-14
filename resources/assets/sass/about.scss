@@ -1,8 +1,31 @@
 #page-about{
 
+    .navbar .navbar-nav {
+
+        a.nav-link{
+
+            color: white;
+
+            &--xcloud {
+                background-color: transparent;
+                border: solid 1px white;
+                box-shadow: none;
+            }
+
+        }
+
+    }
+
     hr {
+
         margin-bottom: 102px;
         margin-top: 108px;
+
+        @include whenLargerThan('large-screen') {
+            margin-bottom: 192px;
+            margin-top: 192px;
+        }
+
     }
 
     .pageHeader {
@@ -75,6 +98,11 @@
 
             padding-bottom: 106px;
 
+            @include whenLargerThan('large-screen') {
+                padding-top: 80px;
+                padding-bottom: 170px;
+            }
+
             .section__content {
 
                 color: #8e8e93;
@@ -82,8 +110,22 @@
                 letter-spacing: -0.3px;
                 line-height: 1.44;
 
+                @include whenLargerThan('large-screen') {
+                    margin-left: 105px;
+                }
+
                 p {
+
                     margin-bottom: 0;
+                    max-width: 826px;
+
+                    @include whenLargerThan('large-screen') {
+                        color: #8e8e93;
+                        font-size: 30px;
+                        letter-spacing: -1px;
+                        line-height: 1.16;
+                    }
+
                 }
 
                 em {
@@ -94,7 +136,12 @@
             }
 
             .section__cta {
+
                 background-color: #4585f5;
+                background-image: url("/img/icons/cta-chevron-circle.png");
+                background-repeat: no-repeat;
+                background-position: 211px center;
+                background-size: 23px;
                 border-radius: 31.4px;
                 box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
                 color: white;
@@ -106,6 +153,18 @@
                 margin-top: 60px;
                 padding: 12px 22px 13px 23px;
                 width: 256.2px;
+
+                @include whenLargerThan('large-screen') {
+                    display: inline-block;
+                    font-size: 16px;
+                    height: auto;
+                    letter-spacing: 0.1px;
+                    margin-left: 2px;
+                    margin-top: 85px;
+                    padding: 15px 50px 13px 26px;
+                    width: auto;
+                }
+
             }
 
         }
@@ -116,7 +175,24 @@
             padding-bottom: 91px;
             padding-top: 113px;
 
+            & > .container {
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1120px;
+                }
+
+            }
+
             .section__heading {
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 45px;
+                    font-weight: 600;
+                    letter-spacing: -1.6px;
+                    line-height: 1.78;
+                    margin-top: 0;
+                }
+
             }
 
             .section__content {
@@ -129,94 +205,19 @@
 
             margin-top: 170px;
 
+            & > .container {
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1120px;
+                }
+
+            }
+
             .section__content {
                 padding-top: 100px;
             }
 
         }
-
-    }
-
-    .teamMember {
-
-        margin-top: 90px;
-
-        &__name {
-            font-size: 25px;
-            font-weight: 500;
-            letter-spacing: -0.3px;
-            line-height: 0.62;
-            margin-top: 36px;
-        }
-
-        &__position {
-            color: #6083a6;
-            font-size: 18px;
-            letter-spacing: -0.1px;
-            line-height: 0.85;
-            margin-top: 20px;
-        }
-
-    }
-
-    .teamPartner {
-
-        border-radius: 6px;
-        color: white;
-        min-height: 410px;
-        overflow: hidden;
-        position: relative;
-
-        .test {
-
-            position: relative;
-
-            &::after {
-                background-color: #1f2526;
-                bottom: -10px;
-                content: " ";
-                display: block;
-                height: 40px;
-                left: 0;
-                position: absolute;
-                transform: rotate(2deg);
-                width: 110%;
-            }
-
-        }
-
-        &__image {
-            // Only supported in Webkit
-            // clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-        }
-
-        &--blackberry {
-
-            background-color: #1f2526;
-
-            .teamPartner__image {
-                height: 400px;
-                left: -25px;
-                position: relative;
-            }
-
-        }
-
-        &--civic {
-
-            background-color: #3da975;
-
-            .teamPartner__image {
-                height: 400px;
-                left: -25px;
-                position: relative;
-            }
-
-        }
-
-    }
-
-    .section {
 
         &--branding-assets {
 
@@ -263,6 +264,162 @@
                 margin-left: 1px;
                 margin-top: 67px;
                 padding: 10px 56px 10px 27px;
+            }
+
+        }
+
+    }
+
+    .teamMember {
+
+        margin-top: 90px;
+
+        @include whenLargerThan('large-screen') {
+            margin-top: 76px;
+        }
+
+        &__image {
+
+            @include whenLargerThan('large-screen') {
+                max-width: 226px;
+            }
+
+        }
+
+        &__name {
+
+            font-size: 25px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            line-height: 0.62;
+            margin-top: 36px;
+
+            @include whenLargerThan('large-screen') {
+                font-size: 19.8px;
+                font-weight: 500;
+                letter-spacing: -0.2px;
+                line-height: 0.79;
+                margin-top: 22px;
+            }
+
+        }
+
+        &__position {
+
+            color: #6083a6;
+            font-size: 18px;
+            letter-spacing: -0.1px;
+            line-height: 0.85;
+            margin-top: 20px;
+
+            @include whenLargerThan('large-screen') {
+                color: #6083a6;
+                font-size: 15.4px;
+                letter-spacing: -0.1px;
+                line-height: 1;
+            }
+
+        }
+
+    }
+
+    .teamPartner {
+
+        border-radius: 6px;
+        color: white;
+        overflow: hidden;
+        position: relative;
+
+        .col-lg-5 {
+
+            display: none;
+
+            @include whenLargerThan('large-screen') {
+                display: block;
+            }
+
+        }
+
+        .col-lg-7 {
+
+            a{
+
+                display: none;
+
+                @include whenLargerThan('large-screen') {
+                    color: #383838;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 1.61;
+                    margin-top: 40px;
+                }
+
+            }
+
+        }
+
+        &__image {
+
+            border-radius: 6px;
+            height: 400px;
+
+            @include whenLargerThan('large-screen') {
+                height: 409px;
+                left: 4px;
+                position: relative;
+            }
+
+        }
+
+        &__heading{
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -0.7px;
+            line-height: 1.13;
+            color: black;
+        }
+
+        &__subheading{
+            color: #141d85;
+            font-size: 23px;
+            letter-spacing: -0.1px;
+            line-height: 1.48;
+            max-width: 475px;
+        }
+
+        &__content {
+            color: #838387;
+            font-size: 20px;
+            letter-spacing: -0.1px;
+            line-height: 1.55;
+            max-width: 495px;
+        }
+
+        &--blackberry {
+
+            .teamPartner__image {
+                background-color: #1f2526;
+            }
+
+            .col-lg-5 {
+                padding-left: 0;
+            }
+
+        }
+
+        &--civic {
+
+            .col-lg-7 {
+
+                @include whenLargerThan('large-screen') {
+                    left: 62px;
+                }
+
+            }
+
+            .teamPartner__image {
+                background-color: #3da975;
             }
 
         }
