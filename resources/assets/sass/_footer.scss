@@ -36,6 +36,10 @@
 		letter-spacing: 0.2px;
 		margin-bottom: 31px;
 
+		@include whenLargerThan('large-screen') {
+			margin-bottom: 10px;
+		}
+
 		&--connect {
 			font-size: 18px;
 			font-weight: 600;
@@ -56,10 +60,16 @@
 	.list-unstyled {
 
 		a {
+
 			color: #c1c5c7;
 			font-size: 18px;
 			letter-spacing: -0.1px;
 			line-height: 1.9;
+
+			@include whenLargerThan('large-screen') {
+				line-height: 2;
+			}
+
 		}
 
 	}

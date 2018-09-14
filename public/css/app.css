@@ -11627,6 +11627,12 @@ a.text-dark:focus {
   margin-bottom: 31px;
 }
 
+@media (min-width: 1080px) {
+  .pageFooter .section__label {
+    margin-bottom: 10px;
+  }
+}
+
 .pageFooter .section__label--connect {
   font-size: 18px;
   font-weight: 600;
@@ -11643,6 +11649,12 @@ a.text-dark:focus {
   font-size: 18px;
   letter-spacing: -0.1px;
   line-height: 1.9;
+}
+
+@media (min-width: 1080px) {
+  .pageFooter .list-unstyled a {
+    line-height: 2;
+  }
 }
 
 .pageFooter .nav--social {
