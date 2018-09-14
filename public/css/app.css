@@ -13842,7 +13842,7 @@ hr {
 }
 
 #page-about .pageHeader {
-  background-image: url("/img/headers/about.png");
+  background-image: url("/img/headers/about_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -13851,6 +13851,13 @@ hr {
   position: relative;
   top: -87px;
   z-index: 1;
+}
+
+@media (min-width: 1080px) {
+  #page-about .pageHeader {
+    background-image: url("/img/headers/about_desktop.png");
+    height: 860px;
+  }
 }
 
 #page-about .pageHeader__heading {
@@ -13994,6 +14001,55 @@ hr {
   height: 400px;
   left: -25px;
   position: relative;
+}
+
+#page-about .section--branding-assets {
+  background-image: url("/img/resources/branding-assets.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: none;
+  height: 604px;
+  padding-bottom: 157px;
+  padding-top: 146px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--branding-assets {
+    display: block;
+  }
+}
+
+#page-about .section--branding-assets .section__content {
+  padding-left: 12px;
+}
+
+#page-about .section--branding-assets .section__label {
+  color: white;
+  margin-left: 4px;
+}
+
+#page-about .section--branding-assets .section__heading {
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: -1.3px;
+  line-height: 1.21;
+  margin-top: 22px;
+  max-width: 278px;
+}
+
+#page-about .section--branding-assets .section__cta {
+  background-color: black;
+  border-radius: 27.5px;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 2.37;
+  margin-left: 1px;
+  margin-top: 67px;
+  padding: 10px 56px 10px 27px;
 }
 
 #page-roadmap hr {
