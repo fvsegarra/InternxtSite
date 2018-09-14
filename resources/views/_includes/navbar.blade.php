@@ -41,7 +41,7 @@
                     <div class="dropdown-menu dropdown-menu--company" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item dropdown-item" href="{{ route('about') }}">
                             <div class="media">
-                                <img class="dropdown-item__image align-self-center" src="//placehold.it/28x28" alt="Placeholder">
+                                <img class="dropdown-item__image align-self-center" src="/img/icons/dropdown/about.svg" alt="Placeholder">
                                 <div class="media-body">
                                     <h5 class="dropdown-item__heading">About us</h5>
                                 </div>
@@ -50,7 +50,7 @@
                         <hr>
                         <a class="dropdown-item dropdown-item" href="{{ route('roadmap') }}">
                             <div class="media">
-                                <img class="dropdown-item__image align-self-center" src="//placehold.it/28x28" alt="Placeholder">
+                                <img class="dropdown-item__image align-self-center" src="/img/icons/dropdown/roadmap.svg" alt="Placeholder">
                                 <div class="media-body">
                                     <h5 class="dropdown-item__heading">Roadmap</h5>
                                 </div>
@@ -59,7 +59,7 @@
                         <hr>
                         <a class="dropdown-item dropdown-item" href="{{ route('resources') }}">
                             <div class="media">
-                                <img class="dropdown-item__image align-self-center" src="//placehold.it/28x28" alt="Placeholder">
+                                <img class="dropdown-item__image align-self-center" src="/img/icons/dropdown/resources.svg" alt="Placeholder">
                                 <div class="media-body">
                                     <h5 class="dropdown-item__heading">Resources</h5>
                                 </div>

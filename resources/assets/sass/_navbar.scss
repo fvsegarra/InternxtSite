@@ -52,9 +52,7 @@
 	}
 
 	.nav-item.dropdown.show .dropdown-toggle {
-		// background-color: #f0f0f0;
-		// Replacing the above with transparent equivalent, so it works on different colour backgrounds
-		background-color: rgba(0,0,0,0.06);
+		background-color: rgba(0, 0, 0, 0.06);
 	}
 
 	.navbar-toggler{
@@ -357,6 +355,7 @@
 
 	    		&__image {
 					margin-left: 6px;
+					height: 28px;
 				}
 
 	    		&__heading {

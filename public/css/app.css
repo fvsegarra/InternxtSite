@@ -10885,6 +10885,7 @@ a.text-dark:focus {
 
 .navbar .dropdown-menu--company .dropdown-item__image {
   margin-left: 6px;
+  height: 28px;
 }
 
 .navbar .dropdown-menu--company .dropdown-item__heading {
