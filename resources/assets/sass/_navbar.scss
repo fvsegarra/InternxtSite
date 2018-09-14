@@ -52,7 +52,9 @@
 	}
 
 	.nav-item.dropdown.show .dropdown-toggle {
-		background-color: #f0f0f0;
+		// background-color: #f0f0f0;
+		// Replacing the above with transparent equivalent, so it works on different colour backgrounds
+		background-color: rgba(0,0,0,0.06);
 	}
 
 	.navbar-toggler{
@@ -102,7 +104,7 @@
   				font-weight: 600;
 				color: #E8E9EB;
 				letter-spacing: 0;
-				padding: 7px 18px 7px 17px;
+				padding: 6px 18px 6px 17px;
 	  		}
 
 	  		&:hover{
