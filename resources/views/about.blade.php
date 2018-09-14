@@ -143,6 +143,15 @@
 		</div>
 	</section>
 
+	<section class="section section--branding-assets">
+		<div class="container">
+			<div class="section__content">
+				<p class="section__label">DESIGN ASSETS</p>
+				<p class="section__heading">Spread the word with our <span class="linebreak d-none d-lg-block"></span>branding assets.</p>
+				<a class="section__cta" href="#">Download Assets</a>
+			</div>
+		</div>
+	</section>
 
 	<section class="section section--team-partners">
 		<div class="container">
