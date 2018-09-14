@@ -12,7 +12,7 @@
 		@include whenLargerThan('large-screen') {
 		    max-width: 1320px;
 		    padding-left: 30px;
-		    padding-right: 13px;
+		    padding-right: 7px;
 		}
 
 	}
@@ -110,6 +110,7 @@
 	  		}
 
 	  		&--xcloud {
+
 				background-color: #4585f5;
 	  			background-image: url("/img/icons/chevron-right-circle.svg");
 			    background-repeat: no-repeat;
@@ -122,11 +123,15 @@
 				height: 43px;
 				letter-spacing: -0.2px;
 				line-height: 1.47;
-				margin-left: 20px;
 				margin-top: 2px;
 				padding: 10px 44px 8px 19px;
 				text-align: center;
 				width: 195px;
+
+				@include whenLargerThan('large-screen') {
+					margin-left: 11px;
+				}
+
 	  		}
 
 		}

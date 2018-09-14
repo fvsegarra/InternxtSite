@@ -10568,7 +10568,7 @@ a.text-dark:focus {
   .navbar > .container {
     max-width: 1320px;
     padding-left: 30px;
-    padding-right: 13px;
+    padding-right: 7px;
   }
 }
 
@@ -10676,11 +10676,16 @@ a.text-dark:focus {
   height: 43px;
   letter-spacing: -0.2px;
   line-height: 1.47;
-  margin-left: 20px;
   margin-top: 2px;
   padding: 10px 44px 8px 19px;
   text-align: center;
   width: 195px;
+}
+
+@media (min-width: 1080px) {
+  .navbar .navbar-nav a.nav-link--xcloud {
+    margin-left: 11px;
+  }
 }
 
 .navbar.navbar-light {
