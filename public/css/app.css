@@ -12054,6 +12054,12 @@ hr {
   }
 }
 
+@media (min-width: 1440px) {
+  #page-cloud .pageHeader {
+    background-size: 1440px 860px;
+  }
+}
+
 #page-cloud .pageHeader > .container {
   padding-bottom: 15px;
   padding-top: 53px;
@@ -12431,9 +12437,17 @@ hr {
     background-image: url("/img/mockups/xcore/macbook.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 751px;
+    height: 555px;
     margin: 124px auto 57px;
     position: relative;
+    width: 947px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-cloud .section--cloud-architecture .featurePreviewContainer {
+    height: 751px;
+    margin: 124px auto 57px;
     width: 1307px;
   }
 }
@@ -12450,9 +12464,18 @@ hr {
     background-image: url("/img/mockups/xcore/dashboard.png");
     background-repeat: no-repeat;
     background-size: contain;
+    height: 465px;
+    left: 105px;
+    position: absolute;
+    top: 27px;
+    width: 740px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-cloud .section--cloud-architecture .featurePreviewContainer .featurePreview {
     height: 633px;
     left: 150px;
-    position: absolute;
     top: 43px;
     width: 1009px;
   }

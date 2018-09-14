@@ -43,6 +43,10 @@
             padding-top: 115px;
         }
 
+        @include whenLargerThan('xl-screen') {
+            background-size: 1440px 860px
+        }
+
         & > .container {
 
             padding-bottom: 15px;
@@ -449,9 +453,15 @@
                     background-image: url("/img/mockups/xcore/macbook.png");
                     background-repeat: no-repeat;
                     background-size: cover;
-                    height: 751px;
+                    height: 555px;
                     margin: 124px auto 57px;
                     position: relative; // .featurePreview is abs
+                    width: 947px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    height: 751px;
+                    margin: 124px auto 57px;
                     width: 1307px;
                 }
 
@@ -466,9 +476,16 @@
                         background-image: url("/img/mockups/xcore/dashboard.png");
                         background-repeat: no-repeat;
                         background-size: contain;
+                        height: 465px;
+                        left: 105px;
+                        position: absolute;
+                        top: 27px;
+                        width: 740px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
                         height: 633px;
                         left: 150px;
-                        position: absolute;
                         top: 43px;
                         width: 1009px;
                     }
