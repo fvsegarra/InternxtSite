@@ -12178,6 +12178,10 @@ hr {
   }
 }
 
+#page-cloud .pageHeader__cta:hover {
+  text-decoration: none;
+}
+
 @media (min-width: 1080px) {
   #page-cloud .section .container {
     max-width: 1112px;
