@@ -11748,6 +11748,10 @@ body {
   }
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 hr {
   background-color: #e8e8e8;
   height: 1px;
@@ -12179,10 +12183,6 @@ hr {
   #page-cloud .pageHeader__cta {
     margin-top: 88px;
   }
-}
-
-#page-cloud .pageHeader__cta:hover {
-  text-decoration: none;
 }
 
 @media (min-width: 1080px) {
