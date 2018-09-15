@@ -16,18 +16,6 @@
 
     }
 
-    hr {
-
-        margin-bottom: 102px;
-        margin-top: 108px;
-
-        @include whenLargerThan('large-screen') {
-            margin-bottom: 192px;
-            margin-top: 192px;
-        }
-
-    }
-
     .pageHeader {
 
         background-image: url('/img/headers/about_mobile.png');
@@ -215,6 +203,18 @@
 
             .section__content {
                 padding-top: 100px;
+            }
+
+            hr {
+
+                margin-bottom: 102px;
+                margin-top: 108px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-bottom: 192px;
+                    margin-top: 192px;
+                }
+
             }
 
         }

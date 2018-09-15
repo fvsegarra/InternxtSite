@@ -13902,18 +13902,6 @@ hr {
           box-shadow: none;
 }
 
-#page-about hr {
-  margin-bottom: 102px;
-  margin-top: 108px;
-}
-
-@media (min-width: 1080px) {
-  #page-about hr {
-    margin-bottom: 192px;
-    margin-top: 192px;
-  }
-}
-
 #page-about .pageHeader {
   background-image: url("/img/headers/about_mobile.png");
   background-repeat: no-repeat;
@@ -14092,6 +14080,18 @@ hr {
 
 #page-about .section--team-partners .section__content {
   padding-top: 100px;
+}
+
+#page-about .section--team-partners hr {
+  margin-bottom: 102px;
+  margin-top: 108px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--team-partners hr {
+    margin-bottom: 192px;
+    margin-top: 192px;
+  }
 }
 
 #page-about .section--branding-assets {
