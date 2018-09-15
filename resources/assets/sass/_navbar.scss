@@ -281,9 +281,13 @@
 	    .dropdown-item {
 
 	    	padding: 43px 35.6px 41.9px 43px;
-	    	background-image: url('');
 	    	background-repeat: no-repeat;
-	    	background-size: 16.2px 10.9px;
+	    	background-size: 50px 16px;
+    		background-position: 354px center;
+
+	    	&:hover {
+	    		background-image: url('/img/icons/dropdown/chevron.svg');
+	    	}
 
 	    	&__image {
 	    		height: 38px;

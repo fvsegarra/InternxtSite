@@ -10822,9 +10822,13 @@ a.text-dark:focus {
 
 .navbar .dropdown-menu .dropdown-item {
   padding: 43px 35.6px 41.9px 43px;
-  background-image: url("");
   background-repeat: no-repeat;
-  background-size: 16.2px 10.9px;
+  background-size: 50px 16px;
+  background-position: 354px center;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-image: url("/img/icons/dropdown/chevron.svg");
 }
 
 .navbar .dropdown-menu .dropdown-item__image {
