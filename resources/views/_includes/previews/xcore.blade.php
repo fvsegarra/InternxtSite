@@ -4,6 +4,6 @@
 		<p class="section__label">X Core</p>
 		<p class="section__heading">Get paid to share.</p>
 		<p class="section__subheading">Enabling hosts to store and transfer data.</p>
-		<a class="section__cta">Learn more </a>
+		<a class="section__cta" href="{{ route('core') }}">Learn more</a>
 	</div>{{-- /.section__content --}}
 </div>
