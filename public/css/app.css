@@ -11605,6 +11605,8 @@ a.text-dark:focus {
 
 .modal a.modal__cta--browser {
   background-color: #e1e2e6;
+  background-image: url("/img/icons/os/browser.png");
+  background-position: 158px center;
   color: black;
 }
 
