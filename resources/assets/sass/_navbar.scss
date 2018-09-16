@@ -272,10 +272,12 @@
 	    	padding: 43px 35.6px 41.9px 43px;
 	    	background-repeat: no-repeat;
 	    	background-size: 50px 16px;
-    		background-position: 354px center;
+    		background-position: 345px center;
+    		transition: background-position $transition-default;
 
 	    	&:hover {
 	    		background-image: url('/img/icons/dropdown/chevron.svg');
+	    		background-position: 354px center;
 	    	}
 
 	    	&:hover,
