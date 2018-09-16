@@ -444,9 +444,8 @@
         height: 0;
         left: 0;
         margin: 0;
-        padding-top: 60px;
+        padding-top: 30px;
         position: fixed;
-        text-align: center;
         transition:
             bottom $transition-default ease-in-out,
             height $transition-default ease-in-out
@@ -454,6 +453,10 @@
         width: 100vw;
         z-index: 3;
 
+        @include whenLargerThan('large-screen') {
+            text-align: center;
+            padding-top: 60px;
+        }
 
         &--active {
             bottom: 0;
@@ -500,35 +503,68 @@
         }
 
         &__image {
-            margin: 0 auto;
-            max-height: 250px;
-            max-width: 226px;
+
+            display: none;
+
+            @include whenLargerThan('large-screen') {
+                display: block;
+                margin: 0 auto;
+                max-height: 250px;
+                max-width: 226px;
+            }
+
         }
 
         &__name {
-            font-size: 20px;
+
+            font-size: 25px;
             font-weight: 500;
-            letter-spacing: -0.2px;
-            line-height: 0.78;
+            letter-spacing: -0.3px;
+            line-height: 0.62;
             margin-bottom: 0;
-            margin-top: 1px;
+            margin-top: 59px;
+
+            @include whenLargerThan('large-screen') {
+                font-size: 20px;
+                letter-spacing: -0.2px;
+                line-height: 0.78;
+                margin-top: 1px;
+            }
+
         }
 
         &__role {
-            color: #b5daff;
-            font-size: 16px;
+
+            color: #6083a6;
+            font-size: 18px;
             letter-spacing: -0.1px;
-            line-height: 0.96;
+            line-height: 0.85;
             margin-bottom: 0;
-            margin-top: 16px;
+            margin-top: 24px;
+
+            @include whenLargerThan('large-screen') {
+                color: #b5daff;
+                font-size: 16px;
+                line-height: 0.96;
+                margin-top: 16px;
+            }
+
         }
 
         &__bio {
-            font-size: 21px;
-            letter-spacing: -0.4px;
-            line-height: 1.48;
+
+            font-size: 15px;
+            line-height: 1.67;
             margin-bottom: 0;
-            margin-top: 49px;
+            margin-top: 31px;
+
+            @include whenLargerThan('large-screen') {
+                font-size: 21px;
+                letter-spacing: -0.4px;
+                line-height: 1.48;
+                margin-top: 49px;
+            }
+
         }
 
     }
