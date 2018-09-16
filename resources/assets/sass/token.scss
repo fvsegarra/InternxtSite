@@ -1,9 +1,20 @@
 #page-token{
 
-    .navbar .navbar-nav a.nav-link--xcloud {
-        background-color: transparent;
-        border: solid 1px white;
-        box-shadow: none;
+    .navbar {
+
+        .navbar-nav a.nav-link--xcloud {
+            background-color: transparent;
+            border: solid 1px white;
+            box-shadow: none;
+        }
+
+        // Override navbar dropdown active classes,
+        // replacing black text and dark background
+        .nav-item.dropdown.show .dropdown-toggle {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.06);
+        }
+
     }
 
     .pageHeader {

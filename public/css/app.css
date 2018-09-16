@@ -13489,6 +13489,11 @@ hr {
           box-shadow: none;
 }
 
+#page-token .navbar .nav-item.dropdown.show .dropdown-toggle {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
 #page-token .pageHeader {
   background-image: url("/img/headers/inxt_mobile.png");
   background-repeat: no-repeat;
