@@ -12789,10 +12789,25 @@ hr {
   line-height: 1.25;
 }
 
-#page-cloud .section--cloud-plans .plan:nth-of-type(n+2) .plan__price::after {
+#page-cloud .section--cloud-plans .plan:nth-of-type(n+3) .plan__price {
+  position: relative;
+}
+
+#page-cloud .section--cloud-plans .plan:nth-of-type(n+3) .plan__price::after {
   content: " / month";
   letter-spacing: -0.3px;
   color: #838387;
+}
+
+#page-cloud .section--cloud-plans .plan:nth-of-type(n+3) .plan__price::before {
+  background-color: #dad9d9;
+  bottom: -24px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  width: 50px;
 }
 
 #page-cloud .section--cloud-everywhere {
@@ -12996,6 +13011,16 @@ hr {
   width: 213px;
 }
 
+#page-cloud .section--beta-cloud .section__cta {
+  background-image: url("/img/icons/cta-chevron-circle.png");
+  background-position: 180px center;
+  background-repeat: no-repeat;
+  background-size: 23px;
+  border: none;
+  line-height: 1;
+  margin-top: 0;
+}
+
 @media (min-width: 1080px) {
   #page-cloud .section--beta-cloud .container {
     max-width: 850px;
@@ -13007,8 +13032,9 @@ hr {
   }
 
   #page-cloud .section--beta-cloud .section__cta {
-    margin-top: 0;
     margin-left: 1px;
+    background-size: 23px;
+    background-position: 100px center;
   }
 }
 
@@ -13050,8 +13076,8 @@ hr {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.1px;
-  padding-top: 16px;
-  padding-left: 42px;
+  padding-top: 12px;
+  padding-left: 24px;
 }
 
 @media (min-width: 1080px) {

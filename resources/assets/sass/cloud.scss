@@ -776,11 +776,29 @@
                     line-height: 1.25;
                 }
 
-                // Append " / month" to plans other than first one
-                &:nth-of-type(n+2) .plan__price::after {
-                    content: " / month";
-                    letter-spacing: -0.3px;
-                    color: #838387;
+                &:nth-of-type(n+3) .plan__price{
+
+                    position: relative;
+
+                    // Append " / month" to plans other than first one
+                    &::after {
+                        content: " / month";
+                        letter-spacing: -0.3px;
+                        color: #838387;
+                    }
+
+                    // Add an underline
+                    &::before {
+                        background-color: #dad9d9;
+                        bottom: -24px;
+                        content: "";
+                        display: block;
+                        height: 1px;
+                        left: 24px;
+                        position: absolute;
+                        width: 50px;
+                    }
+
                 }
 
             }
@@ -999,6 +1017,17 @@
 
         &--beta-cloud {
 
+
+            .section__cta {
+                background-image: url("/img/icons/cta-chevron-circle.png");
+                background-position: 180px center;
+                background-repeat: no-repeat;
+                background-size: 23px;
+                border: none;
+                line-height: 1;
+                margin-top: 0;
+            }
+
             @include whenLargerThan('large-screen') {
 
                 .container {
@@ -1011,8 +1040,9 @@
                 }
 
                 .section__cta {
-                    margin-top: 0;
                     margin-left: 1px;
+                    background-size: 23px;
+                    background-position: 100px center;
                 }
 
             }
@@ -1058,8 +1088,8 @@
             font-size: 20px;
             font-weight: 500;
             letter-spacing: -0.1px;
-            padding-top: 16px;
-            padding-left: 42px;
+            padding-top: 12px;
+            padding-left: 24px;
 
             @include whenLargerThan('large-screen') {
                 padding-left: 43px;
