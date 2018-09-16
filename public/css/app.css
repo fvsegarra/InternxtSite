@@ -12080,12 +12080,12 @@ hr {
 }
 
 #page-cloud .pageHeader {
-  background-image: url("/img/headers/xcloud_mobile.png"), -webkit-gradient(linear, left top, left bottom, from(#2797d8), to(#2768bc));
-  background-image: url("/img/headers/xcloud_mobile.png"), linear-gradient(to bottom, #2797d8, #2768bc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2797d8), to(#2768bc));
+  background-image: linear-gradient(to bottom, #2797d8, #2768bc);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 693px;
+  height: 670px;
   margin-bottom: -87px;
   padding-bottom: 10px;
   padding-top: 50px;
@@ -12095,17 +12095,32 @@ hr {
 
 @media (min-width: 1080px) {
   #page-cloud .pageHeader {
-    background-image: url("/img/headers/xcloud_desktop.png"), radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
+    background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
     background-position: 0px 13px;
-    background-size: 100%;
     height: 872px;
     padding-top: 115px;
   }
 }
 
-@media (min-width: 1440px) {
-  #page-cloud .pageHeader {
-    background-size: 1440px 860px;
+#page-cloud .pageHeader::after {
+  background-image: url("/img/headers/xcloud_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 34px;
+  content: '';
+  height: 240px;
+  position: absolute;
+  right: -2px;
+  width: 375px;
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .pageHeader::after {
+    background-image: url("/img/headers/xcloud_desktop.png");
+    bottom: 105px;
+    height: 620px;
+    right: 5px;
+    width: 770px;
   }
 }
 
