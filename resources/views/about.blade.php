@@ -45,7 +45,7 @@
 			<div class="section__content">
 				<p>Internxt aims to enrich life through revolutionary technology. The goal is to create a vast range of <em>innovative mass-market services</em> that disrupt various technology industries.</p>
 
-				<a class="section__cta" href="#">Download Whitepaper</a>
+				<a class="section__cta" href="/whitepaper.pdf">Download Whitepaper</a>
 
 			</div>{{-- /.section__content --}}
 		</div>{{-- /.container --}}
