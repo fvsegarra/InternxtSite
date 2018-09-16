@@ -11479,6 +11479,8 @@ a.text-dark:focus {
 
 .section--preview-xcore .section__cta {
   background-image: url("/img/icons/chevron-right-xcore.svg");
+  color: white;
+  opacity: 0.8;
 }
 
 .subsection__heading {
