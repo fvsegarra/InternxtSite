@@ -1,5 +1,9 @@
 #page-about{
 
+    &.hasActiveMemberProfile {
+        overflow-y: hidden;
+    }
+
     .navbar .navbar-nav {
 
         a.nav-link{
@@ -272,6 +276,7 @@
 
     .teamMember {
 
+        cursor: pointer;
         margin-top: 90px;
 
         @include whenLargerThan('large-screen') {
@@ -304,7 +309,7 @@
 
         }
 
-        &__position {
+        &__role {
 
             color: #6083a6;
             font-size: 18px;
@@ -319,6 +324,10 @@
                 line-height: 1;
             }
 
+        }
+
+        &__bio {
+            display: none; // Used to populate slide
         }
 
     }
@@ -422,6 +431,104 @@
                 background-color: #3da975;
             }
 
+        }
+
+    }
+
+
+    .memberProfile {
+
+        background-color: #0f0f0f;
+        bottom: -100vh;
+        color: white;
+        height: 0;
+        left: 0;
+        margin: 0;
+        padding-top: 60px;
+        position: fixed;
+        text-align: center;
+        transition:
+            bottom $transition-default ease-in-out,
+            height $transition-default ease-in-out
+        ;
+        width: 100vw;
+        z-index: 3;
+
+
+        &--active {
+            bottom: 0;
+            height: 100vh;
+            opacity: 1;
+        }
+
+        & > .container {
+
+            @include whenLargerThan('large-screen') {
+                max-width: 1018px;
+                padding: 0;
+            }
+
+        }
+
+        &__btn {
+            background-color: black;
+            background-image: url("/img/icons/slide_close.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            height: 44px;
+            outline: none;
+            width: 45px;
+        }
+
+        &__content {
+
+            @include whenLargerThan('large-screen') {
+                margin-top: 169px;
+            }
+
+        }
+
+        .col-lg-9 {
+
+            @include whenLargerThan('large-screen') {
+                padding-left: 68px;
+            }
+
+        }
+
+        &__image {
+            margin: 0 auto;
+            max-height: 250px;
+            max-width: 226px;
+        }
+
+        &__name {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: -0.2px;
+            line-height: 0.78;
+            margin-bottom: 0;
+            margin-top: 1px;
+        }
+
+        &__role {
+            color: #b5daff;
+            font-size: 16px;
+            letter-spacing: -0.1px;
+            line-height: 0.96;
+            margin-bottom: 0;
+            margin-top: 16px;
+        }
+
+        &__bio {
+            font-size: 21px;
+            letter-spacing: -0.4px;
+            line-height: 1.48;
+            margin-bottom: 0;
+            margin-top: 49px;
         }
 
     }

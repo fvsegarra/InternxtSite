@@ -13945,6 +13945,10 @@ hr {
   position: relative;
 }
 
+#page-about.hasActiveMemberProfile {
+  overflow-y: hidden;
+}
+
 #page-about .navbar .navbar-nav a.nav-link {
   color: white;
 }
@@ -14198,6 +14202,7 @@ hr {
 }
 
 #page-about .teamMember {
+  cursor: pointer;
   margin-top: 90px;
 }
 
@@ -14231,7 +14236,7 @@ hr {
   }
 }
 
-#page-about .teamMember__position {
+#page-about .teamMember__role {
   color: #6083a6;
   font-size: 18px;
   letter-spacing: -0.1px;
@@ -14240,12 +14245,16 @@ hr {
 }
 
 @media (min-width: 1080px) {
-  #page-about .teamMember__position {
+  #page-about .teamMember__role {
     color: #6083a6;
     font-size: 15.4px;
     letter-spacing: -0.1px;
     line-height: 1;
   }
+}
+
+#page-about .teamMember__bio {
+  display: none;
 }
 
 #page-about .teamPartner {
@@ -14333,6 +14342,92 @@ hr {
 
 #page-about .teamPartner--civic .teamPartner__image {
   background-color: #3da975;
+}
+
+#page-about .memberProfile {
+  background-color: #0f0f0f;
+  bottom: -100vh;
+  color: white;
+  height: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 60px;
+  position: fixed;
+  text-align: center;
+  -webkit-transition: bottom 0.3s ease-in-out, height 0.3s ease-in-out;
+  transition: bottom 0.3s ease-in-out, height 0.3s ease-in-out;
+  width: 100vw;
+  z-index: 3;
+}
+
+#page-about .memberProfile--active {
+  bottom: 0;
+  height: 100vh;
+  opacity: 1;
+}
+
+@media (min-width: 1080px) {
+  #page-about .memberProfile > .container {
+    max-width: 1018px;
+    padding: 0;
+  }
+}
+
+#page-about .memberProfile__btn {
+  background-color: black;
+  background-image: url("/img/icons/slide_close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 44px;
+  outline: none;
+  width: 45px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .memberProfile__content {
+    margin-top: 169px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .memberProfile .col-lg-9 {
+    padding-left: 68px;
+  }
+}
+
+#page-about .memberProfile__image {
+  margin: 0 auto;
+  max-height: 250px;
+  max-width: 226px;
+}
+
+#page-about .memberProfile__name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 0.78;
+  margin-bottom: 0;
+  margin-top: 1px;
+}
+
+#page-about .memberProfile__role {
+  color: #b5daff;
+  font-size: 16px;
+  letter-spacing: -0.1px;
+  line-height: 0.96;
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+
+#page-about .memberProfile__bio {
+  font-size: 21px;
+  letter-spacing: -0.4px;
+  line-height: 1.48;
+  margin-bottom: 0;
+  margin-top: 49px;
 }
 
 #page-roadmap hr {

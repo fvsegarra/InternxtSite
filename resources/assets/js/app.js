@@ -33,3 +33,44 @@ $('.subsection--milestone').click((e) => {
 	$(e.currentTarget).toggleClass(classString);
 
 });
+
+let activeMemberProfileClass = 'memberProfile--active';
+let activeBodyClass = 'hasActiveMemberProfile';
+let delayHidingScrolbar = 250;
+let memberProfile = $('.memberProfile');
+
+$('.teamMember').click((e) => {
+
+	console.debug('teamMember clicked');
+
+	let clickedMember = e.currentTarget;
+
+	let replacements = [
+		'name',
+		'role',
+		'bio',
+	];
+
+	$.each(replacements, (index, replacement) => {
+		memberProfile.find('.memberProfile__' + replacement).text($(clickedMember).find('.teamMember__' + replacement).text());
+	});
+
+	memberProfile.find('.memberProfile__image').attr('src', $(clickedMember).find('.teamMember__image').attr('src'));
+
+	memberProfile.addClass(activeMemberProfileClass);
+
+	window.setTimeout(()=>{
+		$('body').addClass(activeBodyClass);
+	}, delayHidingScrolbar);
+
+});
+
+$('.memberProfile__btn').click((e) => {
+
+	console.debug('memberProfile__btn clicked');
+
+	memberProfile.removeClass(activeMemberProfileClass);
+
+	$('body').removeClass(activeBodyClass);
+
+});

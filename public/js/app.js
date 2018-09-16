@@ -13048,6 +13048,41 @@ $('.subsection--milestone').click(function (e) {
 	$(e.currentTarget).toggleClass(classString);
 });
 
+var activeMemberProfileClass = 'memberProfile--active';
+var activeBodyClass = 'hasActiveMemberProfile';
+var delayHidingScrolbar = 250;
+var memberProfile = $('.memberProfile');
+
+$('.teamMember').click(function (e) {
+
+	console.debug('teamMember clicked');
+
+	var clickedMember = e.currentTarget;
+
+	var replacements = ['name', 'role', 'bio'];
+
+	$.each(replacements, function (index, replacement) {
+		memberProfile.find('.memberProfile__' + replacement).text($(clickedMember).find('.teamMember__' + replacement).text());
+	});
+
+	memberProfile.find('.memberProfile__image').attr('src', $(clickedMember).find('.teamMember__image').attr('src'));
+
+	memberProfile.addClass(activeMemberProfileClass);
+
+	window.setTimeout(function () {
+		$('body').addClass(activeBodyClass);
+	}, delayHidingScrolbar);
+});
+
+$('.memberProfile__btn').click(function (e) {
+
+	console.debug('memberProfile__btn clicked');
+
+	memberProfile.removeClass(activeMemberProfileClass);
+
+	$('body').removeClass(activeBodyClass);
+});
+
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
