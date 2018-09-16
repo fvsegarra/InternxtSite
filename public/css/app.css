@@ -10822,6 +10822,11 @@ a.text-dark:focus {
   background-image: url("/img/icons/dropdown/chevron.svg");
 }
 
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:active {
+  background-color: white;
+}
+
 .navbar .dropdown-menu .dropdown-item__image {
   height: 38px;
   margin-right: 34.6px;

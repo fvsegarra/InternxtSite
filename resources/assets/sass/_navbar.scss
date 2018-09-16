@@ -278,6 +278,11 @@
 	    		background-image: url('/img/icons/dropdown/chevron.svg');
 	    	}
 
+	    	&:hover,
+	    	&:active {
+	    		background-color: white;
+	    	}
+
 	    	&__image {
 	    		height: 38px;
 	    		margin-right: 34.6px;
