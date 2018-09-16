@@ -263,14 +263,15 @@
 
 	.dropdown-menu {
 
-		border: none;
-	    background-color: #ffffff;
-	    border-radius: 5px;
-	    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-	    padding: 0;
-	    width: 260px;
 
 	    @include whenLargerThan('large-screen') {
+			border: none;
+		    background-color: #ffffff;
+		    border-radius: 5px;
+		    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
+		    padding: 0;
+		    width: 260px;
+
 	    	top: 45px;
 	    	left: -151px;
 	    	text-align: left;
@@ -279,14 +280,15 @@
 
 	    .dropdown-item {
 
-	    	padding: 15px 5px 15px 5px;
-	    	background-repeat: no-repeat;
-	    	background-size: 50px 16px;
-    		background-position: 345px center;
-    		transition: background-position $transition-default;
-    		width: auto;
 
 	    	@include whenLargerThan('large-screen') {
+		    	padding: 15px 5px 15px 5px;
+		    	background-repeat: no-repeat;
+		    	background-size: 50px 16px;
+	    		background-position: 345px center;
+	    		transition: background-position $transition-default;
+	    		width: auto;
+
 	    		padding: 43px 35.6px 41.9px 43px;
 	    		width: 100%;
 	    	}
@@ -303,10 +305,13 @@
 
 	    	&__image {
 
+	    		display: none;
+
+	    		@include whenLargerThan('large-screen') {
+	    		display: block;
 	    		height: 38px;
 	    		margin-right: 24px;
 
-	    		@include whenLargerThan('large-screen') {
 	    			margin-right: 34.6px;
 	    		}
 
@@ -315,11 +320,15 @@
 			&__heading {
 
 				color: #262626;
-				font-size: 25px;
-				font-weight: 600;
-				letter-spacing: -1px;
-				line-height: 0.85;
 				margin-bottom: 0;
+				font-size: 16px;
+
+				@include whenLargerThan('large-screen') {
+					font-size: 25px;
+					font-weight: 600;
+					letter-spacing: -1px;
+					line-height: 0.85;
+				}
 
 				&::first-letter {
 					letter-spacing: -3px;
@@ -328,13 +337,20 @@
 			}
 
 			&__subheading {
-				color: #8e8e93;
-				font-size: 18px;
-				letter-spacing: -0.4px;
-				line-height: 0.62;
-				margin-bottom: 0;
-				margin-top: 13px;
-				opacity: 0.75;
+
+				display: none;
+
+				@include whenLargerThan('large-screen') {
+					color: #8e8e93;
+					display: block;
+					font-size: 18px;
+					letter-spacing: -0.4px;
+					line-height: 0.62;
+					margin-bottom: 0;
+					margin-top: 13px;
+					opacity: 0.75;
+				}
+
 			}
 
 			&--xcloud {
@@ -366,11 +382,16 @@
 	    }
 
 	    hr {
+
 			background-color: #f2f2f2;
 			border-top: none;
 			height: 1px;
 			margin: 0 auto;
-			width: 350px;
+
+			@include whenLargerThan('large-screen') {
+				width: 350px;
+			}
+
 	    }
 
 	    &--company {
@@ -396,12 +417,18 @@
 				}
 
 	    		&__heading {
-					color: #59595c;
-					font-size: 21px;
-					font-weight: 500;
-					letter-spacing: -0.4px;
-					line-height: 1.01;
-					margin-top: 3px;
+
+	    			font-size: 16px;
+
+	    			@include whenLargerThan('large-screen') {
+						color: #59595c;
+						font-size: 21px;
+						font-weight: 500;
+						letter-spacing: -0.4px;
+						line-height: 1.01;
+						margin-top: 3px;
+	    			}
+
 		    	}
 
 		    }
