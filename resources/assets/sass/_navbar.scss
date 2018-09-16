@@ -43,6 +43,11 @@
 	.dropdown-toggle {
 
 		border-radius: 4px;
+		text-align: center;
+
+		@include whenLargerThan('large-screen') {
+			text-align: left;
+		}
 
 		&::after {
 			// Hide arrow on dropdown links
@@ -262,18 +267,29 @@
 	    background-color: #ffffff;
 	    border-radius: 5px;
 	    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-	    left: -151px;
 	    padding: 0;
-	    top: 45px;
-	    width: 421px;
+	    width: 260px;
+
+	    @include whenLargerThan('large-screen') {
+	    	top: 45px;
+	    	left: -151px;
+	    	text-align: left;
+	    	width: 421px;
+	    }
 
 	    .dropdown-item {
 
-	    	padding: 43px 35.6px 41.9px 43px;
+	    	padding: 15px 5px 15px 5px;
 	    	background-repeat: no-repeat;
 	    	background-size: 50px 16px;
     		background-position: 345px center;
     		transition: background-position $transition-default;
+    		width: auto;
+
+	    	@include whenLargerThan('large-screen') {
+	    		padding: 43px 35.6px 41.9px 43px;
+	    		width: 100%;
+	    	}
 
 	    	&:hover {
 	    		background-image: url('/img/icons/dropdown/chevron.svg');
@@ -286,8 +302,14 @@
 	    	}
 
 	    	&__image {
+
 	    		height: 38px;
-	    		margin-right: 34.6px;
+	    		margin-right: 24px;
+
+	    		@include whenLargerThan('large-screen') {
+	    			margin-right: 34.6px;
+	    		}
+
 	    	}
 
 			&__heading {
@@ -328,9 +350,15 @@
 			&--xcore {
 
 				.dropdown-item__image {
+
   					height: 38px;
-  					margin: 2px 41px 0 5px;
   					width: 38px;
+  					margin: 2px 32px 0 5px;
+
+  					@include whenLargerThan('large-screen') {
+  						margin: 2px 41px 0 5px;
+  					}
+
 				}
 
 			}
@@ -347,11 +375,20 @@
 
 	    &--company {
 
-	    	left: -141px;
+	    	width: 185px;
+
+	    	@include whenLargerThan('large-screen') {
+	    		left: -141px;
+	    		width: 421px;
+	    	}
 
 	    	.dropdown-item {
 
-	    		padding: 31px 38px;
+	    		padding: 10px 15px;
+
+	    		@include whenLargerThan('large-screen') {
+	    			padding: 31px 38px;
+	    		}
 
 	    		&__image {
 					margin-left: 6px;
