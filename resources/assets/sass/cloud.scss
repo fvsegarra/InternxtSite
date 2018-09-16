@@ -1,15 +1,35 @@
 #page-cloud{
 
-    .navbar .navbar-nav {
+    .navbar {
 
-        a.nav-link{
+        & > .container {
 
-            color: white;
+            @include whenLargerThan('xl-screen') {
+                max-width: 1338px;
+            }
 
-            &--xcloud {
-                background-color: transparent;
-                border: solid 1px white;
-                box-shadow: none;
+        }
+
+        .navbar-brand{
+
+            @include whenLargerThan('xl-screen') {
+                margin-left: 17px;
+            }
+
+        }
+
+        .navbar-nav {
+
+            a.nav-link{
+
+                color: white;
+
+                &--xcloud {
+                    background-color: transparent;
+                    border: solid 1px white;
+                    box-shadow: none;
+                }
+
             }
 
         }
