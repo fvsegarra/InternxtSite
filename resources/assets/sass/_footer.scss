@@ -26,6 +26,18 @@
 			max-width: 299px;
 		}
 
+		&--connect {
+			min-width: 342px;
+		}
+
+		@include whenLargerThan('medium-screen') {
+			flex-grow: 0;
+		}
+
+		@include whenLargerThan('large-screen') {
+			flex-grow: 1;
+		}
+
 	}
 
 	.section__label {

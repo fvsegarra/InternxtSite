@@ -11784,6 +11784,26 @@ a.text-dark:focus {
   max-width: 299px;
 }
 
+.pageFooter .col-lg--connect {
+  min-width: 342px;
+}
+
+@media (min-width: 1080px) {
+  .pageFooter .col-lg {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  .pageFooter .col-lg {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .pageFooter .section__label {
   color: #f5fafc;
   font-size: 18px;
