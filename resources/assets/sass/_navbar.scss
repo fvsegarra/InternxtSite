@@ -22,8 +22,9 @@
 		margin-left: 2px;
 
 		@include whenLargerThan('large-screen') {
-			padding-top: 17px;
+			padding-top: 16px;
     		padding-left: 0px;
+    		padding-bottom: 7px;
 		}
 
 		.mainLogo{
@@ -134,7 +135,10 @@
 				width: 195px;
 
 				@include whenLargerThan('large-screen') {
+					font-weight: 450;
+					letter-spacing: -0px;
 					margin-left: 11px;
+					margin-top: -1px;
 				}
 
 	  		}

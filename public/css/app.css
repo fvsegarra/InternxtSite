@@ -10578,8 +10578,9 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .navbar .navbar-brand {
-    padding-top: 17px;
+    padding-top: 16px;
     padding-left: 0px;
+    padding-bottom: 7px;
   }
 }
 
@@ -10691,7 +10692,10 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .navbar .navbar-nav a.nav-link--xcloud {
+    font-weight: 450;
+    letter-spacing: -0px;
     margin-left: 11px;
+    margin-top: -1px;
   }
 }
 
@@ -11997,11 +12001,15 @@ hr {
 
 @media (min-width: 1080px) {
   #page-home .pageHeader__subheading {
+    color: #8e8e93;
     font-size: 43px;
+    font-weight: 450;
     letter-spacing: -1.2px;
     line-height: 1.19;
-    max-width: 750px;
+    margin-left: 2px;
     margin-top: 24px;
+    max-width: 767px;
+    opacity: 1;
   }
 }
 
@@ -12122,6 +12130,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-home .section--products > .container > .section__heading {
+    color: black;
     font-size: 31px;
     font-weight: 600;
     letter-spacing: -0.7px;
