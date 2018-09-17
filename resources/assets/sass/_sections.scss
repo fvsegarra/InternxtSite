@@ -132,6 +132,20 @@
 
         }
 
+        .subsection {
+
+            &--vision {
+
+                margin-top: 72px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 0;
+                }
+
+            }
+
+        }
+
     }
 
 
@@ -278,11 +292,15 @@
 
             background-color: #ffffff;
             border-radius: 30.5px;
-            border: none;
+            border: 1px solid #838387;
             box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.06);
             outline: none;
             padding: 18px 36px 16px 34px;
             width: 100%;
+
+            @include whenLargerThan('large-screen') {
+                border: none;
+            }
 
             &::placeholder {
                 color: #838387;
@@ -398,7 +416,7 @@
 		height: 351px;
 		padding: 42px 32px 36px 36px;
 
-        @include whenLargerThan('large-screen') {
+        @include whenLargerThan('xl-screen') {
             background-repeat: no-repeat;
             background-size: contain;
             height: 476px;
@@ -430,7 +448,7 @@
 			letter-spacing: -8.6px;
 		}
 
-        @include whenLargerThan('large-screen') {
+        @include whenLargerThan('xl-screen') {
             font-size: 79px;
             letter-spacing: -3.8px;
             line-height: 0.75;
@@ -450,7 +468,7 @@
 		margin-top: 21px;
 		opacity: 0.76;
 
-        @include whenLargerThan('large-screen') {
+        @include whenLargerThan('xl-screen') {
             font-size: 38px;
             letter-spacing: -1.2px;
             line-height: 0.89;
@@ -482,7 +500,7 @@
 		position: relative;
 		left: -4px;
 
-        @include whenLargerThan('large-screen') {
+        @include whenLargerThan('xl-screen') {
             color: #99e7ff;
             font-size: 18.7px;
             font-weight: 500;
@@ -501,13 +519,13 @@
     padding-bottom: 127px;
     padding-top: 132px;
 
-    @include whenLargerThan('large-screen') {
+    @include whenLargerThan('xl-screen') {
         box-shadow: 0 7px 14px 0 #dae6ed;
     }
 
     .section__icon {
 
-        @include whenLargerThan('large-screen') {
+        @include whenLargerThan('xl-screen') {
             height: 38.9px;
             width: 77px;
         }
@@ -518,7 +536,7 @@
 
         background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
 
-        @include whenLargerThan('large-screen') {
+        @include whenLargerThan('xl-screen') {
             background-image: url('/img/mockups/xcloud/bg_desktop.png');
         }
 
@@ -543,7 +561,7 @@
 		background-image: radial-gradient(circle at 7% 50%, #110f2c, #19163f 48%, #2a256c);
 		box-shadow: 0 7px 14px 0 #e9e9f5;
 
-        @include whenLargerThan('large-screen') {
+        @include whenLargerThan('xl-screen') {
             background-image: url('/img/mockups/xcore/bg_desktop.png');
             box-shadow: none;
         }
