@@ -14692,6 +14692,16 @@ hr {
   color: #0094ff;
 }
 
+#page-roadmap .section--milestones--in-progress .section__heading {
+  margin-top: 133px;
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .section--milestones--in-progress .section__heading {
+    margin-top: 0;
+  }
+}
+
 #page-roadmap .section--milestones--in-progress .subsection--milestone .subsection__label {
   color: #f72d2d;
 }

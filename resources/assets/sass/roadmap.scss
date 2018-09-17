@@ -41,6 +41,16 @@
 
             &--in-progress {
 
+                .section__heading {
+
+                    margin-top: 133px;
+
+                    @include whenLargerThan('large-screen') {
+                        margin-top: 0;
+                    }
+
+                }
+
                 .subsection--milestone .subsection__label {
                     color: #f72d2d;
                 }
