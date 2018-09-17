@@ -4,22 +4,6 @@
         overflow-y: hidden;
     }
 
-    .navbar .navbar-nav {
-
-        a.nav-link{
-
-            color: white;
-
-            &--xcloud {
-                background-color: transparent;
-                border: solid 1px white;
-                box-shadow: none;
-            }
-
-        }
-
-    }
-
     .pageHeader {
 
         background-image: url('/img/headers/about_mobile.png');

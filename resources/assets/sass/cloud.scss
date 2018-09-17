@@ -1,4 +1,4 @@
-#page-cloud{
+#page-cloud {
 
     .navbar {
 
@@ -10,26 +10,10 @@
 
         }
 
-        .navbar-brand{
+        .navbar-brand {
 
             @include whenLargerThan('xl-screen') {
                 margin-left: 17px;
-            }
-
-        }
-
-        .navbar-nav {
-
-            a.nav-link{
-
-                color: white;
-
-                &--xcloud {
-                    background-color: transparent;
-                    border: solid 1px white;
-                    box-shadow: none;
-                }
-
             }
 
         }
@@ -43,22 +27,15 @@
         background-size: cover;
         color: white;
         height: 670px;
-        margin-bottom: -87px;
         overflow: hidden;
         padding-bottom: 10px;
         padding-top: 50px;
         position: relative;
-        top: -88px;
 
         @include whenLargerThan('large-screen') {
             background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
-            background-position: 0px 13px;
             height: 872px;
             padding-top: 115px;
-        }
-
-        @include whenLargerThan('xl-screen') {
-            // background-size: 1440px 860px
         }
 
         &::after {

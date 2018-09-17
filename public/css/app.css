@@ -10985,6 +10985,67 @@ a.text-dark:focus {
   background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(255, 255, 255)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
 }
 
+#page-about .navbar,
+#page-cloud .navbar,
+#page-core .navbar,
+#page-token .navbar {
+  position: absolute;
+  width: 100%;
+}
+
+#page-about .navbar .navbar-collapse .navbar-nav,
+#page-cloud .navbar .navbar-collapse .navbar-nav,
+#page-core .navbar .navbar-collapse .navbar-nav,
+#page-token .navbar .navbar-collapse .navbar-nav {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1080px) {
+  #page-about .navbar .navbar-collapse .navbar-nav,
+  #page-cloud .navbar .navbar-collapse .navbar-nav,
+  #page-core .navbar .navbar-collapse .navbar-nav,
+  #page-token .navbar .navbar-collapse .navbar-nav {
+    background-color: transparent;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: auto;
+  }
+}
+
+#page-about .navbar .navbar-nav a.nav-link,
+#page-cloud .navbar .navbar-nav a.nav-link,
+#page-core .navbar .navbar-nav a.nav-link,
+#page-token .navbar .navbar-nav a.nav-link {
+  color: #212529;
+}
+
+@media (min-width: 1080px) {
+  #page-about .navbar .navbar-nav a.nav-link,
+  #page-cloud .navbar .navbar-nav a.nav-link,
+  #page-core .navbar .navbar-nav a.nav-link,
+  #page-token .navbar .navbar-nav a.nav-link {
+    color: white;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .navbar .navbar-nav a.nav-link--xcloud,
+  #page-cloud .navbar .navbar-nav a.nav-link--xcloud,
+  #page-core .navbar .navbar-nav a.nav-link--xcloud,
+  #page-token .navbar .navbar-nav a.nav-link--xcloud {
+    background-color: transparent;
+    border: solid 1px white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .section__label {
   color: #538ef4;
   font-size: 15px;
@@ -12154,17 +12215,6 @@ hr {
   }
 }
 
-#page-cloud .navbar .navbar-nav a.nav-link {
-  color: white;
-}
-
-#page-cloud .navbar .navbar-nav a.nav-link--xcloud {
-  background-color: transparent;
-  border: solid 1px white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 #page-cloud .pageHeader {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2797d8), to(#2768bc));
   background-image: linear-gradient(to bottom, #2797d8, #2768bc);
@@ -12172,18 +12222,15 @@ hr {
   background-size: cover;
   color: white;
   height: 670px;
-  margin-bottom: -87px;
   overflow: hidden;
   padding-bottom: 10px;
   padding-top: 50px;
   position: relative;
-  top: -88px;
 }
 
 @media (min-width: 1080px) {
   #page-cloud .pageHeader {
     background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
-    background-position: 0px 13px;
     height: 872px;
     padding-top: 115px;
   }
@@ -13156,22 +13203,13 @@ hr {
   }
 }
 
-#page-core .navbar .navbar-nav a.nav-link--xcloud {
-  background-color: transparent;
-  border: solid 1px white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 #page-core .pageHeader {
   background-image: url("/img/headers/xcore_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 668px;
-  margin-bottom: -87px;
   padding-top: 304px;
   position: relative;
-  top: -87px;
   z-index: 1;
 }
 
@@ -13480,13 +13518,6 @@ hr {
 #page-core .section--core-design .tab-content strong {
   color: #000000;
   font-weight: 600;
-}
-
-#page-token .navbar .navbar-nav a.nav-link--xcloud {
-  background-color: transparent;
-  border: solid 1px white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 #page-token .navbar .nav-item.dropdown.show .dropdown-toggle {
@@ -14047,17 +14078,6 @@ hr {
 
 #page-about.hasActiveMemberProfile {
   overflow-y: hidden;
-}
-
-#page-about .navbar .navbar-nav a.nav-link {
-  color: white;
-}
-
-#page-about .navbar .navbar-nav a.nav-link--xcloud {
-  background-color: transparent;
-  border: solid 1px white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 #page-about .pageHeader {

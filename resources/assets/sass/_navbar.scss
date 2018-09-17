@@ -457,3 +457,59 @@
 	}
 
 }
+
+#page-about,
+#page-cloud,
+#page-core,
+#page-token {
+
+	.navbar {
+
+		// Sit on top of the pageheader
+	    position: absolute;
+	    width: 100%;
+
+	    .navbar-collapse .navbar-nav {
+
+	        background-color: white;
+	        border-radius: 5px;
+	        box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
+	        width: 260px;
+	        margin: 0 auto;
+
+	        @include whenLargerThan('large-screen') {
+	            background-color: transparent;
+	            border-radius: 0;
+	            box-shadow: none;
+	            width: auto;
+	        }
+
+	    }
+
+	    .navbar-nav {
+
+            a.nav-link {
+
+    			color: #212529;
+
+                @include whenLargerThan('large-screen') {
+                    color: white;
+                }
+
+                &--xcloud {
+
+                    @include whenLargerThan('large-screen') {
+                        background-color: transparent;
+                        border: solid 1px white;
+                        box-shadow: none;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

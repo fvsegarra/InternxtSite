@@ -1,21 +1,13 @@
 #page-core{
 
-    .navbar .navbar-nav a.nav-link--xcloud {
-        background-color: transparent;
-        border: solid 1px white;
-        box-shadow: none;
-    }
-
     .pageHeader {
 
         background-image: url('/img/headers/xcore_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 668px;
-        margin-bottom: -87px;
         padding-top: 304px;
         position: relative;
-        top: -87px;
         z-index: 1;
 
         @include whenLargerThan('large-screen') {
