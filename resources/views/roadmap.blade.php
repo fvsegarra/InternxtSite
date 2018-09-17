@@ -17,7 +17,7 @@
 
 				<div class="row">
 
-					<div class="col-sm-4">
+					<div class="col-lg-4">
 						@component('_includes.milestone')
 							@slot('date', 'Q2 2017')
 							@slot('title', 'Founded')
@@ -25,9 +25,9 @@
 								Internxt was founded with the intention to consistently transform the way that people live, work, play and connect through revolutionary technology.
 							@endslot
 						@endcomponent
-					</div>{{-- /.col-sm-4 --}}
+					</div>{{-- /.col-lg-4 --}}
 
-					<div class="col-sm-4">
+					<div class="col-lg-4">
 						@component('_includes.milestone')
 							@slot('date', 'Q4 2017')
 							@slot('title', 'Crowdsale')
@@ -35,9 +35,9 @@
 								An updated digital identity and website were released along with the first versions of X Cloud’s and X Core’s designs and interfaces.
 							@endslot
 						@endcomponent
-					</div>{{-- /.col-sm-4 --}}
+					</div>{{-- /.col-lg-4 --}}
 
-					<div class="col-sm-4">
+					<div class="col-lg-4">
 						@component('_includes.milestone')
 							@slot('date', 'Q4 2017')
 							@slot('title', 'Interfaces')
@@ -45,7 +45,7 @@
 								X Cloud's and X Core’s Alpha version were released which included the core infrastructure of their code and installable prototypes.
 							@endslot
 						@endcomponent
-					</div>{{-- /.col-sm-4 --}}
+					</div>{{-- /.col-lg-4 --}}
 
 				</div>{{-- /.row --}}
 
@@ -65,7 +65,7 @@
 
 				<div class="row">
 
-					<div class="col-sm-4">
+					<div class="col-lg-4">
 						@component('_includes.milestone')
 							@slot('date', 'Q2 2017')
 							@slot('title', 'Founded')
@@ -73,9 +73,9 @@
 								Internxt was founded with the intention to consistently transform the way that people live, work, play and connect through revolutionary technology.
 							@endslot
 						@endcomponent
-					</div>{{-- /.col-sm-4 --}}
+					</div>{{-- /.col-lg-4 --}}
 
-					<div class="col-sm-4">
+					<div class="col-lg-4">
 						@component('_includes.milestone')
 							@slot('date', 'Q4 2017')
 							@slot('title', 'Crowdsale')
@@ -83,9 +83,9 @@
 								An updated digital identity and website were released along with the first versions of X Cloud’s and X Core’s designs and interfaces.
 							@endslot
 						@endcomponent
-					</div>{{-- /.col-sm-4 --}}
+					</div>{{-- /.col-lg-4 --}}
 
-					<div class="col-sm-4">
+					<div class="col-lg-4">
 						@component('_includes.milestone')
 							@slot('date', 'Q4 2017')
 							@slot('title', 'Interfaces')
@@ -93,7 +93,7 @@
 								X Cloud's and X Core’s Alpha version were released which included the core infrastructure of their code and installable prototypes.
 							@endslot
 						@endcomponent
-					</div>{{-- /.col-sm-4 --}}
+					</div>{{-- /.col-lg-4 --}}
 
 				</div>{{-- /.row --}}
 
