@@ -12243,6 +12243,7 @@ hr {
   max-width: 327px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 450;
 }
 
 @media (min-width: 1440px) {
@@ -12318,7 +12319,6 @@ hr {
     background-position: 110px 12px;
     color: #99e7ff;
     font-size: 17px;
-    font-weight: 500;
     height: 36px;
     left: 24px;
     letter-spacing: normal;
