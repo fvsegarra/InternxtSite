@@ -9,6 +9,8 @@
 
 	& > .container {
 
+		padding-right: 12px;
+
 		@include whenLargerThan('large-screen') {
 		    max-width: 1320px;
 		    padding-left: 30px;
@@ -485,6 +487,7 @@
 	            background-color: transparent;
 	            border-radius: 0;
 	            box-shadow: none;
+    			margin: 0;
 	            width: auto;
 	        }
 
