@@ -10664,7 +10664,7 @@ a.text-dark:focus {
 @media (min-width: 1080px) {
   .navbar .navbar-nav a.nav-link {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     color: black;
     letter-spacing: 0;
     padding: 6px 18px 6px 15px;
@@ -12080,7 +12080,7 @@ hr {
   color: black;
   font-family: "Cerebri Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.6px;
   line-height: 1.28;
   margin-bottom: 0;
