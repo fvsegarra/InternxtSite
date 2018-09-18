@@ -262,7 +262,7 @@
         padding-top: 92px;
 
         @include whenLargerThan('large-screen') {
-            margin-top: 123px;
+            padding-top: 123px;
         }
 
         .section__heading {
@@ -279,7 +279,6 @@
                 font-weight: 600;
                 letter-spacing: -0.7px;
                 line-height: 1.68;
-                margin-top: 10px;
             }
         }
 
@@ -287,6 +286,7 @@
 
             @include whenLargerThan('large-screen') {
                 @include make-row();
+                padding-top: 38px;
             }
 
         }
@@ -303,16 +303,19 @@
             color: #ffffff;
             display: inline-block;
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 500;
             letter-spacing: -0.2px;
             margin-top: 70px;
             padding: 13px 55px 13px 13px;
 
             @include whenLargerThan('large-screen') {
-                background-position: 165px center;
+                background-position: 169px center;
+                background-size: 26px;
                 display: block;
+                font-size: 16px;
+                letter-spacing: 0.1px;
                 margin: 82px auto 0;
-                padding: 13px 28px 13px 22px;
+                padding: 15px 28px 13px 27px;
                 width: 211px;
             }
 

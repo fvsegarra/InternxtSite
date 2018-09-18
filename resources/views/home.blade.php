@@ -105,7 +105,7 @@
 							<div class="articlePreview__content">
 								<p class="articlePreview__date">{{ $post['date'] }}</p>
 								<p class="articlePreview__title">{{ $post['title'] }}</p>
-								<a class="articlePreview__cta" href="{{ $post['url'] }}" target="_blank" rel="nofollow">Learn more</a>
+								<a class="articlePreview__cta" href="{{ $post['url'] }}" target="_blank" rel="nofollow">Learn more <img src="/img/icons/chevron-learn-more-article.svg"></a>
 							</div>{{-- /.articlePreview__content --}}
 						</article>
 					</div>{{-- /.articlePreviewContainer --}}
