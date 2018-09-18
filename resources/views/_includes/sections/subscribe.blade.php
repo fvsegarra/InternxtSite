@@ -14,13 +14,13 @@
 
 					<div class="row">
 
-						<div class="col-lg-8">
+						<div class="col-lg col-lg--input">
 							<input class="section--subscribe__input" type="email" name="email" placeholder="Email">
-						</div>{{-- /.col-lg-8 --}}
+						</div>{{-- /.col-lg --}}
 
-						<div class="col-lg-3">
+						<div class="col-lg-3 col-lg--btn">
 							<button class="section--subscribe__btn" type="submit">Subscribe</button>
-						</div>{{-- /.col-lg-3 --}}
+						</div>{{-- /.col-lg --}}
 
 					</div>{{-- /.row --}}
 

@@ -11318,7 +11318,7 @@ a.text-dark:focus {
         flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    padding-top: 38px;
+    margin: 0;
   }
 }
 
@@ -11422,6 +11422,14 @@ a.text-dark:focus {
     margin-top: 40px;
     padding-left: 0;
   }
+
+  .section--subscribe__form .col-lg--input {
+    max-width: 378px;
+  }
+
+  .section--subscribe__form .col-lg--btn {
+    padding-left: 3px;
+  }
 }
 
 .section--subscribe__input {
@@ -11444,28 +11452,28 @@ a.text-dark:focus {
 .section--subscribe__input::-webkit-input-placeholder {
   color: #838387;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.48;
 }
 
 .section--subscribe__input:-ms-input-placeholder {
   color: #838387;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.48;
 }
 
 .section--subscribe__input::-ms-input-placeholder {
   color: #838387;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.48;
 }
 
 .section--subscribe__input::placeholder {
   color: #838387;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.48;
 }
 
@@ -11475,7 +11483,7 @@ a.text-dark:focus {
   border: none;
   color: white;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 23px;
   padding: 17px 36px;
 }
@@ -12119,12 +12127,20 @@ hr {
         -ms-flex: 0 0 33.33333333%;
             flex: 0 0 33.33333333%;
     max-width: 33.33333333%;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
 #page-home .articlePreviewContainer .articleImgContainer {
   height: 207px;
   overflow: hidden;
+}
+
+@media (min-width: 1080px) {
+  #page-home .articlePreviewContainer:nth-of-type(n+3) .articlePreview {
+    margin-top: 53px;
+  }
 }
 
 #page-home .articlePreview {
@@ -12138,7 +12154,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-home .articlePreview {
-    margin-top: 53px;
+    margin-top: 38px;
   }
 }
 
@@ -12163,6 +12179,8 @@ hr {
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 0.3px;
+    line-height: 2;
+    margin-top: 5px;
   }
 }
 
@@ -12173,6 +12191,12 @@ hr {
   line-height: 1.27;
   min-height: 81px;
   margin-bottom: 32px;
+}
+
+@media (min-width: 1080px) {
+  #page-home .articlePreview__title {
+    margin-top: 9px;
+  }
 }
 
 #page-home .articlePreview__cta {

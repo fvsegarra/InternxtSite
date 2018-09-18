@@ -286,7 +286,7 @@
 
             @include whenLargerThan('large-screen') {
                 @include make-row();
-                padding-top: 38px;
+                margin: 0;
             }
 
         }
@@ -393,8 +393,22 @@
             padding-left: 1px;
 
             @include whenLargerThan('large-screen') {
+
                 margin-top: 40px;
                 padding-left: 0;
+
+                .col-lg {
+
+                    &--input {
+                        max-width: 378px;
+                    }
+
+                    &--btn {
+                        padding-left: 3px;
+                    }
+
+                }
+
             }
 
         }
@@ -416,7 +430,7 @@
             &::placeholder {
                 color: #838387;
                 font-size: 17px;
-                font-weight: 600;
+                font-weight: 500;
                 line-height: 1.48;
             }
 
@@ -429,7 +443,7 @@
             border: none;
             color: white;
             font-size: 17px;
-            font-weight: 600;
+            font-weight: 500;
             margin-top: 23px;
             padding: 17px 36px;
 
