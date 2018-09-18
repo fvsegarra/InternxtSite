@@ -12275,7 +12275,7 @@ hr {
 #page-home .section--preview-xcore .section__cta {
   border-color: #d0d0d6;
   color: white;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 @media (min-width: 1440px) {
