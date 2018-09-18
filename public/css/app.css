@@ -11113,6 +11113,7 @@ a.text-dark:focus {
 }
 
 .section--about .section__heading {
+  color: black;
   font-size: 44px;
   font-weight: bold;
   letter-spacing: -0.8px;
@@ -11248,6 +11249,7 @@ a.text-dark:focus {
 
 .section--about .subsection .subsection__heading {
   margin-bottom: 0;
+  color: black;
 }
 
 .section--about .subsection .subsection__content {
