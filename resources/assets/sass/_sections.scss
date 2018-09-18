@@ -125,11 +125,17 @@
             }
 
             img {
-                display: block;
-                margin: 0 auto;
+
+                @include whenLargerThan('large-screen') {
+                    display: block;
+                    margin: 0 auto;
+                }
+
             }
 
             .row {
+
+                padding-left: 30px;
 
                 @include whenLargerThan('large-screen') {
                     padding-left: 6px;
@@ -214,8 +220,12 @@
 
             .subsection__content {
 
+                margin-top: 20px;
+                margin-left: 4px;
+
                 @include whenLargerThan('large-screen') {
                     letter-spacing: 0.12px;
+                    margin-left: 0;
                     margin-top: 10px;
                     max-width: 397px;
                 }
