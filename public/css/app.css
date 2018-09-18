@@ -11058,7 +11058,7 @@ a.text-dark:focus {
 .section__label {
   color: #538ef4;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 0.3px;
   margin-bottom: 0;
   text-transform: uppercase;
