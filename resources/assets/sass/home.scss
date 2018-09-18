@@ -202,7 +202,6 @@
             max-width: 327px;
             margin-left: auto;
             margin-right: auto;
-            font-weight: 450;
 
             @include whenLargerThan('xl-screen') {
                 max-width: none;
@@ -228,6 +227,7 @@
                 border-color: #d0d0d6;
                 color: white;
                 opacity: 1;
+                font-weight: 450;
             }
 
             @include whenLargerThan('xl-screen') {

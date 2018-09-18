@@ -12243,7 +12243,6 @@ hr {
   max-width: 327px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 450;
 }
 
 @media (min-width: 1440px) {
@@ -12277,6 +12276,7 @@ hr {
   border-color: #d0d0d6;
   color: white;
   opacity: 1;
+  font-weight: 450;
 }
 
 @media (min-width: 1440px) {
