@@ -43,25 +43,25 @@
 				<div class="col-lg-6">
 
 					<p class="section__label">About Us</p>
-					<p class="section__heading">Technologies <span class="linebreak d-none d-lg-block"></span>to enhance life.</p>
+					<p class="section__heading">Technologies <span class="linebreak d-lg-block"></span>to enhance life.</p>
 					<p class="section__subheading">Internxt aims to enrich life through revolutionary technology. The goal is to create a vast range of innovative mass-market services that disrupt various technology industries.</p>
 					<p class="section__cta">Learn more about Internxt</p>
 
 					<div class="section--about__articles">
 						<div class="row align-items-center">
-							<div class="col-lg">
-								<a href="https://www.androidauthority.com/discover-internxt-cloud-x-877276/" target="_blank" rel="nofollow">
-									<img src="/img/logos/android.svg" height="52" alt="Android">
+							<div class="col-lg-4 flex-lg-shrink-1">
+								<a href="https://www.entrepreneur.com/article/309468/" target="_blank" rel="nofollow">
+									<img src="/img/logos/entrepreneur.svg" height="32" alt="Entrepreneur">
 								</a>
 							</div>
-							<div class="col-lg">
+							<div class="col-lg-4 flex-lg-shrink-1">
 								<a href="https://www.investing.com/analysis/heres-why-internxt-could-be-well-worth-a-look-right-now-200274832" target="_blank" rel="nofollow">
-									<img src="/img/logos/investing.com.svg" height="32" alt="Android">
+									<img src="/img/logos/investing.com.svg" height="32" alt="Investing.com">
 								</a>
 							</div>
-							<div class="col-lg">
+							<div class="col-lg-4 flex-lg-shrink-1">
 								<a href="https://finance.yahoo.com/news/making-internet-secure-everyone-140000059.html?guccounter=1" target="_blank" rel="nofollow">
-									<img src="/img/logos/yahoo.svg" height="32" alt="Android">
+									<img src="/img/logos/yahoo.svg" height="32" alt="Yahoo">
 								</a>
 							</div>
 						</div>
