@@ -12220,11 +12220,14 @@ hr {
   }
 }
 
+#page-home .section--products > .container > .section__heading {
+  font-weight: 500;
+}
+
 @media (min-width: 1080px) {
   #page-home .section--products > .container > .section__heading {
     color: black;
     font-size: 31px;
-    font-weight: 600;
     letter-spacing: -0.7px;
     line-height: 1.68;
     margin-bottom: 30px;
