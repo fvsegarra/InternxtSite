@@ -55,3 +55,47 @@ hr {
 @import "roadmap";
 @import "resources";
 @import "terms";
+
+
+.cc-floating.cc-theme-edgeless {
+
+	background-color: rgba(255, 255, 255, 0.96);
+	border-radius: 4px;
+	box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.45);
+	font-family: $font-family-sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.02px;
+	max-width: none !important;
+	padding: 14px 22px 12px !important;
+
+	@include whenLargerThan('large-screen') {
+		height: 44px;
+		left: 50%;
+		width: 528px;
+	    transform: translateX(-50%);
+	}
+
+	.cc-message {
+		margin: 0 !important;
+	}
+
+	.cc-btn.cc-dismiss {
+		background-color: transparent;
+		background-image: url("/img/icons/cookie-consent-close.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		border-radius: 50%;
+		color: white;
+		flex: none;
+		font-size: 0;
+		height: 27px;
+		line-height: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		right: 19px;
+    	top: 10px;
+		width: 27px;
+	}
+
+}
