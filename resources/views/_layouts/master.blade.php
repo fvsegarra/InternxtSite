@@ -61,8 +61,8 @@
                         <p class="section__label">Product</p>
 
                         <ul class="list-unstyled">
-                            <li><a href="#">X Cloud</a></li>
-                            <li><a href="#">X Core</a></li>
+                            <li><a href="{{ route('cloud') }}">X Cloud</a></li>
+                            <li><a href="{{ route('core') }}">X Core</a></li>
                         </ul>
                     </div>{{-- /.col-lg --}}
 
@@ -71,8 +71,8 @@
 
                         {{-- Need custom --}}
                         <ul class="list-unstyled">
-                            <li><a href="#">Roadmap</a></li>
-                            <li><a href="#">Resources</a></li>
+                            <li><a href="{{ route('roadmap') }}">Roadmap</a></li>
+                            <li><a href="{{ route('resources') }}">Resources</a></li>
                         </ul>
                     </div>{{-- /.col-lg --}}
 
@@ -80,8 +80,8 @@
                         <p class="section__label">Company</p>
 
                         <ul class="list-unstyled">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">INXT Token</a></li>
+                            <li><a href="{{ route('about') }}">About Us</a></li>
+                            <li><a href="{{ route('token') }}">INXT Token</a></li>
                         </ul>
                     </div>{{-- /.col-lg --}}
 
