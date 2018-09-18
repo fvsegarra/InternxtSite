@@ -11,7 +11,7 @@
             background-image: url("/img/headers/home_desktop.png");
             background-repeat: no-repeat;
             background-size: 125%;
-            background-position: 0 58%;
+            background-position: 0 23%;
             background-size: 125%;
             display: flex;
             height: 100vh;
@@ -29,6 +29,8 @@
             margin-bottom: 0;
             margin: 0 auto;
             max-width: 350px;
+            position: relative;
+            top: -73px;
 
             .highlight {
                 color: #4585f5;
