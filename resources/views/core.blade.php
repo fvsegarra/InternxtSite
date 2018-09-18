@@ -109,6 +109,4 @@
 		</div>
 	</section>
 
-	@include('_includes.previews.xcloud')
-
 @endsection

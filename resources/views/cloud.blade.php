@@ -260,6 +260,4 @@
 		</div>
 	</section>
 
-	@include('_includes.previews.xcore')
-
 @endsection

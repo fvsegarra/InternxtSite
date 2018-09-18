@@ -333,6 +333,7 @@
 
     &--beta {
 
+        margin-bottom: 120px;
         margin-top: 120px;
 
         @include whenLargerThan('large-screen') {
