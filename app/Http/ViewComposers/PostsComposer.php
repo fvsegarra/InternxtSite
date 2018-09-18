@@ -37,7 +37,7 @@ class PostsComposer
 
 	    	return collect($body->payload->posts)
 		    	->sortByDesc('firstPublishedAt')
-		    	->take(5)
+		    	->take(6)
 		    	->transform(function($post) {
 		    		return [
 		    			'title' => $post->title,

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="icon" href="favicon.ico">
 
         <title>@hasSection('pageTitle')Internxt - @yield('pageTitle') @else Internxt @endif</title>

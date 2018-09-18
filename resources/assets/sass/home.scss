@@ -52,62 +52,13 @@
     .articlePreviewContainer {
 
         @include whenLargerThan('large-screen') {
-
-            // Two columns for first two, three cols for the rest
             @include make-col-ready();
             @include make-col(4);
-
         }
 
         .articleImgContainer {
             height: 207px;
             overflow: hidden;
-        }
-
-        &:nth-of-type(1) {
-
-            @include whenLargerThan('large-screen') {
-
-                @include make-col(6);
-
-                .articlePreview {
-                    margin-top: 0;
-
-                    .articlePreview__title {
-                        min-height: 92px;
-                    }
-
-                }
-
-            }
-
-            .articleImgContainer {
-                height: 360px;
-            }
-
-        }
-
-        &:nth-of-type(2) {
-
-            @include whenLargerThan('large-screen') {
-
-                @include make-col(6);
-
-                .articlePreview {
-                    margin-top: 0;
-
-                    .articlePreview__title {
-                        min-height: 92px;
-                    }
-
-                }
-
-            }
-
-            .articleImgContainer {
-                height: 360px;
-            }
-
         }
 
     }
