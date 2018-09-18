@@ -103,7 +103,7 @@
 		a.nav-link{
 
 			font-size: 16px;
-			font-weight: 500;
+			font-weight: 450;
 			transition: color $transition-default;
 
 	  		@include whenLargerThan('large-screen') {
