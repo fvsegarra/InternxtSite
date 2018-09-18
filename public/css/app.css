@@ -12334,6 +12334,12 @@ hr {
   padding-bottom: 48px;
 }
 
+@media (min-width: 1080px) {
+  #page-home .section--preview-xcloud {
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: 1440px) {
   #page-home .section--preview-xcloud .section__content {
     background-image: url("/img/mockups/xcloud/bg_home.png");

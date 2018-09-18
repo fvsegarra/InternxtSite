@@ -280,6 +280,10 @@
 
             padding-bottom: 48px;
 
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 0;
+            }
+
             @include whenLargerThan('xl-screen') {
 
                 .section__content {
