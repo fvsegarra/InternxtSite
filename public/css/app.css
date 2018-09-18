@@ -12086,8 +12086,6 @@ hr {
   margin-bottom: 0;
   margin: 0 auto;
   max-width: 350px;
-  position: relative;
-  top: -73px;
 }
 
 #page-home .pageHeader__heading .highlight {
@@ -12101,7 +12099,9 @@ hr {
     line-height: 1.15;
     margin: 0 auto;
     max-width: 907px;
+    position: relative;
     text-align: center;
+    top: -73px;
   }
 }
 
