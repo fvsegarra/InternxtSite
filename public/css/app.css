@@ -12629,6 +12629,7 @@ hr {
   margin-top: 44px;
   padding: 11px 22px 13px 23px;
   width: 212px;
+  letter-spacing: -0.2px;
 }
 
 @media (min-width: 1080px) {

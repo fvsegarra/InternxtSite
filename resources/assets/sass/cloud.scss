@@ -144,6 +144,7 @@
             margin-top: 44px;
             padding: 11px 22px 13px 23px;
             width: 212px;
+            letter-spacing: -0.2px;
 
             @include whenLargerThan('large-screen') {
                 margin-top: 88px;
