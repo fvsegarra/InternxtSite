@@ -11933,6 +11933,12 @@ a.text-dark:focus {
   min-width: 342px;
 }
 
+@media (min-width: 1440px) {
+  .pageFooter .col-lg--connect {
+    min-width: 300px;
+  }
+}
+
 @media (min-width: 1080px) {
   .pageFooter .col-lg {
     -webkit-box-flex: 0;

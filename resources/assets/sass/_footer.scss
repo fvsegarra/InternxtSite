@@ -27,7 +27,13 @@
 		}
 
 		&--connect {
+
 			min-width: 342px;
+
+			@include whenLargerThan('xl-screen') {
+				min-width: 300px;
+			}
+
 		}
 
 		@include whenLargerThan('medium-screen') {
