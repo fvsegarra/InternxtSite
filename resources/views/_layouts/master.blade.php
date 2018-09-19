@@ -22,6 +22,8 @@
 
             @include('_includes.scripts.cookie-consent')
 
+            @include('_includes.scripts.mailchimp')
+
         @endif
 
     </head>
