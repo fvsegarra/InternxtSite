@@ -10834,7 +10834,7 @@ a.text-dark:focus {
 @media (min-width: 1080px) {
   .navbar .dropdown-menu .dropdown-item {
     background-repeat: no-repeat;
-    background-size: 50px 16px;
+    background-size: 26px 12px;
     background-position: 269px center;
     -webkit-transition: background-position 0.3s;
     transition: background-position 0.3s;
