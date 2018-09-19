@@ -10686,11 +10686,11 @@ a.text-dark:focus {
           box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
   color: white !important;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   height: 43px;
   letter-spacing: -0.2px;
   line-height: 1.47;
-  padding: 10px 44px 8px 19px;
+  padding: 10px 42px 8px 19px;
   text-align: center;
   width: 195px;
 }
@@ -12676,6 +12676,7 @@ hr {
 }
 
 #page-cloud .section--cloud-intro .section__content em {
+  font-weight: 600;
   color: black;
   font-style: normal;
 }
@@ -12691,7 +12692,7 @@ hr {
 
   #page-cloud .section--cloud-intro .section__content em {
     color: #48484a;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
@@ -13026,7 +13027,7 @@ hr {
   border: none;
   color: #9ebff6;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.2px;
   padding-bottom: 13px;
 }
@@ -13054,6 +13055,7 @@ hr {
   font-size: 20px;
   letter-spacing: -0.4px;
   line-height: 1.55;
+  font-weight: 450;
 }
 
 #page-cloud .section--cloud-architecture .tab-pane em {
@@ -13128,6 +13130,7 @@ hr {
   font-size: 20px;
   letter-spacing: -0.1px;
   line-height: 1.55;
+  font-weight: 450;
 }
 
 @media (min-width: 1080px) {
@@ -13799,7 +13802,7 @@ hr {
 #page-core .section--core-design .nav-tabs .nav-link {
   color: #d1b2ff;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: -0.2px;
   padding-bottom: 18px;
 }

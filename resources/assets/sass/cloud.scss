@@ -166,6 +166,7 @@
                 line-height: 1.44;
 
                 em {
+                    font-weight: 600;
                     color: black;
                     font-style: normal;
                 }
@@ -180,7 +181,7 @@
 
                     em {
                         color: #48484a;
-                        font-weight: 500;
+                        font-weight: 600;
                     }
 
                 }
@@ -543,7 +544,7 @@
                     border: none;
                     color: #9ebff6;
                     font-size: 20px;
-                    font-weight: 600;
+                    font-weight: 700;
                     letter-spacing: -0.2px;
                     padding-bottom: 13px;
 
@@ -579,6 +580,7 @@
                 font-size: 20px;
                 letter-spacing: -0.4px;
                 line-height: 1.55;
+                font-weight: 450;
 
                 em {
                     color: black;
@@ -646,6 +648,7 @@
                 font-size: 20px;
                 letter-spacing: -0.1px;
                 line-height: 1.55;
+                font-weight: 450;
 
                 @include whenLargerThan('large-screen') {
                     font-size: 21px;
