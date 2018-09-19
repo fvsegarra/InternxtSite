@@ -74,3 +74,26 @@ $('.memberProfile__btn').click((e) => {
 	$('body').removeClass(activeBodyClass);
 
 });
+
+$('.modal__checkbox').click((e) => {
+
+	console.debug('modal__checkbox clicked');
+
+	var target = $(e.currentTarget);
+
+	var isChecked = target.find('input').is(":checked");
+
+	let btnClass = 'modal__cta';
+	let disabledClass = 'modal__cta--disabled';
+
+	if (isChecked) {
+		$('.' + btnClass).removeClass(disabledClass);
+		// $('.' + btnClass).attr('href', '#');
+	}
+	else {
+		$('.' + btnClass).addClass(disabledClass);
+		$('.' + btnClass).attr('href', '#');
+	}
+
+
+});

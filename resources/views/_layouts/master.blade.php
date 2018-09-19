@@ -35,8 +35,19 @@
             @slot('heading', 'Experience a more secure cloud')
             @slot('subheading', 'Get X Cloud beta today with 10GB free.')
             @slot('content')
-                <a class="modal__cta modal__cta--{{ str_slug($platform) }}" href="#">Download for {{ $platform }}</a>
-                <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkTermsConditions">
+                    <label class="form-check-label" for="checkTermsConditions">
+                        I accept Internxt's <a href="{{ route('terms') }}">Terms and Conditions</a>.
+                    </label>
+                </div>
+
+                <div class="modal__buttons">
+                    <a class="modal__cta modal__cta--{{ str_slug($platform) }} modal__cta--disabled" href="#">Download for {{ $platform }}</a>
+                    <a class="modal__cta modal__cta--browser modal__cta--disabled" href="#">Open in browser</a>
+                </div>{{-- /.modal__buttons --}}
+
             @endslot
         @endcomponent
 
@@ -46,8 +57,12 @@
             @slot('heading', 'Experience a more secure cloud')
             @slot('subheading', 'Get X Core beta today.')
             @slot('content')
-                <a class="modal__cta modal__cta--{{ str_slug($platform) }}" href="#">Download for {{ $platform }}</a>
-                <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
+
+                <div class="modal__buttons">
+                    <a class="modal__cta modal__cta--{{ str_slug($platform) }}" href="#">Download for {{ $platform }}</a>
+                    <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
+                </div>{{-- /.modal__buttons --}}
+
             @endslot
         @endcomponent
 

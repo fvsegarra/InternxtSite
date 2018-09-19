@@ -72,8 +72,12 @@
 		margin-top: 10px;
 	}
 
+	&__checkbox {
+		margin-top: 20px;
+	}
+
 	&__buttons {
-		margin-top: 90px;
+		margin-top: 46px;
 	}
 
 	a.modal__cta {
@@ -91,6 +95,11 @@
 		margin-right: 24px;
 		min-width: 210px;
 		padding: 10px 44px 11px 24px;
+		transition: opacity $transition-default;
+
+		&--disabled {
+			opacity: 0.75;
+		}
 
 		&--windows {
 			background-image: url("/img/icons/os/windows.svg");

@@ -34173,6 +34173,26 @@ $('.memberProfile__btn').click(function (e) {
 	$('body').removeClass(activeBodyClass);
 });
 
+$('.modal__checkbox').click(function (e) {
+
+	console.debug('modal__checkbox clicked');
+
+	var target = $(e.currentTarget);
+
+	var isChecked = target.find('input').is(":checked");
+
+	var btnClass = 'modal__cta';
+	var disabledClass = 'modal__cta--disabled';
+
+	if (isChecked) {
+		$('.' + btnClass).removeClass(disabledClass);
+		// $('.' + btnClass).attr('href', '#');
+	} else {
+		$('.' + btnClass).addClass(disabledClass);
+		$('.' + btnClass).attr('href', '#');
+	}
+});
+
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":

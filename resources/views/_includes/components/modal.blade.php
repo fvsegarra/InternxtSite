@@ -10,10 +10,7 @@
                 <img class="modal__icon modal__icon--{{ str_slug($platform) }}" src="{{ $icon }}">
                 <p class="modal__heading">{{ $heading }}</p>
                 <p class="modal__subheading">{{ $subheading }}</p>
-
-                <div class="modal__buttons">
-                    {{ $content }}
-                </div>{{-- /.modal__buttons --}}
+                {{ $content }}
             </div>
         </div>
     </div>

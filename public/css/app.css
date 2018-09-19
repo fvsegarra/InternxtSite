@@ -11878,8 +11878,12 @@ a.text-dark:focus {
   margin-top: 10px;
 }
 
+.modal__checkbox {
+  margin-top: 20px;
+}
+
 .modal__buttons {
-  margin-top: 90px;
+  margin-top: 46px;
 }
 
 .modal a.modal__cta {
@@ -11896,6 +11900,12 @@ a.text-dark:focus {
   margin-right: 24px;
   min-width: 210px;
   padding: 10px 44px 11px 24px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal a.modal__cta--disabled {
+  opacity: 0.75;
 }
 
 .modal a.modal__cta--windows {
