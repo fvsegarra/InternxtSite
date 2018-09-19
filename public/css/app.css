@@ -12659,7 +12659,7 @@ hr {
 #page-cloud .section--cloud-intro .section__content {
   color: #8e8e93;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 450;
   letter-spacing: -0.3px;
   line-height: 1.44;
 }
@@ -12679,7 +12679,7 @@ hr {
 
   #page-cloud .section--cloud-intro .section__content em {
     color: #48484a;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
