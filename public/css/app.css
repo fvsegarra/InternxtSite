@@ -12161,7 +12161,7 @@ hr {
 }
 
 @media (min-width: 1080px) {
-  #page-home .articlePreviewContainer:nth-of-type(n+3) .articlePreview {
+  #page-home .articlePreviewContainer:nth-of-type(n+4) .articlePreview {
     margin-top: 53px;
   }
 }
