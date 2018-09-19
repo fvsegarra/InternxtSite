@@ -260,11 +260,11 @@
 
                     @include whenLargerThan('large-screen') {
                         font-size: 37px;
-                        font-weight: 600;
+                        font-weight: 700;
                         letter-spacing: -1.1px;
                         line-height: 1.14;
                         margin-top: 45px;
-                        max-width: 480px;
+                        max-width: 462px;
                     }
 
                 }
@@ -273,6 +273,7 @@
 
                     color: #838387;
                     font-size: 20px;
+                    font-weight: 500px;
                     letter-spacing: -0.1px;
                     line-height: 1.55;
                     margin-bottom: 0;

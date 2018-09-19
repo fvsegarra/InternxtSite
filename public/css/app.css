@@ -12740,17 +12740,18 @@ hr {
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-privacy .subsection__heading {
     font-size: 37px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -1.1px;
     line-height: 1.14;
     margin-top: 45px;
-    max-width: 480px;
+    max-width: 462px;
   }
 }
 
 #page-cloud .section--cloud-privacy .subsection__content {
   color: #838387;
   font-size: 20px;
+  font-weight: 500px;
   letter-spacing: -0.1px;
   line-height: 1.55;
   margin-bottom: 0;
