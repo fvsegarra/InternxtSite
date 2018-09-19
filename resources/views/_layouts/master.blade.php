@@ -31,12 +31,12 @@
 
         @component('_includes.components.modal')
             @slot('id', 'modalXCloud')
-            @slot('icon', '/img/logos/xcloud.png')
+            @slot('icon', '/img/logos/xcloud-flat.jpg')
             @slot('heading', 'Experience a more secure cloud')
             @slot('subheading', 'Get X Cloud beta today with 10GB free.')
             @slot('content')
 
-                <div class="form-check">
+                <div class="modal__checkbox form-check">
                     <input class="form-check-input" type="checkbox" id="checkTermsConditions">
                     <label class="form-check-label" for="checkTermsConditions">
                         I accept Internxt's <a href="{{ route('terms') }}">Terms and Conditions</a>.
