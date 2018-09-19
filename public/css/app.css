@@ -10655,6 +10655,7 @@ a.text-dark:focus {
 }
 
 .navbar .navbar-nav a.nav-link {
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
   -webkit-transition: color 0.3s;
@@ -10672,6 +10673,7 @@ a.text-dark:focus {
 
 .navbar .navbar-nav a.nav-link:hover {
   color: #e9eaec;
+  background-color: rgba(0, 0, 0, 0.07);
 }
 
 .navbar .navbar-nav a.nav-link--xcloud {
@@ -14357,6 +14359,7 @@ hr {
   overflow-y: hidden;
 }
 
+#page-about a.nav-link:hover,
 #page-about .navbar .nav-item.dropdown.show .dropdown-toggle {
   background-color: rgba(255, 255, 255, 0.07);
 }

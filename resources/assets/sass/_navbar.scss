@@ -102,6 +102,7 @@
 
 		a.nav-link{
 
+			border-radius: 4px;
 			font-size: 16px;
 			font-weight: 500;
 			transition: color $transition-default;
@@ -115,6 +116,7 @@
 
 	  		&:hover{
 	  			color: #e9eaec;
+	  			background-color: rgba(black, 0.07);
 	  		}
 
 	  		&--xcloud {

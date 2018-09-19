@@ -4,8 +4,9 @@
         overflow-y: hidden;
     }
 
+    // Override dark nav link highlight
+    a.nav-link:hover,
     .navbar .nav-item.dropdown.show .dropdown-toggle {
-        // Override dark highlight
         background-color: rgba(white, 0.07);
     }
 
