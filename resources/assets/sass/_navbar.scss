@@ -105,7 +105,7 @@
 
 			border-radius: 4px;
 			font-size: 16px;
-			font-weight: 500;
+			font-weight: 600;
 			transition: color $transition-default;
 
 	  		@include whenLargerThan('large-screen') {
@@ -129,13 +129,18 @@
 				box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
 				color: white !important;
 				font-size: 16px;
-				font-weight: 600;
+				font-weight: 500;
 				height: 43px;
 				letter-spacing: -0.2px;
 				line-height: 1.47;
 				padding: 10px 44px 8px 19px;
 				text-align: center;
 				width: 195px;
+
+				&:hover{
+					// Override others on hover
+					background-color: #4585f5;
+				}
 
 				@include whenLargerThan('large-screen') {
 					font-weight: 450;
@@ -343,11 +348,11 @@
 			&__subheading {
 
 				display: none;
-
 				@include whenLargerThan('large-screen') {
 					color: #8e8e93;
 					display: block;
 					font-size: 16px;
+					font-weight: 450;
 					letter-spacing: -0.3px;
 					line-height: 0.62;
 					margin-bottom: 0;
