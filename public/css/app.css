@@ -12921,7 +12921,7 @@ hr {
 #page-cloud .section--cloud-architecture .section__heading {
   color: black;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: -1.8px;
   line-height: 1.03;
 }
@@ -13014,7 +13014,7 @@ hr {
   border: none;
   color: #9ebff6;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: -0.2px;
   padding-bottom: 13px;
 }
