@@ -4,6 +4,11 @@
         overflow-y: hidden;
     }
 
+    .navbar .nav-item.dropdown.show .dropdown-toggle {
+        // Override dark highlight
+        background-color: rgba(white, 0.07);
+    }
+
     .pageHeader {
 
         background-image: url('/img/headers/about_mobile.png');
