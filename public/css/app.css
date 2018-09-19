@@ -11477,7 +11477,6 @@ a.text-dark:focus {
   left: 3px;
   line-height: 1.48;
   position: relative;
-  top: 3px;
 }
 
 .section--subscribe__input:-ms-input-placeholder {
@@ -11487,7 +11486,6 @@ a.text-dark:focus {
   left: 3px;
   line-height: 1.48;
   position: relative;
-  top: 3px;
 }
 
 .section--subscribe__input::-ms-input-placeholder {
@@ -11497,7 +11495,6 @@ a.text-dark:focus {
   left: 3px;
   line-height: 1.48;
   position: relative;
-  top: 3px;
 }
 
 .section--subscribe__input::placeholder {
@@ -11507,7 +11504,6 @@ a.text-dark:focus {
   left: 3px;
   line-height: 1.48;
   position: relative;
-  top: 3px;
 }
 
 .section--subscribe__btn {
