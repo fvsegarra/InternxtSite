@@ -270,7 +270,6 @@
 
 	.dropdown-menu {
 
-
 	    @include whenLargerThan('large-screen') {
 			border: none;
 		    background-color: #ffffff;
@@ -278,25 +277,20 @@
 		    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
 		    padding: 0;
 		    width: 260px;
-
-	    	top: 45px;
-	    	left: -151px;
+	    	left: -108px;
 	    	text-align: left;
-	    	width: 421px;
+	    	top: 45px;
+	    	width: 335px;
 	    }
 
 	    .dropdown-item {
 
-
 	    	@include whenLargerThan('large-screen') {
-		    	padding: 15px 5px 15px 5px;
 		    	background-repeat: no-repeat;
 		    	background-size: 50px 16px;
 	    		background-position: 345px center;
 	    		transition: background-position $transition-default;
-	    		width: auto;
-
-	    		padding: 43px 35.6px 41.9px 43px;
+	    		padding: 32px 35.6px 27px 27px;
 	    		width: 100%;
 	    	}
 
@@ -315,11 +309,9 @@
 	    		display: none;
 
 	    		@include whenLargerThan('large-screen') {
-	    		display: block;
-	    		height: 38px;
-	    		margin-right: 24px;
-
-	    			margin-right: 34.6px;
+		    		display: block;
+		    		height: 38px;
+		    		margin-right: 27px;
 	    		}
 
 	    	}
@@ -331,10 +323,10 @@
 				font-size: 16px;
 
 				@include whenLargerThan('large-screen') {
-					font-size: 25px;
+					font-size: 23px;
 					font-weight: 600;
-					letter-spacing: -1px;
-					line-height: 0.85;
+					letter-spacing: -0.7px;
+					line-height: 0.92;
 				}
 
 				&::first-letter {
@@ -350,8 +342,8 @@
 				@include whenLargerThan('large-screen') {
 					color: #8e8e93;
 					display: block;
-					font-size: 18px;
-					letter-spacing: -0.4px;
+					font-size: 16px;
+					letter-spacing: -0.3px;
 					line-height: 0.62;
 					margin-bottom: 0;
 					margin-top: 13px;
@@ -363,9 +355,8 @@
 			&--xcloud {
 
 				.dropdown-item__image {
-					height: 26px;
+					height: 21px;
 					margin-top: 2px;
-					width: 51px;
 				}
 
 			}
@@ -374,12 +365,11 @@
 
 				.dropdown-item__image {
 
-  					height: 38px;
-  					width: 38px;
+  					height: 33px;
   					margin: 2px 32px 0 5px;
 
   					@include whenLargerThan('large-screen') {
-  						margin: 2px 41px 0 5px;
+  						margin: 2px 29px 0 5px;
   					}
 
 				}
@@ -396,7 +386,7 @@
 			margin: 0 auto;
 
 			@include whenLargerThan('large-screen') {
-				width: 350px;
+				width: 275px;
 			}
 
 	    }
@@ -406,8 +396,7 @@
 	    	width: 185px;
 
 	    	@include whenLargerThan('large-screen') {
-	    		left: -141px;
-	    		width: 421px;
+	    		width: 335px;
 	    	}
 
 	    	.dropdown-item {
@@ -415,25 +404,26 @@
 	    		padding: 10px 15px;
 
 	    		@include whenLargerThan('large-screen') {
-	    			padding: 31px 38px;
+	    			padding: 33px 35px;
 	    		}
 
 	    		&__image {
+					color: black;
+					height: 24px;
 					margin-left: 6px;
-					height: 28px;
+					margin-right: 37px;
 				}
 
 	    		&__heading {
 
+					color: black;
 	    			font-size: 16px;
 
 	    			@include whenLargerThan('large-screen') {
-						color: #59595c;
-						font-size: 21px;
+						font-size: 19px;
 						font-weight: 500;
 						letter-spacing: -0.4px;
-						line-height: 1.01;
-						margin-top: 3px;
+						line-height: 1.12;
 	    			}
 
 		    	}
