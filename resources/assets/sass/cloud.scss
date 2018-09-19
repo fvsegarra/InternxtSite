@@ -220,14 +220,15 @@
 
             .subsection {
 
-                &__icon {
+                &__iconContainer {
 
                     background-image: linear-gradient(132deg, #0099f0, #5688f5);
                     border-radius: 50%;
                     box-shadow: 0 3px 5px 0 #ebebf7;
+                    display: flex;
                     height: 55px;
+                    justify-content: center;
                     width: 55px;
-                    padding: 8px;
 
                     @include whenLargerThan('large-screen') {
                         background-image: linear-gradient(122deg, #0099f0, #5688f5);
@@ -238,18 +239,28 @@
 
                 }
 
+                &__icon {
+
+                    @include whenLargerThan('large-screen') {
+                        position: relative;
+                        top: -1px;
+                    }
+
+                }
+
                 &__heading {
 
                     font-size: 33px;
-                    font-weight: bold;
+                    font-weight: 600;
                     letter-spacing: -0.6px;
                     line-height: 1.18;
                     margin-bottom: 0;
                     margin-top: 23px;
+                    color: black;
 
                     @include whenLargerThan('large-screen') {
                         font-size: 37px;
-                        font-weight: bold;
+                        font-weight: 600;
                         letter-spacing: -1.1px;
                         line-height: 1.14;
                         margin-top: 45px;
@@ -278,8 +289,21 @@
 
                 &--data {
 
+                    @include whenLargerThan('large-screen') {
+
+                        .subsection__content {
+                            max-width: 460px;
+                        }
+
+                        .subsection__iconContainer {
+                            position: relative;
+                            left: 3px;
+                        }
+
+                    }
+
                     .subsection__icon {
-                        padding: 12.6px 9.2px 14.9px 8px;
+                        // padding: 12.6px 9.2px 14.9px 8px;
                     }
 
                 }
@@ -294,7 +318,7 @@
                     }
 
                     .subsection__icon {
-                        padding: 11px 15px 14px 16px;
+                        // padding: 11px 15px 14px 16px;
                     }
 
                 }

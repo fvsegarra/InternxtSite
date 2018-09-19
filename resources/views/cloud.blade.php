@@ -41,7 +41,9 @@
 				<div class="col-lg-6">
 
 					<div class="subsection subsection--data">
-						<img class="subsection__icon" src="/img/icons/xcloud/data.svg" alt="Your data belongs to you and only you">
+						<div class="subsection__iconContainer">
+							<img class="subsection__icon" src="/img/icons/xcloud/data.svg" alt="Your data belongs to you and only you">
+						</div>
 						<p class="subsection__heading">Your data belongs to you and only you.</p>
 						<p class="subsection__content">We’ve solved major problems with the current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies.</p>
 					</div>{{-- /.subsection --}}
@@ -50,7 +52,9 @@
 				<div class="col-lg-6">
 
 					<div class="subsection subsection--security">
-						<img class="subsection__icon" src="/img/icons/xcloud/security.svg" alt="Designed to protect your digital security.">
+						<div class="subsection__iconContainer">
+							<img class="subsection__icon" src="/img/icons/xcloud/security.svg" alt="Designed to protect your digital security.">
+						</div>
 						<p class="subsection__heading">Designed to protect your digital security.</p>
 						<p class="subsection__content">Files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. Your personal data is apart of the distributed X Core network and no longer sitting in one central location. </p>
 					</div>{{-- /.subsection --}}
