@@ -11347,7 +11347,7 @@ a.text-dark:focus {
     display: block;
     font-size: 16px;
     letter-spacing: 0.1px;
-    margin: 82px auto 0;
+    margin: 103px auto 0;
     padding: 15px 28px 13px 27px;
     width: 211px;
   }
@@ -11355,6 +11355,12 @@ a.text-dark:focus {
 
 .section--subscribe {
   margin-top: 128px;
+}
+
+@media (min-width: 1080px) {
+  .section--subscribe {
+    margin-top: 184px;
+  }
 }
 
 .section--subscribe > .container {
@@ -11366,12 +11372,21 @@ a.text-dark:focus {
 @media (min-width: 1080px) {
   .section--subscribe > .container {
     padding-top: 130px;
+    padding-bottom: 142px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section--subscribe > .container {
+    max-width: 1266px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1080px) {
   .section--subscribe .section__label {
-    margin-left: 8px;
+    margin-left: 3px;
   }
 }
 
@@ -11391,7 +11406,7 @@ a.text-dark:focus {
     font-weight: 500;
     letter-spacing: -0.9px;
     line-height: 1.31;
-    margin-left: 12px;
+    margin-left: 6px;
     margin-top: 10px;
   }
 }
@@ -11402,7 +11417,9 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--subscribe .section__subheading {
-    margin-left: 8px;
+    letter-spacing: -0.25px;
+    margin-left: 3px;
+    margin-top: 9px;
   }
 }
 
