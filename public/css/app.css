@@ -10618,6 +10618,7 @@ a.text-dark:focus {
 .navbar .nav-item.dropdown.show .dropdown-toggle {
   background-color: rgba(0, 0, 0, 0.07);
   color: black;
+  outline: none;
 }
 
 .navbar .navbar-toggler {
@@ -10961,12 +10962,20 @@ a.text-dark:focus {
   font-size: 16px;
 }
 
+.navbar .dropdown-menu--company .dropdown-item__heading::first-letter {
+  letter-spacing: -0.7px;
+}
+
 @media (min-width: 1080px) {
   .navbar .dropdown-menu--company .dropdown-item__heading {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: -0.4px;
     line-height: 1.12;
+  }
+
+  .navbar .dropdown-menu--company .dropdown-item__heading::first-letter {
+    letter-spacing: -0.4px;
   }
 }
 
