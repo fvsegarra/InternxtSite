@@ -26,6 +26,18 @@
 
         @endif
 
+        <style type="text/css">
+            html {
+                -webkit-font-smoothing: antialiased;
+            }
+
+            @media screen and (-webkit-min-device-pixel-ratio: 1.25),
+            screen and ( min-device-pixel-ratio: 1.25),
+            screen and ( min-resolution: 200dpi),
+            screen and ( min-resolution: 1.25dppx) {
+                -webkit-font-smoothing: subpixel-antialiased;
+            }
+        </style>
     </head>
     <body id="page-@yield('pageID')">
 
