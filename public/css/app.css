@@ -12676,6 +12676,7 @@ hr {
     font-size: 26px;
     letter-spacing: -0.8px;
     line-height: 1.58;
+    max-width: 992px;
   }
 
   #page-cloud .section--cloud-intro .section__content em {

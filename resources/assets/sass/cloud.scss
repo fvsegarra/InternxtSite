@@ -192,11 +192,11 @@
 
                 @include whenLargerThan('large-screen') {
 
-                    // width: 1049px;
                     color: #636366;
                     font-size: 26px;
                     letter-spacing: -0.8px;
                     line-height: 1.58;
+                    max-width: 992px;
 
                     em {
                         color: #48484a;
