@@ -414,6 +414,8 @@
 
                     &--input {
                         max-width: 378px;
+                        padding-left: 20px;
+                        padding-right: 3px;
                     }
 
                     &--btn {
@@ -444,7 +446,10 @@
                 color: #838387;
                 font-size: 17px;
                 font-weight: 450;
+                left: 3px;
                 line-height: 1.48;
+                position: relative;
+                top: 3px;
             }
 
         }
@@ -458,7 +463,7 @@
             font-size: 17px;
             font-weight: 450;
             margin-top: 23px;
-            padding: 17px 36px;
+            padding: 17px 40px 18px 37px;
 
             @include whenLargerThan('large-screen') {
                 margin-top: 0;
