@@ -11149,6 +11149,8 @@ a.text-dark:focus {
 }
 
 .section--about .section__cta {
+  color: black;
+  display: block;
   font-size: 17px;
   font-stretch: normal;
   font-style: normal;

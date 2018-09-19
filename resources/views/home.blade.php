@@ -45,7 +45,7 @@
 					<p class="section__label">About Us</p>
 					<p class="section__heading">Technologies <span class="linebreak d-lg-block"></span>to enhance life.</p>
 					<p class="section__subheading">Internxt aims to enrich life through revolutionary technology. The goal is to create a vast range of innovative mass-market services that disrupt various technology industries.</p>
-					<p class="section__cta">Learn more about Internxt <img src="/img/icons/chevron-learn-more.svg"></p>
+					<a class="section__cta" href="{{ route('about') }}">Learn more about Internxt <img src="/img/icons/chevron-learn-more.svg"></a>
 
 					<div class="section--about__articles">
 						<div class="row align-items-center">
