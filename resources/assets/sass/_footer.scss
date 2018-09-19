@@ -5,13 +5,19 @@
 	padding: 88px 0 52px 0;
 
 	@include whenLargerThan('large-screen') {
-		padding: 121px 0 52px 0;
+		padding: 120px 0 82px 0;
 	}
 
 	.col-lg {
 
 		&--product{
-			max-width: 229px;
+
+			max-width: 231px;
+
+			@include whenLargerThan('xl-screen') {
+				padding-left: 18px;
+			}
+
 		}
 
 		&--discover {
@@ -23,7 +29,7 @@
 		}
 
 		&--legal {
-			max-width: 299px;
+			max-width: 300px;
 		}
 
 		&--connect {
@@ -110,12 +116,69 @@
 			color: #cbcccd;
 		}
 
-		&--social{
+		&--social {
 			padding: 0 12px;
 		}
 
 		@include whenLargerThan('large-screen') {
 			padding: 11px 8px 7px;
+		}
+
+		@include whenLargerThan('xl-screen') {
+
+			&--social {
+    			position: relative;
+    		}
+
+			&--twitter {
+				// height: 25px;
+				top: -2px;
+				left: -4px;
+			}
+
+			&--medium {
+
+			    left: -2px;
+			    top: -2px;
+
+			    img {
+			    	height: 23px;
+			    }
+
+			}
+
+			&--github {
+			    top: -4px;
+			    left: 3px;
+			}
+
+			&--mail {
+
+				left: 9px;
+				top: -3px;
+
+				img {
+					height: 21px;
+				}
+
+			}
+
+			&--telegram {
+
+				left: 14px;
+				top: -2px;
+
+				img {
+					height: 24px;
+				}
+
+			}
+
+			&--instagram {
+    			left: 19px;
+				top: -2px;
+			}
+
 		}
 
 	}
@@ -132,10 +195,17 @@
 	}
 
 	&__bottom {
+
+		align-items: center;
 		border-top: 1px solid #3d4247;
 		margin-top: 62px;
 		padding-top: 52px;
-		align-items: center;
+
+		@include whenLargerThan('large-screen') {
+		    margin-top: 97px;
+		    padding-top: 39px;
+		}
+
 	}
 
 	&__copyright {
@@ -147,6 +217,7 @@
 
 		@include whenLargerThan('large-screen') {
     		padding-top: 10px;
+    		font-size: 17px;
     	}
 
 	}
