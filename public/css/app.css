@@ -11159,7 +11159,6 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--about .section__cta {
-    font-weight: 700;
     margin-left: 1px;
     margin-top: 57px;
   }
