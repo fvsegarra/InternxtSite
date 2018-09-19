@@ -10834,7 +10834,7 @@ a.text-dark:focus {
   .navbar .dropdown-menu .dropdown-item {
     background-repeat: no-repeat;
     background-size: 50px 16px;
-    background-position: 345px center;
+    background-position: 269px center;
     -webkit-transition: background-position 0.3s;
     transition: background-position 0.3s;
     padding: 32px 35.6px 27px 27px;
@@ -10844,7 +10844,7 @@ a.text-dark:focus {
 
 .navbar .dropdown-menu .dropdown-item:hover {
   background-image: url("/img/icons/dropdown/chevron.svg");
-  background-position: 354px center;
+  background-position: 278px center;
 }
 
 .navbar .dropdown-menu .dropdown-item:hover,
