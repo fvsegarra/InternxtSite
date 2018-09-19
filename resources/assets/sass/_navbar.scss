@@ -166,6 +166,10 @@
 			background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(31, 40, 49)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
 		}
 
+		.navbar-nav .nav-link:hover {
+			color: black;
+		}
+
 	}
 
 	&.navbar-xcloud,
@@ -297,6 +301,7 @@
 	    	&:hover {
 	    		background-image: url('/img/icons/dropdown/chevron.svg');
 	    		background-position: 278px center;
+	    		color: black;
 	    	}
 
 	    	&:hover,
