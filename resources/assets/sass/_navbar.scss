@@ -177,8 +177,10 @@
 
 	}
 
+	&.navbar-about,
+	&.navbar-token,
 	&.navbar-xcloud,
-	&.navbar-token {
+	&.navbar-xcore {
 
  		background-color: #9ecbf7;
  		padding-left: 0;

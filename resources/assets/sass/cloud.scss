@@ -1,25 +1,5 @@
 #page-cloud {
 
-    .navbar {
-
-        & > .container {
-
-            @include whenLargerThan('xl-screen') {
-                max-width: 1338px;
-            }
-
-        }
-
-        .navbar-brand {
-
-            @include whenLargerThan('xl-screen') {
-                margin-left: 17px;
-            }
-
-        }
-
-    }
-
     .pageHeader{
 
         background-image: linear-gradient(to bottom, #2797d8, #2768bc);

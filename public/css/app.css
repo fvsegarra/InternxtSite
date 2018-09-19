@@ -10728,40 +10728,52 @@ a.text-dark:focus {
   color: black;
 }
 
+.navbar.navbar-about,
+.navbar.navbar-token,
 .navbar.navbar-xcloud,
-.navbar.navbar-token {
+.navbar.navbar-xcore {
   background-color: #9ecbf7;
   padding-left: 0;
 }
 
+.navbar.navbar-about .navbar-brand,
+.navbar.navbar-token .navbar-brand,
 .navbar.navbar-xcloud .navbar-brand,
-.navbar.navbar-token .navbar-brand {
+.navbar.navbar-xcore .navbar-brand {
   margin-left: 0px;
 }
 
 @media (min-width: 1080px) {
+  .navbar.navbar-about .navbar-brand,
+  .navbar.navbar-token .navbar-brand,
   .navbar.navbar-xcloud .navbar-brand,
-  .navbar.navbar-token .navbar-brand {
+  .navbar.navbar-xcore .navbar-brand {
     margin-left: 11px;
   }
 }
 
+.navbar.navbar-about .navbar-brand .mainLogo,
+.navbar.navbar-token .navbar-brand .mainLogo,
 .navbar.navbar-xcloud .navbar-brand .mainLogo,
-.navbar.navbar-token .navbar-brand .mainLogo {
+.navbar.navbar-xcore .navbar-brand .mainLogo {
   height: 46px;
 }
 
 @media (min-width: 1080px) {
+  .navbar.navbar-about .navbar-brand .mainLogo,
+  .navbar.navbar-token .navbar-brand .mainLogo,
   .navbar.navbar-xcloud .navbar-brand .mainLogo,
-  .navbar.navbar-token .navbar-brand .mainLogo {
+  .navbar.navbar-xcore .navbar-brand .mainLogo {
     height: 44px;
     margin-left: -21px;
     margin-top: -3px;
   }
 }
 
+.navbar.navbar-about .navbar-nav a.nav-link,
+.navbar.navbar-token .navbar-nav a.nav-link,
 .navbar.navbar-xcloud .navbar-nav a.nav-link,
-.navbar.navbar-token .navbar-nav a.nav-link {
+.navbar.navbar-xcore .navbar-nav a.nav-link {
   color: white;
 }
 
@@ -12500,18 +12512,6 @@ hr {
   #page-home .section--preview-xcore .section__cta {
     color: #d1bfff;
     border-color: #d1bfff;
-  }
-}
-
-@media (min-width: 1440px) {
-  #page-cloud .navbar > .container {
-    max-width: 1338px;
-  }
-}
-
-@media (min-width: 1440px) {
-  #page-cloud .navbar .navbar-brand {
-    margin-left: 17px;
   }
 }
 
