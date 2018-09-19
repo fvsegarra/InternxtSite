@@ -317,6 +317,7 @@
 
             @include whenLargerThan('large-screen') {
                 padding-top: 138px;
+                padding-bottom: 138px;
             }
 
             .subsection {
@@ -417,12 +418,21 @@
 
                 &--blackberry {
 
+                    .subsection__image--desktop {
+                        left: 43px;
+                        position: relative;
+                        top: 19px;
+                    }
+
                 }
 
                 &--civic {
 
                     .subsection__image--desktop {
                         height: 78px;
+                        left: 47px;
+                        position: relative;
+                        top: 18px;
                     }
 
                 }
@@ -964,15 +974,49 @@
             }
 
             .section__image {
+
                 margin: 44px 0 48px;
+                position: relative;
+
+                &--ipad {
+
+                    @include whenLargerThan('large-screen') {
+                        left: -53px;
+                        max-width: 687px;
+                    }
+
+                }
+
+                &--iphone {
+
+                    @include whenLargerThan('large-screen') {
+                        left: -64px;
+                        max-width: 286px;
+                        top: 11px;
+                    }
+
+                }
+
             }
 
             .section__subheading {
+
                 color: black;
                 font-size: 33px;
                 font-weight: bold;
                 letter-spacing: -0.6px;
                 line-height: 1.18;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    left: -31px;
+                    position: relative;
+                    top: -25px;
+                    letter-spacing: -0.9px;
+                    line-height: 0.98;
+                    width: 365px;
+                }
+
             }
 
             .section__content {
@@ -986,15 +1030,23 @@
                     margin-bottom: 0;
                 }
 
+                @include whenLargerThan('large-screen') {
+                    left: -30px;
+                    position: relative;
+                    top: -19px;
+                    width: 365px;
+                }
+
             }
 
             .section__cta {
+
                 background-color: #f2f2f2;
                 border-radius: 24px;
                 color: #808080;
                 display: block;
                 font-size: 15px;
-                font-weight: bold;
+                font-weight: 700;
                 height: 47px;
                 letter-spacing: -0.2px;
                 line-height: 1.79;
@@ -1002,6 +1054,13 @@
                 padding: 10px 25px;
                 text-transform: uppercase;
                 width: 213px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 31px;
+                    left: -30px;
+                    position: relative;
+                }
+
             }
 
         }

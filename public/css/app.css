@@ -12810,6 +12810,7 @@ hr {
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-partners {
     padding-top: 138px;
+    padding-bottom: 138px;
   }
 }
 
@@ -12908,8 +12909,17 @@ hr {
   }
 }
 
+#page-cloud .section--cloud-partners .subsection--blackberry .subsection__image--desktop {
+  left: 43px;
+  position: relative;
+  top: 19px;
+}
+
 #page-cloud .section--cloud-partners .subsection--civic .subsection__image--desktop {
   height: 78px;
+  left: 47px;
+  position: relative;
+  top: 18px;
 }
 
 #page-cloud .section--cloud-architecture {
@@ -13423,6 +13433,22 @@ hr {
 
 #page-cloud .section--cloud-more-info .section__image {
   margin: 44px 0 48px;
+  position: relative;
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-more-info .section__image--ipad {
+    left: -53px;
+    max-width: 687px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-more-info .section__image--iphone {
+    left: -64px;
+    max-width: 286px;
+    top: 11px;
+  }
 }
 
 #page-cloud .section--cloud-more-info .section__subheading {
@@ -13431,6 +13457,18 @@ hr {
   font-weight: bold;
   letter-spacing: -0.6px;
   line-height: 1.18;
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-more-info .section__subheading {
+    font-size: 40px;
+    left: -31px;
+    position: relative;
+    top: -25px;
+    letter-spacing: -0.9px;
+    line-height: 0.98;
+    width: 365px;
+  }
 }
 
 #page-cloud .section--cloud-more-info .section__content {
@@ -13444,13 +13482,22 @@ hr {
   margin-bottom: 0;
 }
 
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-more-info .section__content {
+    left: -30px;
+    position: relative;
+    top: -19px;
+    width: 365px;
+  }
+}
+
 #page-cloud .section--cloud-more-info .section__cta {
   background-color: #f2f2f2;
   border-radius: 24px;
   color: #808080;
   display: block;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   height: 47px;
   letter-spacing: -0.2px;
   line-height: 1.79;
@@ -13458,6 +13505,14 @@ hr {
   padding: 10px 25px;
   text-transform: uppercase;
   width: 213px;
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-more-info .section__cta {
+    margin-top: 31px;
+    left: -30px;
+    position: relative;
+  }
 }
 
 #page-cloud .section--beta-cloud .section__cta {

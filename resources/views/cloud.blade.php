@@ -125,7 +125,7 @@
 							<p class="subsection__heading d-none d-lg-block">Empowering the era of secure technology.</p>
 							<p>BlackBerry provides security consulting services and solutions that can greatly improve our architecture. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
 
-							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-xcloud.svg"></a>
+							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
 
 						</div>{{-- /.col-lg-7 --}}
 
@@ -156,7 +156,7 @@
 						<div class="col-lg-7">
 							<p class="subsection__heading d-none d-lg-block">Protecting your identity with Blockchain.</p>
 							<p>Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
-							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-xcloud.svg"></a>
+							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
 						</div>{{-- /.col-lg-7 --}}
 
 					</div>{{-- /.row --}}
@@ -180,13 +180,13 @@
 			<div class="row">
 
 				<div class="col-lg-8 d-none d-lg-block">
-					<img class="section__image img-fluid" src="/img/mockups/xcloud/ipad.png">
+					<img class="section__image section__image--ipad img-fluid" src="/img/mockups/xcloud/ipad.png">
 				</div>{{-- /.col-lg-8 --}}
 
 				<div class="col-lg-4">
 
-					<img class="section__image img-fluid" src="/img/mockups/xcloud/iPhone.png">
-					<p class="section__subheading">Get to your files on all your devices.</p>
+					<img class="section__image section__image--iphone img-fluid" src="/img/mockups/xcloud/iPhone.png">
+					<p class="section__subheading">Get to your files<span class="linebreak d-none d-lg-block"></span> on all your devices.</p>
 					<div class="section__content">
 						<p>The X Cloud app will allow you to access your files from your iOS and Android devices. All your files will stay up to date automatically across all your devices.</p>
 					</div>{{-- /.section__content --}}
