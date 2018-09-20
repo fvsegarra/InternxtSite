@@ -43,7 +43,7 @@
 
 				<div class="row subsection--intro--bg">
 
-					<div class="col-lg-3 offset-lg-9">
+					<div class="col-lg-3 offset-lg-8">
 
 						<div class="subsection subsection--host">
 							<p class="subsection__heading">Host easier. Earn more.</p>
