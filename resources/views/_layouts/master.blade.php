@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link rel="stylesheet" href="css/app.css">
         <link rel="icon" href="favicon.ico">
-        <meta name="norton-safeweb-site-verification" content="tfrefj18nmf22d-ql818sychzwkid-b4ukbulz91gpjvl6oc7bw2ep1uwzcb4mpvzuka6gfc-yy6crqfm3xu-qvyvsyovb8fb0juvj1ikco1t70mzc2rh0avm50i-i3w" />
-
 
         <title>@hasSection('pageTitle')Internxt - @yield('pageTitle') @else Internxt @endif</title>
 
         <meta name="description" content="@yield('metaDescription')">
+        <meta name="norton-safeweb-site-verification" content="tfrefj18nmf22d-ql818sychzwkid-b4ukbulz91gpjvl6oc7bw2ep1uwzcb4mpvzuka6gfc-yy6crqfm3xu-qvyvsyovb8fb0juvj1ikco1t70mzc2rh0avm50i-i3w" />
+
 
         @if(app()->environment('production'))
 
