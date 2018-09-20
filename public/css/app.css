@@ -14605,10 +14605,16 @@ hr {
 
 @media (min-width: 1080px) {
   #page-about .pageHeader {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-image: url("/img/headers/about_desktop.png");
-    height: 874px;
-    padding-top: 371px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(100vh + 87px);
     padding-left: 272px;
+    padding-top: 87px;
   }
 }
 
@@ -14625,6 +14631,7 @@ hr {
     font-weight: 500;
     line-height: 1;
     letter-spacing: -1.4px;
+    margin-bottom: 0;
   }
 }
 
@@ -14642,7 +14649,7 @@ hr {
     font-weight: 300;
     letter-spacing: -0.6px;
     line-height: 1;
-    margin-top: 16px;
+    margin-top: 14px;
   }
 }
 
@@ -14738,8 +14745,20 @@ hr {
 }
 
 @media (min-width: 1080px) {
+  #page-about .section--team {
+    padding-top: 130px;
+  }
+}
+
+@media (min-width: 1080px) {
   #page-about .section--team > .container {
     max-width: 1120px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--team .section__label {
+    margin-left: 4px;
   }
 }
 
@@ -14748,8 +14767,8 @@ hr {
     font-size: 45px;
     font-weight: 600;
     letter-spacing: -1.6px;
-    line-height: 1.78;
-    margin-top: 0;
+    line-height: 1;
+    margin-top: 13px;
   }
 }
 
@@ -14762,13 +14781,42 @@ hr {
 }
 
 @media (min-width: 1080px) {
+  #page-about .section--team-partners {
+    margin-top: 160px;
+  }
+}
+
+@media (min-width: 1080px) {
   #page-about .section--team-partners > .container {
-    max-width: 1120px;
+    max-width: 1160px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--team-partners .section__label {
+    font-size: 13px;
+    margin-left: 22px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--team-partners .section__heading {
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 9px;
   }
 }
 
 #page-about .section--team-partners .section__content {
   padding-top: 100px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--team-partners .section__content {
+    padding-top: 88px;
+  }
 }
 
 #page-about .section--team-partners hr {
@@ -14806,30 +14854,47 @@ hr {
 
 #page-about .section--branding-assets .section__label {
   color: white;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
   margin-left: 4px;
+  text-transform: uppercase;
 }
 
 #page-about .section--branding-assets .section__heading {
   font-size: 38px;
   font-weight: 600;
   letter-spacing: -1.3px;
-  line-height: 1.21;
-  margin-top: 22px;
-  max-width: 278px;
+  line-height: 1.08;
+  margin-top: 14px;
+  max-width: 289px;
+}
+
+#page-about .section--branding-assets .section__subheading {
+  color: white;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+  margin-top: 21px;
+  max-width: 285px;
 }
 
 #page-about .section--branding-assets .section__cta {
   background-color: black;
+  background-image: url("/img/icons/chevron-right-circle.svg");
+  background-position: 160px center;
+  background-repeat: no-repeat;
+  background-size: 19px;
   border-radius: 27.5px;
   color: white;
   display: inline-block;
   font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.1px;
-  line-height: 2.37;
+  line-height: 1;
   margin-left: 1px;
-  margin-top: 67px;
-  padding: 10px 56px 10px 27px;
+  margin-top: 47px;
+  padding: 14px 47px 11px 21px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
 }
 
 #page-about .teamMember {
@@ -14902,6 +14967,16 @@ hr {
 @media (min-width: 1080px) {
   #page-about .teamPartner .col-lg-5 {
     display: block;
+    position: relative;
+    left: -15px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner .col-lg-7 {
+    left: 21px;
+    position: relative;
   }
 }
 
@@ -14941,6 +15016,13 @@ hr {
   color: black;
 }
 
+@media (min-width: 1080px) {
+  #page-about .teamPartner__heading {
+    margin-top: 27px;
+    margin-bottom: 0;
+  }
+}
+
 #page-about .teamPartner__subheading {
   color: #141d85;
   font-size: 23px;
@@ -14949,12 +15031,26 @@ hr {
   max-width: 475px;
 }
 
+@media (min-width: 1080px) {
+  #page-about .teamPartner__subheading {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+}
+
 #page-about .teamPartner__content {
   color: #838387;
   font-size: 20px;
   letter-spacing: -0.1px;
   line-height: 1.55;
   max-width: 495px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner__content {
+    margin-top: 30px;
+    width: 490px;
+  }
 }
 
 #page-about .teamPartner--blackberry .teamPartner__image {
@@ -14967,12 +15063,26 @@ hr {
 
 @media (min-width: 1080px) {
   #page-about .teamPartner--civic .col-lg-7 {
-    left: 62px;
+    left: 53px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner--civic .col-lg-5 {
+    left: 36px;
   }
 }
 
 #page-about .teamPartner--civic .teamPartner__image {
   background-color: #3da975;
+}
+
+#page-about .teamPartner--y-combinator .teamPartner__image {
+  background-color: #3da975;
+}
+
+#page-about .teamPartner--y-combinator .teamPartner__subheading {
+  color: #bf5209;
 }
 
 #page-about .memberProfile {

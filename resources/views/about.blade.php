@@ -193,8 +193,9 @@
 	<section class="section section--branding-assets">
 		<div class="container">
 			<div class="section__content">
-				<p class="section__label">DESIGN ASSETS</p>
-				<p class="section__heading">Spread the word with our <span class="linebreak d-none d-lg-block"></span>branding assets.</p>
+				<p class="section__label">Design Assets</p>
+				<p class="section__heading">Enliven words with just the right visual.</p>
+				<p class="section__subheading">Download our design assets <span class="linebreak d-block"></span>for optimal use of our branding.</p>
 				<a class="section__cta" href="#">Download Assets</a>
 			</div>
 		</div>
@@ -202,7 +203,7 @@
 
 	<section class="section section--team-partners">
 		<div class="container">
-			<p class="section__label">Leadership</p>
+			<p class="section__label">Partnerships</p>
 			<p class="section__heading">Internxt’s Partners</p>
 			<div class="section__content">
 
@@ -211,7 +212,7 @@
 					<div class="row">
 						<div class="col-lg-7">
 							<img class="teamPartner__image" src="/img/partners/blackberry.png">
-							<a href="#">Learn more about the partnership</a>
+							<a href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 						<div class="col-lg-5">
 							<p class="teamPartner__heading">Blackberry Partnership</p>
@@ -234,8 +235,26 @@
 						</div>{{-- /.col-lg-5 --}}
 						<div class="col-lg-7">
 							<img class="teamPartner__image" src="/img/partners/civic.png">
-							<a href="#">Learn more about the partnership</a>
+							<a href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
+					</div>{{-- /.row --}}
+				</div>{{-- /.teamPartner --}}
+
+				<div>
+					<hr>
+				</div>
+
+				<div class="teamPartner teamPartner--y-combinator">
+					<div class="row">
+						<div class="col-lg-7">
+							<img class="teamPartner__image" src="/img/partners/civic.png">
+							<a href="#">Learn more about the program <img src="/img/icons/chevron-right-partner.svg" height="11"></a>
+						</div>{{-- /.col-lg-7 --}}
+						<div class="col-lg-5">
+							<p class="teamPartner__heading">Y Combinator Program</p>
+							<p class="teamPartner__subheading">Y Combinator provides seed funding for startups. Seed funding is the earliest stage of venture funding.</p>
+							<p class="teamPartner__content">Y Combinator work with startups on their ideas. They have spent a lot of time figuring out how to make things people want. They can usually see fairly quickly the direction in which a small idea should be expanded, or the point at which to begin attacking a large but vague one.</p>
+						</div>{{-- /.col-lg-5 --}}
 					</div>{{-- /.row --}}
 				</div>{{-- /.teamPartner --}}
 
