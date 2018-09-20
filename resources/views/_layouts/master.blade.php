@@ -11,8 +11,7 @@
         <title>@hasSection('pageTitle')Internxt - @yield('pageTitle') @else Internxt @endif</title>
 
         <meta name="description" content="@yield('metaDescription')">
-        <meta name="norton-safeweb-site-verification" content="tfrefj18nmf22d-ql818sychzwkid-b4ukbulz91gpjvl6oc7bw2ep1uwzcb4mpvzuka6gfc-yy6crqfm3xu-qvyvsyovb8fb0juvj1ikco1t70mzc2rh0avm50i-i3w" />
-
+<meta name="norton-safeweb-site-verification" content="tfrefj18nmf22d-ql818sychzwkid-b4ukbulz91gpjvl6oc7bw2ep1uwzcb4mpvzuka6gfc-yy6crqfm3xu-qvyvsyovb8fb0juvj1ikco1t70mzc2rh0avm50i-i3w" />
 
         @if(app()->environment('production'))
 
