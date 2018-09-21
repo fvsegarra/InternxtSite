@@ -211,7 +211,7 @@
 		padding-top: 52px;
 
 		@include whenLargerThan('large-screen') {
-		    margin-top: 97px;
+		    margin-top: 87px;
 		    padding-top: 39px;
 		}
 
@@ -227,7 +227,6 @@
 
 		@include whenLargerThan('large-screen') {
     		padding-left: 15px;
-    		padding-top: 10px;
     		font-size: 17px;
     	}
 

@@ -12156,7 +12156,7 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .pageFooter__bottom {
-    margin-top: 97px;
+    margin-top: 87px;
     padding-top: 39px;
   }
 }
@@ -12172,7 +12172,6 @@ a.text-dark:focus {
 @media (min-width: 1080px) {
   .pageFooter__copyright {
     padding-left: 15px;
-    padding-top: 10px;
     font-size: 17px;
   }
 }
