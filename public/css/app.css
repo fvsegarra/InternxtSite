@@ -11174,7 +11174,7 @@ a.text-dark:focus {
 @media (min-width: 1080px) {
   .section--about .section__subheading {
     left: 0;
-    letter-spacing: 0.2px;
+    letter-spacing: -0.4px;
     margin-bottom: 0;
     margin-top: 22px;
     max-width: 493px;
@@ -11293,7 +11293,7 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--about .subsection .subsection__content {
-    letter-spacing: 0.12px;
+    letter-spacing: -0.4px;
     margin-left: 0;
     margin-top: 10px;
     max-width: 397px;
@@ -12157,8 +12157,8 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .pageFooter__bottom {
-    margin-top: 87px;
-    padding-top: 39px;
+    margin-top: 82px;
+    padding-top: 44px;
   }
 }
 
