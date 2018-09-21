@@ -503,8 +503,17 @@
             padding: 51px;
 
             @include whenLargerThan('large-screen') {
-                // padding: 134px 126px 29px;
-                padding: 44px 76px 55px 63px;
+                padding: 45px 100px 47px 81px;
+            }
+
+        }
+
+        .section__icon {
+
+            display: none;
+
+            @include whenLargerThan('large-screen') {
+                display: block;
             }
 
         }
@@ -517,11 +526,12 @@
                 display: inline-block;
                 font-size: 28px;
                 font-weight: 600;
+                left: -29px;
                 letter-spacing: -0.6px;
                 line-height: 1.86;
                 margin-bottom: 0;
                 margin-top: 0;
-                // width: 318px;
+                position: relative;
             }
 
         }
@@ -543,11 +553,9 @@
             width: 221px;
 
             @include whenLargerThan('large-screen') {
-                font-size: 18px;
-                font-weight: 600;
-                letter-spacing: -0.2px;
+                background-position-x: 180px;
                 line-height: normal;
-                margin-left: 92px;
+                margin-top: 0;
             }
 
         }

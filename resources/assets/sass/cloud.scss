@@ -376,6 +376,7 @@
                         font-size: 38px;
                         font-weight: bold;
                         line-height: 1.03;
+                        letter-spacing: 0px;
                     }
 
                 }
@@ -681,7 +682,7 @@
 
         &--cloud-plans{
 
-            padding-top: 108px;
+            padding-top: 88px;
 
             & > .container {
 
@@ -728,14 +729,27 @@
                 margin-top: 80px;
 
                 @include whenLargerThan('large-screen') {
-                    margin-top: 182px;
-                    background-image: url("/img/mockups/xcloud/storage.png");
+                    background-image: url(/img/mockups/xcloud/storage.png);
+                    background-image: url(/img/mockups/xcloud/storage.png);
+                    background-position: -124px 0px;
                     background-repeat: no-repeat;
-                    // background-size: ;
-                    // background-position:
+                    background-size: contain;
+                    height: 667px;
+                    margin-top: 89px;
+                    padding-bottom: 60px;
+                    padding-top: 92px;
+                }
+
+                .offset-lg-6{
+
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 145px;
+                    }
+
                 }
 
             }
+
 
             .subsection {
 
@@ -1108,12 +1122,26 @@
             @include whenLargerThan('large-screen') {
 
                 .container {
-                    max-width: 850px;
+                    left: -3px;
                     margin: 0 auto;
+                    max-width: 919px;
+                    position: relative;
                 }
 
                 .section__outline {
-                    padding: 41px 44px 45px 69px;
+                    padding: 41px 44px 38px 48px;
+                }
+
+                .section__icon {
+                    left: 3px;
+                    position: relative;
+                    top: -4px;
+                }
+
+                .section__heading {
+                    left: -13px;
+                    letter-spacing: -0.3px;
+                    position: relative;
                 }
 
                 .section__cta {

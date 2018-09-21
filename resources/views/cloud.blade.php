@@ -258,7 +258,8 @@
 	<section class="section section--beta section--beta-cloud">
 		<div class="container">
 			<div class="section__outline d-lg-flex align-items-center justify-content-between">
-				<p class="section__heading">Jump into the X Cloud Beta today.</p>
+				<img class="section__icon" src="/img/logos/xcloud-flat.jpg" height="39">
+				<p class="section__heading">Jump into X Cloud Beta today.</p>
 				<button class="section__cta btn btn-primary" type="button" data-toggle="modal" data-target="#modalXCloud">
 					Get X Cloud Beta
 				</button>

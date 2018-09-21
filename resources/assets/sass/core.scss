@@ -451,7 +451,13 @@
         &--beta {
 
             @include whenLargerThan('small-screen') {
+
                 margin-top: 237px;
+
+                & > .container {
+                    max-width: 906px;
+                }
+
             }
 
         }

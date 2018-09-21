@@ -11584,7 +11584,17 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--beta .section__outline {
-    padding: 44px 76px 55px 63px;
+    padding: 45px 100px 47px 81px;
+  }
+}
+
+.section--beta .section__icon {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  .section--beta .section__icon {
+    display: block;
   }
 }
 
@@ -11597,10 +11607,12 @@ a.text-dark:focus {
     display: inline-block;
     font-size: 28px;
     font-weight: 600;
+    left: -29px;
     letter-spacing: -0.6px;
     line-height: 1.86;
     margin-bottom: 0;
     margin-top: 0;
+    position: relative;
   }
 }
 
@@ -11622,11 +11634,9 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--beta .section__cta {
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: -0.2px;
+    background-position-x: 180px;
     line-height: normal;
-    margin-left: 92px;
+    margin-top: 0;
   }
 }
 
@@ -12882,6 +12892,7 @@ hr {
     font-size: 38px;
     font-weight: bold;
     line-height: 1.03;
+    letter-spacing: 0px;
   }
 }
 
@@ -13175,7 +13186,7 @@ hr {
 }
 
 #page-cloud .section--cloud-plans {
-  padding-top: 108px;
+  padding-top: 88px;
 }
 
 @media (min-width: 1080px) {
@@ -13222,9 +13233,21 @@ hr {
 
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-plans .section__content {
-    margin-top: 182px;
-    background-image: url("/img/mockups/xcloud/storage.png");
+    background-image: url(/img/mockups/xcloud/storage.png);
+    background-image: url(/img/mockups/xcloud/storage.png);
+    background-position: -124px 0px;
     background-repeat: no-repeat;
+    background-size: contain;
+    height: 667px;
+    margin-top: 89px;
+    padding-bottom: 60px;
+    padding-top: 92px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-plans .section__content .offset-lg-6 {
+    padding-left: 145px;
   }
 }
 
@@ -13568,12 +13591,26 @@ hr {
 
 @media (min-width: 1080px) {
   #page-cloud .section--beta-cloud .container {
-    max-width: 850px;
+    left: -3px;
     margin: 0 auto;
+    max-width: 919px;
+    position: relative;
   }
 
   #page-cloud .section--beta-cloud .section__outline {
-    padding: 41px 44px 45px 69px;
+    padding: 41px 44px 38px 48px;
+  }
+
+  #page-cloud .section--beta-cloud .section__icon {
+    left: 3px;
+    position: relative;
+    top: -4px;
+  }
+
+  #page-cloud .section--beta-cloud .section__heading {
+    left: -13px;
+    letter-spacing: -0.3px;
+    position: relative;
   }
 
   #page-cloud .section--beta-cloud .section__cta {
@@ -14039,6 +14076,10 @@ hr {
 @media (min-width: 768px) {
   #page-core .section--beta {
     margin-top: 237px;
+  }
+
+  #page-core .section--beta > .container {
+    max-width: 906px;
   }
 }
 
