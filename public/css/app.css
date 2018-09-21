@@ -11953,7 +11953,7 @@ a.text-dark:focus {
   background-image: url("/img/icons/os/linux.svg");
 }
 
-.modal a.modal__cta--os_x {
+.modal a.modal__cta--mac {
   background-image: url("/img/icons/os/osx.svg");
 }
 
