@@ -134,8 +134,8 @@
 				</div>{{-- /.col-lg --}}
 
 				<div class="col-lg">
-					<div class="section__imageContainer section__imageContainer--yobit">
-						<img class="section__image img-fluid" src="/img/logos/exchanges/yobit.png">
+					<div class="section__imageContainer section__imageContainer--latoken">
+						<img class="section__image img-fluid" src="/img/logos/exchanges/latoken.png">
 					</div>
 				</div>{{-- /.col-lg --}}
 
