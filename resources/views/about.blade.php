@@ -247,7 +247,7 @@
 				<div class="teamPartner teamPartner--y-combinator">
 					<div class="row">
 						<div class="col-lg-7">
-							<img class="teamPartner__image" src="/img/partners/civic.png">
+							<img class="teamPartner__image" src="/img/partners/y-combinator.png">
 							<a href="#">Learn more about the program <img src="/img/icons/chevron-right-partner.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 						<div class="col-lg-5">
