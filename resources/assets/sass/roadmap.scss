@@ -9,6 +9,14 @@
 
     .section {
 
+        & > .container {
+
+            @include whenLargerThan('large-screen') {
+                max-width: 1324px;
+            }
+
+        }
+
         &__heading {
 
             font-size: 44px;
@@ -21,17 +29,37 @@
                 font-weight: bold;
                 letter-spacing: -1px;
                 line-height: 1.66;
+                margin-bottom: 0px;
             }
 
         }
 
         &__content {
+
             padding-top: 52px;
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 34px;
+            }
+
         }
 
         &--milestones {
 
+            .col-lg-4 {
+
+                @include whenLargerThan('large-screen') {
+                    padding-left: 11px;
+                    padding-right: 11px;
+                }
+
+            }
+
             &--published {
+
+                @include whenLargerThan('large-screen') {
+                    padding-top: 152px;
+                }
 
                 .subsection--milestone .subsection__label {
                     color: #0094ff;
@@ -73,17 +101,34 @@
             padding: 34px 23px;
             transition: height $transition-default;
 
+            @include whenLargerThan('large-screen') {
+                padding: 36px 39px;
+                height: 161px;
+            }
+
             .subsection__label {
+
                 font-size: 15px;
                 font-weight: bold;
                 letter-spacing: 0.3px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-bottom: 0;
+                }
+
             }
 
             .subsection__heading {
+
                 font-size: 28px;
                 font-weight: 600;
                 letter-spacing: -0.8px;
                 line-height: 2.1;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 0px;
+                }
+
             }
 
             .subsection__content {

@@ -15272,6 +15272,12 @@ hr {
   margin-top: 170px;
 }
 
+@media (min-width: 1080px) {
+  #page-roadmap .section > .container {
+    max-width: 1324px;
+  }
+}
+
 #page-roadmap .section__heading {
   font-size: 44px;
   font-weight: 600;
@@ -15285,11 +15291,31 @@ hr {
     font-weight: bold;
     letter-spacing: -1px;
     line-height: 1.66;
+    margin-bottom: 0px;
   }
 }
 
 #page-roadmap .section__content {
   padding-top: 52px;
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .section__content {
+    padding-top: 34px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .section--milestones .col-lg-4 {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .section--milestones--published {
+    padding-top: 152px;
+  }
 }
 
 #page-roadmap .section--milestones--published .subsection--milestone .subsection__label {
@@ -15322,10 +15348,23 @@ hr {
   transition: height 0.3s;
 }
 
+@media (min-width: 1080px) {
+  #page-roadmap .subsection--milestone {
+    padding: 36px 39px;
+    height: 161px;
+  }
+}
+
 #page-roadmap .subsection--milestone .subsection__label {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0.3px;
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .subsection--milestone .subsection__label {
+    margin-bottom: 0;
+  }
 }
 
 #page-roadmap .subsection--milestone .subsection__heading {
@@ -15333,6 +15372,12 @@ hr {
   font-weight: 600;
   letter-spacing: -0.8px;
   line-height: 2.1;
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .subsection--milestone .subsection__heading {
+    margin-top: 0px;
+  }
 }
 
 #page-roadmap .subsection--milestone .subsection__content {
