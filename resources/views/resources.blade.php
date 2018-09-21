@@ -43,8 +43,8 @@
 					<div class="col-lg-4">
 						@component('_includes.resource')
 							@slot('class', 'series-a')
-							@slot('title', 'SERIES A')
-							@slot('btnLink', 'whitepaper.pdf')
+							@slot('title', 'Series A')
+							@slot('btnLink', 'seriesa.pdf')
 							@slot('btnText', 'Download Whitepaper')
 							@slot('content')
 								Check out our investor information document for Series A
