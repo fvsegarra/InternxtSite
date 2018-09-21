@@ -10707,7 +10707,6 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .navbar .navbar-nav a.nav-link--xcloud {
-    font-weight: 450;
     letter-spacing: -0px;
     margin-left: 11px;
     margin-top: -1px;
