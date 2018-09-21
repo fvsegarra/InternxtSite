@@ -46,7 +46,7 @@
 	}
 
 	&-body {
-		padding: 16px 55px 194px;
+		padding: 31px 55px 130px;
 	}
 
 	&__icon {
@@ -73,11 +73,11 @@
 	}
 
 	&__checkbox {
-		margin-top: 20px;
+		margin-top: 66px;
 	}
 
 	&__buttons {
-		margin-top: 46px;
+		margin-top: 34px;
 	}
 
 	a.modal__cta {
@@ -95,10 +95,8 @@
 		margin-right: 24px;
 		min-width: 210px;
 		padding: 10px 44px 11px 24px;
-		transition: opacity $transition-default;
 
 		&--disabled {
-			opacity: 0.75;
 		}
 
 		&--windows {

@@ -11895,7 +11895,7 @@ a.text-dark:focus {
 }
 
 .modal-body {
-  padding: 16px 55px 194px;
+  padding: 31px 55px 130px;
 }
 
 .modal__icon {
@@ -11922,11 +11922,11 @@ a.text-dark:focus {
 }
 
 .modal__checkbox {
-  margin-top: 20px;
+  margin-top: 66px;
 }
 
 .modal__buttons {
-  margin-top: 46px;
+  margin-top: 34px;
 }
 
 .modal a.modal__cta {
@@ -11943,12 +11943,6 @@ a.text-dark:focus {
   margin-right: 24px;
   min-width: 210px;
   padding: 10px 44px 11px 24px;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-.modal a.modal__cta--disabled {
-  opacity: 0.75;
 }
 
 .modal a.modal__cta--windows {
