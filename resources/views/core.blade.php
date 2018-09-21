@@ -94,7 +94,7 @@
 
 				<div class="tab-content" id="xcloudFeaturesTabContent">
 					<div class="tab-pane fade show active" id="xcore-dashboard" role="tabpanel" aria-labelledby="xcore-dashboard-tab"><strong>X Core homescreen</strong> displays only your necessary information, so you can get started as quickly as possible without having to learn anything new. Current earnings, shows how much INXT you have earned since day-one. Network data, displays your upload and download speed, uptime and your connectivity status.</div>
-					<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">You have full control over how much computer resource usage you designate for hosting by adjusting your hosting parameters to be able to ensure hosting never interferes with your experience. The more you designate to the network, the more INXT you will earn.</div>
+					<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab"><strong>X Core settings page</strong> gives you full control over how much computer resource usage you designate for hosting by adjusting your hosting parameters to be able to ensure hosting never interferes with your experience. The more you designate to the network, <span class="linebreak d-none d-lg-block"></span>the more INXT you will earn.</div>
 				</div>
 			</div>
 		</div>
