@@ -658,6 +658,7 @@
     	padding: 7px 30px 7px 18px;
 		position: relative;
 		left: -4px;
+        transition: background-position $transition-default;
 
         @include whenLargerThan('xl-screen') {
             color: #99e7ff;
@@ -667,6 +668,7 @@
             margin-top: 20px;
             opacity: 0.8;
         }
+
 
 	}
 

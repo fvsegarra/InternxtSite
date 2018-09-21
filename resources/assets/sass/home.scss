@@ -216,6 +216,10 @@
                 color: white;
                 opacity: 1;
                 font-weight: 450;
+
+                &:hover {
+                    background-position: 115px 12px;
+                }
             }
 
             @include whenLargerThan('xl-screen') {

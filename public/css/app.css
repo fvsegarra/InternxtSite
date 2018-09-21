@@ -11739,6 +11739,8 @@ a.text-dark:focus {
   padding: 7px 30px 7px 18px;
   position: relative;
   left: -4px;
+  -webkit-transition: background-position 0.3s;
+  transition: background-position 0.3s;
 }
 
 @media (min-width: 1440px) {
@@ -12428,6 +12430,11 @@ hr {
   color: white;
   opacity: 1;
   font-weight: 450;
+}
+
+#page-home .section--preview-xcloud .section__cta:hover,
+#page-home .section--preview-xcore .section__cta:hover {
+  background-position: 115px 12px;
 }
 
 @media (min-width: 1440px) {
