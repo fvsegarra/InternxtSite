@@ -85,7 +85,7 @@
 
 			<div class="tab-content" id="xcloudFeaturesTabContent">
 				<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab"><em>A more limitless workflow.</em> To make using your cloud easier your file options are spread across the dashboard so you can get where you want to be without having to click multiple times.</div>
-				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">We wanted to create a dynamic interface that's tailored to the user. Folders can be customised in various colours. Maybe you prefer a Health folder green or a Movie folder purple, to increase visibility, to suit the contents theme or to just simply look more appealing. You can also add a variety of different icons on the cover of any folder. Maybe you want to add a Dollar icon to a salary folder or an image icon to your holiday folder.</div>
+				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab"><em>Folders can be customised in various colours.</em> Maybe you prefer a Health folder green or a Movie folder purple, to increase visibility, to suit the contents theme or to just simply look more appealing. You can also add a variety of different icons on the cover of any folder. Maybe you want to add a Dollar icon to a salary folder or an image icon to your holiday folder.</div>
 			</div>
 
 		</div>{{-- /.container --}}
