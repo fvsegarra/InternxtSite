@@ -39,7 +39,9 @@
             padding-top: 52px;
 
             @include whenLargerThan('large-screen') {
-                padding-top: 34px;
+                padding-left: 4px;
+                padding-right: 7px;
+                padding-top: 31px;
             }
 
         }
@@ -97,12 +99,12 @@
             box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.06);
             cursor: pointer;
             height: 180px;
-            margin-top: 19px;
+            margin-top: 22px;
             padding: 34px 23px;
             transition: height $transition-default;
 
             @include whenLargerThan('large-screen') {
-                padding: 36px 39px;
+                padding: 36px 35px;
                 height: 161px;
             }
 
