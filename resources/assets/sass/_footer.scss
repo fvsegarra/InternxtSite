@@ -73,6 +73,14 @@
 
 	}
 
+	&__logoContainer {
+
+		img {
+		    height: 36px;
+		}
+
+	}
+
 	.list-unstyled {
 
 		a {
@@ -218,6 +226,7 @@
 		margin-bottom: 0;
 
 		@include whenLargerThan('large-screen') {
+    		padding-left: 15px;
     		padding-top: 10px;
     		font-size: 17px;
     	}

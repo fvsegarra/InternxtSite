@@ -12040,6 +12040,10 @@ a.text-dark:focus {
   margin-left: 2px;
 }
 
+.pageFooter__logoContainer img {
+  height: 36px;
+}
+
 .pageFooter .list-unstyled a {
   color: #c1c5c7;
   font-size: 18px;
@@ -12167,6 +12171,7 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .pageFooter__copyright {
+    padding-left: 15px;
     padding-top: 10px;
     font-size: 17px;
   }
