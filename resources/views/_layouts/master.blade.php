@@ -51,7 +51,7 @@
                 <div class="modal__checkbox form-check">
                     <input class="form-check-input" type="checkbox" id="checkTermsConditions">
                     <label class="form-check-label" for="checkTermsConditions">
-                        I accept Internxt's <a href="{{ route('terms') }}">Terms and Conditions</a>.
+                        I accept Internxt's <a href="{{ route('terms') }}">Terms of Service</a> and <a href="{{ route('privacy') }}">Privacy Policy</a>.
                     </label>
                 </div>
 
