@@ -11437,7 +11437,7 @@ a.text-dark:focus {
     font-weight: 500;
     letter-spacing: -0.9px;
     line-height: 1.31;
-    margin-left: 6px;
+    margin-left: 3px;
     margin-top: 10px;
   }
 }
@@ -11449,7 +11449,7 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--subscribe .section__subheading {
-    letter-spacing: -0.25px;
+    letter-spacing: -0.4px;
     margin-left: 3px;
     margin-top: 9px;
   }
