@@ -11,7 +11,7 @@
 	<section class="section section--resources">
 		<div class="container">
 
-			<p class="section__heading"><span class="d-none d-lg-inline">Internxt’s </span>Resources</p>
+			<p class="section__heading"><span class="d-none d-lg-inline">Internxt </span>Resources</p>
 
 			<div class="section__content">
 				<div class="row">

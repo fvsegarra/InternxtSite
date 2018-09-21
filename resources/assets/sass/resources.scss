@@ -3,17 +3,29 @@
 
 	.section{
 
-		&__heading {
-			margin-bottom: 0;
-		}
-
-		&__content {
-			margin-top: 80px;
-		}
-
 		&--resources {
 
+			@include whenLargerThan('large-screen') {
+				padding-top: 116px;
+			}
+
+			.section__heading {
+
+				margin-bottom: 0;
+
+				@include whenLargerThan('large-screen') {
+					font-size: 45px;
+					font-weight: 600;
+					letter-spacing: -1.6px;
+					line-height: 1.78;
+					margin-top: 0;
+				}
+
+			}
+
 			.section__content {
+
+				margin-top: 77px;
 
 				.row {
 				    margin-left: -8px;
@@ -24,6 +36,14 @@
 					padding: 0 11px;
 				}
 
+			}
+
+		}
+
+		&--subscribe {
+
+			@include whenLargerThan('large-screen') {
+				margin-top: 135px;
 			}
 
 		}
@@ -48,7 +68,7 @@
 			padding: 40px 33px 40px 40px;
 
 			@include whenLargerThan('large-screen') {
-				padding: 28px 31px;
+				padding: 27px 32px;
 			}
 
 		}
@@ -64,12 +84,15 @@
 
 			@include whenLargerThan('large-screen') {
 				margin-bottom: 0;
+
 			}
 
 		}
 
 
 		&__text {
+
+			color: black;
 			font-size: 24px;
 			letter-spacing: -0.7px;
 			line-height: 1.38;
@@ -77,16 +100,17 @@
 
 			@include whenLargerThan('large-screen') {
 				font-size: 20px;
-				letter-spacing: -0.6px;
+				font-weight: 450;
+    			letter-spacing: -0.7px;
 				line-height: 1.35;
-				margin-top: 16px;
+				margin-top: 21px;
+				margin-left: -1px;
 			}
 
 		}
 
-		&--whitepaper{
-
-
+		&__chevron {
+			margin-left: 3px;
 		}
 
 	}
