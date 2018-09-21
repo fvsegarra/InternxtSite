@@ -73,7 +73,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://medium.com/internxt" target="_blank" rel="nofollow">News hub</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-item--xcloud">
                     <a class="nav-link nav-link--xcloud" href="#" data-toggle="modal" data-target="#modalXCloud">Get X Cloud Beta</a>
                 </li>
             </ul>

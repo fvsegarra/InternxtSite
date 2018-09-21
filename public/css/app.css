@@ -10655,6 +10655,12 @@ a.text-dark:focus {
   padding: 0 7.5px;
 }
 
+.navbar .navbar-nav li.nav-item--xcloud {
+  padding-right: 0px;
+  position: relative;
+  left: 8px;
+}
+
 .navbar .navbar-nav a.nav-link {
   border-radius: 4px;
   font-size: 16px;

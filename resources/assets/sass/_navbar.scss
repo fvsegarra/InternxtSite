@@ -98,7 +98,15 @@
 		}
 
 		li.nav-item {
+
 			padding: 0 7.5px;
+
+			&--xcloud {
+				padding-right: 0px;
+				position: relative;
+    			left: 8px;
+			}
+
 		}
 
 		a.nav-link{
