@@ -14,7 +14,7 @@
 
 	<header class="pageHeader">
 		<div class="container">
-			<h1 class="pageHeader__heading">INXT Token</h1>
+			<h1 class="pageHeader__heading">INXT &nbsp;Token</h1>
 			<h2 class="pageHeader__subheading">Internxt’s tokenised asset</h2>
 			<a class="pageHeader__cta" href="#">Discover token metrics</a>
 		</div>

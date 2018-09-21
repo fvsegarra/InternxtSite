@@ -14041,16 +14041,24 @@ hr {
   padding-top: 206px;
   position: relative;
   text-align: center;
-  top: -84px;
   z-index: 1;
+  top: -84px;
 }
 
 @media (min-width: 1080px) {
   #page-token .pageHeader {
     background-image: url("/img/headers/inxt_desktop.png");
-    height: 856px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 320px;
     top: -73px;
+    height: calc(100vh + 84px);
+    padding-top: 84px;
   }
 }
 
@@ -14092,7 +14100,7 @@ hr {
   background-color: #000000;
   background-image: url("/img/icons/chevron-right-circle.svg");
   background-repeat: no-repeat;
-  background-position: 222px center;
+  background-position: 227px center;
   border-radius: 31.4px;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
           box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
@@ -14109,7 +14117,12 @@ hr {
 
 @media (min-width: 1080px) {
   #page-token .pageHeader__cta {
-    margin-top: 50px;
+    display: inline-block;
+    height: 49px;
+    line-height: 1;
+    padding: 17px 0 0 25px;
+    text-align: left;
+    width: 263px;
   }
 }
 
@@ -14122,6 +14135,11 @@ hr {
   #page-token .section--inxt-data {
     padding-top: 49px;
   }
+}
+
+#page-token .section--inxt-data > .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #page-token .section--inxt-data .inxtDatum {
@@ -14144,6 +14162,10 @@ hr {
 
 #page-token .section--inxt-data .inxtDatum__point--positive {
   color: #15d157;
+}
+
+#page-token .section--inxt-data .inxtDatum__measure {
+  font-size: 38px;
 }
 
 #page-token .section--inxt-intro {
@@ -14303,8 +14325,8 @@ hr {
 @media (min-width: 1080px) {
   #page-token .section--inxt-intro .subsection__content {
     font-size: 18px;
-    letter-spacing: -0.2px;
-    line-height: 1.61;
+    letter-spacing: -0.12px;
+    line-height: 1.65;
     margin-top: 10px;
     max-width: 318px;
   }
@@ -14317,6 +14339,18 @@ hr {
 @media (min-width: 1080px) {
   #page-token .section--inxt-intro .subsection--demand {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-token .section--inxt-intro .subsection--demand .subsection__content {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-token .section--inxt-intro .subsection--growth .subsection__content {
+    margin-top: 7px;
   }
 }
 
@@ -14383,6 +14417,7 @@ hr {
     margin: 94px auto 0;
     max-width: 992px;
     padding-top: 0;
+    padding-left: 0;
   }
 }
 
@@ -14412,15 +14447,23 @@ hr {
 }
 
 #page-token .section--inxt-exchanges .section__imageContainer--idex {
-  padding-top: 17px;
+  padding-top: 16px;
 }
 
-#page-token .section--inxt-exchanges .section__imageContainer--yobit .section__image {
-  height: 20px;
+#page-token .section--inxt-exchanges .section__imageContainer--idex .section__image {
+  height: 26px;
+}
+
+#page-token .section--inxt-exchanges .section__imageContainer--latoken .section__image {
+  height: 30px;
 }
 
 #page-token .section--inxt-exchanges .section__imageContainer--mercatox {
   padding-top: 16px;
+}
+
+#page-token .section--inxt-exchanges .section__imageContainer--mercatox .section__image {
+  height: 17px;
 }
 
 @media (min-width: 1080px) {
