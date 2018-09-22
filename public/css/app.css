@@ -14944,6 +14944,8 @@ hr {
 }
 
 #page-about .section--team-partners hr {
+  background-color: #d8d8d8;
+  border-top: none;
   margin-bottom: 102px;
   margin-top: 108px;
 }
@@ -14969,6 +14971,8 @@ hr {
 @media (min-width: 1080px) {
   #page-about .section--branding-assets {
     display: block;
+    padding-bottom: 169px;
+    padding-top: 134px;
   }
 }
 
@@ -15111,7 +15115,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-about .teamPartner .col-lg-7 a {
-    color: #383838;
+    color: black;
     display: block;
     font-size: 18px;
     font-weight: 500;
