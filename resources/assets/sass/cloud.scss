@@ -728,22 +728,26 @@
 
                 margin-top: 80px;
 
+                $section__image__height: 700px;
+
                 @include whenLargerThan('large-screen') {
-                    background-image: url(/img/mockups/xcloud/storage.png);
-                    background-image: url(/img/mockups/xcloud/storage.png);
-                    background-position: -124px 0px;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    height: 667px;
-                    margin-top: 89px;
-                    padding-bottom: 60px;
-                    padding-top: 92px;
+                    min-height: $section__image__height;
+                    margin-bottom: 204px;
                 }
 
-                .offset-lg-6{
+                .section__image {
+                    height:  $section__image__height;
+                    position: absolute;
+                    right: 47%;
+                    width: 1128px;
+                }
+
+                .section__plansContainer{
 
                     @include whenLargerThan('large-screen') {
-                        padding-left: 145px;
+                        margin-left: 51%;
+                        margin-top: 92px;
+                        width: 458px;
                     }
 
                 }
@@ -770,6 +774,7 @@
 
                     .subsection__heading {
 
+                        color: black;
                         font-size: 40px;
                         font-weight: bold;
                         letter-spacing: -1.1px;
@@ -795,6 +800,10 @@
             .plan {
 
                 margin-bottom: 11.4px;
+
+                &__quantityContainer {
+                    flex: 0 0 150px;
+                }
 
                 &__quantity {
                     background-clip: content-box, border-box;
@@ -1193,10 +1202,8 @@
             font-weight: 500;
             letter-spacing: -0.1px;
             padding-top: 12px;
-            padding-left: 24px;
 
             @include whenLargerThan('large-screen') {
-                padding-left: 43px;
                 font-size: 22px;
             }
 

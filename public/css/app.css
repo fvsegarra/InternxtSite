@@ -13227,21 +13227,23 @@ hr {
 
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-plans .section__content {
-    background-image: url(/img/mockups/xcloud/storage.png);
-    background-image: url(/img/mockups/xcloud/storage.png);
-    background-position: -124px 0px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 667px;
-    margin-top: 89px;
-    padding-bottom: 60px;
-    padding-top: 92px;
+    min-height: 700px;
+    margin-bottom: 204px;
   }
 }
 
+#page-cloud .section--cloud-plans .section__content .section__image {
+  height: 700px;
+  position: absolute;
+  right: 47%;
+  width: 1128px;
+}
+
 @media (min-width: 1080px) {
-  #page-cloud .section--cloud-plans .section__content .offset-lg-6 {
-    padding-left: 145px;
+  #page-cloud .section--cloud-plans .section__content .section__plansContainer {
+    margin-left: 51%;
+    margin-top: 92px;
+    width: 458px;
   }
 }
 
@@ -13261,6 +13263,7 @@ hr {
 }
 
 #page-cloud .section--cloud-plans .subsection--pricing .subsection__heading {
+  color: black;
   font-size: 40px;
   font-weight: bold;
   letter-spacing: -1.1px;
@@ -13282,6 +13285,12 @@ hr {
 
 #page-cloud .section--cloud-plans .plan {
   margin-bottom: 11.4px;
+}
+
+#page-cloud .section--cloud-plans .plan__quantityContainer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
 }
 
 #page-cloud .section--cloud-plans .plan__quantity {
@@ -13651,12 +13660,10 @@ hr {
   font-weight: 500;
   letter-spacing: -0.1px;
   padding-top: 12px;
-  padding-left: 24px;
 }
 
 @media (min-width: 1080px) {
   #page-cloud .plan__price {
-    padding-left: 43px;
     font-size: 22px;
   }
 }
