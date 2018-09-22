@@ -24,7 +24,7 @@
 				<div class="col-lg-9 text-left">
 					<p class="memberProfile__name">Fran Villalba Segerra</p>
 					<p class="memberProfile__role">Founder & CEO</p>
-					<p class="memberProfile__bio">Fran is the architect behind Internxt’s decentralized services. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went onto work at Hostinger one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup OneSite, a platform which allows anyone to create their own website for free, which had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene and is also nominated for Forbes 30 Under 30 Europe 2018.</p>
+					<p class="memberProfile__bio">Fran is the architect behind Internxt. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went onto work at Hostinger one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup OneSite, a platform which allows anyone to create their own website for free, which had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene.</p>
 				</div>
 			</div>{{-- /.row --}}
 
@@ -63,7 +63,7 @@
 							@slot('name', 'Fran Villalba Segerra')
 							@slot('role', 'Founder & CEO')
 							@slot('bio')
-								Fran is the architect behind Internxt’s decentralized services. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went onto work at Hostinger one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup OneSite, a platform which allows anyone to create their own website for free, which had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene and is also nominated for Forbes 30 Under 30 Europe 2018.
+								Fran is the architect behind Internxt. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went onto work at Hostinger one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup OneSite, a platform which allows anyone to create their own website for free, which had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
