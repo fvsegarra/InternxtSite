@@ -263,8 +263,8 @@
                 margin-top: 108px;
 
                 @include whenLargerThan('large-screen') {
-                    margin-bottom: 192px;
-                    margin-top: 192px;
+                    margin-bottom: 150px;
+                    margin-top: 150px;
                 }
 
             }
@@ -535,6 +535,18 @@
 
             .teamPartner__image {
                 background-color: #3da975;
+            }
+
+            .teamPartner__subheading {
+                color: #1D8050;
+            }
+
+            .teamPartner__content {
+
+                @include whenLargerThan('large-screen') {
+                    width: 460px;
+                }
+
             }
 
         }

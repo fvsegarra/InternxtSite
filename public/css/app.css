@@ -11846,7 +11846,6 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .subsection__heading {
-    color: #192d69;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: -0.2px;
@@ -14952,8 +14951,8 @@ hr {
 
 @media (min-width: 1080px) {
   #page-about .section--team-partners hr {
-    margin-bottom: 192px;
-    margin-top: 192px;
+    margin-bottom: 150px;
+    margin-top: 150px;
   }
 }
 
@@ -15204,6 +15203,16 @@ hr {
 
 #page-about .teamPartner--civic .teamPartner__image {
   background-color: #3da975;
+}
+
+#page-about .teamPartner--civic .teamPartner__subheading {
+  color: #1D8050;
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner--civic .teamPartner__content {
+    width: 460px;
+  }
 }
 
 #page-about .teamPartner--y-combinator .teamPartner__image {
