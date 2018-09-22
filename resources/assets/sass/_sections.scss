@@ -400,6 +400,10 @@
         .col-lg-5 {
 
             @include whenLargerThan('large-screen') {
+                margin-left: 31px;
+            }
+
+            @include whenLargerThan('xl-screen') {
                 margin-left: 85px;
             }
 

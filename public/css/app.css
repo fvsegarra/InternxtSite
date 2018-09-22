@@ -11462,6 +11462,12 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .section--subscribe .col-lg-5 {
+    margin-left: 31px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section--subscribe .col-lg-5 {
     margin-left: 85px;
   }
 }
