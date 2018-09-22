@@ -14719,6 +14719,8 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     background-image: url("/img/headers/about_desktop.png");
+    background-position: 0px 87px;
+    background-size: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
