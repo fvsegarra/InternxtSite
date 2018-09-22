@@ -15429,8 +15429,9 @@ hr {
   height: 180px;
   margin-top: 22px;
   padding: 34px 23px;
-  -webkit-transition: height 0.3s;
-  transition: height 0.3s;
+  margin-bottom: 127px;
+  -webkit-transition: height 0.3s, margin 0.3s;
+  transition: height 0.3s, margin 0.3s;
 }
 
 @media (min-width: 1080px) {
@@ -15477,6 +15478,7 @@ hr {
 
 #page-roadmap .subsection--milestone--active {
   height: 287px;
+  margin-bottom: 0;
 }
 
 #page-roadmap .subsection--milestone--active .subsection__content {

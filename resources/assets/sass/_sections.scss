@@ -764,7 +764,6 @@
         line-height: 1.15;
 
         @include whenLargerThan('large-screen') {
-            color: #192d69;
             font-size: 30px;
             font-weight: 600;
             letter-spacing: -0.2px;
