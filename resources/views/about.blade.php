@@ -144,14 +144,6 @@
 
 					<div class="col-lg-3">
 						@component('_includes.team')
-							@slot('slug', 'alberto')
-							@slot('name', 'Alberto Pinero')
-							@slot('role', 'Hardware Engineer')
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
-
-					<div class="col-lg-3">
-						@component('_includes.team')
 							@slot('slug', 'joe')
 							@slot('name', 'Joe Priest')
 							@slot('role', 'Front-End Developer')
