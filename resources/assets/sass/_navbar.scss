@@ -515,6 +515,8 @@
 
 	    .navbar-nav {
 
+	    	left: 0px;
+
             a.nav-link {
 
     			color: #212529;
@@ -526,9 +528,13 @@
                 &--xcloud {
 
                     @include whenLargerThan('large-screen') {
-                        background-color: transparent;
-                        border: solid 1px white;
-                        box-shadow: none;
+						background-color: transparent;
+						background-position: 159px 8px;
+						border: solid 1px white;
+						box-shadow: none;
+						padding-left: 16px;
+						padding-right: 40px;
+						padding-top: 8px;
                     }
 
                 }
