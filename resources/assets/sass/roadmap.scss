@@ -9,44 +9,44 @@
 
     .section {
 
-        & > .container {
-
-            @include whenLargerThan('large-screen') {
-                max-width: 1324px;
-            }
-
-        }
-
-        &__heading {
-
-            font-size: 44px;
-            font-weight: 600;
-            letter-spacing: -0.8px;
-            line-height: 0.93;
-
-            @include whenLargerThan('large-screen') {
-                font-size: 35px;
-                font-weight: bold;
-                letter-spacing: -1px;
-                line-height: 1.66;
-                margin-bottom: 0px;
-            }
-
-        }
-
-        &__content {
-
-            padding-top: 52px;
-
-            @include whenLargerThan('large-screen') {
-                padding-left: 4px;
-                padding-right: 7px;
-                padding-top: 31px;
-            }
-
-        }
-
         &--milestones {
+
+            & > .container {
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1324px;
+                }
+
+            }
+
+            &__heading {
+
+                font-size: 44px;
+                font-weight: 600;
+                letter-spacing: -0.8px;
+                line-height: 0.93;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 35px;
+                    font-weight: bold;
+                    letter-spacing: -1px;
+                    line-height: 1.66;
+                    margin-bottom: 0px;
+                }
+
+            }
+
+            &__content {
+
+                padding-top: 52px;
+
+                @include whenLargerThan('large-screen') {
+                    padding-left: 4px;
+                    padding-right: 7px;
+                    padding-top: 31px;
+                }
+
+            }
 
             .col-lg-4 {
 

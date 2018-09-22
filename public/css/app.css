@@ -14770,15 +14770,6 @@ hr {
   }
 }
 
-#page-about .section__heading {
-  font-size: 34px;
-  font-weight: 600;
-  letter-spacing: -0.6px;
-  line-height: 1.15;
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-
 #page-about .section--about-intro {
   padding-bottom: 106px;
 }
@@ -14874,6 +14865,15 @@ hr {
   }
 }
 
+#page-about .section--team__heading {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 1.15;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
 @media (min-width: 1080px) {
   #page-about .section--team .section__label {
     margin-left: 4px;
@@ -14921,6 +14921,15 @@ hr {
   #page-about .section--team-partners .section__label {
     margin-left: 22px;
   }
+}
+
+#page-about .section--team-partners .section__heading__heading {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 1.15;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
 @media (min-width: 1080px) {
@@ -15356,12 +15365,12 @@ hr {
 }
 
 @media (min-width: 1080px) {
-  #page-roadmap .section > .container {
+  #page-roadmap .section--milestones > .container {
     max-width: 1324px;
   }
 }
 
-#page-roadmap .section__heading {
+#page-roadmap .section--milestones__heading {
   font-size: 44px;
   font-weight: 600;
   letter-spacing: -0.8px;
@@ -15369,7 +15378,7 @@ hr {
 }
 
 @media (min-width: 1080px) {
-  #page-roadmap .section__heading {
+  #page-roadmap .section--milestones__heading {
     font-size: 35px;
     font-weight: bold;
     letter-spacing: -1px;
@@ -15378,12 +15387,12 @@ hr {
   }
 }
 
-#page-roadmap .section__content {
+#page-roadmap .section--milestones__content {
   padding-top: 52px;
 }
 
 @media (min-width: 1080px) {
-  #page-roadmap .section__content {
+  #page-roadmap .section--milestones__content {
     padding-left: 4px;
     padding-right: 7px;
     padding-top: 31px;

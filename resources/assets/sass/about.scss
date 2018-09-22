@@ -74,15 +74,6 @@
 
     .section{
 
-        &__heading {
-            font-size: 34px;
-            font-weight: 600;
-            letter-spacing: -0.6px;
-            line-height: 1.15;
-            margin-bottom: 0;
-            margin-top: 20px;
-        }
-
         &--about-intro {
 
             padding-bottom: 106px;
@@ -177,6 +168,15 @@
 
             }
 
+            &__heading {
+                font-size: 34px;
+                font-weight: 600;
+                letter-spacing: -0.6px;
+                line-height: 1.15;
+                margin-bottom: 0;
+                margin-top: 20px;
+            }
+
             .section__label {
 
                 @include whenLargerThan('large-screen') {
@@ -235,6 +235,15 @@
             }
 
             .section__heading {
+
+                &__heading {
+                    font-size: 34px;
+                    font-weight: 600;
+                    letter-spacing: -0.6px;
+                    line-height: 1.15;
+                    margin-bottom: 0;
+                    margin-top: 20px;
+                }
 
                 @include whenLargerThan('large-screen') {
                     font-size: 45px;
