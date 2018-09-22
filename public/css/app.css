@@ -15501,7 +15501,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-resources .section--resources {
-    padding-top: 116px;
+    padding-top: 121px;
   }
 }
 
@@ -15521,6 +15521,12 @@ hr {
 
 #page-resources .section--resources .section__content {
   margin-top: 77px;
+}
+
+@media (min-width: 1080px) {
+  #page-resources .section--resources .section__content {
+    margin-top: 52px;
+  }
 }
 
 #page-resources .section--resources .section__content .row {
