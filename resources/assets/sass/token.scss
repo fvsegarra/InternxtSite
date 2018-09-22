@@ -38,6 +38,15 @@
             padding-top: $offset;
         }
 
+        & > .container {
+
+            @include whenLargerThan('large-screen') {
+                position: relative;
+                top: -10px;
+            }
+
+        }
+
         &__heading {
 
             color: #272727;
