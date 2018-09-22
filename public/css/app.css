@@ -15445,7 +15445,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-roadmap .subsection--milestone {
-    padding: 36px 35px;
+    padding: 49px 35px;
     height: 161px;
   }
 }
@@ -15467,11 +15467,13 @@ hr {
   font-weight: 600;
   letter-spacing: -0.8px;
   line-height: 2.1;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1080px) {
   #page-roadmap .subsection--milestone .subsection__heading {
-    margin-top: 0px;
+    line-height: 1;
+    margin-top: 21px;
   }
 }
 
@@ -15480,6 +15482,7 @@ hr {
   font-size: 17px;
   letter-spacing: -0.1px;
   line-height: 1.65;
+  margin-top: 30px;
   opacity: 0;
   -webkit-transition: opacity 0.3s 0s;
   transition: opacity 0.3s 0s;

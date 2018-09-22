@@ -105,7 +105,7 @@
             transition: height $transition-default;
 
             @include whenLargerThan('large-screen') {
-                padding: 36px 35px;
+                padding: 49px 35px;
                 height: 161px;
             }
 
@@ -127,9 +127,11 @@
                 font-weight: 600;
                 letter-spacing: -0.8px;
                 line-height: 2.1;
+                margin-bottom: 0;
 
                 @include whenLargerThan('large-screen') {
-                    margin-top: 0px;
+                    line-height: 1;
+                    margin-top: 21px;
                 }
 
             }
@@ -139,9 +141,9 @@
                 font-size: 17px;
                 letter-spacing: -0.1px;
                 line-height: 1.65;
+                margin-top: 30px;
                 opacity: 0;
                 transition: opacity $transition-default 0s;
-                // transition-delay: 0.25s;
             }
 
             &--active {
