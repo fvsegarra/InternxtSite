@@ -446,20 +446,25 @@
 
                     padding-left: 20px;
                     padding-right: 22px;
-                    padding-top: 14px;
+                    padding-top: 17px;
 
                     .section__image {
-                        height: 18px;
+                        height: 19px;
+                        left: 0px;
+                        position: relative;
+                        top: -3px;
                     }
 
                 }
 
                 &--idex {
 
-                    padding-top: 16px;
+                    padding-top: 18px;
 
                     .section__image {
-                        height: 26px;
+                        height: 27px;
+                        position: relative;
+                        top: -1px;
                     }
 
                 }
@@ -477,14 +482,14 @@
                     padding-top: 16px;
 
                     .section__image {
-                        height: 16px;
+                        height: 15px;
                     }
 
                 }
 
                 @include whenLargerThan('large-screen') {
                     margin: 0;
-                    padding: 13px 24px 20px;
+                    // padding: 13px 24px 20px;
                 }
 
             }
