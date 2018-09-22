@@ -197,7 +197,13 @@
             }
 
             .section__content {
+
                 margin-top: 23px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 9px;
+                }
+
             }
 
         }
@@ -376,7 +382,7 @@
 
             @include whenLargerThan('large-screen') {
                 color: #6083a6;
-                font-size: 15.4px;
+                font-size: 16px;
                 letter-spacing: -0.1px;
                 line-height: 1;
             }

@@ -14894,6 +14894,12 @@ hr {
   margin-top: 23px;
 }
 
+@media (min-width: 1080px) {
+  #page-about .section--team .section__content {
+    margin-top: 9px;
+  }
+}
+
 #page-about .section--team-partners {
   margin-top: 170px;
 }
@@ -15061,7 +15067,7 @@ hr {
 @media (min-width: 1080px) {
   #page-about .teamMember__role {
     color: #6083a6;
-    font-size: 15.4px;
+    font-size: 16px;
     letter-spacing: -0.1px;
     line-height: 1;
   }
