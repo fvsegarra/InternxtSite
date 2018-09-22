@@ -441,9 +441,15 @@
                 }
 
                 &--coin-exchange {
+
                     padding-left: 20px;
                     padding-right: 22px;
                     padding-top: 14px;
+
+                    .section__image {
+                        height: 18px;
+                    }
+
                 }
 
                 &--idex {
@@ -469,7 +475,7 @@
                     padding-top: 16px;
 
                     .section__image {
-                        height: 17px;
+                        height: 16px;
                     }
 
                 }

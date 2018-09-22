@@ -14519,6 +14519,10 @@ hr {
   padding-top: 14px;
 }
 
+#page-token .section--inxt-exchanges .section__imageContainer--coin-exchange .section__image {
+  height: 18px;
+}
+
 #page-token .section--inxt-exchanges .section__imageContainer--idex {
   padding-top: 16px;
 }
@@ -14536,7 +14540,7 @@ hr {
 }
 
 #page-token .section--inxt-exchanges .section__imageContainer--mercatox .section__image {
-  height: 17px;
+  height: 16px;
 }
 
 @media (min-width: 1080px) {
