@@ -101,8 +101,7 @@
             height: 180px;
             margin-top: 22px;
             padding: 34px 23px;
-            margin-bottom: 127px;
-            transition: height $transition-default, margin $transition-default;
+            transition: height $transition-default;
 
             @include whenLargerThan('large-screen') {
                 padding: 36px 35px;
@@ -147,7 +146,7 @@
             &--active {
 
                 height: 287px;
-                margin-bottom: 0;
+                // margin-bottom: 0;
 
                 .subsection__content {
                     opacity: 1;
