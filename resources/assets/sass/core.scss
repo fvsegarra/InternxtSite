@@ -406,6 +406,10 @@
                         padding-right: 4px;
                     }
 
+                    &:hover {
+                        border-color: transparent;
+                    }
+
                     &.active {
                         background: none;
                         border: none;

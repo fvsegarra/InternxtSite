@@ -13063,6 +13063,10 @@ hr {
   padding-bottom: 13px;
 }
 
+#page-cloud .section--cloud-architecture .nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
 #page-cloud .section--cloud-architecture .nav-tabs .nav-link.active {
   background: none;
   border: none;
@@ -14036,6 +14040,10 @@ hr {
     padding-left: 2px;
     padding-right: 4px;
   }
+}
+
+#page-core .section--core-design .nav-tabs .nav-link:hover {
+  border-color: transparent;
 }
 
 #page-core .section--core-design .nav-tabs .nav-link.active {

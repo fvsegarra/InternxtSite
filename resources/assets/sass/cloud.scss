@@ -563,6 +563,10 @@
                         //
                     }
 
+                    &:hover {
+                        border-color: transparent;
+                    }
+
                     &.active {
                         background: none;
                         border: none;
