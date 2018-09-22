@@ -14208,11 +14208,6 @@ hr {
   }
 }
 
-#page-token .section--inxt-data > .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 #page-token .section--inxt-data .inxtDatum {
   text-align: center;
 }
