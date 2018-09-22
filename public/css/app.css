@@ -15371,7 +15371,7 @@ hr {
   }
 }
 
-#page-roadmap .section--milestones__heading {
+#page-roadmap .section--milestones .section__heading {
   font-size: 44px;
   font-weight: 600;
   letter-spacing: -0.8px;
@@ -15379,21 +15379,22 @@ hr {
 }
 
 @media (min-width: 1080px) {
-  #page-roadmap .section--milestones__heading {
+  #page-roadmap .section--milestones .section__heading {
     font-size: 35px;
     font-weight: bold;
     letter-spacing: -1px;
     line-height: 1.66;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
 }
 
-#page-roadmap .section--milestones__content {
+#page-roadmap .section--milestones .section__content {
   padding-top: 52px;
 }
 
 @media (min-width: 1080px) {
-  #page-roadmap .section--milestones__content {
+  #page-roadmap .section--milestones .section__content {
     padding-left: 4px;
     padding-right: 7px;
     padding-top: 31px;
@@ -15409,7 +15410,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-roadmap .section--milestones--published {
-    padding-top: 152px;
+    padding-top: 142px;
   }
 }
 

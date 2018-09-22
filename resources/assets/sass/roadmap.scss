@@ -20,7 +20,7 @@
 
             }
 
-            &__heading {
+            .section__heading {
 
                 font-size: 44px;
                 font-weight: 600;
@@ -32,12 +32,13 @@
                     font-weight: bold;
                     letter-spacing: -1px;
                     line-height: 1.66;
-                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    margin-bottom: 40px;
                 }
 
             }
 
-            &__content {
+            .section__content {
 
                 padding-top: 52px;
 
@@ -61,7 +62,7 @@
             &--published {
 
                 @include whenLargerThan('large-screen') {
-                    padding-top: 152px;
+                    padding-top: 142px;
                 }
 
                 .subsection--milestone .subsection__label {
