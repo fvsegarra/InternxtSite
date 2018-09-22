@@ -34131,11 +34131,12 @@ $('.subsection--milestone').click(function (e) {
 	console.debug('Milestone clicked');
 
 	var classString = 'subsection--milestone--active';
+	var clicked = $(e.currentTarget);
 
-	// remove others
-	$('.' + classString).removeClass(classString);
+	// remove active class from  others
+	$('.' + classString).not(clicked).removeClass(classString);
 
-	$(e.currentTarget).toggleClass(classString);
+	clicked.toggleClass(classString);
 });
 
 var activeMemberProfileClass = 'memberProfile--active';

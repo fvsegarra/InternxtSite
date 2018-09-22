@@ -26,11 +26,12 @@ $('.subsection--milestone').click((e) => {
 	console.debug('Milestone clicked');
 
 	let classString = 'subsection--milestone--active';
+	var clicked = $(e.currentTarget);
 
-	// remove others
-	$('.' + classString).removeClass(classString);
+	// remove active class from  others
+	$('.' + classString).not(clicked).removeClass(classString);
 
-	$(e.currentTarget).toggleClass(classString);
+	clicked.toggleClass(classString);
 
 });
 
