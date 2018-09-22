@@ -202,7 +202,7 @@
 					<div class="row">
 						<div class="col-lg-7">
 							<img class="teamPartner__image" src="/img/partners/blackberry.png">
-							<a href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg" height="11"></a>
+							<a href="https://medium.com/internxt/internxt-and-blackberry-partner-to-enhance-x-clouds-security-25bb5ad7d33d" target="_blank" rel="nofollow">Learn more about the partnership <img src="img/icons/chevron-learn-more.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 						<div class="col-lg-5">
 							<p class="teamPartner__heading">Blackberry Partnership</p>
@@ -225,7 +225,7 @@
 						</div>{{-- /.col-lg-5 --}}
 						<div class="col-lg-7">
 							<img class="teamPartner__image" src="/img/partners/civic.png">
-							<a href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg" height="11"></a>
+							<a href="https://medium.com/internxt/internxt-and-civic-partner-to-encourage-the-intended-use-of-internxts-new-technologies-fa650ef590e3" target="_blank" rel="nofollow">Learn more about the partnership <img src="img/icons/chevron-learn-more.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 					</div>{{-- /.row --}}
 				</div>{{-- /.teamPartner --}}
@@ -238,7 +238,7 @@
 					<div class="row">
 						<div class="col-lg-7">
 							<img class="teamPartner__image" src="/img/partners/y-combinator.png">
-							<a href="#">Learn more about the program <img src="/img/icons/chevron-right-partner.svg" height="11"></a>
+							<a href="https://medium.com/internxt/internxt-has-been-accepted-to-y-combinators-startup-school-b7daf30ab407" target="_blank" rel="nofollow">Learn more about the program <img src="img/icons/chevron-learn-more.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 						<div class="col-lg-5">
 							<p class="teamPartner__heading">Y Combinator Program</p>
