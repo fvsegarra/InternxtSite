@@ -15,9 +15,7 @@
 	<div class="memberProfile">
 		<div class="container">
 
-			<button class="memberProfile__btn">
-				x
-			</button>
+			<button class="memberProfile__btn"></button>
 
 			<div class="memberProfile__content row">
 				<div class="col-lg-3">
