@@ -14864,6 +14864,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-about .section--team {
+    padding-bottom: 182px;
     padding-top: 130px;
   }
 }
@@ -14919,7 +14920,6 @@ hr {
 
 @media (min-width: 1080px) {
   #page-about .section--team-partners .section__label {
-    font-size: 13px;
     margin-left: 22px;
   }
 }
@@ -15016,7 +15016,7 @@ hr {
   line-height: 1;
   margin-left: 1px;
   margin-top: 47px;
-  padding: 14px 47px 11px 21px;
+  padding: 13px 47px 13px 21px;
   font-weight: 500;
   letter-spacing: -0.4px;
 }
@@ -15062,6 +15062,7 @@ hr {
   letter-spacing: -0.1px;
   line-height: 0.85;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1080px) {

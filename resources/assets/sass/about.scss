@@ -165,6 +165,7 @@
             padding-top: 113px;
 
             @include whenLargerThan('large-screen') {
+                padding-bottom: 182px;
                 padding-top: 130px;
             }
 
@@ -228,7 +229,6 @@
             .section__label {
 
                 @include whenLargerThan('large-screen') {
-                    font-size: 13px;
                     margin-left: 22px;
                 }
 
@@ -328,7 +328,7 @@
                 line-height: 1;
                 margin-left: 1px;
                 margin-top: 47px;
-                padding: 14px 47px 11px 21px;
+                padding: 13px 47px 13px 21px;
                 font-weight: 500;
                 letter-spacing: -0.4px;
             }
@@ -379,6 +379,7 @@
             letter-spacing: -0.1px;
             line-height: 0.85;
             margin-top: 20px;
+            margin-bottom: 0;
 
             @include whenLargerThan('large-screen') {
                 color: #6083a6;
