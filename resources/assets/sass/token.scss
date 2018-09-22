@@ -201,6 +201,8 @@
 
                .intro__content{
 
+                    font-weight: 450;
+
                     @include whenLargerThan('large-screen') {
                         padding-left: 4px;
                     }
@@ -375,7 +377,7 @@
             .section__heading {
 
                 font-size: 33px;
-                font-weight: bold;
+                font-weight: 600;
                 letter-spacing: -0.6px;
                 line-height: 1.18;
                 margin-bottom: 0;

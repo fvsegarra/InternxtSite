@@ -121,29 +121,29 @@
 			</div>
 			<div class="section__footer row">
 
-				<div class="col-lg">
+				<div class="col-lg-3">
 					<a class="section__imageContainer section__imageContainer--coin-exchange" href="https://www.coinexchange.io/market/INXT/BTC" target="_blank" rel="nofollow">
-						<img class="section__image img-fluid" src="/img/logos/exchanges/coin_exchange.png">
+						<img class="section__image" src="/img/logos/exchanges/coin_exchange.png" height="24">
 					</a>
-				</div>{{-- /.col-lg --}}
+				</div>{{-- /.col-lg-3 --}}
 
-				<div class="col-lg">
+				<div class="col-lg-3">
 					<a class="section__imageContainer section__imageContainer--idex" href="https://idex.market/eth/inxt" target="_blank" rel="nofollow">
-						<img class="section__image img-fluid" src="/img/logos/exchanges/idex.png">
+						<img class="section__image" src="/img/logos/exchanges/idex.png">
 					</a>
-				</div>{{-- /.col-lg --}}
+				</div>{{-- /.col-lg-3 --}}
 
-				<div class="col-lg">
+				<div class="col-lg-3">
 					<a class="section__imageContainer section__imageContainer--latoken" href="https://wallet.latoken.com/market/Crypto/BTC/INXT-BTC" target="_blank" rel="nofollow">
-						<img class="section__image img-fluid" src="/img/logos/exchanges/latoken.png">
+						<img class="section__image" src="/img/logos/exchanges/latoken.png">
 					</a>
-				</div>{{-- /.col-lg --}}
+				</div>{{-- /.col-lg-3 --}}
 
-				<div class="col-lg">
+				<div class="col-lg-3">
 					<a class="section__imageContainer section__imageContainer--mercatox" href="https://mercatox.com/exchange/INXT/BTC" target="_blank" rel="nofollow">
-						<img class="section__image img-fluid" src="/img/logos/exchanges/mercatox.png">
+						<img class="section__image" src="/img/logos/exchanges/mercatox.png">
 					</a>
-				</div>{{-- /.col-lg --}}
+				</div>{{-- /.col-lg-3 --}}
 
 			</div>{{-- /.row --}}
 		</div>

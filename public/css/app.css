@@ -14284,6 +14284,10 @@ hr {
   margin-top: 21px;
 }
 
+#page-token .section--inxt-intro .section__content .intro__content {
+  font-weight: 450;
+}
+
 @media (min-width: 1080px) {
   #page-token .section--inxt-intro .section__content .intro__content {
     padding-left: 4px;
@@ -14444,7 +14448,7 @@ hr {
 
 #page-token .section--inxt-exchanges .section__heading {
   font-size: 33px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: -0.6px;
   line-height: 1.18;
   margin-bottom: 0;
