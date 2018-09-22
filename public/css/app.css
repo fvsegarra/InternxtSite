@@ -14584,7 +14584,7 @@ hr {
 
 #page-token .section--inxt-buy .section__heading {
   font-size: 33px;
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: -0.6px;
   line-height: 1.18;
   margin-bottom: 0;
@@ -14594,7 +14594,6 @@ hr {
   #page-token .section--inxt-buy .section__heading {
     font-size: 40px;
     letter-spacing: -1.1px;
-    line-height: 0.98;
   }
 }
 
