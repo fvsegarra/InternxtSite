@@ -15580,6 +15580,7 @@ hr {
 
 #page-resources .subsection__text {
   color: black;
+  display: block;
   font-size: 24px;
   letter-spacing: -0.7px;
   line-height: 1.38;
