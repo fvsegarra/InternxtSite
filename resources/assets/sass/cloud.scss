@@ -806,7 +806,14 @@
                 margin-bottom: 11.4px;
 
                 &__quantityContainer {
-                    flex: 0 0 150px;
+
+                    padding: 0;
+                    flex: 0;
+
+                    @include whenLargerThan('large-screen') {
+                        flex: 0 0 150px;
+                    }
+
                 }
 
                 &__quantity {

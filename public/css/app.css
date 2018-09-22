@@ -13297,9 +13297,18 @@ hr {
 }
 
 #page-cloud .section--cloud-plans .plan__quantityContainer {
+  padding: 0;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 150px;
-          flex: 0 0 150px;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-plans .plan__quantityContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
+  }
 }
 
 #page-cloud .section--cloud-plans .plan__quantity {
