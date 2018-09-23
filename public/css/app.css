@@ -11083,11 +11083,9 @@ a.text-dark:focus {
 #page-core .navbar .navbar-collapse .navbar-nav,
 #page-token .navbar .navbar-collapse .navbar-nav {
   background-color: white;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-  width: 260px;
-  margin: 0 auto;
+  left: -15px;
+  position: relative;
+  width: 100vw;
 }
 
 @media (min-width: 1080px) {

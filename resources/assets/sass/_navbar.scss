@@ -538,11 +538,10 @@
 
 	    .navbar-collapse .navbar-nav {
 
-	        background-color: white;
-	        border-radius: 5px;
-	        box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-	        width: 260px;
-	        margin: 0 auto;
+			background-color: white;
+			left: -15px;
+			position: relative;
+			width: 100vw;
 
 	        @include whenLargerThan('large-screen') {
 	            background-color: transparent;
