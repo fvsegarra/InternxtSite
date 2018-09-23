@@ -15265,11 +15265,15 @@ hr {
 
 #page-about .teamPartner__image {
   border-radius: 6px;
-  height: 400px;
+}
+
+#page-about .teamPartner__image--mobile {
+  height: 410px;
 }
 
 #page-about .teamPartner__image--desktop {
   display: none;
+  height: 400px;
 }
 
 @media (min-width: 1080px) {

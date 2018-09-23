@@ -457,10 +457,14 @@
         &__image {
 
             border-radius: 6px;
-            height: 400px;
+
+            &--mobile {
+                height: 410px;
+            }
 
             &--desktop {
                 display: none;
+                height: 400px;
             }
 
             @include whenLargerThan('large-screen') {
