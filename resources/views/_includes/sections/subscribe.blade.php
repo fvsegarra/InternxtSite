@@ -1,6 +1,8 @@
 <section class="section section--subscribe">
 	<div class="container">
 
+		<div class="section__border"></div>
+
 		<div class="row">
 
 			<div class="col-lg-6">

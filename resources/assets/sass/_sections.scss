@@ -327,12 +327,9 @@
 
         & > .container {
 
-            border-top: 1px solid #d8d8d8;
             padding-bottom: 130px;
-            padding-top: 92px;
 
             @include whenLargerThan('large-screen') {
-                padding-top: 130px;
                 padding-bottom: 142px;
             }
 
@@ -340,6 +337,20 @@
                 max-width: 1266px;
                 padding-left: 0;
                 padding-right: 0;
+            }
+
+        }
+
+        .section__border {
+
+            background-color: #d8d8d8;
+            height: 1px;
+            margin-bottom: 130px;
+            margin-top: 92px;
+
+            @include whenLargerThan('large-screen') {
+                margin-bottom: 142px;
+                margin-top: 130px;
             }
 
         }

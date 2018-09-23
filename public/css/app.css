@@ -11398,14 +11398,11 @@ a.text-dark:focus {
 }
 
 .section--subscribe > .container {
-  border-top: 1px solid #d8d8d8;
   padding-bottom: 130px;
-  padding-top: 92px;
 }
 
 @media (min-width: 1080px) {
   .section--subscribe > .container {
-    padding-top: 130px;
     padding-bottom: 142px;
   }
 }
@@ -11415,6 +11412,20 @@ a.text-dark:focus {
     max-width: 1266px;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.section--subscribe .section__border {
+  background-color: #d8d8d8;
+  height: 1px;
+  margin-bottom: 130px;
+  margin-top: 92px;
+}
+
+@media (min-width: 1080px) {
+  .section--subscribe .section__border {
+    margin-bottom: 142px;
+    margin-top: 130px;
   }
 }
 
