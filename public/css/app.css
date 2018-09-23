@@ -14077,6 +14077,10 @@ hr {
   }
 }
 
+#page-core .section--core-design .featurePreviewContainer {
+  margin-bottom: 40px;
+}
+
 @media (min-width: 1080px) {
   #page-core .section--core-design .featurePreviewContainer {
     background-image: url("/img/mockups/xcore/macbook.png");
@@ -14092,7 +14096,7 @@ hr {
 #page-core .section--core-design .featurePreviewContainer .featurePreview {
   background-image: url("/img/mockups/xcore/dashboard_mobile.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 425px;
   left: -24px;
   position: relative;
@@ -14102,6 +14106,7 @@ hr {
 @media (min-width: 1080px) {
   #page-core .section--core-design .featurePreviewContainer .featurePreview {
     background-image: url("/img/mockups/xcore/dashboard.png");
+    background-size: contain;
     height: 607px;
     left: 142px;
     position: absolute;
@@ -14144,13 +14149,17 @@ hr {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.2px;
+  margin-right: 30px;
   padding-bottom: 18px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 1080px) {
   #page-core .section--core-design .nav-tabs .nav-link {
     font-size: 20.8px;
     margin-left: 0px;
+    margin-right: 0;
     padding-bottom: 12px;
     padding-left: 2px;
     padding-right: 4px;
