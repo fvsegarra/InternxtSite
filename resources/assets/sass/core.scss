@@ -215,7 +215,7 @@
                             background-position: -1vw 38px;
                             background-size: 1440px;
                             margin-top: 73px;
-                            padding-bottom: 60px; // To show whole laptop
+                            padding-bottom: 175px; // To show whole laptop
                             padding-top: 0;
                             width: auto;
                         }
@@ -278,7 +278,7 @@
                 &--setup {
 
                     @include whenLargerThan('large-screen') {
-                        margin-top: 82px;
+                        margin-top: -40px; // To account for bottom padding of laptop bg
                         padding-left: 208px;
                     }
 

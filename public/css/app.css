@@ -13962,7 +13962,7 @@ hr {
     background-position: -1vw 38px;
     background-size: 1440px;
     margin-top: 73px;
-    padding-bottom: 60px;
+    padding-bottom: 175px;
     padding-top: 0;
     width: auto;
   }
@@ -14009,7 +14009,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-core .section--core-summary .subsection--setup {
-    margin-top: 82px;
+    margin-top: -40px;
     padding-left: 208px;
   }
 }
