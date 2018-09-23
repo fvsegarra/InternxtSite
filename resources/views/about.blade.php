@@ -201,7 +201,8 @@
 				<div class="teamPartner teamPartner--blackberry">
 					<div class="row">
 						<div class="col-lg-7">
-							<img class="teamPartner__image" src="/img/partners/blackberry.png">
+							<img class="teamPartner__image teamPartner__image--mobile" src="/img/partners/blackberry_mobile.png">
+							<img class="teamPartner__image teamPartner__image--desktop" src="/img/partners/blackberry_desktop.png">
 							<a href="https://medium.com/internxt/internxt-and-blackberry-partner-to-enhance-x-clouds-security-25bb5ad7d33d" target="_blank" rel="nofollow">Learn more about the partnership <img src="img/icons/chevron-learn-more.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 						<div class="col-lg-5">
@@ -224,7 +225,8 @@
 							<p class="teamPartner__content">Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
 						</div>{{-- /.col-lg-5 --}}
 						<div class="col-lg-7">
-							<img class="teamPartner__image" src="/img/partners/civic.png">
+							<img class="teamPartner__image teamPartner__image--mobile" src="/img/partners/civic_mobile.png">
+							<img class="teamPartner__image teamPartner__image--desktop" src="/img/partners/civic_desktop.png">
 							<a href="https://medium.com/internxt/internxt-and-civic-partner-to-encourage-the-intended-use-of-internxts-new-technologies-fa650ef590e3" target="_blank" rel="nofollow">Learn more about the partnership <img src="img/icons/chevron-learn-more.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 					</div>{{-- /.row --}}
@@ -237,7 +239,8 @@
 				<div class="teamPartner teamPartner--y-combinator">
 					<div class="row">
 						<div class="col-lg-7">
-							<img class="teamPartner__image" src="/img/partners/y-combinator.png">
+							<img class="teamPartner__image teamPartner__image--mobile" src="/img/partners/y-combinator_mobile.png">
+							<img class="teamPartner__image teamPartner__image--desktop" src="/img/partners/y-combinator_desktop.png">
 							<a href="https://medium.com/internxt/internxt-has-been-accepted-to-y-combinators-startup-school-b7daf30ab407" target="_blank" rel="nofollow">Learn more about the program <img src="img/icons/chevron-learn-more.svg" height="11"></a>
 						</div>{{-- /.col-lg-7 --}}
 						<div class="col-lg-5">

@@ -458,7 +458,20 @@
             border-radius: 6px;
             height: 400px;
 
+            &--desktop {
+                display: none;
+            }
+
             @include whenLargerThan('large-screen') {
+
+                &--mobile {
+                    display: none;
+                }
+
+                &--desktop {
+                    display: block;
+                }
+
                 height: 409px;
                 left: 4px;
                 position: relative;

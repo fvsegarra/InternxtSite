@@ -15263,11 +15263,23 @@ hr {
   height: 400px;
 }
 
+#page-about .teamPartner__image--desktop {
+  display: none;
+}
+
 @media (min-width: 1080px) {
   #page-about .teamPartner__image {
     height: 409px;
     left: 4px;
     position: relative;
+  }
+
+  #page-about .teamPartner__image--mobile {
+    display: none;
+  }
+
+  #page-about .teamPartner__image--desktop {
+    display: block;
   }
 }
 
