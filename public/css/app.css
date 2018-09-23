@@ -15067,6 +15067,7 @@ hr {
   #page-about .section--team-partners .section__heading {
     font-size: 45px;
     font-weight: 600;
+    letter-spacing: -1.6px;
     margin-left: 20px;
     margin-top: 9px;
   }
@@ -15248,19 +15249,27 @@ hr {
   }
 }
 
-#page-about .teamPartner .col-lg-7 a {
-  display: none;
+#page-about .teamPartner__link {
+  display: inline-block;
+  position: relative;
 }
 
-@media (min-width: 1080px) {
-  #page-about .teamPartner .col-lg-7 a {
-    color: black;
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.61;
-    margin-top: 40px;
-  }
+#page-about .teamPartner__link::after {
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 100%);
+  border-radius: 6px;
+  content: '';
+  height: 100%;
+  left: 5px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+
+#page-about .teamPartner__link:hover::after {
+  opacity: 1;
 }
 
 #page-about .teamPartner__image {

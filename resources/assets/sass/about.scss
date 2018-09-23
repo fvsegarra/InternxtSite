@@ -249,6 +249,7 @@
                 @include whenLargerThan('large-screen') {
                     font-size: 45px;
                     font-weight: 600;
+                    letter-spacing: -1.6px;
                     margin-left: 20px;
                     margin-top: 9px;
                 }
@@ -437,17 +438,30 @@
                 position: relative;
             }
 
-            a{
+        }
 
-                display: none;
+        &__link{
 
-                @include whenLargerThan('large-screen') {
-                    color: black;
-                    display: block;
-                    font-size: 18px;
-                    font-weight: 500;
-                    line-height: 1.61;
-                    margin-top: 40px;
+            display: inline-block;
+            position: relative;
+
+            &::after {
+                background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 100%);
+                border-radius: 6px;
+                content: '';
+                height: 100%;
+                left: 5px;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                transition: opacity $transition-default;
+                width: 100%;
+            }
+
+            &:hover {
+
+                &::after {
+                    opacity: 1;
                 }
 
             }
