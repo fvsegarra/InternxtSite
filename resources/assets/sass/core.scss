@@ -197,14 +197,20 @@
                     &--bg {
 
                         background-image: url("/img/mockups/xcore/intro.png");
+                        background-position: -4vw 46px;
                         background-repeat: no-repeat;
-                        background-size: cover;
+                        background-size: 575px;
+                        margin: 0 auto;
+                        padding-top: 396px;
+                        width: 375px;
 
                         @include whenLargerThan('large-screen') {
-                            background-position: -63px 42px;
+                            background-position: -1vw 38px;
                             background-size: 1440px;
                             margin-top: 73px;
                             padding-bottom: 60px; // To show whole laptop
+                            padding-top: 0;
+                            width: auto;
                         }
 
                     }
