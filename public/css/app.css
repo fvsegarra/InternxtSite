@@ -10645,20 +10645,34 @@ a.text-dark:focus {
 }
 
 .navbar .navbar-nav {
+  border-top: 1px solid #d8d8d8;
   height: 100vh;
+  left: -5px;
+  margin-top: 15px;
+  padding-left: 0px;
+  padding-top: 30px;
+  position: relative;
 }
 
 @media (min-width: 1080px) {
   .navbar .navbar-nav {
+    border-top: none;
+    margin-top: 0;
     height: auto;
     left: -9px;
     padding-top: 5px;
-    position: relative;
   }
 }
 
 .navbar .navbar-nav li.nav-item {
   padding: 0 7.5px;
+  width: 100px;
+}
+
+@media (min-width: 1080px) {
+  .navbar .navbar-nav li.nav-item {
+    width: auto;
+  }
 }
 
 .navbar .navbar-nav li.nav-item--xcloud {
@@ -10926,14 +10940,15 @@ a.text-dark:focus {
 .navbar .dropdown-menu .dropdown-item__heading {
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
+  font-weight: 600;
   margin-bottom: 0;
+  text-align: left;
 }
 
 @media (min-width: 1080px) {
   .navbar .dropdown-menu .dropdown-item__heading {
     color: black;
     font-size: 23px;
-    font-weight: 600;
     letter-spacing: -0.7px;
     line-height: 0.92;
   }
