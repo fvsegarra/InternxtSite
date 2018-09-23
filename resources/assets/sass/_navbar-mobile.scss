@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1079px) {
 
     $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    $menuItems: 8;
+    $menuItems: 7;
 
     .mobile-header {
 
@@ -19,19 +19,13 @@
 
 
         .mobile-navbar-brand {
-
             cursor: pointer;
             display: inline-block;
-            height: 50px;
+            height: 22px;
             position: relative;
-            width: 50px;
-            top: 20px;
+            width: 22px;
+            top: 13px;
             left: 20px;
-
-            img {
-
-            }
-
         }
 
         .burger-container {
@@ -48,7 +42,6 @@
 
             position: absolute;
             right: 10px;
-            top: 10px;
             z-index: 4;
 
             #burger {
@@ -112,7 +105,7 @@
 
             position: relative;
             display: block;
-            padding: 0px 48px 0;
+            padding: 48px 48px 0;
             list-style: none;
 
             li.menu-item {

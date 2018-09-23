@@ -10573,10 +10573,10 @@ a.text-dark:focus {
   .mobile-header .mobile-navbar-brand {
     cursor: pointer;
     display: inline-block;
-    height: 50px;
+    height: 22px;
     position: relative;
-    width: 50px;
-    top: 20px;
+    width: 22px;
+    top: 13px;
     left: 20px;
   }
 
@@ -10597,7 +10597,6 @@ a.text-dark:focus {
     -webkit-tap-highlight-color: transparent;
     position: absolute;
     right: 10px;
-    top: 10px;
     z-index: 4;
   }
 
@@ -10664,7 +10663,7 @@ a.text-dark:focus {
   .mobile-header ul.menu {
     position: relative;
     display: block;
-    padding: 0px 48px 0;
+    padding: 48px 48px 0;
     list-style: none;
   }
 
@@ -10713,11 +10712,6 @@ a.text-dark:focus {
   .mobile-header ul.menu li.menu-item:nth-child(7) {
     -webkit-transition-delay: 0.07s;
             transition-delay: 0.07s;
-  }
-
-  .mobile-header ul.menu li.menu-item:nth-child(8) {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
   }
 
   .mobile-header ul.menu li.menu-item a {
@@ -10801,11 +10795,6 @@ a.text-dark:focus {
   .mobile-header.menu-opened ul.menu li.menu-item:nth-child(7) {
     -webkit-transition-delay: 0.69s;
             transition-delay: 0.69s;
-  }
-
-  .mobile-header.menu-opened ul.menu li.menu-item:nth-child(8) {
-    -webkit-transition-delay: 0.76s;
-            transition-delay: 0.76s;
   }
 
   .mobile-header.menu-opened .icon.icon-bag {
