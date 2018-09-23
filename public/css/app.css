@@ -10644,10 +10644,15 @@ a.text-dark:focus {
   display: none;
 }
 
+.navbar .navbar-nav {
+  height: 100vh;
+}
+
 @media (min-width: 1080px) {
   .navbar .navbar-nav {
-    padding-top: 5px;
+    height: auto;
     left: -9px;
+    padding-top: 5px;
     position: relative;
   }
 }

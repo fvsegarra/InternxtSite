@@ -19,7 +19,7 @@
 
 	}
 
-	.navbar-brand{
+	.navbar-brand {
 
 		margin-left: 2px;
 
@@ -29,7 +29,7 @@
     		padding-bottom: 7px;
 		}
 
-		.mainLogo{
+		.mainLogo {
 
     		height: 41px;
 
@@ -92,9 +92,12 @@
 
 	.navbar-nav {
 
+		height: 100vh;
+
 		@include whenLargerThan('large-screen') {
-			padding-top: 5px;
+			height: auto;
     		left: -9px;
+			padding-top: 5px;
 			position: relative;
 		}
 
