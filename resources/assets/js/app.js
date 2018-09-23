@@ -98,3 +98,10 @@ $('.modal__checkbox').click((e) => {
 
 
 });
+
+var burger = $('.burger-container'),
+header = $('.mobile-header');
+
+burger.click(function() {
+	header.toggleClass('menu-opened');
+});

@@ -34194,6 +34194,13 @@ $('.modal__checkbox').click(function (e) {
 	}
 });
 
+var burger = $('.burger-container'),
+    header = $('.mobile-header');
+
+burger.click(function () {
+	header.toggleClass('menu-opened');
+});
+
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":

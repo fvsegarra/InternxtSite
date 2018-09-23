@@ -78,7 +78,8 @@
             @endslot
         @endcomponent
 
-        @include('_includes.navbar')
+        @include('_includes.navbar-mobile')
+        @include('_includes.navbar-desktop')
 
         @yield('body')
 
