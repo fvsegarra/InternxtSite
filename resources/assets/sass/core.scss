@@ -209,7 +209,7 @@
                         background-size: 575px;
                         margin: 0 auto;
                         padding-top: 396px;
-                        width: 375px;
+                        width: 360px; // 375 - 15px left padding, to prevent body scroll
 
                         @include whenLargerThan('large-screen') {
                             background-position: -1vw 38px;

@@ -12446,8 +12446,6 @@ hr {
 
 #page-home .section--preview-xcloud .section__cta,
 #page-home .section--preview-xcore .section__cta {
-  border-color: #d0d0d6;
-  color: white;
   opacity: 1;
   font-weight: 450;
 }
@@ -12530,6 +12528,11 @@ hr {
   padding-top: 29px;
 }
 
+#page-home .section--preview-xcore .section__cta {
+  color: #d1bfff;
+  border-color: #d1bfff;
+}
+
 @media (min-width: 1440px) {
   #page-home .section--preview-xcore .section__content {
     background-image: url("/img/mockups/xcore/bg_home.png");
@@ -12543,11 +12546,6 @@ hr {
 
   #page-home .section--preview-xcore .section__label {
     margin-top: 105px;
-  }
-
-  #page-home .section--preview-xcore .section__cta {
-    color: #d1bfff;
-    border-color: #d1bfff;
   }
 }
 
@@ -13898,7 +13896,7 @@ hr {
   background-size: 575px;
   margin: 0 auto;
   padding-top: 396px;
-  width: 375px;
+  width: 360px;
 }
 
 @media (min-width: 1080px) {

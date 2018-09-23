@@ -212,8 +212,6 @@
             }
 
             .section__cta {
-                border-color: #d0d0d6;
-                color: white;
                 opacity: 1;
                 font-weight: 450;
 
@@ -297,6 +295,11 @@
                 padding-top: 29px;
             }
 
+            .section__cta {
+                color: #d1bfff;
+                border-color: #d1bfff;
+            }
+
             @include whenLargerThan('xl-screen') {
 
                 .section__content {
@@ -311,11 +314,6 @@
 
                 .section__label {
                     margin-top: 105px;
-                }
-
-                .section__cta {
-                    color: #d1bfff;
-                    border-color: #d1bfff;
                 }
 
             }
