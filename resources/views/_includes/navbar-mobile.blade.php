@@ -8,15 +8,13 @@
             <div class="bar btmBar"></div>
         </div>
     </div>
-    {{-- <div class="icon icon-apple"></div> --}}
     <ul class="menu">
-        <li class="menu-item"><a href="#">X Cloud</a></li>
-        <li class="menu-item"><a href="#">X Core</a></li>
-        <li class="menu-item"><a href="#">About Us</a></li>
-        <li class="menu-item"><a href="#">Roadmap</a></li>
-        <li class="menu-item"><a href="#">Resources</a></li>
-        <li class="menu-item"><a href="#">INXT token</a></li>
-        <li class="menu-item"><a href="#">News hub</a></li>
-        <li class="menu-item"><a href="#">Get X Cloud Beta</a></li>
+        <li class="menu-item"><a href="{{ route('cloud') }}">X Cloud</a></li>
+        <li class="menu-item"><a href="{{ route('core') }}">X Core</a></li>
+        <li class="menu-item"><a href="{{ route('about') }}">About Us</a></li>
+        <li class="menu-item"><a href="{{ route('roadmap') }}">Roadmap</a></li>
+        <li class="menu-item"><a href="{{ route('resources') }}">Resources</a></li>
+        <li class="menu-item"><a href="{{ route('token') }}">INXT token</a></li>
+        <li class="menu-item"><a href="https://medium.com/internxt" target="_blank" rel="nofollow">News hub</a></li>
     </ul>
 </div>
