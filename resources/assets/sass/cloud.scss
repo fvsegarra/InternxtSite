@@ -314,6 +314,7 @@
 
             background-color: #1c1d1f;
             color: white;
+            padding-top: 1px;
 
             @include whenLargerThan('large-screen') {
                 padding-top: 138px;

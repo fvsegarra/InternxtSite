@@ -12896,6 +12896,7 @@ hr {
 #page-cloud .section--cloud-partners {
   background-color: #1c1d1f;
   color: white;
+  padding-top: 1px;
 }
 
 @media (min-width: 1080px) {
