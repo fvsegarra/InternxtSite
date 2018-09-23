@@ -102,14 +102,16 @@
 		</div>
 	</section>
 
-	<section class="section section--beta section--beta-core">
-		<div class="container">
-			<div class="section__outline d-lg-flex align-items-center justify-content-between">
-				<img class="section__icon" src="/img/logos/xcore.png" height="56">
-				<p class="section__heading">Start earning INXT today.</p>
-				<a href="#download" class="section__cta">Get X Core Beta</a>
-			</div>{{-- /.section__outline --}}
-		</div>
-	</section>
+	@if($agent->isDesktop())
+		<section class="section section--beta section--beta-core">
+			<div class="container">
+				<div class="section__outline d-lg-flex align-items-center justify-content-between">
+					<img class="section__icon" src="/img/logos/xcore.png" height="56">
+					<p class="section__heading">Start earning INXT today.</p>
+					<a href="#download" class="section__cta">Get X Core Beta</a>
+				</div>{{-- /.section__outline --}}
+			</div>
+		</section>
+	@endif
 
 @endsection

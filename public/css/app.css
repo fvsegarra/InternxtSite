@@ -14043,6 +14043,7 @@ hr {
 
 #page-core .section--core-design {
   margin-top: 140px;
+  margin-bottom: 140px;
 }
 
 @media (min-width: 1080px) {
@@ -14206,10 +14207,6 @@ hr {
 }
 
 @media (min-width: 768px) {
-  #page-core .section--beta {
-    margin-top: 237px;
-  }
-
   #page-core .section--beta > .container {
     max-width: 906px;
   }

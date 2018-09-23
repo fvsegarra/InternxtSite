@@ -320,6 +320,7 @@
         &--core-design {
 
             margin-top: 140px;
+            margin-bottom: 140px;
 
             @include whenLargerThan('large-screen') {
                 background-image: linear-gradient(to bottom, #fafafa, #ffffff);
@@ -489,8 +490,6 @@
         &--beta {
 
             @include whenLargerThan('small-screen') {
-
-                margin-top: 237px;
 
                 & > .container {
                     max-width: 906px;

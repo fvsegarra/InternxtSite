@@ -17,13 +17,14 @@ class AppServiceProvider extends ServiceProvider
     {
 
         $agent = new Agent();
+
         $platform = $agent->platform();
 
         if ($platform == "OS X") {
             $platform = "Mac";
         }
 
-        View::share(compact('platform'));
+        View::share(compact('agent', 'platform'));
 
     }
 
