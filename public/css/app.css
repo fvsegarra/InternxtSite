@@ -15255,7 +15255,7 @@ hr {
 }
 
 #page-about .teamPartner__link::after {
-  background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.25) 100%);
+  background: rgba(0, 0, 0, 0.12);
   border-radius: 6px;
   content: '';
   height: 100%;
