@@ -277,6 +277,9 @@
 
                 &--setup {
 
+                    padding-left: 30px;
+                    padding-right: 30px;
+
                     @include whenLargerThan('large-screen') {
                         margin-top: -40px; // To account for bottom padding of laptop bg
                         padding-left: 208px;
@@ -365,10 +368,16 @@
 
                 .featurePreview {
 
+                    background-image: url("/img/mockups/xcore/dashboard_mobile.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 425px;
+                    left: -24px;
+                    position: relative;
+                    width: 375px;
+
                     @include whenLargerThan('large-screen') {
                         background-image: url("/img/mockups/xcore/dashboard.png");
-                        background-repeat: no-repeat;
-                        background-size: contain;
                         height: 607px;
                         left: 142px;
                         position: absolute;
@@ -377,7 +386,13 @@
                     }
 
                     &--settings {
-                        background-image: url("/img/mockups/xcore/settings.png");
+
+                        background-image: url("/img/mockups/xcore/settings_mobile.png");
+
+                        @include whenLargerThan('large-screen') {
+                            background-image: url("/img/mockups/xcore/settings.png");
+                        }
+
                     }
 
                 }

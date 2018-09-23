@@ -14007,6 +14007,11 @@ hr {
   }
 }
 
+#page-core .section--core-summary .subsection--setup {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 @media (min-width: 1080px) {
   #page-core .section--core-summary .subsection--setup {
     margin-top: -40px;
@@ -14084,11 +14089,19 @@ hr {
   }
 }
 
+#page-core .section--core-design .featurePreviewContainer .featurePreview {
+  background-image: url("/img/mockups/xcore/dashboard_mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 425px;
+  left: -24px;
+  position: relative;
+  width: 375px;
+}
+
 @media (min-width: 1080px) {
   #page-core .section--core-design .featurePreviewContainer .featurePreview {
     background-image: url("/img/mockups/xcore/dashboard.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     height: 607px;
     left: 142px;
     position: absolute;
@@ -14098,7 +14111,13 @@ hr {
 }
 
 #page-core .section--core-design .featurePreviewContainer .featurePreview--settings {
-  background-image: url("/img/mockups/xcore/settings.png");
+  background-image: url("/img/mockups/xcore/settings_mobile.png");
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-design .featurePreviewContainer .featurePreview--settings {
+    background-image: url("/img/mockups/xcore/settings.png");
+  }
 }
 
 #page-core .section--core-design .nav-tabs {
