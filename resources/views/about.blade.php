@@ -117,6 +117,9 @@
 							@slot('slug', 'conor')
 							@slot('name', 'Conor Doyle')
 							@slot('role', 'Chief Marketing Officer')
+							@slot('bio')
+								Conor is the Chief Marketing Officer at Internxt. Conor started his 8 high level years in marketing by starting his own marketing brand which grew to a client base and audience of over 300,000 people. Soon after that he moved into cryptocurrency by working for projects such as Snovio, Atomic Wallet (created by Changelly CEO) and Bitcoin Cash. Conor's well rounded marketing and cryptocurrency knowledge will help Internxt succeed.
+							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
