@@ -137,7 +137,7 @@
 
             .row {
 
-                padding-left: 30px;
+                padding-left: 16px;
 
                 @include whenLargerThan('large-screen') {
                     padding-left: 6px;

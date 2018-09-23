@@ -59,8 +59,14 @@
         }
 
         .articleImgContainer {
-            height: 207px;
+
+            height: 170px;
             overflow: hidden;
+
+            @include whenLargerThan('large-screen') {
+                height: 207px;
+            }
+
         }
 
         &:nth-of-type(n+4) {
@@ -90,8 +96,14 @@
         }
 
         &__content {
-            padding: 32px;
+
+            padding: 32px 32px 20px;
             padding-top: 15px;
+
+            @include whenLargerThan('large-screen') {
+                padding: 32px;
+            }
+
         }
 
         &__date {
@@ -119,13 +131,14 @@
 
             color: black;
             font-size: 22px;
+            font-weight: 450;
             letter-spacing: -0.7px;
             line-height: 1.27;
+            margin-bottom: 36px;
             min-height: 81px;
-            margin-bottom: 32px;
-            font-weight: 450;
 
             @include whenLargerThan('large-screen') {
+                margin-bottom: 32px;
                 margin-top: 9px;
             }
 
