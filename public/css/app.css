@@ -13804,7 +13804,16 @@ hr {
 }
 
 #page-core .section--core-summary .subsection {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 91px;
+  max-width: 375px;
+}
+
+@media (min-width: 1080px) {
+  #page-core .section--core-summary .subsection {
+    max-width: none;
+  }
 }
 
 #page-core .section--core-summary .subsection__heading {
@@ -13945,7 +13954,7 @@ hr {
 @media (min-width: 1080px) {
   #page-core .section--core-summary .subsection--setup {
     margin-top: 82px;
-    padding-left: 130px;
+    padding-left: 208px;
   }
 }
 

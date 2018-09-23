@@ -115,7 +115,14 @@
 
             .subsection {
 
+                margin-left: auto;
+                margin-right: auto;
                 margin-top: 91px;
+                max-width: 375px;
+
+                @include whenLargerThan('large-screen') {
+                    max-width: none;
+                }
 
                 &__heading {
 
@@ -272,7 +279,7 @@
 
                     @include whenLargerThan('large-screen') {
                         margin-top: 82px;
-                        padding-left: 130px;
+                        padding-left: 208px;
                     }
 
                     .subsection__heading {
