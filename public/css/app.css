@@ -12876,19 +12876,18 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 670px;
+  height: calc(100vh + 74px);
+  margin-bottom: -74px;
   overflow: hidden;
   padding-bottom: 10px;
-  padding-top: 50px;
+  padding-top: 117px;
   position: relative;
+  top: -74px;
 }
 
 @media (min-width: 1080px) {
   #page-cloud .pageHeader {
     background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
-    height: 872px;
-    height: calc(100vh + 74px);
-    padding-top: 115px;
   }
 }
 
@@ -12909,7 +12908,7 @@ hr {
     background-image: url("/img/headers/xcloud_desktop.png");
     height: 633px;
     right: 0;
-    top: 200px;
+    top: 208px;
     width: 770px;
     background-size: 839px;
     width: 840px;
@@ -12923,7 +12922,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-cloud .pageHeader > .container {
-    padding-top: 153px;
+    padding-top: 215px;
   }
 }
 
