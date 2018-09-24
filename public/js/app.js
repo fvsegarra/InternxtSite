@@ -34201,6 +34201,23 @@ burger.click(function () {
 	header.toggleClass('menu-opened');
 });
 
+// Smooth scrolling for on-page anchor links
+$('a[href*="#"]').not('[href="#"]').click(function (event) {
+	// Only target links on same page
+	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+		if (target.length) {
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+		}
+	}
+});
+
 /***/ }),
 
 /***/ "./resources/assets/js/bootstrap.js":
