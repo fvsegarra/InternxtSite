@@ -1,4 +1,4 @@
-<nav class="navbar @yield('navbar-classes') navbar-expand-lg">
+<nav class="navbar @yield('navbar-classes') navbar-expand-sm">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
             <img src="/img/logos/@yield('navbarLogo', 'internxt_icon.svg')" height="41" class="mainLogo">

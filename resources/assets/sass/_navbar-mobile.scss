@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1079px) {
+@media only screen and (max-width: 767px) {
 
     $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
     $menuItems: 7;
@@ -205,7 +205,7 @@
 
 }
 
-@include whenLargerThan('large-screen') {
+@include whenLargerThan('small-screen') {
 
     .mobile-header {
         display: none;

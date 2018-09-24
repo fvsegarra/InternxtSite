@@ -2,21 +2,18 @@
 
 	display: none;
 
-	@include whenLargerThan('large-screen') {
+	@include whenLargerThan('small-screen') {
 
 		background-color: white;
 		display: block;
 		padding: 12px 8px 16px;
-
-		@include whenLargerThan('small-screen') {
-			padding: 5px 16px 5px;
-		}
+		// 	padding: 5px 16px 5px;
 
 		& > .container {
 
 			padding-right: 12px;
 
-			@include whenLargerThan('large-screen') {
+			@include whenLargerThan('small-screen') {
 			    max-width: 1320px;
 			    padding-left: 30px;
 			    padding-right: 7px;
@@ -28,7 +25,7 @@
 
 			margin-left: 2px;
 
-			@include whenLargerThan('large-screen') {
+			@include whenLargerThan('small-screen') {
 				padding-top: 16px;
 	    		padding-left: 0px;
 	    		padding-bottom: 7px;
@@ -38,7 +35,7 @@
 
 	    		height: 41px;
 
-	    		@include whenLargerThan('large-screen') {
+	    		@include whenLargerThan('small-screen') {
 					height: 41px;
 					margin-left: -11px;
 					margin-top: -1px;
@@ -52,7 +49,7 @@
 
 			display: none;
 
-			@include whenLargerThan('large-screen') {
+			@include whenLargerThan('small-screen') {
 				border-radius: 4px;
 				display: block;
 				text-align: left;
@@ -97,20 +94,18 @@
 
 		.navbar-nav {
 
-			border-top: 1px solid #d8d8d8;
-			height: 100vh;
-			left: -5px;
-			margin-top: 15px;
+			border-top: none;
+			height: auto;
+			left: -9px;
+			margin-top: 0;
 			padding-left: 0px;
-			padding-top: 30px;
+			padding-top: 11px;
 			position: relative;
 
 			@include whenLargerThan('large-screen') {
-				border-top: none;
-				margin-top: 0;
-				height: auto;
-	    		left: -9px;
-				padding-top: 5px;
+
+				// padding-top: 30px;
+
 			}
 
 			li.nav-item {
@@ -118,21 +113,15 @@
 				padding: 0 7.5px;
 				width: 100px;
 
-				@include whenLargerThan('large-screen') {
+				@include whenLargerThan('small-screen') {
 					width: auto;
 				}
 
 				&--xcloud {
-
-					display: none;
-
-					@include whenLargerThan('large-screen') {
-						display: block;
-						padding-right: 0px;
-						position: relative;
-		    			left: 8px;
-					}
-
+					left: 8px;
+					padding-right: 0px;
+					position: relative;
+					top: -4px;
 				}
 
 			}
@@ -140,16 +129,16 @@
 			a.nav-link{
 
 				border-radius: 4px;
+				color: black;
 				font-size: 16px;
 				font-weight: 600;
+				letter-spacing: 0;
+				padding: 6px 10px 6px 10px;
 				transition: color $transition-default;
 
-		  		@include whenLargerThan('large-screen') {
-					font-size: 16px;
-					color: black;
-					letter-spacing: 0;
+				@include whenLargerThan('large-screen') {
 					padding: 6px 18px 6px 15px;
-		  		}
+				}
 
 		  		&:hover{
 		  			background-color: rgba(black, 0.07);
@@ -179,7 +168,7 @@
 						background-color: #4585f5;
 					}
 
-					@include whenLargerThan('large-screen') {
+					@include whenLargerThan('small-screen') {
 						display: block;
 						letter-spacing: -0px;
 						margin-left: 11px;
@@ -227,7 +216,7 @@
 
 	 			margin-left: 0px;
 
-	 			@include whenLargerThan('large-screen') {
+	 			@include whenLargerThan('small-screen') {
 	 				margin-left: 11px;
 	 			}
 
@@ -235,7 +224,7 @@
 
 		 			height: 46px;
 
-		 			@include whenLargerThan('large-screen') {
+		 			@include whenLargerThan('small-screen') {
 		 				// Homepage logo has no padding built in, so move this one left more to compensate
 		 				height: 44px;
 		 				margin-left: -21px;
@@ -294,7 +283,7 @@
 
 		}
 
-		@include whenLargerThan('large-screen') {
+		@include whenLargerThan('small-screen') {
 
 			padding: 7px 16px 3px;
 
@@ -323,7 +312,7 @@
 			border: none;
 			padding: 0;
 
-		    @include whenLargerThan('large-screen') {
+		    @include whenLargerThan('small-screen') {
 
 		    	&:not(.show) {
 			    	display: none;
@@ -347,7 +336,7 @@
 		    	text-align: center;
 		    	padding: 8px 0;
 
-		    	@include whenLargerThan('large-screen') {
+		    	@include whenLargerThan('small-screen') {
 			    	background-repeat: no-repeat;
 			    	background-size: 26px 12px;
 		    		background-position: 269px center;
@@ -372,7 +361,7 @@
 
 		    		display: none;
 
-		    		@include whenLargerThan('large-screen') {
+		    		@include whenLargerThan('small-screen') {
 			    		display: block;
 			    		height: 38px;
 			    		margin-right: 27px;
@@ -388,7 +377,7 @@
 					margin-bottom: 0;
 					text-align: left;
 
-					@include whenLargerThan('large-screen') {
+					@include whenLargerThan('small-screen') {
 						color: black;
 						font-size: 23px;
 						letter-spacing: -0.7px;
@@ -404,7 +393,7 @@
 				&__subheading {
 
 					display: none;
-					@include whenLargerThan('large-screen') {
+					@include whenLargerThan('small-screen') {
 						color: #8e8e93;
 						display: block;
 						font-size: 16px;
@@ -434,7 +423,7 @@
 	  					height: 33px;
 	  					margin: 2px 32px 0 5px;
 
-	  					@include whenLargerThan('large-screen') {
+	  					@include whenLargerThan('small-screen') {
 	  						margin: 2px 29px 0 5px;
 	  					}
 
@@ -448,7 +437,7 @@
 
 		    	display: none;
 
-				@include whenLargerThan('large-screen') {
+				@include whenLargerThan('small-screen') {
 					background-color: #f2f2f2;
 					border-top: none;
 					display: block;
@@ -463,13 +452,13 @@
 
 		    	width: 185px;
 
-		    	@include whenLargerThan('large-screen') {
+		    	@include whenLargerThan('small-screen') {
 		    		width: 335px;
 		    	}
 
 		    	.dropdown-item {
 
-		    		@include whenLargerThan('large-screen') {
+		    		@include whenLargerThan('small-screen') {
 		    			padding: 33px 35px;
 		    		}
 
@@ -488,7 +477,7 @@
 							letter-spacing: -0.7px;
 						}
 
-		    			@include whenLargerThan('large-screen') {
+		    			@include whenLargerThan('small-screen') {
 
 							color: black;
 							font-size: 19px;
@@ -559,7 +548,7 @@
 			// 	position: relative;
 			// 	width: 100vw;
 
-		 //        @include whenLargerThan('large-screen') {
+		 //        @include whenLargerThan('small-screen') {
 		 //            background-color: transparent;
 		 //            border-radius: 0;
 		 //            box-shadow: none;
@@ -574,18 +563,19 @@
 	    .navbar-nav {
 
 	    	left: 0px;
+	    	padding-top: 13px;
 
             a.nav-link {
 
     			color: #212529;
 
-                @include whenLargerThan('large-screen') {
+                @include whenLargerThan('small-screen') {
                     color: white;
                 }
 
                 &--xcloud {
 
-                    @include whenLargerThan('large-screen') {
+                    @include whenLargerThan('small-screen') {
 						background-color: transparent;
 						background-position: 159px 8px;
 						border: solid 1px white;
@@ -605,7 +595,7 @@
 
     .pageHeader {
 
-    	@include whenLargerThan('large-screen') {
+    	@include whenLargerThan('small-screen') {
     		top: -74px;
     	}
 
