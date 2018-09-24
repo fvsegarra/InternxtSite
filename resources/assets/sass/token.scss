@@ -118,7 +118,8 @@
             padding: 32px 0 24px;
 
             @include whenLargerThan('large-screen') {
-                padding-top: 49px;
+                padding-bottom: 33px;
+                padding-top: 40px;
             }
 
             .inxtDatum {

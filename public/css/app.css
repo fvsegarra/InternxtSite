@@ -14598,7 +14598,8 @@ hr {
 
 @media (min-width: 1080px) {
   #page-token .section--inxt-data {
-    padding-top: 49px;
+    padding-bottom: 33px;
+    padding-top: 40px;
   }
 }
 
