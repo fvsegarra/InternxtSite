@@ -16,7 +16,7 @@
 		<div class="container">
 			<h1 class="pageHeader__heading">Internxt &nbsp;Token</h1>
 			<h2 class="pageHeader__subheading">INXT. <span class="linebreak d-block d-lg-none"></span>Our tokenised asset.</h2>
-			<a class="pageHeader__cta" href="#metrics">Token metrics</a>
+			<a class="pageHeader__cta" href="https://coinmarketcap.com/currencies/internxt/" target="_blank">Token metrics</a>
 		</div>
 	</header>
 
