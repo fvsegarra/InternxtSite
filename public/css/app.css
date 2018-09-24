@@ -11146,10 +11146,9 @@ a.text-dark:focus {
     border-radius: 5px;
     -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-    padding: 0;
     width: 260px;
     left: -108px;
-    padding: 8px 0;
+    padding: 2px 0 8px;
     text-align: left;
     top: 45px;
     width: 335px;
