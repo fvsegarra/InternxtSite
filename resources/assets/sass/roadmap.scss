@@ -142,9 +142,13 @@
                 font-size: 17px;
                 letter-spacing: -0.1px;
                 line-height: 1.65;
-                margin-top: 30px;
                 opacity: 0;
                 transition: opacity $transition-default 0s;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 30px;
+                }
+
             }
 
             &--active {

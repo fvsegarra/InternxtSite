@@ -15949,10 +15949,15 @@ hr {
   font-size: 17px;
   letter-spacing: -0.1px;
   line-height: 1.65;
-  margin-top: 30px;
   opacity: 0;
   -webkit-transition: opacity 0.3s 0s;
   transition: opacity 0.3s 0s;
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .subsection--milestone .subsection__content {
+    margin-top: 30px;
+  }
 }
 
 #page-roadmap .subsection--milestone--active {
