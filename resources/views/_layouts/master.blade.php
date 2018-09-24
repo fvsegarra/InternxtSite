@@ -63,21 +63,6 @@
             @endslot
         @endcomponent
 
-        @component('_includes.components.modal')
-            @slot('id', 'modalXCore')
-            @slot('icon', '/img/logos/xcore.png')
-            @slot('heading', 'Experience a more secure cloud')
-            @slot('subheading', 'Get X Core beta today.')
-            @slot('content')
-
-                <div class="modal__buttons">
-                    <a class="modal__cta modal__cta--{{ str_slug($platform) }}" href="#">Download for {{ $platform }}</a>
-                    <a class="modal__cta modal__cta--browser" href="#">Open in browser</a>
-                </div>{{-- /.modal__buttons --}}
-
-            @endslot
-        @endcomponent
-
         @include('_includes.navbar-mobile')
         @include('_includes.navbar-desktop')
 

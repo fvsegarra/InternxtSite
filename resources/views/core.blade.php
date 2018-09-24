@@ -23,9 +23,7 @@
 			{{-- Large --}}
 			<h2 class="pageHeader__subheading d-lg-none">Power in your hands.</h2>
 
-			<button class="pageHeader__cta btn" type="button" data-toggle="modal" data-target="#modalXCore">
-				Get X Core Beta
-			</button>
+			<a class="pageHeader__cta btn" href="#">Get X Core Beta</a>
 
 		</div>
 	</header>
