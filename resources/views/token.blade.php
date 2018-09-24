@@ -14,13 +14,13 @@
 
 	<header class="pageHeader">
 		<div class="container">
-			<h1 class="pageHeader__heading">INXT &nbsp;Token</h1>
-			<h2 class="pageHeader__subheading">Internxt’s tokenised asset</h2>
-			<a class="pageHeader__cta" href="#">Discover token metrics</a>
+			<h1 class="pageHeader__heading">Internxt &nbsp;Token</h1>
+			<h2 class="pageHeader__subheading">INXT. <span class="linebreak d-block d-lg-none"></span>Our tokenised asset.</h2>
+			<a class="pageHeader__cta" href="#metrics">Token metrics</a>
 		</div>
 	</header>
 
-	<section class="section section--inxt-data d-none d-lg-block">
+	<section class="section section--inxt-data d-none d-lg-block" id="metrics">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-3">

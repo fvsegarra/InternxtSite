@@ -13,43 +13,41 @@
 
     .pageHeader {
 
-        $offset: 84px;
+        $offset: 74px;
 
-        background-image: url('/img/headers/inxt_mobile.png');
+        background-image: url('/img/headers/token_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
-        color: black;
-        height: 668px;
-        margin-bottom: -87px;
-        padding-top: 206px;
+        color: white;
+        height: calc(100vh + #{$offset});
+        margin-bottom: -$offset;
+        padding-top: 310px;
         position: relative;
-        text-align: center;
-        z-index: 1;
         top: -$offset;
+        z-index: 1;
 
         @include whenLargerThan('large-screen') {
-            background-image: url('/img/headers/inxt_desktop.png');
-            height: 100vh;
-            display: flex;
             align-items: center;
-            padding-top: 320px;
-            top: -73px;
-            height: calc(100vh + #{$offset});
+            background-image: url('/img/headers/token_desktop.png');
+            display: flex;
             padding-top: $offset;
+            top: -$offset;
         }
 
         & > .container {
 
+            position: relative;
+            top: 10px;
+
             @include whenLargerThan('large-screen') {
-                position: relative;
-                top: -10px;
+                max-width: 1123px;
+                top: 3px;
             }
 
         }
 
         &__heading {
 
-            color: #272727;
             font-size: 21px;
             font-weight: 500;
             letter-spacing: normal;
@@ -58,8 +56,9 @@
             text-transform: uppercase;
 
             @include whenLargerThan('large-screen') {;
-                font-size: 24px;
+                font-size: 26px;
                 line-height: 2.17;
+                opacity: 0.9;
             }
 
         }
@@ -73,10 +72,11 @@
             margin-top: 3px;
 
             @include whenLargerThan('large-screen') {;;
-                font-size: 50px;
-                letter-spacing: -0.9px;
+                position: relative;
+                font-size: 60px;
+                letter-spacing: -1.1px;
                 line-height: 0.98;
-                margin-top: 8px;
+                left: -5px;
             }
 
         }
@@ -86,29 +86,28 @@
             background-color: #000000;
             background-image: url("/img/icons/chevron-right-circle.svg");
             background-repeat: no-repeat;
-            background-position: 227px center;
+            background-position: 152px center;
             border-radius: 31.4px;
             box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
             color: white;
-            display: block;
+            display: inline-block;
             font-size: 18px;
             font-weight: 600;
-            height: 47px;
             letter-spacing: -0.2px;
             margin: 41px auto 0;
-            padding: 11px 34px 13px 12px;
-            width: 257.2px;
+            padding: 12px 56px 10px 23px;
+            text-align: left;
 
             @include whenLargerThan('large-screen') {
-                display: inline-block;
-                height: 49px;
-                line-height: 1;
-                padding: 16px 0 0 25px;
-                text-align: left;
-                width: 263px;
+                background-position: 167px center;
+                background-size: 27px 28px;
+                font-size: 20px;
+                margin-top: 64px;
+                padding: 13px 62px 13px 26px;
             }
 
         }
+
 
     }
 
