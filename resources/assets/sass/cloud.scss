@@ -807,13 +807,17 @@
 
                 margin-bottom: 11.4px;
 
+                @include whenLargerThan('large-screen') {
+                    margin-bottom: 14px;
+                }
+
                 &__quantityContainer {
 
                     padding: 0;
                     flex: 0;
 
                     @include whenLargerThan('large-screen') {
-                        flex: 0 0 150px;
+                        flex: 0 0 127px;
                     }
 
                 }
@@ -827,43 +831,52 @@
                     color: black;
                     font-size: 21.6px;
                     font-weight: bold;
-                    height: 59.6px;
+                    height: 58px;
                     letter-spacing: -0.5px;
-                    line-height: 2.5;
-                    padding: 1px;
-                    width: 118.5px;
+                    line-height: 2.7;
+                    padding: 0px;
+                    width: 114px
                 }
 
                 &__price {
+
                     color: black;
                     font-size: 20.7px;
                     font-weight: 500;
                     height: 26px;
                     letter-spacing: -0.3px;
                     line-height: 1.25;
+                    position: relative;
+
+                    // Add an underline to price
+                    &::before {
+                        background-color: #dad9d9;
+                        bottom: -19px;
+                        content: "";
+                        display: block;
+                        height: 1px;
+                        left: 4px;
+                        position: absolute;
+                        width: 50px;
+                    }
+
                 }
 
-                &:nth-of-type(n+3) .plan__price{
+                &:first-of-type {
 
-                    position: relative;
+                    .plan__price{
+                        top: -4px;
+                    }
+
+                }
+
+                &:nth-of-type(n+3) .plan__price {
 
                     // Append " / month" to plans other than first one
                     &::after {
                         content: " / month";
                         letter-spacing: -0.3px;
                         color: #838387;
-                    }
-
-                    // Add an underline
-                    &::before {
-                        background-color: #dad9d9;
-                        bottom: -24px;
-                        content: "";
-                        display: block;
-                        height: 1px;
-                        left: 24px;
-                        position: absolute;
-                        width: 50px;
                     }
 
                 }
@@ -1182,12 +1195,13 @@
 
     }
 
-    .plan{
+    .plan {
 
         margin-bottom: 15px;
 
         @include whenLargerThan('large-screen') {
             margin-bottom: 16px;
+            margin-left: 4px;
         }
 
         &__quantity{

@@ -13619,6 +13619,12 @@ hr {
   margin-bottom: 11.4px;
 }
 
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-plans .plan {
+    margin-bottom: 14px;
+  }
+}
+
 #page-cloud .section--cloud-plans .plan__quantityContainer {
   padding: 0;
   -webkit-box-flex: 0;
@@ -13629,8 +13635,8 @@ hr {
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-plans .plan__quantityContainer {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 150px;
-            flex: 0 0 150px;
+        -ms-flex: 0 0 127px;
+            flex: 0 0 127px;
   }
 }
 
@@ -13643,11 +13649,11 @@ hr {
   color: black;
   font-size: 21.6px;
   font-weight: bold;
-  height: 59.6px;
+  height: 58px;
   letter-spacing: -0.5px;
-  line-height: 2.5;
-  padding: 1px;
-  width: 118.5px;
+  line-height: 2.7;
+  padding: 0px;
+  width: 114px;
 }
 
 #page-cloud .section--cloud-plans .plan__price {
@@ -13657,27 +13663,28 @@ hr {
   height: 26px;
   letter-spacing: -0.3px;
   line-height: 1.25;
+  position: relative;
 }
 
-#page-cloud .section--cloud-plans .plan:nth-of-type(n+3) .plan__price {
-  position: relative;
+#page-cloud .section--cloud-plans .plan__price::before {
+  background-color: #dad9d9;
+  bottom: -19px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 4px;
+  position: absolute;
+  width: 50px;
+}
+
+#page-cloud .section--cloud-plans .plan:first-of-type .plan__price {
+  top: -4px;
 }
 
 #page-cloud .section--cloud-plans .plan:nth-of-type(n+3) .plan__price::after {
   content: " / month";
   letter-spacing: -0.3px;
   color: #838387;
-}
-
-#page-cloud .section--cloud-plans .plan:nth-of-type(n+3) .plan__price::before {
-  background-color: #dad9d9;
-  bottom: -24px;
-  content: "";
-  display: block;
-  height: 1px;
-  left: 24px;
-  position: absolute;
-  width: 50px;
 }
 
 #page-cloud .section--cloud-everywhere {
@@ -13977,6 +13984,7 @@ hr {
 @media (min-width: 1080px) {
   #page-cloud .plan {
     margin-bottom: 16px;
+    margin-left: 4px;
   }
 }
 
