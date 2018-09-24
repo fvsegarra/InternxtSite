@@ -22,13 +22,6 @@
 		margin-top: 82px;
 		padding-left: 8px;
 
-		&__heading{
-			font-size: 43px;
-			font-weight: normal;
-			letter-spacing: -1.2px;
-			line-height: 1.19;
-		}
-
 		&__content {
 
 			color: #838387;
@@ -40,6 +33,18 @@
 				margin-bottom: 32px;
 			}
 
+		}
+
+		&__subheading {
+			font-size: 25px;
+		}
+
+		&__heading{
+			color: black;
+			font-size: 43px;
+			font-weight: normal;
+			letter-spacing: -1.2px;
+			line-height: 1.19;
 		}
 
 		&--terms-overview {

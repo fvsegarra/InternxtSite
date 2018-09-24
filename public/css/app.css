@@ -16048,13 +16048,6 @@ hr {
   padding-left: 8px;
 }
 
-#page-terms .section__heading {
-  font-size: 43px;
-  font-weight: normal;
-  letter-spacing: -1.2px;
-  line-height: 1.19;
-}
-
 #page-terms .section__content {
   color: #838387;
   font-size: 21px;
@@ -16064,6 +16057,18 @@ hr {
 
 #page-terms .section__content p {
   margin-bottom: 32px;
+}
+
+#page-terms .section__subheading {
+  font-size: 25px;
+}
+
+#page-terms .section__heading {
+  color: black;
+  font-size: 43px;
+  font-weight: normal;
+  letter-spacing: -1.2px;
+  line-height: 1.19;
 }
 
 #page-terms .section--terms-overview {
