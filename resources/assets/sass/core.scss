@@ -16,6 +16,7 @@
             background-image :url('/img/headers/xcore_desktop.png');
             height: calc(100vh + #{$offset});
             padding-top: 308px;
+            margin-bottom: -$offset;
         }
 
         &__icon {
