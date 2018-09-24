@@ -11930,7 +11930,9 @@ a.text-dark:focus {
   }
 }
 
-.section--beta .section__cta {
+.section--beta .section__cta,
+.section--beta .section__cta:active,
+.section--beta .btn-primary.section__cta:active {
   background-color: #000000;
   background-image: url(/img/icons/cta-chevron-circle.png);
   background-position: 166px center;
@@ -11947,7 +11949,9 @@ a.text-dark:focus {
 }
 
 @media (min-width: 1080px) {
-  .section--beta .section__cta {
+  .section--beta .section__cta,
+  .section--beta .section__cta:active,
+  .section--beta .btn-primary.section__cta:active {
     background-position-x: 180px;
     line-height: normal;
     margin-top: 0;

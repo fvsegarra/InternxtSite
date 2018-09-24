@@ -540,7 +540,9 @@
 
         }
 
-        .section__cta {
+        .section__cta,
+        .section__cta:active,
+        .btn-primary.section__cta:active {
 
             background-color: #000000;
             background-image: url(/img/icons/cta-chevron-circle.png);
