@@ -14308,7 +14308,7 @@ hr {
 }
 
 #page-core .section--core-design {
-  margin-top: 140px;
+  margin-top: 91px;
   margin-bottom: 140px;
 }
 
@@ -14330,6 +14330,10 @@ hr {
     margin-left: 130px;
     max-width: 592px;
   }
+}
+
+#page-core .section--core-design .section__subheading {
+  margin-bottom: 42px;
 }
 
 @media (min-width: 1080px) {

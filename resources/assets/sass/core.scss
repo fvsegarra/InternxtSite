@@ -88,7 +88,6 @@
                 background-repeat: no-repeat;
                 background-size: 21px;
                 border-radius: 31.4px;
-                box-shadow: 0 7px 8px 0 #0f0d26;
                 color: white;
                 display: inline-block;
                 font-size: 18px;
@@ -315,7 +314,7 @@
 
         &--core-design {
 
-            margin-top: 140px;
+            margin-top: 91px;
             margin-bottom: 140px;
 
             @include whenLargerThan('large-screen') {
@@ -338,6 +337,8 @@
             }
 
             .section__subheading {
+
+                margin-bottom: 42px;
 
                 @include whenLargerThan('large-screen') {
                     font-size: 21px;
