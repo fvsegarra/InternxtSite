@@ -14028,9 +14028,9 @@ hr {
 
 @media (min-width: 1080px) {
   #page-core .pageHeader {
-    padding-top: 238px;
-    height: 100vh;
     background-image: url("/img/headers/xcore_desktop.png");
+    height: calc(100vh + 74px);
+    padding-top: 308px;
   }
 }
 

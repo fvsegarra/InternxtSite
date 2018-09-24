@@ -2,6 +2,8 @@
 
     .pageHeader {
 
+        $offset: 74px;
+
         background-image: url('/img/headers/xcore_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -11,9 +13,9 @@
         z-index: 1;
 
         @include whenLargerThan('large-screen') {
-            padding-top: 238px;
-            height: 100vh;
             background-image :url('/img/headers/xcore_desktop.png');
+            height: calc(100vh + #{$offset});
+            padding-top: 308px;
         }
 
         &__icon {
