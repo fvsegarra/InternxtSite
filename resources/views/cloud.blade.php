@@ -17,7 +17,8 @@
 			<img class="pageHeader__icon" src="/img/logos/xcloud.png" alt="xcloud" height="53">
 			<h1 class="pageHeader__heading">X Cloud</h1>
 			<h2 class="pageHeader__subheading">Secure cloud storage.</h2>
-			<a href="#" class="pageHeader__cta" data-toggle="modal" data-target="#modalXCloud">Get X Cloud Beta</a>
+			<a href="#" class="pageHeader__cta pageHeader__cta--mobile">Get X Cloud Beta</a>
+			<a href="#" class="pageHeader__cta pageHeader__cta--desktop" data-toggle="modal" data-target="#modalXCloud">Get X Cloud Beta</a>
 		</div>
 	</header>
 

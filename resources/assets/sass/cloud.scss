@@ -129,8 +129,21 @@
             width: 212px;
             letter-spacing: -0.2px;
 
+            &--desktop {
+                display: none;
+            }
+
             @include whenLargerThan('large-screen') {
-                margin-top: 88px;
+
+                &--mobile {
+                    display: none;
+                }
+
+                &--desktop {
+                    display: block;
+                    margin-top: 88px;
+                }
+
             }
 
         }
