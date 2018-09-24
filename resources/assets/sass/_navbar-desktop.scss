@@ -567,24 +567,16 @@
 
             a.nav-link {
 
-    			color: #212529;
-
-                @include whenLargerThan('small-screen') {
-                    color: white;
-                }
+    			color: white;
 
                 &--xcloud {
-
-                    @include whenLargerThan('small-screen') {
-						background-color: transparent;
-						background-position: 159px 8px;
-						border: solid 1px white;
-						box-shadow: none;
-						padding-left: 16px;
-						padding-right: 40px;
-						padding-top: 8px;
-                    }
-
+					background-color: transparent;
+					background-position: 159px 8px;
+					border: solid 1px white;
+					box-shadow: none;
+					padding-left: 16px;
+					padding-right: 40px;
+					padding-top: 9px;
                 }
 
             }
