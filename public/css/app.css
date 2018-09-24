@@ -13839,8 +13839,15 @@ hr {
 }
 
 #page-cloud .section--cloud-more-info .section__image {
-  margin: 44px 0 48px;
+  margin: 60px 0 48px;
+  max-width: 295px;
   position: relative;
+}
+
+@media (min-width: 1080px) {
+  #page-cloud .section--cloud-more-info .section__image {
+    margin: 110px 0 48px;
+  }
 }
 
 @media (min-width: 1080px) {
