@@ -16,7 +16,7 @@
 			<div class="section__content">
 				<div class="row">
 
-					<div class="col-lg-4">
+					<div class="col-lg-4 d-none d-lg-block">
 						@component('_includes.resource')
 							@slot('class', 'press-kit')
 							@slot('title', 'Design Assets')
