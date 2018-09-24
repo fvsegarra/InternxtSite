@@ -1,7 +1,14 @@
 #page-terms{
 
 	& > .container {
+
+		margin-top: 112px;
 		max-width: 1033px;
+
+        @include whenLargerThan('large-screen') {
+            margin-top: 0;
+        }
+
 	}
 
 	.pageHeader{

@@ -1,12 +1,13 @@
 #page-resources{
 
-
 	.section{
 
 		&--resources {
 
+			margin-top: 112px;
+
 			@include whenLargerThan('large-screen') {
-				padding-top: 121px;
+				margin-top: 121px;
 			}
 
 			.section__heading {
@@ -60,9 +61,11 @@
 		background-color: #ffffff;
 		border-radius: 4px;
 		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+		margin-top: 50px;
 		overflow: hidden;
 
 		@include whenLargerThan('large-screen') {
+			margin-top: 0;
 			min-height: 427px;
 		}
 
