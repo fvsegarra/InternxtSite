@@ -11378,77 +11378,42 @@ a.text-dark:focus {
   background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(255, 255, 255)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
 }
 
-.navbar #page-about .navbar,
-.navbar #page-cloud .navbar,
-.navbar #page-core .navbar,
-.navbar #page-token .navbar {
+#page-about .navbar,
+#page-cloud .navbar,
+#page-core .navbar,
+#page-token .navbar {
   position: absolute;
   width: 100%;
 }
 
-.navbar #page-about .navbar .navbar-collapse,
-.navbar #page-cloud .navbar .navbar-collapse,
-.navbar #page-core .navbar .navbar-collapse,
-.navbar #page-token .navbar .navbar-collapse {
-  background: white;
-  left: -15px;
-  padding-top: 86px;
-  position: relative;
-  top: -86px;
-}
-
-.navbar #page-about .navbar .navbar-collapse .navbar-nav,
-.navbar #page-cloud .navbar .navbar-collapse .navbar-nav,
-.navbar #page-core .navbar .navbar-collapse .navbar-nav,
-.navbar #page-token .navbar .navbar-collapse .navbar-nav {
-  background-color: white;
-  left: -15px;
-  position: relative;
-  width: 100vw;
-}
-
-@media (min-width: 1080px) {
-  .navbar #page-about .navbar .navbar-collapse .navbar-nav,
-  .navbar #page-cloud .navbar .navbar-collapse .navbar-nav,
-  .navbar #page-core .navbar .navbar-collapse .navbar-nav,
-  .navbar #page-token .navbar .navbar-collapse .navbar-nav {
-    background-color: transparent;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    margin: 0;
-    width: auto;
-  }
-}
-
-.navbar #page-about .navbar .navbar-nav,
-.navbar #page-cloud .navbar .navbar-nav,
-.navbar #page-core .navbar .navbar-nav,
-.navbar #page-token .navbar .navbar-nav {
+#page-about .navbar .navbar-nav,
+#page-cloud .navbar .navbar-nav,
+#page-core .navbar .navbar-nav,
+#page-token .navbar .navbar-nav {
   left: 0px;
 }
 
-.navbar #page-about .navbar .navbar-nav a.nav-link,
-.navbar #page-cloud .navbar .navbar-nav a.nav-link,
-.navbar #page-core .navbar .navbar-nav a.nav-link,
-.navbar #page-token .navbar .navbar-nav a.nav-link {
+#page-about .navbar .navbar-nav a.nav-link,
+#page-cloud .navbar .navbar-nav a.nav-link,
+#page-core .navbar .navbar-nav a.nav-link,
+#page-token .navbar .navbar-nav a.nav-link {
   color: #212529;
 }
 
 @media (min-width: 1080px) {
-  .navbar #page-about .navbar .navbar-nav a.nav-link,
-  .navbar #page-cloud .navbar .navbar-nav a.nav-link,
-  .navbar #page-core .navbar .navbar-nav a.nav-link,
-  .navbar #page-token .navbar .navbar-nav a.nav-link {
+  #page-about .navbar .navbar-nav a.nav-link,
+  #page-cloud .navbar .navbar-nav a.nav-link,
+  #page-core .navbar .navbar-nav a.nav-link,
+  #page-token .navbar .navbar-nav a.nav-link {
     color: white;
   }
 }
 
 @media (min-width: 1080px) {
-  .navbar #page-about .navbar .navbar-nav a.nav-link--xcloud,
-  .navbar #page-cloud .navbar .navbar-nav a.nav-link--xcloud,
-  .navbar #page-core .navbar .navbar-nav a.nav-link--xcloud,
-  .navbar #page-token .navbar .navbar-nav a.nav-link--xcloud {
+  #page-about .navbar .navbar-nav a.nav-link--xcloud,
+  #page-cloud .navbar .navbar-nav a.nav-link--xcloud,
+  #page-core .navbar .navbar-nav a.nav-link--xcloud,
+  #page-token .navbar .navbar-nav a.nav-link--xcloud {
     background-color: transparent;
     background-position: 159px 8px;
     border: solid 1px white;
@@ -11457,6 +11422,15 @@ a.text-dark:focus {
     padding-left: 16px;
     padding-right: 40px;
     padding-top: 8px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .pageHeader,
+  #page-cloud .pageHeader,
+  #page-core .pageHeader,
+  #page-token .pageHeader {
+    top: -74px;
   }
 }
 
@@ -12962,7 +12936,7 @@ hr {
     background-image: url("/img/headers/xcloud_desktop.png");
     height: 633px;
     right: 0;
-    top: 132px;
+    top: 200px;
     width: 770px;
     background-size: 839px;
     width: 840px;

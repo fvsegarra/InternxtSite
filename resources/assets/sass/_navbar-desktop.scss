@@ -531,76 +531,84 @@
 
 	}
 
-	#page-about,
-	#page-cloud,
-	#page-core,
-	#page-token {
+}
 
-		.navbar {
+#page-about,
+#page-cloud,
+#page-core,
+#page-token {
 
-			// Sit on top of the pageheader
-		    position: absolute;
-		    width: 100%;
+	.navbar {
 
-		    .navbar-collapse {
+		// Sit on top of the pageheader
+	    position: absolute;
+	    width: 100%;
 
-				background: white;
-				left: -15px;
-				padding-top: 86px;
-				position: relative;
-				top: -86px;
+	  //   .navbar-collapse {
 
-		    	.navbar-nav {
+			// background: white;
+			// left: -15px;
+			// padding-top: 86px;
+			// position: relative;
+			// top: -86px;
 
-					background-color: white;
-					left: -15px;
-					position: relative;
-					width: 100vw;
+	  //   	.navbar-nav {
 
-			        @include whenLargerThan('large-screen') {
-			            background-color: transparent;
-			            border-radius: 0;
-			            box-shadow: none;
-		    			margin: 0;
-			            width: auto;
-			        }
+			// 	background-color: white;
+			// 	left: -15px;
+			// 	position: relative;
+			// 	width: 100vw;
 
-			    }
+		 //        @include whenLargerThan('large-screen') {
+		 //            background-color: transparent;
+		 //            border-radius: 0;
+		 //            box-shadow: none;
+	  //   			margin: 0;
+		 //            width: auto;
+		 //        }
 
-		    }
+		 //    }
 
-		    .navbar-nav {
+	  //   }
 
-		    	left: 0px;
+	    .navbar-nav {
 
-	            a.nav-link {
+	    	left: 0px;
 
-	    			color: #212529;
+            a.nav-link {
 
-	                @include whenLargerThan('large-screen') {
-	                    color: white;
-	                }
+    			color: #212529;
 
-	                &--xcloud {
+                @include whenLargerThan('large-screen') {
+                    color: white;
+                }
 
-	                    @include whenLargerThan('large-screen') {
-							background-color: transparent;
-							background-position: 159px 8px;
-							border: solid 1px white;
-							box-shadow: none;
-							padding-left: 16px;
-							padding-right: 40px;
-							padding-top: 8px;
-	                    }
+                &--xcloud {
 
-	                }
+                    @include whenLargerThan('large-screen') {
+						background-color: transparent;
+						background-position: 159px 8px;
+						border: solid 1px white;
+						box-shadow: none;
+						padding-left: 16px;
+						padding-right: 40px;
+						padding-top: 8px;
+                    }
 
-	            }
+                }
 
-	        }
+            }
 
-	    }
+        }
 
-	}
+    }
+
+    .pageHeader {
+
+    	@include whenLargerThan('large-screen') {
+    		top: -74px;
+    	}
+
+    }
 
 }
