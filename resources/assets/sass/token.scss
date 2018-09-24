@@ -342,6 +342,16 @@
 
                     }
 
+                    .subsection__icon {
+
+                        @include whenLargerThan('large-screen') {
+                            height: 31px;
+                            left: 1px;
+                            position: relative;
+                        }
+
+                    }
+
                 }
 
                 &--growth {
@@ -350,6 +360,17 @@
 
                         @include whenLargerThan('large-screen') {
                             margin-top: 7px;
+                        }
+
+                    }
+
+                    .subsection__icon {
+
+                        @include whenLargerThan('large-screen') {
+                            height: 27px;
+                            left: 1px;
+                            position: relative;
+                            top: -1px;
                         }
 
                     }
@@ -458,7 +479,7 @@
 
                 &--idex {
 
-                    padding-top: 18px;
+                    padding-top: 16px;
 
                     .section__image {
                         height: 27px;
@@ -469,6 +490,8 @@
                 }
 
                 &--latoken {
+
+                    padding-top: 14px;
 
                     .section__image {
                         height: 30px;

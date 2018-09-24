@@ -14814,8 +14814,25 @@ hr {
 }
 
 @media (min-width: 1080px) {
+  #page-token .section--inxt-intro .subsection--demand .subsection__icon {
+    height: 31px;
+    left: 1px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1080px) {
   #page-token .section--inxt-intro .subsection--growth .subsection__content {
     margin-top: 7px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-token .section--inxt-intro .subsection--growth .subsection__icon {
+    height: 27px;
+    left: 1px;
+    position: relative;
+    top: -1px;
   }
 }
 
@@ -14919,13 +14936,17 @@ hr {
 }
 
 #page-token .section--inxt-exchanges .section__imageContainer--idex {
-  padding-top: 18px;
+  padding-top: 16px;
 }
 
 #page-token .section--inxt-exchanges .section__imageContainer--idex .section__image {
   height: 27px;
   position: relative;
   top: -1px;
+}
+
+#page-token .section--inxt-exchanges .section__imageContainer--latoken {
+  padding-top: 14px;
 }
 
 #page-token .section--inxt-exchanges .section__imageContainer--latoken .section__image {
