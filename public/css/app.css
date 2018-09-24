@@ -15412,6 +15412,12 @@ hr {
   max-width: 289px;
 }
 
+@media (min-width: 1080px) {
+  #page-about .section--branding-assets .section__heading {
+    letter-spacing: -0.8px;
+  }
+}
+
 #page-about .section--branding-assets .section__subheading {
   color: white;
   font-size: 20px;
@@ -15419,6 +15425,12 @@ hr {
   line-height: 1.2;
   margin-top: 21px;
   max-width: 285px;
+}
+
+@media (min-width: 1080px) {
+  #page-about .section--branding-assets .section__subheading {
+    letter-spacing: -0.2px;
+  }
 }
 
 #page-about .section--branding-assets .section__cta {

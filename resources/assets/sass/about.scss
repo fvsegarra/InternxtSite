@@ -313,21 +313,33 @@
             }
 
             .section__heading {
+
                 font-size: 38px;
                 font-weight: 600;
                 letter-spacing: -1.3px;
                 line-height: 1.08;
                 margin-top: 14px;
                 max-width: 289px;
+
+                @include whenLargerThan('large-screen') {
+                    letter-spacing: -0.8px;
+                }
+
             }
 
             .section__subheading {
+
                 color: white;
                 font-size: 20px;
                 letter-spacing: -0.4px;
                 line-height: 1.2;
                 margin-top: 21px;
                 max-width: 285px;
+
+                @include whenLargerThan('large-screen') {
+                    letter-spacing: -0.2px;
+                }
+
             }
 
             .section__cta {
