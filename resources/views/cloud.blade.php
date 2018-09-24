@@ -125,7 +125,7 @@
 							<p class="subsection__heading d-none d-lg-block">Empowering the era of secure technology.</p>
 							<p>BlackBerry provides security consulting services and solutions that can greatly improve our architecture. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
 
-							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
+							<a class="subsection__link" href="https://medium.com/internxt/internxt-and-blackberry-partner-to-enhance-x-clouds-security-25bb5ad7d33d" target="_blank" rel="nofollow">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
 
 						</div>{{-- /.col-lg-7 --}}
 
@@ -156,7 +156,7 @@
 						<div class="col-lg-7">
 							<p class="subsection__heading d-none d-lg-block">Protecting your identity with Blockchain.</p>
 							<p>Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
-							<a class="subsection__link" href="#">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
+							<a class="subsection__link" href="https://medium.com/internxt/internxt-and-civic-partner-to-encourage-the-intended-use-of-internxts-new-technologies-fa650ef590e3" target="_blank" rel="nofollow">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
 						</div>{{-- /.col-lg-7 --}}
 
 					</div>{{-- /.row --}}
