@@ -189,7 +189,7 @@
 				<p class="section__label">Design Assets</p>
 				<p class="section__heading">Enliven words with just the right visual.</p>
 				<p class="section__subheading">Download our design assets <span class="linebreak d-block"></span>for optimal use of our branding.</p>
-				<a class="section__cta" href="#">Download Assets</a>
+				<a class="section__cta" href="/kit.zip">Download Assets</a>
 			</div>
 		</div>
 	</section>
