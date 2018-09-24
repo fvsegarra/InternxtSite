@@ -12,27 +12,29 @@
 
     .pageHeader {
 
-        $offset: 87px;
+        $offset_mobile: 50px;
+        $offset_desktop: 87px;
 
+        align-items: center;
         background-image: url('/img/headers/about_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
-        height: 668px;
-        padding-top: 257px;
+        display: flex;
+        height: calc(100vh + #{$offset_mobile});
+        padding-top: $offset_mobile;
         position: relative;
-        top: -$offset;
+        top: -$offset_mobile;
         z-index: 1;
 
         @include whenLargerThan('large-screen') {
-            align-items: center;
             background-image: url('/img/headers/about_desktop.png');
             background-position: 0px 87px;
             background-size: 100%;
-            display: flex;
-            height: calc(100vh + #{$offset});
+            height: calc(100vh + #{$offset_desktop});
             padding-left: 272px;
-            padding-top: $offset;
+            padding-top: $offset_desktop;
+            top: -$offset_desktop;
         }
 
         &__heading {
@@ -41,13 +43,13 @@
             font-weight: 500;
             letter-spacing: -1.1px;
             line-height: 1.44;
+            line-height: 1;
+            margin-bottom: 5px;
 
             @include whenLargerThan('large-screen') {
                 font-size: 50.3px;
                 font-weight: 500;
-                line-height: 1;
                 letter-spacing: -1.4px;
-                margin-bottom: 0;
             }
 
         }
@@ -120,7 +122,7 @@
                 background-color: #4585f5;
                 background-image: url("/img/icons/cta-chevron-circle.png");
                 background-repeat: no-repeat;
-                background-position: 211px center;
+                background-position: 221px 12px;
                 background-size: 23px;
                 border-radius: 31.4px;
                 box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
@@ -131,10 +133,11 @@
                 height: 47px;
                 letter-spacing: -0.2px;
                 margin-top: 60px;
-                padding: 12px 22px 13px 23px;
+                padding: 11px 22px 13px 23px;
                 width: 256.2px;
 
                 @include whenLargerThan('large-screen') {
+                    background-position: 211px center;
                     display: inline-block;
                     font-size: 16px;
                     height: auto;

@@ -12865,16 +12865,22 @@ hr {
 }
 
 #page-cloud .pageHeader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2797d8), to(#2768bc));
   background-image: linear-gradient(to bottom, #2797d8, #2768bc);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100vh + 74px);
   margin-bottom: -74px;
   overflow: hidden;
   padding-bottom: 10px;
-  padding-top: 117px;
+  padding-top: 74px;
   position: relative;
   top: -74px;
 }
@@ -12886,11 +12892,10 @@ hr {
 }
 
 #page-cloud .pageHeader::after {
-  background-image: url("/img/headers/xcloud_mobile.png");
   background-repeat: no-repeat;
-  background-size: 328px;
   bottom: 15px;
   content: '';
+  display: none;
   height: 257px;
   position: absolute;
   right: 0;
@@ -12900,6 +12905,7 @@ hr {
 @media (min-width: 1080px) {
   #page-cloud .pageHeader::after {
     background-image: url("/img/headers/xcloud_desktop.png");
+    display: block;
     height: 633px;
     right: 0;
     top: 208px;
@@ -12911,12 +12917,11 @@ hr {
 
 #page-cloud .pageHeader > .container {
   padding-bottom: 15px;
-  padding-top: 53px;
 }
 
 @media (min-width: 1080px) {
   #page-cloud .pageHeader > .container {
-    padding-top: 215px;
+    padding-top: 74px;
   }
 }
 
@@ -14110,8 +14115,6 @@ hr {
     background-repeat: no-repeat;
     background-size: 21px;
     border-radius: 31.4px;
-    -webkit-box-shadow: 0 7px 8px 0 #0f0d26;
-            box-shadow: 0 7px 8px 0 #0f0d26;
     color: white;
     display: inline-block;
     font-size: 18px;
@@ -15126,31 +15129,32 @@ hr {
 }
 
 #page-about .pageHeader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("/img/headers/about_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 668px;
-  padding-top: 257px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh + 50px);
+  padding-top: 50px;
   position: relative;
-  top: -87px;
+  top: -50px;
   z-index: 1;
 }
 
 @media (min-width: 1080px) {
   #page-about .pageHeader {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background-image: url("/img/headers/about_desktop.png");
     background-position: 0px 87px;
     background-size: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: calc(100vh + 87px);
     padding-left: 272px;
     padding-top: 87px;
+    top: -87px;
   }
 }
 
@@ -15159,15 +15163,15 @@ hr {
   font-weight: 500;
   letter-spacing: -1.1px;
   line-height: 1.44;
+  line-height: 1;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 1080px) {
   #page-about .pageHeader__heading {
     font-size: 50.3px;
     font-weight: 500;
-    line-height: 1;
     letter-spacing: -1.4px;
-    margin-bottom: 0;
   }
 }
 
@@ -15236,7 +15240,7 @@ hr {
   background-color: #4585f5;
   background-image: url("/img/icons/cta-chevron-circle.png");
   background-repeat: no-repeat;
-  background-position: 211px center;
+  background-position: 221px 12px;
   background-size: 23px;
   border-radius: 31.4px;
   -webkit-box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
@@ -15248,12 +15252,13 @@ hr {
   height: 47px;
   letter-spacing: -0.2px;
   margin-top: 60px;
-  padding: 12px 22px 13px 23px;
+  padding: 11px 22px 13px 23px;
   width: 256.2px;
 }
 
 @media (min-width: 1080px) {
   #page-about .section--about-intro .section__cta {
+    background-position: 211px center;
     display: inline-block;
     font-size: 16px;
     height: auto;
