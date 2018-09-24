@@ -489,6 +489,7 @@
 
         @include whenLargerThan('large-screen') {
             margin-bottom: 163px;
+            margin-top: 237px;
         }
 
         .container {
