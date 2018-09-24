@@ -4,15 +4,17 @@
 
         $offset: 74px;
 
+        align-items: center;
         background-image: linear-gradient(to bottom, #2797d8, #2768bc);
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
+        display: flex;
         height: calc(100vh + #{$offset});
         margin-bottom: -$offset;
         overflow: hidden;
         padding-bottom: 10px;
-        padding-top: 117px;
+        padding-top: $offset;
         position: relative;
         top: -$offset;
 
@@ -22,11 +24,10 @@
 
         &::after {
 
-            background-image: url("/img/headers/xcloud_mobile.png");
             background-repeat: no-repeat;
-            background-size: 328px;
             bottom: 15px;
             content: '';
+            display: none;
             height: 257px;
             position: absolute;
             right: 0;
@@ -34,6 +35,7 @@
 
             @include whenLargerThan('large-screen') {
                 background-image: url("/img/headers/xcloud_desktop.png");
+                display: block;
                 height: 633px;
                 right: 0;
                 top: 208px;
@@ -47,10 +49,10 @@
         & > .container {
 
             padding-bottom: 15px;
-            padding-top: 53px;
+            // padding-top: 53px;
 
             @include whenLargerThan('large-screen') {
-                padding-top: 215px;
+                padding-top: $offset;
             }
 
         }
