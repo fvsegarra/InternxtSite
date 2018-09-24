@@ -79,27 +79,20 @@
 
         &__cta {
 
-            background-color: #6852f9;
-            background-image: url("/img/icons/cta-chevron-circle.png");
-            background-position: 176px center;
-            background-repeat: no-repeat;
-            background-size: 24px;
-            border-radius: 31.4px;
-            box-shadow: 0 7px 8px 0 #0f0d26;
-            color: white;
-            display: inline-block;
-            font-size: 18px;
-            font-weight: 600;
-            height: 47px;
-            letter-spacing: -0.2px;
-            margin-top: 42px;
-            padding: 12px 46px 13px 23px;
-            width: 221.2px;
+            display: none;
 
             @include whenLargerThan('large-screen') {
+                background-color: #6852f9;
+                background-image: url("/img/icons/cta-chevron-circle.png");
                 background-position: 165px 10px;
                 background-repeat: no-repeat;
                 background-size: 21px;
+                border-radius: 31.4px;
+                box-shadow: 0 7px 8px 0 #0f0d26;
+                color: white;
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 600;
                 height: auto;
                 letter-spacing: -0.5px;
                 margin-left: 2px;
