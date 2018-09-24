@@ -446,6 +446,7 @@
             outline: none;
             padding: 18px 36px 16px 34px;
             width: 100%;
+            -webkit-appearance: none;
 
             @include whenLargerThan('large-screen') {
                 border: none;

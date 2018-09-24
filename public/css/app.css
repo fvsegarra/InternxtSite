@@ -11810,6 +11810,7 @@ a.text-dark:focus {
   outline: none;
   padding: 18px 36px 16px 34px;
   width: 100%;
+  -webkit-appearance: none;
 }
 
 @media (min-width: 1080px) {
