@@ -458,7 +458,7 @@
 		    	.dropdown-item {
 
 		    		@include whenLargerThan('small-screen') {
-		    			padding: 33px 35px;
+		    			padding: 23px 35px;
 		    		}
 
 		    		&__image {
