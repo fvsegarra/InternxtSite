@@ -16205,3 +16205,8 @@ hr {
   width: 27px;
 }
 
+.cc-floating.cc-theme-edgeless .cc-btn.cc-dismiss:active,
+.cc-floating.cc-theme-edgeless .cc-btn.cc-dismiss:focus {
+  outline: none;
+}
+

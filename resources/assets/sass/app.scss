@@ -81,6 +81,7 @@ hr {
 	}
 
 	.cc-btn.cc-dismiss {
+		
 		background-color: transparent;
 		background-image: url("/img/icons/cookie-consent-close.svg");
 		background-repeat: no-repeat;
@@ -97,6 +98,12 @@ hr {
 		right: 19px;
     	top: 10px;
 		width: 27px;
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
+		
 	}
 
 }
