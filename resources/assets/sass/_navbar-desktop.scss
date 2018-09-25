@@ -452,13 +452,14 @@
 		    	width: 185px;
 
 		    	@include whenLargerThan('small-screen') {
+		    		padding: 0;
 		    		width: 335px;
 		    	}
 
 		    	.dropdown-item {
 
 		    		@include whenLargerThan('small-screen') {
-		    			padding: 23px 35px;
+		    			padding: 23px 35px 22px;
 		    		}
 
 		    		&__image {
