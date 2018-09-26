@@ -136,15 +136,9 @@
                     </div>{{-- /.col-lg --}}
                 </div>{{-- /.row --}}
 
-                <div class="pageFooter__bottom row no-gutters">
+                <div class="pageFooter__bottom">
 
-                    <div class="col-auto pageFooter__logoContainer">
-                        <img src="/img/logos/internxt_icon_home.svg" height="42">
-                    </div>{{-- /.col --}}
-
-                    <div class="col-auto">
-                        <p class="pageFooter__copyright">&copy; {{ date('Y') }} Internxt Inc. All Rights Reserved.</p>
-                    </div>{{-- /.col --}}
+                    <p class="pageFooter__copyright">&copy; {{ date('Y') }} Internxt Inc. All Rights Reserved.</p>
 
                 </div>{{-- /.row --}}
             </div>{{-- /.container --}}

@@ -226,7 +226,6 @@
 		margin-bottom: 0;
 
 		@include whenLargerThan('large-screen') {
-    		padding-left: 15px;
     		font-size: 17px;
     	}
 

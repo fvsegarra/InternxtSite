@@ -12482,7 +12482,6 @@ a.text-dark:focus {
 
 @media (min-width: 1080px) {
   .pageFooter__copyright {
-    padding-left: 15px;
     font-size: 17px;
   }
 }
