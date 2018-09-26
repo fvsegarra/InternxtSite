@@ -15286,7 +15286,7 @@ hr {
   }
 }
 
-#page-about .section--team__heading {
+#page-about .section--team .section__heading {
   font-size: 34px;
   font-weight: 600;
   letter-spacing: -0.6px;
