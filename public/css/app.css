@@ -12597,6 +12597,7 @@ hr {
 @media (min-width: 1080px) {
   #page-home .articlePreview {
     margin-top: 38px;
+    max-width: none;
   }
 }
 
