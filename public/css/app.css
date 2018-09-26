@@ -11133,33 +11133,18 @@ a.text-dark:focus {
 
 @media (min-width: 768px) {
   .navbar .dropdown-menu {
-    display: block;
-    border: none;
-    padding: 0;
-  }
-}
-
-@media (min-width: 768px) and (min-width: 768px) {
-  .navbar .dropdown-menu {
-    border: none;
     background-color: #ffffff;
     border-radius: 5px;
+    border: none;
     -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-    width: 260px;
     left: -108px;
-    padding: 2px 0 8px;
+    padding: 0 0 1px 0;
     text-align: left;
     top: 45px;
     width: 335px;
   }
 
-  .navbar .dropdown-menu:not(.show) {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
   .navbar .dropdown-menu .dropdown-item {
     text-align: center;
     padding: 8px 0;
@@ -11284,20 +11269,14 @@ a.text-dark:focus {
 
 @media (min-width: 768px) {
   .navbar .dropdown-menu--company {
-    width: 185px;
-  }
-}
-
-@media (min-width: 768px) and (min-width: 768px) {
-  .navbar .dropdown-menu--company {
-    padding: 0;
+    padding-bottom: 0;
     width: 335px;
   }
 }
 
 @media (min-width: 768px) and (min-width: 768px) {
   .navbar .dropdown-menu--company .dropdown-item {
-    padding: 23px 35px 22px;
+    padding: 22px 35px 22px;
   }
 }
 

@@ -308,28 +308,17 @@
 
 		.dropdown-menu {
 
-			display: block;
+
+			background-color: #ffffff;
+			border-radius: 5px;
 			border: none;
-			padding: 0;
-
-		    @include whenLargerThan('small-screen') {
-
-		    	&:not(.show) {
-			    	display: none;
-		    	}
-
-				border: none;
-			    background-color: #ffffff;
-			    border-radius: 5px;
-			    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-			    width: 260px;
-		    	left: -108px;
-				padding: 2px 0 8px;
-		    	text-align: left;
-		    	top: 45px;
-		    	width: 335px;
-		    }
-
+			box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
+			left: -108px;
+			padding: 0 0 1px 0;
+			text-align: left;
+			top: 45px;
+			width: 335px;
+		    
 		    .dropdown-item {
 
 		    	text-align: center;
@@ -449,17 +438,13 @@
 
 		    &--company {
 
-		    	width: 185px;
-
-		    	@include whenLargerThan('small-screen') {
-		    		padding: 0;
-		    		width: 335px;
-		    	}
+		    	padding-bottom: 0;
+		    	width: 335px;
 
 		    	.dropdown-item {
 
 		    		@include whenLargerThan('small-screen') {
-		    			padding: 23px 35px 22px;
+		    			padding: 22px 35px 22px;
 		    		}
 
 		    		&__image {
