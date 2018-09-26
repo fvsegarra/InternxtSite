@@ -29,10 +29,17 @@
 
 
     &__cta {
+
         font-size: 19px;
         font-weight: 500;
         line-height: 1.53;
         margin-top: 42px;
+        padding-top: 14px;
+        
+        &:focus {
+            box-shadow: none;
+        }
+
     }
 
 
