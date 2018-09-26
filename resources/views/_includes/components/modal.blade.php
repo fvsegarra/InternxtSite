@@ -7,7 +7,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img class="modal__icon modal__icon--{{ str_slug($platform) }}" src="{{ $icon }}">
+                <img class="modal__icon modal__icon--{{ str_slug(strtolower($platform)) }}" src="{{ $icon }}">
                 <p class="modal__heading">{{ $heading }}</p>
                 <p class="modal__subheading">{{ $subheading }}</p>
                 {{ $content }}
