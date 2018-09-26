@@ -24,8 +24,6 @@ class AppServiceProvider extends ServiceProvider
             $platform = "Mac";
         }
 
-        dd($platform);
-
         View::share(compact('agent', 'platform'));
 
     }
