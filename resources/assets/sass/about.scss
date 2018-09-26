@@ -693,7 +693,7 @@
         &__content {
 
             @include whenLargerThan('large-screen') {
-                margin-top: 169px;
+                height: 75vh; // Now using align-items-center
             }
 
         }

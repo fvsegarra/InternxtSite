@@ -15743,7 +15743,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-about .memberProfile__content {
-    margin-top: 169px;
+    height: 75vh;
   }
 }
 

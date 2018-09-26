@@ -17,7 +17,7 @@
 
 			<button class="memberProfile__btn"></button>
 
-			<div class="memberProfile__content row">
+			<div class="memberProfile__content row align-items-center">
 				<div class="col-lg-3">
 					<img src="/img/team/fran.png" alt="Fran" class="memberProfile__image img-fluid">
 				</div>
