@@ -11173,7 +11173,7 @@ a.text-dark:focus {
 
   .navbar .dropdown-menu .dropdown-item:hover,
   .navbar .dropdown-menu .dropdown-item:active {
-    background-color: white;
+    background-color: transparent;
   }
 
   .navbar .dropdown-menu .dropdown-item__image {
