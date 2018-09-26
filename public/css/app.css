@@ -12735,6 +12735,10 @@ hr {
     width: 72px;
     height: 36px;
   }
+
+  #page-home .section--preview-xcloud .section__label {
+    margin-top: 105px;
+  }
 }
 
 #page-home .section--preview-xcore .section__content {
