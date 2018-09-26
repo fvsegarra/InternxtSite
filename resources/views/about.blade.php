@@ -22,7 +22,7 @@
 					<img src="/img/team/fran.jpg" alt="Fran" class="memberProfile__image img-fluid">
 				</div>
 				<div class="col-lg-9 text-left">
-					<p class="memberProfile__name">Fran Villalba Segerra</p>
+					<p class="memberProfile__name">Fran Villalba Segarra</p>
 					<p class="memberProfile__role">Founder & CEO</p>
 					<p class="memberProfile__bio">Fran is the architect behind Internxt. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went onto work at Hostinger one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup OneSite, a platform which allows anyone to create their own website for free, which had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene.</p>
 				</div>
@@ -60,7 +60,7 @@
 					<div class="col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'fran')
-							@slot('name', 'Fran Villalba Segerra')
+							@slot('name', 'Fran Villalba Segarra')
 							@slot('role', 'Founder & CEO')
 							@slot('bio')
 								Fran is the architect behind Internxt. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went onto work at Hostinger one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup OneSite, a platform which allows anyone to create their own website for free, which had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene.
