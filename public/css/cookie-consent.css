@@ -9,6 +9,7 @@
   letter-spacing: 0.02px !important;
   max-width: none !important;
   padding: 14px 22px 12px !important;
+  bottom: 15px !important;
 }
 
 @media (min-width: 1080px) {
@@ -34,7 +35,6 @@
   background-repeat: no-repeat !important;
   background-size: contain !important;
   border-radius: 50% !important;
-  bottom: 15px !important;
   color: white !important;
   -webkit-box-flex: 0 !important;
       -ms-flex: none !important;
