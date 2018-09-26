@@ -12750,7 +12750,7 @@ hr {
   #page-home .section--preview-xcore .section__content::after {
     background-image: url(/img/mockups/xcore/bg_desktop.png);
     height: 346px;
-    right: 5px;
+    right: 15px;
     top: 57%;
     width: 27vw;
   }
