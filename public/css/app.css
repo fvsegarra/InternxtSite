@@ -16146,6 +16146,7 @@ hr {
   margin-top: 106px;
 }
 
+.cc-window.cc-banner,
 .cc-window.cc-floating.cc-theme-edgeless {
   background-color: rgba(255, 255, 255, 0.96);
   border-radius: 4px;
@@ -16159,6 +16160,7 @@ hr {
 }
 
 @media (min-width: 1080px) {
+  .cc-window.cc-banner,
   .cc-window.cc-floating.cc-theme-edgeless {
     height: 44px;
     left: 50%;
@@ -16168,10 +16170,12 @@ hr {
   }
 }
 
+.cc-window.cc-banner .cc-message,
 .cc-window.cc-floating.cc-theme-edgeless .cc-message {
   margin: 0 !important;
 }
 
+.cc-window.cc-banner .cc-btn.cc-dismiss,
 .cc-window.cc-floating.cc-theme-edgeless .cc-btn.cc-dismiss {
   background-color: transparent;
   background-image: url("/img/icons/cookie-consent-close.svg");
@@ -16193,6 +16197,8 @@ hr {
   width: 27px;
 }
 
+.cc-window.cc-banner .cc-btn.cc-dismiss:active,
+.cc-window.cc-banner .cc-btn.cc-dismiss:focus,
 .cc-window.cc-floating.cc-theme-edgeless .cc-btn.cc-dismiss:active,
 .cc-window.cc-floating.cc-theme-edgeless .cc-btn.cc-dismiss:focus {
   outline: none;
