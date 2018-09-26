@@ -34,6 +34,7 @@
   background-repeat: no-repeat !important;
   background-size: contain !important;
   border-radius: 50% !important;
+  bottom: 15px !important;
   color: white !important;
   -webkit-box-flex: 0 !important;
       -ms-flex: none !important;
