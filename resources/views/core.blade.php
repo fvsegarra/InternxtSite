@@ -23,7 +23,9 @@
 			{{-- Large --}}
 			<h2 class="pageHeader__subheading d-lg-none">Power in your hands.</h2>
 
-			<a class="pageHeader__cta btn" href="#">Get X Core Beta</a>
+			@if($agent->isDesktop())
+				<a class="pageHeader__cta btn" href="{{ $xcoreDownloadLink }}">Get X Core Beta</a>
+			@endif
 
 		</div>
 	</header>
@@ -106,7 +108,7 @@
 				<div class="section__outline d-lg-flex align-items-center justify-content-between">
 					<img class="section__icon" src="/img/logos/xcore.png" height="56">
 					<p class="section__heading">Start earning INXT today.</p>
-					<a href="#download" class="section__cta">Get X Core Beta</a>
+					<a href="{{ $xcoreDownloadLink }}" class="section__cta">Get X Core Beta</a>
 				</div>{{-- /.section__outline --}}
 			</div>
 		</section>

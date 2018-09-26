@@ -56,7 +56,9 @@
                 </div>
 
                 <div class="modal__buttons">
-                    <a class="modal__cta modal__cta--{{ str_slug($platform) }} modal__cta--disabled" href="#">Download for {{ $platform }}</a>
+                    @if($agent->isDesktop())
+                        <a class="modal__cta modal__cta--{{ str_slug($platform) }} modal__cta--disabled" href="{{ $xcloudDownloadLink }}">Download for {{ $platform }}</a>
+                    @endif
                     <a class="modal__cta modal__cta--browser modal__cta--disabled" href="#">Open in browser</a>
                 </div>{{-- /.modal__buttons --}}
 
