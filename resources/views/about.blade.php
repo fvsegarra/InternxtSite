@@ -52,7 +52,7 @@
 	<section class="section section--team">
 		<div class="container">
 			<p class="section__label">Leadership</p>
-			<p class="section__heading">Internxt’s Team</p>
+			<p class="section__heading">Internxt Team</p>
 			<div class="section__content">
 
 				<div class="row">
@@ -197,7 +197,7 @@
 	<section class="section section--team-partners">
 		<div class="container">
 			<p class="section__label">Partnerships</p>
-			<p class="section__heading">Internxt’s Partners</p>
+			<p class="section__heading">Internxt Partners</p>
 			<div class="section__content">
 
 
