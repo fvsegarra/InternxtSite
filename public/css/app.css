@@ -12750,9 +12750,9 @@ hr {
   #page-home .section--preview-xcore .section__content::after {
     background-image: url(/img/mockups/xcore/bg_desktop.png);
     height: 346px;
-    right: 14px;
+    right: 5px;
     top: 57%;
-    width: 28vw;
+    width: 27vw;
   }
 
   #page-home .section--preview-xcore .section__icon {
