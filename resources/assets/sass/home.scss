@@ -64,7 +64,7 @@
             overflow: hidden;
 
             @include whenLargerThan('large-screen') {
-                height: 207px;
+                height: auto;
             }
 
         }

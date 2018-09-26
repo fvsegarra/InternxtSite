@@ -12461,7 +12461,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-home .articlePreviewContainer .articleImgContainer {
-    height: 207px;
+    height: auto;
   }
 }
 
