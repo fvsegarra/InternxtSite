@@ -25,10 +25,10 @@
 			<p class="section__label">Catalogue</p>
 			<p class="section__heading">Browse our products</p>
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-xl-6">
 					@include('_includes.previews.xcloud')
 				</div>
-				<div class="col-lg-6">
+				<div class="col-xl-6">
 					@include('_includes.previews.xcore')
 				</div>
 			</div>

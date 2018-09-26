@@ -166,6 +166,11 @@
 
             & > .container {
 
+                @include whenLargerThan('large-screen'){
+                    max-width: 1276px;
+                }
+                    
+
                 & > .section__label,
                 & > .section__heading {
 
@@ -194,6 +199,14 @@
 
             }
 
+            .col-xl-6 {
+            
+                @include whenLargerThan('large-screen') {
+                    @include make-col(6);
+                }
+
+            }
+
         }
 
         &--preview-xcloud,
@@ -208,8 +221,8 @@
             margin-left: auto;
             margin-right: auto;
 
-            @include whenLargerThan('xl-screen') {
-                max-width: none;
+            @include whenLargerThan('large-screen') {
+                max-width: 676px;
             }
 
             .container {
@@ -221,6 +234,7 @@
                 margin-right: 1px;
                 padding-right: 28px;
                 padding-top: 45px;
+                width: 100%;
             }
 
             .section__heading {
@@ -237,15 +251,30 @@
                 }
             }
 
-            @include whenLargerThan('xl-screen') {
+            @include whenLargerThan('large-screen') {
 
                 padding: 0;
 
                 .section__content {
-                    width: 626px;
+
+                    // width: 626px;
                     height: 476px;
+                    overflow: hidden;
                     padding-left: 34px;
                     padding-top: 34px;
+
+                    &::after {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        content: '';
+                        height: 258px;
+                        right: 15px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 20vw;
+                    }
+
                 }
 
                 .section__label {
@@ -287,13 +316,17 @@
             padding-bottom: 48px;
 
             @include whenLargerThan('large-screen') {
-                padding-bottom: 0;
-            }
 
-            @include whenLargerThan('xl-screen') {
+                padding-bottom: 0;
 
                 .section__content {
-                    background-image: url('/img/mockups/xcloud/bg_home.png');
+
+                    background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
+
+                    &::after {
+                        background-image: url(/img/mockups/xcloud/bg_desktop.png);
+                    }
+
                 }
 
                 .section__icon {
@@ -317,11 +350,20 @@
                 border-color: #d1bfff;
             }
 
-            @include whenLargerThan('xl-screen') {
+            @include whenLargerThan('large-screen') {
 
                 .section__content {
-                    background-image: url('/img/mockups/xcore/bg_home.png');
-                    padding-left: 28px;
+
+                    background-image: radial-gradient(circle at 7% 50%, #110f2c, #19163f 48%, #2a256c);
+
+                    &::after {
+                        background-image: url(/img/mockups/xcore/bg_desktop.png);
+                        height: 346px;
+                        right: 14px;
+                        top: 57%;
+                        width: 28vw;
+                    }
+
                 }
 
                 .section__icon {
