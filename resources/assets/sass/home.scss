@@ -324,6 +324,10 @@
 
             padding-bottom: 48px;
 
+            .section__content {
+                background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
+            }
+                
             @include whenLargerThan('large-screen') {
 
                 padding-bottom: 0;

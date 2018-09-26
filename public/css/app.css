@@ -12714,6 +12714,10 @@ hr {
   padding-bottom: 48px;
 }
 
+#page-home .section--preview-xcloud .section__content {
+  background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
+}
+
 @media (min-width: 1080px) {
   #page-home .section--preview-xcloud {
     padding-bottom: 0;
