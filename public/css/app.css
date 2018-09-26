@@ -12259,6 +12259,8 @@ a.text-dark:focus {
 
 .modal a.modal__cta--mac {
   background-image: url("/img/icons/os/mac.svg");
+  background-size: 17px;
+  background-position: 173px 10px;
 }
 
 .modal a.modal__cta--browser {
