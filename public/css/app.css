@@ -14828,8 +14828,6 @@ hr {
 @media (min-width: 1080px) {
   #page-token .section--inxt-intro .subsection--growth .subsection__icon {
     height: 27px;
-    position: relative;
-    top: -1px;
   }
 }
 

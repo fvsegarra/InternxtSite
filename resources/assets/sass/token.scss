@@ -367,8 +367,6 @@
 
                         @include whenLargerThan('large-screen') {
                             height: 27px;
-                            position: relative;
-                            top: -1px;
                         }
 
                     }
