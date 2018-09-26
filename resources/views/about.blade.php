@@ -19,7 +19,7 @@
 
 			<div class="memberProfile__content row">
 				<div class="col-lg-3">
-					<img src="/img/team/fran.jpg" alt="Fran" class="memberProfile__image img-fluid">
+					<img src="/img/team/fran.png" alt="Fran" class="memberProfile__image img-fluid">
 				</div>
 				<div class="col-lg-9 text-left">
 					<p class="memberProfile__name">Fran Villalba Segarra</p>
