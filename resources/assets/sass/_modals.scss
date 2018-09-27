@@ -26,7 +26,7 @@
 	&-dialog {
 
 		@include whenLargerThan('large-screen') {
-			margin-top: 148px;
+			margin-top: 8vh;
 		}
 
 	}
