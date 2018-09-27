@@ -157,7 +157,18 @@
             &--active {
 
                 height: 287px;
-                // margin-bottom: 0;
+
+                @include whenLargerThan('small-screen') {
+                    height: 220px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    height: 315px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    height: 287px;
+                }
 
                 .subsection__content {
                     opacity: 1;

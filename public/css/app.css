@@ -11067,13 +11067,21 @@ a.text-dark:focus {
     border: none;
     -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
             box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-    left: -108px;
+    left: -71px;
     padding: 0 0 1px 0;
     text-align: left;
     top: 45px;
     width: 335px;
   }
+}
 
+@media (min-width: 768px) and (min-width: 1080px) {
+  .navbar .dropdown-menu {
+    left: -108px;
+  }
+}
+
+@media (min-width: 768px) {
   .navbar .dropdown-menu .dropdown-item {
     text-align: center;
     padding: 8px 0;
@@ -11172,6 +11180,7 @@ a.text-dark:focus {
   }
 
   .navbar .dropdown-menu--company {
+    left: -108px;
     padding-bottom: 0;
     width: 335px;
   }
@@ -12788,7 +12797,7 @@ hr {
   margin-bottom: -74px;
   overflow: hidden;
   padding-bottom: 10px;
-  padding-top: 74px;
+  padding-top: 148px;
   position: relative;
   top: -74px;
 }
@@ -13235,6 +13244,13 @@ hr {
   margin-top: 80px;
 }
 
+@media (min-width: 768px) {
+  #page-cloud .section--cloud-architecture .featurePreviewContainer {
+    width: 318px;
+    margin: 80px auto 0;
+  }
+}
+
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-architecture .featurePreviewContainer {
     background-image: url("/img/mockups/xcore/macbook.png");
@@ -13297,7 +13313,7 @@ hr {
   margin-top: 52px;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
   #page-cloud .section--cloud-architecture .nav-tabs {
     margin: 0 auto;
     max-width: 255px;
@@ -13778,6 +13794,13 @@ hr {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  #page-cloud .section--cloud-more-info .section__image {
+    display: block;
+    margin: 60px auto 48px;
+  }
+}
+
 @media (min-width: 1080px) {
   #page-cloud .section--cloud-more-info .section__image {
     margin: 110px 0 48px;
@@ -13870,10 +13893,13 @@ hr {
   margin-top: 0;
 }
 
+#page-cloud .section--beta-cloud .container {
+  max-width: 368px;
+}
+
 @media (min-width: 1080px) {
   #page-cloud .section--beta-cloud .container {
     left: -3px;
-    margin: 0 auto;
     max-width: 919px;
     position: relative;
   }
@@ -13949,21 +13975,26 @@ hr {
 }
 
 #page-core .pageHeader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("/img/headers/xcore_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 668px;
-  padding-top: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh + 74px);
+  margin-bottom: -74px;
+  padding-top: 74px;
   position: relative;
+  top: -74px;
   z-index: 1;
 }
 
 @media (min-width: 1080px) {
   #page-core .pageHeader {
     background-image: url("/img/headers/xcore_desktop.png");
-    height: calc(100vh + 74px);
-    padding-top: 308px;
-    margin-bottom: -74px;
   }
 }
 
@@ -14295,6 +14326,14 @@ hr {
   width: 375px;
 }
 
+@media (min-width: 768px) {
+  #page-core .section--core-design .featurePreviewContainer .featurePreview {
+    display: block;
+    margin: 0 auto;
+    left: 0;
+  }
+}
+
 @media (min-width: 1080px) {
   #page-core .section--core-design .featurePreviewContainer .featurePreview {
     background-image: url("/img/mockups/xcore/dashboard.png");
@@ -14321,7 +14360,7 @@ hr {
   border-bottom: none;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
   #page-core .section--core-design .nav-tabs {
     left: 2px;
     margin: 0 auto;
@@ -14409,13 +14448,19 @@ hr {
 }
 
 #page-token .pageHeader {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("/img/headers/token_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: calc(100vh + 74px);
   margin-bottom: -74px;
-  padding-top: 310px;
+  padding-top: 74px;
   position: relative;
   top: -74px;
   z-index: 1;
@@ -14423,14 +14468,8 @@ hr {
 
 @media (min-width: 1080px) {
   #page-token .pageHeader {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background-image: url("/img/headers/token_desktop.png");
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 74px;
+    padding-top: 148px;
   }
 }
 
@@ -15453,6 +15492,19 @@ hr {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  #page-about .teamPartner {
+    margin: 0 auto;
+    width: 327px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-about .teamPartner {
+    width: auto;
+  }
+}
+
 #page-about .teamPartner .col-lg-5 {
   display: none;
 }
@@ -15883,6 +15935,24 @@ hr {
   height: 287px;
 }
 
+@media (min-width: 768px) {
+  #page-roadmap .subsection--milestone--active {
+    height: 220px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-roadmap .subsection--milestone--active {
+    height: 315px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-roadmap .subsection--milestone--active {
+    height: 287px;
+  }
+}
+
 #page-roadmap .subsection--milestone--active .subsection__content {
   opacity: 1;
   -webkit-transition: opacity 0.3s 0.25s;
@@ -16005,6 +16075,7 @@ hr {
 }
 
 #page-terms > .container {
+  margin-bottom: 112px;
   margin-top: 112px;
   max-width: 1033px;
 }

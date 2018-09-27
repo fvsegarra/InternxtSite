@@ -28,7 +28,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-4 --}}
 
-					<div class="col-lg-4">
+					<div class="col-md-6 col-lg-4">
 						@component('_includes.resource')
 							@slot('class', 'whitepaper')
 							@slot('title', 'Whitepaper')
@@ -40,7 +40,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-4 --}}
 
-					<div class="col-lg-4">
+					<div class="col-md-6 col-lg-4">
 						@component('_includes.resource')
 							@slot('class', 'series-a')
 							@slot('title', 'Series A')

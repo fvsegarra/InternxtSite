@@ -57,7 +57,7 @@
 
 				<div class="row">
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'fran')
 							@slot('name', 'Fran Villalba Segarra')
@@ -68,7 +68,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'volodymyr')
 							@slot('name', 'Volodymyr Shevchyk')
@@ -79,7 +79,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'harrison')
 							@slot('name', 'Harrison Moore')
@@ -90,7 +90,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'zoran')
 							@slot('name', 'Zoran Joka')
@@ -101,7 +101,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'russell')
 							@slot('name', 'Russell Vaughan')
@@ -112,7 +112,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'conor')
 							@slot('name', 'Conor Doyle')
@@ -123,7 +123,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'jordan')
 							@slot('name', 'Jordan Latham')
@@ -134,7 +134,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'igor')
 							@slot('name', 'Igor Dostanic')
@@ -145,7 +145,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'joe')
 							@slot('name', 'Joe Priest')
@@ -156,7 +156,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'alex')
 							@slot('name', 'Alex Sicart Ramos')
@@ -167,7 +167,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-lg-3">
+					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'ryan')
 							@slot('name', 'Ryan Marsden')

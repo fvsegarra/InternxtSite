@@ -275,11 +275,15 @@
 			border-radius: 5px;
 			border: none;
 			box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
-			left: -108px;
+			left: -71px;
 			padding: 0 0 1px 0;
 			text-align: left;
 			top: 45px;
 			width: 335px;
+
+			@include whenLargerThan('medium-screen'){
+				left: -108px;
+			}
 		    
 		    .dropdown-item {
 
@@ -387,6 +391,7 @@
 
 		    &--company {
 
+		    	left: -108px;
 		    	padding-bottom: 0;
 		    	width: 335px;
 

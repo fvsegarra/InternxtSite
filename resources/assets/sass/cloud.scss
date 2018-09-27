@@ -14,7 +14,7 @@
         margin-bottom: -$offset;
         overflow: hidden;
         padding-bottom: 10px;
-        padding-top: $offset;
+        padding-top: ($offset * 2);
         position: relative;
         top: -$offset;
 
@@ -500,6 +500,11 @@
 
                 margin-top: 80px;
 
+                @include whenLargerThan('small-screen'){
+                    width: 318px;
+                    margin: 80px auto 0;
+                }
+
                 @include whenLargerThan('large-screen') {
                     background-image: url("/img/mockups/xcore/macbook.png");
                     background-repeat: no-repeat;
@@ -558,7 +563,7 @@
                 border-bottom: none;
                 margin-top: 52px;
 
-                @include whenLargerThan('large-screen') {
+                @include whenLargerThan('small-screen') {
                     margin: 0 auto;
                     max-width: 255px;
                 }
@@ -1073,6 +1078,11 @@
                 max-width: 295px;
                 position: relative;
 
+                @include whenLargerThan('small-screen') {
+                    display: block;
+                    margin: 60px auto 48px;
+                }
+
                 @include whenLargerThan('large-screen') {
                     margin: 110px 0 48px;
                 }
@@ -1174,11 +1184,14 @@
                 margin-top: 0;
             }
 
+            .container {
+                max-width: 368px;
+            }
+
             @include whenLargerThan('large-screen') {
 
                 .container {
                     left: -3px;
-                    margin: 0 auto;
                     max-width: 919px;
                     position: relative;
                 }

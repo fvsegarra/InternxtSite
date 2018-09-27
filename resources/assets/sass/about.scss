@@ -433,6 +433,15 @@
         overflow: hidden;
         position: relative;
 
+        @include whenLargerThan('small-screen') {
+            margin: 0 auto;
+            width: 327px;
+        }
+
+        @include whenLargerThan('large-screen') {
+            width: auto;
+        }
+
         .col-lg-5 {
 
             display: none;

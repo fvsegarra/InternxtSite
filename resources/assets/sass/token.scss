@@ -15,22 +15,22 @@
 
         $offset: 74px;
 
+        align-items: center;
         background-image: url('/img/headers/token_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
+        display: flex;
         height: calc(100vh + #{$offset});
         margin-bottom: -$offset;
-        padding-top: 310px;
+        padding-top: $offset;
         position: relative;
         top: -$offset;
         z-index: 1;
 
         @include whenLargerThan('large-screen') {
-            align-items: center;
             background-image: url('/img/headers/token_desktop.png');
-            display: flex;
-            padding-top: $offset;
+            padding-top: ($offset * 2);
         }
 
         & > .container {
