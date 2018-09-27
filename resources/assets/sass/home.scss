@@ -105,7 +105,7 @@
             padding-top: 15px;
 
             @include whenLargerThan('large-screen') {
-                padding: 32px;
+                padding: 28px 32px 32px 32px;
             }
 
         }
@@ -126,7 +126,6 @@
                 font-weight: 700;
                 letter-spacing: 0.3px;
                 line-height: 2;
-                margin-top: 5px;
             }
 
         }
@@ -142,7 +141,7 @@
             min-height: 81px;
 
             @include whenLargerThan('large-screen') {
-                margin-bottom: 32px;
+                margin-bottom: 41px;
                 margin-top: 9px;
             }
 

@@ -12497,7 +12497,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-home .articlePreview__content {
-    padding: 32px;
+    padding: 28px 32px 32px 32px;
   }
 }
 
@@ -12518,7 +12518,6 @@ hr {
     font-weight: 700;
     letter-spacing: 0.3px;
     line-height: 2;
-    margin-top: 5px;
   }
 }
 
@@ -12534,7 +12533,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-home .articlePreview__title {
-    margin-bottom: 32px;
+    margin-bottom: 41px;
     margin-top: 9px;
   }
 }
