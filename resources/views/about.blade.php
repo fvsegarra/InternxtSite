@@ -212,7 +212,7 @@
 						<div class="col-lg-5">
 							<p class="teamPartner__heading">Blackberry Partnership</p>
 							<p class="teamPartner__subheading">BlackBerry is an enterprise software and services company focused on securing and managing IoT endpoints.</p>
-							<p class="teamPartner__content">As we are seeing with services like Internxt’s X Cloud, innovation is profoundly changing the way business gets done as customers increasingly demand secure solutions. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
+							<p class="teamPartner__content">As we are seeing with services like Internxt’s X&nbsp;Cloud, innovation is profoundly changing the way business gets done as customers increasingly demand secure solutions. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
 						</div>{{-- /.col-lg-5 --}}
 					</div>{{-- /.row --}}
 				</div>{{-- /.teamPartner --}}

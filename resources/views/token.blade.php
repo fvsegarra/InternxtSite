@@ -62,7 +62,7 @@
 				<div class="row">
 					<div class="col-lg-6">
 
-						<p class="section__heading">Designed to <span class="linebreak d-md-none d-lg-block"></span>function as an economy with reliable demand.</p>
+						<p class="section__heading">Designed to <span class="linebreak"></span>function as an economy with reliable demand.</p>
 
 						<div class="intro__content">
 							<p>Internxt's token INXT is used as a means of payment to Hosts who participate in our X Core network.</p>

@@ -52,7 +52,7 @@
 							<p class="subsection__content">Hosts rent out their computers extra hard-drive space which allows the storing and uploading of users encrypted data. In return hosts will be paid in our cryptocurrency, INXT. The more hard-drive space you allocate to the network, the more INXT you will earn.</p>
 						</div>{{-- /.subsection-host --}}
 
-						<div class="subsection subsection--enhanced">
+						<div class="subsection subsection--enhanced d-lg-none d-xl-block">
 							<p class="subsection__heading">Taking the <span class="linebreak"></span>power back.</p>
 							<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
 						</div>{{-- /.subsection-enhanced --}}
@@ -61,10 +61,16 @@
 
 				</div>{{-- /.row --}}
 			</div>{{-- /.container-fluid --}}
-				<div class="subsection subsection--setup">
-					<p class="subsection__heading">Easy set-up.</p>
-					<p class="subsection__content">Becoming a host to share your computers resources on the <span class="linebreak d-block d-lg-block"></span>X&nbsp;Core network is quick and easy to set up. Simply download the desktop application, create your node and your device will automatically be connected, and will always be connected unless you say otherwise. All the hard work has been done for you.</p>
-				</div>{{-- /.subsection-setup --}}
+
+			<div class="subsection subsection--setup enhanced-1080 d-none d-lg-block d-xl-none">
+				<p class="subsection__heading">Taking the <span class="linebreak"></span>power back.</p>
+				<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
+			</div>{{-- /.subsection-setup --}}
+
+			<div class="subsection subsection--setup">
+				<p class="subsection__heading">Easy set-up.</p>
+				<p class="subsection__content">Becoming a host to share your computers resources on the <span class="linebreak d-block d-lg-block"></span>X&nbsp;Core network is quick and easy to set up. Simply download the desktop application, create your node and your device will automatically be connected, and will always be connected unless you say otherwise. All the hard work has been done for you.</p>
+			</div>{{-- /.subsection-setup --}}
 
 			</div>
 		</div>

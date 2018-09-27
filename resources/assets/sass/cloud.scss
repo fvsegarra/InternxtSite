@@ -35,12 +35,20 @@
 
             @include whenLargerThan('large-screen') {
                 background-image: url("/img/headers/xcloud_desktop.png");
+                background-size: 546px;
                 display: block;
-                height: 633px;
+                height: 425px;
                 right: 0;
-                top: 208px;
-                width: 770px;
+                top: calc(50% - 106px);
+                width: 543px;
+            }
+
+            @include whenLargerThan('xl-screen') {
                 background-size: 839px;
+                right: 0;
+                height: 633px;
+                top: calc(50% - 215px);
+                width: 770px;
                 width: 840px;
             }
 
@@ -333,6 +341,12 @@
             padding-top: 1px;
 
             @include whenLargerThan('large-screen') {
+                padding-top: 47px;
+                // padding-bottom: 47px;
+                padding-bottom: 91px;
+            }
+
+            @include whenLargerThan('xl-screen') {
                 padding-top: 138px;
                 padding-bottom: 138px;
             }
@@ -762,10 +776,21 @@
                 }
 
                 .section__image {
+
                     height:  $section__image__height;
                     position: absolute;
                     right: 47%;
                     width: 1128px;
+
+                    @include whenLargerThan('large-screen') {
+                        right: 51.5%;
+                    }
+
+
+                    @include whenLargerThan('xl-screen') {
+                        right: 47%;
+                    }
+
                 }
 
                 .section__plansContainer{
@@ -1090,6 +1115,10 @@
                 &--ipad {
 
                     @include whenLargerThan('large-screen') {
+                        max-width: 600px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
                         left: -53px;
                         max-width: 687px;
                     }
@@ -1099,6 +1128,12 @@
                 &--iphone {
 
                     @include whenLargerThan('large-screen') {
+                        left: -88px;
+                        max-width: 249px;   
+                        top: 11px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
                         left: -64px;
                         max-width: 286px;
                         top: 11px;
@@ -1118,12 +1153,16 @@
 
                 @include whenLargerThan('large-screen') {
                     font-size: 40px;
-                    left: -31px;
+                    left: -66px;
                     position: relative;
                     top: -25px;
                     letter-spacing: -0.9px;
                     line-height: 0.98;
                     width: 365px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    left: -31px;
                 }
 
             }
@@ -1140,10 +1179,14 @@
                 }
 
                 @include whenLargerThan('large-screen') {
-                    left: -30px;
+                    left: -66px;
                     position: relative;
                     top: -19px;
                     width: 365px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    left: -30px;
                 }
 
             }
@@ -1166,8 +1209,12 @@
 
                 @include whenLargerThan('large-screen') {
                     margin-top: 31px;
-                    left: -30px;
+                    left: -67px;
                     position: relative;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    left: -30px;
                 }
 
             }

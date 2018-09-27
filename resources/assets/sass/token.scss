@@ -222,7 +222,7 @@
 
             .col-lg-6 {
 
-                @include whenLargerThan('large-screen') {
+                @include whenLargerThan('xl-screen') {
                     max-width: 492px;
                 }
 
@@ -232,13 +232,23 @@
                         margin-bottom: 58px;
                     }
 
+                    .linebreak {
+
+                        display: none;
+
+                        @include whenLargerThan('large-screen') {
+                            display: block;
+                        }
+                        
+                    }
+
                 }
 
             }
 
             .col-lg-5 {
 
-                @include whenLargerThan('large-screen') {
+                @include whenLargerThan('xl-screen') {
                     margin-left: 133px;
                 }
 

@@ -561,6 +561,9 @@
 
             @include whenLargerThan('large-screen') {
                 margin-top: 30px;
+            }
+
+            @include whenLargerThan('xl-screen') {
                 width: 490px;
             }
 
@@ -582,7 +585,7 @@
 
             .col-lg-7 {
 
-                @include whenLargerThan('large-screen') {
+                @include whenLargerThan('xl-screen') {
                     left: 53px;
                 }
 
@@ -591,9 +594,11 @@
             .col-lg-5 {
 
                 @include whenLargerThan('large-screen') {
+                    left: 15px;
+                }
 
+                @include whenLargerThan('xl-screen') {
                     left: 36px;
-
                 }
 
             }
