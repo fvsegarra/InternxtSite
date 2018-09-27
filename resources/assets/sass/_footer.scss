@@ -133,7 +133,7 @@
 			padding: 11px 8px 7px;
 		}
 
-		@include whenLargerThan('xl-screen') {
+		@include whenLargerThan('large-screen') {
 
 			&--social {
     			position: relative;
