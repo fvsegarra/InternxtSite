@@ -257,7 +257,12 @@
 
                 &--enhanced {
 
-                    @include whenLargerThan('large-screen') {
+                    @include whenLargerThan('small-screen') {
+                        display: none;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                        display: block;
                         margin-left: 7px;
                         margin-top: 103px;
                     }
@@ -286,12 +291,22 @@
                     padding-left: 30px;
                     padding-right: 30px;
 
-                    @include whenLargerThan('large-screen') {
-                        
+                    @include whenLargerThan('large-screen') {    
                         padding-left: 208px;
+                    }
                         
-                        &.enhanced-1080 {
-                            margin-top: -40px; // To account for bottom padding of laptop bg
+
+                    &.enhanced-1080 {
+
+                        display: none;
+                        margin-top: -40px; // To account for bottom padding of laptop bg
+
+                        @include whenLargerThan('large-screen'){
+                            display: block;
+                        }
+
+                        @include whenLargerThan('xl-screen') {
+                            display: none;
                         }
 
                     }

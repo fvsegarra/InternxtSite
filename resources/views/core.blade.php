@@ -52,7 +52,7 @@
 							<p class="subsection__content">Hosts rent out their computers extra hard-drive space which allows the storing and uploading of users encrypted data. In return hosts will be paid in our cryptocurrency, INXT. The more hard-drive space you allocate to the network, the more INXT you will earn.</p>
 						</div>{{-- /.subsection-host --}}
 
-						<div class="subsection subsection--enhanced d-lg-none d-xl-block">
+						<div class="subsection subsection--enhanced">
 							<p class="subsection__heading">Taking the <span class="linebreak"></span>power back.</p>
 							<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
 						</div>{{-- /.subsection-enhanced --}}
@@ -62,7 +62,7 @@
 				</div>{{-- /.row --}}
 			</div>{{-- /.container-fluid --}}
 
-			<div class="subsection subsection--setup enhanced-1080 d-none d-lg-block d-xl-none">
+			<div class="subsection subsection--setup enhanced-1080">
 				<p class="subsection__heading">Taking the <span class="linebreak"></span>power back.</p>
 				<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
 			</div>{{-- /.subsection-setup --}}
