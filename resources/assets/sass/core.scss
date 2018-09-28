@@ -559,6 +559,15 @@
 
             }
 
+            .section__cta {
+
+                // Override strange hover behaviour
+                &:hover {
+                    opacity: 1;
+                }
+
+            }
+            
         }
 
     }
