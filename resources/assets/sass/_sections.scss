@@ -127,7 +127,7 @@
                 margin-top: 57px;
             }
 
-            @include transparencyOnHover(0.8);
+            @include transparencyOnHover(0.7);
 
         }
 
@@ -151,7 +151,7 @@
                     margin: 0 auto;
                 }
 
-                @include transparencyOnHover();
+                @include transparencyOnHover(0.7);
 
             }
 

@@ -11448,7 +11448,7 @@ a.text-dark:focus {
 }
 
 .section--about .section__cta:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .section--about__articles {
@@ -11481,7 +11481,7 @@ a.text-dark:focus {
 }
 
 .section--about__articles img:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .section--about__articles .row {
