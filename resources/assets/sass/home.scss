@@ -148,14 +148,29 @@
         }
 
         &__cta {
+            
             color: #3b7ff5;
             font-size: 17px;
             font-weight: 500;
             letter-spacing: -0.4px;
             line-height: 1.54;
+
+            img {
+                left: 2px;
+                position: relative;
+                top: -1px;
+                transition: left $transition-default;
+            }
+
+            &:hover {
+
+                img {
+                    left: 5px;
+                }
+
+            }
+            
         }
-
-
 
     }
 
@@ -213,6 +228,19 @@
                     @include make-col(6);
                 }
 
+            }
+
+            transition: opacity $transition-default, top $transition-default;
+            position: relative;
+
+            &.hiddenClass {
+                opacity: 1;
+                top: 100px;
+            }
+
+            &.visibleClass {
+                opacity: 1;
+                top: 0;
             }
 
         }

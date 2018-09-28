@@ -95,7 +95,7 @@
 				line-height: 2;
 			}
 
-			@include transparencyOnHover(0.8);
+			@include transparencyOnHover(0.75);
 
 		}
 
@@ -131,7 +131,7 @@
 
 			padding: 0 12px;
 
-			@include transparencyOnHover(0.8);
+			@include transparencyOnHover(0.70);
 
 		}
 

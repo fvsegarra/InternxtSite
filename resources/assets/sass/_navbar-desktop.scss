@@ -509,13 +509,30 @@
 					padding-top: 9px;
 					transition: background-color $transition-default, color $transition-default;
 
-					&:hover {
-						background-color: white;
+					&:after {
 						background-image: url("/img/icons/chevron-right-xcloud-hover.svg");
-						background-position: 160px 9px;
-						background-size: 22px 22px;
+						background-size: contain;
+						content: '';
+						display: block;
+						height: 23px;
+						opacity: 0;
+						position: absolute;
+						right: 12px;
+						top: 9px;
+						transition: opacity $transition-default;
+						width: 23px;
+					}
+						
+					&:hover {
+
+						background-color: white;
 						color: black !important;
 						opacity: 1;
+
+						&::after {
+							opacity: 1;
+						}
+
 					}
 
                 }
