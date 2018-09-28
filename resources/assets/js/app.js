@@ -7,6 +7,8 @@
 
 require('./bootstrap');
 
+var ScrollTrigger = require('scrolltrigger-classes');
+
 $('.nav-tabs .nav-link').click((e) => {
 
 	console.debug('X Cloud features tab clicked');
@@ -99,9 +101,29 @@ $('.modal__checkbox').click((e) => {
 
 });
 
+// Mobile navbar toggle
 var burger = $('.burger-container'),
 header = $('.mobile-header');
 
 burger.click(function() {
 	header.toggleClass('menu-opened');
+});
+
+
+$(document).ready(()=> {
+
+	// Scroll triggers for CSS animations (via classes)
+	var trigger = new ScrollTrigger({
+		toggle: {
+			visible: 'visibleClass',
+			hidden: 'hiddenClass'
+		},
+		offset: {
+			x: 0,
+			y: -10
+		},
+		// addHeight: true,
+		// once: true
+	}, document.body, window);
+
 });
