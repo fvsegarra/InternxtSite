@@ -1,0 +1,554 @@
+.navbar{
+
+	display: none;
+
+	@include whenLargerThan('small-screen') {
+
+		background-color: white;
+		display: block;
+		padding: 12px 8px 16px;
+
+		& > .container {
+		    max-width: 1320px;
+		    padding-left: 30px;
+		    padding-right: 7px;
+		}
+
+		.navbar-brand {
+
+			margin-left: 2px;
+			padding-top: 16px;
+    		padding-left: 0px;
+    		padding-bottom: 7px;
+
+			.mainLogo {
+	    		height: 41px;
+				margin-left: -11px;
+				margin-top: -1px;
+			}
+
+		}
+
+		.dropdown-toggle {
+
+
+			border-radius: 4px;
+			text-align: left;
+
+			&::after {
+				// Hide arrow on dropdown links
+				display: none;
+			}
+
+		}
+
+		.nav-item.dropdown.show .dropdown-toggle {
+			background-color: rgba(0, 0, 0, 0.07);
+			color: black;
+			outline: none;
+		}
+
+		.navbar-toggler{
+
+			border: none;
+
+			&:focus{
+				outline: 1px auto white;
+			}
+
+		}
+
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(31, 40, 49)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+			background-size: cover;
+			height: 47px;
+		}
+
+		.mainLogo--light{
+			display: inherit;
+		}
+
+		.mainLogo--dark{
+			display: none;
+		}
+
+		.navbar-nav {
+
+			border-top: none;
+			height: auto;
+			left: -9px;
+			margin-top: 0;
+			padding-left: 0px;
+			padding-top: 11px;
+			position: relative;
+
+			@include whenLargerThan('large-screen') {
+
+				// padding-top: 30px;
+
+			}
+
+			li.nav-item {
+
+				padding: 0 7.5px;
+				width: auto;
+
+				&--xcloud {
+					left: 8px;
+					padding-right: 0px;
+					position: relative;
+					top: -4px;
+				}
+
+			}
+
+			a.nav-link{
+
+				border-radius: 4px;
+				color: black;
+				font-size: 16px;
+				font-weight: 600;
+				letter-spacing: 0;
+				padding: 6px 10px 6px 10px;
+				transition: color $transition-default;
+
+				@include whenLargerThan('large-screen') {
+					padding: 6px 18px 6px 15px;
+				}
+
+		  		&:hover{
+		  			background-color: rgba(black, 0.07);
+		  		}
+
+		  		&--xcloud {
+
+					background-color: #4585f5;
+					border-radius: 28.5px;
+					box-shadow: 0 2px 3px 0 rgba(174, 199, 242, 0.62);
+					color: white !important;
+					display: block;
+					font-size: 16px;
+					font-weight: 600;
+					height: 43px;
+					letter-spacing: -0px;
+					line-height: 1.47;
+					margin-left: 11px;
+					margin-top: -1px;
+					padding: 10px 42px 8px 19px;
+					text-align: center;
+					width: 195px;
+				    background-position: 161px center;
+				    background-repeat: no-repeat;
+		  			background-image: url("/img/icons/chevron-right-circle.svg");
+
+		  			@include transparencyOnHover();
+
+					&:hover{
+						// Override others on hover
+						background-color: #4585f5;
+					}
+
+
+		  		}
+
+			}
+
+		}
+
+		&.navbar-light{
+
+			background-color: white;
+
+			.mainLogo--light{
+				display: none;
+			}
+
+			.mainLogo--dark{
+				display: inherit;
+			}
+
+			.navbar-toggler-icon {
+				background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(31, 40, 49)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+			}
+
+			.navbar-nav .nav-link:hover {
+				color: black;
+			}
+
+		}
+
+		&.navbar-about,
+		&.navbar-token,
+		&.navbar-xcloud,
+		&.navbar-xcore {
+
+	 		background-color: transparent;
+	 		padding-left: 0;
+	 		z-index: 2;
+
+	 		.navbar-brand {
+
+	 			margin-left: 11px;
+
+		 		.mainLogo {
+	 				// Homepage logo has no padding built in, so move this one left more to compensate
+	 				height: 44px;
+	 				margin-left: -21px;
+	    			margin-top: -3px;
+		 		}
+
+	 		}
+
+			.navbar-nav a.nav-link{
+				color: white;
+			}
+
+		}
+
+		&.navbar-xcore{
+
+			// background-color: #2b2b2b;
+			// Now handled by navbar-transparent class
+
+		}
+
+
+		// Override default change from mobile navbar
+		@include whenLargerThan(768px) {
+	    	padding: 16px;
+		}
+
+		@media (max-width: 991.98px){
+
+			& >.container, & >.container-fluid {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+		}
+
+		@include whenLargerThan(992px) {
+
+			.navbar-collapse {
+				display: none !important;
+				flex-basis: 100% !important;
+			}
+
+			.navbar-toggler {
+			    display: block;
+			}
+
+			.navbar-expand-lg > .container,
+			.navbar-expand-lg > .container-fluid {
+			    padding-right: 15px;
+			    padding-left: 15px;
+				flex-wrap: wrap;
+			}
+
+		}
+
+		@include whenLargerThan('small-screen') {
+
+			padding: 7px 16px 3px;
+
+			.navbar-collapse {
+				display: flex!important;
+				-ms-flex-preferred-size: auto;
+				flex-basis: auto;
+			}
+
+			.navbar-toggler {
+			    display: none;
+			}
+
+			.navbar-expand-lg > .container,
+			.navbar-expand-lg > .container-fluid {
+				flex-wrap: nowrap;
+			}
+
+		}
+
+
+
+		.dropdown-menu {
+
+
+			background-color: #ffffff;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.12);
+			left: -71px;
+			padding: 0 0 1px 0;
+			text-align: left;
+			top: 45px;
+			width: 335px;
+
+			@include whenLargerThan('medium-screen'){
+				left: -108px;
+			}
+		    
+		    .dropdown-item {
+
+		    	text-align: center;
+		    	padding: 8px 0;
+
+		    	@include whenLargerThan('small-screen') {
+			    	background-repeat: no-repeat;
+			    	background-size: 26px 12px;
+		    		background-position: 269px center;
+		    		transition: background-position $transition-default;
+		    		padding: 32px 35.6px 28px 31px;
+		    		text-align: left;
+		    		width: 100%;
+		    	}
+
+		    	&:hover {
+		    		background-image: url('/img/icons/dropdown/chevron.svg');
+		    		background-position: 278px center;
+		    		color: black;
+		    	}
+
+		    	&:hover,
+		    	&:active {
+		    		background-color: transparent;
+		    	}
+
+		    	&__image {
+
+		    		display: none;
+
+		    		@include whenLargerThan('small-screen') {
+			    		display: block;
+			    		height: 39px;
+			    		margin-right: 27px;
+		    		}
+
+		    	}
+
+				&__heading {
+
+					color: black;
+					font-size: 23px;
+					font-weight: 600;
+					letter-spacing: -0.7px;
+					line-height: 0.92;
+					margin-bottom: 0;
+					text-align: left;
+
+					&::first-letter {
+						letter-spacing: -3.5px;
+					}
+
+				}
+
+				&__subheading {
+
+					color: #8e8e93;
+					font-size: 16px;
+					font-weight: 450;
+					letter-spacing: -0.3px;
+					line-height: 0.62;
+					margin-bottom: 0;
+					margin-top: 12px;
+					opacity: 0.75;
+
+				}
+
+				&--xcloud {
+
+					.dropdown-item__image {
+						height: 27px;
+						margin-top: -3px;
+					}
+
+				}
+
+				&--xcore {
+
+					.dropdown-item__image {
+	  					margin: 0px 34px 0 8px;
+					}
+
+					.dropdown-item__heading {
+						position: relative;
+    					top: -1px;
+					}
+
+					.dropdown-item__subheading {
+						position: relative;
+    					left: -1px;
+					}
+
+				}
+
+		    }
+
+		    hr {
+				background-color: #f2f2f2;
+				border-top: none;
+				height: 1px;
+				margin: 0 auto;
+				width: 275px;
+		    }
+
+		    &--company {
+
+		    	left: -108px;
+		    	padding-bottom: 0;
+		    	width: 335px;
+
+		    	.dropdown-item {
+
+		    		padding: 22px 35px 22px;
+
+		    		&__image {
+						color: black;
+						height: 24px;
+						margin-left: 6px;
+						margin-right: 37px;
+					}
+
+		    		&__heading {
+
+						color: black;
+						font-size: 19px;
+						font-weight: 500;
+						letter-spacing: -0.4px;
+						line-height: 1;
+
+						&::first-letter {
+							letter-spacing: -0.4px;
+						}
+
+			    	}
+
+			    }
+
+		    }
+
+		}
+
+	}
+
+
+	.navbar.navbar-transparent.navbar-inverse {
+
+		background: none;
+		z-index: 2; // Pages with this transparent navbar will move their content up behind it
+
+		.navbar-inner {
+		    border-width: 0px;
+		    box-shadow: 0px 0px;
+		    background-color: rgba(0,0,0,0.0);
+		    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+		}
+
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(255, 255, 255)' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+		}
+
+	}
+
+}
+
+#page-about,
+#page-cloud,
+#page-core,
+#page-token {
+
+	.navbar {
+
+		// Sit on top of the pageheader
+	    position: absolute;
+	    width: 100%;
+
+	  //   .navbar-collapse {
+
+			// background: white;
+			// left: -15px;
+			// padding-top: 86px;
+			// position: relative;
+			// top: -86px;
+
+	  //   	.navbar-nav {
+
+			// 	background-color: white;
+			// 	left: -15px;
+			// 	position: relative;
+			// 	width: 100vw;
+
+		 //        @include whenLargerThan('small-screen') {
+		 //            background-color: transparent;
+		 //            border-radius: 0;
+		 //            box-shadow: none;
+	  //   			margin: 0;
+		 //            width: auto;
+		 //        }
+
+		 //    }
+
+	  //   }
+
+	    .navbar-nav {
+
+	    	left: 0px;
+	    	padding-top: 13px;
+
+            a.nav-link {
+
+    			color: white;
+
+                &--xcloud {
+
+					background-color: transparent;
+					background-position: 159px 9px;
+					border: solid 1px white;
+					box-shadow: none;
+					padding-left: 16px;
+					padding-right: 40px;
+					padding-top: 9px;
+					transition: background-color $transition-default, color $transition-default;
+
+					&:after {
+						background-image: url("/img/icons/chevron-right-xcloud-hover.svg");
+						background-size: contain;
+						content: '';
+						display: block;
+						height: 23px;
+						opacity: 0;
+						position: absolute;
+						right: 12px;
+						top: 9px;
+						transition: opacity $transition-default;
+						width: 23px;
+					}
+						
+					&:hover {
+
+						background-color: white;
+						color: black !important;
+						opacity: 1;
+
+						&::after {
+							opacity: 1;
+						}
+
+					}
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .pageHeader {
+
+    	@include whenLargerThan('small-screen') {
+    		top: -74px;
+    	}
+
+    }
+
+}

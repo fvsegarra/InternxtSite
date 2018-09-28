@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <polygon id="windows-logo-a" points=".003 2.074 8.77 2.074 8.77 19.851 .003 19.851"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g fill="#FFF">
+      <polygon points="0 18.653 8.77 19.851 8.77 11.549 0 11.549"/>
+      <polygon points="0 10.478 8.77 10.478 8.77 2.074 0 3.273"/>
+      <polygon points="9.734 19.979 21.397 21.573 21.397 11.549 9.734 11.549"/>
+      <polygon points="9.734 1.947 9.734 10.478 21.397 10.478 21.397 .353"/>
+    </g>
+  </g>
+</svg>

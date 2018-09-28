@@ -8,7 +8,7 @@
 
 @section('body')
 
-	<div class="container-fluid">
+	<div class="container">
 
 		<header class="pageHeader">
 
@@ -16,43 +16,83 @@
 
 		</header>
 
-		<section class="section section--terms-overview">
+		<section class="section">
 
 	        <p class="section__heading">Overview</p>
 	        <div class="section__content">
-	                <p>Internxt Inc. ("Internxt") deeply cares about ensuring the fundamental personal data protection rights of all of its users, clients, and anyone interested in the company by adhering to current personal data protection regulations.</p>
-
-	                <p>This Privacy Policy must be accepted by clients before any of our products can be purchased. This is because our organization needs to treat your data in a personal way. However, this is always done in compliance with current personal data protection regulations. Therefore, when you register on our website, only the necessary data required to carry out the service will be collected. Users, by accepting this Privacy Policy, declare that all data provided to create an account is accurate and up to date. Users must contact Internxt if they wish to modify any personal data – or they can edit their data in the relevant section of our website.</p>
-
-	                <p>Users are responsible for any false or inaccurate statements or information provided to Internxt as well as any harm or damage caused to the company by said statements or information. We also reiterate Internxt' commitment to scrupulously comply with every provision set out in current regulations regarding personal data protection. And, specifically, Internxt is committed to the obligation of keeping secret the data to which it has access and to take the necessary security measures to prevent access, modification or deletion of data in an unauthorized manner. This Privacy Policy may be modified at the discretion of Internxt after informing of any change on our website. This enables us to maintain criteria of information transparency and fairness with regard to the treatment that governs the actions of our organization regarding the processing of personal data.</p>
-
+                <p>This Privacy Policy explains how information is collected, used and disclosed by Internxt Inc. (“Company”) when you access or use our websites, mobile applications, or other products or services (collectively, the “Services”), or when you otherwise interact with us. Our Services include the web pages at the internxt.com domain and our online storage services (“Storage Services”) that enable users to store data on third-party devices that have installed an open source, distributed storage software (“Software”). This policy does not apply to the information other devices that have installed the Software may collect about you or your device in connection with your use of the Software. For details about the information these other devices may collect about you or your device, please see this help page. We may change this policy from time to time. If we make changes, we will notify you by revising the date at the top of the policy and, in some cases, we may provide additional notice (such as adding a statement to our webpage or sending a notification). </p>
 	        </div>
 
 		</section>
 
-		<section class="section section--terms-website">
+		<section class="section section">
 
-	        <p class="section__heading">Personal data privacy and form-based collection.</p>
+	        <p class="section__heading">Information You Provide to Us</p>
 	        <div class="section__content">
-                <p>In accordance with prevailing laws and regulations on personal data protection, we notify you that your data will be entered in a processing system owned by Internxt Inc., having its registered office at 2425 Olympic Boulevard Suite 4000-W PMB #701 Santa Monica, CA 90404, United States, for the purpose of replying to your queries and sending you information that may be of interest to you.</p>
-
-                <p>In compliance with prevailing laws and regulations, Internxt gives notice that the data will be kept for the time strictly required to comply with the statutory provisions referred to above. Unless you tell us otherwise, we shall assume that your data remained unchanged. You undertake to tell us about any change and give your consent to our using the data for the purposes referred to above. Internxt states that it will process the data legally, fairly, transparently, appropriately, relevantly, subject to limits, accurately and ensure that all data are up to date. Internxt, therefore, undertakes to take all reasonable steps for data to be erased or rectified without delay if they are inaccurate. In accordance with the rights conferred on you by prevailing laws and regulations on data protection, you may exercise your rights of access, rectification, limitation of processing, erasure, portability and objection to processing of your personal data, and surrounding the consent given to their processing, by writing to hello@internxt.com.</p>
-
-                <p>The customer acknowledges and accepts that in the event of a technical issue, exceptionally our engineers might have to access the physical server in which the customer data is store and by doing so in very rare circumstances might access customer data. Should this be the case, our engineers will limit their activities to the fixing of the technical problems without using the access or the data that they might have access to for any other uses. Internxt may have to store and retain certain information for the access of the relevant and legitimate public authorities.</p>
-
+                <p>We collect information you provide directly to us. For example, we collect information you provide when you create an account, subscribe to our updates, respond to a survey, fill out a form, request customer support or communicate with us. The types of information we may collect include your bitcoin address, email address, username and password, survey responses and any other information you choose to provide. If you use our Storage Services, our third-party service provider may collect your payment method information for use in connection with your payments for storage.</p>
 	        </div>
 
 		</section>
 
-		<section class="section section--terms-">
+		<section class="section">
 
-	        <p class="section__heading">Contact us</p>
+	        <p class="section__heading">Information Collected by Cookies and Other Tracking Technologies via Our Services</p>
 	        <div class="section__content">
-                <p>If you have any other concerns, suggestions or questions about any issues relating to privacy on any of Internxt online properties, please contact us via e-mail (hello@internxt.com).</p>
+                <p>We and our service providers use various technologies to collect information when you interact with our websites and mobile apps, including cookies and web beacons. Cookies are small data files that are stored on your device when you visit a website, which enable us to collect information about your device identifiers, web browsers used to access the Services, pages or features viewed, time spent on pages, mobile app performance and links clicked. Web beacons (or pixel tags) are electronic images that may be used in our web Services or emails to help deliver cookies, count website visits, understand usage and determine the effectiveness of email marketing campaigns.</p>
 	        </div>
 
 		</section>
 
+		<section class="section">
+
+	        <p class="section__heading">Information We Collect From Other Sources</p>
+	        <div class="section__content">
+                <p>We may also receive information about you from other sources, such as when logging into your Storage Services account by using your account credentials for a separate third-party service. We will receive information from that service as indicated in the relevant third party’s authorization screen.</p>
+
+                <p class="section__subheading">Information Collected by Other Machines Running X Core</p>
+                <p>Using Internxt's X Core software makes your computer part of a distributed network. This means your computer may communicate with many other computers. As part of this process, those other nodes can store some information about your computer and your interactions. None of this information is dangerous to share with the network. Your computer shares a lot of it every day when you browse the web. We firmly believe that you have the right to be aware of the information you're sharing, and be able to make decisions about your own privacy. Here's a list of some things that other people can learn about your computer. IP Address: This is your computer's address on the Internet. This needs to be shared so that other nodes' messages can reach your computer. IP-associated information: Using your IP address, it is often possible to look up an approximate location (usually what city you are likely in) as well as your ISP. Network information: When you communicate with another node, it can record how long it takes your node to respond, and test your internet connection's bandwidth. Node ID: This is a pseudonym for your computer. It's a long group of random numbers that can be used to identify a node on the network, like a phone number. You need to send this out so that other nodes can identify and contact your node. Payment details: Your computer will share a payment address, so that other nodes can pay it directly for storage space. Disk space information: In order to negotiate storage contracts, your computer has to let other nodes know some information about how much it can store. If you are not comfortable sharing this information, we suggest you do not run Internxt's X Core program.</p>
+
+                <p class="section__subheading">Analytics Services Provided by Others</p>
+                <p>We may allow others to provide analytics services on our behalf in connection with our Services. These entities may use cookies, web beacons and other technologies to collect information about your use of the Services and other websites and apps, including your IP address, web browser, pages viewed, app performance, time spent on pages and links clicked. This information may be used by Company and others to, among other things, analyze and track data, determine the popularity of certain content and better understand your online activity.</p>
+	        </div>
+
+		</section>
+
+		<section class="section">
+
+	        <p class="section__heading">Security</p>
+	        <div class="section__content">
+                <p>Internxt takes reasonable measures to help protect information about you from loss, theft, misuse and unauthorized access, disclosure, alteration, and destruction.</p>
+	        </div>
+
+		</section>
+
+		<section class="section">
+
+	        <p class="section__heading">Transfer of Information to Governming Authorities</p>
+	        <div class="section__content">
+                <p>Internxt Inc. is based in the United States and the information we collect is governed by US law. By accessing or using our Services or otherwise providing information to us, you consent to the processing and transfer of information in and to the US and other countries, where you may not have the same rights as you do under your local law. Where this is the case, we will take appropriate measures to protect information about you in accordance with this Privacy Policy.</p>
+	        </div>
+
+		</section>
+
+		<section class="section">
+
+	        <p class="section__heading">Cookies</p>
+	        <div class="section__content">
+                <p>Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove or reject browser cookies. Please note that if you choose to remove or reject cookies, this could affect the availability and functionality of our Services.</p>
+	        </div>
+
+		</section>
+
+		<section class="section">
+
+	        <p class="section__heading">Promotional Communications</p>
+	        <div class="section__content">
+                <p>You may opt out of receiving promotional communications from us at any time by following the instructions in those communications. If you opt out, we may still send you non-promotional communications, such as those about your account or our ongoing business relations.</p>
+	        </div>
+
+		</section>
 
 	</div>
 

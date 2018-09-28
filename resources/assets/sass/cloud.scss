@@ -1,263 +1,474 @@
-#page-cloud{
+// TODO realign laptop background
 
-    .container{
-
-        @include whenLargerThan('large-screen'){
-            max-width: 1024px;
-        }
-
-    }
+#page-cloud {
 
     .pageHeader{
 
-        background-color: #bddfff;
-        text-align: center;
-        padding-top: 50px;
-        padding-bottom: 10px;
+        $offset: 74px;
 
-        @include whenLargerThan('medium-screen') {
-            padding-top: 40px;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #2797d8, #2768bc);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        display: flex;
+        height: calc(100vh + #{$offset});
+        margin-bottom: -$offset;
+        overflow: hidden;
+        padding-bottom: 10px;
+        padding-top: ($offset * 2);
+        position: relative;
+        top: -$offset;
+
+        @include whenLargerThan('large-screen') {
+            background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
         }
 
-        @include whenLargerThan('medium-screen') {
-            padding-top: 52px;
+        &::after {
+
+            background-repeat: no-repeat;
+            bottom: 15px;
+            content: '';
+            display: none;
+            height: 257px;
+            position: absolute;
+            right: 0;
+            width: 329px;
+
+            @include whenLargerThan('large-screen') {
+                background-image: url("/img/headers/xcloud_desktop.png");
+                background-size: 546px;
+                display: block;
+                height: 425px;
+                right: 0;
+                top: calc(50vh - 220px);
+                top: calc(50vh - 125px);
+                width: 543px;
+            }
+
+            @include whenLargerThan('xl-screen') {
+                background-size: 839px;
+                right: 0;
+                height: 633px;
+                top: calc(50vh - 232px);
+                width: 770px;
+                width: 840px;
+            }
+
         }
 
         & > .container {
             padding-bottom: 15px;
         }
 
-        &__heading{
+        &__icon {
 
-            color: #3b4461;
+            height: 36px;
+
+            @include whenLargerThan('large-screen') {
+                height: 45px;
+            }
+
+        }
+
+        &__heading {
+
+            font-size: 60.9px;
             font-weight: bold;
-            font-size: 69px;
-            line-height: 0.96;
-            letter-spacing: -3.9px;
-            margin-left: -4px;
-            margin-bottom: 10px;
+            letter-spacing: -3.2px;
+            line-height: 0.75;
+            margin-top: 33px;
 
-            @include whenLargerThan('medium-screen'){
-                font-size: 85px;
-                letter-spacing: -4.7px;
-                line-height: 1;
-                margin: 11px auto 0;
+            &::first-letter {
+                letter-spacing: -9.9px;
             }
 
             @include whenLargerThan('large-screen'){
-                max-width: 354px;
-                font-size: 106px;
-                letter-spacing: -5.9px;
+
+                font-size: 78px;
+                letter-spacing: -2.5px;
+                line-height: 0.82;
+                margin-top: 37px;
+                padding-left: 5px;
+
             }
 
         }
 
         &__subheading{
 
-            font-size: 24px;
-            font-weight: normal;
-            line-height: 1.21;
-            letter-spacing: -0.3px;
-            color: #3b4461;
-            padding: 0 4px;
-
-            @include whenLargerThan('medium-screen') {
-                font-weight: 500;
-                padding: 0 10px;
-                font-size: 26px;
-                line-height: 1.3;
-                letter-spacing: -0.54px;
-                max-width: 730px;
-                margin: 6px auto 0;
-            }
-
-            @include whenLargerThan('large-screen') {
-                max-width: 939px;
-                font-size: 34px;
-                line-height: 1.21;
-                letter-spacing: -1.2px;
-                margin: 0 auto;
-            }
-
-        }
-
-        &__btn{
-
-            border-radius: 4px;
-            border: solid 1px #0083ff;
-            color: #0083ff;
-            cursor: normal;
-            font-size: 18.8px;
+            font-size: 33.6px;
             font-weight: 500;
-            height: 51px;
-            letter-spacing: 0.1px;
-            line-height: 1.47;
-            margin-top: 35px;
-            padding: 12px;
-            width: 233px;
+            letter-spacing: -1.1px;
+            line-height: 0.86;
+            margin-top: 20px;
+            opacity: 0.76;
 
-            &:hover,
-            &:focus{
-                background: none;
-                color: #0083ff;
-                cursor: normal;
+            @include whenLargerThan('large-screen') {
+                font-size: 41px;
+                letter-spacing: -0.8px;
+                line-height: 0.9;
+                margin-top: 22px;
+                padding-left: 5px;
             }
 
-            @include whenLargerThan('medium-screen') {
-                margin-top: 33px;
-                width: 185px;
-                font-size: 15px;
-                height: 40px;
-                padding-top: 10px;
+        }
+
+        &__cta {
+
+            background-color: #00aaff;
+            background-image: url("/img/icons/cta-chevron-circle.png");
+            background-position: 176px center;
+            background-repeat: no-repeat;
+            background-size: 21px;
+            border-radius: 31.4px;
+            color: white;
+            display: block;
+            font-size: 17px;
+            font-weight: 600;
+            height: 45px;
+            letter-spacing: -0.6px;
+            margin-top: 44px;
+            padding: 10px 22px 13px 25px;
+            width: 212px;
+            letter-spacing: -0.2px;
+
+            &--desktop {
+                display: none;
             }
 
             @include whenLargerThan('large-screen') {
-                margin-top: 50px;
-                width: 233px;
-                font-size: 15px;
-                height: 50px;
-                padding-top: 10px;
-                font-size: 18.8px;
+
+                &--mobile {
+                    display: none;
+                }
+
+                &--desktop {
+                    display: block;
+                    margin-top: 88px;
+                }
+
             }
+
+            @include transparencyOnHover();
 
         }
 
-        img{
 
-            max-width: 322px;
-            margin-top: 60px;
-
-            @include whenLargerThan('medium-screen') {
-                max-width: 833px;
-                margin-top: 58px;
-            }
-
-            @include whenLargerThan('medium-screen') {
-                max-width: 1040px;
-                margin-top: 76px;
-            }
-
-        }
 
     }
 
-    .section{
+    .section {
 
-        &--cloud-beta{
-
-            background-color: #bddfff;
-
-            @include whenLargerThan('small-screen'){
-                padding: 124px 0;
-            }
-
-            @include whenLargerThan('medium-screen'){
-                padding: 109px 126px 0;
-            }
+        .container {
 
             @include whenLargerThan('large-screen'){
-                padding: 134px 126px 29px;
+                max-width: 1112px;
             }
 
-            & > .container{
+        }
 
-                padding-left: 24px;
-                padding-bottom: 88px;
-                padding-top: 42px;
+        &--cloud-intro {
 
-                @include whenLargerThan('medium-screen'){
-                    padding-bottom: 115px;
-                    padding-top: 0;
-                }
+            background-color: #fcfcfc;
+            padding-bottom: 64px;
+            padding-top: 64px;
 
-                @include whenLargerThan('large-screen'){
-                    max-width: 1024px;
-                }
-
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 107px;
+                padding-top: 107px;
             }
 
-            .section__heading{
+            .section__content {
 
-                font-size: 30px;
-                font-weight: bold;
-                margin-bottom: 28px;
-                max-width: 290px;
-                line-height: 1;
-                letter-spacing: -0.8px;
+                color: #8e8e93;
+                font-size: 25px;
+                font-weight: 450;
+                letter-spacing: -0.3px;
+                line-height: 1.44;
 
-                @include whenLargerThan('medium-screen') {
-                    color: #3b4461;
-                    font-size: 46px;
-                    letter-spacing: -2.2px;
-                    line-height: 0.9;
-                    max-width: 647px;
-                    text-align: left;
-                    margin-bottom: 50px;
+                em {
+                    font-weight: 600;
+                    color: black;
+                    font-style: normal;
                 }
 
                 @include whenLargerThan('large-screen') {
-                    max-width: 815px;
-                    font-size: 58px;
-                    line-height: 0.9;
-                    letter-spacing: -2.8px;
-                    margin-bottom: 56px;
+
+                    color: #636366;
+                    font-size: 26px;
+                    letter-spacing: -0.8px;
+                    line-height: 1.58;
+                    max-width: 992px;
+
+                    em {
+                        color: #48484a;
+                        font-weight: 600;
+                    }
+
                 }
 
             }
 
-            input{
+        }
 
-                background-color: transparent;
-                border-radius: 6.4px;
-                border: solid 0.8px #3288d9;
-                height: 48.8px;
-                width: 235px;
-                margin-top: -8px; // Line up with button
-                color: #20588c;
+        &--cloud-privacy {
 
-                &::placeholder{
-                    color: #20588c;
+            padding-bottom: 124px;
+            padding-top: 74px;
+
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 160px;
+                padding-top: 164px;
+            }
+
+            .subsection {
+
+                &__iconContainer {
+
+                    background-image: linear-gradient(132deg, #0099f0, #5688f5);
+                    border-radius: 50%;
+                    box-shadow: 0 3px 5px 0 #ebebf7;
+                    display: flex;
+                    height: 55px;
+                    justify-content: center;
+                    width: 55px;
+
+                    @include whenLargerThan('large-screen') {
+                        background-image: linear-gradient(122deg, #0099f0, #5688f5);
+                        box-shadow: 0 3px 5px 0 #ebebf7;
+                        height: 48px;
+                        width: 48px;
+                    }
+
                 }
 
-                @include whenLargerThan('medium-screen') {
-                    width: 265px;
+                &__icon {
+
+                    @include whenLargerThan('large-screen') {
+                        position: relative;
+                        top: -1px;
+                    }
+
                 }
 
-                @include whenLargerThan('large-screen') {
-                    height: 63px;
-                    margin-top: 0;
-                    width: 327px;
+                &__heading {
+
+                    font-size: 33px;
+                    font-weight: 600;
+                    letter-spacing: -0.6px;
+                    line-height: 1.18;
+                    margin-bottom: 0;
+                    margin-top: 23px;
+                    color: black;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 37px;
+                        font-weight: 700;
+                        letter-spacing: -1.1px;
+                        line-height: 1.14;
+                        margin-top: 45px;
+                        max-width: 462px;
+                    }
+
+                }
+
+                &__content {
+
+                    color: #838387;
+                    font-size: 20px;
+                    font-weight: 450;
+                    letter-spacing: -0.1px;
+                    line-height: 1.55;
+                    margin-bottom: 0;
+                    margin-top: 23px;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 21px;
+                        letter-spacing: -0.4px;
+                        line-height: 1.48;
+                        margin-top: 16px;
+                    }
+
+                }
+
+                &--data {
+
+                    @include whenLargerThan('large-screen') {
+
+                        .subsection__content {
+                            max-width: 460px;
+                        }
+
+                        .subsection__iconContainer {
+                            position: relative;
+                            left: 3px;
+                        }
+
+                    }
+
+                    .subsection__icon {
+                        // padding: 12.6px 9.2px 14.9px 8px;
+                    }
+
+                }
+
+                &--security {
+
+                    margin-top: 124px;
+
+                    @include whenLargerThan('large-screen') {
+                        margin-top: 0;
+                        margin-left: 13px;
+                    }
+
+                    .subsection__icon {
+                        // padding: 11px 15px 14px 16px;
+                    }
+
                 }
 
             }
 
-            .btn {
+        }
 
-                background-color: #3aa0ff;
-                border: none;
-                border-radius: 6.4px;
-                font-size: 15px;
-                font-weight: 500;
-                height: 48.8px;
-                letter-spacing: -0.2px;
-                margin-left: 6.6px;
-                width: 92.2px;
-                padding-top: 7px;
+        &--cloud-partners {
 
-                @include whenLargerThan('medium-screen') {
-                    width: 107px;
-                    margin-left: 9px;
-                    padding-top: 8px;
-                }
+            background-color: #1c1d1f;
+            color: white;
+            padding-top: 1px;
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 47px;
+                // padding-bottom: 47px;
+                padding-bottom: 91px;
+            }
+
+            @include whenLargerThan('xl-screen') {
+                padding-top: 138px;
+                padding-bottom: 138px;
+            }
+
+            .subsection {
+
+                background-color: #222529;
+                border-radius: 4px;
+                margin-top: 54px;
+                overflow: hidden;
+                padding: 0 0 62px;
 
                 @include whenLargerThan('large-screen') {
-                    width: 133px;
-                    margin-left: 14px;
-                    height: 61px;
-                    margin-top: 5px;
-                    font-size: 19px;
-                    padding-top: 16px;
-                    padding-top: 9px;
+                    max-width: 1077px;
+                    margin: 44px auto 0;
+                    padding-bottom: 80px;
+                }
+
+                &__border {
+
+                    background-color: #538dff;
+                    box-shadow: 0 3px 3px 0 rgba(77, 112, 255, 0.14);
+                    display: block;
+                    height: 2px;
+                    margin-bottom: 57px;
+
+                    @include whenLargerThan('large-screen') {
+                        height: 3px;
+                        margin-bottom: 42px;
+                    }
+
+                }
+
+                &__image {
+
+                    &--desktop {
+
+                        display: none;
+
+                        @include whenLargerThan('large-screen') {
+                            height: 109px;
+                        }
+
+                    }
+
+                    &--mobile {
+                        //
+                    }
+
+                }
+
+                &__heading {
+
+                    margin-top: 40px;
+
+                    @include whenLargerThan('large-screen') {
+                        color: white;
+                        font-size: 38px;
+                        font-weight: bold;
+                        line-height: 1.03;
+                        letter-spacing: 0px;
+                    }
+
+                }
+
+                &__content {
+
+                    color: #c1c1c7;
+
+                    @include whenLargerThan('large-screen') {
+                        color: white;
+                        font-size: 19px;
+                        letter-spacing: -0.1px;
+                        line-height: 1.53;
+                    }
+
+                }
+
+                &__link {
+
+                    color: #b3b3b3;
+                    display: inline-block;
+                    font-size: 16.6px;
+                    font-weight: 500;
+                    line-height: 1.61;
+                    margin-top: 11px;
+
+                    @include transparencyOnHover(0.7);
+
+                }
+
+                .col-lg-5 {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .col-lg-7 {
+
+                    @include whenLargerThan('large-screen') {
+                        max-width: 468px;
+                    }
+
+                }
+
+                &--blackberry {
+
+                    .subsection__image--desktop {
+                        left: 43px;
+                        position: relative;
+                        top: 19px;
+                    }
+
+                }
+
+                &--civic {
+
+                    .subsection__image--desktop {
+                        height: 78px;
+                        left: 47px;
+                        position: relative;
+                        top: 18px;
+                    }
+
                 }
 
             }
@@ -266,326 +477,93 @@
 
         &--cloud-architecture{
 
-            background-image: linear-gradient(290deg, #e8d6ff, #e2d4ff);
-            padding-bottom: 0; // Important, as the two subsections need to come to the bottom
-            padding-top: 56px;
-
-            @include whenLargerThan('medium-screen') {
-                padding-top: 100px;
-            }
+            background-color: #fcfcfc;
+            padding-bottom: 100px;
+            padding-top: 82px;
 
             @include whenLargerThan('large-screen') {
-                padding-top: 127px;
+                padding-bottom: 168px;
+                padding-top: 154px;
             }
 
-            .container{
+            & > .container {
 
                 @include whenLargerThan('large-screen') {
-                    max-width: 1024px;
+                    max-width: inherit;
                 }
 
             }
 
-            .section__heading{
+            .section__heading {
 
-                font-size: 60px;
-                font-weight: bold;
-                letter-spacing: -3.4px;
-                line-height: 0.85;
-                max-width: 335px;
-                color: #503b61;
-                padding-left: 10px;
-                margin-bottom: 63px;
-
-                @include whenLargerThan('medium-screen') {
-                    max-width: 890px;
-                    font-size: 74px;
-                    line-height: 0.81;
-                    letter-spacing: -4.2px;
-                    padding-left: 74px;
-                    margin-bottom: 120px;
-                }
+                color: black;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: -1.8px;
+                line-height: 1.03;
 
                 @include whenLargerThan('large-screen') {
-                    max-width: 962px;
-                    font-size: 90px;
-                    font-weight: bold;
-                    line-height: 0.81;
-                    letter-spacing: -4.2px;
-                    padding-left: 7px;
-                }
-
-                .linebreak{
-                    display: block;
-                }
-
-            }
-
-            .subsection{
-
-                padding-bottom: 50px;
-                padding-top: 60px;
-
-                @include whenLargerThan('medium-screen') {
-                    padding-top: 93px;
-                    padding-bottom: 93px;
-                }
-
-                @include whenLargerThan('large-screen') {
-                    padding-top: 147px;
-                }
-
-                &__heading{
-
-                    font-size: 40px;
-                    font-weight: bold;
-                    line-height: 0.88;
-                    letter-spacing: -1.1px;
-                    color: #503b61;
-                    padding-left: 4px;
-                    margin-bottom: 11px;
-
-                    @include whenLargerThan('medium-screen') {
-                        max-width: 211px;
-                    }
-
-                    @include whenLargerThan('large-screen') {
-                        font-size: 50px;
-                        line-height: 0.88;
-                        letter-spacing: -1.4px;
-                    }
-
-                }
-
-                &__content{
-
-                    color: #433d4a;
-                    font-size: 19px;
-                    letter-spacing: -0.2px;
-                    line-height: 1.43;
-                    padding-left: 4px;
-
-                    .linebreak{
-                        display: block;
-                    }
-
-                    @include whenLargerThan('medium-screen') {
-                        max-width: 281px;
-                        font-size: 17px;
-                        line-height: 1.52;
-                        letter-spacing: -0.3px;
-                        padding-left: 5px;
-                    }
-
-                }
-
-                &--reimagined{
-                    background-image: linear-gradient(137deg, #eee0ff, #e2c9ff);
-                    @extend %alignWithoutContainer;
-                    // calc(50vw - 412px) !important
-                }
-
-                &--encryption{
-
-                    background-image: linear-gradient(136deg, #e9d9ff, #efcffa);
-
-                    @include whenLargerThan('medium-screen'){
-                        padding-left: 91px;
-                    }
-
-                    @include whenLargerThan('large-screen'){
-                        padding-left: 100px;
-                    }
-
-                    @include whenLargerThan('large-screen'){
-                        padding-left: 136px;
-                    }
-
-                }
-
-            }
-
-        }
-
-        &--cloud-plans{
-
-            background-image: linear-gradient(119deg, #fce0ff, #fddeff);
-            padding-bottom: 60px;
-            padding-top: 55px;
-
-            @include whenLargerThan('medium-screen') {
-                padding-top: 100px;
-                padding-bottom: 96px;
-            }
-
-            @include whenLargerThan('large-screen') {
-                padding-bottom: 122px;
-            }
-
-            & > .container{
-                padding-left: 24px;
-            }
-
-            .section__heading{
-
-                color: #513b61;
-                font-size: 60px;
-                font-weight: bold;
-                line-height: 0.85;
-                letter-spacing: -3.4px;
-                margin-bottom: 28px;
-
-                @include whenLargerThan('medium-screen') {
-                    max-width: 769.6px;
-                    font-size: 72px;
-                    line-height: 0.81;
-                    letter-spacing: -3.4px;
-                    padding-left: 67px;
-                }
-
-                @include whenLargerThan('large-screen') {
-                    font-size: 90px;
-                    letter-spacing: -4.2px;
-                    padding-left: 0;
-                    max-width: 800px;
-                }
-
-            }
-
-            .section__content{
-
-                font-size: 20px;
-                line-height: 1.34;
-                letter-spacing: -0.2px;
-                color: #433d4a;
-                max-width: 314.4px;
-
-                @include whenLargerThan('medium-screen') {
-                    font-size: 17px;
-                    line-height: 1.54;
-                    margin-top: 49px;
-                    padding-left: 67px;
-                    max-width: 380px;
-                    letter-spacing: -0.4px;
-                }
-
-                @include whenLargerThan('large-screen') {
-                    font-size: 22px;
-                    line-height: 1.47;
-                    padding-left: 0px;
-                    max-width: 386px;
-                    margin-top: 70px;
-                }
-
-            }
-
-        }
-
-        &--cloud-features{
-
-            background-image: linear-gradient(138deg, #ffe8ee, #ffdbe8);
-            padding-bottom: 103px;
-            padding-top: 60px;
-
-            @include whenLargerThan('medium-screen') {
-                padding-top: 103px;
-            }
-
-            @include whenLargerThan('medium-screen') {
-                padding-top: 128px;
-                padding-bottom: 206px;
-            }
-
-            & > .container{
-
-                @include whenLargerThan('large-screen') {
-                    max-width: 1440px;
-                }
-
-            }
-
-            .section__heading{
-
-                color: #613B4B;
-                font-size: 60px;
-                font-weight: bold;
-                letter-spacing: -3.4px;
-                line-height: 0.85;
-                margin-bottom: 36px;
-                padding-left: 10px;
-
-                @include whenLargerThan('medium-screen') {
-                    font-size: 72px;
-                    line-height: 0.81;
-                    margin-bottom: 16px;
-                    max-width: 865px;
-                    padding-left: 77px;
-                    letter-spacing: -3.3px;
-                }
-
-                @include whenLargerThan('large-screen') {
-                    font-size: 90px;
-                    letter-spacing: -4.2px;
-                    max-width: 1120px;
+                    font-size: 58px;
+                    letter-spacing: -2.6px;
+                    line-height: 1;
+                    margin-left: 166px;
+                    max-width: 760px;
                 }
 
             }
 
             .featurePreviewContainer{
 
-                background-image: url('/img/mockups/xcloud-laptop-blank-1080.png');
-                display: none;
+                margin-top: 80px;
 
-                @include whenLargerThan('medium-screen'){
-                    display: block;
-                    margin-top: 53px;
-                    margin-bottom: 28px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    margin-left: auto;
-                    margin-right: auto;
-                    height: 565px;
-                    width: 960px;
+                @include whenLargerThan('small-screen'){
+                    width: 318px;
+                    margin: 80px auto 0;
                 }
 
                 @include whenLargerThan('large-screen') {
-                    height: 709px;
-                    width: 1260px;
-                    background-image: url('/img/mockups/xcloud-laptop-blank-1440.png');
-                    background-position-x: center;
-                    margin-top: 70px;
-                    margin-bottom: 37px;
+                    background-image: url("/img/mockups/xcore/macbook.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 555px;
+                    margin: 124px auto 57px;
+                    position: relative; // .featurePreview is abs
+                    width: 947px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    height: 766px;
+                    margin: 124px auto 42px;
+                    width: 1307px;
                 }
 
                 .featurePreview{
 
-                    height: 459px;
+                    background-size: contain;
+                    height: 199px;
                     top: 42px;
-                    width: 733px;
-
-                    @include whenLargerThan('medium-screen') {
-                        height: 459px;
-                        top: 42px;
-                        width: 733px;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        position: relative;
-                        margin: 0 auto;
-                    }
+                    width: 318px;
 
                     @include whenLargerThan('large-screen') {
-                        height: 574px;
-                        top: 48px;
-                        width: 873px;
+                        background-image: url("/img/mockups/xcore/dashboard.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        height: 465px;
+                        left: 105px;
+                        position: absolute;
+                        top: 27px;
+                        width: 740px;
                     }
 
+                    @include whenLargerThan('xl-screen') {
+                        height: 633px;
+                        left: 150px;
+                        top: 43px;
+                        width: 1009px;
+                    }
 
                     &--dashboard{
                         background-image: url('/img/mockups/xcloud/dashboard.png');
-                    }
-
-                    &--file-sharing{
-                        background-image: url('/img/mockups/xcloud/file-sharing.png');
                     }
 
                     &--folders{
@@ -598,16 +576,38 @@
 
             .nav-tabs {
 
-                @include whenLargerThan('large-screen') {
-                    max-width: 432px;
+                border-bottom: none;
+                margin-top: 52px;
+
+                @include whenLargerThan('small-screen') {
+                    margin: 0 auto;
+                    max-width: 255px;
                 }
 
-                .nav-link{
+                .nav-item {
+                }
 
+                .nav-link {
+
+                    background-color: transparent;
+                    border: none;
+                    color: #9ebff6;
+                    font-size: 20px;
+                    font-weight: 700;
+                    letter-spacing: -0.2px;
                     padding-bottom: 13px;
+                    transition: border-color $transition-default, color $transition-default;
 
-                    @include whenLargerThan('large-screen') {
-                        font-size: 22px;
+                    &:hover {
+                        border-color: transparent;
+                        color: #4385f4;
+                    }
+
+                    &.active {
+                        background: none;
+                        border: none;
+                        border-bottom: 2px solid #4385f4;
+                        color: #4385f4;
                     }
 
                 }
@@ -616,42 +616,322 @@
 
             .tab-content{
 
-                @include whenLargerThan('medium-screen') {
-                    max-width: 628px;
-                    margin-top: 28px;
-                    height: 130px;
-                }
+                margin-top: 46px;
 
                 @include whenLargerThan('large-screen') {
-                    max-width: 780px;
-                    margin-top: 38px;
+                    margin: 38px auto 0;
+                    max-width: 630px;
                 }
 
             }
 
             .tab-pane{
 
-                font-size: 22px;
-                font-weight: 500;
-                line-height: 1.28;
-                letter-spacing: -0.2px;
-                color: #433d4a;
+                color: #838387;
+                font-size: 20px;
+                letter-spacing: -0.4px;
+                line-height: 1.55;
+                font-weight: 450;
 
-                @include whenLargerThan('medium-screen'){
-                    color: #7f4a6c;
-                    text-align: center;
-                    font-size: 19px;
-                    font-weight: 500;
-                    line-height: 1.39;
-                    letter-spacing: -0.4px;
+                em {
+                    color: black;
+                    font-style: normal;
+                    font-weight: 600;
                 }
 
                 @include whenLargerThan('large-screen'){
-                    font-size: 24px;
-                    letter-spacing: -0.7px;
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    text-align: center;
                 }
 
             }
+
+        }
+
+        &--cloud-share {
+
+            padding-top: 86px;
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 131px;
+            }
+
+            .section__iconContainer {
+
+                background-image: linear-gradient(132deg, #0099f0, #5688f5);
+                border-radius: 50%;
+                box-shadow: 0 3px 5px 0 #ebebf7;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 55px;
+
+                @include whenLargerThan('large-screen') {
+                    height: 48px;
+                    width: 48px;
+                }
+
+            }
+
+            .section__heading {
+
+                color: black;
+                font-size: 33px;
+                font-weight: bold;
+                letter-spacing: -0.6px;
+                line-height: 1.18;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 37px;
+                    letter-spacing: -1.1px;
+                    line-height: 1.14;
+                    margin-top: 43px;
+                }
+
+            }
+
+            .section__content {
+
+                color: #838387;
+                font-size: 20px;
+                letter-spacing: -0.1px;
+                line-height: 1.55;
+                font-weight: 450;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    max-width: 579px;
+                }
+
+            }
+
+            .section__image {
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 87px;
+                }
+
+            }
+
+        }
+
+        &--cloud-plans{
+
+            padding-top: 88px;
+
+            & > .container {
+
+                @include whenLargerThan('large-screen') {
+                    max-width: 1123px;
+                }
+
+            }
+
+            .section__heading {
+
+                font-size: 33px;
+                letter-spacing: -0.6px;
+                line-height: 1.18;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    font-weight: bold;
+                    letter-spacing: -0.9px;
+                    line-height: 0.98;
+                    margin-top: 10px;
+                    max-width: 400px;
+                }
+
+            }
+
+            .section__subheading {
+
+                margin-bottom: 0;
+                margin-top: 20px;
+
+                @include whenLargerThan('large-screen') {
+                    color: #838387;
+                    font-size: 20px;
+                    letter-spacing: 0.03px;
+                    line-height: 1.55;
+                    max-width: 630px;
+                }
+
+            }
+
+            .section__content {
+
+                margin-top: 80px;
+
+                $section__image__height: 700px;
+
+                @include whenLargerThan('large-screen') {
+                    min-height: $section__image__height;
+                    margin-bottom: 204px;
+                }
+
+                .section__image {
+
+                    height:  $section__image__height;
+                    position: absolute;
+                    right: 47%;
+                    width: 1128px;
+
+                    @include whenLargerThan('large-screen') {
+                        right: 51.5%;
+                    }
+
+
+                    @include whenLargerThan('xl-screen') {
+                        right: 47%;
+                    }
+
+                }
+
+                .section__plansContainer{
+
+                    @include whenLargerThan('large-screen') {
+                        margin-left: 51%;
+                        margin-top: 92px;
+                        width: 458px;
+                    }
+
+                }
+
+            }
+
+
+            .subsection {
+
+                &--pricing {
+
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 4px;
+                        margin-bottom: 71px;
+                    }
+
+                    .subsection__label {
+                        color: #538ef4;
+                        font-size: 14px;
+                        font-weight: 800;
+                        letter-spacing: 0.8px;
+                        text-transform: uppercase;
+                    }
+
+                    .subsection__heading {
+
+                        color: black;
+                        font-size: 40px;
+                        font-weight: bold;
+                        letter-spacing: -1.1px;
+                        line-height: 0.98;
+
+                        @include whenLargerThan('large-screen') {
+                            margin-bottom: 12px;
+                        }
+
+                    }
+
+                    .subsection__subheading {
+                        color: black;
+                        font-size: 23px;
+                        letter-spacing: -0.4px;
+                        line-height: 1.3;
+                    }
+
+                }
+
+            }
+
+            .plan {
+
+                margin-bottom: 11.4px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-bottom: 14px;
+                }
+
+                &__quantityContainer {
+
+                    padding: 0;
+                    flex: 0;
+
+                    @include whenLargerThan('large-screen') {
+                        flex: 0 0 127px;
+                    }
+
+                }
+
+                &__quantity {
+                    background-clip: content-box, border-box;
+                    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(87deg, #096dff, #00b1ff);
+                    background-origin: border-box;
+                    border-radius: 29.8px;
+                    border: solid 1px transparent;
+                    color: black;
+                    font-size: 21.6px;
+                    font-weight: bold;
+                    height: 58px;
+                    letter-spacing: -0.5px;
+                    line-height: 2.7;
+                    padding: 0px;
+                    width: 114px
+                }
+
+                &__price {
+
+                    color: black;
+                    font-size: 20.7px;
+                    font-weight: 500;
+                    height: 26px;
+                    letter-spacing: -0.3px;
+                    line-height: 1.25;
+                    position: relative;
+
+                    // Add an underline to price
+                    &::before {
+                        background-color: #dad9d9;
+                        bottom: -19px;
+                        content: "";
+                        display: block;
+                        height: 1px;
+                        left: 4px;
+                        position: absolute;
+                        width: 50px;
+                    }
+
+                }
+
+                &:first-of-type {
+
+                    .plan__price{
+                        top: -4px;
+                    }
+
+                }
+
+                &:nth-of-type(n+3) .plan__price {
+
+                    // Append " / month" to plans other than first one
+                    &::after {
+                        content: " / month";
+                        letter-spacing: -0.3px;
+                        color: #838387;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        &--cloud-features{
 
         }
 
@@ -660,10 +940,6 @@
             background-image: linear-gradient(122deg, #ffe6ec, #fce6ec);
             @extend %alignWithoutContainer;
             padding: 60px 24px 45px;
-
-            @include whenLargerThan('medium-screen') {
-                padding-bottom: 156px;
-            }
 
             @include whenLargerThan('large-screen') {
                 padding-top: 80px;
@@ -678,10 +954,6 @@
                 line-height: 0.88;
                 max-width: 272.8px;
                 margin-bottom: 10px;
-
-                @include whenLargerThan('medium-screen') {
-                    padding-left: 19px;
-                }
 
                 @include whenLargerThan('large-screen') {
                     max-width: 341px;
@@ -704,13 +976,6 @@
                     position: absolute;
                     z-index: 5; // Keep over the top of the iPad image below
                     max-width: 336px;
-                }
-
-                @include whenLargerThan('medium-screen') {
-                    padding-left: 19px;
-                    font-size: 17px;
-                    line-height: 1.51;
-                    max-width: 312px;
                 }
 
                 @include whenLargerThan('large-screen') {
@@ -748,11 +1013,6 @@
             padding-bottom: 57px;
             text-align: center;
 
-            @include whenLargerThan('medium-screen') {
-                padding-top: 60px;
-                padding-bottom: 122px;
-            }
-
             @include whenLargerThan('large-screen') {
                 padding-top: 81px;
                 padding-bottom: 80px;
@@ -781,13 +1041,6 @@
                     cursor: normal;
                 }
 
-                @include whenLargerThan('medium-screen') {
-                    font-size: 16px;
-                    height: 45px;
-                    padding: 12px 15.5px;
-                    width: 159px;
-                }
-
                 @include whenLargerThan('large-screen') {
                     height: 55px;
                     padding: 14px 15.5px;
@@ -802,14 +1055,6 @@
                 margin-top: 36px;
                 max-width: 259px;
 
-                @include whenLargerThan('medium-screen') {
-                    display: block;
-                    margin: 38px auto 0;
-                    position: relative;
-                    left: 21px;
-                    max-width: 296px
-                }
-
                 @include whenLargerThan('large-screen') {
                     margin: 47px auto 0;
                     position: relative;
@@ -821,43 +1066,229 @@
 
         }
 
-        &--cloud-more-info{
+        &--cloud-more-info {
+
+            .container {
+               padding-right: 23px;
+            }
+
+            .section__heading {
+
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: -1.8px;
+                line-height: 1.03;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 58px;
+                    letter-spacing: -2.6px;
+                    line-height: 1;
+                    max-width: 800px;
+                }
+
+                .linebreak {
+
+                    display: block;
+
+                    @include whenLargerThan('large-screen') {
+                        display: none;
+                    }
+
+                }
+            }
+
+            .section__image {
+
+                margin: 60px 0 48px;
+                max-width: 295px;
+                position: relative;
+
+                @include whenLargerThan('small-screen') {
+                    display: block;
+                    margin: 60px auto 48px;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    margin: 110px 0 48px;
+                }
+
+                &--ipad {
+
+                    @include whenLargerThan('large-screen') {
+                        max-width: 600px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                        left: -53px;
+                        max-width: 687px;
+                    }
+
+                }
+
+                &--iphone {
+
+                    @include whenLargerThan('large-screen') {
+                        left: -88px;
+                        max-width: 249px;   
+                        top: 11px;
+                    }
+
+                    @include whenLargerThan('xl-screen') {
+                        left: -64px;
+                        max-width: 286px;
+                        top: 11px;
+                    }
+
+                }
+
+            }
+
+            .section__subheading {
+
+                color: black;
+                font-size: 33px;
+                font-weight: bold;
+                letter-spacing: -0.6px;
+                line-height: 1.18;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    left: -66px;
+                    position: relative;
+                    top: -25px;
+                    letter-spacing: -0.9px;
+                    line-height: 0.98;
+                    width: 365px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    left: -31px;
+                }
+
+            }
+
+            .section__content {
+
+                color: #838387;
+                font-size: 20px;
+                letter-spacing: -0.1px;
+                line-height: 1.55;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                @include whenLargerThan('large-screen') {
+                    left: -66px;
+                    position: relative;
+                    top: -19px;
+                    width: 365px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    left: -30px;
+                }
+
+            }
+
+            .section__cta {
+
+                background-color: #f2f2f2;
+                border-radius: 24px;
+                color: #808080;
+                display: block;
+                font-size: 15px;
+                font-weight: 700;
+                height: 47px;
+                letter-spacing: -0.2px;
+                line-height: 1.79;
+                margin-top: 50px;
+                padding: 10px 25px;
+                text-transform: uppercase;
+                width: 213px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 31px;
+                    left: -67px;
+                    position: relative;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    left: -30px;
+                }
+
+            }
+
+        }
+
+        &--beta-cloud {
+
+
+            .section__cta {
+
+                background-position: 183px center;
+                border: none;
+                line-height: 1;
+                margin-top: 0;
+                outline: none;
+
+                // Override strange hover behaviour
+                &:hover {
+                    opacity: 1;
+                }
+
+            }
+
+            .container {
+                max-width: 368px;
+            }
 
             @include whenLargerThan('large-screen') {
-                margin-bottom: 45px;
+
+                .container {
+                    left: -3px;
+                    max-width: 919px;
+                    position: relative;
+                }
+
+                .section__outline {
+                    padding: 41px 44px 38px 48px;
+                }
+
+                .section__icon {
+                    left: 3px;
+                    position: relative;
+                    top: -4px;
+                }
+
+                .section__heading {
+                    left: -13px;
+                    letter-spacing: -0.3px;
+                    position: relative;
+                }
+
+                .section__cta {
+                    background-size: 23px;
+                    margin-left: 1px;
+                    padding-top: 15px;
+                }
+
             }
 
         }
 
     }
 
-    .planContainer{
-
-        margin-top: 60px;
-
-        @include whenLargerThan('medium-screen') {
-            margin-top: 48px;
-        }
-
-        @include whenLargerThan('large-screen') {
-            margin-top: 70px;
-        }
-
-    }
-
-    .plan{
+    .plan {
 
         margin-bottom: 15px;
 
-        @include whenLargerThan('medium-screen') {
-            margin-bottom: 12px;
-        }
-
         @include whenLargerThan('large-screen') {
             margin-bottom: 16px;
+            margin-left: 4px;
         }
 
-        &__quantity{
+        &__quantity {
 
             background-color: #e591ed;
             border-radius: 8.8px;
@@ -870,18 +1301,10 @@
             text-align: center;
             width: 130.2px;
 
-            @include whenLargerThan('medium-screen') {
-                font-size: 25px;
-                width: 119px;
-                margin-left: 23px;
-                padding-top: 12px;
-                padding-bottom: 9px;
-            }
-
             @include whenLargerThan('large-screen') {
                 font-size: 31px;
                 width: 148px;
-                margin-left: 32px;
+                // margin-left: 32px;
                 padding-top: 16px;
                 padding-bottom: 12px;
             }
@@ -894,17 +1317,9 @@
             font-size: 20px;
             font-weight: 500;
             letter-spacing: -0.1px;
-            padding-top: 16px;
-            padding-left: 42px;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 18px;
-                padding-left: 7px;
-                padding-top: 18px;
-            }
+            padding-top: 12px;
 
             @include whenLargerThan('large-screen') {
-                padding-left: 43px;
                 font-size: 22px;
             }
 
