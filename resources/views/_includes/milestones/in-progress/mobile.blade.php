@@ -1,7 +1,7 @@
 
 @component('_includes.milestone')
-	@slot('date', 'Q4 2018')
-	@slot('title', 'Final Versions')
+	@slot('date', 'Q1 2019')
+	@slot('title', 'Stable Versions')
 	@slot('content')
 		After optimizing the functionality of the UI and UX of X Cloud and X Core and finalizing the development, their commercial versions will be released.
 	@endslot
