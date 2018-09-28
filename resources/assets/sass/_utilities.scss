@@ -22,3 +22,14 @@
 		height: $footer-height;
 	}
 }
+
+
+@mixin transparencyOnHover($amount: 0.9) {
+
+	transition: opacity $transition-default;
+
+	&:hover {
+		opacity: $amount;
+	}
+
+}

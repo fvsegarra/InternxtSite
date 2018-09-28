@@ -106,11 +106,15 @@
             height: 180px;
             margin-top: 22px;
             padding: 34px 23px;
-            transition: height $transition-default;
+            transition: box-shadow $transition-default, height $transition-default;
 
             @include whenLargerThan('large-screen') {
                 padding: 49px 35px;
                 height: 161px;
+            }
+
+            &:hover {
+                box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.06);
             }
 
             .subsection__label {

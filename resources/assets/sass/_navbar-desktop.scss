@@ -141,6 +141,8 @@
 				    background-repeat: no-repeat;
 		  			background-image: url("/img/icons/chevron-right-circle.svg");
 
+		  			@include transparencyOnHover();
+
 					&:hover{
 						// Override others on hover
 						background-color: #4585f5;
@@ -497,6 +499,7 @@
     			color: white;
 
                 &--xcloud {
+
 					background-color: transparent;
 					background-position: 159px 9px;
 					border: solid 1px white;
@@ -504,6 +507,17 @@
 					padding-left: 16px;
 					padding-right: 40px;
 					padding-top: 9px;
+					transition: background-color $transition-default, color $transition-default;
+
+					&:hover {
+						background-color: white;
+						background-image: url("/img/icons/chevron-right-xcloud-hover.svg");
+						background-position: 160px 9px;
+						background-size: 22px 22px;
+						color: black !important;
+						opacity: 1;
+					}
+
                 }
 
             }

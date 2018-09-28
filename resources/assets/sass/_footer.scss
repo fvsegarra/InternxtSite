@@ -95,6 +95,8 @@
 				line-height: 2;
 			}
 
+			@include transparencyOnHover(0.8);
+
 		}
 
 	}
@@ -126,7 +128,11 @@
 		}
 
 		&--social {
+
 			padding: 0 12px;
+
+			@include transparencyOnHover(0.8);
+
 		}
 
 		@include whenLargerThan('large-screen') {

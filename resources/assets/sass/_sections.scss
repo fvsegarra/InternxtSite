@@ -35,10 +35,15 @@
         line-height: 1.53;
         margin-top: 42px;
         padding-top: 14px;
-        
-        &:focus {
+
+        &:active,
+        &:focus,
+        &:hover {
             box-shadow: none;
+            outline: none;
         }
+
+        @include transparencyOnHover();
 
     }
 
@@ -452,16 +457,13 @@
 
             background-color: #ffffff;
             border-radius: 30.5px;
-            border: none;
+            border: 1px solid rgba(black, 0);
             box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.06);
             outline: none;
             padding: 18px 36px 16px 34px;
             width: 100%;
             -webkit-appearance: none;
-
-            @include whenLargerThan('large-screen') {
-                border: none;
-            }
+            transition: border-color $transition-default;
 
             &::placeholder {
                 color: #838387;
@@ -472,6 +474,10 @@
                 position: relative;
             }
 
+            &:focus {
+                border: 1px solid black;
+            }
+
         }
 
         &__btn {
@@ -480,6 +486,7 @@
             border-radius: 30.5px;
             border: none;
             color: white;
+            cursor: pointer;
             font-size: 17px;
             font-weight: 600;
             margin-top: 23px;
@@ -488,6 +495,14 @@
             @include whenLargerThan('large-screen') {
                 margin-top: 0;
                 margin-left: 7px;
+            }
+
+            @include transparencyOnHover();
+
+            &:active,
+            &:focus {
+                border: none;
+                outline: none;
             }
 
         }

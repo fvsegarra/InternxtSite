@@ -383,6 +383,8 @@
                 max-width: 226px;
             }
 
+            @include transparencyOnHover(0.8);
+
         }
 
         &__name {
@@ -470,26 +472,7 @@
             display: inline-block;
             position: relative;
 
-            &::after {
-                background: rgba(0, 0, 0, 0.12);
-                border-radius: 6px;
-                content: '';
-                height: 100%;
-                left: 5px;
-                opacity: 0;
-                position: absolute;
-                top: 0;
-                transition: opacity $transition-default;
-                width: 100%;
-            }
-
-            &:hover {
-
-                &::after {
-                    opacity: 1;
-                }
-
-            }
+            @include transparencyOnHover();
 
         }
 
@@ -571,6 +554,10 @@
         }
 
         &--blackberry {
+
+            .teamPartner__link {
+                @include transparencyOnHover(0.95);
+            }
 
             .teamPartner__image {
                 background-color: #1f2526;

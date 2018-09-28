@@ -105,6 +105,8 @@
                 padding: 13px 62px 13px 26px;
             }
 
+            @include transparencyOnHover();
+
         }
 
 
@@ -467,6 +469,8 @@
                 @include whenLargerThan('large-screen') {
                     width: auto;
                 }
+
+                @include transparencyOnHover();
 
                 &--coin-exchange {
 
