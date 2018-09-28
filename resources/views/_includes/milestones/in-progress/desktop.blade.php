@@ -4,7 +4,7 @@
 
 		@component('_includes.milestone')
 			@slot('date', 'Q4 2018')
-			@slot('title', 'Final Versions')
+			@slot('title', 'Stable Versions')
 			@slot('content')
 				After optimizing the functionality of the UI and UX of X Cloud and X Core and finalizing the development, their commercial versions will be released.
 			@endslot
@@ -17,9 +17,9 @@
 				After the public release of X Cloud and X Core, we will then proceed with the development of our next service.
 			@endslot
 		@endcomponent
-		
+
 	</div>{{-- /.col-lg-4 --}}
-	
+
 	<div class="col-lg-4">
 
 		@component('_includes.milestone')

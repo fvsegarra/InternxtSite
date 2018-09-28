@@ -14,7 +14,7 @@
 			@slot('date', 'Q1 2018')
 			@slot('title', 'Alpha Version')
 			@slot('content')
-				X Cloud's and X Core’s Alpha version were released which included the core infrastructure of their code and installable prototypes.
+				X Cloud's and X Core’s Alpha versions were released which included the core infrastructure of their code and installable prototypes.
 			@endslot
 		@endcomponent
 
