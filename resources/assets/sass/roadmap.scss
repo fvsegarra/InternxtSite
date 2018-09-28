@@ -1,184 +1,187 @@
-#page-timeline{
+#page-roadmap{
 
-    .section{
+    .container > hr {
+        background-color: #d8d8d8;
+        border: none;
+        height: 1px;
+        margin-bottom: 100px;
+        margin-top: 170px;
+    }
 
-        &--timeline{
+    .section {
 
-            padding-top: 50px;
+        &--milestones {
 
-            @include whenLargerThan('large-screen') {
-                padding-top: 67px;
+            & > .container {
+
+                margin-top: 112px;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 0;
+                    max-width: 1324px;
+                }
+
             }
 
+            .section__heading {
 
-            .section__heading{
+                font-size: 44px;
+                font-weight: 600;
+                letter-spacing: -0.8px;
+                line-height: 0.93;
 
-                font-size: 46px;
+                @include whenLargerThan('large-screen') {
+                    font-size: 35px;
+                    font-weight: bold;
+                    letter-spacing: -1px;
+                    line-height: 1.66;
+                    margin-top: 0px;
+                    margin-bottom: 40px;
+                }
+
+            }
+
+            .section__content {
+
+                padding-top: 52px;
+
+                @include whenLargerThan('large-screen') {
+                    padding-left: 4px;
+                    padding-right: 7px;
+                    padding-top: 31px;
+                }
+
+            }
+
+            .col-lg-4 {
+
+                @include whenLargerThan('large-screen') {
+                    padding-left: 11px;
+                    padding-right: 11px;
+                }
+
+            }
+
+            &--published {
+
+                @include whenLargerThan('large-screen') {
+                    padding-top: 142px;
+                }
+
+                .subsection--milestone .subsection__label {
+                    color: #0094ff;
+                }
+
+            }
+
+            &--in-progress {
+
+                .section__heading {
+
+                    margin-top: 133px;
+
+                    @include whenLargerThan('large-screen') {
+                        margin-top: 0;
+                    }
+
+                }
+
+                .subsection--milestone .subsection__label {
+                    color: #f72d2d;
+                }
+
+            }
+
+        }
+
+    }
+
+    .subsection {
+
+        &--milestone {
+
+            border-radius: 4px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            height: 180px;
+            margin-top: 22px;
+            padding: 34px 23px;
+            transition: box-shadow $transition-default, height $transition-default;
+
+            @include whenLargerThan('large-screen') {
+                padding: 49px 35px;
+                height: 161px;
+            }
+
+            &:hover {
+                box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.06);
+            }
+
+            .subsection__label {
+
+                font-size: 15px;
                 font-weight: bold;
-                letter-spacing: -1.3px;
-                line-height: 0.96;
-                margin-bottom: 60px;
+                letter-spacing: 0.3px;
 
-                @include whenLargerThan('medium-screen') {
-                    font-size: 62px;
-                    line-height: 1.03;
-                    letter-spacing: -2.7px;
+                @include whenLargerThan('large-screen') {
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .subsection__heading {
+
+                font-size: 28px;
+                font-weight: 600;
+                letter-spacing: -0.8px;
+                line-height: 2.1;
+                margin-bottom: 0;
+
+                @include whenLargerThan('large-screen') {
+                    line-height: 1;
+                    margin-top: 21px;
+                }
+
+            }
+
+            .subsection__content {
+                color: #838387;
+                font-size: 17px;
+                letter-spacing: -0.1px;
+                line-height: 1.65;
+                opacity: 0;
+                transition: opacity $transition-default 0s;
+
+                @include whenLargerThan('large-screen') {
+                    margin-top: 30px;
+                }
+
+            }
+
+            &--active {
+
+                height: 287px;
+
+                @include whenLargerThan('small-screen') {
+                    height: 220px;
                 }
 
                 @include whenLargerThan('large-screen') {
-                    font-size: 85px;
-                    letter-spacing: -3.8px;
-                    margin-bottom: 80px;
+                    height: 315px;
+                }
+
+                @include whenLargerThan('xl-screen') {
+                    height: 287px;
+                }
+
+                .subsection__content {
+                    opacity: 1;
+                    transition: opacity $transition-default .25s;
                 }
 
             }
 
-            .section__content{
-                padding-bottom: 72px;
-            }
-
-        }
-
-        .container{
-
-            padding-left: 24px;
-            padding-right: 24px;
-
-            @include whenLargerThan('medium-screen') {
-                width: 788px !important;
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-            @include whenLargerThan('large-screen') {
-                width: 990px !important;
-            }
-
         }
 
     }
-
-    .subsection{
-
-        &__label{
-            font-size: 24px;
-            font-weight: 500;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.84;
-            letter-spacing: -0.7px;
-            padding-top: 3px;
-            margin-bottom: 6px;
-
-            @include whenLargerThan('medium-screen') {
-                margin-bottom: 0;
-            }
-
-            @include whenLargerThan('large-screen') {
-                font-size: 26px;
-                line-height: 1.88;
-                letter-spacing: -0.1px;
-            }
-
-        }
-
-        &__heading{
-
-            font-size: 36px;
-            font-weight: bold;
-            line-height: 1.06;
-            letter-spacing: -1px;
-
-            @include whenLargerThan('medium-screen') {
-                margin-bottom: 8px;
-            }
-
-            @include whenLargerThan('large-screen') {
-                font-size: 45px;
-                line-height: 1.09;
-                letter-spacing: -1.3px;
-            }
-
-        }
-
-        &__content{
-
-            font-size: 20px;
-            letter-spacing: -0.3px;
-            line-height: 1.35;
-
-            @include whenLargerThan('medium-screen') {
-                max-width: 308px;
-                font-size: 16px;
-                line-height: 1.55;
-                letter-spacing: -0.1px;
-            }
-
-            @include whenLargerThan('large-screen') {
-                font-size: 20px;
-                line-height: 1.55;
-                letter-spacing: -0.1px;
-                max-width: 390px;
-            }
-
-        }
-
-        &__status{
-
-            border-radius: 3.2px;
-            color: white;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.84;
-            max-width: 187px;
-            padding: 9px 0;
-            text-align: center;
-            margin-top: 15px;
-
-            @include whenLargerThan('medium-screen') {
-                margin-top: -7px;
-            }
-
-            @include whenLargerThan('large-screen') {
-                font-size: 18px;
-                line-height: 1.89;
-                max-width: 227px;
-                height: 52px;
-                margin-right: 8px;
-            }
-
-            &--upcoming{
-                background-color: #a1c2f9;
-            }
-
-            &--in-progress{
-                background-color: #4385f4;
-            }
-
-            &--published{
-                background-color: #1b1d1f;
-            }
-
-        }
-
-    }
-
-    hr{
-
-        max-width: 100%;
-        margin: 39px auto 65px;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
-        border: none;
-        height: 1px;
-
-        @include whenLargerThan('medium-screen') {
-            margin: 48px auto 44px;
-        }
-
-        @include whenLargerThan('medium-screen') {
-            margin: 63px auto 55px;
-        }
-
-    }
-
 }

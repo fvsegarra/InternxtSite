@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 
-@section('pageID', 'timeline')
+@section('pageID', 'roadmap')
 
 @section('navbar-classes', 'navbar-light navbar-roadmap')
 
@@ -10,107 +10,55 @@
 
 @section('body')
 
-	<section class="section section--timeline">
+	<section class="section section--milestones section--milestones--published">
 		<div class="container">
-			<p class="section__heading">Development Timeline.</p>
-		</div>
+			<p class="section__heading">Milestones Published</p>
 			<div class="section__content">
 
-				@component('_includes.milestone')
-					@slot('date', 'Q3 2017')
-					@slot('title', 'Crowdsale.')
-					@slot('statusClass', 'published')
-					@slot('statusText', 'Milestone Published')
-					@slot('content')
-						Internxt’s ICO started on September 7th and finished on September 28th and a total of 629,610 INXT were distributed and the unsold tokens were burned.
-					@endslot
-				@endcomponent
 
-				<hr>
+				<div class="d-lg-none">
 
-				@component('_includes.milestone')
-					@slot('date', 'Q4 2017')
-					@slot('title', 'Branding.')
-					@slot('statusClass', 'published')
-					@slot('statusText', 'Milestone Published')
-					@slot('content')
-						An updated digital identity and website were released along with the first versions of X Cloud’s and X Core’s designs and interfaces.
-					@endslot
-				@endcomponent
+					@include('_includes.milestones.completed.mobile')
 
-				<hr>
+				</div>
 
-				@component('_includes.milestone')
-					@slot('date', 'Q1 2018')
-					@slot('title', 'Alpha versions.')
-					@slot('statusClass', 'published')
-					@slot('statusText', 'Milestone Published')
-					@slot('content')
-						X Cloud's and X Core’s Alpha version were released which included the core infrastructure of their code and installable prototypes.
-					@endslot
-				@endcomponent
+				<div class="d-none d-lg-block">
+					
+					@include('_includes.milestones.completed.desktop')
 
-				<hr>
-
-				@component('_includes.milestone')
-					@slot('date', 'Q3 2018')
-					@slot('title', 'Beta versions.')
-					@slot('statusClass', 'in-progress')
-					@slot('statusText', 'Milestone In Progress')
-					@slot('content')
-						This release will include all the code that will allow X Cloud and X Core to function, as well as a basic Windows, Linux and MacOS client.
-					@endslot
-				@endcomponent
-
-				<hr>
-
-				@component('_includes.milestone')
-					@slot('date', 'Q4 2018')
-					@slot('title', 'Commercial release.')
-					@slot('statusClass', 'upcoming')
-					@slot('statusText', 'Milestone Not Started')
-					@slot('content')
-						After optimizing the functionality of the UI and UX of X Cloud and X Core and finalizing the development, their commercial versions will be released.
-					@endslot
-				@endcomponent
-
-				<hr>
-
-				@component('_includes.milestone')
-					@slot('date', 'Q1 2019')
-					@slot('title', 'Mobile version.')
-					@slot('statusClass', 'upcoming')
-					@slot('statusText', 'Milestone Not Started')
-					@slot('content')
-						After the commercial release, the X Cloud app will become available for iOS and Android mobile devices.
-					@endslot
-				@endcomponent
-
-				<hr>
-
-				@component('_includes.milestone')
-					@slot('date', 'Q2 2019')
-					@slot('title', 'CorePro')
-					@slot('statusClass', 'in-progress')
-					@slot('statusText', 'Milestone In Progress')
-					@slot('content')
-						A highly optimized, easy-to-use storage server which enables hosts to maximize their profits as an X Core Host.
-					@endslot
-				@endcomponent
-
-				<hr>
-
-				@component('_includes.milestone')
-					@slot('date', 'Q2 2019')
-					@slot('title', 'Next service.')
-					@slot('statusClass', 'upcoming')
-					@slot('statusText', 'Milestone Not Started')
-					@slot('content')
-						After the public release of X Cloud and X Core, we will then proceed with the development of our next service.
-					@endslot
-				@endcomponent
+				</div>
 
 			</div>{{-- /.section__content --}}
+
+		</div>{{-- /.container --}}
 	</section>
+
+	<div class="container d-none d-lg-block">
+		<hr>
+	</div>{{-- /.container --}}
+
+	<section class="section section--milestones section--milestones--in-progress">
+		<div class="container">
+			<p class="section__heading">Milestones In Progress</p>
+			<div class="section__content">
+
+
+				<div class="d-lg-none">
+
+					@include('_includes.milestones.in-progress.mobile')
+
+				</div>
+
+				<div class="d-none d-lg-block">
+					
+					@include('_includes.milestones.in-progress.desktop')
+
+				</div>
+
+			</div>{{-- /.section__content --}}
+		</div>{{-- /.container --}}
+	</section>
+
+	@include('_includes.sections.subscribe')
 
 @endsection

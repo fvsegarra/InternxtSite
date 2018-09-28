@@ -1,242 +1,635 @@
-#page-token{
+#page-token {
 
-    .pageHeader,
-    .section{
+    .navbar {
 
-        & > .container{
-
-            padding-left: 24px;
-            padding-right: 24px;
-
-            @include whenLargerThan('medium-screen') {
-                padding-left: 72px;
-                padding-right: 72px;
-            }
-
+        // Override navbar dropdown active classes,
+        // replacing black text and dark background
+        .nav-item.dropdown.show .dropdown-toggle {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.06);
         }
 
     }
 
-    .pageHeader{
+    .pageHeader {
 
-        padding-top: 51px;
+        $offset: 74px;
 
+        align-items: center;
+        background-image: url('/img/headers/token_mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        display: flex;
+        height: calc(100vh + #{$offset});
+        margin-bottom: -$offset;
+        padding-top: $offset;
+        position: relative;
+        top: -$offset;
+        z-index: 1;
 
-        &__heading{
-
-            font-size: 45px;
-            font-weight: bold;
-            line-height: 0.94;
-            letter-spacing: -1.1px;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 85px;
-                font-weight: bold;
-                line-height: 0.94;
-                letter-spacing: -3.8px;
-            }
-
-            .linebreak{
-
-                display: block;
-
-                @include whenLargerThan('medium-screen') {
-                    display: none;
-                }
-
-            }
-
+        @include whenLargerThan('large-screen') {
+            background-image: url('/img/headers/token_desktop.png');
+            padding-top: ($offset * 2);
         }
 
-        &__subheading{
+        & > .container {
 
-            font-size: 19px;
-            line-height: 1.56;
-            letter-spacing: -0.4px;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 25px;
-                line-height: 1.56;
-                letter-spacing: -0.4px;
-            }
-        }
-
-    }
-
-    .inxtDatum {
-
-        margin-bottom: 20px;
-        max-width: 242px;
-
-        @include whenLargerThan('medium-screen') {
-            margin-bottom: 34px;
-            max-width: none;
-        }
-
-        &__label{
-
-            color: #666666;
-            font-size: 13px;
-            margin: 0;
-
-            @include whenLargerThan('medium-screen') {
-                font-size: 16px;
-            }
-
-        }
-
-        &__point{
-
-            font-size: 63px;
-            letter-spacing: -3.9px;
-            margin: 0;
-            // Large font size causing silly top gap?
             position: relative;
-            top: -20px;
+            top: 10px;
 
-            @include whenLargerThan('medium-screen') {
-                font-size: 82px;
-            }
-
-            &--positive{
-                color: #15d157;
+            @include whenLargerThan('large-screen') {
+                max-width: 1123px;
+                top: 3px;
             }
 
         }
 
-        &__measure{
-            font-size: 49px;
+        &__heading {
+
+            font-size: 21px;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 2.48;
+            margin-bottom: 0;
+            text-transform: uppercase;
+
+            @include whenLargerThan('large-screen') {;
+                font-size: 26px;
+                line-height: 2.17;
+                opacity: 0.9;
+            }
+
         }
 
-        &__sign{
-            font-size: 62px;
+        &__subheading {
+
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.6px;
+            line-height: 1.19;
+            margin-top: 3px;
+
+            @include whenLargerThan('large-screen') {;;
+                position: relative;
+                font-size: 60px;
+                letter-spacing: -1.1px;
+                line-height: 0.98;
+                left: -5px;
+            }
+
         }
+
+        &__cta {
+
+            background-color: #000000;
+            background-image: url("/img/icons/chevron-right-circle.svg");
+            background-repeat: no-repeat;
+            background-position: 152px center;
+            border-radius: 31.4px;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+            color: white;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            margin: 41px auto 0;
+            padding: 12px 56px 10px 23px;
+            text-align: left;
+
+            @include whenLargerThan('large-screen') {
+                background-position: 167px center;
+                background-size: 27px 28px;
+                font-size: 20px;
+                margin-top: 64px;
+                padding: 13px 62px 13px 26px;
+            }
+
+            @include transparencyOnHover(0.8);
+
+        }
+
 
     }
 
-
-    .section{
-
-        margin: 0;
-        margin-bottom: 89px;
-
-        &__heading{
-
-            font-size: 38px;
-            font-weight: bold;
-            letter-spacing: -1.5px;
-            line-height: 0.87;
-            margin-bottom: 20px;
-
-            @include whenLargerThan('medium-screen') {
-                margin-bottom: 24px;
-                font-size: 60px;
-            }
-
-        }
-
-        &__content{
-
-            p{
-
-                font-size: 19px;
-                letter-spacing: -0.2px;
-                line-height: 1.45;
-
-                @include whenLargerThan('medium-screen') {
-                    font-size: 22px;
-                }
-
-                &:last-of-type{
-                    margin-bottom: 0
-                }
-
-            }
-
-        }
+    .section {
 
         &--inxt-data{
 
-            margin-top: 29px;
-            margin-bottom: 84px;
+            background-color: #fafafa;
+            padding: 32px 0 24px;
 
-            @include whenLargerThan('medium-screen') {
-                margin-top: 52px;
-                margin-bottom: 130px;
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 33px;
+                padding-top: 40px;
             }
 
-            .row:nth-child(1) .inxtDatum{
-                border-bottom: 2px solid black;
-            }
+            .inxtDatum {
 
+                text-align: center;
+
+                &__label{
+                    color: #666666;
+                    font-size: 15px;
+                    margin-bottom: 0;
+                }
+
+                &__point {
+
+                    font-size: 56.9px;
+                    font-weight: 600;
+                    letter-spacing: -2.7px;
+                    line-height: 1.3;
+                    margin-bottom: 0;
+
+                    &--positive{
+                        color: #15d157;
+                    }
+
+                }
+
+                &__measure {
+                    font-size: 38px;
+                }
+
+            }
         }
 
-        &--inxt-faciliting{
+        &--inxt-intro {
 
-            .section__content{
-                max-width: 786px;
+            padding-top: 45px;
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 108px;
             }
 
-        }
+            & > .container {
 
-        &--inxt-exchange{
+                @include whenLargerThan('large-screen') {
+                    max-width: 1182px;
+                }
 
-            .section__content{
-                max-width: 786px;
             }
 
-            .btn{
+            .section__heading {
 
-                border-radius: 3px;
-                height: 50px;
-                margin-right: 20px;
-                width: 203px;
-                margin-bottom: 42px;
-                padding-top: 12px;
+                color: black;
+                font-size: 33px;
+                font-weight: 600;
+                letter-spacing: -0.6px;
+                line-height: 1.18;
+                margin-bottom: 23px;
+                margin-top: 13px;
 
-                &:last-of-type{
-                    margin-right: 0;
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    letter-spacing: -1.1px;
+                    line-height: 0.98;
+                    margin-top: 0;
+                }
+
+            }
+
+            .section__content {
+
+                color: #838387;
+                font-size: 20px;
+                letter-spacing: -0.1px;
+                line-height: 1.55;
+                margin-top: 21px;
+                // margin-top: 26px;
+
+
+               .intro__content{
+
+                    font-weight: 450;
+
+                    @include whenLargerThan('large-screen') {
+                        padding-left: 4px;
+                    }
+
+                    p:nth-of-type(1) {
+
+                        margin-bottom: 31px;
+
+                        @include whenLargerThan('large-screen') {
+                            margin-bottom: 30px;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .col-lg-6 {
+
+                @include whenLargerThan('xl-screen') {
+                    max-width: 492px;
+                }
+
+                .section__heading {
+
+                    @include whenLargerThan('large-screen') {
+                        margin-bottom: 58px;
+                    }
+
+                    .linebreak {
+
+                        display: none;
+
+                        @include whenLargerThan('large-screen') {
+                            display: block;
+                        }
+                        
+                    }
+
+                }
+
+            }
+
+            .col-lg-5 {
+
+                @include whenLargerThan('xl-screen') {
+                    margin-left: 133px;
+                }
+
+            }
+
+            .subsection {
+
+                margin-top: 72px;
+                // margin-top: 36px;
+
+                p {
+                    margin-bottom: 0; // Override section__content p:nth-of-type
+                }
+
+                @include whenLargerThan('large-screen') {
+
+                    margin-top: 70px;
+
+                    .col-lg-2 {
+                        padding-left: 8px;
+                    }
+
+                    .col-lg-10 {
+                        padding-left: 6px;
+                    }
+
+                }
+
+                &__iconContainer {
+
+                    align-items: center;
+                    background-color: #4585f5;
+                    border-radius: 50%;
+                    display: flex;
+                    height: 57px;
+                    justify-content: center;
+                    width: 57px;
+
+                    @include whenLargerThan('large-screen') {
+                        height: 52px;
+                        margin-top: 10px;
+                        width: 52px;
+                    }
+
+                }
+
+                &__icon {
+                    height: 32px;
+                }
+
+                &__heading {
+
+                    color: black;
+                    font-size: 33px;
+                    font-weight: 600;
+                    letter-spacing: -0.6px;
+                    line-height: 1.18;
+                    margin-top: 21px;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 30px;
+                        letter-spacing: -0.2px;
+                        line-height: 1.27;
+                        margin-bottom: 0;
+                        margin-top: 0;
+                    }
+
+                }
+
+                &__content {
+
+                    font-size: 20px;
+                    letter-spacing: -0.1px;
+                    line-height: 1.55;
+                    margin-top: 25px;
+                    padding-left: 2px;
+
+                    @include whenLargerThan('large-screen') {
+                        font-size: 18px;
+                        letter-spacing: -0.12px;
+                        line-height: 1.65;
+                        margin-top: 10px;
+                        max-width: 318px;
+                    }
+
+                }
+
+                &--demand {
+
+                    margin-top: 102px;
+
+                    @include whenLargerThan('large-screen') {
+                        margin-top: 0;
+                    }
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            margin-top: 5px;
+                        }
+
+                    }
+
+                    .subsection__icon {
+
+                        @include whenLargerThan('large-screen') {
+                            height: 30px;
+                            position: relative;
+                        }
+
+                    }
+
+                }
+
+                &--growth {
+
+                    .subsection__content {
+
+                        @include whenLargerThan('large-screen') {
+                            margin-top: 7px;
+                        }
+
+                    }
+
+                    .subsection__icon {
+
+                        @include whenLargerThan('large-screen') {
+                            height: 27px;
+                        }
+
+                    }
+
                 }
 
             }
 
         }
 
-        &--inxt-buy{
+        &--inxt-exchanges {
 
-            padding-bottom: 125px;
+            background-color: #fafafa;
+            margin-top: 140px;
+            padding-top: 103px;
+            padding-bottom: 120px;
 
-            .section__content{
-                max-width: 786px;
+            @include whenLargerThan('large-screen') {
+                padding-bottom: 118px;
+                padding-top: 118px;
+                text-align: center;
             }
 
-            .btn{
-                border-radius: 11.2px;
-                border: solid 2px #d9d9d9;
-                height: 102px;
-                padding: 21px 0 19px;
-                width: 125px;
+            .section__heading {
+
+                font-size: 33px;
+                font-weight: 600;
+                letter-spacing: -0.6px;
+                line-height: 1.18;
+                margin-bottom: 0;
+                margin-top: 0;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    letter-spacing: -1.1px;
+                    line-height: 0.98;
+                    margin-bottom: 0;
+                }
+
             }
 
-            p.section__instruction{
-                font-size: 35px;
-                font-weight: bold;
-                letter-spacing: -0.7px;
-                margin-bottom: 35px;
-                margin-top: 47px;
+            .section__content {
+
+                color: #838387;
+                font-size: 20px;
+                letter-spacing: -0.1px;
+                line-height: 1.55;
+                margin-top: 20px;
+                padding-left: 2px;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    margin: 26px auto 0;
+                    max-width: 628px;
+                    text-align: center;
+                }
+
+            }
+
+            .section__footer {
+
+                padding-top: 17px;
+                padding-left: 7px;
+
+                @include whenLargerThan('large-screen') {
+                    margin: 94px auto 0;
+                    max-width: 992px;
+                    padding-top: 0;
+                    padding-left: 0;
+                }
+
+            }
+
+            .section__imageContainer {
+
+                background-color: #4585f5;
+                border-radius: 29.2px;
+                box-shadow: 0 2px 3px 0 #bfc5d9;
+                display: block;
+                height: 58.2px;
+                margin-top: 40.1px;
+                padding: 13px 24px 20px;
+                text-align: center;
+                width: 219.7px;
+
+                @include whenLargerThan('large-screen') {
+                    width: auto;
+                }
+
+                @include transparencyOnHover();
+
+                &--coin-exchange {
+
+                    padding-left: 20px;
+                    padding-right: 22px;
+                    padding-top: 17px;
+
+                    .section__image {
+                        height: 19px;
+                        left: 0px;
+                        position: relative;
+                        top: -3px;
+                    }
+
+                }
+
+                &--idex {
+
+                    padding-top: 16px;
+
+                    .section__image {
+                        height: 27px;
+                        position: relative;
+                        top: -1px;
+                    }
+
+                }
+
+                &--latoken {
+
+                    padding-top: 14px;
+
+                    .section__image {
+                        height: 30px;
+                    }
+
+                }
+
+                &--mercatox {
+
+                    padding-top: 16px;
+
+                    .section__image {
+                        height: 15px;
+                    }
+
+                }
+
+                @include whenLargerThan('large-screen') {
+                    margin: 0;
+                    // padding: 13px 24px 20px;
+                }
+
+            }
+
+            .section__image {
+
+                @include whenLargerThan('large-screen') {
+                    height: 24px;
+                }
+
             }
 
         }
 
-    }
+        &--inxt-buy {
 
-    hr{
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #000000 50%, rgba(255, 255, 255, 0));
-        border: none;
-        height: 1px;
-        margin-bottom: 93px;
-        margin-top: 74px;
-        max-width: 1440px;
+            padding-top: 82px;
+            // No padding bottom as subscribe section has margin top
+
+            @include whenLargerThan('large-screen') {
+                padding-top: 112px;
+                text-align: center;
+            }
+
+            & > .container {
+
+                @include whenLargerThan('large-screen') {
+                    margin: 0 auto;
+                    max-width: 711px;
+                }
+
+            }
+
+            .section__heading {
+
+                font-size: 33px;
+                font-weight: 600;
+                letter-spacing: -0.6px;
+                line-height: 1.18;
+                margin-bottom: 0;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 40px;
+                    letter-spacing: -1.1px;
+                }
+
+            }
+
+            .section__content {
+
+                color: #838387;
+                font-size: 20px;
+                letter-spacing: -0.1px;
+                line-height: 1.55;
+                margin-top: 24px;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.4px;
+                    line-height: 1.48;
+                    margin-top: 24px;
+                }
+
+            }
+
+            .section__instruction {
+
+                color: black;
+                font-size: 25px;
+                font-weight: 600;
+                letter-spacing: -0.5px;
+                line-height: 1.56;
+                margin-top: 84px;
+
+                @include whenLargerThan('large-screen') {
+                    font-size: 24px;
+                    letter-spacing: -0.1px;
+                    margin-top: 89px;
+                }
+
+            }
+
+            .paymentMethods {
+
+                display: none; // WIP
+                margin-top: 42px;
+
+                @include whenLargerThan('large-screen') {
+                    margin: 42px auto 0;
+                    max-width: 333px;
+                }
+
+            }
+
+            .btn-default {
+
+                background-color: #f2f4f7;
+                border-radius: 9.1px;
+                padding: 12px 18px;
+
+                img {
+                    height: 52px;
+                }
+
+            }
+
+        }
+
     }
 
     // Apologies for the code ahead, but I can't alter the HTML
@@ -254,16 +647,6 @@
 
             &:nth-of-type(1){
                 margin-bottom: 20px;
-            }
-
-            &:nth-of-type(2),
-            &:nth-of-type(4){
-
-                @include whenLargerThan('medium-screen') {
-                    float: left;
-                    width: 50%;
-                }
-
             }
 
         }

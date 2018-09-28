@@ -10,33 +10,54 @@
 
 	<section class="section section--resources">
 		<div class="container">
-			<p class="section__heading">Company Resources.</p>
-		</div>
-		<div class="section__content">
 
-			@component('_includes.resource')
-				@slot('class', 'press-kit')
-				@slot('title', 'Press Kit')
-				@slot('btnLink', '/kit.zip')
-				@slot('btnText', 'Download Press Kit')
-				@slot('content')
-					Download our press kit for a selection of our assets to use for any media or marketing purposes.
-				@endslot
-			@endcomponent
+			<p class="section__heading"><span class="d-none d-lg-inline">Internxt </span>Resources</p>
 
-			<hr>
+			<div class="section__content">
+				<div class="row">
 
-			@component('_includes.resource')
-				@slot('class', 'whitepaper')
-				@slot('title', 'Whitepaper')
-				@slot('btnLink', 'whitepaper.pdf')
-				@slot('btnText', 'Download Whitepaper')
-				@slot('content')
-					Download our whitepaper for an extensive look into the technology we are applying to our services.
-				@endslot
-			@endcomponent
+					<div class="col-lg-4 d-none d-lg-block">
+						@component('_includes.resource')
+							@slot('class', 'press-kit')
+							@slot('title', 'Design Assets')
+							@slot('btnLink', '/kit.zip')
+							@slot('btnText', 'Download Design Assets')
+							@slot('content')
+								Download our design assets to optimally display our company branding
+							@endslot
+						@endcomponent
+					</div>{{-- /.col-lg-4 --}}
 
-		</div>{{-- /.section__content --}}
+					<div class="col-md-6 col-lg-4">
+						@component('_includes.resource')
+							@slot('class', 'whitepaper')
+							@slot('title', 'Whitepaper')
+							@slot('btnLink', 'whitepaper.pdf')
+							@slot('btnText', 'Download Whitepaper')
+							@slot('content')
+								Download our whitepaper for a look into our technologies
+							@endslot
+						@endcomponent
+					</div>{{-- /.col-lg-4 --}}
+
+					<div class="col-md-6 col-lg-4">
+						@component('_includes.resource')
+							@slot('class', 'series-a')
+							@slot('title', 'Series A')
+							@slot('btnLink', 'seriesa.pdf')
+							@slot('btnText', 'Download Whitepaper')
+							@slot('content')
+								Check out our investor information document for Series A
+							@endslot
+						@endcomponent
+					</div>{{-- /.col-lg-4 --}}
+
+				</div>{{-- /.row --}}
+
+			</div>{{-- /.section__content --}}
+		</div>{{-- /.container --}}
 	</section>
+
+	@include('_includes.sections.subscribe')
 
 @endsection

@@ -1,0 +1,58 @@
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "utilities";
+@import "responsive-rules";
+@import "fonts";
+@import "navbar-mobile";
+@import "navbar-desktop";
+@import "sections";
+@import "modals";
+@import "footer";
+
+body{
+	background: $body-bg;
+	font-family: $font-family-sans-serif;
+}
+
+.container {
+
+    padding-right: 24px;
+    padding-left: 24px;
+
+ 	@include whenLargerThan('large-screen') {
+    	max-width: 1330px;
+	}
+
+}
+
+.linebreak {
+
+	display: block;
+
+	@include whenLargerThan('large-screen') {
+		display: none;
+	}
+
+}
+
+a:hover {
+	// Remove underline from all links
+	text-decoration: none;
+}
+
+hr {
+    background-color: #e8e8e8;
+    height: 1px;
+    margin-bottom: 100px;
+    margin-top: 170px;
+}
+
+// Page-specific styles
+@import "home";
+@import "cloud";
+@import "core";
+@import "token";
+@import "about";
+@import "roadmap";
+@import "resources";
+@import "terms";

@@ -1,16 +1,7 @@
-<div class="container">
-	<div class="subsection subsection--{{ $class }}">
+<div class="subsection subsection--resource subsection--{{ $class }}">
+	<img class="subsection__image img-fluid" src="/img/resources/{{ $class }}.png" alt="{{ $title }}">
+	<div class="subsection__content">
 		<p class="subsection__heading">{{ $title }}</p>
-		<div class="row">
-
-			<div class="col-lg-8">
-				<p class="subsection__content">{{ $content }}</p>
-			</div>
-
-			<div class="col-lg">
-				<a class="subsection__btn" href="{{ $btnLink }}">{{ $btnText }}</a>
-			</div>
-
-		</div>{{-- /.row --}}
+		<a class="subsection__text" href="{{ $btnLink }}">{{ $content }} <img class="subsection__chevron" src="/img/icons/chevron-resources.svg" height="12"></a>
+	</div>
 </div>{{-- /.subsection --}}
-</div>

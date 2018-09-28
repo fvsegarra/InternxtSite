@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Jenssegers\Agent\Agent;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,31 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+        $agent = new Agent();
+
+        $platform = $agent->platform();
+
+        if ($platform == "OS X") {
+            $platform = "Mac";
+        }
+
+        $xcloudDownloadLink = '/downloads/cloud';
+        $xcoreDownloadLink = '/downloads/core';
+
+        $supportedOperatingSystems = [
+            'Windows' => '.exe',
+            'Mac' => '.dmg',
+            'Linux' => '.deb',
+        ];
+
+        if (array_key_exists($platform, $supportedOperatingSystems)) {
+            $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
+            $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
+        }
+
+        View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
+
     }
 
     /**
