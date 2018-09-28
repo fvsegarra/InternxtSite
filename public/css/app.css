@@ -14090,6 +14090,10 @@ hr {
   outline: none;
 }
 
+#page-cloud .section--beta-cloud .section__cta:hover {
+  opacity: 1;
+}
+
 #page-cloud .section--beta-cloud .container {
   max-width: 368px;
 }

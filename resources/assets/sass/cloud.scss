@@ -1225,11 +1225,18 @@
 
 
             .section__cta {
+
                 background-position: 183px center;
                 border: none;
                 line-height: 1;
                 margin-top: 0;
                 outline: none;
+
+                // Override strange hover behaviour
+                &:hover {
+                    opacity: 1;
+                }
+
             }
 
             .container {
