@@ -346,6 +346,7 @@
             }
 
             .section__cta {
+
                 background-color: black;
                 background-image: url('/img/icons/chevron-right-circle.svg');
                 background-position: 160px center;
@@ -362,6 +363,9 @@
                 padding: 13px 47px 13px 21px;
                 font-weight: 500;
                 letter-spacing: -0.4px;
+
+                @include transparencyOnHover(0.8);
+
             }
 
         }
@@ -554,10 +558,6 @@
         }
 
         &--blackberry {
-
-            .teamPartner__link {
-                @include transparencyOnHover(0.95);
-            }
 
             .teamPartner__image {
                 background-color: #1f2526;

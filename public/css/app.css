@@ -14457,6 +14457,12 @@ hr {
   }
 }
 
+@media (min-width: 1440px) {
+  #page-core .section--core-summary .subsection--setup {
+    margin-top: 0;
+  }
+}
+
 #page-core .section--core-summary .subsection--setup.enhanced-1080 {
   display: none;
   margin-top: -40px;
@@ -14506,6 +14512,12 @@ hr {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#ffffff));
     background-image: linear-gradient(to bottom, #fafafa, #ffffff);
     padding-top: 114px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #page-core .section--core-design {
+    margin-top: 136px;
   }
 }
 
@@ -14807,7 +14819,7 @@ hr {
 }
 
 #page-token .pageHeader__cta:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 #page-token .section--inxt-data {
@@ -15706,6 +15718,12 @@ hr {
   padding: 13px 47px 13px 21px;
   font-weight: 500;
   letter-spacing: -0.4px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#page-about .section--branding-assets .section__cta:hover {
+  opacity: 0.8;
 }
 
 #page-about .teamMember {
@@ -15902,15 +15920,6 @@ hr {
   #page-about .teamPartner__content {
     width: 490px;
   }
-}
-
-#page-about .teamPartner--blackberry .teamPartner__link {
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-
-#page-about .teamPartner--blackberry .teamPartner__link:hover {
-  opacity: 0.95;
 }
 
 #page-about .teamPartner--blackberry .teamPartner__image {
@@ -16377,7 +16386,7 @@ hr {
 }
 
 #page-resources .subsection__text:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #page-resources .subsection__chevron {

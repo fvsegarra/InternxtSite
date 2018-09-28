@@ -296,6 +296,10 @@
                     @include whenLargerThan('large-screen') {    
                         padding-left: 208px;
                     }
+
+                    @include whenLargerThan('xl-screen') {
+                        margin-top: 0;
+                    }
                         
 
                     &.enhanced-1080 {
@@ -356,6 +360,10 @@
             @include whenLargerThan('large-screen') {
                 background-image: linear-gradient(to bottom, #fafafa, #ffffff);
                 padding-top: 114px;
+            }
+
+            @include whenLargerThan('xl-screen') {
+                margin-top: 136px;
             }
 
             .section__heading {
