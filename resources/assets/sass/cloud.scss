@@ -58,14 +58,7 @@
         }
 
         & > .container {
-
             padding-bottom: 15px;
-            // padding-top: 53px;
-
-            @include whenLargerThan('large-screen') {
-                padding-top: $offset;
-            }
-
         }
 
         &__icon {

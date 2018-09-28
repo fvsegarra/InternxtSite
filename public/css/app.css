@@ -12972,12 +12972,6 @@ hr {
   padding-bottom: 15px;
 }
 
-@media (min-width: 1080px) {
-  #page-cloud .pageHeader > .container {
-    padding-top: 74px;
-  }
-}
-
 #page-cloud .pageHeader__icon {
   height: 36px;
 }
