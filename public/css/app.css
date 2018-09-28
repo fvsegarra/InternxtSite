@@ -12646,7 +12646,7 @@ hr {
 #page-home .articlePreview__cta img {
   left: 2px;
   position: relative;
-  top: -1px;
+  top: 0px;
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
 }
