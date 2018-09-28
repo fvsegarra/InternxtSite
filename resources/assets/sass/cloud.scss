@@ -1236,6 +1236,7 @@
                 border: none;
                 line-height: 1;
                 margin-top: 0;
+                outline: none;
             }
 
             .container {
@@ -1287,7 +1288,7 @@
             margin-left: 4px;
         }
 
-        &__quantity{
+        &__quantity {
 
             background-color: #e591ed;
             border-radius: 8.8px;
