@@ -76,6 +76,16 @@
 		margin-top: 66px;
 	}
 
+	.form-check-label a{
+
+		color: #9e9e9e;
+
+		&:hover {
+			color: #747474;
+		}
+			
+	}
+
 	&__buttons {
 		margin-top: 34px;
 	}
