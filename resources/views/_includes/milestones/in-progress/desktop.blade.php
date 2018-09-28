@@ -3,7 +3,7 @@
 	<div class="col-lg-4">
 
 		@component('_includes.milestone')
-			@slot('date', 'Q4 2018')
+			@slot('date', 'Q1 2019')
 			@slot('title', 'Stable Versions')
 			@slot('content')
 				After optimizing the functionality of the UI and UX of X Cloud and X Core and finalizing the development, their commercial versions will be released.
@@ -20,18 +20,7 @@
 
 	</div>{{-- /.col-lg-4 --}}
 
-	<div class="col-lg-4">
 
-		@component('_includes.milestone')
-			@slot('date', 'Q1 2019')
-			@slot('title', 'Mobile Version')
-			@slot('content')
-				After the commercial release, the X Cloud app will become available for iOS and Android mobile devices.
-			@endslot
-		@endcomponent
-
-
-	</div>{{-- /.col-lg-4 --}}
 
 
 	<div class="col-lg-4">
