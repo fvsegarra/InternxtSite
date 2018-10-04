@@ -22,7 +22,7 @@
 
             @include('_includes.scripts.cookie-consent')
 
-            @include('_includes.scripts.mailchimp')
+            @include('_includes.scripts.mailerlite')
 
         @endif
 
