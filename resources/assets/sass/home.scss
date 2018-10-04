@@ -148,7 +148,7 @@
         }
 
         &__cta {
-            
+
             color: #3b7ff5;
             font-size: 17px;
             font-weight: 500;
@@ -169,7 +169,7 @@
                 }
 
             }
-            
+
         }
 
     }
@@ -183,7 +183,7 @@
                 @include whenLargerThan('large-screen'){
                     max-width: 1324px;
                 }
-                    
+
 
                 & > .section__label,
                 & > .section__heading {
@@ -214,7 +214,7 @@
             }
 
             .col-xl-6 {
-            
+
                 @include whenLargerThan('large-screen') {
 
                     &:first-of-type {
@@ -309,6 +309,7 @@
                         top: 50%;
                         transform: translateY(-50%);
                         width: 20vw;
+                        max-width: 288px;
                     }
 
                 }
@@ -354,7 +355,7 @@
             .section__content {
                 background-image: radial-gradient(circle at 1% 82%, #2c5fb8, #1686cc 50%, #3fafeb);
             }
-                
+
             @include whenLargerThan('large-screen') {
 
                 padding-bottom: 0;
@@ -406,6 +407,7 @@
                         right: 15px;
                         top: 57%;
                         width: 27vw;
+                        max-width: 382px;
                     }
 
                 }
