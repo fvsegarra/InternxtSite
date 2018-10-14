@@ -36,7 +36,10 @@ class AppServiceProvider extends ServiceProvider
         if (array_key_exists($platform, $supportedOperatingSystems)) {
             $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
             $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
-        }
+        } else {
+	    $xcloudDownloadLink .= $supportedOperatingSystems[Linux];
+            $xcoreDownloadLink .= $supportedOperatingSystems[Linux];
+	}
 
         View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
 
