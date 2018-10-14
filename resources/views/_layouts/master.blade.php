@@ -61,7 +61,7 @@
                             <a class="modal__cta modal__cta--{{ str_slug($platform) }} modal__cta--disabled" href="{{ $xcloudDownloadLink }}" data-href="{{ $xcloudDownloadLink }}">Download for {{ $platform }}</a>
                         @endif
                     @endif
-                    <a class="modal__cta modal__cta--browser modal__cta--disabled" href="https://cloud.internxt.com/" rel="nofollow">Open in browser</a>
+                    <a class="modal__cta modal__cta--browser modal__cta--disabled" href="https://cloud.internxt.com/" data-href="https://cloud.internxt.com/" rel="nofollow">Open in browser</a>
                 </div>{{-- /.modal__buttons --}}
 
             @endslot

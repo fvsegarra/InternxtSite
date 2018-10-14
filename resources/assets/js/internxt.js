@@ -90,10 +90,10 @@ $('.modal__checkbox').click((e) => {
 	let disabledClass = 'modal__cta--disabled';
 
 	// console.debug(target.data('href'));
-	
+
 	if (isChecked) {
 		$('.' + btnClass).removeClass(disabledClass);
-		// $('.' + btnClass).attr('href', target.data('href'));
+		$('.' + btnClass).attr('href', target.data('href'));
 	}
 	else {
 		$('.' + btnClass).addClass(disabledClass);
