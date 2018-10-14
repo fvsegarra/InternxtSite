@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
         if ($platform == "OS X") {
             $platform = "Mac";
         } else if ($platform == "") {
-	    $platform = "Linux"
+	    $platform = "Linux";
 	}
 
         $xcloudDownloadLink = '/downloads/cloud';
