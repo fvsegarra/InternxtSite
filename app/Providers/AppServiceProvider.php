@@ -16,26 +16,31 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 
+        $xcloudDownloadLink = '/downloads/cloud';
+        $xcoreDownloadLink = '/downloads/core';
+
         $agent = new Agent();
 
         $platform = $agent->platform();
 
-        if ($platform == "OS X") {
-            $platform = "Mac";
-        }
+        if ($platform) { // Returns false from console
 
-        $xcloudDownloadLink = '/downloads/cloud';
-        $xcoreDownloadLink = '/downloads/core';
+            if ($platform == "OS X") {
+                $platform = "Mac";
+            }
 
-        $supportedOperatingSystems = [
-            'Windows' => '.exe',
-            'Mac' => '.dmg',
-            'Linux' => '.deb',
-        ];
 
-        if (array_key_exists($platform, $supportedOperatingSystems)) {
-            $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
-            $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
+            $supportedOperatingSystems = [
+                'Windows' => '.exe',
+                'Mac' => '.dmg',
+                'Linux' => '.deb',
+            ];
+
+            if (array_key_exists($platform, $supportedOperatingSystems)) {
+                $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
+                $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
+            }
+
         }
 
         View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
