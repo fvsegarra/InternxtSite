@@ -16,8 +16,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        $xcloudDownloadLink = '/downloads/cloud';
-        $xcoreDownloadLink = '/downloads/core';
+        $xcloudDownloadLink = '/downloads/cloud.exe';
+        $xcoreDownloadLink = '/downloads/core.exe';
 
         $agent = new Agent();
 
@@ -37,13 +37,13 @@ class AppServiceProvider extends ServiceProvider
             ];
 
             if (array_key_exists($platform, $supportedOperatingSystems)) {
-                $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
-                $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
+                $xcloudDownloadLink = str_replace(".exe", $supportedOperatingSystems[$platform], $xcloudDownloadLink);
+                $xcoreDownloadLink = str_replace(".exe", $supportedOperatingSystems[$platform], $xcoreDownloadLink);
             }
 
+        }
 
         View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
-	}
 
     }
 
