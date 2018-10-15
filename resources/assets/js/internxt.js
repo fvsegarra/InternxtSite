@@ -89,11 +89,14 @@ $('.modal__checkbox').click((e) => {
 	let btnClass = 'modal__cta';
 	let disabledClass = 'modal__cta--disabled';
 
-	// console.debug(target.data('href'));
+	console.debug(target);
 
 	if (isChecked) {
 		$('.' + btnClass).removeClass(disabledClass);
-		$('.' + btnClass).attr('href', target.data('href'));
+		$('.' + btnClass).each(function(){
+			// Use data href to populate the actual href, and enable the button
+			$(this).attr('href', $(this).data('href'));
+		});
 	}
 	else {
 		$('.' + btnClass).addClass(disabledClass);
