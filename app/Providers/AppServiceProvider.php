@@ -16,25 +16,40 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
 
+        $xcloudDownloadLink = '/downloads/cloud';
+        $xcoreDownloadLink = '/downloads/core';
+
         $agent = new Agent();
 
         $platform = $agent->platform();
 
+<<<<<<< HEAD
         if ($platform == "OS X") {
             $platform = "Mac";
         } else if ($platform == "") {
 	    $platform = "Linux";
 	}
+=======
+        if ($platform) { // Returns false from console
+>>>>>>> 6edae943f632327d1d242255bc23dbf91fbbd53c
 
-        $xcloudDownloadLink = '/downloads/cloud';
-        $xcoreDownloadLink = '/downloads/core';
+            if ($platform == "OS X") {
+                $platform = "Mac";
+            }
 
-        $supportedOperatingSystems = [
-            'Windows' => '.exe',
-            'Mac' => '.dmg',
-            'Linux' => '.deb',
-        ];
 
+            $supportedOperatingSystems = [
+                'Windows' => '.exe',
+                'Mac' => '.dmg',
+                'Linux' => '.deb',
+            ];
+
+            if (array_key_exists($platform, $supportedOperatingSystems)) {
+                $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
+                $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
+            }
+
+<<<<<<< HEAD
         if (array_key_exists($platform, $supportedOperatingSystems)) {
             $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
             $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
@@ -42,6 +57,9 @@ class AppServiceProvider extends ServiceProvider
 	    $xcloudDownloadLink .= $supportedOperatingSystems[Linux];
             $xcoreDownloadLink .= $supportedOperatingSystems[Linux];
 	}
+=======
+        }
+>>>>>>> 6edae943f632327d1d242255bc23dbf91fbbd53c
 
         View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
 
