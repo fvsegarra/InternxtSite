@@ -42,7 +42,7 @@ class PostsComposer
 		    		return [
 		    			'title' => $post->title,
 		    			'date' => Carbon::createFromTimestamp( substr($post->firstPublishedAt, 0, 10) )->format('F j Y'),
-		    			'image' => 'https://cdn-images-1.medium.com/max/411/' . $post->virtuals->previewImage->imageId,
+		    			'image' => 'https://cdn-images-1.medium.com/max/822/' . $post->virtuals->previewImage->imageId,
 		    			'url' => 'https://medium.com/internxt/' . $post->uniqueSlug,
 		    		];
 		    	})
