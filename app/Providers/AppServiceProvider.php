@@ -43,6 +43,7 @@ class AppServiceProvider extends ServiceProvider
 
 
         View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
+	}
 
     }
 
