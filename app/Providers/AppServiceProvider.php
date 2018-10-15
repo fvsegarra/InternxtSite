@@ -23,15 +23,7 @@ class AppServiceProvider extends ServiceProvider
 
         $platform = $agent->platform();
 
-<<<<<<< HEAD
-        if ($platform == "OS X") {
-            $platform = "Mac";
-        } else if ($platform == "") {
-	    $platform = "Linux";
-	}
-=======
         if ($platform) { // Returns false from console
->>>>>>> 6edae943f632327d1d242255bc23dbf91fbbd53c
 
             if ($platform == "OS X") {
                 $platform = "Mac";
@@ -49,17 +41,6 @@ class AppServiceProvider extends ServiceProvider
                 $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
             }
 
-<<<<<<< HEAD
-        if (array_key_exists($platform, $supportedOperatingSystems)) {
-            $xcloudDownloadLink .= $supportedOperatingSystems[$platform];
-            $xcoreDownloadLink .= $supportedOperatingSystems[$platform];
-        } else {
-	    $xcloudDownloadLink .= $supportedOperatingSystems[Linux];
-            $xcoreDownloadLink .= $supportedOperatingSystems[Linux];
-	}
-=======
-        }
->>>>>>> 6edae943f632327d1d242255bc23dbf91fbbd53c
 
         View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
 
