@@ -24,6 +24,8 @@
 
             @include('_includes.scripts.mailerlite')
 
+            @include('_includes.scripts.mixpanel')
+
         @endif
 
         <style type="text/css">
