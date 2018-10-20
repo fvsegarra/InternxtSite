@@ -12,7 +12,7 @@
 
 		@component('_includes.milestone')
 			@slot('date', 'Q3 2019')
-			@slot('title', 'Next Service')
+			@slot('title', 'Version 1.1')
 			@slot('content')
 				After the public release of X Cloud and X Core, we will then proceed with the development of our next service.
 			@endslot
