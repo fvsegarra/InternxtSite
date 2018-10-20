@@ -26,7 +26,7 @@
 		<div class="container">
 			<div class="section__content">
 				<span class="d-lg-none">
-					Combining <em>distributed</em> technology and <em>end-to-end encryption</em> technology with a beautiful, <span class="d-block d-md-none d-lg-block"></span> easy-to-use user interface. Everyone can now  store files with total <em>simplicity, security</em> and <em>privacy.</em>
+					Combining <em>distributed</em> and <em>decentralized</em> technology with a beautiful, <span class="d-block d-md-none d-lg-block"></span> easy-to-use user interface. Everyone can store files with total <em>simplicity, security</em> and <em>privacy.</em>
 				</span>
 				<span class="d-none d-lg-block">
 					Combining <em>distributed</em> and <em>decentralized</em> technology with an easy-to-use user interface. Everyone can now store files with total <em>simplicity, security</em> and <em>privacy.</em>
