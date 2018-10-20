@@ -23,7 +23,7 @@
 	<div class="col-lg-4">
 
 		@component('_includes.milestone')
-			@slot('date', 'Q4 2017')
+			@slot('date', 'Q3 2017')
 			@slot('title', 'Crowdsale')
 			@slot('content')
 				Internxt's token sale took place. The first versions of X Cloud’s and X Core’s designs and interfaces were released.
