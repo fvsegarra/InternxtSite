@@ -11,7 +11,6 @@
 		@endcomponent
 
 
-
 	</div>{{-- /.col-lg-4 --}}
 
 	<div class="col-lg-4">
@@ -31,10 +30,10 @@
 	<div class="col-lg-4">
 
 		@component('_includes.milestone')
-			@slot('date', 'Q2 2019')
-			@slot('title', 'CorePro')
+			@slot('date', 'Q4 2019')
+			@slot('title', 'Next service')
 			@slot('content')
-				A highly optimized, easy-to-use storage server which enables hosts to maximize their profits as an X Core Host.
+			After the public release of X Cloud and X Core, we will then proceed with the development of our next service.
 			@endslot
 		@endcomponent
 
