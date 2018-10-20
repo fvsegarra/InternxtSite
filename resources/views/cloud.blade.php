@@ -98,7 +98,7 @@
 				<img class="section__icon" src="/img/icons/xcloud/share.svg">
 			</div>
 			<p class="section__heading">Share files however you want. <span class="linebreak d-none d-lg-block"></span>With whoever you want.</p>
-			<p class="section__content">X Cloud is the first decentralized cloud platform to offer secure and easy file sharing. Just send a private link to invite people to view, download, or work on a file with you.</p>
+			<p class="section__content">X Cloud is the first decentralized cloud platform to offer secure and easy file sharing. Just send a private link to invite people to view, download, or work on a file with you. Share using next-level security.</p>
 		</div>{{-- /.container --}}
 		<img class="section__image img-fluid" src="/img/mockups/xcloud/share_laptop.png">
 	</section>
