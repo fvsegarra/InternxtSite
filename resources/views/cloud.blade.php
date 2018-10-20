@@ -204,7 +204,7 @@
 		<div class="container">
 			<p class="section__label">Free Storage</p>
 			<p class="section__heading">Experience X Cloud with 10GB on us.</p>
-			<p class="section__subheading">When signing up to X Cloud, users receive free 10GB storage space so everyone can experience X Cloud without entering any payment details. If you enjoy the service you can upgrade to our 100GB plan for $1.49 or alternatively upgrade to 1TB for $4.99.</p>
+			<p class="section__subheading">When signing up to X Cloud, users receive free 10GB storage space. Make  the switch to a superior cloud storage alternative, and win on user experience, swag and cost as well. If you enjoy the service you can upgrade to our 100GB plan for $1.49 or alternatively upgrade to 1TB for $4.99.</p>
 		</div>{{-- /.container --}}
 		<div class="section__content">
 
