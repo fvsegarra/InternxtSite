@@ -61,7 +61,7 @@
 							</div>
 							<div class="col-lg-4 flex-lg-shrink-1">
 								<a href="https://finance.yahoo.com/news/making-internet-secure-everyone-140000059.html?guccounter=1" target="_blank" rel="nofollow">
-									<img src="/img/icons/yahoo.png" alt="Yahoo">
+									<img src="/img/icons/yahoo.png" height="52" alt="Yahoo">
 								</a>
 							</div>
 						</div>
