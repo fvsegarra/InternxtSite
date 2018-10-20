@@ -73,12 +73,12 @@
 
 					<div class="subsection subsection--mission">
 						<p class="subsection__heading">Mission.</p>
-						<p class="subsection__content">We want to help exceed the capabilities of every human being. From this mission stems a multitude of projects, products, and services all with the same aim of enabling every human being to the peak of their potential.</p>
+						<p class="subsection__content">We want to help exceed the capabilities of every human being. From this mission stems a multitude of projects, products, and services all with the same aim of enabling every human being to the peak of their potential. Internxt is excitement, ambition.</p>
 					</div>{{-- /.subsection --}}
 
 					<div class="subsection subsection--vision">
 						<p class="subsection__heading">Vision.</p>
-						<p class="subsection__content">Behind each design and project is creativity with a force of inventiveness and ingenuity. Internxt produces only the highest quality services, which bring newly specialized style and aesthetics, with an essence of care, and precision.</p>
+						<p class="subsection__content">Behind each design and project is creativity with a force of inventiveness and ingenuity. Internxt produces only the highest quality services, which bring newly specialized style and aesthetics, with an essence of care, and precision. Better  is now possible.</p>
 					</div>{{-- /.subsection --}}
 
 				</div>
