@@ -8,10 +8,10 @@
 @endcomponent
 
 @component('_includes.milestone')
-	@slot('date', 'Q1 2019')
-	@slot('title', 'Mobile Version')
+	@slot('date', 'Q2 2019')
+	@slot('title', 'Polished Versions')
 	@slot('content')
-		After the commercial release, the X Cloud app will become available for iOS and Android mobile devices.
+	After the commercial release, X Cloud and  X Core will be polished, further security tests will be ran, and more functionalities will be added to the apps.
 	@endslot
 @endcomponent
 
