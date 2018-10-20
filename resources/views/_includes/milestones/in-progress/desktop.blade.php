@@ -12,7 +12,7 @@
 
 		@component('_includes.milestone')
 			@slot('date', 'Q3 2019')
-			@slot('title', 'Version 1.1')
+			@slot('title', 'Next Service')
 			@slot('content')
 				After the public release of X Cloud and X Core, we will then proceed with the development of our next service.
 			@endslot
@@ -24,9 +24,9 @@
 
 		@component('_includes.milestone')
 			@slot('date', 'Q1 2019')
-			@slot('title', 'Mobile Version')
+			@slot('title', 'Polished Versions')
 			@slot('content')
-				After the commercial release, the X Cloud app will become available for iOS and Android mobile devices.
+				After the commercial release, X Cloud and  X Core will be polished, further security tests will be ran, and more functionalities will be added to the apps.
 			@endslot
 		@endcomponent
 
