@@ -78,7 +78,7 @@
 
 					<div class="subsection subsection--vision">
 						<p class="subsection__heading">Vision.</p>
-						<p class="subsection__content">Behind each design and project is creativity with a force of inventiveness and ingenuity. Internxt produces only the highest quality services, which bring newly specialized style and aesthetics, with an essence of care, and precision. Better  is now possible.</p>
+						<p class="subsection__content">Behind each design and project is creativity with a force of inventiveness and ingenuity. Internxt produces only the highest quality services, which bring newly specialized style and aesthetics, with an essence of care, and precision. Excellence at its finest.</p>
 					</div>{{-- /.subsection --}}
 
 				</div>
