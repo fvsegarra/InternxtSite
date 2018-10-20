@@ -57,7 +57,7 @@
 							<img class="subsection__icon" src="/img/icons/xcloud/security.svg" alt="Designed to protect your digital security.">
 						</div>
 						<p class="subsection__heading">Designed to protect your digital security.</p>
-						<p class="subsection__content">Files are end-to-end encrypted by smart contract cryptography, split into pieces, and then distributed amongst different machines around the world. Your personal data is apart of the distributed X Core network and no longer sitting in one central location. </p>
+						<p class="subsection__content">Files are end-to-end encrypted by the most secure encryption methods, split into pieces, and then distributed amongst different machines around the world. Your personal data is apart of the distributed X Core network and no longer sitting in one central location. </p>
 					</div>{{-- /.subsection --}}
 				</div>{{-- /.col-lg-6 --}}
 
