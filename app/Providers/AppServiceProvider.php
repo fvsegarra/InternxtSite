@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Jenssegers\Agent\Agent;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -43,7 +44,12 @@ class AppServiceProvider extends ServiceProvider
 
         }
 
-        View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink'));
+        // Generate canonical URL, removing double slash on homepage and stripping last slash on others
+        $appUrl = env('APP_URL');
+        $currentUri = rtrim(request()->getRequestUri(), '/');
+        $canonical = preg_replace('/([a-z])\/\//','$1/', $appUrl.$currentUri );
+
+        View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink', 'canonical'));
 
     }
 
