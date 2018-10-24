@@ -48,6 +48,7 @@ class AppServiceProvider extends ServiceProvider
         $appUrl = env('APP_URL');
         $currentUri = rtrim(request()->getRequestUri(), '/');
         $canonical = preg_replace('/([a-z])\/\//','$1/', $appUrl.$currentUri );
+        $canonical = rtrim($canonical, '/');
 
         View::share(compact('agent', 'platform', 'xcloudDownloadLink', 'xcoreDownloadLink', 'canonical'));
 
