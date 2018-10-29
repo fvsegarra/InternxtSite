@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h1 class="pageHeader__heading">Internxt is excitement, ambition, innovation.<span class="highlight">Join the revolution</span>. The future is now<span>.</span></h1>
+					<h1 class="pageHeader__heading">Internxt is excitement, ambition, innovation. Join the <span class="highlight">revolution</span>. The future is now<span>.</span></h1>
 				</div>
 			</div>
 		</div>
