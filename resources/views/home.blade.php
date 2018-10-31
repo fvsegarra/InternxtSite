@@ -8,6 +8,10 @@
 
 @section('metaDescription', 'Internxt is excitement, ambition. Here at Internxt we are disrupting thrilling industries through the use of revolutionary technologies.')
 
+@section('additionalMeta')
+	<link rel="alternate" href="https://internxt.com/" hreflang="x-default">
+@endsection
+
 @section('body')
 
 	<header class="pageHeader">

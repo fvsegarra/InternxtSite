@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="{{ mix('css/internxt.css') }}">
         <link rel="canonical" href="{{ $canonical }}">
         <link rel="icon" href="favicon.ico">
+        @yield('additionalMeta')
 
         <title>@hasSection('pageTitle')Internxt - @yield('pageTitle') @else Internxt @endif</title>
 
