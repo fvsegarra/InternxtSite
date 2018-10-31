@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Log;
 use Jenssegers\Agent\Agent;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
                 $platform = "Mac";
             }
 
+            Log::debug("Platform: ", compact('platform'));
 
             $supportedOperatingSystems = [
                 'Windows' => '.exe',
