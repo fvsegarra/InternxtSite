@@ -154,5 +154,21 @@
 
         <script type="text/javascript" src="{{ mix('js/internxt.js') }}"></script>
 
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://internxt.com",
+            "name": "Internxt Inc.",
+            "image": "https://internxt.com/img/logos/internxt_icon.svg",
+            "description": "Internxt is excitement, ambition, innovation. Join the revolution. The future is now.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "hello@internxt.com"
+                "contactType": "PR"
+            }
+        }
+        </script>
+
     </body>
 </html>
