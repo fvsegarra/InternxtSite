@@ -25,7 +25,18 @@
 	</header>
 
 	<section class="section section--products">
-	
+		<div class="container">
+			<p class="section__label">Catalogue</p>
+			<p class="section__heading">Browse our products</p>
+			<div class="row">
+				<div class="col-md-6 col-xl-6">
+					@include('_includes.previews.xcloud')
+				</div>
+				<div class="col-md-6 col-xl-6">
+					@include('_includes.previews.xcore')
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="section section--about">
