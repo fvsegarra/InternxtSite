@@ -24,9 +24,7 @@
 		</div>
 	</header>
 
-	<section class="section section--products">
 	
-	</section>
 
 	<section class="section section--about">
 		<div class="container">
