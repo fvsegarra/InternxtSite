@@ -175,23 +175,57 @@
 				</div>{{-- /.paymentMethods --}}
 
 				<div id='cryptowolf'/>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-				<script>
-				var external = 'inxt';
-				var cryptowolf = 'https://external.cryptowolf.eu/v3/';
-				function defer(method) {
-				    if (window.jQuery) {
-				        method();
-				    } else {
-				        setTimeout(function() { defer(method) }, 50);
-				    }
-				}
-				defer(function () {
-				     $("#cryptowolf").load(cryptowolf + 'main.html');
-				     $.getScript(cryptowolf + 'js/cryptowolf.js');
-				})
-				</script>
-			</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var external = 'inxt';
+var cryptowolf = 'https://external.cryptowolf.eu/v3/';
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+defer(function () {
+     $("#cryptowolf").load(cryptowolf + 'main.html',function() {
+       $.getScript(cryptowolf + 'js/cryptowolf.js');
+       $.ajax ({
+         type: "POST",
+         url: "https://external.cryptowolf.eu/v3/css/inxt.css",
+         success: function(result) {
+           $("#cryptowolf").after('<style>' + result + '</style>')
+         }
+       });
+     });
+})
+</script>
+
+Nikolai:
+<div id='cryptowolf'/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var external = 'inxt';
+var cryptowolf = 'https://external.cryptowolf.eu/v3/';
+function defer(method) {
+    if (window.jQuery) {
+        method();
+    } else {
+        setTimeout(function() { defer(method) }, 50);
+    }
+}
+defer(function () {
+     $("#cryptowolf").load(cryptowolf + 'ext.html',function() {
+       $.getScript(cryptowolf + 'js/cryptowolf.js');
+       $.ajax ({
+         type: "POST",
+         url: "https://external.cryptowolf.eu/v3/css/inxt.css",
+         success: function(result) {
+           $("#cryptowolf").after('<style>' + result + '</style>')
+         }
+       });
+     });
+})
+</script>
 		</div>
 	</section>
 
