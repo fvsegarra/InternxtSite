@@ -174,8 +174,23 @@
 
 				</div>{{-- /.paymentMethods --}}
 
-				<div id='cryptoWolfContainer'></div>
-
+				<div id='cryptowolf'/>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				<script>
+				var external = 'inxt';
+				var cryptowolf = 'https://external.cryptowolf.eu/v3/';
+				function defer(method) {
+				    if (window.jQuery) {
+				        method();
+				    } else {
+				        setTimeout(function() { defer(method) }, 50);
+				    }
+				}
+				defer(function () {
+				     $("#cryptowolf").load(cryptowolf + 'main.html');
+				     $.getScript(cryptowolf + 'js/cryptowolf.js');
+				})
+				</script>
 			</div>
 		</div>
 	</section>
@@ -183,23 +198,7 @@
 	@include('_includes.sections.subscribe')
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<div id='cryptowolf'/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-var external = 'inxt';
-var cryptowolf = 'https://external.cryptowolf.eu/v3/';
-function defer(method) {
-    if (window.jQuery) {
-        method();
-    } else {
-        setTimeout(function() { defer(method) }, 50);
-    }
-}
-defer(function () {
-     $("#cryptowolf").load(cryptowolf + 'main.html');
-     $.getScript(cryptowolf + 'js/cryptowolf.js');
-})
-</script>
+
 
 	<script>
         $.get("https://api.coinmarketcap.com/v1/ticker/internxt/", function(data, status) {
