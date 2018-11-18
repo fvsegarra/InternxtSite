@@ -215,6 +215,8 @@ function defer(method) {
 defer(function () {
      $("#cryptowolf").load(cryptowolf + 'ext.html',function() {
        $.getScript(cryptowolf + 'js/cryptowolf.js');
+			 $('#hiddendivbeforeselect').prepend($('.two')[0]);
+			 $('.two').addClass('cryptowolf-element')
        $.ajax ({
          type: "POST",
          url: "https://external.cryptowolf.eu/v3/css/inxt.css",
