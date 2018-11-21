@@ -150,84 +150,75 @@
 	</section>{{-- /.inxt-intro --}}
 
 	<section class="section section--inxt-buy">
-		<div class="container">
-			<p class="section__heading">Buy directly from us.</p>
-			<div class="section__content">
-
-				<p>You can buy INXT directly from our website. Our system tracks down and offers the best exchange rates available on the market. Follow the steps below to buy your INXT without the hassle of an exchange.</p>
-
-				<p class="section__instruction">Select payment method</p>
-
-				<div class="paymentMethods row">
-
-					<div class="col-4">
-						<a class="btn btn-default"><img src="/img/logos/bitcoin.png" height="62"></a>
-					</div>{{-- /.col-4 --}}
-
-					<div class="col-4">
-						<a class="btn btn-default"><img src="/img/logos/litecoin.png" height="62"></a>
-					</div>{{-- /.col-4 --}}
-
-					<div class="col-4">
-						<a class="btn btn-default"><img src="/img/logos/ethereum.png" height="62"></a>
-					</div>{{-- /.col-4 --}}
-
-				</div>{{-- /.paymentMethods --}}
-
-				<div id='cryptowolf'/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-var external = 'inxt';
-var cryptowolf = 'https://external.cryptowolf.eu/v3/';
-function defer(method) {
-    if (window.jQuery) {
-        method();
-    } else {
-        setTimeout(function() { defer(method) }, 50);
-    }
-}
-defer(function () {
-     $("#cryptowolf").load(cryptowolf + 'main.html',function() {
-       $.getScript(cryptowolf + 'js/cryptowolf.js');
-       $.ajax ({
-         type: "POST",
-         url: "https://external.cryptowolf.eu/v3/css/inxt.css",
-         success: function(result) {
-           $("#cryptowolf").after('<style>' + result + '</style>')
-         }
-       });
-     });
-})
-</script>
-
-<div id='cryptowolf'/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-var external = 'inxt';
-var cryptowolf = 'https://external.cryptowolf.eu/v3/';
-function defer(method) {
-    if (window.jQuery) {
-        method();
-    } else {
-        setTimeout(function() { defer(method) }, 50);
-    }
-}
-defer(function () {
-     $("#cryptowolf").load(cryptowolf + 'ext.html',function() {
-       $.getScript(cryptowolf + 'js/cryptowolf.js');
-			 $('#hiddendivbeforeselect').prepend($('.two')[0]);
-			 $('.two').addClass('cryptowolf-element')
-       $.ajax ({
-         type: "POST",
-         url: "https://external.cryptowolf.eu/v3/css/inxt.css",
-         success: function(result) {
-           $("#cryptowolf").after('<style>' + result + '</style>')
-         }
-       });
-     });
-})
-</script>
-		</div>
+	 <div class="container">
+	  <p class="section__heading">Buy directly from us.</p>
+	  <div class="section__content">
+	   <p>You can buy INXT directly from our website. Our system tracks down and offers the best exchange rates available on the market. Follow the steps below to buy your INXT without the hassle of an exchange.</p>
+	   <p class="section__instruction">Select payment method</p>
+	   <div class="paymentMethods row">
+	    <div class="col-4">
+	     <a class="btn btn-default"><img src="/img/logos/bitcoin.png" height="62"></a>
+	    </div>
+	    <div class="col-4">
+	     <a class="btn btn-default"><img src="/img/logos/litecoin.png" height="62"></a>
+	    </div>
+	    <div class="col-4">
+	     <a class="btn btn-default"><img src="/img/logos/ethereum.png" height="62"></a>
+	    </div>
+	   </div>
+	   <div id='cryptowolf'/>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script>
+	    var external = 'inxt';
+	    var cryptowolf = 'https://external.cryptowolf.eu/v3/';
+	    function defer(method) {
+	        if (window.jQuery) {
+	            method();
+	        } else {
+	            setTimeout(function() { defer(method) }, 50);
+	        }
+	    }
+	    defer(function () {
+	        $("#cryptowolf").load(cryptowolf + 'ext.html',function() {
+	            $.getScript(cryptowolf + 'js/cryptowolf.js');
+	            $('#hiddendivbeforeselect').prepend($('.two')[0]);
+	            $('.two').addClass('cryptowolf-element')
+	            $.ajax ({
+	                type: "POST",
+	                url: "https://external.cryptowolf.eu/v3/css/inxt.css",
+	                success: function(result) {
+	                $("#cryptowolf").after('<style>' + result + '</style>')
+	                }
+	            });
+	        });
+	    })
+	</script>
+	 </div>
+	</section>
+	<section class="section section--subscribe">
+	<div class="container">
+	 <div class="section__border"></div>
+	 <div class="row">
+	  <div class="col-lg-6">
+	   <p class="section__label">Keep Updated</p>
+	   <h2 class="section__heading">Subscribe to our mailing list.</h2>
+	   <p class="section__subheading">Get the latest Internxt news and offers directly to your mailbox.</p>
+	  </div>
+	  <div class="col-lg-5">
+	   <form class="section--subscribe__form ml-block-form" action="https://app.mailerlite.com/webforms/submit/r3s4c1" data-code="r3s4c1" method="post" target="_blank">
+	    <input type="hidden" name="ml-submit" value="1">
+	    <div class="row">
+	     <div class="col-lg col-lg--input">
+	      <input type="email" class="section--subscribe__input" name="fields[email]" value="" placeholder="Email" required>
+	     </div>
+	     <div class="col-lg-3 col-lg--btn">
+	      <button type="submit" class="section--subscribe__btn primary">Subscribe</button>
+	     </div>
+	    </div>
+	   </form>
+	  </div>
+	 </div>
+	</div>
 	</section>
 
 	@include('_includes.sections.subscribe')
