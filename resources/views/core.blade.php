@@ -37,7 +37,7 @@
 				<div class="subsection subsection--intro">
 
 					<p class="subsection__heading">Earn money while keeping user data secure.</p>
-					<p class="subsection__content">X Core is a simple peer-to-peer downloadable application that enables hosts to act as computing servers who securley store and share encrypted shards of data.</p>
+					<p class="subsection__content">X Core is a simple peer-to-peer downloadable application that enables hosts to act as computing servers who securely store and share encrypted shards of data.</p>
 
 				</div>{{-- /.subsection-intro --}}
 			</div>{{-- /.container --}}
