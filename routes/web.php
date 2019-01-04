@@ -21,3 +21,4 @@ Route::view('resources', 'resources')->name('resources');
 Route::view('terms', 'terms')->name('terms');
 Route::view('privacy', 'privacy')->name('privacy');
 Route::view('civic', 'civic-test')->name('civic-test');
+Route::view('merch', 'merchandise')->name('merchandise');

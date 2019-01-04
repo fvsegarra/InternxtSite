@@ -1,0 +1,259 @@
+#page-merchandise {
+
+	.pageHeader {
+
+		background-image: url('/img/headers/xcloud-vision_mobile.png');
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 668px;
+		padding-top: 134px;
+
+		@include whenLargerThan('large-screen') {
+			background-image: url('/img/headers/xcloud-vision.png');
+			background-position: right center;
+			background-size: contain;
+			padding-top: 200px;
+		}
+
+		& > .container {
+
+			padding-left: 26px;
+
+			@include whenLargerThan('large-screen') {
+				padding-left: 24px;
+			}
+
+		}
+
+		&__heading {
+
+			font-size: 45px;
+			font-weight: 600;
+			letter-spacing: -2.1px;
+			line-height: 0.81;
+			margin-bottom: 12px;
+
+			@include whenLargerThan('large-screen') {
+
+			}
+
+		}
+
+		&__subheading {
+
+			font-size: 22px;
+			letter-spacing: -0.4px;
+			line-height: 1.05;
+			font-weight: 400;
+			opacity: 0.76;
+
+			@include whenLargerThan('large-screen') {
+				width: 303px;
+			}
+
+		}
+
+		&__cta {
+
+			background-color: #000000;
+            background-image: url(/img/icons/cta-chevron-circle.png);
+            background-position: 192px center;
+            background-repeat: no-repeat;
+            background-size: 23px;
+            border-radius: 31.4px;
+  			box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+            color: white;
+            display: block;
+            font-size: 18px;
+  			font-weight: 600;
+            height: 47px;
+            letter-spacing: -0.2px;
+            line-height: 1;
+            margin-top: 33px;
+            padding: 14px 36px 13px 23px;
+            width: 230px;
+
+            @include whenLargerThan('large-screen') {
+                background-position-x: 200px;
+                line-height: normal;
+                margin-top: 30px;
+                padding: 12px 46px 13px 23px;
+            }
+		}
+
+	}
+
+	.section {
+
+		&--vision-privacy {
+
+			background-color: #fafafa;
+			padding: 100px 0 106px;
+
+			.section__heading {
+				font-size: 34px;
+				font-weight: 600;
+				letter-spacing: -0.6px;
+				line-height: 1.15;
+				margin-top: 15px;
+				max-width: 310px;
+			}
+
+			.section__content {
+				color: #838387;
+				font-size: 20px;
+				font-weight: 400;
+				letter-spacing: -0.1px;
+				line-height: 1.55;
+				padding-left: 4px;
+			}
+
+		}
+
+		&--vision-warranty {
+
+			background-image: linear-gradient(to bottom, #060910, #02090f 16%, #050c14 37%, #00050b);
+			color: white;
+			height: 713px;
+			// background-image: url('/img/xcloud-vision-warranty.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-top: 76px;
+
+			@include whenLargerThan('large-screen') {
+				padding-top: 200px;
+			}
+
+			.section__heading {
+
+				font-size: 34px;
+				font-weight: 600;
+				letter-spacing: -0.6px;
+				line-height: 1.15;
+				max-width: 319px;
+				margin-top: 0;
+				margin-bottom: 13px;
+
+				@include whenLargerThan('large-screen') {
+					margin: 0;
+					max-width: 350px;
+				}
+
+			}
+
+			.section__content {
+
+				font-size: 20px;
+				font-weight: 400;
+				letter-spacing: -0.1px;
+				line-height: 1.45;
+				max-width: 320px;
+				padding-left: 4px;
+
+				@include whenLargerThan('large-screen') {
+					margin-top: 20px;
+					max-width: 300px;
+				}
+
+			}
+
+		}
+
+		&--vision-buy {
+
+			padding: 96px 0 100px 0;
+
+			@include whenLargerThan('large-screen') {
+				padding: 100px 0;
+			}
+
+			& > .container {
+				margin: 0 auto;
+				max-width: 900px;
+			}
+
+			.section__heading {
+				font-size: 28px;
+			    letter-spacing: -0.9px;
+			    line-height: 1.31;
+			    margin: 0;
+			}
+
+			.section__cta,
+			.stripe-button-el {
+
+
+				-webkit-appearance: none;
+				background-color: #4585f5;
+				background-image: url('/img/icons/chevron-right-circle.svg');
+				background-position: 224px center;
+				background-repeat: no-repeat;
+				background-size: 29px;
+				border-radius: 37.7px;
+				border: none;
+				box-shadow: 0 2px 4px 0 rgba(174, 199, 242, 0.34);
+				color: #ffffff;
+				display: block;
+				font-size: 21.6px;
+				height: 56px;
+				letter-spacing: -0.2px;
+				padding: 15px 60px 14px 28px;
+				margin: 0 auto;
+				text-align: left;
+				width: 270px;
+
+	            @include whenLargerThan('large-screen'){
+
+	            }
+
+
+	            &:active,
+	            &:focus {
+	            	outline: none;
+	            }
+
+		        & > span {
+					background: none;
+					box-shadow: none;
+					font-size: 21.6px;
+					font-weight: 600;
+					height: 27px;
+					letter-spacing: -0.2px;
+					padding: 0;
+					width: 182px;
+		        }
+
+	        }
+
+
+		}
+
+		&--vision-preview {
+
+			background-image: url('/img/mockups/xcloud-vision/close-up_mobile.png');
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 506px;
+
+			@include whenLargerThan('large-screen') {
+				background-image: url('/img/mockups/xcloud-vision/close-up.png');
+				height: 500px;
+			}
+
+		}
+
+		// Override distance between last Vision section and subscribe section
+		&--subscribe {
+
+			margin-top: 27px;
+
+			.section__border {
+				margin-top: 0;
+			}
+		}
+
+	}
+
+}
