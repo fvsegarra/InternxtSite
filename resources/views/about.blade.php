@@ -68,16 +68,7 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-md-6 col-lg-3">
-						@component('_includes.team')
-							@slot('slug', 'volodymyr')
-							@slot('name', 'Volodymyr Shevchyk')
-							@slot('role', 'Chief Technology Officer')
-							@slot('bio')
-								Volodymyr is Chief Technology Officer at Internxt, with over 10 years of engineering experience. He Has a BSc and Masters in Computer Science and has recently acquired a PhD in Information Technology. Volodymyr was responsible for the iOS client development of the most popular social network in Eastern Europe, VK, which has over 400 million users. He has received an award from Nokia for his advanced UI development and won FOSS 2009, which is a software conference in Ukraine that is sponsored by Microsoft.
-							@endslot
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
+
 
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
@@ -94,45 +85,13 @@
 						@component('_includes.team')
 							@slot('slug', 'zoran')
 							@slot('name', 'Zoran Joka')
-							@slot('role', 'Senior Software Developer')
+							@slot('role', 'Software Developer')
 							@slot('bio')
 								Zoran has extensive experience in software engineering and has a background in full-stack development. He has completed a Bachelors and Masters degree in Computer Science and has recently worked as a Senior Software Engineer at NTT Data which is the 5th largest IT services company in the world. He has a keen interest in blockchain and decentralization and is working on Internxt’s core development.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-					<div class="col-md-6 col-lg-3">
-						@component('_includes.team')
-							@slot('slug', 'russell')
-							@slot('name', 'Russell Vaughan')
-							@slot('role', 'Business Development')
-							@slot('bio')
-								Russell is a successful and adaptable manager and entrepreneur with vast experience dealing with complex operations. He has expert knowledge of logistics and has established an impressive record across a number of different sectors. Running highly successful businesses on a global scale with over 300 employees with a combined yearly turnover of $35m. Russell is responsible for overseeing the general business activities at Internxt. He counts with over 30 years of experience in successfully turning startups into fully functioning businesses.
-							@endslot
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
-
-					<div class="col-md-6 col-lg-3">
-						@component('_includes.team')
-							@slot('slug', 'conor')
-							@slot('name', 'Conor Doyle')
-							@slot('role', 'Chief Marketing Officer')
-							@slot('bio')
-								Conor is the Chief Marketing Officer at Internxt. Conor started his 8 high level years in marketing by starting his own marketing brand which grew to a client base and audience of over 300,000 people. Soon after that he moved into cryptocurrency by working for projects such as Snovio, Atomic Wallet (created by Changelly CEO) and Bitcoin Cash. Conor's well rounded marketing and cryptocurrency knowledge will help Internxt succeed.
-							@endslot
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
-
-					<div class="col-md-6 col-lg-3">
-						@component('_includes.team')
-							@slot('slug', 'jordan')
-							@slot('name', 'Jordan Latham')
-							@slot('role', 'UI/UX Designer')
-							@slot('bio')
-								Jordan has been immersed in design and entrepreneurship for over 10 years. He sees that flawless design to be vital in all areas of a business’s development. He has created designs for companies such as AirVPN which is a market leader in security and encryption and has also worked as a creative advisor for Showyou, a video streaming service that has recently been acquired by Vevo. He was on the creative board of directors for 4 years at the number one voted theme park in the UK. Jordan utilizes his experience to oversee all design aspects at Internxt.
-							@endslot
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
 
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
@@ -171,7 +130,7 @@
 						@component('_includes.team')
 							@slot('slug', 'ryan')
 							@slot('name', 'Ryan Marsden')
-							@slot('role', 'Financial Advisor')
+							@slot('role', 'Advisor')
 							@slot('bio')
 								Ryan is an experienced Financial Engineer and Project Management Professional with more than 10 years of successfully planning the financials of global multibillion dollar projects working for multinationals such as BP, where he works as a Lead Cost Manager. Ryan advices Internxt on project management, strategic business planning, cost management, risk management, contracts management, corporate governance, business ethics and team accountability.
 							@endslot
