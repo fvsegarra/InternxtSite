@@ -74,7 +74,7 @@
 						@component('_includes.team')
 							@slot('slug', 'harrison')
 							@slot('name', 'Harrison Moore')
-							@slot('role', 'Chief Design Officer')
+							@slot('role', 'Designer')
 							@slot('bio')
 								Harrison has been engaged in all aspects of design since a young age. Before joining Internxt Harrison had worked as a UI/UX designer for numerous agencies who have worked with technology companies such as Hewlett Packard Enterprises, CAT and CENX among other blue-chip companies. Over the years he has developed a style for simple and intuitive design. Harrison is a part of the design team responsible for imagining and creating internxt’s products user interface.
 							@endslot
@@ -85,7 +85,7 @@
 						@component('_includes.team')
 							@slot('slug', 'zoran')
 							@slot('name', 'Zoran Joka')
-							@slot('role', 'Software Developer')
+							@slot('role', 'Developer')
 							@slot('bio')
 								Zoran has extensive experience in software engineering and has a background in full-stack development. He has completed a Bachelors and Masters degree in Computer Science and has recently worked as a Senior Software Engineer at NTT Data which is the 5th largest IT services company in the world. He has a keen interest in blockchain and decentralization and is working on Internxt’s core development.
 							@endslot
@@ -97,7 +97,7 @@
 						@component('_includes.team')
 							@slot('slug', 'igor')
 							@slot('name', 'Igor Dostanic')
-							@slot('role', 'Software Developer')
+							@slot('role', 'Developer')
 							@slot('bio')
 								Igor has been developing for many years as a Software Developer at leading IT companies. He has previously worked as a Software Developer at Execom, and has completed a Bachelors and Masters degree in Computer Science. He has over 3 years experience as a blockchain developer and has also worked as a Senior Software Engineer at NTT Data.
 							@endslot
@@ -108,7 +108,7 @@
 						@component('_includes.team')
 							@slot('slug', 'joe')
 							@slot('name', 'Joe Priest')
-							@slot('role', 'Front-End Developer')
+							@slot('role', 'Developer')
 							@slot('bio')
 								Joe has a Bachelors degree in Computer Science and extensive knowledge of full-stack web development, with over 15 years experience in the field. He is responsible for translating the UI/UX designs into code that will produce the elements of Internxt’s website, applications and services that you will see and interact with.
 							@endslot
@@ -119,7 +119,7 @@
 						@component('_includes.team')
 							@slot('slug', 'alex')
 							@slot('name', 'Alex Sicart Ramos')
-							@slot('role', 'Technical Advisor')
+							@slot('role', 'Advisor')
 							@slot('bio')
 								Alex is the Co-founder of FileNation, a decentralized, peer-to-peer file sharing platform. He has also talked on stage at events such as TED talks and iFest to discuss blockchain and IPFS and also came first place at an event hosted by German car manufacturer, Audi to create and pitch the most innovative product. Alex was seen by Forbes as being one of Europe’s most promising young game-changers and was awarded a place on the Forbes 30 Under 30 Europe 2017. Alex is also a creative consultant for the global leading consultancy firm, Accenture.
 							@endslot
