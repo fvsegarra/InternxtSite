@@ -16595,6 +16595,7 @@ hr {
   background-image: linear-gradient(to bottom, #060910, #02090f 16%, #050c14 37%, #00050b);
   color: white;
   height: 713px;
+  background-image: url("/img/xcloud-vision-warranty_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 76px;
@@ -16602,6 +16603,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-warranty {
+    background-image: url("/img/xcloud-vision-warranty.png");
     padding-top: 200px;
   }
 }
