@@ -10714,6 +10714,11 @@ a.text-dark:focus {
             transition-delay: 0.07s;
   }
 
+  .mobile-header ul.menu li.menu-item:nth-child(8) {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+
   .mobile-header ul.menu li.menu-item a {
     color: black;
     display: block;
@@ -10795,6 +10800,11 @@ a.text-dark:focus {
   .mobile-header.menu-opened ul.menu li.menu-item:nth-child(7) {
     -webkit-transition-delay: 0.69s;
             transition-delay: 0.69s;
+  }
+
+  .mobile-header.menu-opened ul.menu li.menu-item:nth-child(8) {
+    -webkit-transition-delay: 0.76s;
+            transition-delay: 0.76s;
   }
 
   .mobile-header.menu-opened .icon.icon-bag {
