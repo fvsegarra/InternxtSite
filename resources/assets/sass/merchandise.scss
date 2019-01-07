@@ -11,9 +11,10 @@
 
 		@include whenLargerThan('large-screen') {
 			background-image: url('/img/headers/xcloud-vision.png');
-			background-position: right center;
-			background-size: contain;
-			padding-top: 200px;
+			background-position: right bottom;
+		    background-size: 100%;
+			padding-top: 260px;
+			height: 786px;
 		}
 
 		& > .container {
@@ -21,7 +22,7 @@
 			padding-left: 26px;
 
 			@include whenLargerThan('large-screen') {
-				padding-left: 24px;
+				padding-left: 33px;
 			}
 
 		}
@@ -35,7 +36,11 @@
 			margin-bottom: 12px;
 
 			@include whenLargerThan('large-screen') {
-
+				color: #242424;
+				font-size: 48px;
+				letter-spacing: -2.1px;
+				line-height: 1.07;
+				margin-bottom: 9px;
 			}
 
 		}
@@ -47,9 +52,14 @@
 			line-height: 1.05;
 			font-weight: 400;
 			opacity: 0.76;
+			margin-bottom: 0;
 
 			@include whenLargerThan('large-screen') {
-				width: 303px;
+				font-size: 27px;
+				font-weight: normal;
+				letter-spacing: -0.8px;
+				line-height: 1.14;
+				width: 365px;
 			}
 
 		}
@@ -75,10 +85,15 @@
             width: 230px;
 
             @include whenLargerThan('large-screen') {
-                background-position-x: 200px;
-                line-height: normal;
-                margin-top: 30px;
-                padding: 12px 46px 13px 23px;
+				background-position-x: 198px;
+    			background-size: 21px;
+				font-size: 17px;
+				height: 43.2px;
+				line-height: normal;
+				margin-top: 76px;
+				padding: 12px 46px 13px 23px;
+				width: 231.4px;
+  				letter-spacing: -0.2px;
             }
 		}
 
@@ -91,13 +106,30 @@
 			background-color: #fafafa;
 			padding: 100px 0 106px;
 
+			& > .container {
+
+				@include whenLargerThan('large-screen') {
+					padding-left: 42px;
+				}
+
+			}
+
 			.section__heading {
+
 				font-size: 34px;
 				font-weight: 600;
 				letter-spacing: -0.6px;
 				line-height: 1.15;
 				margin-top: 15px;
 				max-width: 310px;
+
+				@include whenLargerThan('large-screen') {
+					font-size: 40px;
+					letter-spacing: -1.1px;
+					line-height: 0.98;
+					max-width: 440px;
+				}
+
 			}
 
 			.section__content {

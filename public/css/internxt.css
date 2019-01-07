@@ -16499,9 +16499,10 @@ hr {
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader {
     background-image: url("/img/headers/xcloud-vision.png");
-    background-position: right center;
-    background-size: contain;
-    padding-top: 200px;
+    background-position: right bottom;
+    background-size: 100%;
+    padding-top: 260px;
+    height: 786px;
   }
 }
 
@@ -16511,7 +16512,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader > .container {
-    padding-left: 24px;
+    padding-left: 33px;
   }
 }
 
@@ -16523,17 +16524,32 @@ hr {
   margin-bottom: 12px;
 }
 
+@media (min-width: 1080px) {
+  #page-merchandise .pageHeader__heading {
+    color: #242424;
+    font-size: 48px;
+    letter-spacing: -2.1px;
+    line-height: 1.07;
+    margin-bottom: 9px;
+  }
+}
+
 #page-merchandise .pageHeader__subheading {
   font-size: 22px;
   letter-spacing: -0.4px;
   line-height: 1.05;
   font-weight: 400;
   opacity: 0.76;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader__subheading {
-    width: 303px;
+    font-size: 27px;
+    font-weight: normal;
+    letter-spacing: -0.8px;
+    line-height: 1.14;
+    width: 365px;
   }
 }
 
@@ -16560,16 +16576,27 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader__cta {
-    background-position-x: 200px;
+    background-position-x: 198px;
+    background-size: 21px;
+    font-size: 17px;
+    height: 43.2px;
     line-height: normal;
-    margin-top: 30px;
+    margin-top: 76px;
     padding: 12px 46px 13px 23px;
+    width: 231.4px;
+    letter-spacing: -0.2px;
   }
 }
 
 #page-merchandise .section--vision-privacy {
   background-color: #fafafa;
   padding: 100px 0 106px;
+}
+
+@media (min-width: 1080px) {
+  #page-merchandise .section--vision-privacy > .container {
+    padding-left: 42px;
+  }
 }
 
 #page-merchandise .section--vision-privacy .section__heading {
@@ -16579,6 +16606,15 @@ hr {
   line-height: 1.15;
   margin-top: 15px;
   max-width: 310px;
+}
+
+@media (min-width: 1080px) {
+  #page-merchandise .section--vision-privacy .section__heading {
+    font-size: 40px;
+    letter-spacing: -1.1px;
+    line-height: 0.98;
+    max-width: 440px;
+  }
 }
 
 #page-merchandise .section--vision-privacy .section__content {
