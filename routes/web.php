@@ -22,3 +22,33 @@ Route::view('terms', 'terms')->name('terms');
 Route::view('privacy', 'privacy')->name('privacy');
 Route::view('civic', 'civic-test')->name('civic-test');
 Route::view('merch', 'merchandise')->name('merchandise');
+
+Route::any('buy', function(Illuminate\Http\Request $request){
+
+	Log::info('Stripe checkout completed');
+
+	if (!$request->filled('stripeToken')) {
+		Log::error('Stripe token empty, cannot continue');
+		dd('stripeToken empty');
+	}
+
+	// Token is created using Checkout or Elements!
+	// Get the payment token ID submitted by the form:
+	$token = $request->input('stripeToken');
+
+	Log::info('Attempting to charge card...', compact('token'));
+
+	\Stripe\Stripe::setApiKey(config('services.stripe.secret'));
+
+	$charge = \Stripe\Charge::create([
+	    'amount' => config('services.stripe.prices.vision'),
+	    'currency' => 'usd',
+	    'description' => 'X Cloud Vision',
+	    'source' => $token,
+	]);
+
+	$request->session()->flash('status', 'success');
+
+	return redirect()->route('merchandise');
+
+})->name('stripe.purchase');
