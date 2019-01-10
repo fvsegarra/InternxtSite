@@ -12,7 +12,7 @@
 		<div class="container">
 			<h1 class="pageHeader__heading">X Cloud Vision</h1>
 			<h2 class="pageHeader__subheading">Take control of your privacy with our premium webcam cover.</h2>
-			<a class="pageHeader__cta" href="#">Buy <span class="hidden d-lg-inline">it </span>now for $9.95</a>
+			<a class="pageHeader__cta btn--stripe">Buy <span class="hidden d-lg-inline">it </span>now for $9.95</a>
 		</div>
 	</header>
 
@@ -47,21 +47,6 @@
 
 				<div class="col-lg-3">
 					<button class="section__cta btn--stripe">Buy now for $9.95</button>
-					{{-- <form action="{{ route('stripe.purchase') }}" class="stripe" method="POST">
-						@csrf
-						<script
-							class="stripe-button"
-							data-amount="{{ config('services.stripe.prices.vision') }}"
-							data-currency="USD"
-							data-description="X Cloud Vision ($9.95)"
-							data-image="/img/logos/internxtcircle.png"
-							data-key="{{ config('services.stripe.key') }}"
-							data-label="Buy now for $9.95"
-							data-name="Internxt"
-							data-shipping-address="true"
-							src="https://checkout.stripe.com/checkout.js"
-					    ></script>
-					</form> --}}
 				</div>{{-- /.col-lg-3 --}}
 			</div>{{-- /.row --}}
 		</div>{{-- /.container --}}
@@ -76,6 +61,9 @@
 
 @push('js')
 
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<script>
 		$(document).ready(function(){
 
@@ -86,13 +74,19 @@
 				token: function(token) {
 				// You can access the token ID with `token.id`.
 				// Get the token ID to your server-side code for use.
-					$.post("{{ route('stripe.purchase') }}", function(response){
-
+					$.post("{{ route('stripe.purchase') }}", {token}, function(response){
+						console.debug(response);
+						if (response.status == "ok") {
+							swal("Order Complete", "Your X Cloud Vision is on the way.", "success");
+						}
+						else{
+							swal("Order Cancelled", "There was a problem processing your order. Please try again.", "error");
+						}
 					});
 				}
 			});
 
-			$('btn--stripe').click(function(e) {
+			$('.btn--stripe').click(function(e) {
 				// Open Checkout with further options:
 				handler.open({
 					name: 'Internxt Inc.',
@@ -108,15 +102,5 @@
 			});
 		});
 	</script>
-
-	{{-- SweetAlert message on successful stripe purchase  --}}
-	@if(Session::has('status') && Session::get('status') == 'success')
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				swal("Order Complete", "Your X Cloud Vision is on the way.", "success");
-			});
-		</script>
-	@endif
 
 @endpush

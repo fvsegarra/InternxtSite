@@ -13,3 +13,9 @@ try {
 
     require('bootstrap');
 } catch (e) {}
+
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});

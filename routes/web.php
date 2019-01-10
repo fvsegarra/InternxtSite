@@ -27,14 +27,17 @@ Route::any('buy', function(Illuminate\Http\Request $request){
 
 	Log::info('Stripe checkout completed');
 
-	if (!$request->filled('stripeToken')) {
+	if (!$request->filled('token.id')) {
 		Log::error('Stripe token empty, cannot continue');
-		dd('stripeToken empty');
+		return response()->json([
+			'status' => 'fail',
+			'message' => 'Stripe token empty',
+		]);
 	}
 
 	// Token is created using Checkout or Elements!
 	// Get the payment token ID submitted by the form:
-	$token = $request->input('stripeToken');
+	$token = $request->input('token.id');
 
 	Log::info('Attempting to charge card...', compact('token'));
 
@@ -49,6 +52,9 @@ Route::any('buy', function(Illuminate\Http\Request $request){
 
 	$request->session()->flash('status', 'success');
 
-	return redirect()->route('merchandise');
+	return response()->json([
+		'status' => 'ok',
+		'message' => 'success',
+	]);
 
 })->name('stripe.purchase');
