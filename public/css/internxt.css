@@ -16487,6 +16487,10 @@ hr {
   margin-top: 106px;
 }
 
+#page-merchandise .btn--stripe {
+  cursor: pointer;
+}
+
 #page-merchandise .pageHeader {
   background-image: url("/img/headers/xcloud-vision_mobile.png");
   background-position: center bottom;
