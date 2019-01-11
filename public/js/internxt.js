@@ -34132,6 +34132,12 @@ try {
     __webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.js");
 } catch (e) {}
 
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+
 /***/ }),
 
 /***/ "./resources/assets/js/internxt.js":

@@ -10714,6 +10714,11 @@ a.text-dark:focus {
             transition-delay: 0.07s;
   }
 
+  .mobile-header ul.menu li.menu-item:nth-child(8) {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+
   .mobile-header ul.menu li.menu-item a {
     color: black;
     display: block;
@@ -10795,6 +10800,11 @@ a.text-dark:focus {
   .mobile-header.menu-opened ul.menu li.menu-item:nth-child(7) {
     -webkit-transition-delay: 0.69s;
             transition-delay: 0.69s;
+  }
+
+  .mobile-header.menu-opened ul.menu li.menu-item:nth-child(8) {
+    -webkit-transition-delay: 0.76s;
+            transition-delay: 0.76s;
   }
 
   .mobile-header.menu-opened .icon.icon-bag {
@@ -16477,6 +16487,10 @@ hr {
   margin-top: 106px;
 }
 
+#page-merchandise .btn--stripe {
+  cursor: pointer;
+}
+
 #page-merchandise .pageHeader {
   background-image: url("/img/headers/xcloud-vision_mobile.png");
   background-position: center bottom;
@@ -16489,10 +16503,10 @@ hr {
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader {
     background-image: url("/img/headers/xcloud-vision.png");
-    background-position: right center;
-    background-size: 811px 652px;
-    height: 859px;
-    padding-top: 200px;
+    background-position: right bottom;
+    background-size: 1438px 857px;
+    padding-top: 260px;
+    height: 786px;
   }
 }
 
@@ -16502,7 +16516,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader > .container {
-    padding-left: 24px;
+    padding-left: 33px;
   }
 }
 
@@ -16518,9 +16532,9 @@ hr {
   #page-merchandise .pageHeader__heading {
     color: #242424;
     font-size: 48px;
-    height: 52px;
+    letter-spacing: -2.1px;
     line-height: 1.07;
-    max-width: 309px;
+    margin-bottom: 9px;
   }
 }
 
@@ -16530,15 +16544,16 @@ hr {
   line-height: 1.05;
   font-weight: 400;
   opacity: 0.76;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader__subheading {
-    font-size: 26.9px;
+    font-size: 27px;
     font-weight: normal;
     letter-spacing: -0.8px;
     line-height: 1.14;
-    max-width: 303px;
+    width: 365px;
   }
 }
 
@@ -16565,11 +16580,15 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader__cta {
-    background-position-x: 200px;
-    font-size: 16.8px;
+    background-position-x: 198px;
+    background-size: 21px;
+    font-size: 17px;
+    height: 43.2px;
     line-height: normal;
-    margin-top: 30px;
+    margin-top: 76px;
     padding: 12px 46px 13px 23px;
+    width: 231.4px;
+    letter-spacing: -0.2px;
   }
 }
 
@@ -16580,7 +16599,13 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-privacy {
-    padding: 158px 0 115px;
+    padding: 100px 0 116px;
+  }
+}
+
+@media (min-width: 1080px) {
+  #page-merchandise .section--vision-privacy > .container {
+    padding-left: 42px;
   }
 }
 
@@ -16598,7 +16623,6 @@ hr {
     font-size: 40px;
     letter-spacing: -1.1px;
     line-height: 0.98;
-    margin-top: 0;
     max-width: 440px;
   }
 }
@@ -16614,10 +16638,12 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-privacy .section__content {
-    font-weight: normal;
     letter-spacing: -0.2px;
     line-height: 1.45;
-    max-width: 610px;
+    margin-bottom: 0;
+    margin-top: 14px;
+    left: 12px;
+    position: relative;
   }
 }
 
@@ -16626,6 +16652,7 @@ hr {
   background-image: linear-gradient(to bottom, #060910, #02090f 16%, #050c14 37%, #00050b);
   color: white;
   height: 713px;
+  background-image: url("/img/xcloud-vision-warranty_mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 76px;
@@ -16633,8 +16660,9 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-warranty {
+    background-image: url("/img/xcloud-vision-warranty.png");
     height: 860px;
-    padding-top: 200px;
+    padding-top: 250px;
   }
 }
 
@@ -16650,7 +16678,11 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-warranty .section__heading {
-    margin: 0;
+    font-size: 40px;
+    letter-spacing: -0.8px;
+    line-height: 1.03;
+    margin-left: 32px;
+    margin-bottom: 0;
     max-width: 350px;
   }
 }
@@ -16666,11 +16698,10 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-warranty .section__content {
-    font-size: 20px;
-    font-weight: normal;
     letter-spacing: -0.2px;
     line-height: 1.2;
-    margin-top: 20px;
+    margin-left: 29px;
+    margin-top: 15px;
     max-width: 374px;
   }
 }
@@ -16681,7 +16712,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-buy {
-    padding: 108px 0 121px;
+    padding: 108px 0 121px 0;
   }
 }
 
@@ -16697,8 +16728,15 @@ hr {
   margin: 0;
 }
 
-#page-merchandise .section--vision-buy .section__cta,
-#page-merchandise .section--vision-buy .stripe-button-el {
+@media (min-width: 1080px) {
+  #page-merchandise .section--vision-buy .section__heading {
+    left: -11px;
+    margin-top: 8px;
+    position: relative;
+  }
+}
+
+#page-merchandise .section--vision-buy .section__cta {
   -webkit-appearance: none;
   background-color: #4585f5;
   background-image: url("/img/icons/chevron-right-circle.svg");
@@ -16714,30 +16752,30 @@ hr {
   font-size: 21.6px;
   height: 56px;
   letter-spacing: -0.2px;
-  padding: 15px 60px 14px 28px;
+  padding: 15px 55px 14px 28px;
   margin: 0 auto;
   text-align: left;
   width: 270px;
 }
 
-#page-merchandise .section--vision-buy .section__cta:active,
-#page-merchandise .section--vision-buy .section__cta:focus,
-#page-merchandise .section--vision-buy .stripe-button-el:active,
-#page-merchandise .section--vision-buy .stripe-button-el:focus {
-  outline: none;
+@media (min-width: 1080px) {
+  #page-merchandise .section--vision-buy .section__cta {
+    background-position: 186px center;
+    background-size: 26px;
+    font-size: 17px;
+    font-weight: 600;
+    height: 47px;
+    left: -25px;
+    letter-spacing: 0.2px;
+    padding: 12px 50px 14px 24px;
+    position: relative;
+    width: 225px;
+  }
 }
 
-#page-merchandise .section--vision-buy .section__cta > span,
-#page-merchandise .section--vision-buy .stripe-button-el > span {
-  background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-size: 21.6px;
-  font-weight: 600;
-  height: 27px;
-  letter-spacing: -0.2px;
-  padding: 0;
-  width: 182px;
+#page-merchandise .section--vision-buy .section__cta:active,
+#page-merchandise .section--vision-buy .section__cta:focus {
+  outline: none;
 }
 
 #page-merchandise .section--vision-preview {
@@ -16751,6 +16789,7 @@ hr {
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-preview {
     background-image: url("/img/mockups/xcloud-vision/close-up.png");
+    background-position-y: 0px;
   }
 }
 
@@ -16758,7 +16797,19 @@ hr {
   margin-top: 27px;
 }
 
+@media (min-width: 1080px) {
+  #page-merchandise .section--subscribe {
+    margin-top: 137px;
+  }
+}
+
 #page-merchandise .section--subscribe .section__border {
   margin-top: 0;
+}
+
+@media (min-width: 1080px) {
+  #page-merchandise .section--subscribe .section__border {
+    margin-bottom: 128px;
+  }
 }
 

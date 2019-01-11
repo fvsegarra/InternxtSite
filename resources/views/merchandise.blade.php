@@ -12,7 +12,7 @@
 		<div class="container">
 			<h1 class="pageHeader__heading">X Cloud Vision</h1>
 			<h2 class="pageHeader__subheading">Take control of your privacy with our premium webcam cover.</h2>
-			<a class="pageHeader__cta" href="#">Buy now for $9.95</a>
+			<a class="pageHeader__cta btn--stripe">Buy <span class="hidden d-lg-inline">it </span>now for $9.95</a>
 		</div>
 	</header>
 
@@ -46,19 +46,7 @@
 				</div>{{-- /.col-lg-9 --}}
 
 				<div class="col-lg-3">
-					{{-- <button class="section__cta">Buy now for $9.95</button> --}}
-					<form action="/charge" class="stripe" method="POST">
-						<script
-							class="stripe-button"
-							data-amount="995"
-							data-description="X Cloud Vision ($9.95)"
-							data-image="/img/logos/internxtcircle.png"
-							data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-							data-label="Buy now for $9.95"
-							data-name="Internxt"
-							src="https://checkout.stripe.com/checkout.js"
-					    ></script>
-					</form>
+					<button class="section__cta btn--stripe">Buy now for $9.95</button>
 				</div>{{-- /.col-lg-3 --}}
 			</div>{{-- /.row --}}
 		</div>{{-- /.container --}}
@@ -70,3 +58,49 @@
 	@include('_includes.sections.subscribe')
 
 @endsection
+
+@push('js')
+
+	<script src="https://checkout.stripe.com/checkout.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+			var handler = StripeCheckout.configure({
+				key: '{{ config('services.stripe.key') }}',
+				image: '/img/logos/internxtcircle.png',
+				locale: 'auto',
+				token: function(token) {
+				// You can access the token ID with `token.id`.
+				// Get the token ID to your server-side code for use.
+					$.post("{{ route('stripe.purchase') }}", {token}, function(response){
+						console.debug(response);
+						if (response.status == "ok") {
+							swal("Order Complete", "Your X Cloud Vision is on the way.", "success");
+						}
+						else{
+							swal("Order Cancelled", "There was a problem processing your order. Please try again.", "error");
+						}
+					});
+				}
+			});
+
+			$('.btn--stripe').click(function(e) {
+				// Open Checkout with further options:
+				handler.open({
+					name: 'Internxt Inc.',
+					description: 'X Cloud Vision ($9.95)',
+					amount: {{ config('services.stripe.prices.vision') }},
+				});
+				e.preventDefault();
+			});
+
+			// Close Checkout on page navigation:
+			window.addEventListener('popstate', function() {
+				handler.close();
+			});
+		});
+	</script>
+
+@endpush

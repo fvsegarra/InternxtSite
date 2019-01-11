@@ -57,6 +57,15 @@
                             </div>
                         </a>
                         <hr>
+                        <a class="dropdown-item dropdown-item" href="{{ route('merchandise') }}">
+                            <div class="media d-flex align-items-center">
+                                <img class="dropdown-item__image align-self-center" src="/img/icons/dropdown/merchandise.svg" alt="Placeholder">
+                                <div class="media-body">
+                                    <h5 class="dropdown-item__heading">Merchandise</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
                         <a class="dropdown-item dropdown-item" href="{{ route('resources') }}">
                             <div class="media d-flex align-items-center">
                                 <img class="dropdown-item__image align-self-center" src="/img/icons/dropdown/resources.svg" alt="Placeholder">
