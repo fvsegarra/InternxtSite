@@ -161,7 +161,7 @@
             "@type": "Organization",
             "url": "https://internxt.com",
             "name": "Internxt Inc.",
-            "image": "https://internxt.com/img/logos/internxt_icon.svg",
+            "image": "https://internxt.com/img/logos/logo.png",
             "description": "Internxt is excitement, ambition, innovation. Join the revolution. The future is now.",
             "contactPoint": {
                 "@type": "ContactPoint",
