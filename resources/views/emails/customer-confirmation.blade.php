@@ -4,4 +4,4 @@
 
 <p>Your order number is {{ $charge->id }}</p></p>
 
-<p>The Internxt Team</p>
+<p>Internxt Inc.</p>
