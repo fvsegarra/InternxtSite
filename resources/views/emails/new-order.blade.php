@@ -1,3 +1,5 @@
+<h1>New Order</h1>
+
 <p>A new X Cloud Vision order has been placed! Details below:</p>
 
 @if(isset($charge['source']))

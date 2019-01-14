@@ -47,8 +47,6 @@ class StripeController extends Controller
 			Mail::to($customerEmail)->send(new CustomerConfirmation($charge));
 		}
 
-		$request->session()->flash('status', 'success');
-
 		return response()->json([
 			'status' => 'ok',
 			'message' => 'success',
