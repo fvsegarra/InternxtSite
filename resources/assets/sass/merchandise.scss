@@ -11,13 +11,14 @@
 		background-repeat: no-repeat;
 		background-size: 1080px auto;
 		height: 668px;
-		padding-top: 29vh;
+		padding-top: 134px;
 		background-position-x: 61%; // Offset a touch to centre-align image with text
 
 		// Make header full screen height
 		@include whenLargerThan('small-screen') {
 			height: 100vh;
     		margin-top: -73px;
+    		padding-top: 29vh;
 		}
 
 		// Pin to right-hand side when image width is reached

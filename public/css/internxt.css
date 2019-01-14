@@ -16497,7 +16497,7 @@ hr {
   background-repeat: no-repeat;
   background-size: 1080px auto;
   height: 668px;
-  padding-top: 29vh;
+  padding-top: 134px;
   background-position-x: 61%;
 }
 
@@ -16505,6 +16505,7 @@ hr {
   #page-merchandise .pageHeader {
     height: 100vh;
     margin-top: -73px;
+    padding-top: 29vh;
   }
 }
 
