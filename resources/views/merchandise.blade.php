@@ -41,11 +41,11 @@
 	<section class="section section--vision-buy">
 		<div class="container">
 			<div class="row d-flex align-items-center">
-				<div class="col-lg-9 d-none d-lg-block">
+				<div class="col--text">
 					<h2 class="section__heading">Secure your privacy today with X Cloud Vision.</h2>
 				</div>{{-- /.col-lg-9 --}}
 
-				<div class="col-lg-3">
+				<div class="col--btn">
 					<button class="section__cta btn--stripe">Buy now for $9.95</button>
 				</div>{{-- /.col-lg-3 --}}
 			</div>{{-- /.row --}}

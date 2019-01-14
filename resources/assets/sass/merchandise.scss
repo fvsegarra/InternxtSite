@@ -242,6 +242,29 @@
 				max-width: 900px;
 			}
 
+			.col--text {
+				display: none;
+			}
+
+			.col--btn {
+				width: 100%;
+			}
+
+			@include whenLargerThan('large-screen') {
+
+				.col--text {
+					display: block;
+					flex: 0 0 75%;
+    				max-width: 75%;
+				}
+
+				.col--btn {
+					flex: 0 0 25%;
+					max-width: 25%;
+				}
+
+			}
+
 			.section__heading {
 
 				font-size: 28px;
@@ -251,7 +274,7 @@
 			    margin: 0;
 
 			    @include whenLargerThan('large-screen') {
-					left: -11px;
+					left: 4px;
 					position: relative;
 			    }
 
@@ -288,7 +311,7 @@
 					position: relative;
 					width: 225px;
   					height: 47px;
-    				left: -25px;
+    				left: -10px;
 	            }
 
 	            &:active,

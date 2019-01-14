@@ -16731,6 +16731,31 @@ hr {
   max-width: 900px;
 }
 
+#page-merchandise .section--vision-buy .col--text {
+  display: none;
+}
+
+#page-merchandise .section--vision-buy .col--btn {
+  width: 100%;
+}
+
+@media (min-width: 1080px) {
+  #page-merchandise .section--vision-buy .col--text {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  #page-merchandise .section--vision-buy .col--btn {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
 #page-merchandise .section--vision-buy .section__heading {
   font-size: 28px;
   font-weight: 600;
@@ -16741,7 +16766,7 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-buy .section__heading {
-    left: -11px;
+    left: 4px;
     position: relative;
   }
 }
@@ -16779,7 +16804,7 @@ hr {
     position: relative;
     width: 225px;
     height: 47px;
-    left: -25px;
+    left: -10px;
   }
 }
 
