@@ -16507,7 +16507,7 @@ hr {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1240px) {
   #page-merchandise .pageHeader {
     background-image: url("/img/headers/xcloud-vision.png");
     background-position: right bottom;
@@ -16657,17 +16657,28 @@ hr {
 #page-merchandise .section--vision-warranty {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#060910), color-stop(16%, #02090f), color-stop(37%, #050c14), to(#00050b));
   background-image: linear-gradient(to bottom, #060910, #02090f 16%, #050c14 37%, #00050b);
+  background-image: url("/img/xcloud-vision-warranty_tablet.png"), -webkit-gradient(linear, left top, left bottom, from(#060910), color-stop(16%, #02090f), color-stop(37%, #050c14), to(#00050b));
+  background-image: url("/img/xcloud-vision-warranty_tablet.png"), linear-gradient(to bottom, #060910, #02090f 16%, #050c14 37%, #00050b);
+  background-position: center bottom;
+  background-size: 1080px 715px;
   color: white;
   height: 713px;
-  background-image: url("/img/xcloud-vision-warranty_mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 76px;
+}
+
+@media (min-width: 768px) {
+  #page-merchandise .section--vision-warranty {
+    background-image: url("/img/xcloud-vision-warranty_tablet.png");
+    background-repeat: no-repeat;
+    background-size: auto 715px;
+    background-position: center;
+  }
 }
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-warranty {
     background-image: url("/img/xcloud-vision-warranty.png");
+    background-size: cover;
     height: 860px;
     padding-top: 250px;
   }
