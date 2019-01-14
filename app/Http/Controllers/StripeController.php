@@ -38,7 +38,7 @@ class StripeController extends Controller
 		    'source' => $token,
 		]);
 
-		Mail::to('joe@infusion-it.co.uk')->send(new NewOrder($charge));
+		Mail::to(config('mail.recipient'))->send(new NewOrder($charge));
 
 		$request->session()->flash('status', 'success');
 
