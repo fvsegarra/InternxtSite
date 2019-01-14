@@ -25,7 +25,6 @@
 
 				<div class="col-lg-6">
 					<p class="section__content">Webcam spying is a growing issue that can threaten your privacy via any electronic device that contains a webcam. The solution is quite simple: plenty of documented webcam hacking incidents could have been easily avoided by a simple webcam cover. Our elegant and practical webcam cover serves as the perfect alternative to that ugly sticker or post-it note on your laptop, tablet or desktop.
-X Cloud Vision deeply represents Internxt's core values. Are you part of Internxt?
 					</p>
 				</div>{{-- /.col-lg-6 --}}
 
@@ -35,8 +34,9 @@ X Cloud Vision deeply represents Internxt's core values. Are you part of Internx
 
 	<section class="section section--vision-warranty">
 		<div class="container">
-			<p class="section__heading">The smart way to protect privacy.</p>
-			<p class="section__content">X Cloud’s Vision is crafted and packaged with high quality materials and with a full 2-year protection warranty.</p>
+			<p class="section__heading">Much more than that.</p>
+			<p class="section__content">X Cloud Vision is much more than a carefully crafted and incredibly useful webcam cover. X Cloud Vision deeply represents Internxt's core values. Are you part of Internxt?
+</p>
 		</div>{{-- /.container --}}
 	</section>
 
