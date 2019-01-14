@@ -16741,6 +16741,7 @@ hr {
 
 #page-merchandise .section--vision-buy .section__heading {
   font-size: 28px;
+  font-weight: 600;
   letter-spacing: -0.9px;
   line-height: 1.31;
   margin: 0;
@@ -16749,7 +16750,6 @@ hr {
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-buy .section__heading {
     left: -11px;
-    margin-top: 8px;
     position: relative;
   }
 }
@@ -16784,7 +16784,6 @@ hr {
     font-size: 17px;
     height: 43.2px;
     line-height: normal;
-    margin-top: 76px;
     padding: 12px 39px 13px 23px;
     width: 216.4px;
     letter-spacing: -0.2px;

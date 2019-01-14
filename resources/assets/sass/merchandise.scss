@@ -252,13 +252,13 @@
 			.section__heading {
 
 				font-size: 28px;
+				font-weight: 600;
 			    letter-spacing: -0.9px;
 			    line-height: 1.31;
 			    margin: 0;
 
 			    @include whenLargerThan('large-screen') {
 					left: -11px;
-					margin-top: 8px;
 					position: relative;
 			    }
 
@@ -292,7 +292,6 @@
 					font-size: 17px;
 					height: 43.2px;
 					line-height: normal;
-					margin-top: 76px;
 					padding: 12px 39px 13px 23px;
 					width: 216.4px;
 					letter-spacing: -0.2px;
@@ -310,10 +309,6 @@
 
 		&--vision-preview {
 
-			// background-image: url('/img/mockups/xcloud-vision/close-up_mobile.png');
-			// background-position: center bottom;
-			// background-repeat: no-repeat;
-			// background-size: cover;
 			background-image: url('/img/mockups/xcloud-vision/close-up.png');
 			background-position-y: 0px;
 			background-size: 1440px 570px;

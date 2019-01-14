@@ -40,7 +40,7 @@
 
 	<section class="section section--vision-buy">
 		<div class="container">
-			<div class="row">
+			<div class="row d-flex align-items-center">
 				<div class="col-lg-9 d-none d-lg-block">
 					<h2 class="section__heading">Secure your privacy today with X Cloud Vision.</h2>
 				</div>{{-- /.col-lg-9 --}}
