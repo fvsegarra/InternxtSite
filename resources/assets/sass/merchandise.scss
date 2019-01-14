@@ -14,6 +14,12 @@
 		padding-top: 134px;
 		background-position-x: 61%; // Offset a touch to centre-align image with text
 
+		// Make header full screen height
+		@include whenLargerThan('small-screen') {
+			height: 100vh;
+    		margin-top: -73px;
+		}
+
 		// Pin to right-hand side when image width is reached
 		@include whenLargerThan('large-screen') {
 			background-position-x: right;
@@ -24,7 +30,6 @@
 			background-position: right bottom;
 		    background-size: 1438px 857px;
 			padding-top: 260px;
-			height: 786px;
 		}
 
 		& > .container {

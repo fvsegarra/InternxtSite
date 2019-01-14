@@ -16501,6 +16501,13 @@ hr {
   background-position-x: 61%;
 }
 
+@media (min-width: 768px) {
+  #page-merchandise .pageHeader {
+    height: 100vh;
+    margin-top: -73px;
+  }
+}
+
 @media (min-width: 1080px) {
   #page-merchandise .pageHeader {
     background-position-x: right;
@@ -16513,7 +16520,6 @@ hr {
     background-position: right bottom;
     background-size: 1438px 857px;
     padding-top: 260px;
-    height: 786px;
   }
 }
 
