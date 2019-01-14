@@ -2,6 +2,9 @@
 
 return [
 
+    // The recipient of email notifications
+    'recipient' => env('MAIL_RECIPIENT', 'hello@internxt.com');
+
     /*
     |--------------------------------------------------------------------------
     | Mail Driver
