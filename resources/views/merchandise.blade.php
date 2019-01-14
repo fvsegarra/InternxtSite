@@ -11,7 +11,7 @@
 	<header class="pageHeader">
 		<div class="container">
 			<h1 class="pageHeader__heading">X Cloud Vision</h1>
-			<h2 class="pageHeader__subheading">Take control of your privacy with our superior webcam cover.</h2>
+			<h2 class="pageHeader__subheading">Take control of your privacy with our premium webcam cover.</h2>
 			<a class="pageHeader__cta btn--stripe">Buy now for $9.95</a>
 		</div>
 	</header>
