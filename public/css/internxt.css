@@ -16797,17 +16797,15 @@ hr {
 }
 
 #page-merchandise .section--vision-preview {
-  background-image: url("/img/mockups/xcloud-vision/close-up_mobile.png");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/img/mockups/xcloud-vision/close-up.png");
+  background-position-y: 0px;
+  background-size: 1440px 570px;
   height: 506px;
 }
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-preview {
-    background-image: url("/img/mockups/xcloud-vision/close-up.png");
-    background-position-y: 0px;
+    background-size: cover;
   }
 }
 
