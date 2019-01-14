@@ -8,6 +8,7 @@ use Stripe\Stripe;
 use Stripe\Charge;
 use App\Mail\NewOrder;
 use Illuminate\Http\Request;
+use App\Mail\CustomerConfirmation;
 
 class StripeController extends Controller
 {
@@ -27,6 +28,8 @@ class StripeController extends Controller
 		// Token is created using Stripe Checkout
 		$token = $request->input('token.id');
 
+		$customerEmail = $request->input('token.email');
+
 		Log::info('Attempting to charge card...', compact('token'));
 
 		Stripe::setApiKey(config('services.stripe.secret'));
@@ -39,6 +42,10 @@ class StripeController extends Controller
 		]);
 
 		Mail::to(config('mail.recipient'))->send(new NewOrder($charge));
+
+		if ($customerEmail) {
+			Mail::to($customerEmail)->send(new CustomerConfirmation($charge));
+		}
 
 		$request->session()->flash('status', 'success');
 
