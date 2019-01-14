@@ -16789,7 +16789,7 @@ hr {
 
 #page-merchandise .section--vision-preview {
   background-image: url("/img/mockups/xcloud-vision/close-up.png");
-  background-position-y: 0px;
+  background-position: 47% bottom;
   background-size: 1440px 570px;
   height: 506px;
 }
@@ -16797,6 +16797,7 @@ hr {
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-preview {
     background-size: cover;
+    background-position: center bottom;
   }
 }
 
