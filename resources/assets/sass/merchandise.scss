@@ -1,0 +1,370 @@
+#page-merchandise {
+
+	.btn--stripe {
+		cursor: pointer;
+	}
+
+	.pageHeader {
+
+		background-image: url('/img/headers/xcloud-vision_tablet.png');
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: 1080px auto;
+		height: 668px;
+		padding-top: 134px;
+		background-position-x: 61%; // Offset a touch to centre-align image with text
+
+		// Make header full screen height
+		@include whenLargerThan('small-screen') {
+			height: 100vh;
+    		margin-top: -73px;
+    		padding-top: 29vh;
+		}
+
+		// Pin to right-hand side when image width is reached
+		@include whenLargerThan('large-screen') {
+			background-position-x: right;
+		}
+
+		@include whenLargerThan(1240px) {
+			background-image: url('/img/headers/xcloud-vision.png');
+			background-position: right bottom;
+		    background-size: 1438px 857px;
+			padding-top: 40vh;
+		}
+
+		& > .container {
+
+			padding-left: 26px;
+
+			@include whenLargerThan('large-screen') {
+				padding-left: 33px;
+			}
+
+		}
+
+		&__heading {
+
+			font-size: 45px;
+			font-weight: 600;
+			letter-spacing: -2.1px;
+			line-height: 0.81;
+			margin-bottom: 12px;
+
+			@include whenLargerThan('large-screen') {
+				color: #242424;
+				font-size: 48px;
+				letter-spacing: -2.1px;
+				line-height: 1.07;
+				margin-bottom: 9px;
+			}
+
+		}
+
+		&__subheading {
+
+			font-size: 22px;
+			letter-spacing: -0.4px;
+			line-height: 1.05;
+			font-weight: 400;
+			opacity: 0.76;
+			margin-bottom: 0;
+
+			@include whenLargerThan('large-screen') {
+				font-size: 27px;
+				font-weight: normal;
+				letter-spacing: -0.8px;
+				line-height: 1.14;
+				width: 365px;
+			}
+
+		}
+
+		&__cta {
+
+			background-color: #000000;
+            background-image: url(/img/icons/cta-chevron-circle.png);
+            background-position: 192px center;
+            background-repeat: no-repeat;
+            background-size: 23px;
+            border-radius: 31.4px;
+  			box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+            color: white;
+            display: block;
+            font-size: 18px;
+  			font-weight: 600;
+            height: 47px;
+            letter-spacing: -0.2px;
+            line-height: 1;
+            margin-top: 33px;
+            padding: 14px 36px 13px 23px;
+            width: 230px;
+
+            @include whenLargerThan('large-screen') {
+				margin-top: 76px;
+            }
+
+		}
+
+	}
+
+	.section {
+
+		&--vision-privacy {
+
+			background-color: #fafafa;
+			padding: 100px 0 106px;
+
+			@include whenLargerThan('large-screen') {
+				padding: 100px 0 116px;
+			}
+
+			& > .container {
+
+				@include whenLargerThan('large-screen') {
+					padding-left: 42px;
+				}
+
+			}
+
+			.section__heading {
+
+				font-size: 34px;
+				font-weight: 600;
+				letter-spacing: -0.6px;
+				line-height: 1.15;
+				margin-top: 15px;
+				max-width: 310px;
+
+				@include whenLargerThan('large-screen') {
+					font-size: 35px;
+					letter-spacing: -1px;
+					line-height: 1.11;
+					max-width: 420px;
+				}
+
+			}
+
+			.section__content {
+
+				color: #838387;
+				font-size: 20px;
+				font-weight: 400;
+				letter-spacing: -0.1px;
+				line-height: 1.55;
+				padding-left: 4px;
+
+				@include whenLargerThan('large-screen') {
+    				letter-spacing: -0.2px;
+    				line-height: 1.45;
+    				margin-bottom: 0;
+    				margin-top: 14px;
+					left: 86px;
+					position: relative;
+				}
+
+			}
+
+		}
+
+		&--vision-warranty {
+
+			// background-image: url('/img/xcloud-vision-warranty_mobile.png');
+			// background-size: cover;
+			background-image: linear-gradient(to bottom, #060910, #02090f 16%, #050c14 37%, #00050b);
+			background-image: url('/img/xcloud-vision-warranty_tablet.png'), linear-gradient(to bottom, #060910, #02090f 16%, #050c14 37%, #00050b);
+			background-position: center bottom;
+			background-size: 1080px 715px;
+			color: white;
+			height: 713px;
+			padding-top: 76px;
+
+			@include whenLargerThan('small-screen') {
+				background-image: url('/img/xcloud-vision-warranty_tablet.png');
+				background-repeat: no-repeat;
+				background-size: auto 715px;
+				background-position: center;
+			}
+
+			@include whenLargerThan('large-screen') {
+				background-image: url('/img/xcloud-vision-warranty.png');
+				background-size: cover;
+				height: 860px;
+				padding-top: 250px;
+			}
+
+			.section__heading {
+
+				font-size: 34px;
+				font-weight: 600;
+				letter-spacing: -0.6px;
+				line-height: 1.15;
+				max-width: 319px;
+				margin-top: 0;
+				margin-bottom: 13px;
+
+				@include whenLargerThan('large-screen') {
+					font-size: 40px;
+					letter-spacing: -0.8px;
+					line-height: 1.03;
+					margin-left: 32px;
+					margin-bottom: 0;
+					max-width: 350px;
+				}
+
+			}
+
+			.section__content {
+
+				font-size: 20px;
+				font-weight: 400;
+				letter-spacing: -0.1px;
+				line-height: 1.45;
+				max-width: 320px;
+				padding-left: 4px;
+
+				@include whenLargerThan('large-screen') {
+					letter-spacing: -0.2px;
+					line-height: 1.2;
+				    margin-left: 29px;
+    				margin-top: 15px;
+					max-width: 374px;
+				}
+
+			}
+
+		}
+
+		&--vision-buy {
+
+			padding: 96px 0 100px 0;
+
+			@include whenLargerThan('large-screen') {
+				padding: 108px 0 121px 0;
+			}
+
+			& > .container {
+				margin: 0 auto;
+				max-width: 900px;
+			}
+
+			.col--text {
+				display: none;
+			}
+
+			.col--btn {
+				width: 100%;
+			}
+
+			@include whenLargerThan('large-screen') {
+
+				.col--text {
+					display: block;
+					flex: 0 0 75%;
+    				max-width: 75%;
+				}
+
+				.col--btn {
+					flex: 0 0 25%;
+					max-width: 25%;
+				}
+
+			}
+
+			.section__heading {
+
+				font-size: 28px;
+				font-weight: 600;
+			    letter-spacing: -0.9px;
+			    line-height: 1.31;
+			    margin: 0;
+
+			    @include whenLargerThan('large-screen') {
+					left: 4px;
+					position: relative;
+			    }
+
+			}
+
+			.section__cta {
+
+				-webkit-appearance: none;
+				background-color: #4585f5;
+				background-image: url('/img/icons/chevron-right-circle.svg');
+				background-position: 224px center;
+				background-repeat: no-repeat;
+				background-size: 29px;
+				border-radius: 37.7px;
+				border: none;
+				box-shadow: 0 2px 4px 0 rgba(174, 199, 242, 0.34);
+				color: #ffffff;
+				display: block;
+				font-size: 21.6px;
+				height: 56px;
+				letter-spacing: -0.2px;
+				line-height: 1;
+				padding: 15px 55px 14px 28px;
+				margin: 0 auto;
+				text-align: left;
+				width: 270px;
+
+	            @include whenLargerThan('large-screen'){
+					background-position-x: 185px;
+					background-size: 23px;
+					font-size: 18px;
+					letter-spacing: -0.2px;
+					padding: 12px 39px 13px 23px;
+					position: relative;
+					width: 225px;
+  					height: 47px;
+    				left: -10px;
+	            }
+
+	            &:active,
+	            &:focus {
+	            	outline: none;
+	            }
+
+	        }
+
+		}
+
+		&--vision-preview {
+
+			background-image: url('/img/mockups/xcloud-vision/close-up.png');
+			background-position: 47% bottom;
+			background-repeat: no-repeat;
+			background-size: 1440px 570px;
+			height: 506px;
+
+			@include whenLargerThan('large-screen') {
+				background-size: cover;
+				background-position: center bottom;
+			}
+
+		}
+
+		// Override distance between last Vision section and subscribe section
+		&--subscribe {
+
+			margin-top: 27px;
+
+			@include whenLargerThan('large-screen') {
+				margin-top: 137px;
+			}
+
+			.section__border {
+
+				margin-top: 0;
+
+				@include whenLargerThan('large-screen') {
+					margin-bottom: 128px;
+				}
+
+			}
+
+		}
+
+	}
+
+}

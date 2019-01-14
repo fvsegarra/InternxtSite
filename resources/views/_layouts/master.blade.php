@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ mix('css/internxt.css') }}">
         <link rel="canonical" href="{{ $canonical }}">
@@ -188,7 +189,7 @@ drift.load('7bgvz2cd9ici');
             "@type": "Organization",
             "url": "https://internxt.com",
             "name": "Internxt Inc.",
-            "image": "https://internxt.com/img/logos/internxt_icon.svg",
+            "image": "https://internxt.com/img/logos/logo.png",
             "description": "Internxt is excitement, ambition, innovation. Join the revolution. The future is now.",
             "contactPoint": {
                 "@type": "ContactPoint",
@@ -197,6 +198,8 @@ drift.load('7bgvz2cd9ici');
             }
         }
         </script>
+
+        @stack('js')
 
     </body>
 </html>

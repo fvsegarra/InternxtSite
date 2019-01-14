@@ -68,13 +68,11 @@
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
-
-
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'harrison')
 							@slot('name', 'Harrison Moore')
-							@slot('role', 'Designer')
+							@slot('role', 'Chief Design Officer')
 							@slot('bio')
 								Harrison has been engaged in all aspects of design since a young age. Before joining Internxt Harrison had worked as a UI/UX designer for numerous agencies who have worked with technology companies such as Hewlett Packard Enterprises, CAT and CENX among other blue-chip companies. Over the years he has developed a style for simple and intuitive design. Harrison is a part of the design team responsible for imagining and creating internxt’s products user interface.
 							@endslot
@@ -85,19 +83,29 @@
 						@component('_includes.team')
 							@slot('slug', 'zoran')
 							@slot('name', 'Zoran Joka')
-							@slot('role', 'Developer')
+							@slot('role', 'Senior Software Developer')
 							@slot('bio')
 								Zoran has extensive experience in software engineering and has a background in full-stack development. He has completed a Bachelors and Masters degree in Computer Science and has recently worked as a Senior Software Engineer at NTT Data which is the 5th largest IT services company in the world. He has a keen interest in blockchain and decentralization and is working on Internxt’s core development.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
 
+					<div class="col-md-6 col-lg-3">
+						@component('_includes.team')
+							@slot('slug', 'jordan')
+							@slot('name', 'Jordan Latham')
+							@slot('role', 'UI/UX Designer')
+							@slot('bio')
+								Jordan has been immersed in design and entrepreneurship for over 10 years. He sees that flawless design to be vital in all areas of a business’s development. He has created designs for companies such as AirVPN which is a market leader in security and encryption and has also worked as a creative advisor for Showyou, a video streaming service that has recently been acquired by Vevo. He was on the creative board of directors for 4 years at the number one voted theme park in the UK. Jordan utilizes his experience to oversee all design aspects at Internxt.
+							@endslot
+						@endcomponent
+					</div>{{-- /.col-lg-3 --}}
 
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'igor')
 							@slot('name', 'Igor Dostanic')
-							@slot('role', 'Developer')
+							@slot('role', 'Software Developer')
 							@slot('bio')
 								Igor has been developing for many years as a Software Developer at leading IT companies. He has previously worked as a Software Developer at Execom, and has completed a Bachelors and Masters degree in Computer Science. He has over 3 years experience as a blockchain developer and has also worked as a Senior Software Engineer at NTT Data.
 							@endslot
@@ -108,7 +116,7 @@
 						@component('_includes.team')
 							@slot('slug', 'joe')
 							@slot('name', 'Joe Priest')
-							@slot('role', 'Developer')
+							@slot('role', 'Front-End Developer')
 							@slot('bio')
 								Joe has a Bachelors degree in Computer Science and extensive knowledge of full-stack web development, with over 15 years experience in the field. He is responsible for translating the UI/UX designs into code that will produce the elements of Internxt’s website, applications and services that you will see and interact with.
 							@endslot
@@ -119,7 +127,7 @@
 						@component('_includes.team')
 							@slot('slug', 'alex')
 							@slot('name', 'Alex Sicart Ramos')
-							@slot('role', 'Advisor')
+							@slot('role', 'Technical Advisor')
 							@slot('bio')
 								Alex is the Co-founder of FileNation, a decentralized, peer-to-peer file sharing platform. He has also talked on stage at events such as TED talks and iFest to discuss blockchain and IPFS and also came first place at an event hosted by German car manufacturer, Audi to create and pitch the most innovative product. Alex was seen by Forbes as being one of Europe’s most promising young game-changers and was awarded a place on the Forbes 30 Under 30 Europe 2017. Alex is also a creative consultant for the global leading consultancy firm, Accenture.
 							@endslot
@@ -130,7 +138,7 @@
 						@component('_includes.team')
 							@slot('slug', 'ryan')
 							@slot('name', 'Ryan Marsden')
-							@slot('role', 'Advisor')
+							@slot('role', 'Financial Advisor')
 							@slot('bio')
 								Ryan is an experienced Financial Engineer and Project Management Professional with more than 10 years of successfully planning the financials of global multibillion dollar projects working for multinationals such as BP, where he works as a Lead Cost Manager. Ryan advices Internxt on project management, strategic business planning, cost management, risk management, contracts management, corporate governance, business ethics and team accountability.
 							@endslot
