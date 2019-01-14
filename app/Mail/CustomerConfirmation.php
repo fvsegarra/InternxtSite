@@ -31,6 +31,8 @@ class CustomerConfirmation extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.customer-confirmation');
+        return $this->subject('Internxt Order Confirmation - X Cloud Vision')
+            ->view('emails.customer-confirmation')
+        ;
     }
 }
