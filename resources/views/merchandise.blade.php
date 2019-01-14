@@ -19,9 +19,9 @@
 	<section class="section section--vision-privacy">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5">
+				<div class="col-lg-4">
 					<p class="section__heading">A lifetime of use without the worry of your privacy being violated.</p>
-				</div>{{-- /.col-lg-5 --}}
+				</div>{{-- /.col-lg-4 --}}
 
 				<div class="col-lg-6">
 					<p class="section__content">Webcam spying is a growing issue that can threaten your privacy via any electronic device that contains a webcam. The solution is quite simple: plenty of documented webcam hacking incidents could have been easily avoided by a simple webcam cover. Our elegant and practical webcam cover serves as the perfect alternative to that ugly sticker or post-it note on your laptop, tablet or desktop.</p>
