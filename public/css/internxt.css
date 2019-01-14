@@ -16492,15 +16492,22 @@ hr {
 }
 
 #page-merchandise .pageHeader {
-  background-image: url("/img/headers/xcloud-vision_mobile.png");
+  background-image: url("/img/headers/xcloud-vision_tablet.png");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 1080px auto;
   height: 668px;
   padding-top: 134px;
+  background-position-x: 61%;
 }
 
 @media (min-width: 1080px) {
+  #page-merchandise .pageHeader {
+    background-position-x: right;
+  }
+}
+
+@media (min-width: 1440px) {
   #page-merchandise .pageHeader {
     background-image: url("/img/headers/xcloud-vision.png");
     background-position: right bottom;
@@ -16761,16 +16768,15 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-buy .section__cta {
-    background-position: 186px center;
-    background-size: 26px;
+    background-position-x: 181px;
+    background-size: 21px;
     font-size: 17px;
-    font-weight: 600;
-    height: 47px;
-    left: -25px;
-    letter-spacing: 0.2px;
-    padding: 12px 50px 14px 24px;
-    position: relative;
-    width: 225px;
+    height: 43.2px;
+    line-height: normal;
+    margin-top: 76px;
+    padding: 12px 39px 13px 23px;
+    width: 216.4px;
+    letter-spacing: -0.2px;
   }
 }
 

@@ -6,14 +6,20 @@
 
 	.pageHeader {
 
-		background-image: url('/img/headers/xcloud-vision_mobile.png');
+		background-image: url('/img/headers/xcloud-vision_tablet.png');
 		background-position: center bottom;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: 1080px auto;
 		height: 668px;
 		padding-top: 134px;
+		background-position-x: 61%; // Offset a touch to centre-align image with text
 
+		// Pin to right-hand side when image width is reached
 		@include whenLargerThan('large-screen') {
+			background-position-x: right;
+		}
+
+		@include whenLargerThan('xl-screen') {
 			background-image: url('/img/headers/xcloud-vision.png');
 			background-position: right bottom;
 		    background-size: 1438px 857px;
@@ -271,16 +277,15 @@
 				width: 270px;
 
 	            @include whenLargerThan('large-screen'){
-					background-position: 186px center;
-    				background-size: 26px;
+					background-position-x: 181px;
+					background-size: 21px;
 					font-size: 17px;
-					font-weight: 600;
-					height: 47px;
-					left: -25px;
-					letter-spacing: 0.2px;
-					padding: 12px 50px 14px 24px;
-					position: relative;
-					width: 225px;
+					height: 43.2px;
+					line-height: normal;
+					margin-top: 76px;
+					padding: 12px 39px 13px 23px;
+					width: 216.4px;
+					letter-spacing: -0.2px;
 	            }
 
 	            &:active,
