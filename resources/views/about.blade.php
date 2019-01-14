@@ -70,17 +70,6 @@
 
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
-							@slot('slug', 'volodymyr')
-							@slot('name', 'Volodymyr Shevchyk')
-							@slot('role', 'Chief Technology Officer')
-							@slot('bio')
-								Volodymyr is Chief Technology Officer at Internxt, with over 10 years of engineering experience. He Has a BSc and Masters in Computer Science and has recently acquired a PhD in Information Technology. Volodymyr was responsible for the iOS client development of the most popular social network in Eastern Europe, VK, which has over 400 million users. He has received an award from Nokia for his advanced UI development and won FOSS 2009, which is a software conference in Ukraine that is sponsored by Microsoft.
-							@endslot
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
-
-					<div class="col-md-6 col-lg-3">
-						@component('_includes.team')
 							@slot('slug', 'harrison')
 							@slot('name', 'Harrison Moore')
 							@slot('role', 'Chief Design Officer')
@@ -97,28 +86,6 @@
 							@slot('role', 'Senior Software Developer')
 							@slot('bio')
 								Zoran has extensive experience in software engineering and has a background in full-stack development. He has completed a Bachelors and Masters degree in Computer Science and has recently worked as a Senior Software Engineer at NTT Data which is the 5th largest IT services company in the world. He has a keen interest in blockchain and decentralization and is working on Internxt’s core development.
-							@endslot
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
-
-					<div class="col-md-6 col-lg-3">
-						@component('_includes.team')
-							@slot('slug', 'russell')
-							@slot('name', 'Russell Vaughan')
-							@slot('role', 'Business Development')
-							@slot('bio')
-								Russell is a successful and adaptable manager and entrepreneur with vast experience dealing with complex operations. He has expert knowledge of logistics and has established an impressive record across a number of different sectors. Running highly successful businesses on a global scale with over 300 employees with a combined yearly turnover of $35m. Russell is responsible for overseeing the general business activities at Internxt. He counts with over 30 years of experience in successfully turning startups into fully functioning businesses.
-							@endslot
-						@endcomponent
-					</div>{{-- /.col-lg-3 --}}
-
-					<div class="col-md-6 col-lg-3">
-						@component('_includes.team')
-							@slot('slug', 'conor')
-							@slot('name', 'Conor Doyle')
-							@slot('role', 'Chief Marketing Officer')
-							@slot('bio')
-								Conor is the Chief Marketing Officer at Internxt. Conor started his 8 high level years in marketing by starting his own marketing brand which grew to a client base and audience of over 300,000 people. Soon after that he moved into cryptocurrency by working for projects such as Snovio, Atomic Wallet (created by Changelly CEO) and Bitcoin Cash. Conor's well rounded marketing and cryptocurrency knowledge will help Internxt succeed.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
