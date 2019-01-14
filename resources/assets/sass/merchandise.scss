@@ -280,14 +280,15 @@
 				width: 270px;
 
 	            @include whenLargerThan('large-screen'){
-					background-position-x: 181px;
-					background-size: 21px;
-					font-size: 17px;
-					height: 43.2px;
-					line-height: normal;
-					padding: 12px 39px 13px 23px;
-					width: 216.4px;
+					background-position-x: 185px;
+					background-size: 23px;
+					font-size: 18px;
 					letter-spacing: -0.2px;
+					padding: 12px 39px 13px 23px;
+					position: relative;
+					width: 225px;
+  					height: 47px;
+    				left: -25px;
 	            }
 
 	            &:active,
