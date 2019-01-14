@@ -34,8 +34,8 @@
 
 	<section class="section section--vision-warranty">
 		<div class="container">
-			<p class="section__heading">Much more than that.</p>
-			<p class="section__content">X Cloud Vision is much more than a carefully crafted and incredibly useful webcam cover. X Cloud Vision deeply represents Internxt's core values. Are you part of Internxt?
+			<p class="section__heading">Much more.</p>
+			<p class="section__content">X Cloud Vision is much more than a carefully crafted, super useful webcam cover. X Cloud Vision deeply represents Internxt's core values. Are you part of Internxt?
 </p>
 		</div>{{-- /.container --}}
 	</section>
