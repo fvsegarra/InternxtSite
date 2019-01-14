@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Log;
+use Mail;
 use Stripe\Stripe;
 use Stripe\Charge;
+use App\Mail\NewOrder;
 use Illuminate\Http\Request;
 
 class StripeController extends Controller
@@ -22,8 +24,7 @@ class StripeController extends Controller
 			]);
 		}
 
-		// Token is created using Checkout or Elements!
-		// Get the payment token ID submitted by the form:
+		// Token is created using Stripe Checkout
 		$token = $request->input('token.id');
 
 		Log::info('Attempting to charge card...', compact('token'));
@@ -36,6 +37,8 @@ class StripeController extends Controller
 		    'description' => 'X Cloud Vision',
 		    'source' => $token,
 		]);
+
+		Mail::to('joe@infusion-it.co.uk')->send(new NewOrder($charge));
 
 		$request->session()->flash('status', 'success');
 
