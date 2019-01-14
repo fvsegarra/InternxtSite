@@ -193,7 +193,7 @@ drift.load('7bgvz2cd9ici');
             "description": "Internxt is excitement, ambition, innovation. Join the revolution. The future is now.",
             "contactPoint": {
                 "@type": "ContactPoint",
-                "email": "hello@internxt.com"
+                "email": "hello@internxt.com",
                 "contactType": "PR"
             }
         }
