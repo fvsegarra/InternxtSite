@@ -16619,9 +16619,9 @@ hr {
 
 @media (min-width: 1080px) {
   #page-merchandise .section--vision-privacy .section__heading {
-    font-size: 40px;
-    letter-spacing: -1.1px;
-    line-height: 0.98;
+    font-size: 35px;
+    letter-spacing: -1px;
+    line-height: 1.11;
     max-width: 440px;
   }
 }
