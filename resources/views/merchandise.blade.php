@@ -74,9 +74,10 @@
 				image: '/img/logos/internxtcircle.png',
 				locale: 'auto',
 				token: function(token) {
-				// You can access the token ID with `token.id`.
-				// Get the token ID to your server-side code for use.
-					$.post("{{ route('stripe.purchase') }}", {token}, function(response){
+
+					var csrfToken = $('meta[name="csrf-token"]').attr('content');
+
+					$.post("{{ route('stripe.purchase') }}", {_token: csrfToken, token}, function(response){
 						console.debug(response);
 						if (response.status == "ok") {
 							swal("Order Complete", "Your X Cloud Vision is on the way.", "success");
@@ -84,7 +85,11 @@
 						else{
 							swal("Order Cancelled", "There was a problem processing your order. Please try again.", "error");
 						}
-					});
+					})
+					.fail(function() {
+    					swal("Order Cancelled", "There was a problem processing your order. Please try again.", "error");
+  					});
+
 				}
 			});
 
