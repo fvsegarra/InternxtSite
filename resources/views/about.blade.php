@@ -82,10 +82,10 @@
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'zoran')
-							@slot('name', 'Zoran Joka')
-							@slot('role', 'Senior Software Developer')
+							@slot('name', 'Jesus Gonzalez Nieto')
+							@slot('role', 'Software Developer')
 							@slot('bio')
-								Zoran has extensive experience in software engineering and has a background in full-stack development. He has completed a Bachelors and Masters degree in Computer Science and has recently worked as a Senior Software Engineer at NTT Data which is the 5th largest IT services company in the world. He has a keen interest in blockchain and decentralization and is working on Internxt’s core development.
+Jesus has a BSc in Computer Science, a Master's in Decentralized Computing and 4 years of experience as a programmer
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
