@@ -82,7 +82,7 @@
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'zoran')
-							@slot('name', 'Jesus Gonzalez Nieto')
+							@slot('name', 'Jesus González Nieto')
 							@slot('role', 'Software Developer')
 							@slot('bio')
 Jesus has a BSc in Computer Science, a Master's Degree in Decentralized Computing. He also counts with over 4 years experience as a programmer, and is a core developer here at Internxt.
