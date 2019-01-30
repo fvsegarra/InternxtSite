@@ -104,10 +104,10 @@ Jesus has a BSc in Computer Science, a Master's Degree in Decentralized Computin
 					<div class="col-md-6 col-lg-3">
 						@component('_includes.team')
 							@slot('slug', 'igor')
-							@slot('name', 'Igor Dostanic')
+							@slot('name', 'Alberto González Torre')
 							@slot('role', 'Software Developer')
 							@slot('bio')
-								Igor has been developing for many years as a Software Developer at leading IT companies. He has previously worked as a Software Developer at Execom, and has completed a Bachelors and Masters degree in Computer Science. He has over 3 years experience as a blockchain developer and has also worked as a Senior Software Engineer at NTT Data.
+Alberto started programming at the age of 13. He is an outstanding C# developer and has an experience of over 10 years coding in JavaScript.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
@@ -138,7 +138,7 @@ Jesus has a BSc in Computer Science, a Master's Degree in Decentralized Computin
 						@component('_includes.team')
 							@slot('slug', 'ryan')
 							@slot('name', 'Ryan Marsden')
-							@slot('role', 'Financial Advisor')
+							@slot('role', 'Risk Advisor')
 							@slot('bio')
 								Ryan is an experienced Financial Engineer and Project Management Professional with more than 10 years of successfully planning the financials of global multibillion dollar projects working for multinationals such as BP, where he works as a Lead Cost Manager. Ryan advices Internxt on project management, strategic business planning, cost management, risk management, contracts management, corporate governance, business ethics and team accountability.
 							@endslot
