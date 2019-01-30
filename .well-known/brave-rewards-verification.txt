@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: internxt.com
+Token: 5d2415456c40eb14f0d5f0517e3e67230deb95fed08ffa150dc5b1171373a649
