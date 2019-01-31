@@ -12,7 +12,7 @@
 		<div class="container">
 			<h1 class="pageHeader__heading">X Cloud Vision</h1>
 			<h2 class="pageHeader__subheading">Take control of your privacy with our premium webcam cover.</h2>
-			<a class="pageHeader__cta btn--stripe">Buy now for $7.95</a>
+			<a class="pageHeader__cta btn--stripe">Buy now for $9.95</a>
 		</div>
 	</header>
 
@@ -97,7 +97,7 @@
 				// Open Checkout with further options:
 				handler.open({
 					name: 'Internxt Inc.',
-					description: 'X Cloud Vision ($7.95)',
+					description: 'X Cloud Vision ($9.95)',
 					amount: {{ config('services.stripe.prices.vision') }},
 					shippingAddress: true,
 				});
