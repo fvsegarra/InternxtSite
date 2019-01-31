@@ -97,7 +97,7 @@
 				// Open Checkout with further options:
 				handler.open({
 					name: 'Internxt Inc.',
-					description: 'X Cloud Vision ($9.95)',
+					description: 'X Cloud Vision ($7.95)',
 					amount: {{ config('services.stripe.prices.vision') }},
 					shippingAddress: true,
 				});
