@@ -78,7 +78,7 @@ drift.load('7bgvz2cd9ici');
             @slot('id', 'modalXCloud')
             @slot('icon', '/img/logos/xcloud-flat.jpg')
             @slot('heading', 'Experience a more secure cloud')
-            @slot('subheading', 'Get X Cloud beta today with 10GB free.')
+            @slot('subheading', 'Get X Cloud beta today with 1GB free.')
             @slot('content')
 
                 <div class="modal__checkbox form-check">
