@@ -188,21 +188,7 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 					<hr>
 				</div>
 
-				<div class="teamPartner teamPartner--civic">
-					<div class="row">
-						<div class="col-lg-5">
-							<p class="teamPartner__heading">Civic Partnership</p>
-							<p class="teamPartner__subheading">Civic is developing an ecosystem that facilitates secure access to identity verification services via the blockchain.</p>
-							<p class="teamPartner__content">Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
-						</div>{{-- /.col-lg-5 --}}
-						<div class="col-lg-7">
-						<a class="teamPartner__link" href="https://medium.com/internxt/internxt-and-civic-partner-to-encourage-the-intended-use-of-internxts-new-technologies-fa650ef590e3" target="_blank" rel="nofollow">
-							<img class="teamPartner__image teamPartner__image--mobile" src="/img/partners/civic_mobile.png">
-							<img class="teamPartner__image teamPartner__image--desktop" src="/img/partners/civic_desktop.png">
-						</a>
-						</div>{{-- /.col-lg-7 --}}
-					</div>{{-- /.row --}}
-				</div>{{-- /.teamPartner --}}
+				
 
 				<div>
 					<hr>

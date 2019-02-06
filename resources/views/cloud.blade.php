@@ -138,29 +138,7 @@
 			</div>{{-- /.container --}}
 		</div>{{-- /.subsection --}}
 
-		<div class="subsection subsection--civic">
-			<div class="subsection__border"></div>
-
-			<div class="container">
-
-				<img class="subsection__image--mobile d-block d-lg-none" src="/img/logos/civic.png" alt="Civic" height="53">
-
-				<p class="subsection__heading d-block d-lg-none">Protecting your identity with Blockchain.</p>
-
-				<div class="subsection__content">
-					<div class="row">
-
-						<div class="col-lg-5">
-							<img class="subsection__image--desktop d-none d-lg-block" src="/img/logos/civic.png" alt="Civic" height="53">
-						</div>{{-- /.col-lg-5 --}}
-
-						<div class="col-lg-7">
-							<p class="subsection__heading d-none d-lg-block">Protecting your identity with Blockchain.</p>
-							<p>Civic’s Secure Identity Platform provides an easy and transparent way for users to authenticate using blockchain technology which will prevent users with a reputation below a certain threshold signing up to X Cloud.</p>
-							<a class="subsection__link" href="https://medium.com/internxt/internxt-and-civic-partner-to-encourage-the-intended-use-of-internxts-new-technologies-fa650ef590e3" target="_blank" rel="nofollow">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
-						</div>{{-- /.col-lg-7 --}}
-
-					</div>{{-- /.row --}}
+	
 				</div>{{-- /.subsection__content --}}
 
 
