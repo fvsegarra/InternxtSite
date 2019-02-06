@@ -138,7 +138,7 @@
 			</div>{{-- /.container --}}
 		</div>{{-- /.subsection --}}
 
-	
+
 				</div>{{-- /.subsection__content --}}
 
 
@@ -181,8 +181,8 @@
 	<section class="section section--cloud-plans">
 		<div class="container">
 			<p class="section__label">Free Storage</p>
-			<p class="section__heading">Experience X Cloud with 10GB on us.</p>
-			<p class="section__subheading">When signing up to X Cloud, users receive free 10GB storage space. Make  the switch to a superior cloud storage alternative, and win on user experience, security and cost as well. If you enjoy the service you can upgrade to our 100GB plan for $1.49 or alternatively upgrade to 1TB for $4.99.</p>
+			<p class="section__heading">Experience X Cloud with 1GB on us.</p>
+			<p class="section__subheading">When signing up to X Cloud, users receive free 1GB storage space. Make  the switch to a superior cloud storage alternative, and win on user experience, security and cost as well. If you enjoy the service you can upgrade to our 100GB plan for $4.49 or alternatively upgrade to 1TB for $9.95.</p>
 		</div>{{-- /.container --}}
 		<div class="section__content">
 
@@ -204,7 +204,7 @@
 
 						<div class="plan row align-items-center">
 							<div class="col plan__quantityContainer">
-								<p class="plan__quantity">10GB</p>
+								<p class="plan__quantity">1GB</p>
 							</div>
 							<div class="col">
 								<p class="plan__price">Free</p>
@@ -216,7 +216,7 @@
 								<p class="plan__quantity">100GB</p>
 							</div>
 							<div class="col">
-								<p class="plan__price">$1.49</p>
+								<p class="plan__price">$4.49</p>
 							</div>
 						</div>{{-- /.plan --}}
 
@@ -225,7 +225,7 @@
 								<p class="plan__quantity">1TB</p>
 							</div>
 							<div class="col">
-								<p class="plan__price">$4.99</p>
+								<p class="plan__price">$9.95</p>
 							</div>
 						</div>{{-- /.plan --}}
 
