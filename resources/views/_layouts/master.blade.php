@@ -175,7 +175,7 @@ drift.load('7bgvz2cd9ici');
 
                 <div class="pageFooter__bottom">
 
-                    <p class="pageFooter__copyright">&copy; {{ date('Y') }} Made with love from the Milky Way. All Rights Reserved.</p>
+                    <p class="pageFooter__copyright">&copy; {{ date('Y') }} Made with love by Internxt. All Rights Reserved.</p>
 
                 </div>{{-- /.row --}}
             </div>{{-- /.container --}}
