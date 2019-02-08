@@ -99,6 +99,7 @@
 					name: 'Internxt Inc.',
 					description: 'X Cloud Vision (€9.95)',
 					amount: {{ config('services.stripe.prices.vision') }},
+					currency: 'EUR',
 					shippingAddress: true,
 				});
 				e.preventDefault();
