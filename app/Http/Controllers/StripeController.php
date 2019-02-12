@@ -36,7 +36,7 @@ class StripeController extends Controller
 
 		$charge = Charge::create([
 		    'amount' => config('services.stripe.prices.vision'),
-		    'currency' => 'usd',
+		    'currency' => 'eur',
 		    'description' => 'X Cloud Vision',
 		    'source' => $token,
 		]);
