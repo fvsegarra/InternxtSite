@@ -203,7 +203,7 @@
 
 
 	<script>
-        $.get("https://api.coinmarketcap.com/v1/ticker/internxt/?convert=eur", function(data, status) {
+        $.get("/api/inxt-token-info.json", function(data, status) {
             if (data[0].id === "internxt") {
 
 							console.log(data);
