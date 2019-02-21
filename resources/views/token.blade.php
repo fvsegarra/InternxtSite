@@ -206,9 +206,11 @@
         $.get("https://api.coinmarketcap.com/v1/ticker/internxt/", function(data, status) {
             if (data[0].id === "internxt") {
 
-                x = parseFloat(data[0].price_eur);
+							console.log(data);
+
+                x = parseFloat(data[0].price_usd);
                 usd_price = Math.round(x*100.0)/100.0;
-                s = parseFloat(data[0].market_cap_eur);
+                s = parseFloat(data[0].market_cap_usd);
                 y = s/1000000;
                 market_cap = Math.round(y*10.0)/10.0;
 
