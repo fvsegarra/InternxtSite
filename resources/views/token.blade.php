@@ -26,7 +26,7 @@
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Price Per INXT</p>
-						<p class="inxtDatum__point">$<span id="usd_price">5.96</span></p>
+						<p class="inxtDatum__point">$<span id="eur_price">5.96</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
