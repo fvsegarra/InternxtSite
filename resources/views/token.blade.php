@@ -26,28 +26,28 @@
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Price Per INXT</p>
-						<p class="inxtDatum__point">€<span id="usd_price">5.96</span></p>
+						<p class="inxtDatum__point">€<span id="usd_price">1.40</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Change / 24 Hours</p>
-						<p class="inxtDatum__point"><span id="change_24h">26.09</span>%</p>
+						<p class="inxtDatum__point"><span id="change_24h">10</span>%</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Change / 7 Days</p>
-						<p class="inxtDatum__point"><span id="change_7d">2.93</span>%</p>
+						<p class="inxtDatum__point"><span id="change_7d">5</span>%</p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Market Cap</p>
-						<p class="inxtDatum__point">€<span id="market_cap">5.2</span><span class="inxtDatum__measure">M</span></p>
+						<p class="inxtDatum__point">€<span id="market_cap">1</span><span class="inxtDatum__measure">M</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
