@@ -26,7 +26,7 @@
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Price Per INXT</p>
-						<p class="inxtDatum__point">$<span id="usd_price">5.96</span></p>
+						<p class="inxtDatum__point">€<span id="usd_price">5.96</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
@@ -47,7 +47,7 @@
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Market Cap</p>
-						<p class="inxtDatum__point">$<span id="market_cap">5.2</span><span class="inxtDatum__measure">M</span></p>
+						<p class="inxtDatum__point">€<span id="market_cap">5.2</span><span class="inxtDatum__measure">M</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
