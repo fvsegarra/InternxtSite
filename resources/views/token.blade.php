@@ -26,7 +26,7 @@
 				<div class="col-3">
 					<div class="inxtDatum">
 						<p class="inxtDatum__label">Price Per INXT</p>
-						<p class="inxtDatum__point">$<span id="eur_price">5.96</span></p>
+						<p class="inxtDatum__point">$<span id="usd_price">5.96</span></p>
 					</div>{{-- /.inxtDatum --}}
 				</div>{{-- /.col-3 --}}
 
@@ -206,9 +206,9 @@
         $.get("https://api.coinmarketcap.com/v1/ticker/internxt/", function(data, status) {
             if (data[0].id === "internxt") {
 
-                x = parseFloat(data[0].price_usd);
+                x = parseFloat(data[0].price_eur);
                 usd_price = Math.round(x*100.0)/100.0;
-                s = parseFloat(data[0].market_cap_usd);
+                s = parseFloat(data[0].market_cap_eur);
                 y = s/1000000;
                 market_cap = Math.round(y*10.0)/10.0;
 
