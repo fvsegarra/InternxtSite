@@ -19,5 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/inxt-token-info.json', function (Request $request) {
     $r = @file_get_contents('https://api.coinmarketcap.com/v1/ticker/internxt/?convert=eur');
-    return $r;
+    return response($r, 200)->header('Content-Type', 'application/json');
 });
