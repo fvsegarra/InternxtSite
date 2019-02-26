@@ -154,7 +154,8 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 		<div class="container">
 			<div class="section__content">
 				<p class="section__label">Our mission</p>
-				<p class="section__heading">Internxt is all about disruptive nnovation done right.</p>
+				<p class="section__heading">Disruption, done right.</p>
+				<p class="section__subheading">Our customers, community members, tokenholders, employees and shareholders are our core drivers.</p>
 			</div>
 		</div>
 	</section>
