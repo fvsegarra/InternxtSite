@@ -153,10 +153,8 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 	<section class="section section--branding-assets">
 		<div class="container">
 			<div class="section__content">
-				<p class="section__label">Design Assets</p>
-				<p class="section__heading">Enliven words with just the right visual.</p>
-				<p class="section__subheading">Download our design assets <span class="linebreak d-block"></span>for optimal use of our branding.</p>
-				<a class="section__cta" href="/kit.zip">Download Assets</a>
+				<p class="section__label">Our mission</p>
+				<p class="section__heading">Internxt is all about disruptive nnovation done right.</p>
 			</div>
 		</div>
 	</section>
@@ -184,7 +182,7 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 					</div>{{-- /.row --}}
 				</div>{{-- /.teamPartner --}}
 
-		
+
 				<div>
 					<hr>
 				</div>
