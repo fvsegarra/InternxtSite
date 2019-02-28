@@ -1,5 +1,0 @@
-- Add bg image for X Core features (currently using X Cloud one)
-- Add descriptions for X Core and X Cloud features
-- Add bios for team members?
-- Test INXT buy widget
-- Change X Cloud logo to new one
