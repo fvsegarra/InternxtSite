@@ -12,3 +12,6 @@ npm-debug.log
 yarn-error.log
 .env
 public/downloads/core.*
+internxt.csr
+internxt.key
+
