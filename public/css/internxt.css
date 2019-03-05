@@ -14532,6 +14532,87 @@ hr {
   margin-top: 91px;
 }
 
+#page-core .section--core-calculator {
+  background: #fafafa url("/img/section-backgrounds/x-core-calculator/bg_mobile.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 866px;
+  padding-top: 87px;
+  padding-bottom: 82.4px;
+}
+
+#page-core .section--core-calculator .section__heading {
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  line-height: 0.93;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#page-core .section--core-calculator .section__subheading {
+  color: #838387;
+  font-size: 20px;
+  padding-left: 4px;
+  line-height: 1.55;
+  margin-bottom: 51px;
+  margin-top: 25px;
+}
+
+#page-core .section--core-calculator .section__content {
+  padding-left: 4px;
+}
+
+#page-core .section--core-calculator .section__input {
+  background-color: white;
+  border-radius: 29.3px;
+  border: solid 1px #5b4ade;
+  color: #242424;
+  font-size: 15px;
+  font-weight: 600;
+  height: 57px;
+  line-height: 1.61;
+  margin-bottom: 14px;
+  text-align: center;
+  width: 225px;
+}
+
+#page-core .section--core-calculator .section__input::-webkit-input-placeholder {
+  color: #242424;
+}
+
+#page-core .section--core-calculator .section__input:-ms-input-placeholder {
+  color: #242424;
+}
+
+#page-core .section--core-calculator .section__input::-ms-input-placeholder {
+  color: #242424;
+}
+
+#page-core .section--core-calculator .section__input::placeholder {
+  color: #242424;
+}
+
+#page-core .section--core-calculator .section__input:active,
+#page-core .section--core-calculator .section__input:focus {
+  outline: none;
+}
+
+#page-core .section--core-calculator .section__output {
+  background-color: #191820;
+  border-radius: 29.3px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  height: 56.6px;
+  line-height: 1.61;
+  margin-top: 24px;
+  padding-top: 17px;
+  text-align: center;
+  width: 225px;
+}
+
 #page-core .section--core-design {
   margin-top: 91px;
   margin-bottom: 140px;

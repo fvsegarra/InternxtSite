@@ -76,6 +76,17 @@
 		</div>
 	</section>
 
+	<section class="section section--core-calculator">
+		<div class="container">
+			<p class="section__heading">Calculate how much you can earn.</p>
+			<p class="section__subheading">The X Core network automatically selects nodes based on uptime, Internet speed, latency and storage capacity. The more storage you host and the more INXT you own will calcuate to a greater passive income. Below is an estimation of how much you could earn by using X&nbsp;Core.</p>
+			<div class="section__content">
+				<input class="section__input" type="text" name="" placeholder="Amount of GB allocated">
+				<input class="section__input" type="text" name="" placeholder="Amount of INXT owned">
+				<p class="section__output">Amount you will earn</p>
+			</div>
+		</div>
+	</section>
 
 	<section class="section section--core-design">
 		<div class="container">
