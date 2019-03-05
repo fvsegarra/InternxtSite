@@ -50,7 +50,12 @@
 
                 var amountInEuros = amountInCents / 100;
 
-                return accounting.formatMoney(amountInEuros, "€", 2);
+                return accounting.formatMoney(amountInEuros, {
+                    symbol: "€",
+                    decimal: ".",
+                    thousand: ",",
+                    precision: 2,
+                });
 
             },
         },

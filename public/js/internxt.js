@@ -546,7 +546,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             var amountInEuros = amountInCents / 100;
 
-            return __WEBPACK_IMPORTED_MODULE_0_accounting_js___default.a.formatMoney(amountInEuros, "€", 2);
+            return __WEBPACK_IMPORTED_MODULE_0_accounting_js___default.a.formatMoney(amountInEuros, {
+                symbol: "€",
+                decimal: ".",
+                thousand: ",",
+                precision: 2
+            });
         }
     },
     mounted: function mounted() {
