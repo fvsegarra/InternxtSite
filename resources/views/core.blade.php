@@ -72,7 +72,6 @@
 				<p class="subsection__content">Becoming a host to share your computers resources on the <span class="linebreak d-block d-lg-block"></span>X&nbsp;Core network is quick and easy to set up. Simply download the desktop application, create your node and your device will automatically be connected, and will always be connected unless you say otherwise. All the hard work has been done for you.</p>
 			</div>{{-- /.subsection-setup --}}
 
-			</div>
 		</div>
 	</section>
 
@@ -81,7 +80,7 @@
 			<p class="section__heading">Calculate how much you can earn.</p>
 			<p class="section__subheading">The X Core network automatically selects nodes based on uptime, Internet speed, latency and storage capacity. The more storage you host and the more INXT you own will calcuate to a greater passive income. Below is an estimation of how much you could earn by using X&nbsp;Core.</p>
 			<div class="section__content">
-				<input class="section__input" type="text" name="" placeholder="Amount of GB allocated"><input class="section__input" type="text" name="" placeholder="Amount of INXT owned"><p class="section__output">Amount you will earn</p>
+				<x-core-earnings-calculator></x-core-earnings-calculator>
 			</div>
 		</div>
 	</section>
@@ -89,8 +88,7 @@
 	<section class="section section--core-design">
 		<div class="container">
 			<p class="section__heading">
-				<span class="d-none d-lg-inline">An interface that's as</span><span class="d-lg-none">As</span> simple as it is beautiful.</span>
-				{{-- <span class="d-none d-md-block">Design that’s as simple as it is beautiful.</span> --}}
+				<span class="d-none d-lg-inline">An interface that's as</span><span class="d-lg-none">As</span> simple as it is beautiful.
 			</p>
 			<p class="section__subheading">Functionality and complexity were always kept in a tight balance, so that using this new techology feels second nature, even if you never have before.</p>
 

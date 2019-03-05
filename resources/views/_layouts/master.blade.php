@@ -74,112 +74,116 @@ drift.load('7bgvz2cd9ici');
     </head>
     <body id="page-@yield('pageID')">
 
-        @component('_includes.components.modal')
-            @slot('id', 'modalXCloud')
-            @slot('icon', '/img/logos/xcloud-flat.jpg')
-            @slot('heading', 'Experience a more secure cloud')
-            @slot('subheading', 'Get X Cloud beta today with 1GB free.')
-            @slot('content')
+        <div id="pageContainer">
 
-                <div class="modal__checkbox form-check">
-                    <input class="form-check-input" type="checkbox" id="checkTermsConditions">
-                    <label class="form-check-label" for="checkTermsConditions">
-                        I accept Internxt's <a href="{{ route('terms') }}">Terms of Service</a> and <a href="{{ route('privacy') }}">Privacy Policy</a>.
-                    </label>
-                </div>
+            @component('_includes.components.modal')
+                @slot('id', 'modalXCloud')
+                @slot('icon', '/img/logos/xcloud-flat.jpg')
+                @slot('heading', 'Experience a more secure cloud')
+                @slot('subheading', 'Get X Cloud beta today with 1GB free.')
+                @slot('content')
 
-                <div class="modal__buttons">
-                    @if(false) {{-- Waiting on X Cloud release --}}
-                        @if($agent->isDesktop())
-                            <a class="modal__cta modal__cta--{{ str_slug($platform) }} modal__cta--disabled" href="{{ $xcloudDownloadLink }}" data-href="{{ $xcloudDownloadLink }}">Download for {{ $platform }}</a>
+                    <div class="modal__checkbox form-check">
+                        <input class="form-check-input" type="checkbox" id="checkTermsConditions">
+                        <label class="form-check-label" for="checkTermsConditions">
+                            I accept Internxt's <a href="{{ route('terms') }}">Terms of Service</a> and <a href="{{ route('privacy') }}">Privacy Policy</a>.
+                        </label>
+                    </div>
+
+                    <div class="modal__buttons">
+                        @if(false) {{-- Waiting on X Cloud release --}}
+                            @if($agent->isDesktop())
+                                <a class="modal__cta modal__cta--{{ str_slug($platform) }} modal__cta--disabled" href="{{ $xcloudDownloadLink }}" data-href="{{ $xcloudDownloadLink }}">Download for {{ $platform }}</a>
+                            @endif
                         @endif
-                    @endif
-                    <a class="modal__cta modal__cta--browser modal__cta--disabled" href="#" data-href="https://cloud.internxt.com/" rel="nofollow">Open in browser</a>
-                </div>{{-- /.modal__buttons --}}
+                        <a class="modal__cta modal__cta--browser modal__cta--disabled" href="#" data-href="https://cloud.internxt.com/" rel="nofollow">Open in browser</a>
+                    </div>{{-- /.modal__buttons --}}
 
-            @endslot
-        @endcomponent
+                @endslot
+            @endcomponent
 
-        @include('_includes.navbar-mobile')
-        @include('_includes.navbar-desktop')
+            @include('_includes.navbar-mobile')
+            @include('_includes.navbar-desktop')
 
-        @yield('body')
+            @yield('body')
 
-        <footer class="pageFooter">
-            <div class="container">
+            <footer class="pageFooter">
+                <div class="container">
 
-                <div class="row">
-                    <div class="col-lg d-none d-lg-block col-lg--product">
-                        <p class="section__label">Product</p>
+                    <div class="row">
+                        <div class="col-lg d-none d-lg-block col-lg--product">
+                            <p class="section__label">Product</p>
 
-                        <ul class="list-unstyled">
-                            <li><a href="{{ route('cloud') }}">X Cloud</a></li>
-                            <li><a href="{{ route('core') }}">X Core</a></li>
-                        </ul>
-                    </div>{{-- /.col-lg --}}
+                            <ul class="list-unstyled">
+                                <li><a href="{{ route('cloud') }}">X Cloud</a></li>
+                                <li><a href="{{ route('core') }}">X Core</a></li>
+                            </ul>
+                        </div>{{-- /.col-lg --}}
 
-                    <div class="col-lg d-none d-lg-block col-lg--discover">
-                        <p class="section__label">Discover</p>
+                        <div class="col-lg d-none d-lg-block col-lg--discover">
+                            <p class="section__label">Discover</p>
 
-                        {{-- Need custom --}}
-                        <ul class="list-unstyled">
-                            <li><a href="{{ route('roadmap') }}">Roadmap</a></li>
-                            <li><a href="{{ route('resources') }}">Resources</a></li>
-                        </ul>
-                    </div>{{-- /.col-lg --}}
+                            {{-- Need custom --}}
+                            <ul class="list-unstyled">
+                                <li><a href="{{ route('roadmap') }}">Roadmap</a></li>
+                                <li><a href="{{ route('resources') }}">Resources</a></li>
+                            </ul>
+                        </div>{{-- /.col-lg --}}
 
-                    <div class="col-lg d-none d-lg-block col-lg--company">
-                        <p class="section__label">Company</p>
+                        <div class="col-lg d-none d-lg-block col-lg--company">
+                            <p class="section__label">Company</p>
 
-                        <ul class="list-unstyled">
-                            <li><a href="{{ route('about') }}">About Us</a></li>
-                            <li><a href="{{ route('token') }}">INXT Token</a></li>
-                        </ul>
-                    </div>{{-- /.col-lg --}}
+                            <ul class="list-unstyled">
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('token') }}">INXT Token</a></li>
+                            </ul>
+                        </div>{{-- /.col-lg --}}
 
-                    <div class="col-lg d-none d-lg-block col-lg--legal">
-                        <p class="section__label">Legal Terms</p>
+                        <div class="col-lg d-none d-lg-block col-lg--legal">
+                            <p class="section__label">Legal Terms</p>
 
-                        <ul class="list-unstyled">
-                            <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
-                            <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
-                        </ul>
-                    </div>{{-- /.col-lg --}}
+                            <ul class="list-unstyled">
+                                <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
+                                <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
+                            </ul>
+                        </div>{{-- /.col-lg --}}
 
-                    <div class="col-lg col-lg--connect">
-                        <p class="section__label section__label--connect">Connect With Us</p>
+                        <div class="col-lg col-lg--connect">
+                            <p class="section__label section__label--connect">Connect With Us</p>
 
-                        <ul class="nav nav--social">
-                            <li class="nav-item">
-                                <a class="nav-link nav-link--social nav-link--twitter" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link--social nav-link--medium" href="https://medium.com/internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link--social nav-link--github" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link--social nav-link--mail" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link--social nav-link--telegram" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link--social nav-link--instagram" href="https://www.instagram.com/InternxtHQ/" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
-                           </li>
-                        </ul>
+                            <ul class="nav nav--social">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--social nav-link--twitter" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--social nav-link--medium" href="https://medium.com/internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--social nav-link--github" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--social nav-link--mail" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--social nav-link--telegram" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--social nav-link--instagram" href="https://www.instagram.com/InternxtHQ/" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
+                               </li>
+                            </ul>
 
-                    </div>{{-- /.col-lg --}}
-                </div>{{-- /.row --}}
+                        </div>{{-- /.col-lg --}}
+                    </div>{{-- /.row --}}
 
-                <div class="pageFooter__bottom">
+                    <div class="pageFooter__bottom">
 
-                    <p class="pageFooter__copyright">&copy; {{ date('Y') }} Made with love by Internxt. All Rights Reserved.</p>
+                        <p class="pageFooter__copyright">&copy; {{ date('Y') }} Made with love by Internxt. All Rights Reserved.</p>
 
-                </div>{{-- /.row --}}
-            </div>{{-- /.container --}}
-        </footer>
+                    </div>{{-- /.row --}}
+                </div>{{-- /.container --}}
+            </footer>
+
+        </div>{{-- /#pageContainer --}}
 
         <script type="text/javascript" src="{{ mix('js/internxt.js') }}"></script>
 
