@@ -29,21 +29,9 @@
 
             @include('_includes.scripts.mixpanel')
 
-        @endif
-
-        <style type="text/css">
-            html {
-                -webkit-font-smoothing: antialiased;
-            }
             @include('_includes.scripts.drift')
 
-            @media screen and (-webkit-min-device-pixel-ratio: 1.25),
-            screen and ( min-device-pixel-ratio: 1.25),
-            screen and ( min-resolution: 200dpi),
-            screen and ( min-resolution: 1.25dppx) {
-                -webkit-font-smoothing: subpixel-antialiased;
-            }
-        </style>
+        @endif
     </head>
     <body id="page-@yield('pageID')">
 
