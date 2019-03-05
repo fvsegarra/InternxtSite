@@ -355,38 +355,81 @@
 
         &--core-calculator {
 
-            background: #fafafa url("/img/section-backgrounds/x-core-calculator/bg_mobile.svg");
+            background: #fafafa url("/img/section-backgrounds/x-core-calculator/bg.svg");
+            background-size: 1440px;
             background-position: top center;
             background-repeat: no-repeat;
-            background-size: contain;
             height: 866px;
-            padding-top: 87px;
+            padding-top: 88px;
             padding-bottom: 82.4px;
 
+            @include whenLargerThan('xl-screen') {
+                background-image: url("/img/section-backgrounds/x-core-calculator/bg.svg");
+                background-size: contain;
+                height: 663px;
+                padding-bottom: 156px;
+                padding-top: 110px;
+                text-align: center;
+            }
+
             .section__heading {
+
                 font-size: 44px;
                 font-weight: 600;
                 letter-spacing: -0.8px;
-                line-height: 0.93;
-                margin-bottom: 0;
-                margin-top: 0;
+                line-height: 0.94;
+                margin: 0 auto;
+                max-width: 329px;
+
+                @include whenLargerThan('xl-screen') {
+                    color: black;
+                    font-size: 58px;
+                    font-weight: bold;
+                    letter-spacing: -2.6px;
+                    line-height: 1;
+                    margin: 0 auto;
+                    max-width: 505px
+                }
+
             }
 
             .section__subheading {
+
                 color: #838387;
                 font-size: 20px;
                 padding-left: 4px;
+                letter-spacing: 0px;
                 // letter-spacing: -0.1px; -- Zeplin says -0.1, but Chrome doesn't seem to agree
                 line-height: 1.55;
-                margin-bottom: 51px;
-                margin-top: 25px;
+                margin: 21px auto 51px;
+                max-width: 329px;
+
+                @include whenLargerThan('xl-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.3px; // Zeplin says -0.4, but Chrome doesn't seem to agree
+                    line-height: 1.48;
+                    margin: 26px auto 74px;
+                    max-width: 698px;
+                    padding-left: 0;
+                }
+
             }
 
             .section__content {
+
+                margin: 0 auto;
+                max-width: 329px;
                 padding-left: 4px;
+
+                @include whenLargerThan('xl-screen') {
+                    padding-left: 0;
+                    max-width: none;
+                }
+
             }
 
             .section__input {
+
                 background-color: white;
                 border-radius: 29.3px;
                 border: solid 1px #5b4ade;
@@ -408,9 +451,22 @@
                     outline: none;
                 }
 
+                @include whenLargerThan('xl-screen') {
+
+                    margin-bottom: 0;
+                    margin-right: 17px;
+
+                    &::placeholder {
+                        position: relative;
+                        top: 1px;
+                    }
+
+                }
+
             }
 
             .section__output {
+
                 background-color: #191820;
                 border-radius: 29.3px;
                 color: white;
@@ -418,10 +474,18 @@
                 font-weight: 600;
                 height: 56.6px;
                 line-height: 1.61;
+                margin-bottom: 0;
                 margin-top: 24px;
                 padding-top: 17px;
                 text-align: center;
                 width: 225px;
+
+                @include whenLargerThan('xl-screen') {
+                    display: inline-block;
+                    margin-top: 0;
+                    margin-left: 28px;
+                }
+
             }
 
         }
