@@ -119,30 +119,29 @@ drift.load('7bgvz2cd9ici');
                     </div>{{-- /.col-lg --}}
 
                     <div class="col-lg d-none d-lg-block col-lg--discover">
-                        <p class="section__label">Discover</p>
+                        <p class="section__label">Company</p>
 
                         {{-- Need custom --}}
                         <ul class="list-unstyled">
-                            <li><a href="{{ route('roadmap') }}">Roadmap</a></li>
-                            <li><a href="{{ route('resources') }}">Resources</a></li>
+                        <li><a href="{{ route('about') }}">About Us</a></li>
+                        <li><a href="{{ route('token') }}">INXT Token</a></li>
                         </ul>
                     </div>{{-- /.col-lg --}}
 
                     <div class="col-lg d-none d-lg-block col-lg--company">
-                        <p class="section__label">Company</p>
+                        <p class="section__label">Legal Terms</p>
 
                         <ul class="list-unstyled">
-                            <li><a href="{{ route('about') }}">About Us</a></li>
-                            <li><a href="{{ route('token') }}">INXT Token</a></li>
+                        <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
+                        <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
                         </ul>
                     </div>{{-- /.col-lg --}}
 
                     <div class="col-lg d-none d-lg-block col-lg--legal">
-                        <p class="section__label">Legal Terms</p>
+                        <p class="section__label"></p>
 
                         <ul class="list-unstyled">
-                            <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
-                            <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
+                            
                         </ul>
                     </div>{{-- /.col-lg --}}
 
