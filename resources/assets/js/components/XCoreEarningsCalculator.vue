@@ -38,7 +38,7 @@
             return {
                 gigabytesAllocated: null,
                 inxtOwned: null,
-                centsPerGigabyte: 2,
+                centsPerGigabyte: 1,
                 minInxtForBonus: 100,
                 bonusPercentage: 0.01,
                 hasFocus: false,
