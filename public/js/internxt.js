@@ -502,6 +502,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -511,15 +534,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             gigabytesAllocated: null,
             inxtOwned: null,
-            pricePerGigabyte: 2,
+            centsPerGigabyte: 2,
             minInxtForBonus: 100,
-            bonusPercentage: 0.01
+            bonusPercentage: 0.01,
+            hasFocus: false
         };
     },
 
     computed: {
+        focusClasses: function focusClasses() {
+            return {
+                'x-core-earnings-calculator': true,
+                'x-core-earnings-calculator--hasFocus': this.hasFocus
+            };
+        },
+        gigaBytePlaceholder: function gigaBytePlaceholder() {
+            if (!this.hasFocus) {
+                return 'Amount of GB allocated';
+            }
+        },
+        inxtPlaceholder: function inxtPlaceholder() {
+            if (!this.hasFocus) {
+                return 'Amount of INXT owned';
+            }
+        },
+        totalText: function totalText() {
+            if (this.gigabytesAllocated > 0) {
+                return this.amountEarned + ' / month';
+            }
+            return 'Amount you will earn';
+        },
         amountEarned: function amountEarned() {
-
             /**
                 €0,02 are paid per GB allocated.
                 0.01% is added per 1 INXT held (over 99 INXT).
@@ -531,31 +576,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 100GB, 200 INXT = 100GB*€0,02/GB = 2€/month; 2% of €2 = €0,04 => €2,04
             */
 
-            var amountInCents = this.gigabytesAllocated * this.pricePerGigabyte;
+            var amountInCents = this.gigabytesAllocated * this.centsPerGigabyte;
 
             if (this.inxtOwned >= this.minInxtForBonus) {
-
-                var bonusMultiplier = this.inxtOwned * this.bonusPercentage / 100;
-
-                var increaseInCents = amountInCents * bonusMultiplier;
-
-                amountInCents += increaseInCents;
-
-                // console.debug('bonusMultiplier', bonusMultiplier, 'increaseInCents', increaseInCents, 'amountInCents', amountInCents);
+                amountInCents += this.addBonus(amountInCents);
             }
 
             var amountInEuros = amountInCents / 100;
 
-            return __WEBPACK_IMPORTED_MODULE_0_accounting_js___default.a.formatMoney(amountInEuros, {
+            return this.formatAmount(amountInEuros);
+        }
+    },
+
+    methods: {
+        takeFocus: function takeFocus() {
+            this.hasFocus = true;
+        },
+        loseFocus: function loseFocus() {
+            // Only lose focus if nothing has been entered in either field
+            if (!this.gigabytesAllocated && !this.inxtOwned) {
+                this.hasFocus = false;
+            }
+        },
+        formatAmount: function formatAmount(amount) {
+            return __WEBPACK_IMPORTED_MODULE_0_accounting_js___default.a.formatMoney(amount, {
                 symbol: "€",
                 decimal: ".",
                 thousand: ",",
                 precision: 2
             });
+        },
+        addBonus: function addBonus(originalAmount) {
+            var bonusMultiplier = this.inxtOwned * this.bonusPercentage / 100;
+            return originalAmount * bonusMultiplier;
         }
-    },
-    mounted: function mounted() {
-        console.log('Component mounted.');
     }
 });
 
@@ -35125,63 +35179,86 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("input", {
-      directives: [
-        {
-          name: "model",
-          rawName: "v-model",
-          value: _vm.gigabytesAllocated,
-          expression: "gigabytesAllocated"
-        }
-      ],
-      staticClass: "section__input",
-      attrs: {
-        type: "number",
-        min: "1",
-        max: "10000",
-        placeholder: "Amount of GB allocated"
-      },
-      domProps: { value: _vm.gigabytesAllocated },
-      on: {
-        input: function($event) {
-          if ($event.target.composing) {
-            return
+  return _c("div", { class: _vm.focusClasses }, [
+    _c(
+      "div",
+      { staticClass: "section__inputContainer section__inputContainer--gb" },
+      [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.gigabytesAllocated,
+              expression: "gigabytesAllocated"
+            }
+          ],
+          staticClass: "section__input",
+          attrs: {
+            type: "number",
+            min: "1",
+            max: "10000",
+            placeholder: _vm.gigaBytePlaceholder
+          },
+          domProps: { value: _vm.gigabytesAllocated },
+          on: {
+            focus: function($event) {
+              _vm.takeFocus()
+            },
+            blur: function($event) {
+              _vm.loseFocus()
+            },
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.gigabytesAllocated = $event.target.value
+            }
           }
-          _vm.gigabytesAllocated = $event.target.value
-        }
-      }
-    }),
-    _c("input", {
-      directives: [
-        {
-          name: "model",
-          rawName: "v-model",
-          value: _vm.inxtOwned,
-          expression: "inxtOwned"
-        }
-      ],
-      staticClass: "section__input",
-      attrs: {
-        type: "number",
-        min: "1",
-        max: "10000",
-        placeholder: "Amount of INXT owned"
-      },
-      domProps: { value: _vm.inxtOwned },
-      on: {
-        input: function($event) {
-          if ($event.target.composing) {
-            return
-          }
-          _vm.inxtOwned = $event.target.value
-        }
-      }
-    }),
+        })
+      ]
+    ),
     _vm._v(" "),
-    _c("p", { staticClass: "section__output" }, [
-      _vm._v(_vm._s(_vm.amountEarned))
-    ])
+    _c(
+      "div",
+      { staticClass: "section__inputContainer section__inputContainer--inxt" },
+      [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.inxtOwned,
+              expression: "inxtOwned"
+            }
+          ],
+          staticClass: "section__input",
+          attrs: {
+            type: "number",
+            min: "0",
+            max: "10000",
+            placeholder: _vm.inxtPlaceholder
+          },
+          domProps: { value: _vm.inxtOwned },
+          on: {
+            focus: function($event) {
+              _vm.takeFocus()
+            },
+            blur: function($event) {
+              _vm.loseFocus()
+            },
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.inxtOwned = $event.target.value
+            }
+          }
+        })
+      ]
+    ),
+    _vm._v(" "),
+    _c("p", { staticClass: "section__output" }, [_vm._v(_vm._s(_vm.totalText))])
   ])
 }
 var staticRenderFns = []

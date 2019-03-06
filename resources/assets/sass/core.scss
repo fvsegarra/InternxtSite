@@ -450,6 +450,58 @@
 
             }
 
+            .x-core-earnings-calculator {
+
+                &--hasFocus {
+
+                    .section__inputContainer {
+
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+                        }
+
+                        &--gb {
+
+                            &::after {
+                                content: "GB";
+                            }
+
+                            .section__input {
+                                padding: 0 35px;
+                                text-align: right;
+                            }
+
+                        }
+
+                        &--inxt {
+
+                            &::after {
+                                content: "INXT";
+                            }
+
+                            .section__input {
+                                padding: 0 45px;
+                                text-align: right;
+                            }
+
+                        }
+
+                    }
+
+
+                }
+
+            }
+
+            .section__inputContainer {
+                display: inline;
+            }
+
             .section__input {
 
                 background-color: white;
@@ -461,7 +513,6 @@
                 height: 57px;
                 line-height: 1.61;
                 margin-bottom: 14px;
-                padding: 0 10px;
                 text-align: center;
                 width: 225px;
 

@@ -1,8 +1,31 @@
 
 <template>
-    <div>
-        <input class="section__input" type="number" min="1" max="10000" v-model="gigabytesAllocated" placeholder="Amount of GB allocated"><input class="section__input" type="number" min="1" max="10000" v-model="inxtOwned" placeholder="Amount of INXT owned">
-        <p class="section__output">{{ amountEarned }}</p>
+    <div :class="focusClasses">
+        <div class="section__inputContainer section__inputContainer--gb">
+            <input
+                class="section__input"
+                type="number"
+                min="1"
+                max="10000"
+                v-model="gigabytesAllocated"
+                :placeholder="gigaBytePlaceholder"
+                @focus="takeFocus()"
+                @blur="loseFocus()"
+            >
+        </div>
+        <div class="section__inputContainer section__inputContainer--inxt">
+            <input
+                class="section__input"
+                type="number"
+                min="0"
+                max="10000"
+                v-model="inxtOwned"
+                :placeholder="inxtPlaceholder"
+                @focus="takeFocus()"
+                @blur="loseFocus()"
+            >
+        </div>
+        <p class="section__output">{{ totalText }}</p>
     </div>
 </template>
 
@@ -15,14 +38,41 @@
             return {
                 gigabytesAllocated: null,
                 inxtOwned: null,
-                pricePerGigabyte: 2,
+                centsPerGigabyte: 2,
                 minInxtForBonus: 100,
                 bonusPercentage: 0.01,
+                hasFocus: false,
             }
         },
         computed: {
-            amountEarned() {
 
+            focusClasses() {
+                return {
+                    'x-core-earnings-calculator': true,
+                    'x-core-earnings-calculator--hasFocus': this.hasFocus,
+                }
+            },
+
+            gigaBytePlaceholder() {
+                if (!this.hasFocus) {
+                    return 'Amount of GB allocated';
+                }
+            },
+
+            inxtPlaceholder() {
+                if (!this.hasFocus) {
+                    return 'Amount of INXT owned';
+                }
+            },
+
+            totalText() {
+                if (this.gigabytesAllocated > 0) {
+                    return this.amountEarned + ' / month';
+                }
+                return 'Amount you will earn';
+            },
+
+            amountEarned() {
                 /**
                     €0,02 are paid per GB allocated.
                     0.01% is added per 1 INXT held (over 99 INXT).
@@ -35,32 +85,45 @@
                     100GB, 200 INXT = 100GB*€0,02/GB = 2€/month; 2% of €2 = €0,04 => €2,04
                 */
 
-                var amountInCents = this.gigabytesAllocated * this.pricePerGigabyte;
+                var amountInCents = this.gigabytesAllocated * this.centsPerGigabyte;
 
                 if (this.inxtOwned >= this.minInxtForBonus) {
-
-                    var bonusMultiplier = (this.inxtOwned * this.bonusPercentage) / 100;
-
-                    var increaseInCents = amountInCents * bonusMultiplier;
-
-                    amountInCents += increaseInCents;
-
-                    // console.debug('bonusMultiplier', bonusMultiplier, 'increaseInCents', increaseInCents, 'amountInCents', amountInCents);
+                    amountInCents += this.addBonus(amountInCents);
                 }
 
                 var amountInEuros = amountInCents / 100;
 
-                return accounting.formatMoney(amountInEuros, {
+                return this.formatAmount(amountInEuros);
+            },
+        },
+
+        methods:{
+
+            takeFocus(){
+                this.hasFocus = true;
+            },
+
+            loseFocus(){
+                // Only lose focus if nothing has been entered in either field
+                if (!this.gigabytesAllocated && !this.inxtOwned) {
+                    this.hasFocus = false;
+                }
+            },
+
+            formatAmount(amount) {
+                return accounting.formatMoney(amount, {
                     symbol: "€",
                     decimal: ".",
                     thousand: ",",
                     precision: 2,
                 });
-
             },
+
+            addBonus(originalAmount) {
+                var bonusMultiplier = (this.inxtOwned * this.bonusPercentage) / 100;
+                return originalAmount * bonusMultiplier;
+            }
+
         },
-        mounted() {
-            console.log('Component mounted.')
-        }
     }
 </script>
