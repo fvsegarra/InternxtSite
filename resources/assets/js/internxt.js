@@ -7,6 +7,14 @@
 
 require('./bootstrap');
 
+window.Vue = require('vue');
+
+Vue.component('x-core-earnings-calculator', require('./components/XCoreEarningsCalculator.vue'));
+
+const app = new Vue({
+    el: '#pageContainer'
+});
+
 var ScrollTrigger = require('scrolltrigger-classes');
 
 $('.nav-tabs .nav-link').click((e) => {

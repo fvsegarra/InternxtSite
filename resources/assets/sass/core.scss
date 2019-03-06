@@ -293,14 +293,14 @@
                     padding-left: 30px;
                     padding-right: 30px;
 
-                    @include whenLargerThan('large-screen') {    
+                    @include whenLargerThan('large-screen') {
                         padding-left: 208px;
                     }
 
                     @include whenLargerThan('xl-screen') {
                         margin-top: 0;
                     }
-                        
+
 
                     &.enhanced-1080 {
 
@@ -335,11 +335,30 @@
                             font-size: 21px;
                             letter-spacing: -0.4px;
                             line-height: 1.48;
+                            margin-bottom: 50px;
                             margin-left: 2px;
                             margin-top: 16px;
                             max-width: 655px;
                         }
 
+                    }
+
+                    .subsection__cta {
+                        background-color: #191820;
+                        background-image: url("/img/icons/chevron-right-circle.svg");
+                        background-position: 112px 11px;
+                        background-repeat: no-repeat;
+                        background-size: 20px;
+                        border-radius: 28.5px;
+                        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+                        color: white;
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 500;
+                        height: 41px;
+                        letter-spacing: -0.4px;
+                        padding: 9px 42px 11px 23px;
+                        width: 144px;
                     }
 
                 }
@@ -352,9 +371,203 @@
 
         }
 
+
+        &--core-calculator {
+
+            background: #fafafa url("/img/section-backgrounds/x-core-calculator/bg.svg");
+            background-size: 1440px;
+            background-position: top center;
+            background-repeat: no-repeat;
+            height: 866px;
+            margin-top: 120px;
+            padding-top: 88px;
+            padding-bottom: 82.4px;
+
+            @include whenLargerThan('xl-screen') {
+                background-image: url("/img/section-backgrounds/x-core-calculator/bg.svg");
+                background-size: contain;
+                height: 663px;
+                margin-bottom: 0;
+                margin-top: 145px;
+                padding-bottom: 156px;
+                padding-top: 110px;
+                text-align: center;
+            }
+
+            .section__heading {
+
+                font-size: 44px;
+                font-weight: 600;
+                letter-spacing: -0.8px;
+                line-height: 0.94;
+                margin: 0 auto;
+                max-width: 329px;
+
+                @include whenLargerThan('xl-screen') {
+                    color: black;
+                    font-size: 58px;
+                    font-weight: bold;
+                    letter-spacing: -2.6px;
+                    line-height: 1;
+                    margin: 0 auto;
+                    max-width: 505px
+                }
+
+            }
+
+            .section__subheading {
+
+                color: #838387;
+                font-size: 20px;
+                padding-left: 4px;
+                letter-spacing: 0px;
+                // letter-spacing: -0.1px; -- Zeplin says -0.1, but Chrome doesn't seem to agree
+                line-height: 1.55;
+                margin: 21px auto 51px;
+                max-width: 329px;
+
+                @include whenLargerThan('xl-screen') {
+                    font-size: 21px;
+                    letter-spacing: -0.3px; // Zeplin says -0.4, but Chrome doesn't seem to agree
+                    line-height: 1.48;
+                    margin: 26px auto 74px;
+                    max-width: 698px;
+                    padding-left: 0;
+                }
+
+            }
+
+            .section__content {
+
+                margin: 0 auto;
+                max-width: 329px;
+                padding-left: 4px;
+
+                @include whenLargerThan('xl-screen') {
+                    padding-left: 0;
+                    max-width: none;
+                }
+
+            }
+
+            .x-core-earnings-calculator {
+
+                &--hasFocus {
+
+                    .section__inputContainer {
+
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+                        }
+
+                        &--gb {
+
+                            &::after {
+                                content: "GB";
+                            }
+
+                            .section__input {
+                                padding: 0 35px;
+                                text-align: right;
+                            }
+
+                        }
+
+                        &--inxt {
+
+                            &::after {
+                                content: "INXT";
+                            }
+
+                            .section__input {
+                                padding: 0 45px;
+                                text-align: right;
+                            }
+
+                        }
+
+                    }
+
+
+                }
+
+            }
+
+            .section__inputContainer {
+                display: inline;
+            }
+
+            .section__input {
+
+                background-color: white;
+                border-radius: 29.3px;
+                border: solid 1px #5b4ade;
+                color: #242424;
+                font-size: 15px;
+                font-weight: 600;
+                height: 57px;
+                line-height: 1.61;
+                margin-bottom: 14px;
+                text-align: center;
+                width: 225px;
+
+                &::placeholder {
+                    color: #242424;
+                }
+
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+
+                @include whenLargerThan('xl-screen') {
+
+                    margin-bottom: 0;
+                    margin-right: 17px;
+
+                    &::placeholder {
+                        position: relative;
+                        top: 1px;
+                    }
+
+                }
+
+            }
+
+            .section__output {
+
+                background-color: #191820;
+                border-radius: 29.3px;
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+                height: 56.6px;
+                line-height: 1.61;
+                margin-bottom: 0;
+                margin-top: 24px;
+                padding-top: 17px;
+                text-align: center;
+                width: 225px;
+
+                @include whenLargerThan('xl-screen') {
+                    display: inline-block;
+                    margin-top: 0;
+                    margin-left: 28px;
+                }
+
+            }
+
+        }
+
+
         &--core-design {
 
-            margin-top: 91px;
+            margin-top: 98px;
             margin-bottom: 140px;
 
             @include whenLargerThan('large-screen') {
@@ -363,7 +576,7 @@
             }
 
             @include whenLargerThan('xl-screen') {
-                margin-top: 136px;
+                margin-top: 0px;
             }
 
             .section__heading {
@@ -567,7 +780,7 @@
                 }
 
             }
-            
+
         }
 
     }
