@@ -66,7 +66,7 @@
                     <a class="nav-link" href="https://medium.com/internxt" target="_blank" rel="nofollow">News hub</a>
                 </li>
                 <li class="nav-item nav-item--xcloud">
-                    <a class="nav-link nav-link--xcloud" href="#coming-soon" target='_blank'>Get X Cloud</a>
+                    <a class="nav-link nav-link--xcloud" href="#coming-soon" target='_blank'>Get X Cloud Now</a>
                 </li>
             </ul>
         </div>{{-- /.navbar-collapse --}}
