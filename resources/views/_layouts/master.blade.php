@@ -137,7 +137,7 @@
 
                     <div class="pageFooter__bottom">
 
-                        <p class="pageFooter__copyright">&copy; {{ date('Y') }} Made with love by Internxt. All our prices already include VAT.</p>
+                        <p class="pageFooter__copyright">&copy; {{ date('Y') }} Made with love by Internxt. All prices already include VAT.</p>
 
                     </div>{{-- /.row --}}
                 </div>{{-- /.container --}}
