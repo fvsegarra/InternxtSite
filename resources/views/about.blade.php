@@ -170,7 +170,7 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 				<div class="teamPartner teamPartner--blackberry">
 					<div class="row">
 						<div class="col-lg-7">
-							<a class="teamPartner__link" href="https://medium.com/internxt/internxt-and-blackberry-partner-to-enhance-x-clouds-security-25bb5ad7d33d" target="_blank" rel="nofollow">
+							<a class="teamPartner__link" href="https://medium.com/internxt/internxt-and-blackberry-partner-to-enhance-x-clouds-security-25bb5ad7d33d" target="_blank" rel="nofollow" rel="noopener">
 								<img class="teamPartner__image teamPartner__image--mobile" src="/img/partners/blackberry_mobile.png">
 								<img class="teamPartner__image teamPartner__image--desktop" src="/img/partners/blackberry_desktop.png">
 							</a>
@@ -191,7 +191,7 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 				<div class="teamPartner teamPartner--y-combinator">
 					<div class="row">
 						<div class="col-lg-7">
-							<a class="teamPartner__link" href="https://medium.com/internxt/internxt-has-been-accepted-to-y-combinators-startup-school-b7daf30ab407" target="_blank" rel="nofollow">
+							<a class="teamPartner__link" href="https://medium.com/internxt/internxt-has-been-accepted-to-y-combinators-startup-school-b7daf30ab407" target="_blank" rel="nofollow" rel="noopener">
 								<img class="teamPartner__image teamPartner__image--mobile" src="/img/partners/y-combinator_mobile.png">
 								<img class="teamPartner__image teamPartner__image--desktop" src="/img/partners/y-combinator_desktop.png">
 							</a>
