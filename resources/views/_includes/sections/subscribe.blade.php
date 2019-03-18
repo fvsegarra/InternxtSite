@@ -13,7 +13,7 @@
 
 			<div class="col-lg-5">
 
-				<form class="section--subscribe__form ml-block-form" action="https://app.mailerlite.com/webforms/submit/r3s4c1" data-code="r3s4c1" method="post" target="_blank">
+				<form class="section--subscribe__form ml-block-form" action="https://app.mailerlite.com/webforms/submit/r3s4c1" data-code="r3s4c1" method="post" target="_blank" rel="noopener">
 
 					<input type="hidden" name="ml-submit" value="1">
 
