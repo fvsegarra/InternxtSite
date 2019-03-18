@@ -113,22 +113,22 @@
 
                             <ul class="nav nav--social">
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link--social nav-link--twitter" href="https://twitter.com/Internxt" target="_blank"><img src="/img/logos/twitter.png" height="25"></a>
+                                    <a class="nav-link nav-link--social nav-link--twitter" href="https://twitter.com/Internxt" target="_blank" rel="noopener"><img src="/img/logos/twitter.png" height="25"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link--social nav-link--medium" href="https://medium.com/internxt" target="_blank"><img src="/img/logos/medium.png" height="25"></a>
+                                    <a class="nav-link nav-link--social nav-link--medium" href="https://medium.com/internxt" target="_blank" rel="noopener"><img src="/img/logos/medium.png" height="25"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link--social nav-link--github" href="https://github.com/Internxt" target="_blank"><img src="/img/logos/github.png" height="25"></a>
+                                    <a class="nav-link nav-link--social nav-link--github" href="https://github.com/Internxt" target="_blank" rel="noopener"><img src="/img/logos/github.png" height="25"></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link nav-link--social nav-link--mail" href="mailto:hello@internxt.com"><img src="/img/logos/mail.png" height="25"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link--social nav-link--telegram" href="https://t.me/InternxtHQ" target="_blank"><img src="/img/logos/telegram.png" height="25"></a>
+                                    <a class="nav-link nav-link--social nav-link--telegram" href="https://t.me/InternxtHQ" target="_blank" rel="noopener"><img src="/img/logos/telegram.png" height="25"></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link--social nav-link--instagram" href="https://www.instagram.com/InternxtHQ/" target="_blank"><img src="/img/logos/instagram.png" height="25"></a>
+                                    <a class="nav-link nav-link--social nav-link--instagram" href="https://www.instagram.com/InternxtHQ/" target="_blank" rel="noopener"><img src="/img/logos/instagram.png" height="25"></a>
                                </li>
                             </ul>
 
