@@ -43,17 +43,17 @@
 					<div class="section--about__articles">
 						<div class="row align-items-center">
 							<div class="col-lg-4 flex-lg-shrink-1">
-								<a href="https://www.entrepreneur.com/article/309468/" target="_blank" rel="nofollow">
+								<a href="https://www.entrepreneur.com/article/309468/" target="_blank" rel="nofollow" rel="noopener">
 									<img src="/img/logos/entrepreneur.svg" height="32" alt="Entrepreneur">
 								</a>
 							</div>
 							<div class="col-lg-4 flex-lg-shrink-1">
-								<a href="https://www.investing.com/analysis/heres-why-internxt-could-be-well-worth-a-look-right-now-200274832" target="_blank" rel="nofollow">
+								<a href="https://www.investing.com/analysis/heres-why-internxt-could-be-well-worth-a-look-right-now-200274832" target="_blank" rel="nofollow" rel="noopener">
 									<img src="/img/logos/investing.com.svg" height="32" alt="Investing.com">
 								</a>
 							</div>
 							<div class="col-lg-4 flex-lg-shrink-1">
-								<a href="https://finance.yahoo.com/news/making-internet-secure-everyone-140000059.html?guccounter=1" target="_blank" rel="nofollow">
+								<a href="https://finance.yahoo.com/news/making-internet-secure-everyone-140000059.html?guccounter=1" target="_blank" rel="nofollow" rel="noopener">
 									<img src="/img/logos/yahoo.svg" height="32" alt="Yahoo">
 								</a>
 							</div>
@@ -98,14 +98,14 @@
 							<div class="articlePreview__content">
 								<p class="articlePreview__date">{{ $post['date'] }}</p>
 								<p class="articlePreview__title">{{ $post['title'] }}</p>
-								<a class="articlePreview__cta" href="{{ $post['url'] }}" target="_blank" rel="nofollow">Read article <img src="/img/icons/chevron-learn-more-article.svg"></a>
+								<a class="articlePreview__cta" href="{{ $post['url'] }}" target="_blank" rel="nofollow" rel="noopener">Read article <img src="/img/icons/chevron-learn-more-article.svg"></a>
 							</div>{{-- /.articlePreview__content --}}
 						</article>
 					</div>{{-- /.articlePreviewContainer --}}
 				@endforeach
 			</div>{{-- /.section__content --}}
 
-			<a class="section__cta" href="https://medium.com/internxt" target="_blank" rel="nofollow">Read more posts</a>
+			<a class="section__cta" href="https://medium.com/internxt" target="_blank" rel="nofollow" rel="noopener">Read more posts</a>
 
 		</div>{{-- /.container --}}
 	</section>{{-- /.section-news-hub --}}

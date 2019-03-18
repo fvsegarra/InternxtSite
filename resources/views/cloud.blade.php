@@ -18,7 +18,7 @@
 			<h1 class="pageHeader__heading">X Cloud</h1>
 			<h2 class="pageHeader__subheading">Secure cloud storage.</h2>
 			<a href="#" class="pageHeader__cta pageHeader__cta--mobile">Get X Cloud</a>
-			<a href="#coming-soon" target='_blank' class="pageHeader__cta pageHeader__cta--desktop">Get X Cloud Now</a>
+			<a href="#coming-soon" target='_blank' class="pageHeader__cta pageHeader__cta--desktop" rel="noopener">Get X Cloud Now</a>
 		</div>
 	</header>
 
@@ -126,7 +126,7 @@
 							<p class="subsection__heading d-none d-lg-block">Empowering the era of secure technology.</p>
 							<p>BlackBerry provides security consulting services and solutions that can greatly improve our architecture. BlackBerry can help Internxt assess  Encryption, Infrastructural vulnerabilities, Authentication and Data leak prevention.</p>
 
-							<a class="subsection__link" href="https://medium.com/internxt/internxt-and-blackberry-partner-to-enhance-x-clouds-security-25bb5ad7d33d" target="_blank" rel="nofollow">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
+							<a class="subsection__link" href="https://medium.com/internxt/internxt-and-blackberry-partner-to-enhance-x-clouds-security-25bb5ad7d33d" target="_blank" rel="nofollow" rel="noopener">Learn more about the partnership <img src="/img/icons/chevron-right-partner.svg"></a>
 
 						</div>{{-- /.col-lg-7 --}}
 
@@ -242,8 +242,8 @@
 			<div class="section__outline d-lg-flex align-items-center justify-content-between">
 				<img class="section__icon" src="/img/logos/xcloud-flat.jpg" height="39">
 				<p class="section__heading">Jump into X Cloud Beta today.</p>
-				<a href="https://internxt.com/cloud#coming-soon" target='_blank' class="section__cta d-lg-none">Get X Cloud Beta</a>
-				<a href="https://internxt.com/cloud#coming-soon" target='_blank' class="section__cta d-none d-lg-block">Get X Cloud Beta</a>
+				<a href="https://internxt.com/cloud#coming-soon" target='_blank' class="section__cta d-lg-none" rel="noopener">Get X Cloud Beta</a>
+				<a href="https://internxt.com/cloud#coming-soon" target='_blank' class="section__cta d-none d-lg-block" rel="noopener">Get X Cloud Beta</a>
 			</div>{{-- /.section__outline --}}
 		</div>
 	</section>
