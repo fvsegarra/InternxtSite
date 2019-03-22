@@ -167,32 +167,35 @@
 	    </div>
 	   </div>
 	   <div id='cryptowolf'/>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	    <script>
-	    var external = 'inxt';
-	    var cryptowolf = 'https://external.cryptowolf.eu/v3/';
-	    function defer(method) {
-	        if (window.jQuery) {
-	            method();
-	        } else {
-	            setTimeout(function() { defer(method) }, 50);
-	        }
-	    }
-	    defer(function () {
-	        $("#cryptowolf").load(cryptowolf + 'ext.html',function() {
-	            $.getScript(cryptowolf + 'js/cryptowolf.js');
-	            $('#hiddendivbeforeselect').prepend($('.two')[0]);
-	            $('.two').addClass('cryptowolf-element')
-	            $.ajax ({
-	                type: "POST",
-	                url: "https://external.cryptowolf.eu/v3/css/inxt.css",
-	                success: function(result) {
-	                $("#cryptowolf").after('<style>' + result + '</style>')
-	                }
-	            });
-	        });
-	    })
-	</script>
+		 <?php
+		   echo file_get_contents('https://external.cryptowolf.eu/v3/ext.html');
+		 ?>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script>
+		       var external = 'inxt';
+		       var cryptowolf = 'https://external.cryptowolf.eu/v3/';
+		       function defer(method) {
+		           if (window.jQuery) {
+		             $( document ).ready(function() {
+		                 method();
+		             });
+		           } else {
+		               setTimeout(function() { defer(method) }, 50);
+		           }
+		       }
+		       defer(function () {
+		               $('#hiddendivbeforeselect').prepend($('.two')[0]);
+		               $('.two').addClass('cryptowolf-element')
+		               $.ajax ({
+		                   type: "POST",
+		                   url: "https://external.cryptowolf.eu/v3/css/inxt.css",
+		                   success: function(result) {
+		                   $("#cryptowolf").after('<style>' + result + '</style>')
+		                   }
+		               });
+		               $.getScript(cryptowolf + 'js/cryptowolf.js');
+		       })
+		 </script>
 	 </div>
 	</section>
 
