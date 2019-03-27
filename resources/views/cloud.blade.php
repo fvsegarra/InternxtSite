@@ -241,9 +241,9 @@
 		<div class="container">
 			<div class="section__outline d-lg-flex align-items-center justify-content-between">
 				<img class="section__icon" src="/img/logos/xcloud-flat.jpg" height="39">
-				<p class="section__heading">Jump into X Cloud Beta today.</p>
-				<a href="https://cloud.internxt.com/" target='_blank' class="section__cta d-lg-none" rel="noopener">Get X Cloud Beta</a>
-				<a href="https://cloud.internxt.com/" target='_blank' class="section__cta d-none d-lg-block" rel="noopener">Get X Cloud Beta</a>
+				<p class="section__heading">Make the switch to X Cloud today.</p>
+				<a href="https://cloud.internxt.com/" target='_blank' class="section__cta d-lg-none" rel="noopener">Get X Cloud Now</a>
+				<a href="https://cloud.internxt.com/" target='_blank' class="section__cta d-none d-lg-block" rel="noopener">Get X Cloud Now</a>
 			</div>{{-- /.section__outline --}}
 		</div>
 	</section>
