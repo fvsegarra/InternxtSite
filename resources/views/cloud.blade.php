@@ -17,8 +17,8 @@
 			<img class="pageHeader__icon" src="/img/logos/xcloud.png" alt="xcloud" height="53">
 			<h1 class="pageHeader__heading">X Cloud</h1>
 			<h2 class="pageHeader__subheading">Secure cloud storage.</h2>
-			<a href="#" class="pageHeader__cta pageHeader__cta--mobile">Get X Cloud</a>
-			<a href="#coming-soon" target='_blank' class="pageHeader__cta pageHeader__cta--desktop" rel="noopener">Get X Cloud Now</a>
+			<a href="https://cloud.internxt.com/" class="pageHeader__cta pageHeader__cta--mobile">Get X Cloud</a>
+			<a href="https://cloud.internxt.com/" target='_blank' class="pageHeader__cta pageHeader__cta--desktop" rel="noopener">Get X Cloud Now</a>
 		</div>
 	</header>
 
@@ -242,8 +242,8 @@
 			<div class="section__outline d-lg-flex align-items-center justify-content-between">
 				<img class="section__icon" src="/img/logos/xcloud-flat.jpg" height="39">
 				<p class="section__heading">Jump into X Cloud Beta today.</p>
-				<a href="https://internxt.com/cloud#coming-soon" target='_blank' class="section__cta d-lg-none" rel="noopener">Get X Cloud Beta</a>
-				<a href="https://internxt.com/cloud#coming-soon" target='_blank' class="section__cta d-none d-lg-block" rel="noopener">Get X Cloud Beta</a>
+				<a href="https://cloud.internxt.com/" target='_blank' class="section__cta d-lg-none" rel="noopener">Get X Cloud Beta</a>
+				<a href="https://cloud.internxt.com/n" target='_blank' class="section__cta d-none d-lg-block" rel="noopener">Get X Cloud Beta</a>
 			</div>{{-- /.section__outline --}}
 		</div>
 	</section>
