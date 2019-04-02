@@ -89,7 +89,7 @@
 
 	        <p class="section__heading">Promotional Communications</p>
 	        <div class="section__content">
-                <p>You may opt out of receiving promotional communications from us at any time by following the instructions in those communications. If you opt out, we may still send you non-promotional communications, such as those about your account or our ongoing business relations.</p>
+                <p>X Cloud users, as well as users who engage in a conversation with our live chat agents and those who manually subscribe to our newsletter, might at  any point receive promotional communications. You may opt out of receiving promotional communications from us at any time by following the instructions in those communications. If you opt out, we may still send you non-promotional communications, such as those about your account or our ongoing business relations.</p>
 	        </div>
 
 		</section>
