@@ -5,8 +5,8 @@
             <input
                 class="section__input"
                 type="number"
-                min="1"
-                max="10000"
+                :min="1"
+                :max="maxInputGigabytes"
                 v-model="gigabytesAllocated"
                 :placeholder="gigaBytePlaceholder"
                 @focus="takeFocus()"
@@ -17,8 +17,8 @@
             <input
                 class="section__input"
                 type="number"
-                min="0"
-                max="10000"
+                :min="0"
+                :max="maxInputInxt"
                 v-model="inxtOwned"
                 :placeholder="inxtPlaceholder"
                 @focus="takeFocus()"
@@ -42,8 +42,23 @@
                 minInxtForBonus: 100,
                 bonusPercentage: 0.01,
                 hasFocus: false,
+                maxInputInxt: 9999,
+                maxInputGigabytes: 99999,
             }
         },
+
+        watch: {
+
+            inxtOwned: function (newValue) {
+                this.inxtOwned = Math.min(newValue, this.maxInputInxt);
+            },
+
+            gigabytesAllocated: function (newValue) {
+                this.gigabytesAllocated = Math.min(newValue, this.maxInputGigabytes);
+            },
+
+        },
+
         computed: {
 
             focusClasses() {
