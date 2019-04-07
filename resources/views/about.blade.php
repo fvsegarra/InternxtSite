@@ -63,7 +63,7 @@
 							@slot('name', 'Fran Villalba Segarra')
 							@slot('role', 'Founder & CEO')
 							@slot('bio')
-								Fran is the architect behind Internxt. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went onto work at Hostinger one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup OneSite, a platform which allows anyone to create their own website for free, which had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene. He was also nominated for Forbes 30 Under 30 2017.
+								Fran is the architect behind Internxt. He learned to code at an early age and was soon awarded an internship at OnePlus, a smartphone manufacturer serving 38 different countries. He then went on to work at Hostinger, one of the worlds largest web hosting companies. Fran then began his journey into entrepreneurship by launching his first startup, OneSite, a platform which allows anyone to create their own website for free. OneSite had over 10,000 users within its first few months. Fran’s listed on The Next Web's T500, which presents the 500 most talented in the digital scene. He was also nominated for Forbes 30 Under 30 2017.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
@@ -74,7 +74,7 @@
 							@slot('name', 'Harrison Moore')
 							@slot('role', 'Chief Design Officer')
 							@slot('bio')
-								Harrison has been engaged in all aspects of design since a young age. Before joining Internxt Harrison had worked as a UI/UX designer for numerous agencies who have worked with technology companies such as Hewlett Packard Enterprises, CAT and CENX among other blue-chip companies. Over the years he has developed a style for simple and intuitive design. Harrison is a part of the design team responsible for imagining and creating internxt’s products user interface.
+								Harrison has been engaged in all aspects of design since a young age. Before joining Internxt, Harrison had worked as a UI/UX designer for numerous agencies who have worked with technology companies such as Hewlett Packard Enterprises, CAT and CENX among other blue-chip companies. Over the years he has developed a style for simple and intuitive design. Harrison is a part of the design team responsible for imagining and creating internxt’s products user interface.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
