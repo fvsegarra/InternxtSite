@@ -140,7 +140,7 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 							@slot('name', 'Ryan Marsden')
 							@slot('role', 'Risk Advisor')
 							@slot('bio')
-								Ryan is an experienced Financial Engineer and Project Management Professional with more than 10 years of successfully planning the financials of global multibillion dollar projects working for multinationals such as BP, where he works as a Lead Cost Manager. Ryan advices Internxt on project management, strategic business planning, cost management, risk management, contracts management, corporate governance, business ethics and team accountability.
+								Ryan is an experienced Financial Engineer and Project Management Professional with more than 10 years of successfully planning the financials of global multibillion dollar projects working for multinationals such as BP, where he works as a Lead Cost Manager. Ryan advises Internxt on project management, strategic business planning, cost management, risk management, contracts management, corporate governance, business ethics and team accountability.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
