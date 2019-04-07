@@ -64,7 +64,7 @@
 
 			<div class="subsection subsection--setup enhanced-1080">
 				<p class="subsection__heading">Taking the <span class="linebreak"></span>power back.</p>
-				<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
+				<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and earn a passive income. Better by design. </p>
 			</div>{{-- /.subsection-setup --}}
 
 			<div class="subsection subsection--setup">
