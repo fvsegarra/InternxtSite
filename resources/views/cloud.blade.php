@@ -182,7 +182,7 @@
 		<div class="container">
 			<p class="section__label">Free Storage</p>
 			<p class="section__heading">Experience X Cloud with 1GB on us.</p>
-			<p class="section__subheading">When signing up to X Cloud, users receive free 1GB storage space. Make  the switch to a superior cloud storage alternative, and win on user experience, security and cost as well. If you enjoy the service you can upgrade to our 100GB plan for €4.49 or alternatively upgrade to 1TB for €9.95.</p>
+			<p class="section__subheading">When signing up to X Cloud, users receive 1GB of storage space for free. Make  the switch to a superior cloud storage alternative and win on user experience and security. If you enjoy the service you can upgrade to our 100GB plan for €4.49 or alternatively upgrade to 1TB for €9.95.</p>
 		</div>{{-- /.container --}}
 		<div class="section__content">
 
