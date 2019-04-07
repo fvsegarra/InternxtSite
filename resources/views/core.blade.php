@@ -49,7 +49,7 @@
 
 						<div class="subsection subsection--host">
 							<p class="subsection__heading">Host easily. Earn more.</p>
-							<p class="subsection__content">Hosts rent out their computers' extra hard-drive space which allows the storing and uploading of users encrypted data. In return hosts will be paid in our cryptocurrency, INXT. The more hard-drive space you allocate to the network, the more INXT you will earn.</p>
+							<p class="subsection__content">Hosts rent out their computers' extra hard-drive space, which allows the storing and uploading of X Cloud users' encrypted data. In return, hosts will be paid in our cryptocurrency, INXT. The more hard-drive space you allocate to the network, the more INXT you will earn.</p>
 						</div>{{-- /.subsection-host --}}
 
 						<div class="subsection subsection--enhanced">
