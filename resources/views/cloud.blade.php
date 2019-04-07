@@ -86,7 +86,7 @@
 
 			<div class="tab-content" id="xcloudFeaturesTabContent">
 				<div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab"><em>A more limitless workflow.</em> To make using your cloud easier, your file options are spread across the dashboard so you can get where you want to be without too many clicks.</div>
-				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab"><em>Folders can be customised in various colours.</em> Maybe you prefer a Health folder green or a Movie folder purple, to increase visibility, to suit the contents theme or to just simply look more appealing. You can also add a variety of different icons on the cover of any folder. Maybe you want to add a Dollar icon to a salary folder or an image icon to your holiday folder.</div>
+				<div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab"><em>Folders can be customised in various colours.</em> Maybe you prefer a health folder to be green, or a movie folder purple. To increase visibility and to suit the contents' theme, or to simply appeal to your taste. You can also add a variety of different icons on the cover of any folder. Maybe you want to add a Dollar icon to a salary folder or an image icon to your holiday folder.</div>
 			</div>
 
 		</div>{{-- /.container --}}
@@ -98,7 +98,7 @@
 				<img class="section__icon" src="/img/icons/xcloud/share.svg">
 			</div>
 			<p class="section__heading">Share files however you want. <span class="linebreak d-none d-lg-block"></span>With whoever you want.</p>
-			<p class="section__content">X Cloud is the first decentralized cloud platform to offer secure and easy file sharing. Just send a private link to invite people to view, download, or work on a file with you. Share using next-level security.</p>
+			<p class="section__content">X Cloud is the first decentralized cloud platform to offer secure and easy file sharing. Simply send a private link to invite people to view, download, or work on a file with you. Share using next-level security.</p>
 		</div>{{-- /.container --}}
 		<img class="section__image img-fluid" src="/img/mockups/xcloud/share_laptop.png">
 	</section>
@@ -169,7 +169,7 @@
 					<div class="section__content">
 						<p>The X Cloud app will allow you to access your files from your iOS and Android devices. All your files will stay up to date automatically across all your devices.</p>
 					</div>{{-- /.section__content --}}
-					<a class="section__cta" disabled>App coming Q1 2019</a>
+					<a class="section__cta" disabled>App coming Q2 2019</a>
 
 				</div>{{-- /.col-lg-4 --}}
 
