@@ -107,7 +107,7 @@ Jesus has a BSc in Computer Science, a Master's Degree in Decentralized Computin
 							@slot('name', 'Alberto González Torre')
 							@slot('role', 'Software Developer')
 							@slot('bio')
-Alberto started programming at the age of 13. He is an outstanding C# developer and has an experience of over 10 years coding in JavaScript.
+Alberto started programming at the age of 13. He is an outstanding C# developer and has over 10 years of coding experience in JavaScript. He worked as a researcher and professor at Valencia University, and as a programmer in companies such as Clase 10 Sistemas.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
