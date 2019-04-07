@@ -66,7 +66,7 @@
 
 					<div class="subsection subsection--mission">
 						<p class="subsection__heading">Mission.</p>
-						<p class="subsection__content">We want to help exceed the capabilities of every human being. From this mission stems a multitude of projects, products, and services all with the same aim of enabling every human being to the peak of their potential. Internxt is excitement, ambition.</p>
+						<p class="subsection__content">We want to help all human beings exceed their capabilities. Every project, product, and service stems from this mission. They each have the same aim of enabling anyone to achieve their utmost potential. Internxt is excitement and ambition.</p>
 					</div>{{-- /.subsection --}}
 
 					<div class="subsection subsection--vision">
