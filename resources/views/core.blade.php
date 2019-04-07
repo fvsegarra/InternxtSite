@@ -49,12 +49,12 @@
 
 						<div class="subsection subsection--host">
 							<p class="subsection__heading">Host easily. Earn more.</p>
-							<p class="subsection__content">Hosts rent out their computers' extra hard-drive space, which allows the storing and uploading of X Cloud users' encrypted data. In return, hosts will be paid in our cryptocurrency, INXT. The more hard-drive space you allocate to the network, the more INXT you will earn.</p>
+							<p class="subsection__content">Hosts rent out their computers' extra hard-drive space, which allows the storing and uploading of X Cloud users' encrypted data. In return, hosts will be paid in our cryptocurrency, INXT. The more hard-drive space you allocate to the network and fill, the more INXT you will earn.</p>
 						</div>{{-- /.subsection-host --}}
 
 						<div class="subsection subsection--enhanced">
-							<p class="subsection__heading">Taking the <span class="linebreak"></span>power back.</p>
-							<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and how long for. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
+							<p class="subsection__heading">Reclaiming<span class="linebreak"></span>the power.</p>
+							<p class="subsection__content">Each host can decide how much computer resources they designate to the network, as well as when and for how long. You can leave X Core running in the background and your computer will earn you passive income. Better by design. </p>
 						</div>{{-- /.subsection-enhanced --}}
 
 					</div>{{-- /.col-lg-3 --}}
