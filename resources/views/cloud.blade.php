@@ -154,7 +154,7 @@
 	<section class="section section--cloud-more-info">
 		<div class="container">
 
-			<p class="section__heading">The most powerful technology <span class="linebreak"></span>is one which everyone can use.</p>
+			<p class="section__heading">The most powerful technology <span class="linebreak"></span>is one anyone can use.</p>
 
 			<div class="row">
 
