@@ -46,7 +46,7 @@
 							<img class="subsection__icon" src="/img/icons/xcloud/data.svg" alt="Your data belongs to you and only you">
 						</div>
 						<p class="subsection__heading">Your data belongs to you and only you.</p>
-						<p class="subsection__content">We have solved major problems with the current adopted cloud services such as, having jurisdiction to censor individuals, providing users data to governmental agencies, and selling customer data to other companies.</p>
+						<p class="subsection__content">We have solved major problems with the current adopted cloud services, such as having jurisdiction to censor individuals, providing users' data to governmental agencies, and selling customer data to other companies.</p>
 					</div>{{-- /.subsection --}}
 				</div>{{-- /.col-lg-6 --}}
 
