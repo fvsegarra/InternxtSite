@@ -167,7 +167,7 @@
 					<img class="section__image section__image--iphone img-fluid" src="/img/mockups/xcloud/iPhone.png">
 					<p class="section__subheading">Get to your files<span class="linebreak d-none d-lg-block"></span> on all your devices.</p>
 					<div class="section__content">
-						<p>The X Cloud app will allow you to access your files from your iOS and Android devices. All your files will stay up to date automatically across all your devices.</p>
+						<p>The X Cloud app will allow you to access your files from your iOS and Android devices. All your files will be automatically updated across all of your devices.</p>
 					</div>{{-- /.section__content --}}
 					<a class="section__cta" disabled>App coming Q2 2019</a>
 
