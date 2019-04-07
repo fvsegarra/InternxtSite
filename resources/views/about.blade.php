@@ -74,7 +74,7 @@
 							@slot('name', 'Harrison Moore')
 							@slot('role', 'Chief Design Officer')
 							@slot('bio')
-								Harrison has been engaged in all aspects of design since a young age. Before joining Internxt, Harrison had worked as a UI/UX designer for numerous agencies who have worked with technology companies such as Hewlett Packard Enterprises, CAT and CENX among other blue-chip companies. Over the years he has developed a style for simple and intuitive design. Harrison is a part of the design team responsible for imagining and creating internxt’s products user interface.
+								Harrison has been engaged in all aspects of design since a young age. Before joining Internxt, Harrison  worked as a UI/UX designer for numerous agencies, such as Hewlett Packard Enterprises, CAT and CENX, among other blue-chip companies. Over the years he has developed a style for simple and intuitive design. Harrison is a part of the design team responsible for imagining and creating internxt’s product user interface.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
@@ -96,7 +96,7 @@ Jesus has a BSc in Computer Science, a Master's Degree in Decentralized Computin
 							@slot('name', 'Jordan Latham')
 							@slot('role', 'UI/UX Designer')
 							@slot('bio')
-								Jordan has been immersed in design and entrepreneurship for over 10 years. He sees that flawless design to be vital in all areas of a business’s development. He has created designs for companies such as AirVPN which is a market leader in security and encryption and has also worked as a creative advisor for Showyou, a video streaming service that has recently been acquired by Vevo. He was on the creative board of directors for 4 years at the number one voted theme park in the UK. Jordan utilizes his experience to oversee all design aspects at Internxt.
+								Jordan has been immersed in design and entrepreneurship for over 10 years. He views flawless design as vital in all areas of a business’s development. He has created designs for companies such as AirVPN, a market leader in security and encryption, and has also worked as a creative advisor for Showyou, a video streaming service that has recently been acquired by Vevo. He was on the creative board of directors for 4 years at the number one voted theme park in the UK. Jordan utilizes his experience to oversee all design aspects at Internxt.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
