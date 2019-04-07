@@ -107,7 +107,7 @@ Jesus has a BSc in Computer Science, a Master's Degree in Decentralized Computin
 							@slot('name', 'Alberto González Torre')
 							@slot('role', 'Software Developer')
 							@slot('bio')
-Alberto started programming at the age of 13. He is an outstanding C# developer and has over 10 years of coding experience in JavaScript. He worked as a researcher and professor at Valencia University, and as a programmer in companies such as Clase 10 Sistemas.
+Alberto is a developer who started programming at the age of 13. He is an outstanding C# developer and has over 10 years of coding experience in JavaScript. He worked as a researcher and professor at Valencia University, and as a programmer in companies such as Clase 10 Sistemas.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
@@ -118,7 +118,7 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 							@slot('name', 'Joe Priest')
 							@slot('role', 'Software Developer')
 							@slot('bio')
-								Joe has a Bachelors degree in Computer Science and extensive knowledge of full-stack web development, with over 15 years experience in the field. He is responsible for translating the UI/UX designs into code that will produce the elements of Internxt’s website, applications and services that you will see and interact with.
+								Joe has a Bachelors degree in Computer Science and extensive knowledge of full-stack web development, with over 15 years experience in the field. He is responsible for translating the UI/UX designs into code that will produce the elements on Internxt’s website, applications and services that you will see and interact with.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
@@ -129,7 +129,7 @@ Alberto started programming at the age of 13. He is an outstanding C# developer 
 							@slot('name', 'Alex Sicart Ramos')
 							@slot('role', 'Technical Advisor')
 							@slot('bio')
-								Alex is the Co-founder of FileNation, a decentralized, peer-to-peer file sharing platform. He has also talked on stage at events such as TED talks and iFest to discuss blockchain and IPFS and also came first place at an event hosted by German car manufacturer, Audi to create and pitch the most innovative product. Alex was seen by Forbes as being one of Europe’s most promising young game-changers and was awarded a place on the Forbes 30 Under 30 Europe 2017. Alex is also a creative consultant for the global leading consultancy firm, Accenture.
+								Alex is the Co-founder of FileNation, a decentralized, peer-to-peer file sharing platform. He has also talked on stage at events, such as TED talks and iFest, to discuss blockchain and IPFS. He also came first place at an event hosted by German car manufacturer, Audi to create and pitch the most innovative product. Alex was seen by Forbes as being one of Europe’s most promising young game-changers and was awarded a place on the Forbes 30 Under 30 Europe 2017. Alex is also a creative consultant for the global leading consultancy firm, Accenture.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
