@@ -118,7 +118,7 @@ Alberto is a developer who started programming at the age of 13. He is an outsta
 							@slot('name', 'Joe Priest')
 							@slot('role', 'Software Developer')
 							@slot('bio')
-								Joe has a Bachelors degree in Computer Science and extensive knowledge of full-stack web development, with over 15 years experience in the field. He is responsible for translating the UI/UX designs into code that will produce the elements on Internxt’s website, applications and services that you will see and interact with.
+								Joe has a Bachelor's degree in Computer Science and extensive knowledge of full-stack web development, with over 15 years' experience in the field. He is responsible for translating the UI/UX designs into code that will produce the elements on Internxt’s website, applications and services that you will see and interact with.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
@@ -140,7 +140,7 @@ Alberto is a developer who started programming at the age of 13. He is an outsta
 							@slot('name', 'Ryan Marsden')
 							@slot('role', 'Risk Advisor')
 							@slot('bio')
-								Ryan is an experienced Financial Engineer and Project Management Professional with more than 10 years of successfully planning the financials of global multibillion dollar projects, working for multinationals such as BP, where he works as a Lead Cost Manager. Ryan advises Internxt on strategic business planning, cost management, risk management, and team accountability.
+								Ryan is an experienced Financial Engineer and Project Management Professional with more than 10 years of successfully planning the financials of global multibillion-dollar projects, working for multinationals such as BP, where he works as a Lead Cost Manager. Ryan advises Internxt on strategic business planning, cost management, risk management, and team accountability.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
