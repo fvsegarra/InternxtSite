@@ -85,7 +85,7 @@
 							@slot('name', 'Jesus González Nieto')
 							@slot('role', 'Software Developer')
 							@slot('bio')
-Jesus has a BSc in Computer Science, a Master's Degree in Decentralized Computing. He also counts with over 4 years experience as a programmer, and is a core developer here at Internxt.
+Jesus has a BSc in Computer Science, and a Master's Degree in Decentralized Computing. He also counts with over 4 years’ experience as a programmer and is a core developer here at Internxt. He has worked as an R&D engineer and software engineer for various companies, including Tecnocom and Vossloh.
 							@endslot
 						@endcomponent
 					</div>{{-- /.col-lg-3 --}}
