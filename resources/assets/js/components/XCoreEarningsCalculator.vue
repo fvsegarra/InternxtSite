@@ -42,8 +42,8 @@
                 minInxtForBonus: 100,
                 bonusPercentage: 0.01,
                 hasFocus: false,
-                maxInputInxt: 9999,
-                maxInputGigabytes: 99999,
+                maxInputInxt: 999999,
+                maxInputGigabytes: 999999,
             }
         },
 
