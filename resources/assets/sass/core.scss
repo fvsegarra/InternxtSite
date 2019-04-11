@@ -459,21 +459,27 @@
                         position: relative;
 
                         &::after {
+
                             content: "";
                             position: absolute;
                             right: 25px;
                             top: 0;
+
+                            @include whenLargerThan('large-screen') {
+                                right: 40px;
+                            }
+
+                        }
+
+                        .section__input {
+                            padding: 0 45px 0 35px;
+                            text-align: left;
                         }
 
                         &--gb {
 
                             &::after {
                                 content: "GB";
-                            }
-
-                            .section__input {
-                                padding: 0 35px;
-                                text-align: right;
                             }
 
                         }
@@ -485,8 +491,7 @@
                             }
 
                             .section__input {
-                                padding: 0 45px;
-                                text-align: right;
+                                padding: 0 60px 0 35px;
                             }
 
                         }
