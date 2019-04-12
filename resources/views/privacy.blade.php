@@ -71,7 +71,9 @@
 
 	        <p class="section__heading">Transfer of Information to Governming Authorities</p>
 	        <div class="section__content">
-                <p>Internxt SL. is based in Spain and the information we collect is governed by Spanish law. By accessing or using our Services or otherwise providing information to us, you consent to the processing and transfer of information in and to Spain and other countries, where you may not have the same rights as you do under your local law. Where this is the case, we will take appropriate measures to protect information about you in accordance with this Privacy Policy.</p>
+                <p>Internxt SL. is based in Spain and the information we collect is governed by Spanish law. By accessing or using our Services or otherwise providing information to us, you consent to the processing and transfer of information in and to Spain and other countries, where you may not have the same rights as you do under your local law. Where this is the case, we will take appropriate measures to protect information about you in accordance with this Privacy Policy.
+									Since Internxt uses client-side end-to-end encryption, it cannot know the content a user has under his X Cloud account.
+								</p>
 	        </div>
 
 		</section>
