@@ -27,8 +27,6 @@
 
             @include('_includes.scripts.mailerlite')
 
-            @include('_includes.scripts.mixpanel')
-
             @include('_includes.scripts.drift')
 
         @endif
