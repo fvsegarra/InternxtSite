@@ -182,7 +182,7 @@
 		<div class="container">
 			<p class="section__label">Free Storage</p>
 			<p class="section__heading">Experience X Cloud with 1GB on us.</p>
-			<p class="section__subheading">When signing up to X Cloud, users receive 1GB of storage space for free. Make  the switch to a superior cloud storage alternative and win on security. If you need more storage space, you can upgrade to our 100GB plan for €4.49, and for our users with even greater needs: 1TB for €9.95. For users with needs greater than 1TB please contact us at hello@internxt.com.</p>
+			<p class="section__subheading">When signing up to X Cloud, users receive 1GB of storage space for free. Make  the switch to a superior cloud storage alternative and win on security. If you need more storage space, you can upgrade to our 100GB plan for €4.49, and for our users with even greater needs: 1TB for €9.99. For users with needs greater than 1TB please contact us at hello@internxt.com.</p>
 		</div>{{-- /.container --}}
 		<div class="section__content">
 
@@ -225,7 +225,7 @@
 								<p class="plan__quantity">1TB</p>
 							</div>
 							<div class="col">
-								<p class="plan__price">€9.95</p>
+								<p class="plan__price">€9.99</p>
 							</div>
 						</div>{{-- /.plan --}}
 
