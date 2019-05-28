@@ -24,12 +24,15 @@ class AppServiceProvider extends ServiceProvider
         $agent = new Agent();
 
         $platform = $agent->platform();
-        echo $platform."-------";
 
         if ($platform) { // Returns false from console
 
             if ($platform == "OS X") {
                 $platform = "Mac";
+            }
+
+            if ($platform == "Ubuntu") {
+                $platform = "Linux";
             }
 
             Log::debug("Platform: ", compact('platform'));
