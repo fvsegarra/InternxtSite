@@ -24,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
         $agent = new Agent();
 
         $platform = $agent->platform();
+        echo $platform."-------";
 
         if ($platform) { // Returns false from console
 
