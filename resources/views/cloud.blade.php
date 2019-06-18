@@ -169,7 +169,6 @@
 					<div class="section__content">
 						<p>The X Cloud app will allow you to access your files from your iOS and Android devices. All your files will be automatically updated across all of your devices.</p>
 					</div>{{-- /.section__content --}}
-					<a class="section__cta">App coming Q2 2019</a>
 
 				</div>{{-- /.col-lg-4 --}}
 
