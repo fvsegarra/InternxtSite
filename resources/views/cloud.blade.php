@@ -29,7 +29,7 @@
 					Combining <em>distributed</em> and <em>decentralized</em> technology with a beautiful, <span class="d-block d-md-none d-lg-block"></span> easy-to-use user interface. Everyone can store files with total <em>simplicity, security</em> and <em>privacy.</em>
 				</span>
 				<span class="d-none d-lg-block">
-					By combining <em>distributed</em> technology and <em>end-to-end encryption</em>, X Cloud provides the highest possible level of security and privacy. Take true control of <em>your</em> information. <em>Make the switch</em> to a <em>superior</em> cloud storage service.
+					By combining <em>distributed</em> technology and <em>zero-knowledge end-to-end encryption</em>, X Cloud provides the highest possible level of security and privacy. Take true control of <em>your</em> information. <em>Make the switch</em> to a <em>superior</em> cloud storage service.
 				</span>
 			</div>{{-- /.section__content --}}
 		</div>{{-- /.container --}}
