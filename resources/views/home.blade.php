@@ -4,7 +4,7 @@
 
 @section('navbar-classes', 'navbar-light')
 
-@section('pageTitle', 'The future  is now.')
+@section('pageTitle', 'Join the  Revolution.</')
 
 @section('metaDescription', 'Internxt is excitement, ambition, innovation. Join the revolution. The future is now.')
 
