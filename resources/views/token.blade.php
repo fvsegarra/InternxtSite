@@ -8,7 +8,7 @@
 
 @section('pageTitle', 'INXT')
 
-@section('metaDescription', 'Internxt token (INXT). Buy, Sell, Trade INXT.')
+@section('metaDescription', 'Internxt token (INXT). Buy, Sell, Trade INXT. Where to buy INXT digital asset. Decentralized, Blockchain cloud storage.')
 
 @section('body')
 
