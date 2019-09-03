@@ -25,7 +25,7 @@ class PostsComposer
 				$crawler->filter('.postArticle')->each(function ($node) use (&$posts) {
 
 					$posts[] = [
-						'url' => $node->filter('a')->attr('href'),
+						'url' => $node->filter('.postArticle-content a')->attr('href'),
 						'title' => $node->filter('.graf--title')->text(),
 						'image' => $node->filter('#previewImage img')->attr('src'),
 						'date' => Carbon::parse($node->filter('time')->attr('datetime'))->format('F j Y'),
