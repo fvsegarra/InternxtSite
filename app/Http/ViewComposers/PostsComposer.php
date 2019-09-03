@@ -5,53 +5,43 @@ namespace App\Http\ViewComposers;
 use Log;
 use Cache;
 use Carbon\Carbon;
-use GuzzleHttp\Client;
+use Goutte\Client;
 use Illuminate\View\View;
 
 class PostsComposer
 {
     public function compose(View $view)
     {
-    	$posts = Cache::remember('posts', 60, function () {
+    	$posts = Cache::remember('posts', 120, function () {
 
-		    $client = new \GuzzleHttp\Client();
+			$posts = [];
 
-		    try {
-		        $res = $client->request('GET', 'https://medium.com/internxt/latest?format=json');
-		    } catch (Exception $exception) {
-		    	Log::error($exception);
-		        return false;
-		    }
+    		try {
 
-		    if (!$res->getStatusCode() == 200) {
-		    	Log::error('Non-200 status', ['status' => $res->getStatusCode()]);
-		        return false;
-		    }
+			    $client = new Client();
 
-	    	$body = json_decode(str_replace('])}while(1);</x>', '', $res->getBody()));
+				$crawler = $client->request('GET', 'https://medium.com/internxt/latest');
 
-		    if (!isset($body->success, $body->payload)) {
-		    	Log::error('Body payload not set', ['success' => $body->success, 'payload' => $body->payload]);
-		        return false;
-		    }
+				$crawler->filter('.postArticle')->each(function ($node) use (&$posts) {
 
-	    	return collect($body->payload->posts)
-		    	->sortByDesc('firstPublishedAt')
-		    	->take(9)
-		    	->transform(function($post) {
-		    		return [
-		    			'title' => $post->title,
-		    			'date' => Carbon::createFromTimestamp( substr($post->firstPublishedAt, 0, 10) )->format('F j Y'),
-		    			'image' => 'https://cdn-images-1.medium.com/max/822/' . $post->virtuals->previewImage->imageId,
-		    			'url' => 'https://medium.com/internxt/' . $post->uniqueSlug,
-		    		];
-		    	})
-		    ;
+					$posts[] = [
+						'url' => $node->filter('a')->attr('href'),
+						'title' => $node->filter('.graf--title')->text(),
+						'image' => $node->filter('#previewImage img')->attr('src'),
+						'date' => Carbon::parse($node->filter('time')->attr('datetime'))->format('F j Y'),
+					];
 
-		    // dd($this->posts);
+			    });
+
+    		} catch (Exception $e) {
+    			Log::error($e);
+    		}
+
+		    return $posts;
 
 		});
 
         $view->with('posts', $posts);
     }
 }
+
